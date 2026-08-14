@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>TURIN PREMIUM STORE</title>
+    <link>https://turin-premium-store.onrender.com</link>
+    <description>Products from TURIN PREMIUM STORE</description>
+
+    <item>
+      <g:id>product-001</g:id>
+      <g:title>White T-Shirt</g:title>
+      <g:description>Premium white T-shirt from TURIN PREMIUM STORE.</g:description>
+      <g:link>https://turin-premium-store.onrender.com/</g:link>
+      <g:price>25.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+    </item>
+
+  </channel>
+</rss>
