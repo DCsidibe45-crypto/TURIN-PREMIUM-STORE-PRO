@@ -34,6 +34,13 @@ const server = http.createServer((req, res) => {
       res.end("EVENT_RECEIVED");
     });
     return;
+  }if (req.method === "GET" && req.url.startsWith("/instagram/callback")) {
+    const url = new URL(req.url, `http://${req.headers.host}`);
+    const code = url.searchParams.get("code");
+
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end(code ? "Instagram authorization received." : "Missing authorization code.");
+    return;
   }
 
   res.writeHead(200, { "Content-Type": "text/plain" });
