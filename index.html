@@ -18,9 +18,7 @@
 <meta property="og:url" content="https://turin-premium-store.onrender.com/">
 <meta property="og:site_name" content="TURIN PREMIUM STORE">
 
-<!-- =========================================================
-     GOOGLE TAG MANAGER
-========================================================= -->
+<!-- GOOGLE TAG MANAGER -->
 <script>
 (function(w,d,s,l,i){
 w[l]=w[l]||[];
@@ -34,25 +32,18 @@ f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMZP7XBG');
 </script>
 
-<!-- =========================================================
-     GOOGLE ANALYTICS 4
-========================================================= -->
+<!-- GOOGLE ANALYTICS 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
-
 <script>
 window.dataLayer=window.dataLayer||[];
-
 function gtag(){
 dataLayer.push(arguments);
 }
-
 gtag('js',new Date());
 gtag('config','G-RF9N3ZKHT9');
 </script>
 
-<!-- =========================================================
-     META PIXEL
-========================================================= -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {
@@ -62,18 +53,14 @@ n.callMethod ?
 n.callMethod.apply(n,arguments) :
 n.queue.push(arguments)
 };
-
 if(!f._fbq)f._fbq=n;
-
 n.push=n;
 n.loaded=!0;
 n.version='2.0';
 n.queue=[];
-
 t=b.createElement(e);
 t.async=!0;
 t.src=v;
-
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }
@@ -86,32 +73,17 @@ document,
 
 fbq('init','1324825756528057');
 fbq('init','1320201370196026');
-
 fbq('track','PageView');
 </script>
 
 <noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=1324825756528057&ev=PageView&noscript=1"
-alt=""
->
-
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=1320201370196026&ev=PageView&noscript=1"
-alt=""
->
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1324825756528057&ev=PageView&noscript=1" alt="">
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1320201370196026&ev=PageView&noscript=1" alt="">
 </noscript>
 
-<!-- =========================================================
-     STRUCTURED DATA
-========================================================= -->
-
+<!-- STRUCTURED DATA -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -122,10 +94,6 @@ alt=""
  "telephone":"+255797955045"
 }
 </script>
-
-<!-- =========================================================
-     CSS
-========================================================= -->
 
 <style>
 
@@ -138,7 +106,6 @@ alt=""
 --muted:#707070;
 --gold:#c9a227;
 --green:#25d366;
---danger:#c62828;
 --shadow:0 12px 35px rgba(0,0,0,.08);
 --radius:18px;
 --max:1200px;
@@ -180,8 +147,6 @@ width:min(92%,var(--max));
 margin:auto;
 }
 
-/* TOP BAR */
-
 .topbar{
 background:#111;
 color:#fff;
@@ -190,8 +155,6 @@ padding:8px 15px;
 font-size:12px;
 letter-spacing:.5px;
 }
-
-/* HEADER */
 
 header{
 position:sticky;
@@ -257,21 +220,10 @@ padding:10px 16px;
 border-radius:999px;
 }
 
-/* HERO */
-
 .hero{
 background:
-radial-gradient(
-circle at 85% 20%,
-rgba(201,162,39,.2),
-transparent 30%
-),
-linear-gradient(
-135deg,
-#111,
-#252525
-);
-
+radial-gradient(circle at 85% 20%,rgba(201,162,39,.2),transparent 30%),
+linear-gradient(135deg,#111,#252525);
 color:#fff;
 min-height:560px;
 display:flex;
@@ -371,8 +323,6 @@ text-align:center;
 font-size:85px;
 }
 
-/* SECTIONS */
-
 section{
 padding:80px 0;
 }
@@ -400,8 +350,6 @@ max-width:560px;
 color:var(--muted);
 }
 
-/* PRODUCT GRID */
-
 .product-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -424,26 +372,26 @@ transform:translateY(-4px);
 .product-visual{
 height:310px;
 background:
-radial-gradient(
-circle at 50% 35%,
-#fff 0 18%,
-transparent 19%
-),
-linear-gradient(
-135deg,
-#eeeeec,
-#dcdcd8
-);
-
+radial-gradient(circle at 50% 35%,#fff 0 18%,transparent 19%),
+linear-gradient(135deg,#eeeeec,#dcdcd8);
 display:grid;
 place-items:center;
 position:relative;
+overflow:hidden;
+}
+
+.product-visual img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .product-label{
 position:absolute;
 top:14px;
 left:14px;
+z-index:2;
 background:#111;
 color:#fff;
 padding:6px 10px;
@@ -517,8 +465,6 @@ margin-top:10px;
 text-decoration:underline;
 }
 
-/* FEATURES */
-
 .features{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -551,8 +497,6 @@ margin-bottom:8px;
 color:var(--muted);
 font-size:14px;
 }
-
-/* CONTACT */
 
 .contact-section{
 background:#111;
@@ -590,8 +534,6 @@ padding:14px 20px;
 border-radius:999px;
 font-weight:900;
 }
-
-/* FOOTER */
 
 footer{
 background:#090909;
@@ -633,8 +575,6 @@ display:flex;
 justify-content:space-between;
 }
 
-/* FLOATING WHATSAPP */
-
 .floating-whatsapp{
 position:fixed;
 right:20px;
@@ -651,8 +591,6 @@ font-size:25px;
 font-weight:900;
 box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
-
-/* MOBILE */
 
 @media(max-width:900px){
 
@@ -757,8 +695,6 @@ display:block;
 
 <body>
 
-<!-- GTM NOSCRIPT -->
-
 <noscript>
 <iframe
 src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
@@ -769,87 +705,46 @@ title="Google Tag Manager">
 </iframe>
 </noscript>
 
-<!-- TOP -->
-
 <div class="topbar">
 TURIN PREMIUM STORE — PREMIUM STYLE. SIMPLE SHOPPING.
 </div>
 
-<!-- HEADER -->
-
 <header>
-
 <div class="container nav">
 
 <a href="#home" class="brand">
-
-<span class="brand-mark">
-T
-</span>
-
-<span class="brand-text">
-TURIN PREMIUM STORE
-</span>
-
+<span class="brand-mark">T</span>
+<span class="brand-text">TURIN PREMIUM STORE</span>
 </a>
 
 <nav>
-
 <ul>
-
+<li><a href="#home">Home</a></li>
+<li><a href="#catalogue">Catalogue</a></li>
+<li><a href="#about">About</a></li>
 <li>
-<a href="#home">
-Home
-</a>
-</li>
-
-<li>
-<a href="#catalogue">
-Catalogue
-</a>
-</li>
-
-<li>
-<a href="#about">
-About
-</a>
-</li>
-
-<li>
-
 <a
 class="nav-order"
 href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
 target="_blank"
 rel="noopener">
-
 Order
-
 </a>
-
 </li>
-
 </ul>
-
 </nav>
 
 </div>
-
 </header>
 
 <main>
 
-<!-- HERO -->
-
 <section class="hero" id="home">
-
 <div class="container hero-grid">
 
 <div>
 
-<span class="eyebrow">
-TURIN PREMIUM STORE
-</span>
+<span class="eyebrow">TURIN PREMIUM STORE</span>
 
 <h1>
 STYLE THAT
@@ -864,12 +759,8 @@ Browse the catalogue and order directly through WhatsApp.
 
 <div class="hero-buttons">
 
-<a
-href="#catalogue"
-class="btn btn-light">
-
+<a href="#catalogue" class="btn btn-light">
 Shop Catalogue
-
 </a>
 
 <a
@@ -877,44 +768,30 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 class="btn btn-outline">
-
 Order on WhatsApp
-
 </a>
 
 </div>
-
 </div>
 
 <div class="hero-card">
 
 <div class="hero-card-inner">
 
-<div class="hero-icon">
-🛍️
-</div>
+<div class="hero-icon">🛍️</div>
 
-<strong>
-Premium Collection
-</strong>
+<strong>Premium Collection</strong>
 
-<small>
-TURIN PREMIUM STORE
-</small>
+<small>TURIN PREMIUM STORE</small>
 
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-<!-- CATALOGUE -->
-
-<section
-class="catalogue"
-id="catalogue">
+<section class="catalogue" id="catalogue">
 
 <div class="container">
 
@@ -925,14 +802,10 @@ id="catalogue">
 <span
 class="eyebrow"
 style="color:#111;border-color:#ccc;">
-
 SHOP
-
 </span>
 
-<h2>
-Our Products
-</h2>
+<h2>Our Products</h2>
 
 </div>
 
@@ -945,41 +818,21 @@ directly through WhatsApp to order.
 
 <div class="product-grid">
 
-<!-- =====================================================
-     PRODUCT 1
-===================================================== -->
-
+<!-- PRODUCT 1 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-EXISTING
-</span>
-
+<span class="product-label">EXISTING</span>
 <div class="product-placeholder">
-WHITE
-<br>
-T-SHIRT
+WHITE<br>T-SHIRT
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-White T-Shirt
-</h3>
-
-<p>
-Premium white T-shirt from TURIN PREMIUM STORE.
-</p>
+<h3>White T-Shirt</h3>
+<p>Premium white T-shirt from TURIN PREMIUM STORE.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$25.00
-</span>
+<span class="price">$25.00</span>
 
 <a
 class="order-btn"
@@ -987,57 +840,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('White T-Shirt',25)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Existing TURIN catalogue data
-</small>
-
+<small class="source">Existing TURIN catalogue data</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 2
-===================================================== -->
-
+<!-- PRODUCT 2 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-GADGET
-</span>
-
+<span class="product-label">GADGET</span>
 <div class="product-placeholder">
-HY300
-<br>
-PROJECTOR
+HY300<br>PROJECTOR
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-HY300 Portable Android Projector
-</h3>
-
-<p>
-Portable Android projector for home entertainment and presentations.
-</p>
+<h3>HY300 Portable Android Projector</h3>
+<p>Portable Android projector for home entertainment and presentations.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$136.05
-</span>
+<span class="price">$136.05</span>
 
 <a
 class="order-btn"
@@ -1045,57 +870,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('HY300 Portable Android Projector',136.05)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Zudua Tanzania — TSh 360,000
-</small>
-
+<small class="source">Source: Zudua Tanzania — TSh 360,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 3
-===================================================== -->
-
+<!-- PRODUCT 3 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-AUDIO
-</span>
-
+<span class="product-label">AUDIO</span>
 <div class="product-placeholder">
-K9
-<br>
-WIRELESS MIC
+K9<br>WIRELESS MIC
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-K9 Dual Wireless Microphone
-</h3>
-
-<p>
-Dual wireless microphone for compatible smartphones and content creation.
-</p>
+<h3>K9 Dual Wireless Microphone</h3>
+<p>Dual wireless microphone for compatible smartphones and content creation.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$20.78
-</span>
+<span class="price">$20.78</span>
 
 <a
 class="order-btn"
@@ -1103,57 +900,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('K9 Dual Wireless Microphone',20.78)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 55,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 55,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 4
-===================================================== -->
-
+<!-- PRODUCT 4 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-AUDIO
-</span>
-
+<span class="product-label">AUDIO</span>
 <div class="product-placeholder">
-F11-2
-<br>
-DUAL MIC
+F11-2<br>DUAL MIC
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Wireless Microphone F11-2 Dual Mic
-</h3>
-
-<p>
-Wireless dual microphone designed for content creation and recording.
-</p>
+<h3>Wireless Microphone F11-2 Dual Mic</h3>
+<p>Wireless dual microphone designed for content creation and recording.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$30.22
-</span>
+<span class="price">$30.22</span>
 
 <a
 class="order-btn"
@@ -1161,57 +930,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Wireless Microphone F11-2 Dual Mic',30.22)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 80,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 80,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 5
-===================================================== -->
-
+<!-- PRODUCT 5 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-AUDIO
-</span>
-
+<span class="product-label">AUDIO</span>
 <div class="product-placeholder">
-BOYA
-<br>
-BY-MW3
+BOYA<br>BY-MW3
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-BOYA Wireless Mic BY-MW3
-</h3>
-
-<p>
-Wireless microphone for interviews, vlogs and live content.
-</p>
+<h3>BOYA Wireless Mic BY-MW3</h3>
+<p>Wireless microphone for interviews, vlogs and live content.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$24.55
-</span>
+<span class="price">$24.55</span>
 
 <a
 class="order-btn"
@@ -1219,57 +960,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('BOYA Wireless Mic BY-MW3',24.55)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 65,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 65,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 6
-===================================================== -->
-
+<!-- PRODUCT 6 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-SMART WATCH
-</span>
-
+<span class="product-label">SMART WATCH</span>
 <div class="product-placeholder">
-KALOBEE
-<br>
-SK40
+KALOBEE<br>SK40
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Kalobee Smart Watch SK40 AMOLED
-</h3>
-
-<p>
-AMOLED smart watch listed in the Tanzania electronics market.
-</p>
+<h3>Kalobee Smart Watch SK40 AMOLED</h3>
+<p>AMOLED smart watch listed in the Tanzania electronics market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$47.22
-</span>
+<span class="price">$47.22</span>
 
 <a
 class="order-btn"
@@ -1277,57 +990,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Kalobee Smart Watch SK40 AMOLED',47.22)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 125,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 125,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 7
-===================================================== -->
-
+<!-- PRODUCT 7 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-SMART WATCH
-</span>
-
+<span class="product-label">SMART WATCH</span>
 <div class="product-placeholder">
-A8 ULTRA
-<br>
-SMART WATCH
+A8 ULTRA<br>SMART WATCH
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-A8 Ultra Smart Watch
-</h3>
-
-<p>
-Affordable smart watch listed in the Tanzania market.
-</p>
+<h3>A8 Ultra Smart Watch</h3>
+<p>Affordable smart watch listed in the Tanzania market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$13.22
-</span>
+<span class="price">$13.22</span>
 
 <a
 class="order-btn"
@@ -1335,57 +1020,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('A8 Ultra Smart Watch',13.22)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 35,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 35,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 8
-===================================================== -->
-
+<!-- PRODUCT 8 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-AUDIO
-</span>
-
+<span class="product-label">AUDIO</span>
 <div class="product-placeholder">
-JBL
-<br>
-WAVE 200
+JBL<br>WAVE 200
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-JBL Wave 200 Wireless Earphones
-</h3>
-
-<p>
-Wireless Bluetooth earphones listed in the Tanzania market.
-</p>
+<h3>JBL Wave 200 Wireless Earphones</h3>
+<p>Wireless Bluetooth earphones listed in the Tanzania market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$75.54
-</span>
+<span class="price">$75.54</span>
 
 <a
 class="order-btn"
@@ -1393,57 +1050,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('JBL Wave 200 Wireless Earphones',75.54)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 200,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 200,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 9
-===================================================== -->
-
+<!-- PRODUCT 9 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-ACCESSORY
-</span>
-
+<span class="product-label">ACCESSORY</span>
 <div class="product-placeholder">
-LAPTOP
-<br>
-STAND
+LAPTOP<br>STAND
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Go-Des Multi Functional Stand GD-HD375
-</h3>
-
-<p>
-Multi-functional stand for laptops, phones and tablets.
-</p>
+<h3>Go-Des Multi Functional Stand GD-HD375</h3>
+<p>Multi-functional stand for laptops, phones and tablets.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$24.55
-</span>
+<span class="price">$24.55</span>
 
 <a
 class="order-btn"
@@ -1451,57 +1080,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Go-Des Multi Functional Stand GD-HD375',24.55)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 65,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 65,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 10
-===================================================== -->
-
+<!-- PRODUCT 10 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-CREATOR
-</span>
-
+<span class="product-label">CREATOR</span>
 <div class="product-placeholder">
-VLOGGING
-<br>
-KIT
+VLOGGING<br>KIT
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Vlogging Kit AY-49Z
-</h3>
-
-<p>
-Vlogging kit for smartphone content creation.
-</p>
+<h3>Vlogging Kit AY-49Z</h3>
+<p>Vlogging kit for smartphone content creation.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$30.22
-</span>
+<span class="price">$30.22</span>
 
 <a
 class="order-btn"
@@ -1509,57 +1110,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Vlogging Kit AY-49Z',30.22)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 80,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 80,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 11
-===================================================== -->
-
+<!-- PRODUCT 11 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-HOME
-</span>
-
+<span class="product-label">HOME</span>
 <div class="product-placeholder">
-USB
-<br>
-SPEAKER
+USB<br>SPEAKER
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Wired Multimedia USB 2.1 Speaker SK-612
-</h3>
-
-<p>
-Compact multimedia USB speaker system for everyday audio.
-</p>
+<h3>Wired Multimedia USB 2.1 Speaker SK-612</h3>
+<p>Compact multimedia USB speaker system for everyday audio.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$22.67
-</span>
+<span class="price">$22.67</span>
 
 <a
 class="order-btn"
@@ -1567,57 +1140,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Wired Multimedia USB 2.1 Speaker SK-612',22.67)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 60,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 60,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 12
-===================================================== -->
-
+<!-- PRODUCT 12 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-GAMING
-</span>
-
+<span class="product-label">GAMING</span>
 <div class="product-placeholder">
-FASTER
-<br>
-BG600
+FASTER<br>BG600
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-FASTER BG600 Gaming Headphones
-</h3>
-
-<p>
-Gaming headphones listed in the Tanzania electronics market.
-</p>
+<h3>FASTER BG600 Gaming Headphones</h3>
+<p>Gaming headphones listed in the Tanzania electronics market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$86.89
-</span>
+<span class="price">$86.89</span>
 
 <a
 class="order-btn"
@@ -1625,57 +1170,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('FASTER BG600 Gaming Headphones',86.89)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 230,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 230,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 13
-===================================================== -->
-
+<!-- PRODUCT 13 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-MICROPHONE
-</span>
-
+<span class="product-label">MICROPHONE</span>
 <div class="product-placeholder">
-JMARY
-<br>
-MC-PW8
+JMARY<br>MC-PW8
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Jmary MC-PW8 USB Microphone
-</h3>
-
-<p>
-USB microphone listed for audio and content creation.
-</p>
+<h3>Jmary MC-PW8 USB Microphone</h3>
+<p>USB microphone listed for audio and content creation.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$56.67
-</span>
+<span class="price">$56.67</span>
 
 <a
 class="order-btn"
@@ -1683,57 +1200,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Jmary MC-PW8 USB Microphone',56.67)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 150,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 150,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 14
-===================================================== -->
-
+<!-- PRODUCT 14 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-DRONE
-</span>
-
+<span class="product-label">DRONE</span>
 <div class="product-placeholder">
-E88
-<br>
-PRO DRONE
+E88<br>PRO DRONE
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-E88 Pro Drone
-</h3>
-
-<p>
-Compact drone product listed in the Tanzania market.
-</p>
+<h3>E88 Pro Drone</h3>
+<p>Compact drone product listed in the Tanzania market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$56.67
-</span>
+<span class="price">$56.67</span>
 
 <a
 class="order-btn"
@@ -1741,57 +1230,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('E88 Pro Drone',56.67)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 150,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 150,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 15
-===================================================== -->
-
+<!-- PRODUCT 15 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-ACCESSORY
-</span>
-
+<span class="product-label">ACCESSORY</span>
 <div class="product-placeholder">
-TRAVEL
-<br>
-ADAPTER
+TRAVEL<br>ADAPTER
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Universal Travel Adapter
-</h3>
-
-<p>
-Universal travel adapter listed in the Tanzania market.
-</p>
+<h3>Universal Travel Adapter</h3>
+<p>Universal travel adapter listed in the Tanzania market.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$9.44
-</span>
+<span class="price">$9.44</span>
 
 <a
 class="order-btn"
@@ -1799,57 +1260,29 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Universal Travel Adapter',9.44)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 25,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 25,000</small>
 </div>
-
 </article>
 
-
-<!-- =====================================================
-     PRODUCT 16
-===================================================== -->
-
+<!-- PRODUCT 16 -->
 <article class="product-card">
-
 <div class="product-visual">
-
-<span class="product-label">
-ACCESSORY
-</span>
-
+<span class="product-label">ACCESSORY</span>
 <div class="product-placeholder">
-YESIDO
-<br>
-OTG
+YESIDO<br>OTG
 </div>
-
 </div>
 
 <div class="product-info">
-
-<h3>
-Yesido 2-in-1 OTG
-</h3>
-
-<p>
-Compact phone connectivity accessory.
-</p>
+<h3>Yesido 2-in-1 OTG</h3>
+<p>Compact phone connectivity accessory.</p>
 
 <div class="product-bottom">
-
-<span class="price">
-$3.78
-</span>
+<span class="price">$3.78</span>
 
 <a
 class="order-btn"
@@ -1857,32 +1290,35 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackProduct('Yesido 2-in-1 OTG',3.78)">
-
 WhatsApp
-
 </a>
-
 </div>
 
-<small class="source">
-Source: Smart Product TZ — TSh 10,000
-</small>
-
+<small class="source">Source: Smart Product TZ — TSh 10,000</small>
 </div>
-
 </article>
-     <!-- PRODUCT 17 -->
+
+<!-- PRODUCT 17 -->
 <article class="product-card">
 <div class="product-visual">
 <span class="product-label">NEW</span>
-<img src="product17.jpeg" alt="Product 17" style="width: 100%; height: 100%; object-fit: cover;">
+<img src="Product17.jpeg" alt="Product 17">
 </div>
+
 <div class="product-info">
 <h3>Product 17</h3>
 <p>Selected product from TURIN PREMIUM STORE.</p>
+
 <div class="product-bottom">
 <span class="price">Contact for price</span>
-<a class="order-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2017." target="_blank" rel="noopener">WhatsApp</a>
+
+<a
+class="order-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2017."
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
 </div>
 </div>
 </article>
@@ -1891,14 +1327,23 @@ Source: Smart Product TZ — TSh 10,000
 <article class="product-card">
 <div class="product-visual">
 <span class="product-label">NEW</span>
-<img src="Product%2018.jpeg" alt="Product 18" style="width:100%;height:100%;object-fit:cover;">
+<img src="Product18.jpeg" alt="Product 18">
 </div>
+
 <div class="product-info">
 <h3>Product 18</h3>
 <p>Selected product from TURIN PREMIUM STORE.</p>
+
 <div class="product-bottom">
 <span class="price">Contact for price</span>
-<a class="order-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2018." target="_blank" rel="noopener">WhatsApp</a>
+
+<a
+class="order-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2018."
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
 </div>
 </div>
 </article>
@@ -1907,14 +1352,23 @@ Source: Smart Product TZ — TSh 10,000
 <article class="product-card">
 <div class="product-visual">
 <span class="product-label">NEW</span>
-<img src="Product%2019.jpeg" alt="Product 19" style="width:100%;height:100%;object-fit:cover;">
+<img src="Product19.jpeg" alt="Product 19">
 </div>
+
 <div class="product-info">
 <h3>Product 19</h3>
 <p>Selected product from TURIN PREMIUM STORE.</p>
+
 <div class="product-bottom">
 <span class="price">Contact for price</span>
-<a class="order-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2019." target="_blank" rel="noopener">WhatsApp</a>
+
+<a
+class="order-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2019."
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
 </div>
 </div>
 </article>
@@ -1923,14 +1377,23 @@ Source: Smart Product TZ — TSh 10,000
 <article class="product-card">
 <div class="product-visual">
 <span class="product-label">NEW</span>
-<img src="Product%2020.jpeg" alt="Product 20" style="width:100%;height:100%;object-fit:cover;">
+<img src="Product20.jpeg" alt="Product 20">
 </div>
+
 <div class="product-info">
 <h3>Product 20</h3>
 <p>Selected product from TURIN PREMIUM STORE.</p>
+
 <div class="product-bottom">
 <span class="price">Contact for price</span>
-<a class="order-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2020." target="_blank" rel="noopener">WhatsApp</a>
+
+<a
+class="order-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2020."
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
 </div>
 </div>
 </article>
@@ -1939,30 +1402,30 @@ Source: Smart Product TZ — TSh 10,000
 <article class="product-card">
 <div class="product-visual">
 <span class="product-label">NEW</span>
-<img src="Product%2021.jpeg" alt="Product 21" style="width:100%;height:100%;object-fit:cover;">
+<img src="Product21.jpeg" alt="Product 21">
 </div>
+
 <div class="product-info">
 <h3>Product 21</h3>
 <p>Selected product from TURIN PREMIUM STORE.</p>
+
 <div class="product-bottom">
 <span class="price">Contact for price</span>
-<a class="order-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2021." target="_blank" rel="noopener">WhatsApp</a>
+
+<a
+class="order-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20order%20Product%2021."
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
 </div>
 </div>
 </article>
-</article>
-
-
 
 </div>
-
 </div>
-
-</div>
-
 </section>
-
-<!-- ABOUT -->
 
 <section id="about">
 
@@ -1975,14 +1438,10 @@ Source: Smart Product TZ — TSh 10,000
 <span
 class="eyebrow"
 style="color:#111;border-color:#ccc;">
-
 WHY TURIN
-
 </span>
 
-<h2>
-Built for modern shopping.
-</h2>
+<h2>Built for modern shopping.</h2>
 
 </div>
 
@@ -1996,75 +1455,43 @@ WhatsApp ordering together in one simple experience.
 <div class="features">
 
 <div class="feature">
-
-<div class="feature-icon">
-01
-</div>
-
-<h3>
-Curated Products
-</h3>
-
+<div class="feature-icon">01</div>
+<h3>Curated Products</h3>
 <p>
 Selected products are presented with their available source
 pricing instead of inventing product information.
 </p>
-
 </div>
 
 <div class="feature">
-
-<div class="feature-icon">
-02
-</div>
-
-<h3>
-Direct Orders
-</h3>
-
+<div class="feature-icon">02</div>
+<h3>Direct Orders</h3>
 <p>
 Customers can contact TURIN PREMIUM STORE directly through
 WhatsApp to place an order.
 </p>
-
 </div>
 
 <div class="feature">
-
-<div class="feature-icon">
-03
-</div>
-
-<h3>
-Mobile Friendly
-</h3>
-
+<div class="feature-icon">03</div>
+<h3>Mobile Friendly</h3>
 <p>
 The storefront is designed to work across phones, tablets
 and desktop screens.
 </p>
-
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- CONTACT -->
-
-<section
-class="contact-section"
-id="contact">
+<section class="contact-section" id="contact">
 
 <div class="container contact-box">
 
 <div>
 
-<h2>
-Ready to order?
-</h2>
+<h2>Ready to order?</h2>
 
 <p>
 Choose a product and contact TURIN PREMIUM STORE on WhatsApp.
@@ -2080,9 +1507,7 @@ href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackWhatsApp('0797955045')">
-
 WhatsApp 0797955045
-
 </a>
 
 <a
@@ -2091,20 +1516,14 @@ href="https://wa.me/255653645209?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20w
 target="_blank"
 rel="noopener"
 onclick="trackWhatsApp('0653645209')">
-
 WhatsApp 0653645209
-
 </a>
 
 </div>
-
 </div>
-
 </section>
 
 </main>
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -2133,24 +1552,12 @@ Quick Links
 
 <div class="footer-links">
 
-<a href="#home">
-Home
-</a>
-
-<a href="#catalogue">
-Catalogue
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#contact">
-Contact
-</a>
+<a href="#home">Home</a>
+<a href="#catalogue">Catalogue</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 
 </div>
-
 </div>
 
 <div>
@@ -2165,18 +1572,14 @@ Customer Support
 href="https://wa.me/255797955045"
 target="_blank"
 rel="noopener">
-
 0797955045
-
 </a>
 
 <a
 href="https://wa.me/255653645209"
 target="_blank"
 rel="noopener">
-
 0653645209
-
 </a>
 
 <a href="/privacy-policy.html">
@@ -2184,7 +1587,6 @@ Privacy Policy
 </a>
 
 </div>
-
 </div>
 
 </div>
@@ -2197,17 +1599,12 @@ TURIN PREMIUM STORE.
 All rights reserved.
 </span>
 
-<span>
-Official storefront
-</span>
+<span>Official storefront</span>
 
 </div>
 
 </div>
-
 </footer>
-
-<!-- FLOATING WHATSAPP -->
 
 <a
 class="floating-whatsapp"
@@ -2216,12 +1613,8 @@ target="_blank"
 rel="noopener"
 aria-label="Contact TURIN PREMIUM STORE on WhatsApp"
 onclick="trackWhatsApp('floating')">
-
 ☎
-
 </a>
-
-<!-- JAVASCRIPT -->
 
 <script>
 
@@ -2268,7 +1661,6 @@ error
 }
 
 };
-
 
 window.trackProduct=function(name,value){
 
