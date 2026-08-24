@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TURIN PREMIUM STORE | Fashion, Electronics & Lifestyle</title>
+<title>TURIN PREMIUM STORE | The Art of Premium Living</title>
 
-<meta name="description" content="TURIN PREMIUM STORE — shop selected fashion, electronics, gadgets and lifestyle products. Order directly through WhatsApp.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://turin-premium-store.onrender.com/">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="TURIN PREMIUM STORE">
-<meta property="og:description" content="Premium products. Simple shopping. Direct WhatsApp ordering.">
-<meta property="og:url" content="https://turin-premium-store.onrender.com/">
+<meta name="description" content="TURIN PREMIUM STORE — Premium fashion, technology, electronics, accessories and lifestyle products. Order directly via WhatsApp.">
+<meta name="theme-color" content="#080808">
 
 <!-- GOOGLE TAG MANAGER -->
 <script>
@@ -28,7 +22,7 @@ f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMZP7XBG');
 </script>
 
-<!-- GA4 -->
+<!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
 <script>
 window.dataLayer=window.dataLayer||[];
@@ -39,50 +33,32 @@ gtag('config','G-RF9N3ZKHT9');
 
 <!-- META PIXEL -->
 <script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
-};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
-t=b.createElement(e);t.async=!0;t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1324825756528057');
 fbq('init','1320201370196026');
 fbq('track','PageView');
 </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1324825756528057&ev=PageView&noscript=1" alt="">
-</noscript>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Store",
- "name":"TURIN PREMIUM STORE",
- "url":"https://turin-premium-store.onrender.com/",
- "telephone":"+255797955045",
- "description":"Fashion, electronics, gadgets and lifestyle products."
-}
-</script>
-
 <style>
 :root{
---black:#0b0b0b;
---dark:#151515;
---gold:#c9a227;
+--black:#070707;
+--black2:#111111;
+--gold:#c8a15a;
+--gold2:#e3c889;
+--cream:#f6f2e9;
 --white:#fff;
---soft:#f6f6f4;
---gray:#707070;
---line:#e5e5e5;
+--muted:#77736b;
+--line:#ded9cf;
 --green:#25d366;
---max:1240px;
+--max:1280px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -91,125 +67,152 @@ html{scroll-behavior:smooth}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
+background:#faf9f6;
 color:#111;
-background:#fff;
 line-height:1.6;
 }
 
 a{text-decoration:none;color:inherit}
 
-img{max-width:100%;display:block}
+button{font-family:inherit}
 
 .container{
 width:min(92%,var(--max));
 margin:auto;
 }
 
-.topbar{
-background:#000;
-color:#fff;
+/* TOP */
+.top{
+background:#050505;
+color:#dfc78e;
 text-align:center;
+font-size:9px;
+font-weight:800;
+letter-spacing:2px;
 padding:9px;
-font-size:12px;
-font-weight:700;
-letter-spacing:.7px;
 }
 
+/* NAV */
 header{
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(255,255,255,.96);
-backdrop-filter:blur(12px);
-border-bottom:1px solid var(--line);
+background:rgba(7,7,7,.96);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .nav{
-min-height:74px;
+height:76px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:20px;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:900;
-letter-spacing:.7px;
 }
 
 .logo{
-width:42px;
-height:42px;
+display:flex;
+align-items:center;
+gap:12px;
+color:white;
+}
+
+.logo-mark{
+width:43px;
+height:43px;
+border:1px solid var(--gold);
 border-radius:50%;
 display:grid;
 place-items:center;
-background:#111;
-color:#fff;
-font-size:18px;
+font-family:Georgia,serif;
+font-size:21px;
+color:var(--gold2);
 }
 
-nav ul{
+.logo-name{
+font-size:12px;
+font-weight:900;
+letter-spacing:2px;
+}
+
+.logo-sub{
+font-size:7px;
+letter-spacing:2px;
+color:#888;
+display:block;
+margin-top:3px;
+}
+
+nav{
 display:flex;
-gap:25px;
-list-style:none;
 align-items:center;
+gap:28px;
 }
 
 nav a{
-font-size:14px;
-font-weight:700;
+color:#ddd;
+font-size:10px;
+font-weight:800;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
-.nav-order{
-background:#111;
-color:#fff;
-padding:10px 17px;
+nav a:hover{color:var(--gold2)}
+
+.nav-btn{
+border:1px solid rgba(200,161,90,.6);
+padding:11px 18px;
 border-radius:30px;
+color:var(--gold2)!important;
 }
 
+/* HERO */
 .hero{
 background:
-radial-gradient(circle at 80% 20%,rgba(201,162,39,.2),transparent 30%),
-linear-gradient(135deg,#090909,#252525);
+radial-gradient(circle at 85% 25%,rgba(200,161,90,.18),transparent 27%),
+linear-gradient(135deg,#050505,#121212 60%,#080808);
 color:#fff;
-padding:95px 0;
+padding:105px 0;
+overflow:hidden;
 }
 
 .hero-grid{
 display:grid;
-grid-template-columns:1.1fr .9fr;
-gap:60px;
+grid-template-columns:1.05fr .95fr;
+gap:70px;
 align-items:center;
 }
 
 .badge{
 display:inline-block;
-padding:7px 13px;
-border:1px solid #777;
+border:1px solid rgba(200,161,90,.45);
+color:var(--gold2);
+padding:8px 14px;
 border-radius:30px;
-font-size:11px;
-font-weight:800;
-letter-spacing:1.5px;
-margin-bottom:20px;
+font-size:8px;
+font-weight:900;
+letter-spacing:2px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:clamp(45px,7vw,82px);
-line-height:.96;
+font-family:Georgia,serif;
+font-weight:400;
+font-size:clamp(55px,7vw,92px);
+line-height:.9;
 letter-spacing:-4px;
-margin-bottom:22px;
 }
 
-.hero h1 span{color:var(--gold)}
+.hero h1 em{
+color:var(--gold2);
+font-style:italic;
+}
 
 .hero p{
-max-width:620px;
-color:#d2d2d2;
-font-size:17px;
-margin-bottom:30px;
+max-width:610px;
+color:#aaa;
+font-size:15px;
+line-height:1.9;
+margin:28px 0 32px;
 }
 
 .buttons{
@@ -219,364 +222,683 @@ flex-wrap:wrap;
 }
 
 .btn{
-padding:14px 23px;
-border-radius:30px;
-font-weight:900;
 display:inline-flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
+padding:15px 23px;
+border-radius:40px;
+font-size:10px;
+font-weight:900;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
-.btn-white{
-background:#fff;
-color:#111;
+.btn-gold{
+background:linear-gradient(135deg,#e2c47d,#ae8140);
+color:#080808;
 }
 
-.btn-outline{
-border:1px solid #777;
+.btn-dark{
+border:1px solid rgba(255,255,255,.25);
 color:#fff;
 }
 
-.hero-box{
-height:360px;
-border:1px solid #444;
+.hero-card{
+min-height:460px;
 border-radius:30px;
-display:grid;
-place-items:center;
-background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.13);
+background:
+radial-gradient(circle at 50% 35%,rgba(200,161,90,.14),transparent 30%),
+linear-gradient(145deg,#1b1b1b,#080808);
+display:flex;
+align-items:flex-end;
+padding:25px;
+box-shadow:0 40px 100px rgba(0,0,0,.4);
 }
 
 .hero-inner{
-text-align:center;
-padding:50px;
+width:100%;
+padding:25px;
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+background:rgba(0,0,0,.4);
 }
 
-.hero-inner strong{
-font-size:22px;
+.hero-inner small{
+color:var(--gold2);
+font-weight:900;
+letter-spacing:2px;
+font-size:8px;
+}
+
+.hero-inner h2{
+font-family:Georgia,serif;
+font-weight:400;
+font-size:31px;
+line-height:1.1;
+margin:10px 0;
+}
+
+.hero-inner p{
+font-size:11px;
+color:#999;
+margin:0;
+line-height:1.7;
+}
+
+.phone{
+border-top:1px solid rgba(255,255,255,.1);
+margin-top:20px;
+padding-top:15px;
+color:var(--gold2);
+font-size:11px;
+font-weight:900;
+}
+
+/* TRUST */
+.trust{
+background:#fff;
+border-bottom:1px solid var(--line);
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+padding:22px 15px;
+border-right:1px solid var(--line);
+}
+
+.trust-item:last-child{border:0}
+
+.trust-item b{
 display:block;
-margin-top:15px;
+font-size:10px;
 }
 
-.hero-icon{font-size:90px}
+.trust-item span{
+font-size:9px;
+color:#888;
+}
 
-section{padding:80px 0}
+/* SECTIONS */
+section{padding:90px 0}
 
-.catalogue{background:var(--soft)}
+.label{
+font-size:9px;
+font-weight:900;
+letter-spacing:2px;
+color:#9a7841;
+text-transform:uppercase;
+margin-bottom:10px;
+}
 
-.section-head{
+.heading{
+font-family:Georgia,serif;
+font-size:clamp(42px,5vw,66px);
+font-weight:400;
+line-height:.95;
+letter-spacing:-2px;
+}
+
+.heading em{
+color:#a27b3e;
+font-style:italic;
+}
+
+/* SHOP */
+.shop{
+background:#f7f4ed;
+}
+
+.shop-head{
 display:flex;
 justify-content:space-between;
-gap:30px;
+gap:40px;
 align-items:end;
 margin-bottom:35px;
 }
 
-.section-head h2{
-font-size:clamp(32px,5vw,52px);
-line-height:1;
-letter-spacing:-2px;
-}
-
-.section-head p{
-max-width:570px;
-color:var(--gray);
+.shop-head p{
+max-width:520px;
+font-size:12px;
+color:#777;
+line-height:1.8;
 }
 
 .filters{
 display:flex;
-gap:10px;
+gap:8px;
 flex-wrap:wrap;
 margin-bottom:30px;
 }
 
 .filter{
-border:1px solid #ccc;
 background:#fff;
-padding:9px 15px;
+border:1px solid #d8d2c7;
 border-radius:30px;
-font-weight:700;
+padding:9px 15px;
+font-size:8px;
+font-weight:900;
+letter-spacing:1px;
 cursor:pointer;
+text-transform:uppercase;
 }
 
 .filter.active,
 .filter:hover{
-background:#111;
+background:#090909;
 color:#fff;
+border-color:#090909;
 }
 
-.product-grid{
+/* PRODUCTS */
+.products{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:22px;
 }
 
-.product-card{
+.product{
 background:#fff;
-border:1px solid var(--line);
-border-radius:18px;
+border:1px solid #e3dfd7;
+border-radius:22px;
 overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-transition:.2s;
+transition:.3s;
 }
 
-.product-card:hover{
-transform:translateY(-4px);
-box-shadow:0 16px 35px rgba(0,0,0,.11);
+.product:hover{
+transform:translateY(-7px);
+box-shadow:0 25px 60px rgba(0,0,0,.1);
 }
 
-.product-image{
-height:280px;
-background:linear-gradient(135deg,#eee,#ddd);
-display:grid;
-place-items:center;
+.product-img{
+height:330px;
 position:relative;
+background:#e9e5dc;
+overflow:hidden;
 }
 
-.product-image img{
+.product-img img{
 width:100%;
 height:100%;
 object-fit:cover;
+transition:.5s;
 }
 
-.placeholder{
-font-size:25px;
-font-weight:900;
-text-align:center;
-letter-spacing:1px;
-padding:25px;
+.product:hover img{
+transform:scale(1.05);
 }
 
 .tag{
 position:absolute;
-top:13px;
-left:13px;
-background:#111;
-color:#fff;
+top:14px;
+left:14px;
+background:#080808;
+color:var(--gold2);
+padding:7px 11px;
 border-radius:20px;
-padding:6px 10px;
-font-size:10px;
+font-size:7px;
 font-weight:900;
+letter-spacing:1.4px;
 z-index:2;
 }
 
 .product-info{padding:20px}
 
 .product-info h3{
-font-size:18px;
-line-height:1.3;
+font-family:Georgia,serif;
+font-size:20px;
+font-weight:400;
 margin-bottom:7px;
 }
 
-.description{
-color:var(--gray);
-font-size:13px;
-min-height:58px;
+.product-info p{
+font-size:10px;
+color:#777;
+line-height:1.7;
+min-height:40px;
 }
-
-.specs{
-font-size:12px;
-margin-top:12px;
-color:#555;
-line-height:1.5;
-}
-
-.specs strong{color:#111}
 
 .product-bottom{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 gap:10px;
-margin-top:17px;
+border-top:1px solid #eee;
+margin-top:15px;
+padding-top:15px;
 }
 
 .price{
-font-size:19px;
+font-size:11px;
 font-weight:900;
+}
+
+.price small{
+display:block;
+font-size:7px;
+color:#999;
+margin-top:2px;
+letter-spacing:1px;
 }
 
 .order{
 background:var(--green);
-padding:10px 14px;
-border-radius:25px;
-font-size:12px;
+color:#06150a;
+padding:10px 15px;
+border-radius:30px;
+font-size:8px;
 font-weight:900;
+text-transform:uppercase;
 }
 
-.trust{
+/* LUXURY */
+.luxury{
+background:#080808;
+color:#fff;
+}
+
+.lux-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.luxury h2{
+font-family:Georgia,serif;
+font-size:clamp(45px,5vw,68px);
+font-weight:400;
+line-height:.95;
+}
+
+.luxury h2 em{
+color:var(--gold2);
+}
+
+.luxury-copy{
+color:#999;
+font-size:12px;
+line-height:1.9;
+margin-top:20px;
+max-width:560px;
+}
+
+.points{
+display:grid;
+gap:12px;
+}
+
+.point{
+display:flex;
+gap:15px;
+padding:18px;
+border:1px solid rgba(255,255,255,.1);
+border-radius:17px;
+}
+
+.point-number{
+color:var(--gold2);
+font-family:Georgia,serif;
+font-size:18px;
+}
+
+.point b{
+display:block;
+font-size:11px;
+}
+
+.point span{
+font-size:9px;
+color:#777;
+}
+
+/* ABOUT */
+.about-grid{
+display:grid;
+grid-template-columns:.8fr 1.2fr;
+gap:70px;
+}
+
+.about-text{
+font-size:13px;
+color:#777;
+line-height:1.9;
+}
+
+.about-text p+p{margin-top:15px}
+
+.stats{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+gap:12px;
+margin-top:28px;
 }
 
-.trust-card{
+.stat{
 border:1px solid var(--line);
-padding:30px;
-border-radius:18px;
+padding:20px;
+border-radius:16px;
+background:#fff;
 }
 
-.trust-number{
-width:45px;
-height:45px;
-border-radius:50%;
-background:#111;
-color:#fff;
-display:grid;
-place-items:center;
+.stat strong{
+display:block;
+font-family:Georgia,serif;
+font-size:27px;
+color:#a47d40;
+}
+
+.stat span{
+font-size:8px;
 font-weight:900;
-margin-bottom:17px;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
-.trust-card p{
-color:var(--gray);
-font-size:14px;
-}
-
-.contact{
-background:#111;
+/* CTA */
+.cta{
+background:
+radial-gradient(circle at 80% 20%,rgba(200,161,90,.16),transparent 30%),
+#0a0a0a;
 color:#fff;
 }
 
-.contact-box{
+.cta-grid{
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:30px;
+gap:40px;
 }
 
-.contact h2{
-font-size:clamp(35px,5vw,55px);
-line-height:1;
-margin-bottom:15px;
+.cta h2{
+font-family:Georgia,serif;
+font-size:clamp(45px,5vw,70px);
+font-weight:400;
+line-height:.95;
 }
 
-.contact p{color:#bbb}
+.cta h2 em{
+color:var(--gold2);
+}
 
-.whatsapp{
-background:var(--green);
-color:#06170a;
-padding:15px 22px;
-border-radius:30px;
+.cta p{
+max-width:600px;
+color:#999;
+font-size:12px;
+line-height:1.8;
+margin-top:15px;
+}
+
+.cta-btn{
+background:linear-gradient(135deg,#e2c47d,#ae8140);
+color:#090909;
+padding:16px 24px;
+border-radius:40px;
+font-size:9px;
 font-weight:900;
-display:inline-block;
+letter-spacing:1px;
+white-space:nowrap;
 }
 
+/* FOOTER */
 footer{
-background:#080808;
+background:#050505;
 color:#fff;
-padding:45px 0 25px;
+padding:60px 0 25px;
 }
 
 .footer-grid{
 display:grid;
 grid-template-columns:1.5fr 1fr 1fr;
 gap:40px;
-padding-bottom:30px;
-border-bottom:1px solid #333;
+padding-bottom:35px;
+border-bottom:1px solid #222;
 }
 
 .footer-title{
-font-weight:900;
+font-family:Georgia,serif;
 font-size:18px;
 margin-bottom:12px;
 }
 
-footer p,footer a{
-color:#999;
-font-size:14px;
+.footer p,
+.footer a{
+font-size:10px;
+color:#777;
+line-height:1.8;
 }
 
 .footer-links{
 display:flex;
 flex-direction:column;
-gap:8px;
+gap:7px;
 }
 
-.copyright{
-padding-top:20px;
-font-size:12px;
-color:#777;
+.footer a:hover{color:var(--gold2)}
+
+.copy{
 display:flex;
 justify-content:space-between;
+padding-top:20px;
+font-size:8px;
+color:#555;
 }
 
+/* WHATSAPP */
 .float{
 position:fixed;
-right:18px;
-bottom:18px;
+right:20px;
+bottom:20px;
+z-index:2000;
 width:58px;
 height:58px;
 border-radius:50%;
-background:var(--green);
 display:grid;
 place-items:center;
-font-size:25px;
+background:var(--green);
+color:#06150a;
+font-size:17px;
 font-weight:900;
-z-index:2000;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
+border:3px solid #fff;
+box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
+.mobile-wa{display:none}
+
+/* MOBILE */
 @media(max-width:900px){
-.hero-grid{grid-template-columns:1fr}
-.product-grid{grid-template-columns:repeat(2,1fr)}
-.trust{grid-template-columns:1fr}
-.contact-box{flex-direction:column;align-items:flex-start}
-.footer-grid{grid-template-columns:1fr 1fr}
+
+.hero-grid,
+.lux-grid,
+.about-grid{
+grid-template-columns:1fr;
 }
 
-@media(max-width:650px){
-.nav{min-height:66px}
-.brand{font-size:12px}
-.logo{width:36px;height:36px}
-nav ul li:not(:last-child){display:none}
-nav ul{gap:7px}
-.nav-order{padding:9px 12px;font-size:12px}
-.hero{padding:65px 0}
-.hero h1{letter-spacing:-2px}
-.hero-box{height:280px}
-section{padding:60px 0}
-.product-grid{grid-template-columns:1fr}
-.product-image{height:300px}
-.section-head{display:block}
-.section-head p{margin-top:15px}
-.footer-grid{grid-template-columns:1fr}
-.copyright{display:block}
+.products{
+grid-template-columns:repeat(2,1fr);
 }
+
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.trust-item:nth-child(2){
+border-right:0;
+}
+
+.shop-head{
+display:block;
+}
+
+.shop-head p{
+margin-top:15px;
+}
+
+.cta-grid{
+display:block;
+}
+
+.cta-btn{
+display:inline-block;
+margin-top:25px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+nav a:not(.nav-btn){
+display:none;
+}
+
+.logo-name{
+font-size:9px;
+}
+
+.logo-sub{
+display:none;
+}
+
+.hero{
+padding:70px 0;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero-card{
+min-height:320px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
+.product-img{
+height:340px;
+}
+
+.trust-item{
+padding:15px 10px;
+}
+
+.trust-item b{
+font-size:8px;
+}
+
+.trust-item span{
+font-size:7px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+section{
+padding:65px 0;
+}
+
+.float{
+bottom:80px;
+right:15px;
+width:53px;
+height:53px;
+}
+
+.mobile-wa{
+display:block;
+position:fixed;
+bottom:12px;
+left:12px;
+right:12px;
+z-index:1999;
+background:#090909;
+color:var(--gold2);
+border:1px solid rgba(200,161,90,.5);
+padding:13px;
+border-radius:30px;
+text-align:center;
+font-size:9px;
+font-weight:900;
+letter-spacing:1px;
+}
+
+.copy{
+display:block;
+}
+
+.copy span{
+display:block;
+margin-top:5px;
+}
+
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.hero-grid>*{
+animation:fadeUp .8s ease both;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- GTM NOSCRIPT -->
 <noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
+height="0"
+width="0"
+style="display:none;visibility:hidden"></iframe>
 </noscript>
 
-<div class="topbar">
-TURIN PREMIUM STORE — PREMIUM PRODUCTS • DIRECT ORDER • WHATSAPP
+<div class="top">
+BISMILLAH AR-RAHMAN AR-RAHEEM &nbsp; • &nbsp; TURIN PREMIUM STORE &nbsp; • &nbsp; THE ART OF PREMIUM LIVING
 </div>
 
 <header>
 <div class="container nav">
 
-<a href="#home" class="brand">
-<span class="logo">T</span>
-<span>TURIN PREMIUM STORE</span>
+<a href="#home" class="logo">
+
+<div class="logo-mark">T</div>
+
+<div>
+<div class="logo-name">TURIN PREMIUM STORE</div>
+<span class="logo-sub">QUALITY • STYLE • CONVENIENCE</span>
+</div>
+
 </a>
 
 <nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#catalogue">Shop</a></li>
-<li><a href="#about">About</a></li>
-<li>
-<a class="nav-order"
+
+<a href="#home">Home</a>
+<a href="#shop">Collection</a>
+<a href="#experience">Experience</a>
+<a href="#about">About</a>
+
+<a
+class="nav-btn"
 href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
 target="_blank">
-Order
+Private Order
 </a>
-</li>
-</ul>
+
 </nav>
 
 </div>
@@ -584,579 +906,623 @@ Order
 
 <main>
 
+<!-- HERO -->
 <section class="hero" id="home">
+
 <div class="container hero-grid">
 
 <div>
-<span class="badge">WELCOME TO TURIN</span>
+
+<div class="badge">WELCOME TO TURIN</div>
 
 <h1>
-SHOP SMART.<br>
-<span>LIVE PREMIUM.</span>
+The Art of<br>
+<em>Premium Living.</em>
 </h1>
 
 <p>
-Discover carefully selected fashion, audio, smart devices,
-electronics, accessories and lifestyle products from
-TURIN PREMIUM STORE.
+Discover a carefully selected world of fashion,
+technology, electronics, accessories and lifestyle
+essentials — presented with elegance and personal service.
 </p>
 
 <div class="buttons">
-<a class="btn btn-white" href="#catalogue">Explore Products</a>
-<a class="btn btn-outline"
-href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20want%20to%20shop."
-target="_blank">
-Order on WhatsApp
+
+<a class="btn btn-gold" href="#shop">
+Explore Collection
 </a>
-</div>
+
+<a
+class="btn btn-dark"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20help%20choosing%20a%20product."
+target="_blank">
+Speak With Us
+</a>
+
 </div>
 
-<div class="hero-box">
+</div>
+
+<div class="hero-card">
+
 <div class="hero-inner">
-<div class="hero-icon">🛍️</div>
-<strong>TURIN PREMIUM STORE</strong>
-<span>Quality • Style • Convenience</span>
-</div>
+
+<small>TURIN PRIVATE SHOPPING</small>
+
+<h2>
+Selected with taste.<br>
+Delivered with confidence.
+</h2>
+
+<p>
+Find your preferred product and connect directly
+with our team for availability, pricing and delivery.
+</p>
+
+<div class="phone">
++255 797 955 045
 </div>
 
 </div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="catalogue" id="catalogue">
+<!-- TRUST -->
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div class="trust-item">
+<b>◆ CURATED SELECTION</b>
+<span>Products chosen with care</span>
+</div>
+
+<div class="trust-item">
+<b>✓ PERSONAL SERVICE</b>
+<span>Direct WhatsApp assistance</span>
+</div>
+
+<div class="trust-item">
+<b>◇ PREMIUM EXPERIENCE</b>
+<span>Elegant shopping experience</span>
+</div>
+
+<div class="trust-item">
+<b>↗ DIRECT ORDERING</b>
+<span>Simple one-to-one ordering</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- SHOP -->
+<section class="shop" id="shop">
 
 <div class="container">
 
-<div class="section-head">
+<div class="shop-head">
+
 <div>
-<span class="badge" style="color:#111;border-color:#bbb">CATALOGUE</span>
-<h2>Featured Products</h2>
+<div class="label">THE COLLECTION</div>
+<h2 class="heading">Curated <em>Essentials.</em></h2>
 </div>
 
 <p>
-Explore our growing selection of products. Select a product
-and order directly through WhatsApp.
+Explore our selected collection. For current price,
+availability and delivery information, order directly
+through WhatsApp.
 </p>
+
 </div>
 
 <div class="filters">
+
 <button class="filter active" onclick="filterProducts('all',this)">All</button>
 <button class="filter" onclick="filterProducts('audio',this)">Audio</button>
 <button class="filter" onclick="filterProducts('smart',this)">Smart Tech</button>
 <button class="filter" onclick="filterProducts('mobile',this)">Mobile</button>
-<button class="filter" onclick="filterProducts('creator',this)">Creator</button>
 <button class="filter" onclick="filterProducts('fashion',this)">Fashion</button>
-<button class="filter" onclick="filterProducts('home',this)">Lifestyle</button>
+<button class="filter" onclick="filterProducts('lifestyle',this)">Lifestyle</button>
+
 </div>
 
-<div class="product-grid">
+<div class="products">
 
-<!-- 01 -->
-<article class="product-card" data-category="audio">
-<div class="product-image">
+<!-- 1 -->
+<article class="product" data-category="audio">
+
+<div class="product-img">
 <span class="tag">AUDIO</span>
-<div class="placeholder">PHILIPS<br>TAT1108</div>
+<img src="Product17.jpeg" alt="Premium Audio Collection" loading="lazy">
 </div>
+
 <div class="product-info">
-<h3>Philips TAT1108 True Wireless Earbuds</h3>
-<p class="description">Compact true wireless Bluetooth earbuds designed for everyday listening.</p>
-<div class="specs"><strong>Type:</strong> TWS Bluetooth<br><strong>Features:</strong> Wireless • Charging case • Compact fit</div>
-<div class="product-bottom"><span class="price">$29.99</span><a class="order" onclick="order('Philips TAT1108',29.99)">WhatsApp</a></div>
+<h3>Premium Audio Collection</h3>
+<p>Selected audio products for immersive listening and modern entertainment.</p>
+
+<div class="product-bottom">
+<div class="price">Price on Request<small>PRIVATE ORDER</small></div>
+<a class="order" data-product="Premium Audio Collection">Order</a>
 </div>
+</div>
+
 </article>
 
-<!-- 02 -->
-<article class="product-card" data-category="audio">
-<div class="product-image"><span class="tag">AUDIO</span><div class="placeholder">JBL<br>WAVE 200</div></div>
-<div class="product-info">
-<h3>JBL Wave 200 TWS</h3>
-<p class="description">Wireless earbuds for music, calls and everyday mobile use.</p>
-<div class="specs"><strong>Type:</strong> TWS earbuds<br><strong>Features:</strong> Bluetooth • Charging case • Hands-free calls</div>
-<div class="product-bottom"><span class="price">$59.99</span><a class="order" onclick="order('JBL Wave 200 TWS',59.99)">WhatsApp</a></div>
+<!-- 2 -->
+<article class="product" data-category="smart">
+
+<div class="product-img">
+<span class="tag">SMART TECH</span>
+<img src="Product18.jpeg" alt="Smart Technology Collection" loading="lazy">
 </div>
+
+<div class="product-info">
+<h3>Smart Technology Collection</h3>
+<p>Modern smart devices selected for performance, convenience and lifestyle.</p>
+
+<div class="product-bottom">
+<div class="price">Price on Request<small>PRIVATE ORDER</small></div>
+<a class="order" data-product="Smart Technology Collection">Order</a>
+</div>
+</div>
+
 </article>
 
-<!-- 03 -->
-<article class="product-card" data-category="audio">
-<div class="product-image"><span class="tag">AUDIO</span><div class="placeholder">WIRELESS<br>HEADPHONES</div></div>
-<div class="product-info">
-<h3>Bluetooth Wireless Headphones</h3>
-<p class="description">Over-ear wireless headphones for music, entertainment and calls.</p>
-<div class="specs"><strong>Type:</strong> Wireless headphones<br><strong>Features:</strong> Bluetooth • Rechargeable • Over-ear design</div>
-<div class="product-bottom"><span class="price">$39.99</span><a class="order" onclick="order('Bluetooth Wireless Headphones',39.99)">WhatsApp</a></div>
+<!-- 3 -->
+<article class="product" data-category="mobile">
+
+<div class="product-img">
+<span class="tag">MOBILE</span>
+<img src="Product19.jpeg" alt="Mobile Essentials" loading="lazy">
 </div>
+
+<div class="product-info">
+<h3>Mobile Essentials</h3>
+<p>Premium mobile accessories selected for style and everyday performance.</p>
+
+<div class="product-bottom">
+<div class="price">Price on Request<small>PRIVATE ORDER</small></div>
+<a class="order" data-product="Mobile Essentials">Order</a>
+</div>
+</div>
+
 </article>
 
-<!-- 04 -->
-<article class="product-card" data-category="audio">
-<div class="product-image"><span class="tag">GAMING</span><div class="placeholder">GAMING<br>HEADSET</div></div>
-<div class="product-info">
-<h3>FASTER BG600 Gaming Headphones</h3>
-<p class="description">Gaming headset designed for immersive gaming and communication.</p>
-<div class="specs"><strong>Type:</strong> Gaming headset<br><strong>Features:</strong> Microphone • Over-ear • Gaming audio</div>
-<div class="product-bottom"><span class="price">$86.89</span><a class="order" onclick="order('FASTER BG600 Gaming Headphones',86.89)">WhatsApp</a></div>
+<!-- 4 -->
+<article class="product" data-category="fashion">
+
+<div class="product-img">
+<span class="tag">FASHION</span>
+<img src="Product20.jpeg" alt="Premium Fashion Collection" loading="lazy">
 </div>
+
+<div class="product-info">
+<h3>Premium Fashion Collection</h3>
+<p>Refined everyday pieces selected for a clean and confident appearance.</p>
+
+<div class="product-bottom">
+<div class="price">Price on Request<small>PRIVATE ORDER</small></div>
+<a class="order" data-product="Premium Fashion Collection">Order</a>
+</div>
+</div>
+
 </article>
 
-<!-- 05 -->
-<article class="product-card" data-category="audio">
-<div class="product-image"><span class="tag">CREATOR</span><div class="placeholder">BOYA<br>BY-MW3</div></div>
-<div class="product-info">
-<h3>BOYA BY-MW3 Wireless Microphone</h3>
-<p class="description">Wireless microphone solution for interviews, videos and mobile content.</p>
-<div class="specs"><strong>Type:</strong> Wireless microphone<br><strong>Features:</strong> Dual-channel setup • Mobile recording</div>
-<div class="product-bottom"><span class="price">$24.55</span><a class="order" onclick="order('BOYA BY-MW3 Wireless Microphone',24.55)">WhatsApp</a></div>
+<!-- 5 -->
+<article class="product" data-category="lifestyle">
+
+<div class="product-img">
+<span class="tag">LIFESTYLE</span>
+<img src="Product21.jpeg" alt="Premium Lifestyle Collection" loading="lazy">
 </div>
+
+<div class="product-info">
+<h3>Premium Lifestyle Collection</h3>
+<p>Thoughtfully selected lifestyle products designed for better everyday living.</p>
+
+<div class="product-bottom">
+<div class="price">Price on Request<small>PRIVATE ORDER</small></div>
+<a class="order" data-product="Premium Lifestyle Collection">Order</a>
+</div>
+</div>
+
 </article>
 
-<!-- 06 -->
-<article class="product-card" data-category="creator">
-<div class="product-image"><span class="tag">CREATOR</span><div class="placeholder">K9<br>WIRELESS MIC</div></div>
+<!-- 6 -->
+<article class="product" data-category="lifestyle">
+
+<div
+class="product-img"
+style="
+display:grid;
+place-items:center;
+background:
+radial-gradient(circle,rgba(200,161,90,.2),transparent 25%),
+linear-gradient(145deg,#191919,#050505);
+">
+
+<div style="text-align:center;color:white">
+
+<div style="
+font-family:Georgia,serif;
+font-size:48px;
+color:#dfc486;
+">
+TURIN
+</div>
+
+<div style="
+font-size:7px;
+letter-spacing:3px;
+color:#777;
+font-weight:900;
+">
+PRIVATE EDIT
+</div>
+
+</div>
+
+</div>
+
 <div class="product-info">
-<h3>K9 Dual Wireless Microphone</h3>
-<p class="description">Compact wireless microphone kit for smartphone content creation.</p>
-<div class="specs"><strong>Type:</strong> Wireless mic<br><strong>Features:</strong> Dual microphone • Mobile recording</div>
-<div class="product-bottom"><span class="price">$20.78</span><a class="order" onclick="order('K9 Dual Wireless Microphone',20.78)">WhatsApp</a></div>
-</div>
-</article>
 
-<!-- 07 -->
-<article class="product-card" data-category="creator">
-<div class="product-image"><span class="tag">CREATOR</span><div class="placeholder">F11-2<br>DUAL MIC</div></div>
-<div class="product-info">
-<h3>F11-2 Dual Wireless Microphone</h3>
-<p class="description">Wireless dual microphone designed for mobile video and recording.</p>
-<div class="specs"><strong>Type:</strong> Dual wireless mic<br><strong>Use:</strong> Interviews • Reels • TikTok • Video</div>
-<div class="product-bottom"><span class="price">$30.22</span><a class="order" onclick="order('F11-2 Dual Wireless Microphone',30.22)">WhatsApp</a></div>
-</div>
-</article>
+<h3>The Turin Edit</h3>
 
-<!-- 08 -->
-<article class="product-card" data-category="creator">
-<div class="product-image"><span class="tag">CREATOR</span><div class="placeholder">JMARY<br>MC-PW8</div></div>
-<div class="product-info">
-<h3>Jmary MC-PW8 USB Microphone</h3>
-<p class="description">USB microphone suitable for voice recording, streaming and content creation.</p>
-<div class="specs"><strong>Connection:</strong> USB<br><strong>Use:</strong> Streaming • Podcast • Recording</div>
-<div class="product-bottom"><span class="price">$56.67</span><a class="order" onclick="order('Jmary MC-PW8 USB Microphone',56.67)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 09 -->
-<article class="product-card" data-category="creator">
-<div class="product-image"><span class="tag">CREATOR</span><div class="placeholder">VLOGGING<br>KIT</div></div>
-<div class="product-info">
-<h3>AY-49Z Vlogging Kit</h3>
-<p class="description">Compact creator kit for smartphone photography and video production.</p>
-<div class="specs"><strong>Type:</strong> Mobile creator kit<br><strong>Use:</strong> Vlogging • Video • Social media</div>
-<div class="product-bottom"><span class="price">$30.22</span><a class="order" onclick="order('AY-49Z Vlogging Kit',30.22)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 10 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">SMART</span><div class="placeholder">SK40<br>AMOLED</div></div>
-<div class="product-info">
-<h3>Kalobee SK40 AMOLED Smart Watch</h3>
-<p class="description">Smart wearable with an AMOLED display and everyday fitness features.</p>
-<div class="specs"><strong>Type:</strong> Smartwatch<br><strong>Display:</strong> AMOLED • Notifications • Fitness functions</div>
-<div class="product-bottom"><span class="price">$47.22</span><a class="order" onclick="order('Kalobee SK40 AMOLED Smart Watch',47.22)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 11 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">SMART</span><div class="placeholder">A8 ULTRA<br>WATCH</div></div>
-<div class="product-info">
-<h3>A8 Ultra Smart Watch</h3>
-<p class="description">Affordable smartwatch for everyday notifications and lifestyle tracking.</p>
-<div class="specs"><strong>Type:</strong> Smartwatch<br><strong>Features:</strong> Smart notifications • Fitness functions</div>
-<div class="product-bottom"><span class="price">$13.22</span><a class="order" onclick="order('A8 Ultra Smart Watch',13.22)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 12 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">SMART</span><div class="placeholder">SMART<br>GLASSES</div></div>
-<div class="product-info">
-<h3>Senbono E13 Smart Glasses</h3>
-<p class="description">Smart wearable glasses designed for connected everyday use.</p>
-<div class="specs"><strong>Type:</strong> Smart wearable<br><strong>Features:</strong> Bluetooth connectivity • Hands-free functions</div>
-<div class="product-bottom"><span class="price">$49.99</span><a class="order" onclick="order('Senbono E13 Smart Glasses',49.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 13 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">GADGET</span><div class="placeholder">HY300<br>PROJECTOR</div></div>
-<div class="product-info">
-<h3>HY300 Portable Android Projector</h3>
-<p class="description">Compact projector for home entertainment, presentations and media.</p>
-<div class="specs"><strong>Type:</strong> Portable projector<br><strong>Features:</strong> Android • Wi-Fi • Bluetooth • Portable design</div>
-<div class="product-bottom"><span class="price">$136.05</span><a class="order" onclick="order('HY300 Portable Android Projector',136.05)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 14 -->
-<article class="product-card" data-category="mobile">
-<div class="product-image"><span class="tag">MOBILE</span><div class="placeholder">YESIDO<br>OTG</div></div>
-<div class="product-info">
-<h3>Yesido 2-in-1 OTG Adapter</h3>
-<p class="description">Compact connectivity accessory for compatible smartphones and devices.</p>
-<div class="specs"><strong>Type:</strong> OTG adapter<br><strong>Use:</strong> Mobile connectivity • Data transfer</div>
-<div class="product-bottom"><span class="price">$3.78</span><a class="order" onclick="order('Yesido 2-in-1 OTG Adapter',3.78)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 15 -->
-<article class="product-card" data-category="mobile">
-<div class="product-image"><span class="tag">MOBILE</span><div class="placeholder">FAST<br>CHARGER</div></div>
-<div class="product-info">
-<h3>USB Fast Charging Adapter</h3>
-<p class="description">Compact charging accessory for everyday smartphone use.</p>
-<div class="specs"><strong>Type:</strong> USB charger<br><strong>Use:</strong> Smartphone • Mobile accessories</div>
-<div class="product-bottom"><span class="price">$12.99</span><a class="order" onclick="order('USB Fast Charging Adapter',12.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 16 -->
-<article class="product-card" data-category="mobile">
-<div class="product-image"><span class="tag">MOBILE</span><div class="placeholder">POWER<br>BANK</div></div>
-<div class="product-info">
-<h3>Portable Power Bank</h3>
-<p class="description">Portable rechargeable battery for keeping mobile devices powered on the go.</p>
-<div class="specs"><strong>Type:</strong> Power bank<br><strong>Features:</strong> USB charging • Portable design</div>
-<div class="product-bottom"><span class="price">$24.99</span><a class="order" onclick="order('Portable Power Bank',24.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 17 -->
-<article class="product-card" data-category="mobile">
-<div class="product-image"><span class="tag">ACCESSORY</span><div class="placeholder">USB-C<br>CABLE</div></div>
-<div class="product-info">
-<h3>USB-C Fast Charging Cable</h3>
-<p class="description">Everyday USB-C cable for charging and compatible device connectivity.</p>
-<div class="specs"><strong>Type:</strong> USB-C cable<br><strong>Use:</strong> Charging • Data transfer</div>
-<div class="product-bottom"><span class="price">$9.99</span><a class="order" onclick="order('USB-C Fast Charging Cable',9.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 18 -->
-<article class="product-card" data-category="mobile">
-<div class="product-image"><span class="tag">ACCESSORY</span><div class="placeholder">PHONE<br>STAND</div></div>
-<div class="product-info">
-<h3>Adjustable Phone Stand</h3>
-<p class="description">Adjustable stand for comfortable viewing during work, calls and entertainment.</p>
-<div class="specs"><strong>Type:</strong> Phone stand<br><strong>Features:</strong> Adjustable • Foldable • Desktop use</div>
-<div class="product-bottom"><span class="price">$14.99</span><a class="order" onclick="order('Adjustable Phone Stand',14.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 19 -->
-<article class="product-card" data-category="home">
-<div class="product-image"><span class="tag">HOME</span><div class="placeholder">USB<br>SPEAKER</div></div>
-<div class="product-info">
-<h3>SK-612 USB 2.1 Multimedia Speaker</h3>
-<p class="description">Compact multimedia speaker system for computers and everyday entertainment.</p>
-<div class="specs"><strong>Type:</strong> USB speaker<br><strong>System:</strong> 2.1 multimedia audio</div>
-<div class="product-bottom"><span class="price">$22.67</span><a class="order" onclick="order('SK-612 USB 2.1 Multimedia Speaker',22.67)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 20 -->
-<article class="product-card" data-category="home">
-<div class="product-image"><span class="tag">ACCESSORY</span><div class="placeholder">LAPTOP<br>STAND</div></div>
-<div class="product-info">
-<h3>Go-Des GD-HD375 Multi-Functional Stand</h3>
-<p class="description">Multi-purpose stand designed for laptops, phones and tablets.</p>
-<div class="specs"><strong>Type:</strong> Multi-device stand<br><strong>Use:</strong> Laptop • Phone • Tablet</div>
-<div class="product-bottom"><span class="price">$24.55</span><a class="order" onclick="order('Go-Des GD-HD375 Multi-Functional Stand',24.55)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 21 -->
-<article class="product-card" data-category="home">
-<div class="product-image"><span class="tag">HOME</span><div class="placeholder">CERAMIC<br>VASE</div></div>
-<div class="product-info">
-<h3>Artisan Ceramic Vase</h3>
-<p class="description">Decorative ceramic piece designed to add a premium touch to interiors.</p>
-<div class="specs"><strong>Material:</strong> Ceramic<br><strong>Use:</strong> Home decoration • Interior styling</div>
-<div class="product-bottom"><span class="price">$34.99</span><a class="order" onclick="order('Artisan Ceramic Vase',34.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 22 -->
-<article class="product-card" data-category="home">
-<div class="product-image"><span class="tag">HOME</span><div class="placeholder">DECORATIVE<br>BOWL</div></div>
-<div class="product-info">
-<h3>Decorative Bowl</h3>
-<p class="description">Decorative home accessory for modern interior styling.</p>
-<div class="specs"><strong>Type:</strong> Decorative bowl<br><strong>Use:</strong> Interior decoration • Table styling</div>
-<div class="product-bottom"><span class="price">$29.99</span><a class="order" onclick="order('Decorative Bowl',29.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 23 -->
-<article class="product-card" data-category="fashion">
-<div class="product-image"><span class="tag">FASHION</span><div class="placeholder">WHITE<br>T-SHIRT</div></div>
-<div class="product-info">
-<h3>Premium White T-Shirt</h3>
-<p class="description">Clean everyday T-shirt designed for simple modern styling.</p>
-<div class="specs"><strong>Category:</strong> Fashion<br><strong>Style:</strong> Casual • Everyday wear</div>
-<div class="product-bottom"><span class="price">$25.00</span><a class="order" onclick="order('Premium White T-Shirt',25)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 24 -->
-<article class="product-card" data-category="fashion">
-<div class="product-image"><span class="tag">FASHION</span><div class="placeholder">TRACK<br>JEANS</div></div>
-<div class="product-info">
-<h3>Black Track Jeans</h3>
-<p class="description">Modern black casual trousers for everyday streetwear styling.</p>
-<div class="specs"><strong>Category:</strong> Fashion<br><strong>Style:</strong> Casual • Streetwear</div>
-<div class="product-bottom"><span class="price">$35.00</span><a class="order" onclick="order('Black Track Jeans',35)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 25 -->
-<article class="product-card" data-category="fashion">
-<div class="product-image"><span class="tag">FASHION</span><div class="placeholder">BLUE<br>SHIRT</div></div>
-<div class="product-info">
-<h3>Long Sleeve Blue Shirt</h3>
-<p class="description">Versatile long-sleeve shirt for smart-casual outfits.</p>
-<div class="specs"><strong>Category:</strong> Fashion<br><strong>Style:</strong> Smart casual • Long sleeve</div>
-<div class="product-bottom"><span class="price">$32.00</span><a class="order" onclick="order('Long Sleeve Blue Shirt',32)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 26 -->
-<article class="product-card" data-category="fashion">
-<div class="product-image"><span class="tag">FASHION</span><div class="placeholder">HOODIE</div></div>
-<div class="product-info">
-<h3>Premium Casual Hoodie</h3>
-<p class="description">Comfort-focused hoodie for casual everyday wear.</p>
-<div class="specs"><strong>Category:</strong> Fashion<br><strong>Style:</strong> Casual • Comfortable</div>
-<div class="product-bottom"><span class="price">$39.99</span><a class="order" onclick="order('Premium Casual Hoodie',39.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 27 -->
-<article class="product-card" data-category="fashion">
-<div class="product-image"><span class="tag">FASHION</span><div class="placeholder">SATIN<br>SET</div></div>
-<div class="product-info">
-<h3>Wrap Satin Blouse & Wide-Leg Pants Set</h3>
-<p class="description">Elegant coordinated satin outfit for a polished fashion look.</p>
-<div class="specs"><strong>Category:</strong> Women's fashion<br><strong>Style:</strong> Satin • Coordinated set</div>
-<div class="product-bottom"><span class="price">$49.99</span><a class="order" onclick="order('Wrap Satin Blouse and Wide-Leg Pants Set',49.99)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 28 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">GADGET</span><div class="placeholder">E88<br>DRONE</div></div>
-<div class="product-info">
-<h3>E88 Pro Drone</h3>
-<p class="description">Compact consumer drone designed for recreational aerial photography.</p>
-<div class="specs"><strong>Type:</strong> Consumer drone<br><strong>Features:</strong> Foldable design • Camera-equipped variants</div>
-<div class="product-bottom"><span class="price">$56.67</span><a class="order" onclick="order('E88 Pro Drone',56.67)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 29 -->
-<article class="product-card" data-category="home">
-<div class="product-image"><span class="tag">TRAVEL</span><div class="placeholder">UNIVERSAL<br>ADAPTER</div></div>
-<div class="product-info">
-<h3>Universal Travel Adapter</h3>
-<p class="description">Travel accessory designed to support charging across different plug formats.</p>
-<div class="specs"><strong>Type:</strong> Travel adapter<br><strong>Use:</strong> Travel • Charging compatibility</div>
-<div class="product-bottom"><span class="price">$9.44</span><a class="order" onclick="order('Universal Travel Adapter',9.44)">WhatsApp</a></div>
-</div>
-</article>
-
-<!-- 30 -->
-<article class="product-card" data-category="smart">
-<div class="product-image"><span class="tag">GADGET</span><div class="placeholder">SMART<br>GADGET</div></div>
-<div class="product-info">
-<h3>Portable Smart Lifestyle Gadget</h3>
-<p class="description">Selected compact technology accessory for modern everyday use.</p>
-<div class="specs"><strong>Category:</strong> Smart lifestyle<br><strong>Use:</strong> Everyday technology • Portable use</div>
-<div class="product-bottom"><span class="price">$29.99</span><a class="order" onclick="order('Portable Smart Lifestyle Gadget',29.99)">WhatsApp</a></div>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section id="about">
-<div class="container">
-
-<div class="section-head">
-<div>
-<span class="badge" style="color:#111;border-color:#bbb">WHY TURIN</span>
-<h2>Built for trust.</h2>
-</div>
 <p>
-TURIN PREMIUM STORE combines product discovery, clear information
-and direct customer communication in one simple shopping experience.
+Looking for something specific? Speak directly
+with our team for a personalised recommendation.
 </p>
-</div>
 
-<div class="trust">
-
-<div class="trust-card">
-<div class="trust-number">01</div>
-<h3>Curated Selection</h3>
-<p>Products are organised into clear categories so customers can shop faster.</p>
-</div>
-
-<div class="trust-card">
-<div class="trust-number">02</div>
-<h3>Direct WhatsApp Orders</h3>
-<p>Customers can contact the store directly before completing a purchase.</p>
-</div>
-
-<div class="trust-card">
-<div class="trust-number">03</div>
-<h3>Mobile First</h3>
-<p>The storefront is designed for phones, tablets and desktop screens.</p>
+<div class="product-bottom">
+<div class="price">Personal Service<small>PRIVATE SHOPPING</small></div>
+<a class="order" data-product="A specific product">Ask Us</a>
 </div>
 
 </div>
+
+</article>
+
 </div>
+
+</div>
+
 </section>
 
-<section class="contact" id="contact">
-<div class="container contact-box">
+<!-- LUXURY EXPERIENCE -->
+<section class="luxury" id="experience">
+
+<div class="container lux-grid">
 
 <div>
-<h2>Ready to order?</h2>
-<p>Choose your product and send us a WhatsApp message.</p>
+
+<div class="label">THE TURIN EXPERIENCE</div>
+
+<h2>
+More than shopping.<br>
+<em>A better standard.</em>
+</h2>
+
+<p class="luxury-copy">
+We believe premium shopping should feel effortless.
+Our approach combines carefully selected products,
+elegant presentation and direct personal assistance.
+</p>
+
 </div>
 
+<div class="points">
+
+<div class="point">
+<div class="point-number">01</div>
 <div>
-<a class="whatsapp"
-href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
-target="_blank"
-onclick="trackWhatsApp('0797955045')">
-WhatsApp 0797955045
+<b>Curated Selection</b>
+<span>Products worth discovering.</span>
+</div>
+</div>
+
+<div class="point">
+<div class="point-number">02</div>
+<div>
+<b>Personal Ordering</b>
+<span>Connect directly with our team.</span>
+</div>
+</div>
+
+<div class="point">
+<div class="point-number">03</div>
+<div>
+<b>Simple Experience</b>
+<span>Discover, ask and order effortlessly.</span>
+</div>
+</div>
+
+<div class="point">
+<div class="point-number">04</div>
+<div>
+<b>Premium Presentation</b>
+<span>Every detail is carefully considered.</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+<div class="container about-grid">
+
+<div>
+
+<div class="label">ABOUT TURIN</div>
+
+<h2 class="heading">
+Designed for<br>
+those who <em>value more.</em>
+</h2>
+
+</div>
+
+<div class="about-text">
+
+<p>
+TURIN PREMIUM STORE brings together carefully
+selected fashion, electronics, technology, accessories
+and lifestyle products under one refined shopping experience.
+</p>
+
+<p>
+Our philosophy is simple: quality products, elegant
+presentation and direct customer service.
+</p>
+
+<p>
+Whether you already know what you want or need help
+choosing, our team is available directly through WhatsApp.
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<strong>01</strong>
+<span>Curated</span>
+</div>
+
+<div class="stat">
+<strong>02</strong>
+<span>Personal</span>
+</div>
+
+<div class="stat">
+<strong>03</strong>
+<span>Premium</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<div class="container cta-grid">
+
+<div>
+
+<div class="label">PRIVATE ORDERING</div>
+
+<h2>
+Ready to<br>
+<em>experience Turin?</em>
+</h2>
+
+<p>
+Choose your preferred product and speak directly
+with TURIN PREMIUM STORE. We can confirm
+availability, pricing and delivery before ordering.
+</p>
+
+</div>
+
+<a
+class="cta-btn"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20a%20private%20order."
+target="_blank">
+START PRIVATE ORDER →
 </a>
-</div>
 
 </div>
+
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
+
 <div class="container">
 
 <div class="footer-grid">
 
 <div>
-<div class="footer-title">TURIN PREMIUM STORE</div>
-<p>Premium fashion, electronics, gadgets and lifestyle products with direct WhatsApp ordering.</p>
+
+<div class="footer-title">
+TURIN PREMIUM STORE
+</div>
+
+<p>
+The art of premium living — curated products,
+personal service and a refined shopping experience.
+</p>
+
 </div>
 
 <div>
-<div class="footer-title">Shop</div>
+
+<div class="footer-title">Explore</div>
+
 <div class="footer-links">
-<a href="#catalogue">Catalogue</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#shop">Collection</a>
+<a href="#experience">Experience</a>
+<a href="#about">About Turin</a>
 </div>
+
 </div>
 
 <div>
-<div class="footer-title">Customer Support</div>
+
+<div class="footer-title">Contact</div>
+
 <div class="footer-links">
-<a href="https://wa.me/255797955045" target="_blank">0797955045</a>
-<a href="https://wa.me/255653645209" target="_blank">0653645209</a>
-<a href="/privacy-policy.html">Privacy Policy</a>
+
+<a href="https://wa.me/255797955045" target="_blank">
++255 797 955 045
+</a>
+
+<a href="mailto:info@turin-premium-store.com">
+Email Support
+</a>
+
 </div>
+
 </div>
 
 </div>
 
-<div class="copyright">
-<span>© <span id="year"></span> TURIN PREMIUM STORE. All rights reserved.</span>
-<span>Official Store</span>
+<div class="copy">
+
+<span>© 2026 TURIN PREMIUM STORE. All rights reserved.</span>
+<span>QUALITY • STYLE • CONVENIENCE</span>
+
 </div>
 
 </div>
+
 </footer>
 
-<a class="float"
-href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20help."
+<!-- FLOATING WHATSAPP -->
+<a
+class="float"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20shop."
 target="_blank"
-aria-label="WhatsApp TURIN PREMIUM STORE"
-onclick="trackWhatsApp('floating')">
-☎
+aria-label="WhatsApp">
+WA
+</a>
+
+<a
+class="mobile-wa"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
+target="_blank">
+PRIVATE ORDER ON WHATSAPP →
 </a>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
 
-function order(name,price){
-var message=
-"Hello TURIN PREMIUM STORE,%0A%0A"+
-"I would like to order:%0A"+
-"Product: "+encodeURIComponent(name)+"%0A"+
-"Price: $"+price.toFixed(2)+"%0A%0A"+
-"Please confirm availability and delivery details.";
+/* WHATSAPP */
+const PHONE="255797955045";
+
+function productURL(product){
+
+const text=
+"Hello TURIN PREMIUM STORE,\n\n"+
+"I am interested in: "+product+
+"\n\nPlease confirm availability, current price and delivery information.\n\nThank you.";
+
+return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(text);
+
+}
+
+/* PRODUCT BUTTONS */
+document.querySelectorAll(".order").forEach(function(btn){
+
+const product=btn.dataset.product;
+
+btn.href=productURL(product);
+btn.target="_blank";
+btn.rel="noopener";
+
+btn.addEventListener("click",function(){
 
 if(typeof gtag==="function"){
-gtag("event","begin_checkout",{
-currency:"USD",
-value:price,
-item_name:name,
-quantity:1
+gtag("event","product_order_click",{
+product_name:product,
+store:"TURIN PREMIUM STORE"
 });
 }
 
 if(typeof fbq==="function"){
 fbq("track","InitiateCheckout",{
-content_name:name,
-value:price,
-currency:"USD"
+content_name:product,
+content_category:"TURIN PREMIUM STORE"
 });
 }
 
-window.open(
-"https://wa.me/255797955045?text="+message,
-"_blank"
-);
-}
-
-function trackWhatsApp(number){
-if(typeof gtag==="function"){
-gtag("event","whatsapp_click",{
-phone_number:number
 });
-}
 
-if(typeof fbq==="function"){
-fbq("track","Contact");
-}
-}
+});
 
+/* FILTER */
 function filterProducts(category,button){
 
-document.querySelectorAll(".filter").forEach(function(btn){
-btn.classList.remove("active");
+document.querySelectorAll(".filter").forEach(function(x){
+x.classList.remove("active");
 });
 
 button.classList.add("active");
 
-document.querySelectorAll(".product-card").forEach(function(card){
+document.querySelectorAll(".product").forEach(function(card){
 
-if(category==="all" || card.dataset.category===category){
-card.style.display="";
-}else{
-card.style.display="none";
+card.style.display=
+category==="all" ||
+card.dataset.category===category
+? ""
+: "none";
+
+});
+
+if(typeof gtag==="function"){
+gtag("event","catalogue_filter",{
+category:category
+});
+}
+
+}
+
+/* WHATSAPP TRACKING */
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(link){
+
+link.addEventListener("click",function(){
+
+if(typeof gtag==="function"){
+gtag("event","whatsapp_click",{
+store:"TURIN PREMIUM STORE"
+});
 }
 
 });
+
+});
+
+/* PAGE VIEW EVENT */
+if(typeof gtag==="function"){
+gtag("event","storefront_view",{
+store:"TURIN PREMIUM STORE"
+});
 }
+
 </script>
 
 </body>
