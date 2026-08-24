@@ -1456,42 +1456,31 @@ return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(text);
 /* PRODUCT BUTTONS */
 document.querySelectorAll(".order").forEach(function(btn){
 
-const product=btn.dataset.product;
+  const product = btn.dataset.product;
 
-btn.href=productURL(product);
-btn.target="_blank";
-btn.rel="noopener";
+  btn.href = productURL(product);
+  btn.target = "_blank";
+  btn.rel = "noopener";
 
-btn.addEventListener("click",function(){
+  btn.addEventListener("click",function(){
 
-if(typeof gtag==="function"){
-gtag("event","generate_lead",{
-product_name:product,
-store:"TURIN PREMIUM STORE",
-currency:"TZS"
-});
-}
+    if(typeof gtag==="function"){
+      gtag("event","generate_lead",{
+        product_name:product,
+        store:"TURIN PREMIUM STORE"
+      });
+    }
 
-if(typeof fbq==="function"){
-fbq("track","InitiateCheckout",{
-content_name:product,
-content_category:"TURIN PREMIUM STORE"
-});
-}
+    if(typeof fbq==="function"){
+      fbq("track","InitiateCheckout",{
+        content_name:product,
+        content_category:"TURIN PREMIUM STORE"
+      });
+    }
 
-});
-
-if(typeof fbq==="function"){
-fbq("track","InitiateCheckout",{
-content_name:product,
-content_category:"TURIN PREMIUM STORE"
-});
-}
+  });
 
 });
-
-});
-
 /* FILTER */
 function filterProducts(category,button){
 
