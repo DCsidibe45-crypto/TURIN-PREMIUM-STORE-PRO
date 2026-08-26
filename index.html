@@ -1531,6 +1531,83 @@ store:"TURIN PREMIUM STORE"
 }
 
 </script>
+  <!-- TURIN PREMIUM STORE - GA4 SALES TRACKING -->
+<script>
+(function () {
+  function trackTurinSale(button) {
+    if (typeof gtag !== "function") {
+      console.warn("GA4 gtag haijapatikana");
+      return;
+    }
+
+    var productName =
+      button.getAttribute("data-item-name") ||
+      button.getAttribute("data-name") ||
+      button.getAttribute("data-product") ||
+      "TURIN PREMIUM STORE Product";
+
+    var price =
+      parseFloat(
+        button.getAttribute("data-price") ||
+        button.getAttribute("data-value") ||
+        "0"
+      ) || 0;
+
+    var quantity =
+      parseInt(button.getAttribute("data-quantity") || "1", 10) || 1;
+
+    var transactionId =
+      "TURIN-" +
+      Date.now() +
+      "-" +
+      Math.floor(Math.random() * 100000);
+
+    gtag("event", "purchase", {
+      transaction_id: transactionId,
+      value: price * quantity,
+      currency: "TZS",
+      items: [
+        {
+          item_id:
+            button.getAttribute("data-item-id") ||
+            productName.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+          item_name: productName,
+          price: price,
+          quantity: quantity
+        }
+      ]
+    });
+
+    console.log("TURIN purchase tracked:", {
+      transaction_id: transactionId,
+      product: productName,
+      value: price * quantity
+    });
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(
+      "a[href*='wa.me'], a[href*='whatsapp'], button"
+    );
+
+    if (!button) return;
+
+    var text =
+      (button.innerText || button.textContent || "").toLowerCase();
+
+    var href = button.getAttribute("href") || "";
+
+    if (
+      href.includes("wa.me") ||
+      href.includes("whatsapp") ||
+      text.includes("whatsapp") ||
+      text.includes("order")
+    ) {
+      trackTurinSale(button);
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
