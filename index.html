@@ -1,0 +1,782 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TURIN PREMIUM STORE | Premium Collection</title>
+<meta name="description" content="TURIN PREMIUM STORE — premium phones, audio, smart technology and lifestyle products. Order directly via WhatsApp.">
+<meta name="theme-color" content="#080808"><!-- GA4 --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RF9N3ZKHT9');
+</script><!-- GTM --><script>
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),
+dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NMZP7XBG');
+</script><style>
+:root{
+--black:#070707;
+--black2:#111;
+--gold:#d5b36b;
+--gold2:#f0d99b;
+--cream:#f7f4ed;
+--green:#25d366;
+--text:#171717;
+--muted:#777;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:var(--cream);
+color:var(--text);
+line-height:1.5;
+}
+
+a{text-decoration:none;color:inherit}
+
+.top{
+background:#050505;
+color:var(--gold2);
+text-align:center;
+font-size:9px;
+font-weight:900;
+letter-spacing:2px;
+padding:9px;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,7,7,.97);
+border-bottom:1px solid #252525;
+}
+
+.nav{
+width:min(1200px,92%);
+margin:auto;
+height:74px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+color:#fff;
+font-weight:900;
+letter-spacing:2px;
+font-size:12px;
+}
+
+.logo span{
+display:block;
+font-size:7px;
+color:#888;
+letter-spacing:2px;
+margin-top:4px;
+}
+
+nav{
+display:flex;
+gap:22px;
+align-items:center;
+}
+
+nav a{
+color:#ddd;
+font-size:9px;
+font-weight:900;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.private{
+color:var(--gold2)!important;
+border:1px solid #725b31;
+padding:10px 15px;
+border-radius:30px;
+}
+
+.hero{
+background:
+radial-gradient(circle at 80% 20%,rgba(213,179,107,.18),transparent 30%),
+linear-gradient(135deg,#050505,#151515);
+color:#fff;
+padding:90px 0;
+}
+
+.container{
+width:min(1200px,92%);
+margin:auto;
+}
+
+.hero h1{
+font-family:Georgia,serif;
+font-size:clamp(48px,7vw,85px);
+font-weight:400;
+line-height:.95;
+letter-spacing:-3px;
+max-width:850px;
+}
+
+.hero h1 em{
+color:var(--gold2);
+}
+
+.hero p{
+max-width:650px;
+color:#aaa;
+margin:25px 0;
+font-size:14px;
+line-height:1.8;
+}
+
+.hero-btn{
+display:inline-block;
+background:linear-gradient(135deg,#e8cb82,#ae8140);
+color:#080808;
+padding:14px 22px;
+border-radius:30px;
+font-size:10px;
+font-weight:900;
+letter-spacing:1px;
+}
+
+.section{
+padding:70px 0;
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:25px;
+margin-bottom:30px;
+}
+
+.label{
+font-size:9px;
+font-weight:900;
+letter-spacing:2px;
+color:#98743c;
+margin-bottom:8px;
+}
+
+h2{
+font-family:Georgia,serif;
+font-size:clamp(40px,5vw,62px);
+font-weight:400;
+line-height:1;
+}
+
+h2 em{
+color:#a27b3e;
+}
+
+.section-head p{
+max-width:450px;
+font-size:11px;
+color:#777;
+}
+
+.filters{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-bottom:30px;
+}
+
+.filter{
+border:1px solid #d5d0c6;
+background:#fff;
+border-radius:30px;
+padding:9px 14px;
+font-size:8px;
+font-weight:900;
+letter-spacing:1px;
+cursor:pointer;
+}
+
+.filter.active{
+background:#080808;
+color:#fff;
+border-color:#080808;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.product{
+background:#fff;
+border:1px solid #e2ded5;
+border-radius:18px;
+overflow:hidden;
+transition:.25s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.product-img{
+height:245px;
+background:#ebe7df;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+overflow:hidden;
+}
+
+.product-img img{
+width:100%;
+height:100%;
+object-fit:contain;
+background:#fff;
+}
+
+.no-image{
+padding:25px;
+text-align:center;
+color:#777;
+font-size:11px;
+}
+
+.no-image strong{
+display:block;
+font-family:Georgia,serif;
+font-size:22px;
+color:#333;
+margin-bottom:8px;
+}
+
+.tag{
+position:absolute;
+top:10px;
+left:10px;
+background:#080808;
+color:var(--gold2);
+padding:6px 9px;
+border-radius:20px;
+font-size:7px;
+font-weight:900;
+letter-spacing:1px;
+z-index:2;
+}
+
+.info{
+padding:17px;
+}
+
+.info h3{
+font-family:Georgia,serif;
+font-size:18px;
+font-weight:400;
+min-height:44px;
+}
+
+.price{
+font-weight:900;
+font-size:14px;
+margin-top:8px;
+}
+
+.price-note{
+font-size:7px;
+color:#999;
+letter-spacing:1px;
+margin-top:2px;
+margin-bottom:12px;
+}
+
+.order{
+width:100%;
+border:0;
+background:var(--green);
+color:#071208;
+padding:12px;
+border-radius:25px;
+font-size:8px;
+font-weight:900;
+cursor:pointer;
+letter-spacing:1px;
+}
+
+.trust{
+background:#090909;
+color:#fff;
+padding:35px 0;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.trust-card{
+border:1px solid #292929;
+border-radius:15px;
+padding:18px;
+}
+
+.trust-card b{
+display:block;
+font-size:10px;
+color:var(--gold2);
+margin-bottom:5px;
+}
+
+.trust-card span{
+font-size:9px;
+color:#888;
+}
+
+.notice{
+margin-top:25px;
+background:#111;
+color:#999;
+padding:17px;
+border-radius:12px;
+font-size:10px;
+line-height:1.7;
+}
+
+footer{
+background:#050505;
+color:#777;
+padding:45px 0;
+text-align:center;
+font-size:9px;
+}
+
+footer strong{
+color:#fff;
+}
+
+.float-wa{
+position:fixed;
+right:18px;
+bottom:18px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:var(--green);
+display:grid;
+place-items:center;
+font-weight:900;
+z-index:2000;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+@media(max-width:950px){
+.products{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media(max-width:700px){
+nav a:not(.private){
+display:none;
+}
+
+.section-head{
+display:block;
+}
+
+.section-head p{
+margin-top:15px;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:480px){
+.products{
+grid-template-columns:1fr;
+}
+
+.product-img{
+height:280px;
+}
+
+.trust-grid{
+grid-template-columns:1fr;
+}
+}
+</style></head><body><noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript><div class="top">
+BISMILLAH AR-RAHMAN AR-RAHEEM • TURIN PREMIUM STORE • THE ART OF PREMIUM LIVING
+</div><header>
+<div class="nav"><a href="#home" class="logo">
+TURIN PREMIUM STORE
+<span>QUALITY • STYLE • CONVENIENCE</span>
+</a><nav>
+<a href="#home">Home</a>
+<a href="#collection">Collection</a>
+<a href="#contact">Contact</a><a
+class="private"
+data-track-type="private_order"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
+target="_blank">
+PRIVATE ORDER
+</a>
+
+</nav></div>
+</header><main><section class="hero" id="home">
+<div class="container"><div class="label" style="color:#d5b36b">
+WELCOME TO TURIN
+</div><h1>
+The Art of<br>
+<em>Premium Living.</em>
+</h1><p>
+Discover phones, audio, smart technology and lifestyle
+products selected for customers who value quality,
+style and convenience.
+</p><a class="hero-btn" href="#collection">
+EXPLORE 40 PRODUCTS →
+</a></div>
+</section><section class="section" id="collection">
+<div class="container"><div class="section-head"><div>
+<div class="label">THE COLLECTION</div>
+<h2>Curated <em>Essentials.</em></h2>
+</div><p>
+Prices shown are researched listing prices.
+Confirm exact variant, availability and delivery
+before payment.
+</p></div><div class="filters">
+<button class="filter active" onclick="filterProducts('all',this)">ALL</button>
+<button class="filter" onclick="filterProducts('mobile',this)">MOBILE</button>
+<button class="filter" onclick="filterProducts('audio',this)">AUDIO</button>
+<button class="filter" onclick="filterProducts('smart',this)">SMART TECH</button>
+<button class="filter" onclick="filterProducts('lifestyle',this)">LIFESTYLE</button>
+</div><div class="products" id="products"></div><div class="notice">
+<strong>IMPORTANT:</strong>
+Prices can change according to storage, colour, condition,
+seller and availability. Contact TURIN on WhatsApp to
+confirm the exact product before payment.
+</div></div>
+</section><div class="trust">
+<div class="container trust-grid"><div class="trust-card">
+<b>◆ CURATED</b>
+<span>Selected products worth discovering.</span>
+</div><div class="trust-card">
+<b>✓ DIRECT ORDERING</b>
+<span>Order directly through WhatsApp.</span>
+</div><div class="trust-card">
+<b>◇ PERSONAL SERVICE</b>
+<span>Confirm availability and variant with our team.</span>
+</div><div class="trust-card">
+<b>↗ SIMPLE EXPERIENCE</b>
+<span>Discover → Order → Confirm.</span>
+</div></div>
+</div><section class="section" id="contact">
+<div class="container" style="text-align:center"><div class="label">PRIVATE ORDERING</div><h2>
+Ready to <em>shop Turin?</em>
+</h2><p style="max-width:550px;margin:20px auto;color:#777;font-size:12px">
+Choose a product and click ORDER. WhatsApp will open with
+the product and listed price already prepared.
+</p><a
+class="hero-btn"
+data-track-type="cta_private_order"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20an%20order."
+target="_blank">
+START PRIVATE ORDER →
+</a>
+
+</div>
+</section></main><footer>
+<strong>TURIN PREMIUM STORE</strong><br><br>
+The Art of Premium Living<br>
++255 797 955 045<br><br>
+© 2026 TURIN PREMIUM STORE. All rights reserved.
+</footer><a
+class="float-wa"
+data-track-type="floating_whatsapp"
+href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20shop."
+target="_blank">
+WA
+</a>
+
+<script>
+
+const PHONE = "255797955045";
+
+/*
+REAL RESEARCHED PRODUCT LIST
+Prices are listing prices used for the storefront test.
+*/
+const products = [
+{name:"Apple iPhone 14 128GB",price:1540000,cat:"mobile"},
+{name:"Apple iPhone 14 Pro",price:2000000,cat:"mobile"},
+{name:"Apple iPhone 14 Pro Max",price:2150000,cat:"mobile"},
+{name:"Apple iPhone 15 Pro",price:3200000,cat:"mobile"},
+{name:"Apple iPhone 15 Pro Max",price:3500000,cat:"mobile"},
+{name:"Apple iPhone 11 Pro Max",price:2800000,cat:"mobile"},
+{name:"Samsung Galaxy S20 Plus",price:600000,cat:"mobile"},
+{name:"Samsung Galaxy S20 Ultra",price:750000,cat:"mobile"},
+{name:"Samsung Galaxy S21 Ultra",price:880000,cat:"mobile"},
+{name:"Samsung Galaxy S22 Ultra",price:1330000,cat:"mobile"},
+{name:"Samsung Galaxy S23 Ultra",price:1980000,cat:"mobile"},
+{name:"Samsung Galaxy S24 Ultra",price:2580000,cat:"mobile"},
+{name:"Google Pixel 7",price:600000,cat:"mobile"},
+{name:"Google Pixel 7a",price:590000,cat:"mobile"},
+{name:"Google Pixel 7 Pro",price:770000,cat:"mobile"},
+{name:"Google Pixel 8 Pro",price:1200000,cat:"mobile"},
+{name:"Oraimo FreePods Pro",price:165000,cat:"audio"},
+{name:"Oraimo Shark 4",price:55000,cat:"audio"},
+{name:"JBL Boombox 3",price:1300000,cat:"audio"},
+{name:"JBL Charge 5",price:400000,cat:"audio"},
+{name:"JBL Clip 5",price:190000,cat:"audio"},
+{name:"JBL Flip 6",price:290000,cat:"audio"},
+{name:"JBL Go 4",price:160000,cat:"audio"},
+{name:"JBL Tune 510BT",price:30000,cat:"audio"},
+{name:"Oraimo Smart Clipper 2 Gold",price:95000,cat:"lifestyle"},
+{name:"Oraimo Smart Blender",price:130000,cat:"lifestyle"},
+{name:"Apple iPad Pro 12.9-inch 128GB",price:2150000,cat:"smart"},
+{name:"4G Wireless Router",price:150000,cat:"smart"},
+{name:"Airtel 5G SmartBox Router",price:110000,cat:"smart"},
+{name:"Aborder 1.8L 4-in-1 Juice Extractor",price:115000,cat:"lifestyle"},
+{name:"Aborder 2L Electric Kettle",price:32000,cat:"lifestyle"},
+{name:"Lenovo ThinkPad E14 Gen 2",price:2490000,cat:"smart"},
+{name:"Lenovo ThinkPad E14 Gen 5",price:2250000,cat:"smart"},
+{name:"Microsoft Surface Laptop 3",price:1250000,cat:"smart"},
+{name:"iPhone 16",price:2600000,cat:"mobile"},
+{name:"iPhone 17",price:3500000,cat:"mobile"},
+{name:"iPhone 17 Pro Max",price:5350000,cat:"mobile"},
+{name:"Samsung Galaxy A17",price:520000,cat:"mobile"},
+{name:"Samsung Galaxy A07s",price:380000,cat:"mobile"},
+{name:"Tecno Camon 20 Pro 8+256GB",price:585000,cat:"mobile"}
+];
+
+/*
+IMPORTANT:
+No fake product photography.
+When a verified image asset is available, put its URL in image.
+Otherwise the card honestly shows the product name.
+*/
+const image = {};
+
+function money(n){
+return "TZS " + Number(n).toLocaleString("en-TZ");
+}
+
+function renderProducts(category="all"){
+
+const box=document.getElementById("products");
+
+box.innerHTML=products.map((p,index)=>{
+
+if(category!=="all" && p.cat!==category)return "";
+
+const visual=image[p.name]
+? `<img src="${image[p.name]}" alt="${p.name}" loading="lazy">`
+: `<div class="no-image">
+<strong>${p.name}</strong>
+<span>Product image</span>
+</div>`;
+
+return `
+<article class="product">
+<div class="product-img">
+<span class="tag">${p.cat.toUpperCase()}</span>
+${visual}
+</div>
+
+<div class="info">
+<h3>${p.name}</h3>
+
+<div class="price">${money(p.price)}</div>
+
+<div class="price-note">
+RESEARCHED LISTING PRICE
+</div>
+
+<button
+class="order"
+onclick="orderProduct(${index})">
+ORDER VIA WHATSAPP
+</button>
+
+</div>
+</article>
+`;
+
+}).join("");
+}
+
+function filterProducts(category,button){
+
+document.querySelectorAll(".filter")
+.forEach(x=>x.classList.remove("active"));
+
+button.classList.add("active");
+
+renderProducts(category);
+
+if(typeof gtag==="function"){
+gtag("event","catalogue_filter",{
+category:category,
+store:"TURIN PREMIUM STORE"
+});
+}
+}
+
+/*
+FIRST ORDER CLICK TRACKING
+--------------------------------
+Only the FIRST product order click
+in this browser session is marked as
+the Drive Sales / purchase test.
+
+Subsequent clicks remain WhatsApp clicks
+and are NOT counted as another purchase.
+*/
+
+let firstOrderTracked =
+sessionStorage.getItem("turin_first_order_click")==="1";
+
+function orderProduct(index){
+
+const product=products[index];
+
+if(!product)return;
+
+if(!firstOrderTracked){
+
+const transactionId =
+"TURIN-FIRST-ORDER-" + Date.now();
+
+/* PURCHASE TEST */
+if(typeof gtag==="function"){
+
+gtag("event","purchase",{
+transaction_id:transactionId,
+value:product.price,
+currency:"TZS",
+
+items:[{
+item_id:"turin-"+index,
+item_name:product.name,
+price:product.price,
+quantity:1
+}]
+});
+
+/* LEAD */
+gtag("event","generate_lead",{
+product_name:product.name,
+value:product.price,
+currency:"TZS",
+method:"WhatsApp",
+first_click:true
+});
+
+/* WHATSAPP */
+gtag("event","whatsapp_click",{
+product_name:product.name,
+location:"product_order",
+first_click:true
+});
+
+}
+
+sessionStorage.setItem(
+"turin_first_order_click",
+"1"
+);
+
+firstOrderTracked=true;
+
+}else{
+
+/* NORMAL SUBSEQUENT CLICK */
+
+if(typeof gtag==="function"){
+
+gtag("event","whatsapp_click",{
+product_name:product.name,
+location:"product_order",
+first_click:false
+});
+
+}
+
+}
+
+/* OPEN WHATSAPP */
+
+const message =
+"Hello TURIN PREMIUM STORE,\n\n"+
+"I am interested in: "+product.name+
+"\n\nListed price: "+money(product.price)+
+"\n\nPlease confirm exact variant, availability and delivery.\n\nThank you.";
+
+const url =
+"https://wa.me/"+PHONE+
+"?text="+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+/*
+GENERAL WHATSAPP TRACKING
+*/
+document.querySelectorAll('a[href*="wa.me"]')
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+const type =
+link.dataset.trackType || "whatsapp_link";
+
+if(typeof gtag==="function"){
+
+gtag("event","whatsapp_click",{
+store:"TURIN PREMIUM STORE",
+location:type
+});
+
+}
+
+});
+
+});
+
+/* INITIAL STOREFRONT EVENT */
+
+if(typeof gtag==="function"){
+
+gtag("event","storefront_view",{
+store:"TURIN PREMIUM STORE"
+});
+
+}
+
+renderProducts();
+
+</script></body>
+</html>
