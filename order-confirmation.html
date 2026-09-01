@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Order Confirmation | TURIN PREMIUM STORE</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#080808">
+
+  <!-- Google Customer Reviews / Opt-in integration -->
+  <script src="https://apis.google.com/js/platform.js?onload=renderOptIn"
+          async defer></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RF9N3ZKHT9');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMZP7XBG');
+  </script>
+
+  <style>
+    :root{
+      --bg:#f5f2eb;--surface:#fff;--ink:#11110f;--muted:#74736e;
+      --line:#ded9cf;--gold:#c9a35c;--gold-light:#efd99e;
+      --black:#080808;--wa:#25d366;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      min-height:100vh;background:var(--bg);color:var(--ink);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+      line-height:1.55;padding:24px;
+    }
+    .wrap{width:min(760px,100%);margin:0 auto}
+    .brand{
+      text-align:center;background:var(--black);color:#fff;
+      border-radius:22px 22px 0 0;padding:25px 20px;
+    }
+    .mark{
+      width:46px;height:46px;margin:0 auto 12px;border:1px solid #65502b;
+      border-radius:14px;display:grid;place-items:center;color:var(--gold-light);
+      font:400 22px Georgia,serif;background:#111;
+    }
+    .brand h1{font:400 27px Georgia,serif;letter-spacing:1px}
+    .brand p{font-size:9px;letter-spacing:2px;color:#999;margin-top:5px}
+    .card{
+      background:var(--surface);border:1px solid var(--line);
+      border-top:0;padding:32px;border-radius:0 0 22px 22px;
+      box-shadow:0 18px 55px rgba(20,18,12,.08);
+    }
+    .success{text-align:center;padding:5px 0 25px}
+    .check{
+      width:58px;height:58px;border-radius:50%;margin:0 auto 16px;
+      display:grid;place-items:center;background:#eaf8ee;color:#147a36;
+      font-size:28px;font-weight:900;
+    }
+    h2{font:400 38px/1.1 Georgia,serif}
+    .success p{color:var(--muted);font-size:12px;margin-top:10px}
+    .details{
+      border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:18px 0 25px
+    }
+    .row{
+      display:flex;justify-content:space-between;gap:20px;
+      padding:14px 16px;border-bottom:1px solid #eee;
+      font-size:11px
+    }
+    .row:last-child{border-bottom:0}
+    .label{color:#888}
+    .value{font-weight:800;text-align:right;word-break:break-word}
+    .notice{
+      background:#111;color:#aaa;border-radius:14px;padding:16px;
+      font-size:10px;line-height:1.8;margin-bottom:24px
+    }
+    .notice strong{color:#fff}
+    .review-box{
+      border:1px solid var(--line);border-radius:16px;padding:20px;
+      background:#faf9f6;margin-bottom:24px
+    }
+    .review-box h3{font:400 22px Georgia,serif;margin-bottom:6px}
+    .review-box p{color:var(--muted);font-size:10px;margin-bottom:14px}
+    #google-opt-in{min-height:20px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{
+      flex:1;min-width:210px;min-height:46px;border-radius:28px;
+      display:flex;align-items:center;justify-content:center;
+      border:1px solid transparent;text-decoration:none;
+      font-size:9px;font-weight:950;letter-spacing:1px;text-transform:uppercase
+    }
+    .btn-gold{background:linear-gradient(135deg,#efd38b,#ae7e38);color:#080808}
+    .btn-outline{background:#fff;border-color:#ccc;color:#222}
+    .footer{text-align:center;color:#999;font-size:9px;margin-top:18px}
+    .error{
+      background:#fff3f1;border:1px solid #f0c4bd;color:#8a2d21;
+      border-radius:14px;padding:15px;font-size:11px;display:none;margin-bottom:20px
+    }
+    @media(max-width:520px){
+      body{padding:10px}.card{padding:22px 16px}
+      h2{font-size:31px}.row{display:block}
+      .value{text-align:left;margin-top:3px}
+      .btn{min-width:100%}
+    }
+  </style>
+</head>
+
+<body>
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<div class="wrap">
+  <div class="brand">
+    <div class="mark">T</div>
+    <h1>TURIN PREMIUM STORE</h1>
+    <p>THE ART OF PREMIUM LIVING</p>
+  </div>
+
+  <main class="card">
+    <div id="missingData" class="error">
+      This confirmation link is missing required order information.
+      Please ask TURIN PREMIUM STORE to send you the correct confirmation link.
+    </div>
+
+    <section class="success">
+      <div class="check">✓</div>
+      <h2>Order Confirmed.</h2>
+      <p>Thank you for choosing TURIN PREMIUM STORE.</p>
+    </section>
+
+    <div class="details">
+      <div class="row">
+        <span class="label">Order ID</span>
+        <span class="value" id="orderId">—</span>
+      </div>
+      <div class="row">
+        <span class="label">Customer email</span>
+        <span class="value" id="email">—</span>
+      </div>
+      <div class="row">
+        <span class="label">Delivery country</span>
+        <span class="value" id="country">—</span>
+      </div>
+      <div class="row">
+        <span class="label">Estimated delivery</span>
+        <span class="value" id="deliveryDate">—</span>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>IMPORTANT:</strong>
+      This page should only be opened after TURIN has actually confirmed the order.
+      The Google Customer Reviews invitation below is intended for genuine completed
+      orders. Do not use this page as a substitute for checkout or as a way to create
+      fake purchases/reviews.
+    </div>
+
+    <section class="review-box">
+      <h3>Share your experience</h3>
+      <p>
+        Google may invite you by email to complete a Customer Reviews survey.
+        Your participation is optional.
+      </p>
+      <div id="google-opt-in"></div>
+    </section>
+
+    <div class="actions">
+      <a class="btn btn-gold" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20help%20with%20my%20order." target="_blank" rel="noopener">
+        Contact TURIN on WhatsApp
+      </a>
+      <a class="btn btn-outline" href="https://turin-premium-store-pro-api.onrender.com/">
+        Back to Store
+      </a>
+    </div>
+
+    <div class="footer">© 2026 TURIN PREMIUM STORE. All rights reserved.</div>
+  </main>
+</div>
+
+<script>
+  /*
+    EXPECTED URL:
+    /order-confirmation.html
+      ?order_id=TURIN-20260901-001
+      &email=customer%40example.com
+      &delivery_country=TZ
+      &estimated_delivery_date=2026-09-05
+
+    IMPORTANT:
+    Do not hard-code a fake customer email, order ID or delivery date.
+    These values must come from a real confirmed order.
+  */
+
+  const params = new URLSearchParams(window.location.search);
+
+  const orderId = params.get("order_id") || "";
+  const email = params.get("email") || "";
+  const country = (params.get("delivery_country") || "TZ").toUpperCase();
+  const deliveryDate = params.get("estimated_delivery_date") || "";
+
+  document.getElementById("orderId").textContent = orderId || "—";
+  document.getElementById("email").textContent = email || "—";
+  document.getElementById("country").textContent = country || "—";
+  document.getElementById("deliveryDate").textContent = deliveryDate || "—";
+
+  const valid =
+    orderId &&
+    email &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) &&
+    country &&
+    deliveryDate;
+
+  if(!valid){
+    document.getElementById("missingData").style.display = "block";
+  }
+
+  function pushEvent(name, params = {}){
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event:name,
+      store:"TURIN PREMIUM STORE",
+      ...params
+    });
+  }
+
+  /*
+    Track only the confirmation-page view.
+    No fake purchase event is sent here.
+  */
+  if(valid){
+    pushEvent("order_confirmation_view", {
+      order_id: orderId,
+      delivery_country: country
+    });
+
+    if(typeof gtag === "function"){
+      gtag("event", "order_confirmation_view", {
+        order_id: orderId,
+        delivery_country: country
+      });
+    }
+  }
+
+  /*
+    Google Customer Reviews Opt-in.
+    This must run with genuine order data.
+  */
+  window.renderOptIn = function(){
+    if(!valid) return;
+
+    if(!window.gapi || !gapi.load) return;
+
+    gapi.load("surveyoptin", function(){
+      window.gapi.surveyoptin.render({
+        "merchant_id": 5790635918,
+        "order_id": orderId,
+        "email": email,
+        "delivery_country": country,
+        "estimated_delivery_date": deliveryDate
+      });
+    });
+  };
+
+  /*
+    platform.js can call renderOptIn before the function above is defined
+    in some load timings. Retry safely.
+  */
+  if(valid){
+    let tries = 0;
+    const timer = setInterval(function(){
+      tries++;
+      if(window.gapi && window.gapi.load){
+        clearInterval(timer);
+        window.renderOptIn();
+      }
+      if(tries > 100) clearInterval(timer);
+    }, 100);
+  }
+</script>
+
+</body>
+</html>
