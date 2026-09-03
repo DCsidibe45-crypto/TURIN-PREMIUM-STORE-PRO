@@ -1,741 +1,697 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-<title>TURIN PREMIUM STORE — Luxury Collection</title>
-<meta content="TURIN PREMIUM STORE — premium and luxury technology, audio, wearables, smart home, power and creator products." name="description"/>
-<meta content="#070707" name="theme-color"/>
-<!-- GA4 -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TURIN PREMIUM STORE | International Online Store</title>
+<meta name="description" content="TURIN PREMIUM STORE — premium technology and lifestyle products with international checkout, worldwide customer details and direct order support.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#090909">
+<link rel="canonical" href="https://turin-premium-store-pro-api.onrender.com/">
+
+<!-- GA4: one implementation only -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
 <script>
 window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-const TURIN_DEBUG = /(?:[?&])(gtm_debug|gtm_auth|gtm_preview)=/.test(location.search);
-gtag('config','G-RF9N3ZKHT9',{debug_mode:TURIN_DEBUG});
+gtag("js",new Date());
+gtag("config","G-RF9N3ZKHT9");
 </script>
-<!-- GOOGLE TAG MANAGER -->
-<script>
-(function(w,d,s,l,i){
-w[l]=w[l]||[];
-w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMZP7XBG');
-</script>
-<style>
-:root{--black:#060606;--gold:#d7b46a;--gold2:#f0d99a;--cream:#f6f1e7;--muted:#8b867c;--line:#26231f;--green:#25d366;--max:1380px}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(92%,var(--max));margin:auto}
-.top{background:#000;color:var(--gold2);text-align:center;font-size:9px;font-weight:800;letter-spacing:2px;padding:10px}
-header{position:sticky;top:0;z-index:1000;background:rgba(6,6,6,.94);backdrop-filter:blur(16px);border-bottom:1px solid #222}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;gap:12px;align-items:center}
-.mark{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font:22px Georgia}
-.logo strong{font-size:12px;letter-spacing:2px}
-.logo small{display:block;color:#777;font-size:7px;letter-spacing:2px;margin-top:2px}
-nav{display:flex;gap:24px;align-items:center}
-nav a{font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:#ddd}
-nav a:hover{color:var(--gold2)}
-.nav-order{border:1px solid #6f592e;border-radius:30px;padding:11px 16px;color:var(--gold2)!important}
-.hero{padding:100px 0 80px;background:radial-gradient(circle at 80% 20%,#3b2c12,transparent 28%),linear-gradient(135deg,#050505,#111 60%,#050505)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.kicker{color:var(--gold2);font-size:9px;font-weight:900;letter-spacing:3px;margin-bottom:18px}
-.hero h1{font:400 clamp(52px,7vw,96px)/.9 Georgia,serif;letter-spacing:-4px}
-.hero h1 em{color:var(--gold2)}
-.hero p{max-width:650px;color:#aaa;margin:28px 0;font-size:14px;line-height:1.9}
-.hero-card{min-height:430px;border:1px solid #333;border-radius:30px;background:radial-gradient(circle at 50% 25%,#493718,transparent 32%),linear-gradient(145deg,#1b1b1b,#070707);display:flex;align-items:end;padding:24px}
-.hero-card-inner{border:1px solid #333;background:#0008;border-radius:20px;padding:24px;width:100%}
-.hero-card-inner h2{font:400 32px/1.05 Georgia,serif;margin:10px 0}
-.hero-card-inner p{color:#888;font-size:11px;margin:0}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:14px 21px;border-radius:30px;font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.gold{background:linear-gradient(135deg,#f0d38b,#a87c38);color:#090909}
-.outline{border:1px solid #555}
-.shop{background:#f5f1e8;color:#111;padding:90px 0}
-.shop-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
-.shop-head h2{font:400 clamp(42px,5vw,68px)/.95 Georgia,serif;letter-spacing:-2px}
-.shop-head h2 em{color:#a47b38}
-.shop-head p{max-width:500px;color:#777;font-size:12px}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-.filter{background:#fff;border:1px solid #d8d1c4;border-radius:30px;padding:9px 14px;font-size:8px;font-weight:900;letter-spacing:1px;text-transform:uppercase;cursor:pointer}
-.filter.active,.filter:hover{background:#090909;color:#fff;border-color:#090909}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.product{background:#fff;border:1px solid #e2ddd3;border-radius:20px;overflow:hidden;transition:.25s}
-.product:hover{transform:translateY(-6px);box-shadow:0 25px 60px #0001}
-.product-img{height:330px;background:#e9e3d7;position:relative;overflow:hidden}
-.product-img img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
-.product:hover img{transform:scale(1.04)}
-.tag{position:absolute;z-index:2;top:13px;left:13px;background:#080808;color:var(--gold2);padding:7px 10px;border-radius:20px;font-size:7px;font-weight:900;letter-spacing:1.3px}
-.img-fallback{display:none;position:absolute;inset:0;place-items:center;text-align:center;background:linear-gradient(145deg,#171717,#050505);color:var(--gold2);font:42px Georgia,serif;letter-spacing:2px}
-.img-fallback small{font:8px Arial;font-weight:900;color:#777;letter-spacing:3px}
-.img-failed img{display:none}
-.img-failed .img-fallback{display:grid}
-.product-info{padding:18px}
-.brand{font-size:8px;font-weight:900;letter-spacing:2px;color:#a17a3c;text-transform:uppercase}
-.product-info h3{font:400 21px/1.1 Georgia,serif;margin:7px 0}
-.product-info p{font-size:10px;color:#777;min-height:38px}
-.product-bottom{display:flex;gap:8px;align-items:center;border-top:1px solid #eee;margin-top:14px;padding-top:14px}
-.view,.order{font-size:8px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;border-radius:30px;padding:10px 12px}
-.view{border:1px solid #ccc;color:#333}
-.order{background:var(--green);color:#06150a}
-.lux{padding:90px 0;background:#080808}
-.lux h2{font:400 clamp(42px,5vw,68px)/.95 Georgia,serif}
-.lux em{color:var(--gold2)}
-.points{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}
-.point{border:1px solid #242424;border-radius:18px;padding:20px}
-.point b{display:block;font-size:11px;margin-bottom:5px}
-.point span{font-size:9px;color:#777}
-footer{padding:50px 0 25px;background:#050505;border-top:1px solid #222;color:#777}
-.footer-line{display:flex;justify-content:space-between;gap:20px;font-size:9px}
-.wa-float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--green);color:#06150a;display:grid;place-items:center;font-weight:900;border:3px solid #fff;z-index:2000}
-@media(max-width:950px){.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.points{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){nav a:not(.nav-order){display:none}.hero{padding:70px 0}.products{grid-template-columns:1fr}.product-img{height:340px}.shop-head{display:block}.shop-head p{margin-top:15px}.points{grid-template-columns:1fr}.footer-line{display:block}}
 
-.cart-pill{border:1px solid #6f592e;border-radius:30px;padding:10px 14px;background:#0d0d0d;color:#f0d99a;font-size:9px;font-weight:900;letter-spacing:1px;cursor:pointer}.cart-count{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:50%;background:#d7b46a;color:#080808;margin-left:5px}.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(8px);z-index:3000;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-box{width:min(960px,100%);max-height:92vh;overflow:auto;background:#f7f3ea;color:#111;border-radius:24px;padding:24px;position:relative;box-shadow:0 30px 100px #0008}.modal-dark{background:#0b0b0b;color:#fff}.close{position:absolute;right:16px;top:14px;width:36px;height:36px;border:1px solid #777;border-radius:50%;background:transparent;color:inherit;cursor:pointer;font-size:18px}.turin-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.detail-img{width:100%;height:390px;object-fit:cover;border-radius:18px;background:#e9e3d7}.turin-btn{border:0;border-radius:30px;padding:13px 18px;font-size:9px;font-weight:900;letter-spacing:1px;cursor:pointer;margin:5px 5px 5px 0}.cart-row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #ddd;font-size:12px}.cart-row button{border:1px solid #bbb;background:#fff;border-radius:20px;padding:7px 10px;cursor:pointer}.checkout-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.field input,.field textarea,.field select{padding:13px;border:1px solid #ccc;border-radius:12px;font:inherit;background:#fff}.method{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}.method label{border:1px solid #ccc;border-radius:12px;padding:12px;cursor:pointer;font-size:10px}.method input{margin-right:6px}.notice{padding:12px;border-radius:12px;background:#eee7da;color:#555;font-size:10px;line-height:1.6;margin:12px 0}@media(max-width:700px){.turin-grid,.checkout-grid{grid-template-columns:1fr}.detail-img{height:300px}}
+<style>
+:root{
+ --black:#080808;--black2:#121212;--gold:#d5b16b;--gold2:#f0dca8;
+ --cream:#f5f2eb;--white:#fff;--ink:#151515;--muted:#777;
+ --line:#e2ddd3;--green:#25d366;--red:#b42318;--blue:#1b5fa7;
+ --shadow:0 18px 50px rgba(0,0,0,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.5}
+body.lock{overflow:hidden}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1200px,92%);margin:auto}
+.topbar{background:#000;color:var(--gold2);text-align:center;padding:8px;font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:100;background:rgba(8,8,8,.97);border-bottom:1px solid #282828}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font:700 17px Georgia,serif;letter-spacing:1.8px;color:#fff}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:25px}
+nav a{color:#ddd;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+.nav-actions{display:flex;align-items:center;gap:9px}
+.nav-btn{border:1px solid #3b3b3b;background:#111;color:#fff;border-radius:24px;padding:10px 15px;font-size:10px;font-weight:700}
+.cart-btn{position:relative;background:var(--gold);color:#090909;border:0}
+.cart-count{position:absolute;right:-5px;top:-7px;background:#fff;color:#000;border-radius:20px;min-width:19px;height:19px;display:grid;place-items:center;font-size:9px;font-weight:900}
+
+.hero{background:radial-gradient(circle at 80% 15%,rgba(213,177,107,.18),transparent 28%),linear-gradient(135deg,#050505,#171717);color:#fff}
+.hero-grid{min-height:610px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:75px 0}
+.eyebrow,.kicker{color:var(--gold);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font:400 clamp(48px,7vw,86px)/.94 Georgia,serif;letter-spacing:-4px;margin:18px 0}
+h1 em{color:var(--gold2);font-style:normal}
+.hero p{max-width:650px;color:#aaa;font-size:15px;line-height:1.9}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:28px;padding:14px 21px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+.btn-gold{background:var(--gold);color:#080808}
+.btn-outline{border:1px solid #484848;color:#fff}
+.hero-panel{border:1px solid #39332a;border-radius:24px;padding:26px;background:linear-gradient(145deg,#24211c,#101010);box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.hero-panel h2{font:400 42px Georgia,serif;color:#e9d39c;margin:30px 0 8px}
+.hero-panel p{font-size:12px;color:#999;margin:0}
+.hero-lines{margin-top:30px;border-top:1px solid #343434}
+.hero-line{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #2b2b2b;font-size:10px;color:#aaa}
+.hero-line b{color:#fff}
+
+section{padding:75px 0}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font:400 48px Georgia,serif;margin:8px 0}
+.section-title p{max-width:650px;margin:auto;color:var(--muted);font-size:13px;line-height:1.8}
+
+.catalog-tools{display:flex;gap:10px;margin-bottom:22px}
+.search{flex:1}
+.search input,.select{width:100%;height:45px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;outline:none}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.product{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s}
+.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.product-img{height:255px;background:linear-gradient(135deg,#f7f4ed,#e9e2d5);position:relative;overflow:hidden}
+.product-img img{width:100%;height:100%;object-fit:contain;background:#fff}.product-img.fallback::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:25px;color:#8a7046;font:600 13px Georgia,serif;letter-spacing:.5px;background:linear-gradient(135deg,#f8f5ee,#e7dfd0)}
+.product-info{padding:16px}
+.cat{font-size:8px;color:#9a763c;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.product h3{font:400 18px/1.2 Georgia,serif;min-height:44px;margin:7px 0}
+.price{font-weight:900;font-size:14px;margin:8px 0 13px}
+.add{width:100%;border:0;background:#090909;color:#fff;padding:12px;border-radius:23px;font-size:9px;font-weight:800;letter-spacing:1px}
+.add:hover{background:#262626}
+.notice{margin-top:22px;background:#111;color:#aaa;border-radius:12px;padding:14px;font-size:10px;line-height:1.7}
+.notice b{color:#fff}
+
+.features{background:#090909;color:#fff}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.feature{border:1px solid #292929;border-radius:16px;padding:22px}
+.feature strong{display:block;font-size:11px;margin-bottom:7px}
+.feature span{color:#999;font-size:10px;line-height:1.7}
+
+.contact{text-align:center;background:#ebe6dc}
+.contact p{max-width:600px;margin:15px auto 25px;color:#777;font-size:13px}
+
+footer{background:#050505;color:#888;padding:45px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px;border-bottom:1px solid #222;padding-bottom:28px}
+footer h3{color:#fff;font-size:12px}
+footer p,footer a{font-size:10px;line-height:1.8}
+footer a:hover{color:var(--gold)}
+.copy{text-align:center;font-size:9px;padding-top:18px}
+
+/* CART + CHECKOUT DRAWER */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:200;opacity:0;pointer-events:none;transition:.2s}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;right:0;top:0;bottom:0;width:min(520px,94vw);background:#fff;z-index:210;transform:translateX(100%);transition:.25s;display:flex;flex-direction:column}
+.drawer.open{transform:translateX(0)}
+.drawer-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+.drawer-head h2{font:400 27px Georgia,serif;margin:0}
+.close{width:37px;height:37px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:22px}
+.drawer-body{overflow:auto;padding:20px;flex:1}
+.cart-item{display:grid;grid-template-columns:65px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #eee}
+.cart-item img{width:65px;height:65px;object-fit:contain;background:#f3f0e9;border-radius:10px}
+.cart-item h4{font:400 15px Georgia,serif;margin:0 0 5px}
+.cart-item p{margin:0;color:#777;font-size:10px}
+.qty{display:flex;align-items:center;gap:6px;margin-top:7px}
+.qty button{width:24px;height:24px;border:1px solid #ddd;background:#fff;border-radius:5px}
+.qty span{font-size:10px;min-width:15px;text-align:center}
+.remove{border:0;background:none;color:#999;font-size:18px}
+.summary{border-top:1px solid #ddd;margin-top:18px;padding-top:15px}
+.sum-row{display:flex;justify-content:space-between;padding:5px 0;font-size:11px}
+.sum-row.total{font-size:15px;font-weight:900;padding-top:12px}
+.checkout-btn{width:100%;border:0;background:#090909;color:#fff;padding:14px;border-radius:26px;font-weight:800;font-size:10px;letter-spacing:1px;margin-top:15px}
+.empty{text-align:center;color:#777;padding:60px 15px}
+.empty strong{display:block;color:#222;font:400 26px Georgia,serif;margin-bottom:8px}
+
+/* CHECKOUT */
+.checkout{display:none}
+.checkout.active{display:block}
+.checkout-back{border:0;background:none;padding:0;color:#777;font-size:11px;margin-bottom:18px}
+.checkout h3{font:400 25px Georgia,serif;margin:0 0 18px}
+.form-section{margin-bottom:24px}
+.form-section h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field{margin-bottom:10px}
+.field.full{grid-column:1/-1}
+.field label{display:block;font-size:9px;font-weight:700;color:#555;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;border:1px solid #d8d3ca;border-radius:9px;padding:11px;background:#fff;outline:none;font-size:11px}
+.field textarea{min-height:70px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#a9874e}
+.required{color:#b42318}
+.pay-options{display:grid;gap:8px}
+.pay-option{border:1px solid #ddd;border-radius:10px;padding:12px;display:flex;gap:9px;align-items:flex-start}
+.pay-option input{margin-top:3px}
+.pay-option b{font-size:10px}
+.pay-option span{display:block;color:#777;font-size:9px;margin-top:2px}
+.checkout-note{background:#f4f1ea;border-radius:10px;padding:12px;font-size:9px;color:#666;line-height:1.7;margin:15px 0}
+.place{width:100%;border:0;background:var(--green);color:#071208;padding:14px;border-radius:25px;font-weight:900;font-size:10px;letter-spacing:1px}
+.error{color:#b42318;font-size:10px;margin:8px 0;display:none}
+.success{display:none;text-align:center;padding:40px 10px}
+.success.active{display:block}
+.success h3{font:400 30px Georgia,serif}
+.order-number{font-weight:900;margin:15px 0}
+.wa-order{display:inline-flex;background:var(--green);padding:13px 18px;border-radius:25px;font-size:10px;font-weight:900}
+
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:90;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#071208;font-size:10px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+
+@media(max-width:950px){
+ .hero-grid{grid-template-columns:1fr}
+ .products{grid-template-columns:repeat(3,1fr)}
+ .feature-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+ nav{display:none}
+ .hero-grid{padding:60px 0}
+ h1{font-size:52px}
+ .products{grid-template-columns:repeat(2,1fr);gap:11px}
+ .product-img{height:230px}
+ .feature-grid,.footer-grid{grid-template-columns:1fr}
+ .catalog-tools{flex-direction:column}
+}
+@media(max-width:470px){
+ .products{grid-template-columns:1fr}
+ .product-img{height:285px}
+ .form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .nav{min-height:64px}
+ .logo{font-size:14px}
+ .hero-panel{padding:20px}
+}
 </style>
 </head>
+
 <body>
-<!-- GOOGLE TAG MANAGER NOSCRIPT -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<div class="top">BISMILLAH AR-RAHMAN AR-RAHEEM • TURIN PREMIUM STORE • THE ART OF PREMIUM LIVING</div>
+
+<div class="topbar">INTERNATIONAL ORDERS • WORLDWIDE CUSTOMER SUPPORT • SECURE CHECKOUT REQUEST</div>
+
 <header>
-<div class="container nav">
-<a class="logo" href="#home"><div class="mark">T</div><div><strong>TURIN PREMIUM STORE</strong><small>QUALITY • STYLE • CONVENIENCE</small></div></a>
-<nav><button class="cart-pill" id="cartFab" type="button">CART <span class="cart-count" id="cartCount">0</span></button>
-<a href="#shop">Collection</a><a href="#experience">Experience</a><a href="#about">About</a>
-<a class="nav-order" data-wa="Private Order" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20place%20a%20private%20order." target="_blank">Private Order</a>
-</nav>
-</div>
+ <div class="container nav">
+  <a class="logo" href="#home">TURIN <span>PREMIUM STORE</span></a>
+
+  <nav>
+   <a href="#home">Home</a>
+   <a href="#products">Shop</a>
+   <a href="#about">About</a>
+   <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+   <a class="nav-btn" href="#products">Shop Now</a>
+   <button class="nav-btn cart-btn" id="cartOpen">Cart <span class="cart-count" id="cartCount">0</span></button>
+  </div>
+ </div>
 </header>
+
 <main>
+
 <section class="hero" id="home">
-<div class="container hero-grid">
-<div>
-<div class="kicker">THE NEW TURIN COLLECTION</div>
-<h1>Premium.<br/><em>Without compromise.</em></h1>
-<p>Discover a refined selection of premium technology, audio, wearables, smart living, portable power and creator equipment. Every item is a real brand/model with a product link for verification.</p>
-<div class="btns"><a class="btn gold" href="#shop">Explore Collection</a><a class="btn outline" data-wa="Help Choosing" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20help%20choosing%20a%20premium%20product." target="_blank">Speak With Turin</a></div>
-</div>
-<div class="hero-card"><div class="hero-card-inner"><div class="kicker">PRIVATE SHOPPING</div><h2>Luxury selection.<br/>Direct service.</h2><p>View the real product source, then order privately through WhatsApp. Prices and availability are confirmed before order acceptance.</p></div></div>
-</div>
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">TURIN / INTERNATIONAL COMMERCE</div>
+   <h1>Premium<br><em>Technology.</em></h1>
+   <p>
+    Shop selected smartphones, audio, smart technology and lifestyle products.
+    Add products to your cart, enter your international shipping details and
+    submit your order for confirmation.
+   </p>
+   <div class="actions">
+    <a class="btn btn-gold" href="#products">Shop Collection</a>
+    <a class="btn btn-outline" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20international%20order%20assistance." target="_blank" rel="noopener">International Support</a>
+   </div>
+  </div>
+
+  <div class="hero-panel">
+   <div class="eyebrow">GLOBAL ORDERING</div>
+   <h2>Choose. Checkout. Confirm.</h2>
+   <p>Designed for customers in Tanzania and international markets.</p>
+   <div class="hero-lines">
+    <div class="hero-line"><span>Currency</span><b>TZS / USD / EUR / GBP</b></div>
+    <div class="hero-line"><span>Shipping</span><b>Worldwide details</b></div>
+    <div class="hero-line"><span>Order support</span><b>WhatsApp + Email</b></div>
+   </div>
+  </div>
+ </div>
 </section>
-<section class="shop" id="shop">
-<div class="container">
-<div class="shop-head"><div><div class="kicker">CURATED COLLECTION</div><h2>30 <em>Verified Product Models.</em></h2></div><p>High-end products only. Use VIEW PRODUCT to inspect the product source, or WHATSAPP ORDER to send the exact product name to TURIN.</p></div>
-<div class="filters">
-<button class="filter active" data-filter="all">All</button>
-<button class="filter" data-filter="audio">Audio</button>
-<button class="filter" data-filter="wearables">Wearables</button>
-<button class="filter" data-filter="glasses">Smart Glasses</button>
-<button class="filter" data-filter="mobile">Smartphones</button>
-<button class="filter" data-filter="smart">Smart Home</button>
-<button class="filter" data-filter="lifestyle">Lifestyle</button>
-<button class="filter" data-filter="power">Portable Power</button>
-<button class="filter" data-filter="creator">Creator Tech</button>
-</div>
-<div class="products">
-<article class="product" data-category="audio" data-name="AirPods Max 2">
-<a class="product-link open-product" data-view-product="AirPods Max 2" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="AirPods Max 2" data-original-src="https://content.abt.com/image.php/28f880b1774c28bbd94e6e3a55517792?canvas=&amp;ck=2&amp;height=750&amp;image=%2Fimages%2Fproducts%2FBDP_Images%2Fapple-headphones-MHWL4AMA.jpg&amp;width=750" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fcontent.abt.com%2Fimage.php%2F28f880b1774c28bbd94e6e3a55517792%3Fcanvas%3D%26ck%3D2%26height%3D750%26image%3D%252Fimages%252Fproducts%252FBDP_Images%252Fapple-headphones-MHWL4AMA.jpg%26width%3D750"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Apple</div>
-<h3>AirPods Max 2</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="AirPods Max 2" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="AirPods Max 2" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="WF-1000XM6">
-<a class="product-link open-product" data-view-product="WF-1000XM6" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="WF-1000XM6" data-original-src="https://sonyworld.ae/cdn/shop/files/WF-1000XM6_Black_Standard-Mid.png?v=1770893136&amp;width=1946" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fsonyworld.ae%2Fcdn%2Fshop%2Ffiles%2FWF-1000XM6_Black_Standard-Mid.png%3Fv%3D1770893136%26width%3D1946"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Sony</div>
-<h3>WF-1000XM6</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="WF-1000XM6" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="WF-1000XM6" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="WH-1000XM6">
-<a class="product-link open-product" data-view-product="WH-1000XM6" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="WH-1000XM6" data-original-src="https://kanjitsu.com/wp-content/uploads/2024/09/5705260099591-1.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fkanjitsu.com%2Fwp-content%2Fuploads%2F2024%2F09%2F5705260099591-1.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Sony</div>
-<h3>WH-1000XM6</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="WH-1000XM6" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="WH-1000XM6" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="QuietComfort Ultra Headphones (2nd Gen)">
-<a class="product-link open-product" data-view-product="QuietComfort Ultra Headphones (2nd Gen)" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="QuietComfort Ultra Headphones (2nd Gen)" data-original-src="https://www.istudio.store/cdn/shop/files/bose-ultra-headphone-2nd-gen-white.005.jpg?v=1762497962&amp;width=823" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.istudio.store%2Fcdn%2Fshop%2Ffiles%2Fbose-ultra-headphone-2nd-gen-white.005.jpg%3Fv%3D1762497962%26width%3D823"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Bose</div>
-<h3>QuietComfort Ultra Headphones (2nd Gen)</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="QuietComfort Ultra Headphones (2nd Gen)" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="QuietComfort Ultra Headphones (2nd Gen)" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="QuietComfort Ultra Earbuds (2nd Gen)">
-<a class="product-link open-product" data-view-product="QuietComfort Ultra Earbuds (2nd Gen)" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="QuietComfort Ultra Earbuds (2nd Gen)" data-original-src="https://www.interdiscount.ch/static-shops/products/720/5a318b80cba86a6c4a9098ea160f1211449a.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.interdiscount.ch%2Fstatic-shops%2Fproducts%2F720%2F5a318b80cba86a6c4a9098ea160f1211449a.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Bose</div>
-<h3>QuietComfort Ultra Earbuds (2nd Gen)</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="QuietComfort Ultra Earbuds (2nd Gen)" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="QuietComfort Ultra Earbuds (2nd Gen)" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="Beoplay H100">
-<a class="product-link open-product" data-view-product="Beoplay H100" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="Beoplay H100" data-original-src="https://images.ctfassets.net/8cd2csgvqd3m/1oCPDpyoTmhCzduYqayGiI/249a52a22a896bf4fece81707d28bf3c/test2.webp?fit=fill&amp;fm=jpg&amp;h=375&amp;q=85&amp;w=375" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fimages.ctfassets.net%2F8cd2csgvqd3m%2F1oCPDpyoTmhCzduYqayGiI%2F249a52a22a896bf4fece81707d28bf3c%2Ftest2.webp%3Ffit%3Dfill%26fm%3Djpg%26h%3D375%26q%3D85%26w%3D375"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Bang &amp; Olufsen</div>
-<h3>Beoplay H100</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Beoplay H100" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Beoplay H100" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="Bose Smart Ultra Soundbar">
-<a class="product-link open-product" data-view-product="Bose Smart Ultra Soundbar" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="Bose Smart Ultra Soundbar" data-original-src="https://www.kosmasaudiovideo.gr/uplds/23819_Bose-Smart-Soundbar.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.kosmasaudiovideo.gr%2Fuplds%2F23819_Bose-Smart-Soundbar.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Bose</div>
-<h3>Bose Smart Ultra Soundbar</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Bose Smart Ultra Soundbar" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Bose Smart Ultra Soundbar" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="audio" data-name="Sonos Sub 4">
-<a class="product-link open-product" data-view-product="Sonos Sub 4" href="#product">
-<div class="product-img">
-<span class="tag">PREMIUM AUDIO</span>
-<img alt="Sonos Sub 4" data-original-src="https://www.worldwidestereo.com/cdn/shop/files/sonos-sub-4-black-hero.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fcdn%2Fshop%2Ffiles%2Fsonos-sub-4-black-hero.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Sonos</div>
-<h3>Sonos Sub 4</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Sonos Sub 4" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Sonos Sub 4" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="Apple Watch Ultra 3">
-<a class="product-link open-product" data-view-product="Apple Watch Ultra 3" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="Apple Watch Ultra 3" data-original-src="https://http2.mlstatic.com/D_NQ_NP_932375-MLU96410125827_102025-O.webp" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fhttp2.mlstatic.com%2FD_NQ_NP_932375-MLU96410125827_102025-O.webp"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Apple</div>
-<h3>Apple Watch Ultra 3</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Apple Watch Ultra 3" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Apple Watch Ultra 3" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="Galaxy Watch Ultra">
-<a class="product-link open-product" data-view-product="Galaxy Watch Ultra" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="Galaxy Watch Ultra" data-original-src="https://www.bigw.com.au/medias/sys_master/images/images/h17/hb5/137752474058782.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.bigw.com.au%2Fmedias%2Fsys_master%2Fimages%2Fimages%2Fh17%2Fhb5%2F137752474058782.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Galaxy Watch Ultra</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Galaxy Watch Ultra" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Galaxy Watch Ultra" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="Galaxy Watch8 Classic">
-<a class="product-link open-product" data-view-product="Galaxy Watch8 Classic" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="Galaxy Watch8 Classic" data-original-src="https://samsungbrshop.vtexassets.com/arquivos/ids/258570-800-auto?v=638888115887030000" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fsamsungbrshop.vtexassets.com%2Farquivos%2Fids%2F258570-800-auto%3Fv%3D638888115887030000"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Galaxy Watch8 Classic</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Galaxy Watch8 Classic" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Galaxy Watch8 Classic" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="fēnix 8 Pro AMOLED">
-<a class="product-link open-product" data-view-product="fēnix 8 Pro AMOLED" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="fēnix 8 Pro AMOLED" data-original-src="https://cdn.shopify.com/s/files/1/0904/0726/files/Image_1_6783ae3b-e2c9-4e9b-aa45-c45a6799086b.jpg?v=1756917272" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0904%2F0726%2Ffiles%2FImage_1_6783ae3b-e2c9-4e9b-aa45-c45a6799086b.jpg%3Fv%3D1756917272"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Garmin</div>
-<h3>fēnix 8 Pro AMOLED</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="fēnix 8 Pro AMOLED" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="fēnix 8 Pro AMOLED" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="Galaxy Ring">
-<a class="product-link open-product" data-view-product="Galaxy Ring" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="Galaxy Ring" data-original-src="https://media.gadgetbytenepal.com/2023/08/Samsung-Galaxy-Ring-Price-Nepal.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fmedia.gadgetbytenepal.com%2F2023%2F08%2FSamsung-Galaxy-Ring-Price-Nepal.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Galaxy Ring</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Galaxy Ring" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Galaxy Ring" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="wearables" data-name="Oura Ring 4">
-<a class="product-link open-product" data-view-product="Oura Ring 4" href="#product">
-<div class="product-img">
-<span class="tag">SMART WEARABLES</span>
-<img alt="Oura Ring 4" data-original-src="https://target.scene7.com/is/image/Target/GUEST_fa1a4b2f-45e4-4225-9ca2-b5d969d08280?fmt=pjpeg&amp;hei=300&amp;wid=300" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_fa1a4b2f-45e4-4225-9ca2-b5d969d08280%3Ffmt%3Dpjpeg%26hei%3D300%26wid%3D300"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Oura</div>
-<h3>Oura Ring 4</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Oura Ring 4" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Oura Ring 4" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="glasses" data-name="Ray-Ban Meta Gen 2">
-<a class="product-link open-product" data-view-product="Ray-Ban Meta Gen 2" href="#product">
-<div class="product-img">
-<span class="tag">SMART GLASSES</span>
-<img alt="Ray-Ban Meta Gen 2" data-original-src="https://9to5google.com/wp-content/uploads/sites/4/2025/09/ray-ban-meta-gen-2-3.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2F9to5google.com%2Fwp-content%2Fuploads%2Fsites%2F4%2F2025%2F09%2Fray-ban-meta-gen-2-3.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Ray-Ban Meta</div>
-<h3>Ray-Ban Meta Gen 2</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Ray-Ban Meta Gen 2" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Ray-Ban Meta Gen 2" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="glasses" data-name="Oakley Meta Vanguard">
-<a class="product-link open-product" data-view-product="Oakley Meta Vanguard" href="#product">
-<div class="product-img">
-<span class="tag">SMART GLASSES</span>
-<img alt="Oakley Meta Vanguard" data-original-src="https://unaluka.com/cdn/shop/files/resizedImg_1000x1000_1_6a1e5c16-e86f-499a-b34e-d452523a3f19_2048x2048.jpg?v=1765578437" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Funaluka.com%2Fcdn%2Fshop%2Ffiles%2FresizedImg_1000x1000_1_6a1e5c16-e86f-499a-b34e-d452523a3f19_2048x2048.jpg%3Fv%3D1765578437"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Oakley Meta</div>
-<h3>Oakley Meta Vanguard</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Oakley Meta Vanguard" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Oakley Meta Vanguard" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="mobile" data-name="Galaxy S26 Ultra">
-<a class="product-link open-product" data-view-product="Galaxy S26 Ultra" href="#product">
-<div class="product-img">
-<span class="tag">SMARTPHONES</span>
-<img alt="Galaxy S26 Ultra" data-original-src="https://mdsmobile.ae/cdn/shop/files/samsung-galaxy-s26-ultra-5g-12gb-512gb-cobalt-violet.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fmdsmobile.ae%2Fcdn%2Fshop%2Ffiles%2Fsamsung-galaxy-s26-ultra-5g-12gb-512gb-cobalt-violet.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Galaxy S26 Ultra</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Galaxy S26 Ultra" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Galaxy S26 Ultra" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="mobile" data-name="iPhone 17 Pro Max">
-<a class="product-link open-product" data-view-product="iPhone 17 Pro Max" href="#product">
-<div class="product-img">
-<span class="tag">SMARTPHONES</span>
-<img alt="iPhone 17 Pro Max" data-original-src="https://m.media-amazon.com/images/I/71jQxJp3yVL._AC_SL1500_.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F71jQxJp3yVL._AC_SL1500_.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Apple</div>
-<h3>iPhone 17 Pro Max</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="iPhone 17 Pro Max" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="iPhone 17 Pro Max" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="mobile" data-name="Galaxy Z Fold7">
-<a class="product-link open-product" data-view-product="Galaxy Z Fold7" href="#product">
-<div class="product-img">
-<span class="tag">SMARTPHONES</span>
-<img alt="Galaxy Z Fold7" data-original-src="https://jo-cell.com/cdn/shop/files/levant-ar-galaxy-z-fold7-f966-sm-f966bdbgmea-547546835.png?v=1752391045&amp;width=2000" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fjo-cell.com%2Fcdn%2Fshop%2Ffiles%2Flevant-ar-galaxy-z-fold7-f966-sm-f966bdbgmea-547546835.png%3Fv%3D1752391045%26width%3D2000"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Galaxy Z Fold7</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Galaxy Z Fold7" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Galaxy Z Fold7" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="mobile" data-name="Pixel 10 Pro XL">
-<a class="product-link open-product" data-view-product="Pixel 10 Pro XL" href="#product">
-<div class="product-img">
-<span class="tag">SMARTPHONES</span>
-<img alt="Pixel 10 Pro XL" data-original-src="https://cdn.laredoute.com/cdn-cgi/image/width%3D650%2Cheight%3D650%2Cfit%3Dpad%2Cdpr%3D1/products/a/a/8/aa82984a97dbc95007a9a69765eda728.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fcdn.laredoute.com%2Fcdn-cgi%2Fimage%2Fwidth%253D650%252Cheight%253D650%252Cfit%253Dpad%252Cdpr%253D1%2Fproducts%2Fa%2Fa%2F8%2Faa82984a97dbc95007a9a69765eda728.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Google</div>
-<h3>Pixel 10 Pro XL</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Pixel 10 Pro XL" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Pixel 10 Pro XL" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="smart" data-name="Apple Vision Pro">
-<a class="product-link open-product" data-view-product="Apple Vision Pro" href="#product">
-<div class="product-img">
-<span class="tag">SMART HOME</span>
-<img alt="Apple Vision Pro" data-original-src="https://resources.claroshop.com/medios-plazavip/publicidad/65de209d99e3d_vision-pro-1jpg.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fresources.claroshop.com%2Fmedios-plazavip%2Fpublicidad%2F65de209d99e3d_vision-pro-1jpg.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Apple</div>
-<h3>Apple Vision Pro</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Apple Vision Pro" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Apple Vision Pro" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="smart" data-name="Samsung The Frame 2025">
-<a class="product-link open-product" data-view-product="Samsung The Frame 2025" href="#product">
-<div class="product-img">
-<span class="tag">SMART HOME</span>
-<img alt="Samsung The Frame 2025" data-original-src="https://sonic-images.imgix.net/XL/QE43LS03FA_3.jpg?auto=format" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fsonic-images.imgix.net%2FXL%2FQE43LS03FA_3.jpg%3Fauto%3Dformat"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Samsung</div>
-<h3>Samsung The Frame 2025</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Samsung The Frame 2025" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Samsung The Frame 2025" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="lifestyle" data-name="Dyson Supersonic Nural">
-<a class="product-link open-product" data-view-product="Dyson Supersonic Nural" href="#product">
-<div class="product-img">
-<span class="tag">BEAUTY &amp; LIFESTYLE</span>
-<img alt="Dyson Supersonic Nural" data-original-src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/campaigns/H1-Gifting-Mothers-Day-2025/supersonic-nural/sn-east/gallery/Web_605_West_gallery_01.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fdyson-h.assetsadobe2.com%2Fis%2Fimage%2Fcontent%2Fdam%2Fdyson%2Fcampaigns%2FH1-Gifting-Mothers-Day-2025%2Fsupersonic-nural%2Fsn-east%2Fgallery%2FWeb_605_West_gallery_01.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Dyson</div>
-<h3>Dyson Supersonic Nural</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Dyson Supersonic Nural" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Dyson Supersonic Nural" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="power" data-name="DJI Power 1000 V2">
-<a class="product-link open-product" data-view-product="DJI Power 1000 V2" href="#product">
-<div class="product-img">
-<span class="tag">PORTABLE POWER</span>
-<img alt="DJI Power 1000 V2" data-original-src="https://dronestore.cl/img/p/1/5/7/6/1576.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fdronestore.cl%2Fimg%2Fp%2F1%2F5%2F7%2F6%2F1576.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">DJI</div>
-<h3>DJI Power 1000 V2</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="DJI Power 1000 V2" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="DJI Power 1000 V2" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="power" data-name="EcoFlow DELTA Pro 3">
-<a class="product-link open-product" data-view-product="EcoFlow DELTA Pro 3" href="#product">
-<div class="product-img">
-<span class="tag">PORTABLE POWER</span>
-<img alt="EcoFlow DELTA Pro 3" data-original-src="https://media.bunnings.com.au/api/public/content/37d6ebd4cbc849049a6bea3f1addd6ca?v=df262e3b" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fmedia.bunnings.com.au%2Fapi%2Fpublic%2Fcontent%2F37d6ebd4cbc849049a6bea3f1addd6ca%3Fv%3Ddf262e3b"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">EcoFlow</div>
-<h3>EcoFlow DELTA Pro 3</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="EcoFlow DELTA Pro 3" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="EcoFlow DELTA Pro 3" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="creator" data-name="DJI Mavic 4 Pro">
-<a class="product-link open-product" data-view-product="DJI Mavic 4 Pro" href="#product">
-<div class="product-img">
-<span class="tag">CREATOR TECH</span>
-<img alt="DJI Mavic 4 Pro" data-original-src="https://fotografias-2.larazon.es/clipping/cmsimages01/2025/05/25/A7F89BD4-A90E-4E69-A6F9-D78F97144C8F/videos-6-hora-autonomia-vuelo-casi-100-kmh-mavic-4-pro_98.jpg?crop=1604%2C902%2Cx0%2Cy19&amp;format=webply&amp;height=1069&amp;optimize=low&amp;width=1900" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Ffotografias-2.larazon.es%2Fclipping%2Fcmsimages01%2F2025%2F05%2F25%2FA7F89BD4-A90E-4E69-A6F9-D78F97144C8F%2Fvideos-6-hora-autonomia-vuelo-casi-100-kmh-mavic-4-pro_98.jpg%3Fcrop%3D1604%252C902%252Cx0%252Cy19%26format%3Dwebply%26height%3D1069%26optimize%3Dlow%26width%3D1900"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">DJI</div>
-<h3>DJI Mavic 4 Pro</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="DJI Mavic 4 Pro" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="DJI Mavic 4 Pro" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="creator" data-name="Insta360 X5">
-<a class="product-link open-product" data-view-product="Insta360 X5" href="#product">
-<div class="product-img">
-<span class="tag">CREATOR TECH</span>
-<img alt="Insta360 X5" data-original-src="https://tigerstek.com/cdn/shop/files/insta360-x5-essentials-bundle.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Ftigerstek.com%2Fcdn%2Fshop%2Ffiles%2Finsta360-x5-essentials-bundle.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Insta360</div>
-<h3>Insta360 X5</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Insta360 X5" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Insta360 X5" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="creator" data-name="Leica Q3 43">
-<a class="product-link open-product" data-view-product="Leica Q3 43" href="#product">
-<div class="product-img">
-<span class="tag">CREATOR TECH</span>
-<img alt="Leica Q3 43" data-original-src="https://www.digidirect.com.au/media/catalog/product/1/7/1716453934_1830573.jpg" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fwww.digidirect.com.au%2Fmedia%2Fcatalog%2Fproduct%2F1%2F7%2F1716453934_1830573.jpg"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Leica</div>
-<h3>Leica Q3 43</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="Leica Q3 43" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="Leica Q3 43" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="creator" data-name="GoPro HERO13 Black">
-<a class="product-link open-product" data-view-product="GoPro HERO13 Black" href="#product">
-<div class="product-img">
-<span class="tag">CREATOR TECH</span>
-<img alt="GoPro HERO13 Black" data-original-src="https://gopro.com/content/dam/gopro/en/products/hero13-black/hero13-black-hero.png" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fgopro.com%2Fcontent%2Fdam%2Fgopro%2Fen%2Fproducts%2Fhero13-black%2Fhero13-black-hero.png"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">GoPro</div>
-<h3>GoPro HERO13 Black</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="GoPro HERO13 Black" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="GoPro HERO13 Black" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-<article class="product" data-category="creator" data-name="MacBook Pro 16-inch M5 Pro">
-<a class="product-link open-product" data-view-product="MacBook Pro 16-inch M5 Pro" href="#product">
-<div class="product-img">
-<span class="tag">CREATOR TECH</span>
-<img alt="MacBook Pro 16-inch M5 Pro" data-original-src="https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098276_1050612.png?v=1776233457" decoding="async" loading="lazy" onerror="turinImageError(this)" referrerpolicy="no-referrer" src="https://images.weserv.nl/?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0641%2F9388%2F8321%2Ffiles%2F50098276_1050612.png%3Fv%3D1776233457"/>
-<div class="img-fallback">TURIN<br/><small>PREMIUM EDIT</small></div>
-</div>
-</a>
-<div class="product-info">
-<div class="brand">Apple</div>
-<h3>MacBook Pro 16-inch M5 Pro</h3>
-<p>Premium selection • Authentic brand/model • Price and availability confirmed privately.</p>
-<div class="product-bottom">
-<a class="view open-product" data-view-product="MacBook Pro 16-inch M5 Pro" href="#product">VIEW DETAILS</a>
-<a class="order add-cart" data-product="MacBook Pro 16-inch M5 Pro" href="#">ADD TO CART</a>
-</div>
-</div>
-</article>
-</div>
-</div>
+
+<section id="products">
+ <div class="container">
+  <div class="section-title">
+   <div class="kicker">THE COLLECTION</div>
+   <h2>Shop Turin</h2>
+   <p>Add products to your cart. Checkout collects the customer, billing, shipping and order information required for international trade.</p>
+  </div>
+
+  <div class="catalog-tools">
+   <div class="search"><input id="search" type="search" placeholder="Search products..."></div>
+   <select class="select" id="category">
+    <option value="all">All categories</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Audio">Audio</option>
+    <option value="Smart Tech">Smart Tech</option>
+    <option value="Lifestyle">Lifestyle</option>
+   </select>
+  </div>
+
+  <div class="products" id="productGrid"></div>
+
+  <div class="notice">
+   <b>International order notice:</b> displayed prices are listing prices. Final stock,
+   exact variant, shipping cost, taxes/duties and payment instructions are confirmed
+   before payment. Do not send money until TURIN confirms the order.
+  </div>
+ </div>
 </section>
-<section class="lux" id="experience">
-<div class="container">
-<div class="kicker">THE TURIN STANDARD</div>
-<h2>Not just products.<br/><em>A premium experience.</em></h2>
-<div class="points">
-<div class="point"><b>01 • Authentic Models</b><span>Real brand and model names, with clear product details and ordering.</span></div>
-<div class="point"><b>02 • Private Ordering</b><span>Every product has details, cart and checkout actions.</span></div>
-<div class="point"><b>03 • No Fake Purchase Data</b><span>Purchases are not fabricated; checkout records only appropriate completed order events.</span></div>
-<div class="point"><b>04 • Premium First</b><span>Collection focused on high-end products and luxury positioning.</span></div>
-</div>
-</div>
+
+<section class="features" id="about">
+ <div class="container">
+  <div class="section-title">
+   <div class="kicker">WHY TURIN</div>
+   <h2 style="color:#fff">Professional Ordering</h2>
+  </div>
+  <div class="feature-grid">
+   <div class="feature"><strong>INTERNATIONAL CUSTOMER DETAILS</strong><span>Country, city, postal code, address, phone and email are collected at checkout.</span></div>
+   <div class="feature"><strong>MULTI-CURRENCY DISPLAY</strong><span>Customers can view an indicative cart total in TZS, USD, EUR or GBP.</span></div>
+   <div class="feature"><strong>ORDER CONFIRMATION</strong><span>Every order is submitted for confirmation of availability, shipping and final amount.</span></div>
+   <div class="feature"><strong>DIRECT SUPPORT</strong><span>Customers can continue the order conversation through TURIN WhatsApp.</span></div>
+  </div>
+ </div>
 </section>
-<section class="shop" id="about">
-<div class="container">
-<div class="kicker">ABOUT TURIN</div>
-<h2 style="font:400 clamp(42px,5vw,68px)/.95 Georgia,serif">Curated for people<br/><em style="color:#a47b38">who value more.</em></h2>
-<p style="max-width:700px;color:#777;margin-top:22px;font-size:13px;line-height:1.9">TURIN PREMIUM STORE combines premium technology, lifestyle products and direct personal service. The storefront is designed to make discovery simple while keeping ordering personal and transparent.</p>
-</div>
+
+<section class="contact" id="contact">
+ <div class="container">
+  <div class="kicker">CUSTOMER SERVICE</div>
+  <h2 style="font:400 46px Georgia,serif;margin:10px 0">Need assistance?</h2>
+  <p>For international orders, bulk orders, shipping questions or product verification, contact TURIN directly.</p>
+  <a class="btn btn-gold" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20assistance%20with%20an%20order." target="_blank" rel="noopener">WhatsApp TURIN</a>
+  <div style="font-weight:800;margin-top:13px">+255 797 955 045</div>
+ </div>
 </section>
+
 </main>
-<div class="modal" id="productModal"><div class="modal-box"><button class="close" onclick="closeModal('productModal')">×</button><div id="productContent"></div></div></div>
-<div class="modal" id="cartModal"><div class="modal-box"><button class="close" onclick="closeModal('cartModal')">×</button><div class="kicker">YOUR CART</div><h2 style="font:400 42px Georgia,serif;margin-bottom:16px">Your selection.</h2><div id="cartContent"></div></div></div>
-<div class="modal" id="checkoutModal"><div class="modal-box"><button class="close" onclick="closeModal('checkoutModal')">×</button><div class="kicker">SECURE ORDER</div><h2 style="font:400 42px Georgia,serif">Checkout.</h2><p style="color:#777;font-size:11px;margin:8px 0 20px">Complete your details. TURIN will confirm product availability, final price and delivery before accepting the order.</p><form id="checkoutForm"><div class="checkout-grid"><div class="field"><label>Full name</label><input name="name" required=""/></div><div class="field"><label>Phone</label><input name="phone" placeholder="+255..." required="" type="tel"/></div><div class="field full"><label>Delivery address</label><input name="address" placeholder="Street, area, city" required=""/></div><div class="field full"><label>Payment method</label><div class="method"><label><input checked="" name="payment" type="radio" value="Cash on Delivery"/> Cash on Delivery</label><label><input name="payment" type="radio" value="M-Pesa"/> M-Pesa</label><label><input name="payment" type="radio" value="Airtel Money"/> Airtel Money</label><label><input name="payment" type="radio" value="Mixx / Tigo Pesa"/> Mixx / Tigo Pesa</label></div><div class="notice">Mobile-money options are recorded with the order, but live push/USSD payment requires TURIN's payment-gateway merchant credentials. No fake payment is claimed here.</div></div><div class="field full"><label>Order notes</label><textarea name="notes" placeholder="Colour, storage, delivery instructions..." rows="3"></textarea></div></div><button class="turin-btn gold" type="submit">PLACE ORDER</button><button class="turin-btn" onclick="closeModal('checkoutModal')" type="button">CANCEL</button></form></div></div>
+
 <footer>
-<div class="container footer-line"><span>© 2026 TURIN PREMIUM STORE. All rights reserved.</span><span>QUALITY • STYLE • CONVENIENCE • +255 797 955 045</span></div>
+ <div class="container">
+  <div class="footer-grid">
+   <div><h3>TURIN PREMIUM STORE</h3><p>Premium technology and lifestyle products with professional direct ordering.</p></div>
+   <div><h3>SHOP</h3><p><a href="#products">Products</a></p><p><a href="#about">About Turin</a></p><p><a href="#contact">Customer Service</a></p></div>
+   <div><h3>ORDER SUPPORT</h3><p>WhatsApp: +255 797 955 045</p><p>Email: use your official business email in checkout.</p></div>
+  </div>
+  <div class="copy">© 2026 TURIN PREMIUM STORE. All rights reserved.</div>
+ </div>
 </footer>
-<a aria-label="WhatsApp" class="wa-float" data-wa="Floating WhatsApp" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20would%20like%20to%20shop." target="_blank">WA</a>
+
+<a class="float-wa" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE%2C%20I%20need%20help%20with%20shopping." target="_blank" rel="noopener">WA</a>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer">
+ <div class="drawer-head">
+  <h2 id="drawerTitle">Your Cart</h2>
+  <button class="close" id="drawerClose">×</button>
+ </div>
+
+ <div class="drawer-body">
+
+  <div id="cartView">
+   <div id="cartItems"></div>
+   <div id="cartSummary"></div>
+   <button class="checkout-btn" id="checkoutStart">PROCEED TO CHECKOUT</button>
+  </div>
+
+  <div class="checkout" id="checkoutView">
+   <button class="checkout-back" id="backCart">← Back to cart</button>
+   <h3>International Checkout</h3>
+
+   <div class="form-section">
+    <h4>1. Customer information</h4>
+    <div class="form-grid">
+     <div class="field"><label>First name <span class="required">*</span></label><input id="firstName" required></div>
+     <div class="field"><label>Last name <span class="required">*</span></label><input id="lastName" required></div>
+     <div class="field"><label>Email <span class="required">*</span></label><input id="email" type="email" required></div>
+     <div class="field"><label>Phone / WhatsApp <span class="required">*</span></label><input id="phone" required></div>
+    </div>
+   </div>
+
+   <div class="form-section">
+    <h4>2. Shipping address</h4>
+    <div class="form-grid">
+     <div class="field full"><label>Country <span class="required">*</span></label>
+      <select id="country">
+       <option value="">Select country</option>
+       <option>Tanzania</option><option>Kenya</option><option>Uganda</option><option>Rwanda</option><option>United States</option><option>United Kingdom</option><option>United Arab Emirates</option><option>India</option><option>South Africa</option><option>Malaysia</option><option>Other</option>
+      </select>
+     </div>
+     <div class="field"><label>City <span class="required">*</span></label><input id="city"></div>
+     <div class="field"><label>State / Province</label><input id="stateProvince"></div>
+     <div class="field full"><label>Street address <span class="required">*</span></label><input id="address"></div>
+     <div class="field"><label>Postal / ZIP code</label><input id="postal"></div>
+     <div class="field"><label>Company name (optional)</label><input id="company"></div>
+    </div>
+   </div>
+
+   <div class="form-section">
+    <h4>3. Order details</h4>
+    <div class="form-grid">
+     <div class="field"><label>Display currency</label>
+      <select id="currency">
+       <option value="TZS">TZS — Tanzanian Shilling</option>
+       <option value="USD">USD — US Dollar</option>
+       <option value="EUR">EUR — Euro</option>
+       <option value="GBP">GBP — British Pound</option>
+      </select>
+     </div>
+     <div class="field"><label>Tax / VAT ID (optional)</label><input id="taxId"></div>
+     <div class="field full"><label>Order notes</label><textarea id="notes" placeholder="Shipping instructions, preferred variant, etc."></textarea></div>
+    </div>
+   </div>
+
+   <div class="form-section">
+    <h4>4. Payment / settlement</h4>
+    <div class="pay-options">
+     <label class="pay-option"><input type="radio" name="payment" value="payment_link" checked><div><b>Payment link / bank instructions after confirmation</b><span>TURIN confirms stock, shipping and final amount before payment.</span></div></label>
+     <label class="pay-option"><input type="radio" name="payment" value="whatsapp"><div><b>WhatsApp order confirmation</b><span>Continue with TURIN customer service to arrange settlement.</span></div></label>
+    </div>
+   </div>
+
+   <div class="checkout-note">
+    By submitting, you are sending an <b>order request</b>, not confirming a completed payment.
+    International shipping charges, duties, taxes and final product availability may change
+    the final amount. TURIN will confirm the final commercial terms before payment.
+   </div>
+
+   <div class="error" id="formError">Please complete all required fields.</div>
+   <div id="paymentArea" style="margin-top:14px">
+    <button class="place" id="payStripe" style="background:#635bff">PAY SECURELY BY CARD</button>
+    <button class="place" id="payPayPal" style="background:#ffc439;color:#111;margin-top:8px">PAY WITH PAYPAL</button>
+    <button class="place" id="placeOrder" style="background:#25d366;color:#071208;margin-top:8px">SUBMIT ORDER & CONTINUE ON WHATSAPP</button>
+   </div>
+  </div>
+
+  <div class="success" id="successView">
+   <h3>Order Request Received</h3>
+   <p>Your order request has been prepared successfully.</p>
+   <div class="order-number" id="orderNumber"></div>
+   <p style="font-size:11px;color:#777">Please continue with TURIN customer service to confirm stock, shipping and final payment instructions.</p>
+   <a class="wa-order" id="successWhatsApp" target="_blank" rel="noopener">CONTINUE ON WHATSAPP</a>
+  </div>
+
+ </div>
+</aside>
+
 <script>
 const PHONE="255797955045";
-const products=[...document.querySelectorAll('.product')].map((card,i)=>({
- id:String(i+1),name:card.dataset.name||card.querySelector('h3')?.textContent.trim()||`Product ${i+1}`,
- brand:card.querySelector('.brand')?.textContent.trim()||'TURIN',category:card.dataset.category||'lifestyle',
- description:card.querySelector('.product-info p')?.textContent.trim()||'Premium product from TURIN PREMIUM STORE',
- image:card.querySelector('img')?.getAttribute('src')||''
-}));
-let cart=JSON.parse(localStorage.getItem('turin_cart')||'[]');
-function track(name,params={}){params.store='TURIN PREMIUM STORE';if(window.dataLayer)window.dataLayer.push({...params,event:name});if(typeof gtag==='function')gtag('event',name,params);}
-function saveCart(){localStorage.setItem('turin_cart',JSON.stringify(cart));updateCartCount();}
-function updateCartCount(){const el=document.getElementById('cartCount');if(el)el.textContent=cart.reduce((n,x)=>n+x.qty,0)}
-function openModal(id){document.getElementById(id)?.classList.add('open')}
-function closeModal(id){document.getElementById(id)?.classList.remove('open')}
-function ecommerceItems(){return cart.map(x=>{const p=products.find(y=>y.id===x.id);const item={item_id:x.id,item_name:x.name,quantity:Number(x.qty)||1};if(p&&Number.isFinite(Number(p.price))&&Number(p.price)>0)item.price=Number(p.price);return item;});}
-function productItem(p,qty=1){const item={item_id:p.id,item_name:p.name,quantity:Number(qty)||1};if(Number.isFinite(Number(p.price))&&Number(p.price)>0)item.price=Number(p.price);return item;}
-function addToCart(id){const p=products.find(x=>x.id===id);if(!p)return;const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id:p.id,name:p.name,qty:1,image:p.image});saveCart();track('add_to_cart',{currency:'TZS',items:[productItem(p,1)]});showCart();}
-function showProduct(id){const p=products.find(x=>x.id===id);if(!p)return;const priceText=(Number.isFinite(Number(p.price))&&Number(p.price)>0)?new Intl.NumberFormat('en-TZ',{style:'currency',currency:'TZS',maximumFractionDigits:0}).format(Number(p.price)):'Price confirmed before order';document.getElementById('productContent').innerHTML=`<div class="turin-grid"><div><img class="detail-img" src="${p.image}" alt="${p.name}"></div><div><div class="brand">${p.brand}</div><h2 style="font:400 40px/1.05 Georgia,serif;margin:8px 0 15px">${p.name}</h2><p style="color:#777;line-height:1.7;font-size:12px">${p.description}</p><div class="notice"><b>Price:</b> ${priceText}<br><b>Availability:</b> Stock is confirmed before dispatch.</div><button class="turin-btn gold" onclick="addToCart('${p.id}')">ADD TO CART</button><button class="turin-btn" onclick="addToCart('${p.id}');openCheckout()">BUY NOW</button><a class="turin-btn" style="display:inline-block;border:1px solid #bbb" target="_blank" rel="noopener" href="${wa(p.name)}">WHATSAPP</a></div></div>`;openModal('productModal');track('view_item',{currency:'TZS',items:[productItem(p,1)]});}
-function openCheckout(){if(!cart.length){showCart();return}closeModal('productModal');closeModal('cartModal');openModal('checkoutModal');track('begin_checkout',{currency:'TZS',items:ecommerceItems()});}
-function wa(product){const text=`Hello TURIN PREMIUM STORE,\n\nI am interested in: ${product}\n\nPlease confirm availability, final price and delivery.\n\nThank you.`;return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(text);}
-function orderWhatsApp(data,orderId){const lines=cart.map(x=>`• ${x.name} x${x.qty}`).join('\n');const text=`Hello TURIN PREMIUM STORE,\n\nNEW ORDER: ${orderId}\n\n${lines}\n\nCustomer: ${data.name}\nPhone: ${data.phone}\nAddress: ${data.address}\nPayment: ${data.payment}\nNotes: ${data.notes||'-'}\n\nPlease confirm availability, final price and delivery.`;return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(text);}
-/* ONLY a real confirmed order/payment flow may call this. No fabricated revenue. */
-function trackConfirmedPurchase(order){if(!order||!order.transaction_id||!Array.isArray(order.items))return false;if(!Number.isFinite(Number(order.value))||Number(order.value)<=0)return false;const items=order.items.map(x=>({item_id:String(x.item_id),item_name:String(x.item_name),quantity:Number(x.quantity)||1,price:Number(x.price)}));if(items.some(x=>!Number.isFinite(x.price)||x.price<=0))return false;track('purchase',{transaction_id:String(order.transaction_id),value:Number(order.value),currency:'TZS',items:items});return true;}
-document.getElementById('checkoutForm')?.addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const orderId='TURIN-'+new Date().toISOString().replace(/\D/g,'').slice(0,14);const data={name:String(f.get('name')||''),phone:String(f.get('phone')||''),address:String(f.get('address')||''),payment:String(f.get('payment')||'Cash on Delivery'),notes:String(f.get('notes')||'')};const items=ecommerceItems();track('generate_lead',{lead_source:'checkout',order_id:orderId,payment_method:data.payment,items:items});track('order_submitted',{transaction_id:orderId,payment_method:data.payment,items:items});window.open(orderWhatsApp(data,orderId),'_blank','noopener');cart=[];saveCart();closeModal('checkoutModal');e.target.reset();alert('Order '+orderId+' has been submitted for confirmation. WhatsApp will open with the exact basket.');});
 
+/* Product catalogue — all 40 products retained */
+function escAttr(v){return String(v||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fallbackImage(product){
+  const name=escAttr(product.name);
+  const cat=escAttr(product.cat);
+  let art='';
+  if(product.cat==='Mobile') art=`<rect x="82" y="35" width="156" height="250" rx="28" fill="#111827"/><rect x="94" y="52" width="132" height="215" rx="18" fill="#eef2ff"/><circle cx="119" cy="70" r="9" fill="#111827"/><circle cx="145" cy="70" r="9" fill="#111827"/><circle cx="119" cy="96" r="9" fill="#111827"/>`;
+  else if(product.cat==='Audio') art=`<rect x="55" y="105" width="210" height="110" rx="55" fill="#111827"/><rect x="75" y="120" width="170" height="80" rx="40" fill="#1f2937"/><circle cx="160" cy="160" r="23" fill="#d1d5db"/><text x="160" y="168" text-anchor="middle" font-size="22" font-weight="800" fill="#111827">JBL</text>`;
+  else if(product.name.toLowerCase().includes('clipper')) art=`<rect x="105" y="65" width="110" height="200" rx="38" fill="#d4af37"/><rect x="125" y="40" width="70" height="70" rx="12" fill="#9ca3af"/><path d="M125 65h70M125 82h70" stroke="#374151" stroke-width="8"/><circle cx="160" cy="190" r="18" fill="#111827"/>`;
+  else if(product.name.toLowerCase().includes('blender')||product.name.toLowerCase().includes('extractor')) art=`<path d="M95 55h130l-18 120c-4 30-24 50-47 50s-43-20-47-50z" fill="#dbeafe" stroke="#111827" stroke-width="10"/><rect x="120" y="35" width="80" height="25" rx="10" fill="#111827"/><rect x="118" y="220" width="84" height="25" rx="10" fill="#111827"/><circle cx="160" cy="155" r="20" fill="#93c5fd"/>`;
+  else if(product.name.toLowerCase().includes('kettle')) art=`<path d="M95 90h130v125H95z" rx="20" fill="#e5e7eb" stroke="#111827" stroke-width="10"/><path d="M225 120c55-5 55 75 0 70" fill="none" stroke="#111827" stroke-width="10"/><path d="M115 75c15-35 25-35 30 0M150 75c15-35 25-35 30 0" fill="none" stroke="#94a3b8" stroke-width="8"/>`;
+  else if(product.cat==='Smart Tech' && product.name.toLowerCase().includes('router')) art=`<rect x="70" y="95" width="180" height="120" rx="18" fill="#111827"/><path d="M115 95V50M205 95V50" stroke="#111827" stroke-width="10"/><circle cx="115" cy="155" r="8" fill="#22c55e"/><circle cx="145" cy="155" r="8" fill="#22c55e"/><circle cx="175" cy="155" r="8" fill="#22c55e"/><path d="M105 190h110" stroke="#9ca3af" stroke-width="8"/>`;
+  else if(product.cat==='Smart Tech') art=`<rect x="45" y="55" width="230" height="150" rx="16" fill="#111827"/><rect x="58" y="68" width="204" height="124" rx="8" fill="#dbeafe"/><path d="M95 230h130l-20 20H115z" fill="#6b7280"/>`;
+  else art=`<circle cx="160" cy="150" r="85" fill="#111827"/><circle cx="160" cy="150" r="65" fill="#e5e7eb"/><path d="M125 150h70M160 115v70" stroke="#111827" stroke-width="8"/>`;
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient></defs><rect width="320" height="360" rx="24" fill="url(#g)"/><text x="160" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#64748b">${cat.toUpperCase()}</text>${art}<text x="160" y="302" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0f172a">${name}</text><text x="160" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">TURIN PREMIUM STORE</text></svg>`;
+  return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);
+}
+
+const products=[
+{name:"Apple iPhone 14 128GB",price:1540000,cat:"Mobile",image:"https://www.imobily.eu/image/cache/catalog/apple/iPhone/iPhone14/Blue/1-800x800.jpg"},
+{name:"Apple iPhone 14 Pro",price:2000000,cat:"Mobile",image:"https://images.priceoye.pk/iphone-14-pro-pakistan-priceoye-1ejzq.jpg"},
+{name:"Apple iPhone 14 Pro Max",price:2150000,cat:"Mobile",image:"https://usbs-uae.com/cdn/shop/files/IPHONE14PROMAX_space_black_1.jpg?v=1709998693&width=1946"},
+{name:"Apple iPhone 15 Pro",price:3200000,cat:"Mobile",image:"Product04.jpeg"},
+{name:"Apple iPhone 15 Pro Max",price:3500000,cat:"Mobile",image:"https://cdn.mafrservices.com/pim-content/SAU/media/product/721086/1748857204/721086_main.jpg"},
+{name:"Apple iPhone 11 Pro Max",price:2800000,cat:"Mobile",image:"Product06.jpeg"},
+{name:"Samsung Galaxy S20 Plus",price:600000,cat:"Mobile",image:"https://image-cdn.ubuy.com/samsung-galaxy-s20-5g-128gb-fully/400_400_100/635253b72a46d01047219503.jpg"},
+{name:"Samsung Galaxy S20 Ultra",price:750000,cat:"Mobile",image:"https://www.galaxus.de/productimages/3/3/1/1/7/1/4/5/SM-G988_S2020Ultra_Front_Back_Cosmic20Black_.jpeg"},
+{name:"Samsung Galaxy S21 Ultra",price:880000,cat:"Mobile",image:"https://cdn.new-brz.net/app/public/models/SM-G998BZKDSEK/large/j/210427160020957719.jpg"},
+{name:"Samsung Galaxy S22 Ultra",price:1330000,cat:"Mobile",image:"https://www.welectronics.com/images/stories/virtuemart/product/71PvHfU%2BpwL._SL1500_8.jpg"},
+{name:"Samsung Galaxy S23 Ultra",price:1980000,cat:"Mobile",image:"https://fstudio.vtexassets.com/arquivos/ids/909901/Galaxy-S23-Ultra-Phantomblack.0.jpg?v=638108681862900000"},
+{name:"Samsung Galaxy S24 Ultra",price:2580000,cat:"Mobile",image:"Product12.jpeg"},
+{name:"Google Pixel 7",price:600000,cat:"Mobile",image:"https://product.hstatic.net/1000370129/product/ss_digiphone_642_le_hong_phong_0ee85a76a7dc4517932908e183876210_master_acb2324dc46a4d30949f556f3ba79b44_master.jpg"},
+{name:"Google Pixel 7a",price:590000,cat:"Mobile",image:"https://aio.lv/img/cache/product/10453812/63200439_large.webp"},
+{name:"Google Pixel 7 Pro",price:770000,cat:"Mobile",image:"https://aloalo.bg/wp-content/uploads/2024/04/61bFypVJVyL._AC_SL1500_.jpg"},
+{name:"Google Pixel 8 Pro",price:1200000,cat:"Mobile",image:"https://images.eprice.it/nobrand/0/hres/828/308306828/DAM308306828-0-bd9a9139-f3d3-47ee-aba3-e77c7561e922.jpg"},
+{name:"Oraimo FreePods Pro",price:165000,cat:"Audio",image:"https://phonesstorekenya.com/wp-content/uploads/2022/09/page-89.jpeg"},
+{name:"Oraimo Shark 4",price:55000,cat:"Audio",image:"Product18.jpeg"},
+{name:"JBL Boombox 3",price:1300000,cat:"Audio",image:"https://eshop.orange.jo/images/thumbs/0005244_jbl-boombox-3-wireless-speaker-black.jpeg"},
+{name:"JBL Charge 5",price:400000,cat:"Audio",image:"https://img.loopper.com/storage/webshop/articles/Speaker/66e847bd0acb6.png"},
+{name:"JBL Clip 5",price:190000,cat:"Audio",image:"Product21.jpeg"},
+{name:"JBL Flip 6",price:290000,cat:"Audio",image:"https://media.studio7thailand.com/67978/JBL-Flip-6-Black-3-square_medium.jpg"},
+{name:"JBL Go 4",price:160000,cat:"Audio",image:"https://images.tcdn.com.br/img/img_prod/1037093/180_caixa_de_som_portatil_jbl_go_4_azul_jblgo4blu_3765_4_fe35472bee865caad64621bda56f0dfb.jpg"},
+{name:"JBL Tune 510BT",price:30000,cat:"Audio",image:"https://choicemandu.com/image/cache/catalog/products/evostore/jbl-510bt1-1000x1000.jpg"},
+{name:"Oraimo Smart Clipper 2 Gold",price:95000,cat:"Lifestyle",image:"https://cdn-img.oraimo.com/NG/album/opc-cl30g/opc-cl30g.png"},
+{name:"Oraimo Smart Blender",price:130000,cat:"Lifestyle",image:"https://dwecxxryy5p59.cloudfront.net/catalogs/c/9/9/3/c9935d63d0224edae9003c4ca9cb7e0bacf8b442_hf744__444.jpg"},
+{name:"Apple iPad Pro 12.9-inch 128GB",price:2150000,cat:"Smart Tech",image:"https://www.bhphotovideo.com/images/images2500x2500/apple_128gb_ipad_pro_wi_fi_1185485.jpg"},
+{name:"4G Wireless Router",price:150000,cat:"Smart Tech",image:"https://www.cdiscount.com/pdt2/7/4/2/1/700x700/san1721031302742/rw/luernas-routeur-internet-sans-fil-rj45-wan-lan-4-a.jpg"},
+{name:"Airtel 5G SmartBox Router",price:110000,cat:"Smart Tech",image:"https://s.alicdn.com/%40sc04/kf/H65e74f2e3b164c29a01eb8bb79b30f3bZ.jpg"},
+{name:"Aborder 1.8L 4-in-1 Juice Extractor",price:115000,cat:"Lifestyle",image:"Product30.jpeg"},
+{name:"Aborder 2L Electric Kettle",price:32000,cat:"Lifestyle",image:"Product31.jpeg"},
+{name:"Lenovo ThinkPad E14 Gen 2",price:2490000,cat:"Smart Tech",image:"https://www.default.com.bd/image/cache/catalog/Gaject/lenovo-thinkpad-e14-core-i7-11th-gen-14-fhd-laptop-1711-500x500.jpg"},
+{name:"Lenovo ThinkPad E14 Gen 5",price:2250000,cat:"Smart Tech",image:"https://m2.ngt.ma/26429-large_default/ordinateur-portable-lenovo-thinkpad-e14-gen-5-i5-13th-21jk009yfe.jpg"},
+{name:"Microsoft Surface Laptop 3",price:1250000,cat:"Smart Tech",image:"https://it-mixx.de/media/image/product/9431/md/microsoft-surface-laptop-3-i5-1035g7-8gb-256gb-ssd-135-w11-silber.jpg"},
+{name:"iPhone 16",price:2600000,cat:"Mobile",image:"https://gsmservice.co.il/image/cache/catalog/1-%D0%A1%D0%BC%D0%B0%D1%80%D1%98%D1%82%D1%84%D0%BE%D0%BD%D1%8B%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%88%D0%B5%D1%82%D1%8B/Apple/iPhone%2016/Iphone16plus-blue-1000x1000.jpg"},
+{name:"iPhone 17",price:3500000,cat:"Mobile",image:"https://xstore.md/images/product/2025/09/apple-iphone-17-256gb-mist-blue-3-xstore-md-4.jpg"},
+{name:"iPhone 17 Pro Max",price:5350000,cat:"Mobile",image:"https://www.pcservice.com.uy/contentimg/96098/1/d/APPIP17PROMAXSL_01.jpg"},
+{name:"Samsung Galaxy A17",price:520000,cat:"Mobile",image:"https://olcha.uz/image/700x700/products/cdn_1/supplier/stores/1/2025-09-18/owrCcu4xte71cTugmaZNVhIAb3Yo5jspJ1YaeOUG8ESEUhNKAqYsDGxo7xky.jpg"},
+{name:"Samsung Galaxy A07s",price:380000,cat:"Mobile",image:"Product39.jpeg"},
+{name:"Tecno Camon 20 Pro 8+256GB",price:585000,cat:"Mobile",image:"https://soliton.az/images/articles/2023/07/20/thumb20230720042323973.jpg"}
+];
+
+let cart=JSON.parse(localStorage.getItem("turin_cart")||"[]");
+let currency="TZS";
+
+/* Indicative display rates only — not a settlement rate. */
+const rates={TZS:1,USD:1/2550,EUR:1/2950,GBP:1/3400};
+const symbols={TZS:"TZS ",USD:"$ ",EUR:"€ ",GBP:"£ "};
+
+function money(n,c=currency){
+ return symbols[c]+Number(n*rates[c]).toLocaleString("en-US",{maximumFractionDigits:c==="TZS"?0:2});
+}
+function safe(s){
+ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+}
+function saveCart(){localStorage.setItem("turin_cart",JSON.stringify(cart));}
+function cartQty(){return cart.reduce((a,i)=>a+i.qty,0);}
+function cartTotal(){return cart.reduce((a,i)=>a+i.price*i.qty,0);}
+
+function renderProducts(){
+ const q=document.getElementById("search").value.toLowerCase().trim();
+ const cat=document.getElementById("category").value;
+ const list=products.filter(p=>(cat==="all"||p.cat===cat)&&(!q||p.name.toLowerCase().includes(q)));
+ document.getElementById("productGrid").innerHTML=list.map(p=>{
+  const index=products.indexOf(p);
+  return `<article class="product">
+   <div class="product-img"><img src="${p.image}" alt="${safe(p.name)}" loading="lazy" onerror="this.onerror=null;this.src=fallbackImage(p)"></div>
+   <div class="product-info">
+    <div class="cat">${safe(p.cat)}</div>
+    <h3>${safe(p.name)}</h3>
+    <div class="price">${money(p.price,"TZS")}</div>
+    <button class="add" onclick="addToCart(${index})">ADD TO CART</button>
+   </div>
+  </article>`;
+ }).join("")||`<div class="empty" style="grid-column:1/-1"><strong>No products found.</strong>Try another search.</div>`;
+}
+
+function addToCart(index){
+ const p=products[index];
+ const existing=cart.find(i=>i.index===index);
+ if(existing) existing.qty++;
+ else cart.push({index,qty:1,name:p.name,price:p.price,cat:p.cat,image:p.image});
+ saveCart();renderCart();openDrawer();
+ if(typeof gtag==="function")gtag("event","add_to_cart",{currency:"TZS",value:p.price,item_name:p.name});
+}
+
+function changeQty(index,delta){
+ const item=cart.find(i=>i.index===index);
+ if(!item)return;
+ item.qty+=delta;
+ if(item.qty<=0)cart=cart.filter(i=>i.index!==index);
+ saveCart();renderCart();
+}
+
+function removeItem(index){
+ cart=cart.filter(i=>i.index!==index);
+ saveCart();renderCart();
+}
+
+function renderCart(){
+ document.getElementById("cartCount").textContent=cartQty();
+ const items=document.getElementById("cartItems");
+ if(!cart.length){
+  items.innerHTML=`<div class="empty"><strong>Your cart is empty.</strong>Add products to begin your order.</div>`;
+  document.getElementById("cartSummary").innerHTML="";
+  document.getElementById("checkoutStart").disabled=true;
+  document.getElementById("checkoutStart").style.opacity=".45";
+  return;
+ }
+ document.getElementById("checkoutStart").disabled=false;
+ document.getElementById("checkoutStart").style.opacity="1";
+ items.innerHTML=cart.map(i=>`
+  <div class="cart-item">
+   <img src="${i.image}" alt="${safe(i.name)}" onerror="this.onerror=null;this.src=fallbackImage(i)">
+   <div>
+    <h4>${safe(i.name)}</h4>
+    <p>${money(i.price,"TZS")} each</p>
+    <div class="qty">
+     <button onclick="changeQty(${i.index},-1)">−</button>
+     <span>${i.qty}</span>
+     <button onclick="changeQty(${i.index},1)">+</button>
+    </div>
+   </div>
+   <button class="remove" onclick="removeItem(${i.index})">×</button>
+  </div>`).join("");
+ document.getElementById("cartSummary").innerHTML=`
+  <div class="summary">
+   <div class="sum-row"><span>Subtotal</span><b>${money(cartTotal(),"TZS")}</b></div>
+   <div class="sum-row"><span>Shipping</span><span>Confirmed at checkout</span></div>
+   <div class="sum-row"><span>Taxes / duties</span><span>Where applicable</span></div>
+   <div class="sum-row total"><span>Merchandise total</span><b>${money(cartTotal(),"TZS")}</b></div>
+  </div>`;
+}
+
+function openDrawer(){
+ document.getElementById("drawer").classList.add("open");
+ document.getElementById("overlay").classList.add("open");
+ document.body.classList.add("lock");
+ renderCart();
+}
+function closeDrawer(){
+ document.getElementById("drawer").classList.remove("open");
+ document.getElementById("overlay").classList.remove("open");
+ document.body.classList.remove("lock");
+}
+function showCheckout(){
+ if(!cart.length)return;
+ document.getElementById("cartView").style.display="none";
+ document.getElementById("checkoutView").classList.add("active");
+ document.getElementById("successView").classList.remove("active");
+ document.getElementById("drawerTitle").textContent="Checkout";
+}
+function showCart(){
+ document.getElementById("cartView").style.display="block";
+ document.getElementById("checkoutView").classList.remove("active");
+ document.getElementById("successView").classList.remove("active");
+ document.getElementById("drawerTitle").textContent="Your Cart";
+}
+function getVal(id){return document.getElementById(id).value.trim();}
+
+function submitOrder(){
+ const required=["firstName","lastName","email","phone","country","city","address"];
+ const missing=required.some(id=>!getVal(id));
+ const email=getVal("email");
+ const error=document.getElementById("formError");
+ if(missing||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+  error.textContent=missing?"Please complete all required fields.":"Please enter a valid email address.";
+  error.style.display="block";
+  return;
+ }
+ error.style.display="none";
+
+ const order="TURIN-"+new Date().toISOString().slice(0,10).replace(/-/g,"")+"-"+Math.floor(1000+Math.random()*9000);
+ const selectedCurrency=document.getElementById("currency").value;
+ const payment=document.querySelector('input[name="payment"]:checked').value;
+
+ const customer={
+  firstName:getVal("firstName"),lastName:getVal("lastName"),email,phone:getVal("phone"),
+  country:getVal("country"),city:getVal("city"),state:getVal("stateProvince"),
+  address:getVal("address"),postal:getVal("postal"),company:getVal("company"),
+  taxId:getVal("taxId"),notes:getVal("notes"),currency:selectedCurrency,payment
+ };
+
+ const lines=cart.map(i=>`${i.name} x${i.qty} — ${money(i.price*i.qty,"TZS")}`).join("\n");
+ const message=
+ `Hello TURIN PREMIUM STORE,\n\nORDER REQUEST: ${order}\n\n`+
+ `CUSTOMER\n${customer.firstName} ${customer.lastName}\nEmail: ${customer.email}\nPhone: ${customer.phone}\n\n`+
+ `SHIPPING\n${customer.address}, ${customer.city}, ${customer.state?customer.state+", ":""}${customer.postal?customer.postal+", ":""}${customer.country}\n`+
+ `${customer.company?`Company: ${customer.company}\n`:""}${customer.taxId?`Tax/VAT ID: ${customer.taxId}\n`:""}\n`+
+ `ITEMS\n${lines}\n\nMERCHANDISE TOTAL: ${money(cartTotal(),"TZS")}\n`+
+ `DISPLAY CURRENCY: ${selectedCurrency}\nPAYMENT PREFERENCE: ${payment}\n`+
+ `${customer.notes?`\nNOTES\n${customer.notes}\n`:""}\nPlease confirm stock, shipping, duties/taxes where applicable, final amount and payment instructions.`;
+
+ localStorage.setItem("turin_last_order",JSON.stringify({order,customer,cart,total:cartTotal()}));
+
+ if(typeof gtag==="function"){
+  gtag("event","generate_lead",{currency:"TZS",value:cartTotal(),order_reference:order,method:"checkout"});
+  gtag("event","begin_checkout",{currency:"TZS",value:cartTotal(),items:cart.map(i=>({item_name:i.name,quantity:i.qty,price:i.price}))});
+ }
+
+ document.getElementById("orderNumber").textContent="Order Reference: "+order;
+ document.getElementById("successWhatsApp").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(message);
+ document.getElementById("checkoutView").classList.remove("active");
+ document.getElementById("cartView").style.display="none";
+ document.getElementById("successView").classList.add("active");
+ document.getElementById("drawerTitle").textContent="Order Submitted";
+
+ /* Keep cart until customer has confirmation; prevents accidental loss. */
+}
+
+/* Currency changes only display the indicative merchandise amount. */
+document.getElementById("currency").addEventListener("change",e=>{
+ currency=e.target.value;
+});
+
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("category").addEventListener("change",renderProducts);
+document.getElementById("cartOpen").addEventListener("click",openDrawer);
+document.getElementById("drawerClose").addEventListener("click",closeDrawer);
+document.getElementById("overlay").addEventListener("click",closeDrawer);
+document.getElementById("checkoutStart").addEventListener("click",showCheckout);
+document.getElementById("backCart").addEventListener("click",showCart);
+document.getElementById("placeOrder").addEventListener("click",submitOrder);
+
+function checkoutPayload(){
+ const required=["firstName","lastName","email","phone","country","city","address"];
+ const missing=required.some(id=>!getVal(id));
+ const email=getVal("email");
+ if(missing||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+  const error=document.getElementById("formError");
+  error.textContent=missing?"Please complete all required fields.":"Please enter a valid email address.";
+  error.style.display="block";
+  return null;
+ }
+ document.getElementById("formError").style.display="none";
+ return {
+  customer:{
+   firstName:getVal("firstName"),lastName:getVal("lastName"),email,phone:getVal("phone"),
+   country:getVal("country"),city:getVal("city"),state:getVal("stateProvince"),address:getVal("address"),
+   postal:getVal("postal"),company:getVal("company"),taxId:getVal("taxId"),notes:getVal("notes")
+  },
+  currency:document.getElementById("currency").value,
+  items:cart.map(i=>({productId:i.index,quantity:i.qty}))
+ };
+}
+
+async function startPayment(provider){
+ const payload=checkoutPayload();
+ if(!payload||!cart.length)return;
+ const button=provider==="stripe"?document.getElementById("payStripe"):document.getElementById("payPayPal");
+ const original=button.textContent; button.disabled=true; button.textContent="CONNECTING…";
+ try{
+  const response=await fetch("/api/payments/"+provider+"/create",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+  const data=await response.json();
+  if(!response.ok)throw new Error(data.error||"Payment service is not configured.");
+  if(data.url){window.location.href=data.url;return;}
+  if(data.approveUrl){window.location.href=data.approveUrl;return;}
+  throw new Error("No payment URL was returned.");
+ }catch(err){
+  const error=document.getElementById("formError");
+  error.textContent=err.message;error.style.display="block";
+ }finally{button.disabled=false;button.textContent=original;}
+}
+
+document.getElementById("payStripe").addEventListener("click",()=>startPayment("stripe"));
+document.getElementById("payPayPal").addEventListener("click",()=>startPayment("paypal"));
+
+renderProducts();
+renderCart();
 </script>
 </body>
 </html>
