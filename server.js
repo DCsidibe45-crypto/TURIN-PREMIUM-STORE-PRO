@@ -596,4 +596,942 @@ async function createPayPalOrder(order) {
   const amountUSD = tzsToUsd(order.totalTZS);
 
   const response = await fetch(
-    `${PAYPAL_BASE_URL}/v2/
+    `${PAYPAL_BASE_URL}/v2/checkout/orders`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        intent: "CAPTURE",
+
+        purchase_units: [
+          {
+            reference_id: order.reference,
+
+            description:
+              "TURIN PREMIUM STORE International Order",
+
+            custom_id: order.reference,
+
+            amount: {
+              currency_code: "USD",
+              value: amountUSD.toFixed(2)
+            }
+          }
+        ],
+
+        application_context: {
+          brand_name: "TURIN PREMIUM STORE",
+          user_action: "PAY_NOW",
+
+          return_url:
+            `${PUBLIC_BASE_URL}/api/payments/paypal/return?order=` +
+            encodeURIComponent(order.reference),
+
+          cancel_url:
+            `${PUBLIC_BASE_URL}/?payment=cancelled&order=` +
+            encodeURIComponent(order.reference)
+        }
+      })
+    }
+  );
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    console.error("PayPal create order error:", data);
+
+    throw new Error(
+      data?.message ||
+        "PayPal could not create the payment order."
+    );
+  }
+
+  return data;
+}
+
+function getPayPalApproveUrl(data) {
+  if (!data || !Array.isArray(data.links)) {
+    return null;
+  }
+
+  const approve = data.links.find(
+    (link) => link.rel === "approve"
+  );
+
+  return approve ? approve.href : null;
+}
+
+async function capturePayPalOrder(paypalOrderId) {
+  const accessToken = await getPayPalAccessToken();
+
+  const response = await fetch(
+    `${PAYPAL_BASE_URL}/v2/checkout/orders/${encodeURIComponent(
+      paypalOrderId
+    )}/capture`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json"
+      }
+    }
+  );
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    console.error("PayPal capture error:", data);
+
+    throw new Error(
+      data?.message ||
+        "PayPal payment capture failed."
+    );
+  }
+
+  return data;
+}
+
+/* =========================================================
+   STRIPE WEBHOOK SIGNATURE
+========================================================= */
+
+function verifyStripeSignature(payload, signature) {
+  if (!STRIPE_WEBHOOK_SECRET || !signature) {
+    return false;
+  }
+
+  const elements = signature.split(",");
+
+  let timestamp = null;
+  const signatures = [];
+
+  for (const element of elements) {
+    const [key, value] = element.split("=");
+
+    if (key === "t") {
+      timestamp = value;
+    }
+
+    if (key === "v1") {
+      signatures.push(value);
+    }
+  }
+
+  if (!timestamp || !signatures.length) {
+    return false;
+  }
+
+  const signedPayload =
+    `${timestamp}.${payload.toString("utf8")}`;
+
+  const expected = crypto
+    .createHmac(
+      "sha256",
+      STRIPE_WEBHOOK_SECRET
+    )
+    .update(signedPayload)
+    .digest("hex");
+
+  return signatures.some((signatureValue) => {
+    try {
+      return crypto.timingSafeEqual(
+        Buffer.from(expected),
+        Buffer.from(signatureValue)
+      );
+    } catch {
+      return false;
+    }
+  });
+}
+
+/* =========================================================
+   STRIPE WEBHOOK
+   MUST BE BEFORE express.json()
+========================================================= */
+
+app.post(
+  "/api/payments/stripe/webhook",
+  express.raw({ type: "application/json" }),
+  (req, res) => {
+    const signature =
+      req.headers["stripe-signature"];
+
+    if (
+      STRIPE_WEBHOOK_SECRET &&
+      !verifyStripeSignature(
+        req.body,
+        signature
+      )
+    ) {
+      return res
+        .status(400)
+        .json({
+          error: "Invalid Stripe webhook signature."
+        });
+    }
+
+    let event;
+
+    try {
+      event = JSON.parse(
+        req.body.toString("utf8")
+      );
+    } catch {
+      return res
+        .status(400)
+        .json({
+          error: "Invalid webhook JSON."
+        });
+    }
+
+    console.log(
+      "Stripe webhook:",
+      event.type
+    );
+
+    if (
+      event.type ===
+      "checkout.session.completed"
+    ) {
+      const session = event.data.object;
+
+      const reference =
+        session.metadata?.order_reference;
+
+      if (reference) {
+        updateOrder(reference, {
+          paymentStatus: "paid",
+          paymentProvider: "stripe",
+          paymentId: session.id
+        });
+      }
+    }
+
+    return res.json({ received: true });
+  }
+);
+
+/* =========================================================
+   NORMAL JSON
+========================================================= */
+
+app.use(express.json({ limit: "1mb" }));
+
+/* =========================================================
+   CORS
+========================================================= */
+
+app.use((req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "*"
+  );
+
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,POST,OPTIONS"
+  );
+
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization"
+  );
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
+
+/* =========================================================
+   SECURITY HEADERS
+========================================================= */
+
+app.use((req, res, next) => {
+  res.setHeader(
+    "X-Content-Type-Options",
+    "nosniff"
+  );
+
+  res.setHeader(
+    "X-Frame-Options",
+    "SAMEORIGIN"
+  );
+
+  res.setHeader(
+    "Referrer-Policy",
+    "strict-origin-when-cross-origin"
+  );
+
+  next();
+});
+
+/* =========================================================
+   HEALTH CHECK
+========================================================= */
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    ok: true,
+    service: "TURIN PREMIUM STORE",
+    status: "online",
+    time: new Date().toISOString(),
+    stripeConfigured: Boolean(
+      STRIPE_SECRET_KEY
+    ),
+    paypalConfigured: Boolean(
+      PAYPAL_CLIENT_ID &&
+      PAYPAL_CLIENT_SECRET
+    )
+  });
+});
+
+/* =========================================================
+   PRODUCT API
+========================================================= */
+
+app.get("/api/products", (req, res) => {
+  res.json({
+    ok: true,
+    products
+  });
+});
+
+/* =========================================================
+   CREATE ORDER
+========================================================= */
+
+app.post("/api/orders", (req, res) => {
+  try {
+    const customer =
+      validateCustomer(req.body.customer);
+
+    const items =
+      normaliseItems(req.body.items);
+
+    const totalTZS =
+      calculateTotal(items);
+
+    const reference =
+      createOrderReference();
+
+    const order = {
+      reference,
+
+      status: "pending_confirmation",
+
+      paymentStatus: "unpaid",
+
+      paymentProvider: null,
+
+      paymentId: null,
+
+      currency:
+        cleanText(
+          req.body.currency,
+          10
+        ) || "TZS",
+
+      customer,
+
+      items,
+
+      totalTZS,
+
+      createdAt:
+        new Date().toISOString(),
+
+      updatedAt:
+        new Date().toISOString(),
+
+      source: "website"
+    };
+
+    saveOrder(order);
+
+    return res.status(201).json({
+      ok: true,
+      order: {
+        reference,
+        totalTZS,
+        status: order.status
+      }
+    });
+  } catch (error) {
+    console.error(
+      "Create order error:",
+      error
+    );
+
+    return res.status(400).json({
+      ok: false,
+      error: error.message
+    });
+  }
+});
+
+/* =========================================================
+   STRIPE CREATE CHECKOUT
+========================================================= */
+
+app.post(
+  "/api/payments/stripe/create",
+  async (req, res) => {
+    try {
+      const customer =
+        validateCustomer(req.body.customer);
+
+      const items =
+        normaliseItems(req.body.items);
+
+      const totalTZS =
+        calculateTotal(items);
+
+      const reference =
+        createOrderReference();
+
+      const order = {
+        reference,
+
+        status: "payment_pending",
+
+        paymentStatus: "unpaid",
+
+        paymentProvider: "stripe",
+
+        paymentId: null,
+
+        currency: "USD",
+
+        customer,
+
+        items,
+
+        totalTZS,
+
+        createdAt:
+          new Date().toISOString(),
+
+        updatedAt:
+          new Date().toISOString(),
+
+        source: "website"
+      };
+
+      saveOrder(order);
+
+      const session =
+        await createStripeCheckout(
+          order
+        );
+
+      updateOrder(reference, {
+        paymentId: session.id,
+        paymentStatus: "checkout_created"
+      });
+
+      return res.json({
+        ok: true,
+        provider: "stripe",
+        orderReference: reference,
+        url: session.url
+      });
+    } catch (error) {
+      console.error(
+        "Stripe create error:",
+        error
+      );
+
+      return res.status(400).json({
+        ok: false,
+        error: error.message
+      });
+    }
+  }
+);
+
+/* =========================================================
+   PAYPAL CREATE CHECKOUT
+========================================================= */
+
+app.post(
+  "/api/payments/paypal/create",
+  async (req, res) => {
+    try {
+      const customer =
+        validateCustomer(req.body.customer);
+
+      const items =
+        normaliseItems(req.body.items);
+
+      const totalTZS =
+        calculateTotal(items);
+
+      const reference =
+        createOrderReference();
+
+      const order = {
+        reference,
+
+        status: "payment_pending",
+
+        paymentStatus: "unpaid",
+
+        paymentProvider: "paypal",
+
+        paymentId: null,
+
+        currency: "USD",
+
+        customer,
+
+        items,
+
+        totalTZS,
+
+        createdAt:
+          new Date().toISOString(),
+
+        updatedAt:
+          new Date().toISOString(),
+
+        source: "website"
+      };
+
+      saveOrder(order);
+
+      const paypalOrder =
+        await createPayPalOrder(
+          order
+        );
+
+      const approveUrl =
+        getPayPalApproveUrl(
+          paypalOrder
+        );
+
+      if (!approveUrl) {
+        throw new Error(
+          "PayPal did not return an approval URL."
+        );
+      }
+
+      updateOrder(reference, {
+        paymentId: paypalOrder.id,
+        paymentStatus: "checkout_created"
+      });
+
+      return res.json({
+        ok: true,
+        provider: "paypal",
+        orderReference: reference,
+        paypalOrderId:
+          paypalOrder.id,
+        approveUrl
+      });
+    } catch (error) {
+      console.error(
+        "PayPal create error:",
+        error
+      );
+
+      return res.status(400).json({
+        ok: false,
+        error: error.message
+      });
+    }
+  }
+);
+
+/* =========================================================
+   PAYPAL RETURN / CAPTURE
+========================================================= */
+
+app.get(
+  "/api/payments/paypal/return",
+  async (req, res) => {
+    const paypalOrderId =
+      cleanText(
+        req.query.token,
+        200
+      );
+
+    const reference =
+      cleanText(
+        req.query.order,
+        100
+      );
+
+    if (!paypalOrderId) {
+      return res.redirect(
+        `${PUBLIC_BASE_URL}/?payment=error`
+      );
+    }
+
+    try {
+      const result =
+        await capturePayPalOrder(
+          paypalOrderId
+        );
+
+      const completed =
+        result.status === "COMPLETED";
+
+      if (reference) {
+        updateOrder(reference, {
+          paymentStatus:
+            completed
+              ? "paid"
+              : "payment_review",
+
+          paymentProvider: "paypal",
+
+          paymentId: paypalOrderId,
+
+          paypalStatus:
+            result.status
+        });
+      }
+
+      if (completed) {
+        return res.redirect(
+          `${PUBLIC_BASE_URL}/?payment=success&provider=paypal&order=${encodeURIComponent(
+            reference
+          )}`
+        );
+      }
+
+      return res.redirect(
+        `${PUBLIC_BASE_URL}/?payment=review&order=${encodeURIComponent(
+          reference
+        )}`
+      );
+    } catch (error) {
+      console.error(
+        "PayPal return error:",
+        error
+      );
+
+      return res.redirect(
+        `${PUBLIC_BASE_URL}/?payment=error&order=${encodeURIComponent(
+          reference
+        )}`
+      );
+    }
+  }
+);
+
+/* =========================================================
+   ORDER LOOKUP
+========================================================= */
+
+app.get(
+  "/api/orders/:reference",
+  (req, res) => {
+    const reference =
+      cleanText(
+        req.params.reference,
+        100
+      );
+
+    const order =
+      findOrder(reference);
+
+    if (!order) {
+      return res.status(404).json({
+        ok: false,
+        error: "Order not found."
+      });
+    }
+
+    return res.json({
+      ok: true,
+      order
+    });
+  }
+);
+
+/* =========================================================
+   WHATSAPP VERIFICATION
+========================================================= */
+
+app.get("/webhook", (req, res) => {
+  const mode =
+    req.query["hub.mode"];
+
+  const token =
+    req.query["hub.verify_token"];
+
+  const challenge =
+    req.query["hub.challenge"];
+
+  if (
+    mode === "subscribe" &&
+    token === WHATSAPP_VERIFY_TOKEN
+  ) {
+    return res
+      .status(200)
+      .send(challenge);
+  }
+
+  return res.sendStatus(403);
+});
+
+/* =========================================================
+   WHATSAPP WEBHOOK
+========================================================= */
+
+app.post("/webhook", (req, res) => {
+  console.log(
+    "WhatsApp webhook:",
+    JSON.stringify(
+      req.body,
+      null,
+      2
+    )
+  );
+
+  return res.sendStatus(200);
+});
+
+/* =========================================================
+   WHATSAPP ORDER MESSAGE
+========================================================= */
+
+async function sendWhatsAppText(
+  phone,
+  message
+) {
+  if (
+    !WHATSAPP_ACCESS_TOKEN ||
+    !WHATSAPP_PHONE_NUMBER_ID
+  ) {
+    return {
+      configured: false
+    };
+  }
+
+  const response =
+    await fetch(
+      `https://graph.facebook.com/v23.0/${WHATSAPP_PHONE_NUMBER_ID}/messages`,
+      {
+        method: "POST",
+
+        headers: {
+          Authorization:
+            `Bearer ${WHATSAPP_ACCESS_TOKEN}`,
+
+          "Content-Type":
+            "application/json"
+        },
+
+        body: JSON.stringify({
+          messaging_product:
+            "whatsapp",
+
+          to: phone,
+
+          type: "text",
+
+          text: {
+            preview_url: false,
+            body: message
+          }
+        })
+      }
+    );
+
+  const data =
+    await response.json();
+
+  if (!response.ok) {
+    console.error(
+      "WhatsApp send error:",
+      data
+    );
+
+    throw new Error(
+      "WhatsApp message could not be sent."
+    );
+  }
+
+  return {
+    configured: true,
+    data
+  };
+}
+
+app.post(
+  "/api/orders/:reference/whatsapp",
+  async (req, res) => {
+    try {
+      const reference =
+        cleanText(
+          req.params.reference,
+          100
+        );
+
+      const order =
+        findOrder(reference);
+
+      if (!order) {
+        return res.status(404).json({
+          ok: false,
+          error: "Order not found."
+        });
+      }
+
+      const itemLines =
+        order.items
+          .map(
+            (item) =>
+              `${item.name} x${item.quantity}`
+          )
+          .join("\n");
+
+      const message =
+        `Hello TURIN PREMIUM STORE,\n\n` +
+        `ORDER REQUEST: ${order.reference}\n\n` +
+        `Customer: ${order.customer.firstName} ${order.customer.lastName}\n` +
+        `Phone: ${order.customer.phone}\n` +
+        `Email: ${order.customer.email}\n\n` +
+        `Shipping:\n` +
+        `${order.customer.address}, ${order.customer.city}, ` +
+        `${order.customer.state ? order.customer.state + ", " : ""}` +
+        `${order.customer.country}\n\n` +
+        `Items:\n${itemLines}\n\n` +
+        `Merchandise Total: TZS ${order.totalTZS.toLocaleString(
+          "en-US"
+        )}\n\n` +
+        `Please confirm stock, shipping, final amount and payment instructions.`;
+
+      const result =
+        await sendWhatsAppText(
+          WHATSAPP_BUSINESS_NUMBER,
+          message
+        );
+
+      return res.json({
+        ok: true,
+        whatsapp: result
+      });
+    } catch (error) {
+      console.error(
+        "WhatsApp order error:",
+        error
+      );
+
+      return res.status(400).json({
+        ok: false,
+        error: error.message
+      });
+    }
+  }
+);
+
+/* =========================================================
+   SERVE WEBSITE
+========================================================= */
+
+app.use(
+  express.static(
+    path.join(__dirname)
+  )
+);
+
+app.get("/", (req, res) => {
+  res.sendFile(
+    path.join(
+      __dirname,
+      "index.html"
+    )
+  );
+});
+
+/* =========================================================
+   404 API HANDLER
+   IMPORTANT:
+   API errors return JSON, not HTML.
+========================================================= */
+
+app.use(
+  "/api",
+  (req, res) => {
+    return res.status(404).json({
+      ok: false,
+      error:
+        "API endpoint not found."
+    });
+  }
+);
+
+/* =========================================================
+   GENERAL ERROR HANDLER
+========================================================= */
+
+app.use(
+  (error, req, res, next) => {
+    console.error(
+      "Server error:",
+      error
+    );
+
+    if (res.headersSent) {
+      return next(error);
+    }
+
+    return res.status(500).json({
+      ok: false,
+      error:
+        "Internal server error."
+    });
+  }
+);
+
+/* =========================================================
+   START
+========================================================= */
+
+ensureOrdersFile();
+
+app.listen(
+  PORT,
+  () => {
+    console.log(
+      "=========================================="
+    );
+
+    console.log(
+      "TURIN PREMIUM STORE"
+    );
+
+    console.log(
+      `Server running on port ${PORT}`
+    );
+
+    console.log(
+      `Public URL: ${PUBLIC_BASE_URL}`
+    );
+
+    console.log(
+      `Stripe configured: ${Boolean(
+        STRIPE_SECRET_KEY
+      )}`
+    );
+
+    console.log(
+      `PayPal configured: ${Boolean(
+        PAYPAL_CLIENT_ID &&
+        PAYPAL_CLIENT_SECRET
+      )}`
+    );
+
+    console.log(
+      "=========================================="
+    );
+  }
+);
