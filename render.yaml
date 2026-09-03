@@ -1,6 +1,34 @@
 services:
   - type: web
     name: turin-premium-store
-    runtime: static
-    buildCommand: ""
-    staticPublishPath: .
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: TZS_PER_USD
+        value: "2550"
+
+      - key: PUBLIC_BASE_URL
+        sync: false
+
+      - key: STRIPE_SECRET_KEY
+        sync: false
+
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+
+      - key: PAYPAL_BASE_URL
+        value: https://api-m.sandbox.paypal.com
+
+      - key: WHATSAPP_VERIFY_TOKEN
+        sync: false
