@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful | TURIN PREMIUM STORE</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111827;
+    }
+
+    .card {
+      width: min(92%, 560px);
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 45px 30px;
+      text-align: center;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.10);
+    }
+
+    .success {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: #16a34a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 30px;
+    }
+
+    p {
+      color: #6b7280;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .order {
+      margin: 25px 0;
+      padding: 16px;
+      border-radius: 12px;
+      background: #f3f4f6;
+      font-size: 14px;
+      word-break: break-word;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 10px;
+      background: #111827;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .small {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="success">✓</div>
+
+    <h1>Payment Successful</h1>
+
+    <p>
+      Thank you for your purchase from
+      <strong>TURIN PREMIUM STORE</strong>.
+      Your payment has been received successfully.
+    </p>
+
+    <div class="order" id="orderBox">
+      Processing your order...
+    </div>
+
+    <a href="/" class="btn">
+      Continue Shopping
+    </a>
+
+    <div class="small">
+      TURIN PREMIUM STORE<br>
+      International Online Store
+    </div>
+
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const reference =
+      params.get("reference") ||
+      params.get("order") ||
+      params.get("session_id");
+
+    const orderBox = document.getElementById("orderBox");
+
+    if (reference) {
+      orderBox.innerHTML =
+        "<strong>Order Reference</strong><br>" +
+        reference;
+    } else {
+      orderBox.innerHTML =
+        "<strong>Payment received</strong><br>" +
+        "Your order is being processed.";
+    }
+  </script>
+
+</body>
+</html>
