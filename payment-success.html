@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment Successful | TURIN PREMIUM STORE</title>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-RF9N3ZKHT9");
+  </script>
+
   <style>
     * {
       box-sizing: border-box;
@@ -120,17 +128,148 @@
       params.get("order") ||
       params.get("session_id");
 
+    const provider = params.get("provider") || "";
+
     const orderBox = document.getElementById("orderBox");
 
-    if (reference) {
+    async function confirmPaymentAndTrackPurchase() {
+      if (!reference) {
+        orderBox.innerHTML =
+          "<strong>Payment received</strong><br>" +
+          "Your order is being processed.";
+        return;
+      }
+
       orderBox.innerHTML =
         "<strong>Order Reference</strong><br>" +
-        reference;
-    } else {
-      orderBox.innerHTML =
-        "<strong>Payment received</strong><br>" +
-        "Your order is being processed.";
+        reference +
+        "<br><br>Confirming payment...";
+
+      try {
+        const response = await fetch(
+          "/api/orders/" + encodeURIComponent(reference),
+          {
+            method: "GET",
+            headers: {
+              "Accept": "application/json"
+            },
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error("Unable to verify order");
+        }
+
+        const order = await response.json();
+
+        const paymentStatus =
+          String(order.paymentStatus || "").toLowerCase();
+
+        if (paymentStatus !== "paid") {
+          orderBox.innerHTML =
+            "<strong>Order Reference</strong><br>" +
+            reference +
+            "<br><br>" +
+            "Payment is still being confirmed.";
+          return;
+        }
+
+        orderBox.innerHTML =
+          "<strong>Order Reference</strong><br>" +
+          reference +
+          "<br><br>" +
+          "Payment confirmed successfully.";
+
+        const purchaseKey =
+          "turin_purchase_tracked_" + reference;
+
+        const alreadyTracked =
+          localStorage.getItem(purchaseKey) === "true";
+
+        if (alreadyTracked) {
+          return;
+        }
+
+        const exchangeRate = 2550;
+
+        const totalTZS =
+          Number(
+            order.totalTZS ??
+            order.total ??
+            order.amountTZS ??
+            0
+          );
+
+        const totalUSD =
+          Number(
+            order.paymentAmountUSD ??
+            order.amountUSD ??
+            0
+          ) ||
+          (totalTZS > 0 ? totalTZS / exchangeRate : 0);
+
+        const items = Array.isArray(order.items)
+          ? order.items.map(function(item) {
+              const quantity =
+                Number(
+                  item.quantity ??
+                  item.qty ??
+                  1
+                );
+
+              const unitPriceTZS =
+                Number(
+                  item.unitPriceTZS ??
+                  item.price ??
+                  item.unitPrice ??
+                  0
+                );
+
+              return {
+                item_id: String(
+                  item.productId ??
+                  item.id ??
+                  item.product_id ??
+                  ""
+                ),
+                item_name:
+                  item.name ||
+                  item.productName ||
+                  "Product",
+                price: unitPriceTZS / exchangeRate,
+                quantity: quantity
+              };
+            })
+          : [];
+
+        if (
+          typeof gtag === "function" &&
+          totalUSD > 0
+        ) {
+          gtag("event", "purchase", {
+            transaction_id: reference,
+            value: totalUSD,
+            currency: "USD",
+            items: items
+          });
+
+          localStorage.setItem(
+            purchaseKey,
+            "true"
+          );
+        }
+
+      } catch (error) {
+        orderBox.innerHTML =
+          "<strong>Order Reference</strong><br>" +
+          reference +
+          "<br><br>" +
+          "Payment received. Your order is being processed.";
+      }
     }
+
+    confirmPaymentAndTrackPurchase();
   </script>
 
 </body>
