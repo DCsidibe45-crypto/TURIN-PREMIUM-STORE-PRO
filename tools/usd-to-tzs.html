@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USD to TZS Converter | TURIN</title>
+<meta name="description" content="Convert US Dollars to Tanzanian Shillings instantly with TURIN's free USD to TZS converter.">
+</head>
+<body>
+
+<h1>USD to TZS Converter</h1>
+
+<label for="usd">US Dollars (USD)</label>
+<input id="usd" type="number" placeholder="Enter USD amount">
+
+<button onclick="convert()">Convert</button>
+
+<h2 id="result">Enter an amount</h2>
+
+<script>
+const rate = 2500;
+
+function convert() {
+  const usd = Number(document.getElementById("usd").value);
+  if (!usd || usd < 0) {
+    document.getElementById("result").textContent = "Enter a valid amount";
+    return;
+  }
+
+  const tzs = usd * rate;
+
+  document.getElementById("result").textContent =
+    `${usd.toLocaleString()} USD ≈ ${tzs.toLocaleString()} TZS`;
+}
+</script>
+
+</body>
+</html>
