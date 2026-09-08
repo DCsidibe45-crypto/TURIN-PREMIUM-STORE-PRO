@@ -675,7 +675,7 @@ async function startPayment(provider){
  const button=provider==="stripe"?document.getElementById("payStripe"):document.getElementById("payPayPal");
  const original=button.textContent; button.disabled=true; button.textContent="CONNECTING…";
  try{
-  const response=await fetch("/api/payments/"+provider+"/create",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+ const response=await fetch("https://turin-premium-store-pro-api.onrender.com/api/payments/"+provider+"/create",{                                                                     ,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
   const data=await response.json();
   if(!response.ok)throw new Error(data.error||"Payment service is not configured.");
   if(data.url){window.location.href=data.url;return;}
