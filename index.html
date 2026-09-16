@@ -1404,83 +1404,255 @@ const PHONE="255797955045";
    ========================================================= */
 
 const products=[
- {
-  id:"pesapal-01",
-  name:"TURIN CARE BUTTER LUXURY",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product01.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=5282fcd4-c261-4e36-9bad-f0736cbabe28"
- },
- {
-  id:"pesapal-02",
-  name:"SHEA BUTTER",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product02.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=47f1f87c-f987-4627-9d55-345cb975a656"
- },
- {
-  id:"pesapal-03",
-  name:"TURIN CARE TIANN RIURE",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product03.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=5ebf4cb9-125d-4b3c-af4b-03c8e8b74ceb"
- },
- {
-  id:"pesapal-04",
-  name:"TURIN CARE BUTTER",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product04.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=99f799e0-530e-4499-b91a-906b2d619ae4"
- },
- {
-  id:"pesapal-05",
-  name:"TURIN CARE KHEONI SHEA BODY BUTTER",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product05.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=30e797e4-c040-4f9f-8b8d-715023c83ec8"
- },
- {
-  id:"pesapal-06",
-  name:"TURIN CARE LUXURY BODY BUTTER",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product06.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=0113fd45-7681-4579-b6c8-cb52383d74b7"
- },
- {
-  id:"pesapal-07",
-  name:"TURIN CARE SHEA BODY BUTTER",
-  price:35000,
-  cat:"TURIN CARE",
-  image:"Product07.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=04b0ca8e-84ab-47cf-8ee4-9b9e98063805"
- },
- {
-  id:"pesapal-08",
-  name:"TURIN CARE",
-  price:20000,
-  cat:"TURIN CARE",
-  image:"Product08.jpeg",
-  pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=61657cd1-aede-4b2e-a383-6e7b3f39937c"
- }
-];
+  {
+    id:1,
+    name:"TURIN CARE SHEA BODY BUTTER",
+    price:35000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/30754235/pexels-photo-30754235.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=5282fcd4-c261-4e36-9bad-f0736cbabe28"
+  },
+  {
+    id:2,
+    name:"TURIN CARE LUXURY BODY BUTTER",
+    price:35000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/4735910/pexels-photo-4735910.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=47f1f87c-f987-4627-9d55-345cb975a656"
+  },
+  {
+    id:3,
+    name:"TURIN CARE PREMIUM BODY BUTTER",
+    price:35000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/11935645/pexels-photo-11935645.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=5ebf4cb9-125d-4b3c-af4b-03c8e8b74ceb"
+  },
+  {
+    id:4,
+    name:"TURIN CARE SIGNATURE",
+    price:35000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/15807351/pexels-photo-15807351.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=99f799e0-530e-4499-b91a-906b2d619ae4"
+  },
+  {
+    id:5,
+    name:"TURIN CARE BODY BUTTER",
+    price:20000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/3735619/pexels-photo-3735619.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=30e797e4-c040-4f9f-8b8d-715023c83ec8"
+  },
+  {
+    id:6,
+    name:"TURIN CARE BEAUTY COLLECTION",
+    price:45000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/24602075/pexels-photo-24602075.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=04b0ca8e-84ab-47cf-8ee4-9b9e98063805"
+  },
+  {
+    id:7,
+    name:"TURIN CARE DAILY SKINCARE",
+    price:40000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/3735619/pexels-photo-3735619.jpeg?auto=compress&cs=tinysrgb&w=800",
+    pesapalUrl:"https://store.pesapal.com/shop/turinpremiumstore?productCode=61657cd1-aede-4b2e-a383-6e7b3f39937c"
+  },
+  {
+    id:8,
+    name:"TURIN CARE LUXURY SKINCARE",
+    price:50000,
+    cat:"TURIN CARE",
+    image:"https://images.pexels.com/photos/11935645/pexels-photo-11935645.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
 
+  {
+    id:9,
+    name:"TURIN PREMIUM SMARTPHONE",
+    price:650000,
+    cat:"Mobile",
+    image:"https://images.pexels.com/photos/24182750/pexels-photo-24182750.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:10,
+    name:"TURIN SMARTPHONE PRO",
+    price:850000,
+    cat:"Mobile",
+    image:"https://images.pexels.com/photos/24738079/pexels-photo-24738079.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:11,
+    name:"TURIN SMARTPHONE ULTRA",
+    price:1200000,
+    cat:"Mobile",
+    image:"https://images.pexels.com/photos/6373174/pexels-photo-6373174.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:12,
+    name:"TURIN PREMIUM TABLET",
+    price:550000,
+    cat:"Mobile",
+    image:"https://images.pexels.com/photos/24738079/pexels-photo-24738079.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  {
+    id:13,
+    name:"TURIN WIRELESS EARBUDS",
+    price:85000,
+    cat:"Audio",
+    image:"https://images.pexels.com/photos/16247545/pexels-photo-16247545.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:14,
+    name:"TURIN PREMIUM HEADPHONES",
+    price:180000,
+    cat:"Audio",
+    image:"https://images.pexels.com/photos/17726845/pexels-photo-17726845.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:15,
+    name:"TURIN WIRELESS SPEAKER",
+    price:120000,
+    cat:"Audio",
+    image:"https://images.pexels.com/photos/25450654/pexels-photo-25450654.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:16,
+    name:"TURIN PREMIUM AUDIO SET",
+    price:250000,
+    cat:"Audio",
+    image:"https://images.pexels.com/photos/5198383/pexels-photo-5198383.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  {
+    id:17,
+    name:"TURIN SMART WATCH",
+    price:150000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/24182750/pexels-photo-24182750.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:18,
+    name:"TURIN SMART WATCH PRO",
+    price:250000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/16247535/pexels-photo-16247535.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:19,
+    name:"TURIN SMART WATCH ULTRA",
+    price:350000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/10357017/pexels-photo-10357017.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:20,
+    name:"TURIN SMART GADGET KIT",
+    price:300000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/16247545/pexels-photo-16247545.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  {
+    id:21,
+    name:"TURIN PREMIUM LAPTOP",
+    price:1250000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/18311088/pexels-photo-18311088.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:22,
+    name:"TURIN BUSINESS LAPTOP",
+    price:1650000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/5827834/pexels-photo-5827834.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:23,
+    name:"TURIN ULTRABOOK",
+    price:1850000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/6613955/pexels-photo-6613955.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:24,
+    name:"TURIN WORKSTATION",
+    price:2200000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/10357017/pexels-photo-10357017.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  {
+    id:25,
+    name:"TURIN POWER BANK",
+    price:75000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/10104285/pexels-photo-10104285.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:26,
+    name:"TURIN WIRELESS CHARGER",
+    price:65000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/10357017/pexels-photo-10357017.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:27,
+    name:"TURIN SMART HOME KIT",
+    price:280000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/25450654/pexels-photo-25450654.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:28,
+    name:"TURIN CREATOR CAMERA KIT",
+    price:950000,
+    cat:"Smart Tech",
+    image:"https://images.pexels.com/photos/5198383/pexels-photo-5198383.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  {
+    id:29,
+    name:"TURIN PREMIUM TECH SET",
+    price:450000,
+    cat:"Lifestyle",
+    image:"https://images.pexels.com/photos/16247545/pexels-photo-16247545.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:30,
+    name:"TURIN LUXURY GADGET COLLECTION",
+    price:600000,
+    cat:"Lifestyle",
+    image:"https://images.pexels.com/photos/17726845/pexels-photo-17726845.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:31,
+    name:"TURIN PREMIUM LIFESTYLE SET",
+    price:350000,
+    cat:"Lifestyle",
+    image:"https://images.pexels.com/photos/705164/pexels-photo-705164.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    id:32,
+    name:"TURIN EXECUTIVE TECH COLLECTION",
+    price:750000,
+    cat:"Lifestyle",
+    image:"https://images.pexels.com/photos/18311088/pexels-photo-18311088.jpeg?auto=compress&cs=tinysrgb&w=800"
+  }
+];
 /* =========================================================
    CART
    ========================================================= */
 
+/* ==================================================
 let cart=JSON.parse(
  localStorage.getItem("turin_cart")||"[]"
 );
 
 let currency="TZS";
-
-/* =========================================================
+=======
    CURRENCY RATES
    ========================================================= */
 
