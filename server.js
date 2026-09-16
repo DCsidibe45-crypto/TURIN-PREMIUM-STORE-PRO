@@ -23,7 +23,7 @@ return JSON.parse(data || "[]");
 function writeOrders(orders) { fs.writeFileSync( ORDERS_FILE, JSON.stringify(orders, null, 2), "utf8" ); }
 function createOrderReference() { const date = new Date() .toISOString() .slice(0, 10) .replace(/-/g, "");
 const random = crypto .randomBytes(3) .toString("hex") .toUpperCase();
-return TURIN-${date}-${random}; }
+return `TURIN-${date}-${random}`;
 function cleanText(value, max = 500) { if ( value === undefined || value === null ) { return ""; }
 return String(value) .trim() .slice(0, max); }
 function isValidEmail(email) { return /^[^\s@]+@[^\s@]+.[^\s@]+$/.test( email ); }
