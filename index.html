@@ -1588,6 +1588,32 @@ const products=[  {   name:"TURIN CARE BUTTER LUXURY",   price:35000,   cat:"TUR
 
 let cart=JSON.parse(localStorage.getItem("turin_cart")||"[]");
 let currency="TZS";
+ function renderProducts(){
+  const grid = document.getElementById("productGrid");
+  if(!grid) return;
+
+  grid.innerHTML = products.map(p => `
+    <article class="product-card">
+      <div class="product-image">
+        <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none'">
+      </div>
+      <div class="product-info">
+        <div class="brand">${p.category || "TURIN PREMIUM"}</div>
+        <h3>${p.name}</h3>
+        <p>Premium TURIN selection • Secure checkout available.</p>
+        <strong>TZS ${Number(p.price).toLocaleString()}</strong>
+        <div class="product-bottom">
+          <a href="${p.pesapalUrl}" target="_blank" rel="noopener" class="order">
+            BUY WITH PESAPAL
+          </a>
+          <button onclick="addToCart('${p.id}')">ADD TO CART</button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+renderProducts();
 
 const rates={
  TZS:1,
