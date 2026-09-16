@@ -589,27 +589,35 @@ return res
 } );
 /* ========================================================= START ========================================================= */
 ensureOrdersFile();
-app.listen( PORT, () => { console.log( "==========================================" );
-console.log(
-  "TURIN PREMIUM STORE"
-);
+app.listen(
+  PORT,
+  "0.0.0.0",
+  () => {
+    console.log(
+      "=========================================="
+    );
 
-console.log(
-  `Server running on port ${PORT}`
-);
+    console.log(
+      "TURIN PREMIUM STORE"
+    );
 
-console.log(
-  `Public URL: ${PUBLIC_BASE_URL}`
-);
+    console.log(
+      `Server running on port ${PORT}`
+    );
 
-console.log(
-  `ClickPesa configured: ${Boolean(
-    CLICKPESA_CLIENT_ID &&
-    CLICKPESA_API_KEY
-  )}`
-);
+    console.log(
+      `Public URL: ${PUBLIC_BASE_URL}`
+    );
 
-console.log(
-  "=========================================="
+    console.log(
+      `ClickPesa configured: ${Boolean(
+        CLICKPESA_CLIENT_ID &&
+        CLICKPESA_API_KEY
+      )}`
+    );
+
+    console.log(
+      "=========================================="
+    );
+  }
 );
-} );
