@@ -1518,7 +1518,72 @@ function fallbackImage(product){
 /* =========================================================
    PRODUCT CATALOGUE — ALL 40 PRODUCTS
    ========================================================= */
-
+const products = [
+  {
+    id: "pesapal-01",
+    name: "TURIN PESAPAL PRODUCT 01",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product01.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=5282fcd4-c261-4e36-9bad-f0736cbabe28"
+  },
+  {
+    id: "pesapal-02",
+    name: "TURIN PESAPAL PRODUCT 02",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product02.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=47f1f87c-f987-4627-9d55-345cb975a656"
+  },
+  {
+    id: "pesapal-03",
+    name: "TURIN PESAPAL PRODUCT 03",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product03.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=5ebf4cb9-125d-4b3c-af4b-03c8e8b74ceb"
+  },
+  {
+    id: "pesapal-04",
+    name: "TURIN PESAPAL PRODUCT 04",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product04.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=99f799e0-530e-4499-b91a-906b2d619ae4"
+  },
+  {
+    id: "pesapal-05",
+    name: "TURIN PESAPAL PRODUCT 05",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product05.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=30e797e4-c040-4f9f-8b8d-715023c83ec8"
+  },
+  {
+    id: "pesapal-06",
+    name: "TURIN PESAPAL PRODUCT 06",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product06.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=0113fd45-7681-4579-b6c8-cb52383d74b7"
+  },
+  {
+    id: "pesapal-07",
+    name: "TURIN PESAPAL PRODUCT 07",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product07.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=04b0ca8e-84ab-47cf-8ee4-9b9e98063805"
+  },
+  {
+    id: "pesapal-08",
+    name: "TURIN PESAPAL PRODUCT 08",
+    price: 35000,
+    category: "TURIN CARE",
+    image: "Product08.jpeg",
+    pesapalUrl: "https://store.pesapal.com/shop/turinpremiumstore?productCode=61657cd1-aede-4b2e-a383-6e7b3f39937c"
+  }
+];
 const products=[  {   name:"TURIN CARE BUTTER LUXURY",   price:35000,   cat:"TURIN CARE",   image:"Product01.jpeg"  },  {   name:"SHEA BUTTER",   price:35000,   cat:"TURIN CARE",   image:"Product02.jpeg"  },  {   name:"TURIN CARE TIANN RIURE",   price:35000,   cat:"TURIN CARE",   image:"Product03.jpeg"  },  {   name:"TURIN CARE BUTTER",   price:35000,   cat:"TURIN CARE",   image:"Product04.jpeg"  },  {   name:"TURIN CARE KHEONI SHEA BODY BUTTER",   price:35000,   cat:"TURIN CARE",   image:"Product05.jpeg"  },  {   name:"TURIN CARE LUXURY BODY BUTTER",   price:35000,   cat:"TURIN CARE",   image:"Product06.jpeg"  },  {   name:"TURIN CARE SHEA Body Butter",   price:35000,   cat:"TURIN CARE",   image:"Product07.jpeg"  },  {   name:"TURIN CARE",   price:20000,   cat:"TURIN CARE",   image:"Product08.jpeg"  } ];
 
 let cart=JSON.parse(localStorage.getItem("turin_cart")||"[]");
