@@ -2281,25 +2281,30 @@ async function startClickPesaPayment(){
   }
 
   const payload={
-   customerName:
-    `${firstName} ${lastName}`.trim(),
+  customer:{
+    firstName,
+    lastName,
+    email,
+    phone,
+    country,
+    city,
+    state:stateProvince,
+    address,
+    postal:postalCode,
+    company:getVal("company"),
+    taxId:getVal("taxId"),
+    notes:getVal("notes")
+  },
 
-   customerEmail:email,
+  items:cart.map(i=>({
+    productId:i.index,
+    name:i.name,
+    quantity:i.qty,
+    unitPriceTZS:i.price
+  })),
 
-   customerPhone:
-    phone.replace(/[^\d]/g,""),
-
-   firstName,
-   lastName,
-   email,
-   phone,
-   country,
-   city,
-   stateProvince,
-   address,
-   postalCode,
-
-   currency:"TZS",
+  currency:"TZS"
+};
 
    amount:cartTotal(),
 
