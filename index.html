@@ -1583,6 +1583,12 @@
         Order via WhatsApp
 
       </button>
+      <div id='wm-widget' style='width: 200px;height: 50px;'></div>
+
+<script type='text/javascript' src='https://merchant.wmtransfer.com/conf/lib/widgets/wmApp.js?v=1.6'></script>
+<script type='text/javascript'>
+window.webmoney.widgets().button.create({"data":{"amount":50,"purse":"T270243849673","desc":"TURIN PAYMENT GATEWAY","paymentType":"wm","lmi_payment_no":null,"forcePay":true,"lmi_catid":null,"lmi_catreq":"a6cb284e-3525-4dcb-8543-bf4a12432ad2","lmi_cathash":"3d0f4020370164d58744f7bd330cb7210a91b9d31999835ab9ea8a4e3ea4cb56"},"style":{"theme":"wm","showAmount":true,"titleNum":1,"title":"","design":"skeuomorph"},"lang":"en"}).on('paymentComplete', function (data) {/* your code */}).mount('wm-widget')
+</script>
 
     </div>
 
