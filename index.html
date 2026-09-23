@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="665d27c2c92499f84afb879a56d782156b2f6c20" content="665d27c2c92499f84afb879a56d782156b2f6c20" />
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +25,20 @@ gtag("js", new Date());
 gtag("config", "G-RF9N3ZKHT9", {
   anonymize_ip: true
 });
+</script>
+
+<!-- AD / TRAFFIC SCRIPT -->
+<script>
+(function(wuvu){
+var d = document,
+    s = d.createElement('script'),
+    l = d.currentScript || d.scripts[d.scripts.length - 1];
+s.settings = wuvu || {};
+s.src = "\/\/windy-imagination.com\/ctD\/9.6-bD2\/5ulyS\/WPQt9eN_zpQz1XMSjjYEyEMlSu0\/3ANnDTU\/ySNlj-I\/1Y";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
 </script>
 
 <style>
@@ -385,10 +398,6 @@ header{
     );
 }
 
-.category h3{
-  font-size:18px;
-}
-
 /* =========================================================
    FILTERS
 ========================================================= */
@@ -552,6 +561,7 @@ header{
   font-weight:900;
 
   letter-spacing:1px;
+
   text-transform:uppercase;
 }
 
@@ -569,10 +579,6 @@ header{
   color:#39c866;
 
   font-size:15px;
-}
-
-.contact:hover{
-  background:#102417;
 }
 
 /* =========================================================
@@ -645,10 +651,6 @@ header{
   font-size:28px;
 
   margin-bottom:12px;
-}
-
-.trust h3{
-  margin-bottom:8px;
 }
 
 .trust p{
@@ -785,7 +787,7 @@ footer{
 }
 
 /* =========================================================
-   CART DRAWER
+   CART
 ========================================================= */
 
 .overlay{
@@ -913,20 +915,20 @@ footer{
   border-top:1px solid #222;
 }
 
-.cart-total-row{
+.cart-total-row,
+.cart-usdt-row{
   display:flex;
   justify-content:space-between;
 
   margin-bottom:6px;
+}
 
+.cart-total-row{
   font-size:18px;
   font-weight:bold;
 }
 
 .cart-usdt-row{
-  display:flex;
-  justify-content:space-between;
-
   margin-bottom:16px;
 
   color:var(--gold2);
@@ -959,10 +961,6 @@ footer{
   text-transform:uppercase;
 }
 
-.webmoney:hover{
-  background:var(--gold2);
-}
-
 .gateway-note{
   margin-top:9px;
 
@@ -974,7 +972,7 @@ footer{
 }
 
 /* =========================================================
-   WEBMONEY MODAL
+   MODAL
 ========================================================= */
 
 .modal{
@@ -1059,8 +1057,6 @@ footer{
   display:flex;
 
   justify-content:space-between;
-
-  gap:15px;
 
   padding:5px 0;
 
@@ -1166,7 +1162,7 @@ footer{
 }
 
 /* =========================================================
-   MOBILE MENU
+   MOBILE
 ========================================================= */
 
 .mobile{
@@ -1359,10 +1355,6 @@ footer{
 
 }
 
-/* =========================================================
-   VERY SMALL DEVICES
-========================================================= */
-
 @media(max-width:360px){
 
   .products{
@@ -1380,20 +1372,9 @@ footer{
 
 <body>
 
-<!-- =======================================================
-     TOP BAR
-======================================================= -->
-
 <div class="topbar">
-
 ✦ PREMIUM TECHNOLOGY • SMART LIVING • LIFESTYLE ✦
-
 </div>
-
-
-<!-- =======================================================
-     HEADER
-======================================================= -->
 
 <header>
 
@@ -1403,65 +1384,35 @@ footer{
 TURIN <span>PREMIUM</span>
 </a>
 
-
 <nav class="nav-links">
 
-<a href="#shop">
-Shop
-</a>
+<a href="#shop">Shop</a>
 
-<a href="#categories">
-Collections
-</a>
+<a href="#categories">Collections</a>
 
-<a href="#experience">
-Experience
-</a>
+<a href="#experience">Experience</a>
 
-<a href="#concierge">
-Concierge
-</a>
+<a href="#concierge">Concierge</a>
 
 </nav>
 
-
 <div class="nav-actions">
 
-<button
-class="icon"
-onclick="openSearch()"
-aria-label="Search">
-
+<button class="icon" onclick="openSearch()">
 ⌕
-
 </button>
 
-
-<button
-class="icon"
-onclick="openCart()"
-aria-label="Cart">
-
+<button class="icon" onclick="openCart()">
 🛒
 
-<span
-class="cart-count"
-id="cartCount">
-
+<span class="cart-count" id="cartCount">
 0
-
 </span>
 
 </button>
 
-
-<button
-class="icon"
-onclick="openMobile()"
-aria-label="Menu">
-
+<button class="icon" onclick="openMobile()">
 ☰
-
 </button>
 
 </div>
@@ -1470,61 +1421,21 @@ aria-label="Menu">
 
 </header>
 
+<div class="mobile" id="mobile">
 
-<!-- =======================================================
-     MOBILE MENU
-======================================================= -->
-
-<div
-class="mobile"
-id="mobile">
-
-<button
-class="icon mobile-close"
-onclick="closeMobile()">
-
+<button class="icon mobile-close" onclick="closeMobile()">
 ✕
-
 </button>
 
-<a
-href="#shop"
-onclick="closeMobile()">
+<a href="#shop" onclick="closeMobile()">Shop</a>
 
-Shop
+<a href="#categories" onclick="closeMobile()">Collections</a>
 
-</a>
+<a href="#experience" onclick="closeMobile()">Experience</a>
 
-<a
-href="#categories"
-onclick="closeMobile()">
-
-Collections
-
-</a>
-
-<a
-href="#experience"
-onclick="closeMobile()">
-
-Experience
-
-</a>
-
-<a
-href="#concierge"
-onclick="closeMobile()">
-
-Concierge
-
-</a>
+<a href="#concierge" onclick="closeMobile()">Concierge</a>
 
 </div>
-
-
-<!-- =======================================================
-     HERO
-======================================================= -->
 
 <section class="hero">
 
@@ -1540,30 +1451,20 @@ Technology.<br>
 </h1>
 
 <p>
-
 Discover premium technology,
 smart living, gaming, audio,
 cameras and lifestyle essentials —
 curated for a modern luxury experience.
-
 </p>
 
 <div class="buttons">
 
-<a
-href="#shop"
-class="btn">
-
+<a href="#shop" class="btn">
 Explore Collection
-
 </a>
 
-<a
-href="#concierge"
-class="btn outline">
-
+<a href="#concierge" class="btn outline">
 Personal Concierge
-
 </a>
 
 </div>
@@ -1572,14 +1473,7 @@ Personal Concierge
 
 </section>
 
-
-<!-- =======================================================
-     CATEGORIES
-======================================================= -->
-
-<section
-class="section"
-id="categories">
+<section class="section" id="categories">
 
 <div class="head">
 
@@ -1596,109 +1490,71 @@ Discover your world.
 </div>
 
 <p class="desc">
-
 Premium products selected across
 technology, entertainment,
 smart living and lifestyle.
-
 </p>
 
 </div>
 
-
 <div class="categories">
 
-
-<div
-class="category"
-onclick="filterProducts('Mobile')">
+<div class="category" onclick="filterProducts('Mobile')">
 
 <img
-src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85"
+src="https://loremflickr.com/1000/700/smartphone?lock=201"
 alt="Mobile">
 
 <div class="category-overlay">
-
-<h3>
-Smartphones
-</h3>
-
+<h3>Smartphones</h3>
 </div>
 
 </div>
 
-
-<div
-class="category"
-onclick="filterProducts('Computing')">
+<div class="category" onclick="filterProducts('Computing')">
 
 <img
-src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85"
+src="https://loremflickr.com/1000/700/laptop?lock=202"
 alt="Computing">
 
 <div class="category-overlay">
-
-<h3>
-Computing
-</h3>
-
+<h3>Computing</h3>
 </div>
 
 </div>
 
-
-<div
-class="category"
-onclick="filterProducts('Audio')">
+<div class="category" onclick="filterProducts('Audio')">
 
 <img
-src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85"
+src="https://loremflickr.com/1000/700/headphones?lock=203"
 alt="Audio">
 
 <div class="category-overlay">
-
-<h3>
-Audio
-</h3>
-
+<h3>Audio</h3>
 </div>
 
 </div>
 
-
-<div
-class="category"
-onclick="filterProducts('Gaming')">
+<div class="category" onclick="filterProducts('Gaming')">
 
 <img
-src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1000&q=85"
+src="https://loremflickr.com/1000/700/gaming?lock=204"
 alt="Gaming">
 
 <div class="category-overlay">
-
-<h3>
-Gaming
-</h3>
-
+<h3>Gaming</h3>
 </div>
 
 </div>
 
-
-<div
-class="category"
-onclick="filterProducts('Lifestyle')">
+<div class="category" onclick="filterProducts('Lifestyle')">
 
 <img
-src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=85"
+src="https://loremflickr.com/1000/700/luxury?lock=205"
 alt="Lifestyle">
 
 <div class="category-overlay">
-
-<h3>
-Lifestyle
-</h3>
-
+<h3>Lifestyle</h3>
 </div>
 
 </div>
@@ -1707,14 +1563,7 @@ Lifestyle
 
 </section>
 
-
-<!-- =======================================================
-     SHOP
-======================================================= -->
-
-<section
-class="section"
-id="shop">
+<section class="section" id="shop">
 
 <div class="head">
 
@@ -1731,112 +1580,60 @@ Curated essentials.
 </div>
 
 <p class="desc">
-
-Every product displays its
-TZS price and estimated USDT
-WebMoney value.
-
+150 premium products. Every product displays its
+TZS price and estimated USDT WebMoney value.
 </p>
 
 </div>
 
-
 <div class="filters">
 
-<button
-class="filter active"
-onclick="filterProducts('All',this)">
-
+<button class="filter active" onclick="filterProducts('All',this)">
 All
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Mobile',this)">
-
+<button class="filter" onclick="filterProducts('Mobile',this)">
 Mobile
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Computing',this)">
-
+<button class="filter" onclick="filterProducts('Computing',this)">
 Computing
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Audio',this)">
-
+<button class="filter" onclick="filterProducts('Audio',this)">
 Audio
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Smart Tech',this)">
-
+<button class="filter" onclick="filterProducts('Smart Tech',this)">
 Smart Tech
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Gaming',this)">
-
+<button class="filter" onclick="filterProducts('Gaming',this)">
 Gaming
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Cameras',this)">
-
+<button class="filter" onclick="filterProducts('Cameras',this)">
 Cameras
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Accessories',this)">
-
+<button class="filter" onclick="filterProducts('Accessories',this)">
 Accessories
-
 </button>
 
-<button
-class="filter"
-onclick="filterProducts('Lifestyle',this)">
-
+<button class="filter" onclick="filterProducts('Lifestyle',this)">
 Lifestyle
-
 </button>
 
 </div>
 
-
-<div
-class="products"
-id="products">
-
+<div class="products" id="products">
 </div>
 
 </section>
 
-
-<!-- =======================================================
-     EXPERIENCE
-======================================================= -->
-
-<section
-class="section"
-id="experience">
+<section class="section" id="experience">
 
 <div class="editorial">
-
 
 <div class="editorial-card">
 
@@ -1854,19 +1651,14 @@ The Experience
 Luxury, engineered.
 </h2>
 
-<p
-style="color:#ccc;margin-top:10px">
-
-A premium digital shopping
-experience built around quality,
-discovery and secure checkout.
-
+<p style="color:#ccc;margin-top:10px">
+A premium digital shopping experience
+built around quality, discovery and secure checkout.
 </p>
 
 </div>
 
 </div>
-
 
 <div class="editorial-card">
 
@@ -1884,12 +1676,9 @@ Private Service
 Personal concierge.
 </h2>
 
-<p
-style="color:#ccc;margin-top:10px">
-
+<p style="color:#ccc;margin-top:10px">
 Need help selecting a product?
 Contact our concierge team.
-
 </p>
 
 </div>
@@ -1899,109 +1688,40 @@ Contact our concierge team.
 </div>
 
 </section>
-
-
-<!-- =======================================================
-     TRUST
-======================================================= -->
 
 <section class="section">
 
 <div class="trust">
 
-
 <article>
-
-<b>
-01
-</b>
-
-<h3>
-Curated Quality
-</h3>
-
-<p>
-
-Products selected for premium
-technology and lifestyle positioning.
-
-</p>
-
+<b>01</b>
+<h3>Curated Quality</h3>
+<p>Products selected for premium technology and lifestyle positioning.</p>
 </article>
 
-
 <article>
-
-<b>
-02
-</b>
-
-<h3>
-WebMoney Checkout
-</h3>
-
-<p>
-
-WebMoney is the store's
-payment gateway.
-
-</p>
-
+<b>02</b>
+<h3>WebMoney Checkout</h3>
+<p>WebMoney is the store's payment gateway.</p>
 </article>
 
-
 <article>
-
-<b>
-03
-</b>
-
-<h3>
-Private Concierge
-</h3>
-
-<p>
-
-Direct assistance for products,
-availability and customer questions.
-
-</p>
-
+<b>03</b>
+<h3>Private Concierge</h3>
+<p>Direct assistance for products, availability and customer questions.</p>
 </article>
 
-
 <article>
-
-<b>
-04
-</b>
-
-<h3>
-Premium Experience
-</h3>
-
-<p>
-
-Fast, responsive and
-mobile-ready storefront.
-
-</p>
-
+<b>04</b>
+<h3>Premium Experience</h3>
+<p>Fast, responsive and mobile-ready storefront.</p>
 </article>
-
 
 </div>
 
 </section>
 
-
-<!-- =======================================================
-     NEWSLETTER
-======================================================= -->
-
-<section
-class="section"
-id="concierge">
+<section class="section" id="concierge">
 
 <div class="newsletter">
 
@@ -2021,9 +1741,7 @@ Receive new collection and premium product updates.
 
 </div>
 
-
-<form
-onsubmit="subscribe(event)">
+<form onsubmit="subscribe(event)">
 
 <input
 id="email"
@@ -2041,15 +1759,9 @@ JOIN
 
 </section>
 
-
-<!-- =======================================================
-     FOOTER
-======================================================= -->
-
 <footer>
 
 <div class="footer-grid">
-
 
 <div>
 
@@ -2058,15 +1770,12 @@ TURIN <span>PREMIUM</span>
 </div>
 
 <p style="margin-top:15px">
-
 Luxury technology, smart living,
 gaming and lifestyle — curated for
 a premium digital experience.
-
 </p>
 
 </div>
-
 
 <div>
 
@@ -2084,7 +1793,6 @@ Collections
 
 </div>
 
-
 <div>
 
 <h4>
@@ -2099,16 +1807,11 @@ Concierge
 Experience
 </a>
 
-<a
-href="https://wa.me/255797955045"
-target="_blank">
-
+<a href="https://wa.me/255797955045" target="_blank">
 WhatsApp
-
 </a>
 
 </div>
-
 
 <div>
 
@@ -2116,54 +1819,27 @@ WhatsApp
 Payment
 </h4>
 
-<p>
-WebMoney
-</p>
+<p>WebMoney</p>
 
-<p>
-USDT
-</p>
+<p>USDT</p>
 
-<p>
-Purse:
-T270243849673
-</p>
+<p>Purse: T270243849673</p>
 
 </div>
 
-
 </div>
-
 
 <div class="bottom">
-
 © 2026 TURIN PREMIUM STORE.
 All rights reserved.
-
 </div>
 
 </footer>
 
-
-<!-- =======================================================
-     CART OVERLAY
-======================================================= -->
-
-<div
-class="overlay"
-id="overlay"
-onclick="closeCart()">
+<div class="overlay" id="overlay" onclick="closeCart()">
 </div>
 
-
-<!-- =======================================================
-     CART DRAWER
-======================================================= -->
-
-<aside
-class="drawer"
-id="drawer">
-
+<aside class="drawer" id="drawer">
 
 <div class="drawer-head">
 
@@ -2171,26 +1847,16 @@ id="drawer">
 Your Cart
 </strong>
 
-<button
-class="icon"
-onclick="closeCart()">
-
+<button class="icon" onclick="closeCart()">
 ✕
-
 </button>
 
 </div>
 
-
-<div
-class="cart-items"
-id="cartItems">
-
+<div class="cart-items" id="cartItems">
 </div>
 
-
 <div class="cart-foot">
-
 
 <div class="cart-total-row">
 
@@ -2204,7 +1870,6 @@ TZS 0
 
 </div>
 
-
 <div class="cart-usdt-row">
 
 <span>
@@ -2217,112 +1882,59 @@ USDT 0.00
 
 </div>
 
-
-<button
-class="webmoney"
-onclick="openWebMoneyCheckout()">
-
+<button class="webmoney" onclick="openWebMoneyCheckout()">
 ₮ PAY WITH WEBMONEY
-
 </button>
 
-
 <div class="gateway-note">
-
-WEBMONEY • USDT •
-T270243849673
-
+WEBMONEY • USDT • T270243849673
 </div>
 
 </div>
 
 </aside>
 
-
-<!-- =======================================================
-     WEBMONEY CHECKOUT MODAL
-======================================================= -->
-
-<div
-class="modal"
-id="wmModal">
+<div class="modal" id="wmModal">
 
 <div class="modal-card">
 
-
-<button
-class="modal-close"
-onclick="closeWebMoneyCheckout()">
-
+<button class="modal-close" onclick="closeWebMoneyCheckout()">
 ✕
-
 </button>
 
-
 <div class="wm-label">
-
 TURIN PREMIUM STORE • SECURE CHECKOUT
-
 </div>
-
 
 <h2>
 Pay with WebMoney
 </h2>
 
-
-<p
-style="color:#999;font-size:13px">
-
+<p style="color:#999;font-size:13px">
 Your WebMoney amount is calculated
 from the products in your cart.
-
 </p>
 
-
-<div
-class="summary"
-id="wmSummary">
-
+<div class="summary" id="wmSummary">
 </div>
 
-
-<div
-id="wm-widget">
-
+<div id="wm-widget">
 </div>
-
 
 <div class="secure">
-
 WebMoney • USDT • Merchant purse
 T270243849673
-
-</div>
-
-
 </div>
 
 </div>
 
+</div>
 
-<!-- =======================================================
-     SEARCH
-======================================================= -->
+<div class="search" id="search">
 
-<div
-class="search"
-id="search">
-
-
-<button
-class="icon search-close"
-onclick="closeSearch()">
-
+<button class="icon search-close" onclick="closeSearch()">
 ✕
-
 </button>
-
 
 <div
 class="kicker"
@@ -2332,26 +1944,18 @@ Search TURIN
 
 </div>
 
-
 <input
 class="search-input"
 id="searchInput"
 oninput="searchProducts()"
 placeholder="Search products...">
 
-
 <div
 class="search-results"
 id="searchResults">
-
 </div>
 
 </div>
-
-
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
 
 <script>
 
@@ -2359,446 +1963,1395 @@ id="searchResults">
    STORE SETTINGS
 ========================================================= */
 
-/*
- IMPORTANT:
-
- Change this exchange rate whenever you need
- to use a different USD/TZS conversion.
-
- Example:
-
- 1 USD = 2641.8564 TZS
-
- Therefore:
-
- TZS price / USD_TZS_RATE = USDT price
-*/
-
 const USD_TZS_RATE = 2641.8564;
-
-
-/*
- WebMoney Merchant Purse
-*/
 
 const WEBMONEY_PURSE =
 "T270243849673";
 
-
-/*
- WhatsApp
-*/
-
 const WHATSAPP =
 "255797955045";
-
-
-/*
- Fallback image
-*/
 
 const FALLBACK_IMAGE =
 "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=90";
 
 
 /* =========================================================
-   PRODUCTS
+   150 PRODUCTS
 ========================================================= */
 
 const products = [
 
-/* MOBILE */
+/* MOBILE 1-20 */
 
 {
 id:1,
-name:"TURIN iPhone Pro Max",
+name:"iPhone Pro Max",
 category:"Mobile",
 price:3490000,
 badge:"NEW",
-image:"https://images.unsplash.com/photo-1592286927505-2fd7c3d0a5c0?auto=format&fit=crop&w=1000&q=90"
+image:"https://loremflickr.com/1000/1000/smartphone?lock=1"
 },
 
 {
 id:2,
-name:"TURIN Galaxy Ultra",
+name:"Galaxy Ultra",
 category:"Mobile",
 price:3190000,
-badge:"FEATURED",
-image:"https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=1000&q=90"
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/smartphone?lock=2"
 },
 
 {
 id:3,
-name:"TURIN Premium Smartphone",
+name:"Premium Smartphone",
 category:"Mobile",
 price:2190000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=1000&q=90"
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/smartphone?lock=3"
 },
 
 {
 id:4,
-name:"TURIN Fold Smartphone",
+name:"Fold Smartphone",
 category:"Mobile",
 price:4290000,
-badge:"LUXURY",
-image:"https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1000&q=90"
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/foldable-smartphone?lock=4"
 },
 
 {
 id:5,
-name:"TURIN Premium Tablet",
+name:"Premium Tablet",
 category:"Mobile",
 price:1750000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1000&q=90"
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/tablet?lock=5"
 },
-
-/* COMPUTING */
 
 {
 id:6,
-name:"TURIN MacBook Pro",
-category:"Computing",
-price:5200000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=90"
+name:"Compact Smartphone",
+category:"Mobile",
+price:1250000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/smartphone?lock=6"
 },
 
 {
 id:7,
-name:"TURIN Premium Laptop",
-category:"Computing",
-price:2850000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=90"
+name:"5G Business Phone",
+category:"Mobile",
+price:2450000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/business-smartphone?lock=7"
 },
 
 {
 id:8,
-name:"TURIN Business Laptop",
-category:"Computing",
-price:3250000,
-badge:"BUSINESS",
-image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=90"
+name:"Flagship Android Phone",
+category:"Mobile",
+price:2950000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/android-smartphone?lock=8"
 },
 
 {
 id:9,
-name:"TURIN Desktop Setup",
-category:"Computing",
-price:3900000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=90"
+name:"Creator Smartphone",
+category:"Mobile",
+price:2790000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/creator-smartphone?lock=9"
 },
 
 {
 id:10,
-name:"TURIN Premium Monitor",
-category:"Computing",
-price:1450000,
-badge:"4K",
-image:"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1000&q=90"
+name:"Gaming Smartphone",
+category:"Mobile",
+price:2650000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/gaming-smartphone?lock=10"
 },
 
 {
 id:11,
-name:"TURIN Laptop Stand",
-category:"Computing",
-price:180000,
-badge:"OFFICE",
-image:"https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1000&q=90"
+name:"Camera Phone",
+category:"Mobile",
+price:2850000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/camera-smartphone?lock=11"
 },
-
-/* AUDIO */
 
 {
 id:12,
-name:"TURIN AirPods Pro",
-category:"Audio",
-price:690000,
-badge:"BESTSELLER",
-image:"https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=1000&q=90"
+name:"Luxury Smartphone",
+category:"Mobile",
+price:5100000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/luxury-smartphone?lock=12"
 },
 
 {
 id:13,
-name:"TURIN Studio Headphones",
-category:"Audio",
-price:850000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=90"
+name:"Rugged Smartphone",
+category:"Mobile",
+price:1850000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/rugged-smartphone?lock=13"
 },
 
 {
 id:14,
-name:"TURIN Premium Speaker",
-category:"Audio",
-price:620000,
-badge:"AUDIO",
-image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1000&q=90"
+name:"Mini Smartphone",
+category:"Mobile",
+price:1450000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/mini-smartphone?lock=14"
 },
 
 {
 id:15,
-name:"TURIN Home Audio System",
-category:"Audio",
-price:1250000,
-badge:"HOME",
-image:"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1000&q=90"
+name:"Premium E-Reader",
+category:"Mobile",
+price:690000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/ereader?lock=15"
 },
 
 {
 id:16,
-name:"TURIN Wireless Earbuds",
-category:"Audio",
-price:320000,
-badge:"WIRELESS",
-image:"https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1000&q=90"
+name:"Performance Tablet",
+category:"Mobile",
+price:2250000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/tablet-technology?lock=16"
 },
-
-/* SMART TECH */
 
 {
 id:17,
-name:"TURIN Smart Watch",
-category:"Smart Tech",
-price:780000,
+name:"Business Tablet",
+category:"Mobile",
+price:1890000,
 badge:"NEW",
-image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=90"
+image:"https://loremflickr.com/1000/1000/business-tablet?lock=17"
 },
 
 {
 id:18,
-name:"TURIN Smart Home Hub",
-category:"Smart Tech",
-price:490000,
-badge:"SMART",
-image:"https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1000&q=90"
+name:"Kids Smart Tablet",
+category:"Mobile",
+price:590000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/kids-tablet?lock=18"
 },
 
 {
 id:19,
-name:"TURIN Smart TV",
-category:"Smart Tech",
-price:2450000,
-badge:"HOME",
-image:"https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1000&q=90"
+name:"Drawing Tablet",
+category:"Mobile",
+price:980000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/drawing-tablet?lock=19"
 },
 
 {
 id:20,
-name:"TURIN Smart Security Camera",
-category:"Smart Tech",
-price:390000,
-badge:"SECURITY",
-image:"https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1000&q=90"
+name:"Pro Tablet",
+category:"Mobile",
+price:2990000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/pro-tablet?lock=20"
 },
+
+
+/* COMPUTING 21-40 */
 
 {
 id:21,
-name:"TURIN Smart Lighting",
-category:"Smart Tech",
-price:220000,
-badge:"SMART HOME",
-image:"https://images.unsplash.com/photo-1550985543-f47d7f1c6b0d?auto=format&fit=crop&w=1000&q=90"
+name:"MacBook Pro",
+category:"Computing",
+price:5200000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/macbook-laptop?lock=21"
 },
-
-/* GAMING */
 
 {
 id:22,
-name:"TURIN PlayStation Edition",
-category:"Gaming",
-price:1750000,
-badge:"GAMING",
-image:"https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1000&q=90"
+name:"Premium Laptop",
+category:"Computing",
+price:2850000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/premium-laptop?lock=22"
 },
 
 {
 id:23,
-name:"TURIN Gaming Controller",
-category:"Gaming",
-price:290000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=1000&q=90"
+name:"Business Laptop",
+category:"Computing",
+price:3250000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/business-laptop?lock=23"
 },
 
 {
 id:24,
-name:"TURIN Gaming Setup",
-category:"Gaming",
-price:4200000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1000&q=90"
+name:"Desktop Setup",
+category:"Computing",
+price:3900000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/desktop-computer?lock=24"
 },
 
 {
 id:25,
-name:"TURIN Gaming Keyboard",
-category:"Gaming",
-price:250000,
-badge:"RGB",
-image:"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1000&q=90"
+name:"Premium Monitor",
+category:"Computing",
+price:1450000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/monitor?lock=25"
 },
 
 {
 id:26,
-name:"TURIN Gaming Headset",
-category:"Gaming",
-price:380000,
-badge:"GAMING",
-image:"https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=1000&q=90"
+name:"Laptop Stand",
+category:"Computing",
+price:180000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/laptop-stand?lock=26"
 },
-
-/* CAMERAS */
 
 {
 id:27,
-name:"TURIN Mirrorless Camera",
-category:"Cameras",
-price:3100000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=90"
+name:"Ultrabook",
+category:"Computing",
+price:3450000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/ultrabook?lock=27"
 },
 
 {
 id:28,
-name:"TURIN Creator Camera",
-category:"Cameras",
-price:2250000,
-badge:"CREATOR",
-image:"https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=90"
+name:"Gaming Laptop",
+category:"Computing",
+price:4750000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/gaming-laptop?lock=28"
 },
 
 {
 id:29,
-name:"TURIN Professional Camera",
-category:"Cameras",
-price:4850000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=90"
+name:"Creator Laptop",
+category:"Computing",
+price:4250000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/creator-laptop?lock=29"
 },
 
 {
 id:30,
-name:"TURIN Drone Pro",
-category:"Cameras",
-price:2850000,
-badge:"DRONE",
-image:"https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1000&q=90"
+name:"2-in-1 Laptop",
+category:"Computing",
+price:2950000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/convertible-laptop?lock=30"
 },
 
 {
 id:31,
-name:"TURIN Action Camera",
-category:"Cameras",
-price:950000,
-badge:"ACTION",
-image:"https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=90"
+name:"Mini PC",
+category:"Computing",
+price:1350000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/mini-pc?lock=31"
 },
-
-/* ACCESSORIES */
 
 {
 id:32,
-name:"TURIN Premium Power Bank",
-category:"Accessories",
-price:180000,
+name:"Workstation PC",
+category:"Computing",
+price:6500000,
 badge:"ESSENTIAL",
-image:"https://images.unsplash.com/photo-1609592424225-9dca9f3f1c4c?auto=format&fit=crop&w=1000&q=90"
+image:"https://loremflickr.com/1000/1000/workstation-computer?lock=32"
 },
 
 {
 id:33,
-name:"TURIN Fast Charger",
-category:"Accessories",
-price:125000,
-badge:"FAST",
-image:"https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1000&q=90"
+name:"All-in-One Desktop",
+category:"Computing",
+price:4150000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/all-in-one-computer?lock=33"
 },
 
 {
 id:34,
-name:"TURIN Wireless Charger",
-category:"Accessories",
-price:145000,
-badge:"WIRELESS",
-image:"https://images.unsplash.com/photo-1591290619762-c588b7e2c4d5?auto=format&fit=crop&w=1000&q=90"
+name:"4K Monitor",
+category:"Computing",
+price:1690000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/4k-monitor?lock=34"
 },
 
 {
 id:35,
-name:"TURIN Premium Cable",
-category:"Accessories",
-price:65000,
-badge:"ESSENTIAL",
-image:"https://images.unsplash.com/photo-1587033411391-5d9e51cce126?auto=format&fit=crop&w=1000&q=90"
+name:"Ultrawide Monitor",
+category:"Computing",
+price:2350000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/ultrawide-monitor?lock=35"
 },
 
 {
 id:36,
-name:"TURIN Travel Adapter",
-category:"Accessories",
-price:120000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1000&q=90"
+name:"Portable Monitor",
+category:"Computing",
+price:890000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/portable-monitor?lock=36"
 },
-
-/* LIFESTYLE */
 
 {
 id:37,
-name:"TURIN Premium Watch",
-category:"Lifestyle",
-price:590000,
-badge:"LIFESTYLE",
-image:"https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=90"
+name:"Mechanical Keyboard",
+category:"Computing",
+price:285000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/mechanical-keyboard?lock=37"
 },
 
 {
 id:38,
-name:"TURIN Travel Backpack",
-category:"Lifestyle",
-price:350000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=90"
+name:"Wireless Mouse",
+category:"Computing",
+price:195000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/wireless-mouse?lock=38"
 },
 
 {
 id:39,
-name:"TURIN Premium Sunglasses",
-category:"Lifestyle",
-price:280000,
-badge:"STYLE",
-image:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=90"
+name:"Ergonomic Mouse",
+category:"Computing",
+price:225000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/ergonomic-mouse?lock=39"
 },
 
 {
 id:40,
-name:"TURIN Luxury Desk Setup",
-category:"Lifestyle",
-price:450000,
-badge:"DESIGN",
-image:"https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1000&q=90"
+name:"USB-C Dock",
+category:"Computing",
+price:420000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/usb-c-dock?lock=40"
 },
+
+
+/* AUDIO 41-60 */
 
 {
 id:41,
-name:"TURIN Travel Essentials",
-category:"Lifestyle",
-price:260000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=90"
+name:"AirPods Pro",
+category:"Audio",
+price:690000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/airpods?lock=41"
 },
 
 {
 id:42,
-name:"TURIN Premium Wallet",
+name:"Studio Headphones",
+category:"Audio",
+price:850000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/studio-headphones?lock=42"
+},
+
+{
+id:43,
+name:"Premium Speaker",
+category:"Audio",
+price:620000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/premium-speaker?lock=43"
+},
+
+{
+id:44,
+name:"Home Audio System",
+category:"Audio",
+price:1250000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/home-audio?lock=44"
+},
+
+{
+id:45,
+name:"Wireless Earbuds",
+category:"Audio",
+price:320000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/wireless-earbuds?lock=45"
+},
+
+{
+id:46,
+name:"Noise-Cancelling Headphones",
+category:"Audio",
+price:790000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/noise-cancelling-headphones?lock=46"
+},
+
+{
+id:47,
+name:"Bluetooth Speaker",
+category:"Audio",
+price:395000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/bluetooth-speaker?lock=47"
+},
+
+{
+id:48,
+name:"Soundbar",
+category:"Audio",
+price:980000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/soundbar?lock=48"
+},
+
+{
+id:49,
+name:"Portable Hi-Fi Speaker",
+category:"Audio",
+price:575000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/hifi-speaker?lock=49"
+},
+
+{
+id:50,
+name:"Audiophile Headphones",
+category:"Audio",
+price:1450000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/audiophile-headphones?lock=50"
+},
+
+{
+id:51,
+name:"Wireless Headset",
+category:"Audio",
+price:465000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/wireless-headset?lock=51"
+},
+
+{
+id:52,
+name:"Studio Microphone",
+category:"Audio",
+price:620000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/studio-microphone?lock=52"
+},
+
+{
+id:53,
+name:"USB Microphone",
+category:"Audio",
+price:390000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/usb-microphone?lock=53"
+},
+
+{
+id:54,
+name:"Turntable",
+category:"Audio",
+price:890000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/turntable?lock=54"
+},
+
+{
+id:55,
+name:"Premium Amplifier",
+category:"Audio",
+price:1750000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/amplifier?lock=55"
+},
+
+{
+id:56,
+name:"Bookshelf Speakers",
+category:"Audio",
+price:730000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/bookshelf-speakers?lock=56"
+},
+
+{
+id:57,
+name:"Smart Speaker",
+category:"Audio",
+price:360000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/smart-speaker?lock=57"
+},
+
+{
+id:58,
+name:"Sports Earbuds",
+category:"Audio",
+price:285000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/sports-earbuds?lock=58"
+},
+
+{
+id:59,
+name:"Open-Back Headphones",
+category:"Audio",
+price:960000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/open-back-headphones?lock=59"
+},
+
+{
+id:60,
+name:"Gaming Audio DAC",
+category:"Audio",
+price:510000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/gaming-audio?lock=60"
+},
+
+
+/* SMART TECH 61-80 */
+
+{
+id:61,
+name:"Smart Watch",
+category:"Smart Tech",
+price:780000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/smartwatch?lock=61"
+},
+
+{
+id:62,
+name:"Smart Home Hub",
+category:"Smart Tech",
+price:490000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/smart-home-hub?lock=62"
+},
+
+{
+id:63,
+name:"Smart TV",
+category:"Smart Tech",
+price:2450000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/smart-tv?lock=63"
+},
+
+{
+id:64,
+name:"Smart Security Camera",
+category:"Smart Tech",
+price:390000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/security-camera?lock=64"
+},
+
+{
+id:65,
+name:"Smart Lighting",
+category:"Smart Tech",
+price:220000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/smart-lighting?lock=65"
+},
+
+{
+id:66,
+name:"Smart Doorbell",
+category:"Smart Tech",
+price:460000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/smart-doorbell?lock=66"
+},
+
+{
+id:67,
+name:"Smart Lock",
+category:"Smart Tech",
+price:570000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/smart-lock?lock=67"
+},
+
+{
+id:68,
+name:"Robot Vacuum",
+category:"Smart Tech",
+price:1250000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/robot-vacuum?lock=68"
+},
+
+{
+id:69,
+name:"Air Purifier",
+category:"Smart Tech",
+price:790000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/air-purifier?lock=69"
+},
+
+{
+id:70,
+name:"Smart Thermostat",
+category:"Smart Tech",
+price:580000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/smart-thermostat?lock=70"
+},
+
+{
+id:71,
+name:"Smart Plug",
+category:"Smart Tech",
+price:95000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/smart-plug?lock=71"
+},
+
+{
+id:72,
+name:"Smart Power Strip",
+category:"Smart Tech",
+price:185000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/smart-power-strip?lock=72"
+},
+
+{
+id:73,
+name:"Smart Display",
+category:"Smart Tech",
+price:520000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/smart-display?lock=73"
+},
+
+{
+id:74,
+name:"Smart Mirror",
+category:"Smart Tech",
+price:980000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/smart-mirror?lock=74"
+},
+
+{
+id:75,
+name:"Smart Sensor Kit",
+category:"Smart Tech",
+price:290000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/smart-sensor?lock=75"
+},
+
+{
+id:76,
+name:"Smart Curtain Controller",
+category:"Smart Tech",
+price:330000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/smart-curtain?lock=76"
+},
+
+{
+id:77,
+name:"Smart Smoke Detector",
+category:"Smart Tech",
+price:210000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/smoke-detector?lock=77"
+},
+
+{
+id:78,
+name:"Smart Air Quality Monitor",
+category:"Smart Tech",
+price:315000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/air-quality-monitor?lock=78"
+},
+
+{
+id:79,
+name:"Smart Kitchen Display",
+category:"Smart Tech",
+price:440000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/smart-kitchen?lock=79"
+},
+
+{
+id:80,
+name:"Smart Pet Camera",
+category:"Smart Tech",
+price:275000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/pet-camera?lock=80"
+},
+
+
+/* GAMING 81-100 */
+
+{
+id:81,
+name:"PlayStation Edition",
+category:"Gaming",
+price:1750000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/playstation?lock=81"
+},
+
+{
+id:82,
+name:"Gaming Controller",
+category:"Gaming",
+price:290000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/gaming-controller?lock=82"
+},
+
+{
+id:83,
+name:"Gaming Setup",
+category:"Gaming",
+price:4200000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/gaming-setup?lock=83"
+},
+
+{
+id:84,
+name:"Gaming Keyboard",
+category:"Gaming",
+price:250000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/gaming-keyboard?lock=84"
+},
+
+{
+id:85,
+name:"Gaming Headset",
+category:"Gaming",
+price:380000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/gaming-headset?lock=85"
+},
+
+{
+id:86,
+name:"Gaming Mouse",
+category:"Gaming",
+price:210000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/gaming-mouse?lock=86"
+},
+
+{
+id:87,
+name:"Gaming Monitor",
+category:"Gaming",
+price:1650000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/gaming-monitor?lock=87"
+},
+
+{
+id:88,
+name:"Racing Wheel",
+category:"Gaming",
+price:890000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/racing-wheel?lock=88"
+},
+
+{
+id:89,
+name:"Handheld Gaming Console",
+category:"Gaming",
+price:1250000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/handheld-console?lock=89"
+},
+
+{
+id:90,
+name:"VR Headset",
+category:"Gaming",
+price:1850000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/vr-headset?lock=90"
+},
+
+{
+id:91,
+name:"Streaming Deck",
+category:"Gaming",
+price:490000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/streaming-deck?lock=91"
+},
+
+{
+id:92,
+name:"Gaming Chair",
+category:"Gaming",
+price:950000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/gaming-chair?lock=92"
+},
+
+{
+id:93,
+name:"Gaming Desk",
+category:"Gaming",
+price:1150000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/gaming-desk?lock=93"
+},
+
+{
+id:94,
+name:"Console Charging Dock",
+category:"Gaming",
+price:185000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/console-charging?lock=94"
+},
+
+{
+id:95,
+name:"Portable Console Case",
+category:"Gaming",
+price:145000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/console-case?lock=95"
+},
+
+{
+id:96,
+name:"Arcade Stick",
+category:"Gaming",
+price:420000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/arcade-stick?lock=96"
+},
+
+{
+id:97,
+name:"Gaming Microphone",
+category:"Gaming",
+price:390000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/gaming-microphone?lock=97"
+},
+
+{
+id:98,
+name:"Capture Card",
+category:"Gaming",
+price:520000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/capture-card?lock=98"
+},
+
+{
+id:99,
+name:"RGB Light Bar",
+category:"Gaming",
+price:180000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/rgb-lights?lock=99"
+},
+
+{
+id:100,
+name:"Pro Controller",
+category:"Gaming",
+price:360000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/pro-controller?lock=100"
+},
+
+
+/* CAMERAS 101-120 */
+
+{
+id:101,
+name:"Mirrorless Camera",
+category:"Cameras",
+price:3100000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/mirrorless-camera?lock=101"
+},
+
+{
+id:102,
+name:"Creator Camera",
+category:"Cameras",
+price:2250000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/creator-camera?lock=102"
+},
+
+{
+id:103,
+name:"Professional Camera",
+category:"Cameras",
+price:4850000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/professional-camera?lock=103"
+},
+
+{
+id:104,
+name:"Drone Pro",
+category:"Cameras",
+price:2850000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/drone?lock=104"
+},
+
+{
+id:105,
+name:"Action Camera",
+category:"Cameras",
+price:950000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/action-camera?lock=105"
+},
+
+{
+id:106,
+name:"Compact Camera",
+category:"Cameras",
+price:1250000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/compact-camera?lock=106"
+},
+
+{
+id:107,
+name:"Cinema Camera",
+category:"Cameras",
+price:6950000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/cinema-camera?lock=107"
+},
+
+{
+id:108,
+name:"Portrait Lens",
+category:"Cameras",
+price:1650000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/portrait-lens?lock=108"
+},
+
+{
+id:109,
+name:"Wide-Angle Lens",
+category:"Cameras",
+price:1350000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/wide-angle-lens?lock=109"
+},
+
+{
+id:110,
+name:"Telephoto Lens",
+category:"Cameras",
+price:2850000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/telephoto-lens?lock=110"
+},
+
+{
+id:111,
+name:"Prime Lens",
+category:"Cameras",
+price:1250000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/prime-lens?lock=111"
+},
+
+{
+id:112,
+name:"Camera Flash",
+category:"Cameras",
+price:590000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/camera-flash?lock=112"
+},
+
+{
+id:113,
+name:"Camera Gimbal",
+category:"Cameras",
+price:850000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/camera-gimbal?lock=113"
+},
+
+{
+id:114,
+name:"Video Tripod",
+category:"Cameras",
+price:420000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/video-tripod?lock=114"
+},
+
+{
+id:115,
+name:"Travel Tripod",
+category:"Cameras",
+price:315000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/travel-tripod?lock=115"
+},
+
+{
+id:116,
+name:"Camera Backpack",
+category:"Cameras",
+price:390000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/camera-backpack?lock=116"
+},
+
+{
+id:117,
+name:"Memory Card Kit",
+category:"Cameras",
+price:240000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/memory-card?lock=117"
+},
+
+{
+id:118,
+name:"Camera Monitor",
+category:"Cameras",
+price:780000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/camera-monitor?lock=118"
+},
+
+{
+id:119,
+name:"Wireless Mic Kit",
+category:"Cameras",
+price:490000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/wireless-microphone?lock=119"
+},
+
+{
+id:120,
+name:"Lens Filter Set",
+category:"Cameras",
+price:185000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/lens-filter?lock=120"
+},
+
+
+/* ACCESSORIES 121-140 */
+
+{
+id:121,
+name:"Premium Power Bank",
+category:"Accessories",
+price:180000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/powerbank?lock=121"
+},
+
+{
+id:122,
+name:"Fast Charger",
+category:"Accessories",
+price:125000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/fast-charger?lock=122"
+},
+
+{
+id:123,
+name:"Wireless Charger",
+category:"Accessories",
+price:145000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/wireless-charger?lock=123"
+},
+
+{
+id:124,
+name:"Premium Cable",
+category:"Accessories",
+price:65000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/usb-c-cable?lock=124"
+},
+
+{
+id:125,
+name:"Travel Adapter",
+category:"Accessories",
+price:120000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/travel-adapter?lock=125"
+},
+
+{
+id:126,
+name:"GaN Charger",
+category:"Accessories",
+price:210000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/gan-charger?lock=126"
+},
+
+{
+id:127,
+name:"USB-C Hub",
+category:"Accessories",
+price:245000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/usb-c-hub?lock=127"
+},
+
+{
+id:128,
+name:"MagSafe Battery Pack",
+category:"Accessories",
+price:285000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/magsafe?lock=128"
+},
+
+{
+id:129,
+name:"Premium Phone Case",
+category:"Accessories",
+price:95000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/premium-phone-case?lock=129"
+},
+
+{
+id:130,
+name:"Premium Screen Protector",
+category:"Accessories",
+price:75000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/screen-protector?lock=130"
+},
+
+{
+id:131,
+name:"Car Charger",
+category:"Accessories",
+price:105000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/car-charger?lock=131"
+},
+
+{
+id:132,
+name:"Charging Station",
+category:"Accessories",
+price:320000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/charging-station?lock=132"
+},
+
+{
+id:133,
+name:"Cable Organizer",
+category:"Accessories",
+price:65000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/cable-organizer?lock=133"
+},
+
+{
+id:134,
+name:"Tech Organizer",
+category:"Accessories",
+price:165000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/tech-organizer?lock=134"
+},
+
+{
+id:135,
+name:"Bluetooth Tracker",
+category:"Accessories",
+price:135000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/bluetooth-tracker?lock=135"
+},
+
+{
+id:136,
+name:"Laptop Privacy Filter",
+category:"Accessories",
+price:155000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/laptop-privacy?lock=136"
+},
+
+{
+id:137,
+name:"Universal Stylus",
+category:"Accessories",
+price:195000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/stylus?lock=137"
+},
+
+{
+id:138,
+name:"Tablet Stand",
+category:"Accessories",
+price:115000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/tablet-stand?lock=138"
+},
+
+{
+id:139,
+name:"Phone Stand",
+category:"Accessories",
+price:85000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/phone-stand?lock=139"
+},
+
+{
+id:140,
+name:"Desk Charging Dock",
+category:"Accessories",
+price:235000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/desk-charging?lock=140"
+},
+
+
+/* LIFESTYLE 141-150 */
+
+{
+id:141,
+name:"Premium Watch",
+category:"Lifestyle",
+price:590000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/luxury-watch?lock=141"
+},
+
+{
+id:142,
+name:"Travel Backpack",
+category:"Lifestyle",
+price:350000,
+badge:"LUXURY",
+image:"https://loremflickr.com/1000/1000/luxury-backpack?lock=142"
+},
+
+{
+id:143,
+name:"Premium Sunglasses",
+category:"Lifestyle",
+price:280000,
+badge:"SMART",
+image:"https://loremflickr.com/1000/1000/luxury-sunglasses?lock=143"
+},
+
+{
+id:144,
+name:"Luxury Desk Setup",
+category:"Lifestyle",
+price:450000,
+badge:"ESSENTIAL",
+image:"https://loremflickr.com/1000/1000/luxury-desk?lock=144"
+},
+
+{
+id:145,
+name:"Travel Essentials",
+category:"Lifestyle",
+price:260000,
+badge:"NEW",
+image:"https://loremflickr.com/1000/1000/travel-luxury?lock=145"
+},
+
+{
+id:146,
+name:"Premium Wallet",
 category:"Lifestyle",
 price:190000,
+badge:"PREMIUM",
+image:"https://loremflickr.com/1000/1000/leather-wallet?lock=146"
+},
+
+{
+id:147,
+name:"Leather Briefcase",
+category:"Lifestyle",
+price:520000,
+badge:"FEATURED",
+image:"https://loremflickr.com/1000/1000/leather-briefcase?lock=147"
+},
+
+{
+id:148,
+name:"Weekend Duffle",
+category:"Lifestyle",
+price:390000,
+badge:"PRO",
+image:"https://loremflickr.com/1000/1000/leather-duffle?lock=148"
+},
+
+{
+id:149,
+name:"Travel Pillow",
+category:"Lifestyle",
+price:120000,
+badge:"BESTSELLER",
+image:"https://loremflickr.com/1000/1000/travel-pillow?lock=149"
+},
+
+{
+id:150,
+name:"Premium Water Bottle",
+category:"Lifestyle",
+price:165000,
 badge:"LUXURY",
-image:"https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1000&q=90"
+image:"https://loremflickr.com/1000/1000/premium-water-bottle?lock=150"
 }
 
 ];
@@ -2816,7 +3369,6 @@ tzs / USD_TZS_RATE
 
 }
 
-
 function formatUSDT(tzs){
 
 return "USDT " +
@@ -2830,13 +3382,10 @@ maximumFractionDigits:2
 
 }
 
-
 function formatTZS(tzs){
 
 return "TZS " +
-Number(tzs).toLocaleString(
-"en-TZ"
-);
+Number(tzs).toLocaleString("en-TZ");
 
 }
 
@@ -2852,7 +3401,6 @@ localStorage.getItem(
 ) || "[]"
 );
 
-
 function saveCart(){
 
 localStorage.setItem(
@@ -2864,7 +3412,6 @@ updateCartCount();
 
 }
 
-
 function updateCartCount(){
 
 document.getElementById(
@@ -2873,7 +3420,6 @@ document.getElementById(
 cart.length;
 
 }
-
 
 function addToCart(id){
 
@@ -2893,7 +3439,6 @@ renderCart();
 
 openCart();
 
-
 if(
 typeof gtag === "function"
 ){
@@ -2912,7 +3457,6 @@ item_name:product.name
 
 }
 
-
 function removeFromCart(index){
 
 cart.splice(index,1);
@@ -2922,7 +3466,6 @@ saveCart();
 renderCart();
 
 }
-
 
 function getCartTZSTotal(){
 
@@ -2934,7 +3477,6 @@ total + Number(item.price),
 
 }
 
-
 function getCartUSDTTotal(){
 
 return toUSDT(
@@ -2945,7 +3487,7 @@ getCartTZSTotal()
 
 
 /* =========================================================
-   RENDER CART
+   CART RENDER
 ========================================================= */
 
 function renderCart(){
@@ -2954,7 +3496,6 @@ const container =
 document.getElementById(
 "cartItems"
 );
-
 
 if(!cart.length){
 
@@ -2987,7 +3528,6 @@ document.getElementById(
 return;
 
 }
-
 
 container.innerHTML =
 
@@ -3029,14 +3569,12 @@ onclick="removeFromCart(${index})">
 `
 ).join("");
 
-
 document.getElementById(
 "cartTotalTZS"
 ).textContent =
 formatTZS(
 getCartTZSTotal()
 );
-
 
 document.getElementById(
 "cartTotalUSDT"
@@ -3049,7 +3587,7 @@ getCartTZSTotal()
 
 
 /* =========================================================
-   CART OPEN/CLOSE
+   CART OPEN / CLOSE
 ========================================================= */
 
 function openCart(){
@@ -3065,7 +3603,6 @@ document
 renderCart();
 
 }
-
 
 function closeCart(){
 
@@ -3091,7 +3628,6 @@ document.getElementById(
 "products"
 );
 
-
 if(!list.length){
 
 container.innerHTML = `
@@ -3114,7 +3650,6 @@ return;
 
 }
 
-
 container.innerHTML =
 
 list.map(
@@ -3135,7 +3670,6 @@ ${product.badge}
 
 </div>
 
-
 <div class="info">
 
 <div class="cat">
@@ -3146,7 +3680,6 @@ ${product.category}
 ${product.name}
 </h3>
 
-
 <div class="price-label">
 TZS PRICE
 </div>
@@ -3155,7 +3688,6 @@ TZS PRICE
 ${formatTZS(product.price)}
 </div>
 
-
 <div class="price-label" style="margin-top:7px">
 WEBMONEY PRICE
 </div>
@@ -3163,7 +3695,6 @@ WEBMONEY PRICE
 <div class="price-usdt">
 ${formatUSDT(product.price)}
 </div>
-
 
 <div class="actions">
 
@@ -3175,11 +3706,9 @@ Add to Cart
 
 </button>
 
-
 <button
 class="contact"
-onclick="contactProduct(${product.id})"
-title="WhatsApp Concierge">
+onclick="contactProduct(${product.id})">
 
 ☎
 
@@ -3215,7 +3744,6 @@ item.classList.remove(
 )
 );
 
-
 if(button){
 
 button.classList.add(
@@ -3224,9 +3752,7 @@ button.classList.add(
 
 }
 
-
 let list;
-
 
 if(category === "All"){
 
@@ -3242,9 +3768,7 @@ item.category === category
 
 }
 
-
 renderProducts(list);
-
 
 document
 .getElementById("shop")
@@ -3269,7 +3793,6 @@ item => item.id === id
 if(!product)
 return;
 
-
 const message =
 
 "Hello TURIN PREMIUM STORE.\n\n" +
@@ -3287,7 +3810,6 @@ formatTZS(product.price) +
 formatUSDT(product.price) +
 
 "\n\nPlease confirm availability.";
-
 
 window.open(
 
@@ -3319,7 +3841,6 @@ document
 
 }
 
-
 function closeSearch(){
 
 document
@@ -3327,7 +3848,6 @@ document
 .classList.remove("active");
 
 }
-
 
 function searchProducts(){
 
@@ -3340,7 +3860,6 @@ document
 .value
 .toLowerCase()
 .trim();
-
 
 const results =
 
@@ -3358,7 +3877,6 @@ product.category
 .includes(query)
 );
 
-
 if(!query){
 
 document.getElementById(
@@ -3368,7 +3886,6 @@ document.getElementById(
 return;
 
 }
-
 
 document.getElementById(
 "searchResults"
@@ -3424,7 +3941,6 @@ ${formatUSDT(product.price)}
 
 </div>
 
-
 <button
 class="add"
 onclick="
@@ -3456,7 +3972,6 @@ document
 
 }
 
-
 function closeMobile(){
 
 document
@@ -3474,7 +3989,6 @@ function subscribe(event){
 
 event.preventDefault();
 
-
 if(
 typeof gtag === "function"
 ){
@@ -3489,11 +4003,9 @@ method:"website"
 
 }
 
-
 alert(
 "Thank you. You have joined the TURIN Private List."
 );
-
 
 event.target.reset();
 
@@ -3505,7 +4017,6 @@ event.target.reset();
 ========================================================= */
 
 let webMoneyMounted = false;
-
 
 function openWebMoneyCheckout(){
 
@@ -3519,13 +4030,11 @@ return;
 
 }
 
-
 const totalTZS =
 getCartTZSTotal();
 
 const totalUSDT =
 getCartUSDTTotal();
-
 
 document.getElementById(
 "wmSummary"
@@ -3543,7 +4052,6 @@ ${cart.length}
 
 </div>
 
-
 <div class="summary-line">
 
 <span>
@@ -3555,7 +4063,6 @@ ${formatTZS(totalTZS)}
 </strong>
 
 </div>
-
 
 <div class="summary-total">
 
@@ -3571,21 +4078,12 @@ USDT ${totalUSDT.toFixed(2)}
 
 `;
 
-
 document
 .getElementById("wmModal")
 .classList.add("active");
 
 document
 .body.classList.add("modal-open");
-
-
-/*
- IMPORTANT:
-
- WebMoney widget must be loaded
- before mounting.
-*/
 
 if(
 !window.webmoney ||
@@ -3618,18 +4116,8 @@ return;
 
 }
 
-
-/*
- Prevent duplicate mount
-*/
-
 if(webMoneyMounted)
 return;
-
-
-/*
- Create dynamic WebMoney payment
-*/
 
 try{
 
@@ -3639,10 +4127,6 @@ window.webmoney
 .create({
 
 data:{
-
-/*
- REAL CART AMOUNT
-*/
 
 amount:
 Number(
@@ -3684,7 +4168,6 @@ lang:"en"
 
 })
 
-
 .on(
 "paymentComplete",
 function(data){
@@ -3715,11 +4198,6 @@ data.transactionId ||
 
 }
 
-
-/*
- Clear cart after payment
-*/
-
 cart = [];
 
 saveCart();
@@ -3728,21 +4206,17 @@ renderCart();
 
 closeWebMoneyCheckout();
 
-
 alert(
 "Payment completed successfully. Thank you for shopping with TURIN PREMIUM STORE."
 );
 
 })
 
-
 .mount(
 "wm-widget"
 );
 
-
 webMoneyMounted = true;
-
 
 }catch(error){
 
@@ -3793,7 +4267,7 @@ document
 
 
 /* =========================================================
-   MODAL BACKGROUND CLICK
+   MODAL BACKGROUND
 ========================================================= */
 
 document
@@ -3825,7 +4299,6 @@ function(event){
 const target =
 event.target;
 
-
 if(
 target &&
 target.tagName === "IMG" &&
@@ -3846,7 +4319,7 @@ true
 
 
 /* =========================================================
-   ESC KEY
+   ESC
 ========================================================= */
 
 document.addEventListener(
@@ -3882,14 +4355,11 @@ updateCartCount();
 </script>
 
 
-<!-- =======================================================
-     WEBMONEY MERCHANT WIDGET
-======================================================= -->
+<!-- WEBMONEY MERCHANT WIDGET -->
 
 <script
 src="https://merchant.wmtransfer.com/conf/lib/widgets/wmApp.js?v=1.6">
 </script>
-
 
 </body>
 </html>
