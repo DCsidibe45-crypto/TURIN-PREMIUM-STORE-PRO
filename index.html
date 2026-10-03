@@ -709,6 +709,90 @@ button{
   border-bottom:1px solid #45433d
 }
 </style>
+  <body>
+
+<header class="top">PRIVATE EDITION · INTERNATIONAL COLLECTION · TURIN</header>
+
+<nav class="nav">
+  <div class="brand">TURIN</div>
+
+  <div class="navlinks">
+    <a href="#collection">Collection</a>
+    <a href="#concierge">Concierge</a>
+  </div>
+
+  <div class="navtools">
+    <button class="circle" id="searchBtn">⌕</button>
+    <button class="circle" id="cartBtn">
+      ♡<span id="cartCount">0</span>
+    </button>
+    <button class="circle" id="menuBtn">☰</button>
+  </div>
+</nav>
+
+<div class="mobileMenu" id="mobileMenu">
+  <a href="#collection">Collection</a>
+  <a href="#concierge">Concierge</a>
+</div>
+
+<section class="hero">
+  <div class="heroCopy">
+    <div class="mono">TURIN PREMIUM STORE</div>
+    <h1>The Art of<br><em>Premium Living.</em></h1>
+    <p>Curated technology and lifestyle objects for modern living.</p>
+
+    <div class="heroActions">
+      <a class="btn gold" href="#collection">Explore Collection</a>
+      <a class="btn" href="#concierge">Concierge</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  PREMIUM TECHNOLOGY · SMART LIVING · LUXURY OBJECTS · TURIN
+</div>
+
+<section class="intro">
+  <div class="mono">01 — THE TURIN STANDARD</div>
+  <h2>Objects selected<br>with intention.</h2>
+</section>
+
+<section class="manifest">
+  <div class="feature">
+    <div class="featureHead">
+      <span>01</span>
+      <h3>Technology</h3>
+    </div>
+    <div class="featureGrid">
+      <div class="featureCard">
+        <div class="featureText">Mobile, computing, audio and smart technology.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="collection">
+  <div class="shopHead">
+    <div>
+      <div class="mono" style="color:var(--gold)">THE COLLECTION</div>
+      <h2>Selected Objects.</h2>
+    </div>
+    <div class="count" id="productCount">0 PRODUCTS</div>
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <div class="searchbar">
+    <input
+      id="catalogSearch"
+      type="search"
+      placeholder="Search the collection..."
+      autocomplete="off"
+    >
+  </div>
+
+  <div class="products" id="products"></div>
+</section>
 
 <section class="concierge reveal" id="concierge">
 
