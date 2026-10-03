@@ -3,2752 +3,2783 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0a">
-<meta name="description" content="TURIN — private edition technology and lifestyle objects.">
-<title>TURIN — Private Edition</title>
+<meta name="theme-color" content="#090909">
+
+<meta name="description"
+content="TURIN PREMIUM STORE — Global luxury technology, design and lifestyle objects.">
+
+<title>TURIN PREMIUM STORE — Global Luxury</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://loremflickr.com">
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
-  --bg:#090909;
-  --ink:#f1eee7;
-  --muted:#96938c;
-  --line:#282724;
-  --gold:#c7a66a;
-  --cream:#e9e1d2;
-  --panel:#11110f
+ --bg:#080807;
+ --panel:#10100e;
+ --panel2:#141411;
+ --ink:#f2eee6;
+ --muted:#96938c;
+ --line:#292823;
+ --gold:#c7a66a;
+ --cream:#e9e1d2;
 }
 
 *{
-  box-sizing:border-box
+ box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth
+ scroll-behavior:smooth;
 }
 
 body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:Inter,Arial,sans-serif;
-  font-weight:300
+ margin:0;
+ background:var(--bg);
+ color:var(--ink);
+ font-family:Inter,Arial,sans-serif;
+ font-weight:300;
 }
 
-button,
-input,
-select{
-  font:inherit
+button,input,select{
+ font:inherit;
 }
 
 button{
-  cursor:pointer
+ cursor:pointer;
+}
+
+a{
+ color:inherit;
+ text-decoration:none;
 }
 
 .mono{
-  font:11px "DM Mono",monospace;
-  letter-spacing:.12em;
-  text-transform:uppercase
+ font:10px "DM Mono",monospace;
+ letter-spacing:.15em;
+ text-transform:uppercase;
 }
 
 .serif{
-  font-family:"Playfair Display",serif
+ font-family:"Playfair Display",serif;
 }
+
+/* TOP */
 
 .top{
-  height:30px;
-  border-bottom:1px solid var(--line);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#aaa;
-  font-size:10px;
-  letter-spacing:.2em;
-  text-transform:uppercase
+ height:30px;
+ border-bottom:1px solid var(--line);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#aaa;
+ font:9px "DM Mono",monospace;
+ letter-spacing:.18em;
+ text-transform:uppercase;
 }
 
+/* NAV */
+
 .nav{
-  height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 5vw;
-  border-bottom:1px solid var(--line);
-  position:absolute;
-  top:30px;
-  left:0;
-  right:0;
-  z-index:20;
-  background:linear-gradient(#090909d9,transparent)
+ height:78px;
+ position:absolute;
+ top:30px;
+ left:0;
+ right:0;
+ z-index:30;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ padding:0 5vw;
+ background:linear-gradient(#080807e8,transparent);
+ border-bottom:1px solid #ffffff12;
 }
 
 .brand{
-  font-family:"Playfair Display",serif;
-  font-size:28px;
-  letter-spacing:.18em
+ font:28px "Playfair Display",serif;
+ letter-spacing:.18em;
 }
 
 .navlinks{
-  display:flex;
-  gap:32px
+ display:flex;
+ gap:34px;
 }
 
 .navlinks a{
-  color:var(--ink);
-  text-decoration:none;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:.16em
+ font-size:10px;
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ color:#ddd;
+}
+
+.navlinks a:hover{
+ color:var(--gold);
 }
 
 .navtools{
-  display:flex;
-  gap:9px
+ display:flex;
+ gap:9px;
 }
 
 .circle{
-  width:40px;
-  height:40px;
-  border:1px solid #55524b;
-  border-radius:50%;
-  background:#111;
-  color:#eee
+ width:42px;
+ height:42px;
+ border:1px solid #55524b;
+ border-radius:50%;
+ background:#111;
+ color:#eee;
 }
 
+.mobileOnly{
+ display:none;
+}
+
+/* HERO */
+
 .hero{
-  min-height:820px;
-  position:relative;
-  display:grid;
-  align-items:end;
-  overflow:hidden;
-  background:#12110f
+ min-height:850px;
+ position:relative;
+ display:flex;
+ align-items:flex-end;
+ overflow:hidden;
+ background:#111;
 }
 
 .hero:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(90deg,#050505d9 0%,#05050563 44%,#05050512),
-    url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=2200&q=90")
-    center/cover
+ content:"";
+ position:absolute;
+ inset:0;
+ background:
+ linear-gradient(
+   90deg,
+   #030303e8 0%,
+   #03030382 45%,
+   #03030318 100%
+ ),
+ url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=2200&q=90")
+ center/cover;
 }
 
 .hero:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(
-      circle at 70% 25%,
-      transparent 0 20%,
-      #0008 75%
-    )
+ content:"";
+ position:absolute;
+ inset:0;
+ background:radial-gradient(circle at 70% 25%,transparent 0 20%,#0008 75%);
 }
 
 .heroCopy{
-  position:relative;
-  z-index:2;
-  padding:0 7vw 9vw;
-  max-width:900px
+ position:relative;
+ z-index:2;
+ padding:0 7vw 9vw;
+ max-width:900px;
 }
 
 .kicker{
-  color:var(--gold);
-  margin-bottom:18px
+ color:var(--gold);
+ margin-bottom:18px;
 }
 
 .hero h1{
-  font-size:clamp(55px,9vw,142px);
-  line-height:.83;
-  font-weight:300;
-  margin:0 0 30px;
-  letter-spacing:-.055em
+ font-size:clamp(58px,9vw,142px);
+ line-height:.83;
+ font-weight:300;
+ margin:0 0 30px;
+ letter-spacing:-.055em;
 }
 
 .hero h1 i{
-  color:#d9d0c0
+ color:#d9d0c0;
 }
 
 .hero p{
-  max-width:480px;
-  color:#d0ccc3;
-  line-height:1.7;
-  font-size:15px
+ max-width:500px;
+ color:#d0ccc3;
+ line-height:1.8;
+ font-size:15px;
 }
 
 .heroActions{
-  display:flex;
-  gap:12px;
-  margin-top:34px
+ display:flex;
+ gap:12px;
+ margin-top:34px;
 }
 
 .btn{
-  border:1px solid #817967;
-  background:#e9e1d2;
-  color:#111;
-  padding:15px 23px;
-  text-transform:uppercase;
-  font-size:10px;
-  letter-spacing:.17em
+ border:1px solid #817967;
+ background:var(--cream);
+ color:#111;
+ padding:15px 23px;
+ text-transform:uppercase;
+ font-size:10px;
+ letter-spacing:.17em;
 }
 
 .btn.alt{
-  background:transparent;
-  color:#eee;
-  border-color:#5c5951
+ background:transparent;
+ color:#eee;
+ border-color:#5c5951;
 }
 
+.btn:hover{
+ opacity:.85;
+}
+
+/* MARQUEE */
+
 .marquee{
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  overflow:hidden;
-  white-space:nowrap;
-  padding:17px 0;
-  color:#aaa
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+ overflow:hidden;
+ white-space:nowrap;
+ padding:17px 0;
+ color:#aaa;
 }
 
 .marquee span{
-  display:inline-block;
-  animation:move 28s linear infinite;
-  margin-right:55px;
-  font:11px "DM Mono";
-  letter-spacing:.15em
+ display:inline-block;
+ margin-right:55px;
+ font:10px "DM Mono",monospace;
+ letter-spacing:.15em;
+ animation:move 28s linear infinite;
 }
 
 @keyframes move{
-  to{
-    transform:translateX(-100%)
-  }
+ to{
+  transform:translateX(-100%);
+ }
 }
 
+/* INTRO */
+
 .intro{
-  padding:100px 7vw;
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:8vw
+ padding:110px 7vw;
+ display:grid;
+ grid-template-columns:1fr 2fr;
+ gap:8vw;
 }
 
 .intro h2{
-  font:italic 48px "Playfair Display";
-  margin:0
+ font:italic 48px "Playfair Display",serif;
+ margin:0;
 }
 
 .intro p{
-  max-width:720px;
-  color:#aaa;
-  line-height:1.9;
-  font-size:16px
+ max-width:720px;
+ color:#aaa;
+ line-height:1.9;
+ font-size:16px;
 }
 
+/* MANIFEST */
+
 .manifest{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line)
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
 }
 
 .manifest div{
-  padding:28px 25px;
-  border-right:1px solid var(--line)
+ padding:30px 25px;
+ border-right:1px solid var(--line);
 }
 
 .manifest div:last-child{
-  border:0
+ border:0;
 }
 
 .manifest b{
-  font-size:13px;
-  display:block;
-  margin-bottom:8px
+ display:block;
+ font-size:13px;
+ margin-bottom:8px;
 }
 
 .manifest small{
-  color:#85827b;
-  line-height:1.6
+ color:#85827b;
+ line-height:1.6;
 }
 
+/* FEATURE */
+
 .feature{
-  padding:110px 7vw
+ padding:110px 7vw;
 }
 
 .featureHead{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  margin-bottom:40px
+ display:flex;
+ justify-content:space-between;
+ align-items:end;
+ margin-bottom:40px;
 }
 
 .featureHead h2{
-  font:46px "Playfair Display";
-  margin:0
+ font:46px "Playfair Display",serif;
+ margin:0;
 }
 
 .featureGrid{
-  display:grid;
-  grid-template-columns:1.4fr .8fr .8fr;
-  gap:12px
+ display:grid;
+ grid-template-columns:1.4fr .8fr .8fr;
+ gap:12px;
 }
 
 .featureCard{
-  position:relative;
-  min-height:540px;
-  overflow:hidden;
-  background:#151513
+ position:relative;
+ min-height:540px;
+ overflow:hidden;
+ background:#151513;
 }
 
 .featureCard:nth-child(2),
 .featureCard:nth-child(3){
-  min-height:260px
+ min-height:260px;
 }
 
 .featureCard img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  inset:0;
-  filter:saturate(.72)
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ position:absolute;
+ inset:0;
+ filter:saturate(.72);
+ transition:transform .7s;
+}
+
+.featureCard:hover img{
+ transform:scale(1.04);
 }
 
 .featureCard:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(transparent 30%,#000b)
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(transparent 30%,#000c);
 }
 
 .featureText{
-  position:absolute;
-  z-index:2;
-  left:25px;
-  right:25px;
-  bottom:25px
+ position:absolute;
+ z-index:2;
+ left:25px;
+ right:25px;
+ bottom:25px;
 }
 
 .featureText h3{
-  font:27px "Playfair Display";
-  margin:5px 0
+ font:27px "Playfair Display",serif;
+ margin:5px 0;
 }
 
 .featureText p{
-  color:#bdb8ae;
-  font-size:12px
+ color:#bdb8ae;
+ font-size:12px;
 }
 
+/* SHOP */
+
 .shop{
-  padding:100px 5vw;
-  background:#0d0d0c
+ padding:100px 5vw;
+ background:#0d0d0c;
 }
 
 .shopHead{
-  display:flex;
-  align-items:end;
-  justify-content:space-between;
-  margin-bottom:30px
+ display:flex;
+ align-items:end;
+ justify-content:space-between;
+ margin-bottom:30px;
 }
 
 .shopHead h2{
-  font:50px "Playfair Display";
-  margin:0
+ font:50px "Playfair Display",serif;
+ margin:0;
 }
 
 .filters{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
 }
 
 .filter{
-  border:1px solid #373630;
-  background:transparent;
-  color:#bbb;
-  padding:10px 13px;
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:.1em
+ border:1px solid #373630;
+ background:transparent;
+ color:#bbb;
+ padding:10px 13px;
+ font-size:10px;
+ text-transform:uppercase;
+ letter-spacing:.1em;
 }
 
 .filter.active{
-  border-color:var(--gold);
-  color:var(--cream)
+ border-color:var(--gold);
+ color:var(--cream);
 }
 
 .searchbar{
-  margin:25px 0;
-  display:flex;
-  border-bottom:1px solid #45433d
+ margin:25px 0;
+ display:flex;
+ border-bottom:1px solid #45433d;
 }
 
 .searchbar input{
-  width:100%;
-  background:none;
-  border:0;
-  color:white;
-  padding:15px 3px;
-  outline:none
+ width:100%;
+ background:none;
+ border:0;
+ color:white;
+ padding:15px 3px;
+ outline:none;
+}
+
+.searchbar input::placeholder{
+ color:#696761;
 }
 
 .count{
-  color:#777;
-  font:11px "DM Mono";
-  padding:15px 0
+ color:#777;
+ font:10px "DM Mono",monospace;
+ padding:15px 0;
 }
 
+/* PRODUCTS */
+
 .products{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1px;
-  background:#272622
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:1px;
+ background:#272622;
 }
 
 .product{
-  background:#10100f;
-  min-width:0;
-  position:relative;
-  transition:.25s
+ background:#10100f;
+ min-width:0;
+ position:relative;
+ transition:.25s;
 }
 
 .product:hover{
-  background:#171714
+ background:#171714;
 }
 
 .pic{
-  aspect-ratio:4/5;
-  overflow:hidden;
-  background:#151513;
-  position:relative
+ aspect-ratio:4/5;
+ overflow:hidden;
+ background:#151513;
+ position:relative;
 }
 
 .pic img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .7s;
-  filter:saturate(.72)
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ transition:transform .7s;
+ filter:saturate(.72);
 }
 
-.product:hover img{
-  transform:scale(1.04)
+.product:hover .pic img{
+ transform:scale(1.045);
 }
 
 .badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-  background:#ece3d3;
-  color:#171613;
-  padding:7px 9px;
-  font:9px "DM Mono";
-  letter-spacing:.12em
+ position:absolute;
+ top:12px;
+ left:12px;
+ background:#ece3d3;
+ color:#171613;
+ padding:7px 9px;
+ font:9px "DM Mono",monospace;
+ letter-spacing:.12em;
 }
 
 .wish{
-  position:absolute;
-  right:12px;
-  top:12px;
-  width:34px;
-  height:34px;
-  border:1px solid #7773;
-  background:#0008;
-  color:#fff;
-  border-radius:50%
+ position:absolute;
+ right:12px;
+ top:12px;
+ width:34px;
+ height:34px;
+ border:1px solid #7775;
+ background:#0008;
+ color:#fff;
+ border-radius:50%;
 }
 
 .pbody{
-  padding:17px
+ padding:17px;
 }
 
 .cat{
-  color:var(--gold);
-  font:9px "DM Mono";
-  text-transform:uppercase
+ color:var(--gold);
+ font:9px "DM Mono",monospace;
+ text-transform:uppercase;
 }
 
 .pname{
-  font:16px "Playfair Display";
-  margin:7px 0
+ font:16px "Playfair Display",serif;
+ margin:7px 0;
 }
 
 .pdesc{
-  font-size:11px;
-  color:#777;
-  min-height:30px
+ font-size:11px;
+ color:#777;
+ min-height:30px;
 }
 
 .prow{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-top:14px
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:10px;
+ margin-top:14px;
 }
 
 .price{
-  font:12px "DM Mono";
-  color:#e7dfd0
+ font:12px "DM Mono",monospace;
+ color:#e7dfd0;
 }
 
 .add{
-  background:transparent;
-  color:#ddd;
-  border:1px solid #45433e;
-  padding:9px 10px;
-  font-size:9px;
-  letter-spacing:.1em;
-  text-transform:uppercase
+ background:transparent;
+ color:#ddd;
+ border:1px solid #45433e;
+ padding:9px 10px;
+ font-size:9px;
+ letter-spacing:.1em;
+ text-transform:uppercase;
 }
 
 .add:hover{
-  border-color:var(--gold)
+ border-color:var(--gold);
+ color:var(--cream);
 }
- /* =========================================
-   TURIN — EDITORIAL / LUXURY LAYER
-   ========================================= */
+
+/* EDITORIAL */
 
 .editorial{
-  padding:120px 7vw;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:7vw;
-  align-items:center
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ min-height:650px;
 }
 
-.editorialImage{
-  position:relative;
-  min-height:690px;
-  overflow:hidden;
-  background:#151513
+.editorial img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ filter:grayscale(.25);
 }
 
-.editorialImage img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  inset:0;
-  filter:saturate(.65)
+.editorialText{
+ padding:9vw;
+ background:#e8e0d1;
+ color:#171614;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
 }
 
-.editorialCopy{
-  max-width:600px
+.editorialText .kicker{
+ color:#746041;
 }
 
-.editorialCopy .eyebrow{
-  color:var(--gold);
-  margin-bottom:20px
+.editorialText h2{
+ font:clamp(42px,5vw,76px) "Playfair Display",serif;
+ line-height:.95;
+ margin:12px 0 25px;
 }
 
-.editorialCopy h2{
-  font:clamp(42px,5vw,76px) "Playfair Display";
-  font-weight:500;
-  line-height:.95;
-  margin:0 0 30px
+.editorialText p{
+ line-height:1.8;
+ max-width:520px;
+ color:#4e4a43;
 }
 
-.editorialCopy h2 em{
-  font-weight:400;
-  color:#aaa399
+/* CART */
+
+.cartDrawer{
+ position:fixed;
+ z-index:50;
+ right:0;
+ top:0;
+ height:100vh;
+ width:min(460px,100%);
+ background:#0d0d0c;
+ border-left:1px solid #444;
+ transform:translateX(102%);
+ transition:.35s;
+ padding:28px;
+ display:flex;
+ flex-direction:column;
 }
 
-.editorialCopy p{
-  color:#99958c;
-  line-height:1.9;
-  font-size:15px;
-  max-width:510px
+.cartDrawer.open{
+ transform:none;
 }
 
-.editorialRule{
-  width:80px;
-  height:1px;
-  background:var(--gold);
-  margin:35px 0
+.cartHead{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:1px solid var(--line);
+ padding-bottom:20px;
 }
 
-.statement{
-  min-height:600px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:100px 7vw;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  text-align:center
+.close{
+ background:none;
+ border:0;
+ color:#bbb;
+ font-size:24px;
 }
 
-.statementInner{
-  max-width:1000px
+.cartItems{
+ overflow:auto;
+ flex:1;
+ padding:15px 0;
 }
 
-.statement small{
+.cartItem{
+ display:grid;
+ grid-template-columns:75px 1fr auto;
+ gap:12px;
+ padding:14px 0;
+ border-bottom:1px solid var(--line);
+}
+
+.cartItem img{
+ width:75px;
+ height:90px;
+ object-fit:cover;
+}
+
+.cartItem h4{
+ font:15px "Playfair Display",serif;
+ margin:0 0 7px;
+}
+
+.cartItem small{
+ color:#888;
+}
+
+.qty{
+ display:flex;
+ gap:6px;
+ margin-top:10px;
+}
+
+.qty button{
+ width:25px;
+ height:25px;
+ background:none;
+ border:1px solid #444;
+ color:#ddd;
+}
+
+.cartFoot{
+ border-top:1px solid var(--line);
+ padding-top:18px;
+}
+
+.total{
+ display:flex;
+ justify-content:space-between;
+ font:14px "DM Mono",monospace;
+ margin-bottom:15px;
+}
+
+.checkout{
+ width:100%;
+ padding:17px;
+ background:#e8e0d1;
+ border:0;
+ text-transform:uppercase;
+ letter-spacing:.15em;
+}
+
+/* OVERLAY */
+
+.overlay{
+ position:fixed;
+ inset:0;
+ background:#000b;
+ z-index:45;
+ display:none;
+}
+
+.overlay.on{
+ display:block;
+}
+
+/* MODAL */
+
+.modal{
+ position:fixed;
+ z-index:60;
+ inset:50% auto auto 50%;
+ transform:translate(-50%,-50%);
+ width:min(620px,92vw);
+ max-height:90vh;
+ overflow:auto;
+ background:#11110f;
+ border:1px solid #514d45;
+ padding:30px;
+ display:none;
+}
+
+.modal.on{
+ display:block;
+}
+
+.modal h2{
+ font:38px "Playfair Display",serif;
+ margin:5px 0 12px;
+}
+
+.modal p{
+ color:#96938c;
+ line-height:1.7;
+}
+
+.wm{
+ border:1px solid #4e4a41;
+ padding:20px;
+ margin-top:20px;
+}
+
+.wm strong{
+ font:20px "DM Mono",monospace;
+ color:#e8e0d1;
+}
+
+.field{
+ display:grid;
+ gap:7px;
+ margin:14px 0;
+}
+
+.field label{
+ font:9px "DM Mono",monospace;
+ text-transform:uppercase;
+ color:#888;
+}
+
+.field input{
+ background:#0a0a09;
+ border:1px solid #393731;
+ color:white;
+ padding:12px;
+ width:100%;
+}
+
+/* FOOTER */
+
+.footer{
+ padding:70px 7vw 35px;
+ border-top:1px solid var(--line);
+}
+
+.footerTop{
+ display:grid;
+ grid-template-columns:2fr 1fr 1fr 1fr;
+ gap:30px;
+}
+
+.footer h3{
+ font:26px "Playfair Display",serif;
+ margin-top:0;
+}
+
+.footer a,
+.footer p{
+ color:#888;
+ font-size:12px;
+ line-height:2;
+}
+
+.copyright{
+ border-top:1px solid var(--line);
+ margin-top:60px;
+ padding-top:18px;
+ color:#666;
+ font:9px "DM Mono",monospace;
+ display:flex;
+ justify-content:space-between;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+ .navlinks{
+  display:none;
+ }
+
+ .mobileOnly{
   display:block;
-  color:var(--gold);
-  margin-bottom:30px
-}
+ }
 
-.statement h2{
-  font:clamp(45px,7vw,100px) "Playfair Display";
-  font-weight:400;
-  line-height:.96;
-  margin:0
-}
+ .intro{
+  grid-template-columns:1fr;
+ }
 
-.statement p{
-  color:#8f8b84;
-  max-width:600px;
-  margin:35px auto 0;
-  line-height:1.8
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  border-bottom:1px solid var(--line)
-}
-
-.service{
-  padding:70px 6vw;
-  border-right:1px solid var(--line)
-}
-
-.service:last-child{
-  border-right:0
-}
-
-.serviceNo{
-  color:var(--gold);
-  font:11px "DM Mono";
-  margin-bottom:35px
-}
-
-.service h3{
-  font:28px "Playfair Display";
-  margin:0 0 16px
-}
-
-.service p{
-  color:#85817a;
-  line-height:1.8;
-  font-size:13px;
-  max-width:360px
-}
-
-.concierge{
-  padding:130px 7vw;
-  position:relative;
-  overflow:hidden;
-  background:
-    linear-gradient(90deg,#0b0b0ae8,#0b0b0a88),
-    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2200&q=85")
-    center/cover
-}
-
-.conciergeInner{
-  position:relative;
-  max-width:780px
-}
-
-.concierge small{
-  color:var(--gold)
-}
-
-.concierge h2{
-  font:clamp(45px,6vw,90px) "Playfair Display";
-  line-height:.95;
-  margin:20px 0 30px
-}
-
-.concierge p{
-  max-width:560px;
-  color:#b5b1a8;
-  line-height:1.9
-}
-
-.conciergeActions{
-  margin-top:35px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap
-}
-
-.currencyNote{
-  color:#777;
-  font:10px "DM Mono";
-  margin-top:18px
-}
-
-/* =========================================
-   NEWSLETTER
-   ========================================= */
-
-.newsletter{
-  padding:100px 7vw;
-  display:grid;
+ .manifest{
   grid-template-columns:1fr 1fr;
-  gap:7vw;
-  border-bottom:1px solid var(--line)
+ }
+
+ .featureGrid{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .featureCard:first-child{
+  grid-column:1/-1;
+ }
+
+ .products{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .editorial{
+  grid-template-columns:1fr;
+ }
+
+ .editorial img{
+  min-height:420px;
+ }
+
+ .footerTop{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .hero{
+  min-height:730px;
+ }
+
+ .hero h1{
+  font-size:65px;
+ }
 }
 
-.newsletter h2{
-  font:50px "Playfair Display";
-  margin:0
+@media(max-width:560px){
+
+ .nav{
+  padding:0 18px;
+ }
+
+ .brand{
+  font-size:22px;
+ }
+
+ .heroCopy{
+  padding:0 22px 75px;
+ }
+
+ .intro,
+ .feature,
+ .shop{
+  padding:70px 18px;
+ }
+
+ .manifest{
+  grid-template-columns:1fr;
+ }
+
+ .manifest div{
+  border-right:0;
+  border-bottom:1px solid var(--line);
+ }
+
+ .featureGrid{
+  grid-template-columns:1fr;
+ }
+
+ .featureCard:first-child{
+  grid-column:auto;
+ }
+
+ .featureCard,
+ .featureCard:nth-child(2),
+ .featureCard:nth-child(3){
+  min-height:390px;
+ }
+
+ .shopHead{
+  display:block;
+ }
+
+ .shopHead h2{
+  font-size:42px;
+  margin-bottom:20px;
+ }
+
+ .products{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .pbody{
+  padding:12px;
+ }
+
+ .pname{
+  font-size:14px;
+ }
+
+ .footer{
+  padding:55px 18px 25px;
+ }
+
+ .footerTop{
+  grid-template-columns:1fr;
+ }
+
+ .copyright{
+  display:block;
+  line-height:2;
+ }
+
+ .hero{
+  min-height:680px;
+ }
+
+ .hero:before{
+  background-position:58% center;
+ }
+
 }
 
-.newsletter p{
-  color:#85827b;
-  line-height:1.8;
-  max-width:500px
-}
-
-.newsForm{
-  align-self:center;
-  display:flex;
-  border-bottom:1px solid #45433d
-}
 </style>
-  <body>
+</head>
 
-<header class="top">PRIVATE EDITION · INTERNATIONAL COLLECTION · TURIN</header>
+<body>
 
-<nav class="nav">
-  <div class="brand">TURIN</div>
+<!-- TOP BAR -->
 
-  <div class="navlinks">
-    <a href="#collection">Collection</a>
-    <a href="#concierge">Concierge</a>
-  </div>
-
-  <div class="navtools">
-    <button class="circle" id="searchBtn">⌕</button>
-    <button class="circle" id="cartBtn">
-      ♡<span id="cartCount">0</span>
-    </button>
-    <button class="circle" id="menuBtn">☰</button>
-  </div>
-</nav>
-
-<div class="mobileMenu" id="mobileMenu">
-  <a href="#collection">Collection</a>
-  <a href="#concierge">Concierge</a>
+<div class="top">
+ WORLDWIDE DELIVERY · USD / USDT DISPLAY · WEBMONEY PRIVATE CHECKOUT
 </div>
 
-<section class="hero">
-  <div class="heroCopy">
-    <div class="mono">TURIN PREMIUM STORE</div>
-    <h1>The Art of<br><em>Premium Living.</em></h1>
-    <p>Curated technology and lifestyle objects for modern living.</p>
 
-    <div class="heroActions">
-      <a class="btn gold" href="#collection">Explore Collection</a>
-      <a class="btn" href="#concierge">Concierge</a>
-    </div>
+<!-- NAV -->
+
+<header class="nav">
+
+ <div class="brand">
+  TURIN
+ </div>
+
+ <nav class="navlinks">
+
+  <a href="#house">The House</a>
+  <a href="#collections">Collections</a>
+  <a href="#shop">Objects</a>
+  <a href="#journal">Journal</a>
+
+ </nav>
+
+ <div class="navtools">
+
+  <button
+   class="circle mobileOnly"
+   onclick="toggleMobileNav()"
+  >
+   ≡
+  </button>
+
+  <button
+   class="circle"
+   onclick="openCart()"
+  >
+   Bag <span id="bagCount">0</span>
+  </button>
+
+ </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="house">
+
+ <div class="heroCopy">
+
+  <div class="kicker mono">
+   TURIN / PRIVATE EDITION 2026
   </div>
+
+  <h1>
+   Premium<br>
+   <i>without boundaries.</i>
+  </h1>
+
+  <p>
+   A private house of technology, sound, design and modern living.
+   Curated for people who expect the object in their hands to feel
+   as exceptional as the life around it.
+  </p>
+
+  <div class="heroActions">
+
+   <button
+    class="btn"
+    onclick="goShop()"
+   >
+    Enter the Collection
+   </button>
+
+   <button
+    class="btn alt"
+    onclick="document.querySelector('#collections').scrollIntoView()"
+   >
+    View The House
+   </button>
+
+  </div>
+
+ </div>
+
 </section>
+
+
+<!-- MARQUEE -->
 
 <div class="marquee">
-  PREMIUM TECHNOLOGY · SMART LIVING · LUXURY OBJECTS · TURIN
+
+ <span>
+  TURIN — PRIVATE EDITION — INTERNATIONAL HOUSE OF TECHNOLOGY —
+  OBJECTS / SOUND / GAMING / CAMERAS / LIFESTYLE —
+ </span>
+
+ <span>
+  TURIN — PRIVATE EDITION — INTERNATIONAL HOUSE OF TECHNOLOGY —
+  OBJECTS / SOUND / GAMING / CAMERAS / LIFESTYLE —
+ </span>
+
 </div>
 
+
+<!-- INTRO -->
+
 <section class="intro">
-  <div class="mono">01 — THE TURIN STANDARD</div>
-  <h2>Objects selected<br>with intention.</h2>
-</section>
 
-<section class="manifest">
-  <div class="feature">
-    <div class="featureHead">
-      <span>01</span>
-      <h3>Technology</h3>
-    </div>
-    <div class="featureGrid">
-      <div class="featureCard">
-        <div class="featureText">Mobile, computing, audio and smart technology.</div>
-      </div>
-    </div>
-  </div>
-</section>
+ <h2>
+  Not a catalogue.<br>
+  A point of view.
+ </h2>
 
-<section class="shop" id="collection">
-  <div class="shopHead">
-    <div>
-      <div class="mono" style="color:var(--gold)">THE COLLECTION</div>
-      <h2>Selected Objects.</h2>
-    </div>
-    <div class="count" id="productCount">0 PRODUCTS</div>
-  </div>
-
-  <div class="filters" id="filters"></div>
-
-  <div class="searchbar">
-    <input
-      id="catalogSearch"
-      type="search"
-      placeholder="Search the collection..."
-      autocomplete="off"
-    >
-  </div>
-
-  <div class="products" id="products"></div>
-</section>
-
-<section class="concierge reveal" id="concierge">
-
-  <div class="conciergeInner">
-
-    <small class="mono">
-      PRIVATE CONCIERGE
-    </small>
-
-    <h2>
-      A more personal<br>
-      way to shop.
-    </h2>
-
-    <p>
-      For collection enquiries, product guidance or
-      private assistance, speak directly with the
-      TURIN Concierge team.
-    </p>
-
-    <div class="conciergeActions">
-      <a
-        class="btn"
-        id="whatsappHero"
-        href="#"
-        target="_blank"
-        rel="noopener"
-      >
-        Private Concierge
-      </a>
-
-      <a
-        class="btn alt"
-        href="#collection"
-      >
-        Return To Collection
-      </a>
-    </div>
-
-    <div class="currencyNote">
-      INTERNATIONAL PRICING · USD · USDT PRESENTATION AVAILABLE
-    </div>
-
-  </div>
+ <p>
+  TURIN brings together a deliberately edited universe of premium
+  objects. Technology is treated as design, sound as architecture,
+  cameras as instruments, gaming as performance and everyday tools
+  as personal signatures.
+ </p>
 
 </section>
 
-<section class="newsletter reveal">
+
+<!-- MANIFEST -->
+
+<div class="manifest">
+
+ <div>
+  <b>01 — Curated</b>
+  <small>
+   A deliberately edited collection with a distinct visual and functional language.
+  </small>
+ </div>
+
+ <div>
+  <b>02 — Worldwide</b>
+  <small>
+   International presentation with USD pricing and global-facing service.
+  </small>
+ </div>
+
+ <div>
+  <b>03 — Private</b>
+  <small>
+   Concierge-style ordering through a deliberately quiet shopping experience.
+  </small>
+ </div>
+
+ <div>
+  <b>04 — WebMoney</b>
+  <small>
+   WebMoney is the only payment rail presented at checkout.
+  </small>
+ </div>
+
+</div>
+
+
+<!-- COLLECTION CHAPTERS -->
+
+<section class="feature" id="collections">
+
+ <div class="featureHead">
 
   <div>
-    <div class="mono" style="color:var(--gold)">
-      THE TURIN EDIT
-    </div>
 
-    <h2>
-      Enter the<br>
-      private list.
-    </h2>
-  </div>
+   <div class="kicker mono">
+    THE HOUSE / 04 CHAPTERS
+   </div>
 
-  <div>
-    <p>
-      Receive occasional notes from TURIN:
-      new collections, considered objects and
-      selected technology.
-    </p>
-
-    <form class="newsForm" id="newsForm">
-      <input
-        type="email"
-        id="newsEmail"
-        placeholder="Your email address"
-        required
-      >
-
-      <button type="submit">
-        JOIN
-      </button>
-    </form>
-  </div>
-
-</section>
-
-<footer>
-
-  <div class="footerTop">
-
-    <div class="footerBrand">
-
-      <div class="logo">
-        TURIN
-      </div>
-
-      <p>
-        TECHNOLOGY &amp; LIFESTYLE, DISTINGUISHED.
-        A private international showroom for
-        considered technology, refined accessories
-        and modern essentials.
-      </p>
-
-      <p class="mono" style="color:#aaa;margin-top:25px">
-        TIMELESS TECHNOLOGY.<br>
-        DISTINGUISHED LIVING.
-      </p>
-
-    </div>
-
-    <div class="footerCol">
-
-      <h4>THE COLLECTION</h4>
-
-      <a href="#collection">Mobile</a>
-      <a href="#collection">Computing</a>
-      <a href="#collection">Audio</a>
-      <a href="#collection">Smart Technology</a>
-
-    </div>
-
-    <div class="footerCol">
-
-      <h4>PRIVATE SELECTION</h4>
-
-      <a href="#collection">Gaming</a>
-      <a href="#collection">Cameras</a>
-      <a href="#collection">Accessories</a>
-      <a href="#collection">Lifestyle</a>
-
-    </div>
-
-    <div class="footerCol">
-
-      <h4>CONCIERGE</h4>
-
-      <a href="#concierge">Private Concierge</a>
-      <a href="#" id="footerWhatsApp">WhatsApp</a>
-      <a href="#" id="footerCart">Your Collection</a>
-
-      <a href="#collection">
-        WebMoney
-      </a>
-
-    </div>
+   <h2>
+    Four ways to live.
+   </h2>
 
   </div>
 
-  <div class="footerBottom">
+  <div class="mono">
+   01 — 04
+  </div>
 
-    <span>
-      © 2026 TURIN PREMIUM STORE
+ </div>
+
+
+ <div class="featureGrid">
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85"
+    alt="Precision Objects"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 01
     </span>
-
-    <span>
-      WEBMONEY · USDT · INTERNATIONAL
-    </span>
-
-    <span>
-      SELECTED WITH DISCERNMENT
-    </span>
-
-  </div>
-
-</footer>
-
-
-<!-- =========================================
-     CART OVERLAY
-     ========================================= -->
-
-<div class="overlay" id="overlay"></div>
-
-<aside class="cart" id="cart">
-
-  <div class="cartHead">
 
     <h3>
-      Your Collection
+     Precision Objects
     </h3>
 
-    <button
-      class="close"
-      id="closeCart"
-      aria-label="Close cart"
-    >
-      ×
-    </button>
+    <p>
+     Technology, accessories and tools with a sense of permanence.
+    </p>
+
+   </div>
+
+  </article>
+
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+    alt="Private Sound"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 02
+    </span>
+
+    <h3>
+     Private Sound
+    </h3>
+
+   </div>
+
+  </article>
+
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
+    alt="Future Systems"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 03
+    </span>
+
+    <h3>
+     Future Systems
+    </h3>
+
+   </div>
+
+  </article>
+
+ </div>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section class="shop" id="shop">
+
+ <div class="shopHead">
+
+  <div>
+
+   <div class="kicker mono">
+    THE COLLECTION / 256 OBJECTS
+   </div>
+
+   <h2>
+    Objects, selected.
+   </h2>
 
   </div>
 
   <div
-    class="cartItems"
-    id="cartItems"
-  ></div>
+   class="count"
+   id="count"
+  >
+  </div>
 
-  <div class="cartFoot">
+ </div>
 
-    <div class="totalLine">
-      <span>COLLECTION TOTAL</span>
-      <strong id="cartTotal">$0</strong>
-    </div>
 
-    <button
-      class="checkout"
-      id="checkoutBtn"
-      disabled
-    >
-      Proceed To Private Checkout
-    </button>
+ <div
+  class="filters"
+  id="filters"
+ >
+ </div>
 
-    <div class="webmoneyNote">
-      WEBMONEY ONLY · PURSE
-      <br>
-      T270243849673
-    </div>
+
+ <div class="searchbar">
+
+  <input
+   id="search"
+   type="search"
+   placeholder="Search the collection — smartphone, camera, sound..."
+   autocomplete="off"
+  >
+
+  <div
+   class="count"
+   id="count2"
+  >
+  </div>
+
+ </div>
+
+
+ <div
+  class="products"
+  id="products"
+ >
+ </div>
+
+</section>
+
+
+<!-- EDITORIAL -->
+
+<section
+ class="editorial"
+ id="journal"
+>
+
+ <img
+  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1500&q=90"
+  alt="TURIN editorial"
+ >
+
+ <div class="editorialText">
+
+  <div class="kicker mono">
+   TURIN JOURNAL / 001
+  </div>
+
+  <h2>
+   The new luxury is attention.
+  </h2>
+
+  <p>
+   Quiet interfaces. Beautiful materials. Objects chosen for
+   the details that become invisible only after they become indispensable.
+  </p>
+
+  <button
+   class="btn"
+   style="width:max-content;margin-top:20px"
+   onclick="goShop()"
+  >
+   Explore Objects
+  </button>
+
+ </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+ <div class="footerTop">
+
+  <div>
+
+   <h3>
+    TURIN
+   </h3>
+
+   <p>
+    A private digital house for premium technology and lifestyle objects.
+   </p>
+
+   <p>
+    International service · USD / USDT display
+   </p>
 
   </div>
+
+
+  <div>
+
+   <div class="mono">
+    Explore
+   </div>
+
+   <p>
+    <a href="#house">The House</a><br>
+    <a href="#collections">Collections</a><br>
+    <a href="#shop">Objects</a><br>
+    <a href="#journal">Journal</a>
+   </p>
+
+  </div>
+
+
+  <div>
+
+   <div class="mono">
+    Concierge
+   </div>
+
+   <p>
+
+    <a
+     href="https://wa.me/255797955045"
+     target="_blank"
+     rel="noopener"
+    >
+     WhatsApp Concierge
+    </a>
+
+    <br>
+
+    <span>
+     Worldwide enquiries
+    </span>
+
+   </p>
+
+  </div>
+
+
+  <div>
+
+   <div class="mono">
+    Payment
+   </div>
+
+   <p>
+    WebMoney only<br>
+    WMID: <b>367840821040</b><br>
+    WM purse: <b>T270243849673</b>
+   </p>
+
+  </div>
+
+ </div>
+
+
+ <div class="copyright">
+
+  <span>
+   © 2026 TURIN PREMIUM STORE
+  </span>
+
+  <span>
+   PRIVATE EDITION / DAR ES SALAAM / WORLDWIDE
+  </span>
+
+ </div>
+
+</footer>
+
+
+<!-- OVERLAY -->
+
+<div
+ class="overlay"
+ id="overlay"
+ onclick="closeAll()"
+>
+</div>
+
+
+<!-- CART -->
+
+<aside
+ class="cartDrawer"
+ id="cart"
+>
+
+ <div class="cartHead">
+
+  <span class="mono">
+   Private Bag
+  </span>
+
+  <button
+   class="close"
+   onclick="closeAll()"
+  >
+   ×
+  </button>
+
+ </div>
+
+
+ <div
+  class="cartItems"
+  id="cartItems"
+ >
+ </div>
+
+
+ <div class="cartFoot">
+
+  <div class="total">
+
+   <span>
+    Total
+   </span>
+
+   <span id="cartTotal">
+    $0.00
+   </span>
+
+  </div>
+
+  <button
+   class="checkout"
+   onclick="checkout()"
+  >
+   Proceed to WebMoney
+  </button>
+
+ </div>
 
 </aside>
 
 
-<!-- =========================================
-     SEARCH PANEL
-     ========================================= -->
+<!-- PAYMENT -->
 
 <div
-  class="searchPanel"
-  id="searchPanel"
+ class="modal"
+ id="payment"
 >
 
-  <div class="searchInner">
+ <button
+  class="close"
+  onclick="closeAll()"
+ >
+  ×
+ </button>
 
-    <div class="searchTop">
 
-      <h2>
-        Search The Collection
-      </h2>
+ <div class="kicker mono">
+  PRIVATE CHECKOUT
+ </div>
 
-      <button
-        class="close"
-        id="closeSearch"
-        aria-label="Close search"
-      >
-        ×
-      </button>
 
-    </div>
+ <h2>
+  WebMoney
+ </h2>
 
-    <input
-      class="searchInput"
-      id="globalSearch"
-      type="search"
-      placeholder="Search by product, collection or category..."
-      autocomplete="off"
-    >
 
-    <div
-      class="searchResults"
-      id="searchResults"
-    ></div>
+ <p>
+  Your order is prepared for the WebMoney merchant.
+  TURIN presents WebMoney as the only checkout method.
+ </p>
+
+
+ <div class="wm">
+
+  <div class="mono">
+   Merchant Purse
+  </div>
+
+  <strong>
+   T270243849673
+  </strong>
+
+
+  <div class="field">
+
+   <label>
+    Order Number
+   </label>
+
+   <input
+    id="orderNo"
+    readonly
+   >
 
   </div>
 
-</div>
 
+  <div class="field">
 
-<!-- =========================================
-     CHECKOUT MODAL
-     ========================================= -->
+   <label>
+    Amount USD
+   </label>
 
-<div
-  class="modal"
-  id="checkoutModal"
->
-
-  <div class="modalBox">
-
-    <div class="modalTop">
-
-      <div>
-        <div
-          class="mono"
-          style="color:var(--gold);margin-bottom:10px"
-        >
-          PRIVATE CHECKOUT
-        </div>
-
-        <h2>
-          Complete your order.
-        </h2>
-      </div>
-
-      <button
-        class="close"
-        id="closeCheckout"
-        aria-label="Close checkout"
-      >
-        ×
-      </button>
-
-    </div>
-
-    <div class="field">
-
-      <label for="customerName">
-        Full Name
-      </label>
-
-      <input
-        id="customerName"
-        type="text"
-        autocomplete="name"
-        placeholder="Your full name"
-      >
-
-    </div>
-
-    <div class="field">
-
-      <label for="customerEmail">
-        Email Address
-      </label>
-
-      <input
-        id="customerEmail"
-        type="email"
-        autocomplete="email"
-        placeholder="Your email address"
-      >
-
-    </div>
-
-    <div class="orderSummary">
-
-      <div
-        class="summaryRow"
-        id="summaryItems"
-      >
-        <span>ITEMS</span>
-        <span>0</span>
-      </div>
-
-      <div class="summaryRow">
-
-        <span>
-          CURRENCY
-        </span>
-
-        <span>
-          USD
-        </span>
-
-      </div>
-
-      <div class="summaryRow total">
-
-        <span>
-          TOTAL
-        </span>
-
-        <strong id="checkoutTotal">
-          $0
-        </strong>
-
-      </div>
-
-    </div>
-
-    <div class="paymentBox">
-
-      <div class="method">
-
-        <div class="paymentLogo">
-          WM
-        </div>
-
-        <div>
-          <strong>
-            WebMoney
-          </strong>
-
-          <p>
-            Secure payment through WebMoney Merchant.
-          </p>
-        </div>
-
-      </div>
-
-      <p>
-        Payment method:
-        <strong>WebMoney only.</strong>
-      </p>
-
-      <p style="margin-top:8px">
-        TURIN WebMoney purse:
-      </p>
-
-      <p class="purse">
-        T270243849673
-      </p>
-
-    </div>
-
-    <button
-      class="payBtn"
-      id="payWebMoney"
-    >
-      Continue With WebMoney
-    </button>
-
-    <div
-      style="
-        color:#666;
-        font:9px 'DM Mono';
-        line-height:1.7;
-        margin-top:15px;
-        text-align:center
-      "
-    >
-      By continuing, your order details will be
-      prepared for WebMoney payment.
-    </div>
+   <input
+    id="orderAmount"
+    readonly
+   >
 
   </div>
+
+
+  <button
+   class="btn"
+   style="width:100%"
+   onclick="launchWebMoney()"
+  >
+   Open WebMoney Merchant
+  </button>
+
+ </div>
+
+
+ <p
+  class="mono"
+  style="font-size:9px"
+ >
+  Production note: server-side WebMoney Result verification should be
+  connected before treating a browser return as proof of payment.
+ </p>
 
 </div>
 
 
 <script>
 
-/* =========================================
-   TURIN CONFIGURATION
-   ========================================= */
-
-const PURSE = "T270243849673";
-
-const WHATSAPP = "255797955045";
-
-const CART_KEY = "turin_luxury_cart";
-
-const USD_TZS_RATE = 2641.8564;
+/* ============================================================
+   TURIN PREMIUM STORE
+   FINAL 256 PRODUCT ENGINE
+   ============================================================ */
 
 
-/* =========================================
-   PRODUCT IMAGE COLLECTIONS
-   ========================================= */
+/* CATEGORIES */
 
-const image_groups = {
-
-  Mobile: [
-
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2015%20Pro%20Natural%20Titanium.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2015%20Pro%20Max.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2014%20Pro%20Max.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2014%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2013%20Pro%20Max.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone%2013%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20S24%20Ultra.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20S24.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20S23%20Ultra.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20S23.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Pixel%208%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Pixel%208.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/OnePlus%2012.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/OnePlus%2011.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Xiaomi%2014.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Xiaomi%2013.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20Xperia%201.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20Xperia%205.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nokia%208.3.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nokia%209%20PureView.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Motorola%20Razr.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Motorola%20Edge.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20Mate%2060.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20P60.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Asus%20Zenfone.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Asus%20ROG%20Phone.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/BlackBerry%20Passport.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/BlackBerry%20Key2.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Fairphone%204.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Essential%20Phone.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/HTC%20One.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20G8.jpg"
-
-  ],
-
-  Computing: [
-
-    "https://commons.wikimedia.org/wiki/Special:FilePath/MacBook%20Pro%2014-inch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/MacBook%20Pro%2016-inch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/MacBook%20Air%20M2.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/MacBook%20Air.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Surface%20Laptop.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Surface%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Dell%20XPS%2013.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Dell%20XPS%2015.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo%20ThinkPad.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Lenovo%20Yoga.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/HP%20Spectre.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/HP%20Envy.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Asus%20ZenBook.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Asus%20ROG%20Strix.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Acer%20Swift.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Acer%20Predator.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Book.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Framework%20Laptop.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Chromebook.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Alienware%20Laptop.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/MSI%20Laptop.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20Book.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Chromebook.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Studio.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/iMac%202021.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Mac%20Mini.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Mac%20Studio.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Mac%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Studio%20Display.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Dell%20UltraSharp.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20UltraFine.jpg"
-
-  ],
-
-  Audio: [
-
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20WH-1000XM5.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20WH-1000XM4.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/AirPods%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/AirPods%20Max.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Bose%20QuietComfort.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Bose%20Headphones%20700.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sennheiser%20Momentum.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sennheiser%20HD%20800.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Audio-Technica%20M50x.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Beats%20Studio.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall%20Major.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall%20Monitor.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20One.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Five.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Arc.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Bang%20and%20Olufsen%20Beoplay.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Bowers%20and%20Wilkins%20PX7.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/JBL%20Charge.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/JBL%20Flip.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/JBL%20Xtreme.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Ultimate%20Ears%20Boom.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Nest%20Audio.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Echo.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20HomePod.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Beats%20Fit%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Beats%20Studio%20Buds.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Shure%20SM7B.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Neumann%20U87.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Rode%20NT1.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Focusrite%20Scarlett.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Pioneer%20DJ.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Technics%20Turntable.jpg"
-
-  ],
-
-  "Smart Technology": [
-
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Watch%20Ultra.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Watch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Galaxy%20Watch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Pixel%20Watch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Garmin%20Fenix.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Fitbit%20Sense.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Air%20Purifier.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Vacuum.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nest%20Hub.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nest%20Thermostat.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Echo%20Show.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Philips%20Hue.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Beam.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Ring%20Doorbell.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Arlo%20Camera.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/GoPro%20Hero.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/DJI%20Mini.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/DJI%20Mavic.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/DJI%20Osmo.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Meta%20Quest%202.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Meta%20Quest%203.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Valve%20Index.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20TV.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Chromecast.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Roku.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Fire%20TV.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Kindle%20Paperwhite.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Kobo%20Reader.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Remarkable%202.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla%20Wall%20Connector.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Anker%20PowerHouse.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Bose%20Smart%20Soundbar.jpg"
-
-  ],
-
-  Gaming: [
-
-    "https://commons.wikimedia.org/wiki/Special:FilePath/PlayStation%205.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/PlayStation%204.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox%20Series%20X.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox%20Series%20S.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo%20Switch%20OLED.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo%20Switch.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Steam%20Deck.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/ROG%20Ally.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/PlayStation%20Portal.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/DualSense.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox%20Controller.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo%20Pro%20Controller.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20BlackWidow.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20DeathAdder.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Logitech%20G%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/SteelSeries%20Apex.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Corsair%20K70.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Alienware%20Monitor.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Odyssey.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20UltraGear.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Asus%20ROG%20Monitor.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Elgato%20Stream%20Deck.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Elgato%20Capture.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Meta%20Quest%20Pro.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/HTC%20Vive.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/PlayStation%20VR2.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Valve%20Steam%20Controller.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Logitech%20G%20Cloud.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Scuf%20Controller.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Secretlab%20Chair.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Thrustmaster%20Wheel.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Playseat.jpg"
-
-  ]
-
-};
-
-/* =========================================
-   REMAINING IMAGE COLLECTIONS
-   ========================================= */
-
-image_groups.Cameras = [
-
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Canon%20EOS%20R5.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Canon%20EOS%20R6.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Canon%20EOS%2090D.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nikon%20Z9.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nikon%20Z8.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nikon%20D850.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20A7%20IV.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20A7R%20IV.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20A1.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Fujifilm%20X-T5.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Fujifilm%20GFX%20100S.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Panasonic%20Lumix%20S5.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Panasonic%20Lumix%20GH6.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Leica%20Q2.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Leica%20M11.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Leica%20SL2.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Hasselblad%20X2D.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Hasselblad%20907X.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Olympus%20OM-1.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Pentax%20K-3.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Ricoh%20GR%20III.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/GoPro%20Hero%2012.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/DJI%20Action%204.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Insta360%20X3.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Canon%20RF%2050mm.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nikon%2050mm%20Lens.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%2085mm%20Lens.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%2024-70mm.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Canon%2070-200mm.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nikon%2070-200mm.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sigma%2035mm%20Art.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Tamron%2028-75mm.jpg"
-
-];
-
-image_groups.Accessories = [
-
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20MagSafe%20Charger.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20MagSafe%20Battery.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Magic%20Mouse.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Magic%20Keyboard.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20Magic%20Trackpad.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20AirTag.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Anker%20PowerCore.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Anker%20Nano%20Charger.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Bose%20Charging%20Case.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Wireless%20Charger.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Belkin%20BoostCharge.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Belkin%20MagSafe.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Logitech%20MX%20Master.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Logitech%20MX%20Keys.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Logitech%20Lift.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Pro%20Click.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Keychron%20Keyboard.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nuphy%20Keyboard.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Elgato%20Key%20Light.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Elgato%20Wave.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Satechi%20Dock.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/CalDigit%20TS4.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/OWC%20Thunderbolt%20Dock.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sandisk%20Extreme%20SSD.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20T7%20SSD.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/LaCie%20Rugged%20SSD.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/WD%20My%20Passport.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20USB-C%20Cable.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Thunderbolt%20Cable.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Peak%20Design%20Tripod.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Peak%20Design%20Sling.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Bellroy%20Tech%20Kit.jpg"
-
-];
-
-image_groups.Lifestyle = [
-
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Supersonic.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Airwrap.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Purifier.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Philips%20Sonicare.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Oral-B%20iO.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Nespresso%20Machine.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/DeLonghi%20Coffee%20Machine.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Breville%20Barista.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Fellow%20Kettle.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Fellow%20Grinder.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Smeg%20Kettle.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Bose%20Home%20Speaker.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Era%20100.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Era%20300.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Kindle%20Oasis.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Remarkable%20Tablet.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Leica%20Projector.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20The%20Frame.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20OLED%20TV.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sony%20OLED%20TV.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung%20Neo%20QLED.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Apple%20HomePod%20Mini.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Nest%20Mini.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Echo%20Dot.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Olufsen%20Speaker.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall%20Stanmore.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Technics%20SL-1200.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Rega%20Planar%203.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Sonos%20Sub.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Dyson%20Lightcycle.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20StanbyME.jpg",
-  "https://commons.wikimedia.org/wiki/Special:FilePath/BenQ%20Projector.jpg"
-
+const CATS = [
+ "All",
+ "Mobile",
+ "Computing",
+ "Audio",
+ "Smart Tech",
+ "Gaming",
+ "Cameras",
+ "Accessories",
+ "Lifestyle"
 ];
 
 
-/* =========================================
-   PRODUCT DATA
-   ========================================= */
+/* ============================================================
+   PRODUCT NAMES
+   8 CATEGORIES × 32 PRODUCTS = 256
+============================================================ */
 
-const categories = [
-  "Mobile",
-  "Computing",
-  "Audio",
-  "Smart Technology",
-  "Gaming",
-  "Cameras",
-  "Accessories",
-  "Lifestyle"
-];
+const stems = {
 
-const productNames = {
+ Mobile:[
+  "Aurelia","Monarch","Sovereign","Élan",
+  "NOVA","Velour","Lucent","Regent",
+  "Aria","Vantage","Noir","Crown",
+  "Maison","Eclipse","Prestige","Opal",
+  "Sable","Verve","Atlas","Lumen",
+  "Milan","Royal","Onyx","Celeste",
+  "Aster","Vela","Icon","Grande",
+  "Halo","Noble","Silva","Prime"
+ ],
 
-  Mobile:[
-    "Aurelia One",
-    "Aurelia Pro",
-    "Monarch X",
-    "Monarch Pro",
-    "Sovereign",
-    "Sovereign Max",
-    "Élan",
-    "Élan Pro"
-  ],
+ Computing:[
+  "Apex","Monarch","Atelier","Vector",
+  "Sovereign","Axis","Vertex","Lucid",
+  "Titan","Meridian","Studio","Crest",
+  "Nexus","Obsidian","Arc","Summit",
+  "Coda","Forma","Grid","Vault",
+  "Canvas","Pilot","Core","Crown",
+  "Nova","Prime","Elite","Origin",
+  "Forge","Vero","Mira","Zenith"
+ ],
 
-  Computing:[
-    "Atelier Book",
-    "Atelier Pro",
-    "Executive Air",
-    "Executive Pro",
-    "Private Studio",
-    "Private Studio X",
-    "Monarch Workstation",
-    "Sovereign Desk"
-  ],
+ Audio:[
+  "Sonata","Nocturne","Opus","Velvet",
+  "Auralis","Resonance","Aria","Cadenza",
+  "Sonic","Maison","Chorus","Harmonic",
+  "Lustre","Melody","Vox","Dolce",
+  "Acoustic","Elysian","Tempo","Rhapsody",
+  "Muse","Aura","Concerto","Serein",
+  "Opera","Cadence","Forte","Largo",
+  "Vesper","Echo","Lyric","Orfeo"
+ ],
 
-  Audio:[
-    "Nocturne",
-    "Nocturne Pro",
-    "Élan Sound",
-    "Élan Sound X",
-    "Signature One",
-    "Signature Two",
-    "Atelier Audio",
-    "Private Listening"
-  ],
+ "Smart Tech":[
+  "Lumen","Halo","Orbit","Solis",
+  "Astra","Nexus","Beacon","Vanta",
+  "Pulse","Prism","Ceres","Nova",
+  "Arc","Flux","Zenith","Sentry",
+  "Mira","Vertex","Aura","Crown",
+  "Atlas","Sage","Helix","Axiom",
+  "Ion","Eon","Vela","Kite",
+  "Lucent","Vero","Oriel","Noble"
+ ],
 
-  "Smart Technology":[
-    "Lumina",
-    "Lumina Pro",
-    "Aurelia Home",
-    "Aurelia Sense",
-    "Atelier Living",
-    "Atelier Vision",
-    "Monarch Home",
-    "Sovereign Living"
-  ],
+ Gaming:[
+  "Apex","Phantom","Vanguard","Rogue",
+  "Titan","Spectre","Velocity","Onyx",
+  "Nexus","Eclipse","Pulse","Fury",
+  "Vertex","Crown","Shadow","Arcade",
+  "Valor","Strike","Nova","Prime",
+  "Zenith","Forge","Atlas","Zero",
+  "Raven","Sovereign","Blade","Vortex",
+  "Cobalt","Legend","Elite","Myth"
+ ],
 
-  Gaming:[
-    "Apex",
-    "Apex Pro",
-    "Apex Elite",
-    "Monarch Play",
-    "Monarch X",
-    "Sovereign Gaming",
-    "Élan Play",
-    "Private Arena"
-  ],
+ Cameras:[
+  "Lumina","Vista","Aperture","Noir",
+  "Serein","Focus","Optic","Monarch",
+  "Cine","Frame","Velour","Clarity",
+  "Aurelia","Prism","Lumen","Crest",
+  "Atlas","Vantage","Studio","Silver",
+  "Crown","Origin","NOVA","Regent",
+  "Halo","Sable","Icon","Mira",
+  "Zenith","Prime","Maison","Vela"
+ ],
 
-  Cameras:[
-    "Lumina Camera",
-    "Lumina Pro Camera",
-    "Atelier Frame",
-    "Atelier Frame X",
-    "Monarch Lens",
-    "Monarch Prime",
-    "Sovereign Optic",
-    "Private Capture"
-  ],
+ Accessories:[
+  "Atelier","Maison","Regent","Crown",
+  "Noir","Sable","Lustre","Velour",
+  "Élan","Prestige","Monarch","Aurelia",
+  "Vanta","Noble","Crest","Opal",
+  "Sovereign","Lucent","Prime","Milan",
+  "Aria","Vero","Silva","Grande",
+  "Halo","Onyx","Celeste","Aster",
+  "Vela","Icon","Royal","Maison"
+ ],
 
-  Accessories:[
-    "Atelier Charge",
-    "Atelier Dock",
-    "Élan Cable",
-    "Élan Power",
-    "Signature Dock",
-    "Signature Carry",
-    "Monarch Utility",
-    "Private Essentials"
-  ],
-
-  Lifestyle:[
-    "Maison One",
-    "Maison Pro",
-    "Atelier Living",
-    "Atelier Home",
-    "Nocturne Home",
-    "Élan Living",
-    "Monarch Living",
-    "Sovereign Home"
-  ]
-
-};
-
-const descriptions = {
-
-  Mobile:
-    "Refined personal technology with a considered balance of design and performance.",
-
-  Computing:
-    "A precise instrument for focused work, creative practice and modern private offices.",
-
-  Audio:
-    "Immersive sound presented through sophisticated form and considered engineering.",
-
-  "Smart Technology":
-    "Intelligent technology designed to integrate naturally into contemporary spaces.",
-
-  Gaming:
-    "Performance-led technology for a dedicated and uncompromising digital experience.",
-
-  Cameras:
-    "Precision imaging equipment for considered visual work and lasting creative practice.",
-
-  Accessories:
-    "Essential companions selected to complete a refined technology environment.",
-
-  Lifestyle:
-    "Modern lifestyle technology chosen for design, utility and enduring presence."
-
-};
-
-const priceBases = {
-
-  Mobile:1299,
-  Computing:1599,
-  Audio:499,
-  "Smart Technology":299,
-  Gaming:599,
-  Cameras:1499,
-  Accessories:129,
-  Lifestyle:349
+ Lifestyle:[
+  "Maison","Atelier","Lustre","Serein",
+  "Aurelia","Velour","Noir","Élan",
+  "Regent","Opal","Crown","Sable",
+  "Monarch","Vela","Celeste","Noble",
+  "Lumen","Aster","Silva","Aria",
+  "Prestige","Grande","Milan","Vero",
+  "Lucent","Sovereign","Halo","Onyx",
+  "Royal","Prime","Elysian","Crest"
+ ]
 
 };
 
 
-/* =========================================
-   BUILD 256 PRODUCTS
-   ========================================= */
+/* ============================================================
+   IMAGE VOCABULARY
 
-const products = [];
+   IMPORTANT:
+   No shared 4-image pool.
+   Each product receives a unique lock number.
+============================================================ */
 
-let productId = 1;
+const visualWords = {
 
-categories.forEach(category => {
+ Mobile:[
+  "luxury smartphone",
+  "premium smartphone",
+  "titanium smartphone",
+  "flagship phone",
+  "modern smartphone",
+  "black smartphone",
+  "silver smartphone",
+  "foldable smartphone",
+  "premium mobile technology",
+  "smartphone studio",
+  "luxury phone",
+  "high end smartphone",
+  "minimal smartphone",
+  "smartphone product photography",
+  "premium phone desk",
+  "modern mobile device"
+ ],
 
-  const names = productNames[category];
+ Computing:[
+  "luxury laptop",
+  "premium laptop",
+  "professional laptop",
+  "black laptop",
+  "silver laptop",
+  "designer laptop",
+  "premium computer",
+  "desktop computer",
+  "luxury workstation",
+  "modern workstation",
+  "creative workstation",
+  "professional computer",
+  "premium notebook",
+  "computer studio",
+  "modern computer desk",
+  "high end computer"
+ ],
 
-  const images = image_groups[category];
+ Audio:[
+  "luxury headphones",
+  "premium headphones",
+  "wireless headphones",
+  "audiophile headphones",
+  "studio headphones",
+  "premium speaker",
+  "luxury speaker",
+  "wireless speaker",
+  "hi fi speaker",
+  "premium earbuds",
+  "luxury earbuds",
+  "audio system",
+  "audiophile setup",
+  "music studio",
+  "premium sound system",
+  "high end audio"
+ ],
 
-  for(let i=0;i<32;i++){
+ "Smart Tech":[
+  "luxury smart home",
+  "premium smart device",
+  "smart home technology",
+  "modern smart technology",
+  "smart watch",
+  "premium wearable",
+  "home automation",
+  "smart lighting",
+  "smart security",
+  "future technology",
+  "luxury gadget",
+  "premium gadget",
+  "connected home",
+  "modern electronics",
+  "smart lifestyle",
+  "future home"
+ ],
 
-    const name =
-      names[i % names.length] +
-      " " +
-      String(100 + i);
+ Gaming:[
+  "luxury gaming setup",
+  "premium gaming PC",
+  "gaming laptop",
+  "professional gaming setup",
+  "gaming desk",
+  "premium gaming monitor",
+  "gaming controller",
+  "premium controller",
+  "gaming keyboard",
+  "mechanical keyboard",
+  "gaming mouse",
+  "esports setup",
+  "high end gaming",
+  "luxury gamer room",
+  "gaming technology",
+  "premium gaming equipment"
+ ],
 
-    const price =
-      priceBases[category] +
-      ((i * 173) % 1500);
+ Cameras:[
+  "luxury camera",
+  "professional camera",
+  "mirrorless camera",
+  "premium camera",
+  "cinema camera",
+  "professional photography",
+  "premium camera lens",
+  "camera lens",
+  "cinema lens",
+  "photography equipment",
+  "professional camera studio",
+  "camera product photography",
+  "high end camera",
+  "premium photography gear",
+  "cinematic camera",
+  "professional imaging"
+ ],
+
+ Accessories:[
+  "luxury leather accessory",
+  "premium wallet",
+  "luxury card holder",
+  "designer sunglasses",
+  "premium sunglasses",
+  "luxury travel bag",
+  "premium backpack",
+  "luxury backpack",
+  "leather briefcase",
+  "premium briefcase",
+  "luxury luggage",
+  "premium luggage",
+  "luxury belt",
+  "premium leather goods",
+  "luxury everyday carry",
+  "designer accessory"
+ ],
+
+ Lifestyle:[
+  "luxury interior",
+  "premium interior",
+  "modern luxury home",
+  "designer furniture",
+  "luxury chair",
+  "premium chair",
+  "luxury desk",
+  "designer desk",
+  "luxury lamp",
+  "designer lamp",
+  "modern living room",
+  "luxury bedroom",
+  "premium home object",
+  "designer workspace",
+  "luxury hotel interior",
+  "premium lifestyle"
+ ]
+
+};
+
+
+/* ============================================================
+   UNIQUE IMAGE GENERATOR
+
+   Product 1  → lock 1
+   Product 2  → lock 2
+   ...
+   Product 256 → lock 256
+
+   No image pool.
+   No i % 4.
+============================================================ */
+
+function uniqueImage(category,productId){
+
+ const words = visualWords[category];
+
+ const keyword =
+   words[(productId - 1) % words.length];
+
+ const search =
+   encodeURIComponent(
+     keyword +
+     ", luxury, editorial, premium, studio"
+   );
+
+ return (
+   "https://loremflickr.com/1000/1250/" +
+   search +
+   "?lock=" +
+   productId
+ );
+
+}
+
+
+/* ============================================================
+   PRICES
+============================================================ */
+
+const priceTable = {
+
+ Mobile:[
+  899,1190,1490,1790,
+  2290,2790,3290,3890
+ ],
+
+ Computing:[
+  1290,1690,2190,2790,
+  3490,4290,4990,5990
+ ],
+
+ Audio:[
+  390,590,790,990,
+  1290,1590,1990,2490
+ ],
+
+ "Smart Tech":[
+  290,490,690,890,
+  1190,1490,1890,2290
+ ],
+
+ Gaming:[
+  690,990,1390,1790,
+  2290,2890,3490,4490
+ ],
+
+ Cameras:[
+  990,1390,1890,2490,
+  3290,4290,5490,6990
+ ],
+
+ Accessories:[
+  180,290,420,590,
+  790,990,1290,1590
+ ],
+
+ Lifestyle:[
+  220,360,520,760,
+  990,1290,1690,2190
+ ]
+
+};
+
+
+/* ============================================================
+   CREATE 256 PRODUCTS
+============================================================ */
+
+let products = [];
+
+let globalId = 1;
+
+
+Object.entries(stems).forEach(
+ ([category,names]) => {
+
+  names.forEach(
+   (name,index) => {
+
+    let model =
+      String(
+       (index % 32) + 1
+      ).padStart(2,"0");
+
+
+    let suffix;
+
+
+    if(category === "Mobile"){
+      suffix = "X" + model;
+    }
+
+    else if(category === "Computing"){
+      suffix = "Pro " + model;
+    }
+
+    else if(category === "Audio"){
+      suffix = "Edition " + model;
+    }
+
+    else if(category === "Cameras"){
+      suffix = "Cine " + model;
+    }
+
+    else if(category === "Gaming"){
+      suffix = "GT " + model;
+    }
+
+    else if(category === "Lifestyle"){
+      suffix = "Atelier " + model;
+    }
+
+    else{
+      suffix = "Series " + model;
+    }
+
 
     products.push({
 
-      id:productId,
+      id:globalId,
 
-      name:name,
+      cat:category,
 
-      category:category,
+      name:
+        name +
+        " " +
+        suffix,
 
-      description:descriptions[category],
+      price:
+        priceTable[category]
+        [index % 8],
 
-      price:price,
+      img:
+        uniqueImage(
+          category,
+          globalId
+        ),
 
-      image:images[i],
+      desc:
+        [
+          "Signature edition",
+          "Private collection",
+          "Limited house selection",
+          "Engineered for modern living"
+        ][index % 4],
 
-      collection:
-        i < 8
-          ? "Signature Selection"
-          : i < 16
-          ? "Private Selection"
-          : i < 24
-          ? "The Executive Edit"
-          : "Modern Essentials"
+      badge:
+        index % 8 === 0
+        ? "PRIVATE EDITION"
+        :
+        index % 6 === 0
+        ? "NEW"
+        :
+        ""
 
     });
 
-    productId++;
 
-  }
+    globalId++;
 
-});
+   }
+  );
+
+ }
+);
 
 
-/* =========================================
+/* ============================================================
+   VERIFY PRODUCT COUNT
+============================================================ */
+
+console.log(
+ "TURIN PRODUCTS:",
+ products.length
+);
+
+
+/* ============================================================
    STATE
-   ========================================= */
+============================================================ */
+
+let cart =
+ JSON.parse(
+  localStorage.getItem(
+   "turin_luxury_cart"
+  ) || "[]"
+ );
 
 let activeCategory = "All";
 
-let cart = [];
-
-try{
-
-  cart =
-    JSON.parse(
-      localStorage.getItem(CART_KEY)
-    ) || [];
-
-}catch(e){
-
-  cart = [];
-
-}
+let searchTerm = "";
 
 
-/* =========================================
-   HELPERS
-   ========================================= */
-
-const $ = selector =>
-  document.querySelector(selector);
-
-const $$ = selector =>
-  document.querySelectorAll(selector);
-
+/* ============================================================
+   MONEY
+============================================================ */
 
 function money(value){
 
-  return new Intl.NumberFormat(
-    "en-US",
-    {
-      style:"currency",
-      currency:"USD",
-      maximumFractionDigits:0
-    }
-  ).format(value);
+ return "$" +
+ value.toLocaleString(
+  "en-US",
+  {
+   minimumFractionDigits:2,
+   maximumFractionDigits:2
+  }
+ );
 
 }
 
 
-function escapeHTML(value){
+/* ============================================================
+   MOBILE NAV
+============================================================ */
 
-  return String(value)
+function toggleMobileNav(){
 
-    .replaceAll("&","&amp;")
-
-    .replaceAll("<","&lt;")
-
-    .replaceAll(">","&gt;")
-
-    .replaceAll('"',"&quot;")
-
-    .replaceAll("'","&#039;");
-
-}
-
-
-function saveCart(){
-
-  localStorage.setItem(
-    CART_KEY,
-    JSON.stringify(cart)
+ const nav =
+  document.querySelector(
+   ".navlinks"
   );
 
+ nav.style.display =
+  nav.style.display === "flex"
+  ? "none"
+  : "flex";
+
 }
 
 
-/* =========================================
+/* ============================================================
+   SHOP SCROLL
+============================================================ */
+
+function goShop(){
+
+ document
+  .querySelector("#shop")
+  .scrollIntoView({
+   behavior:"smooth"
+  });
+
+}
+
+
+/* ============================================================
    FILTERS
-   ========================================= */
+============================================================ */
 
 function renderFilters(){
 
-  const box = $("#filters");
+ document.getElementById(
+  "filters"
+ ).innerHTML =
 
-  box.innerHTML = "";
+ CATS.map(
+  category => `
 
-  const all = [
-    "All",
-    ...categories
-  ];
+   <button
+    class="filter ${
+     category === activeCategory
+     ? "active"
+     : ""
+    }"
+    onclick="setCategory('${category}')"
+   >
+    ${category}
+   </button>
 
-  all.forEach(category => {
-
-    const button =
-      document.createElement("button");
-
-    button.className =
-      "filter" +
-      (
-        activeCategory === category
-          ? " active"
-          : ""
-      );
-
-    button.textContent =
-      category;
-
-    button.addEventListener(
-      "click",
-      () => {
-
-        activeCategory =
-          category;
-
-        renderFilters();
-
-        renderProducts();
-
-      }
-    );
-
-    box.appendChild(button);
-
-  });
+  `
+ ).join("");
 
 }
 
 
-/* =========================================
-   PRODUCT RENDERING
-   ========================================= */
-
-function getFilteredProducts(){
-
-  const query =
-    $("#catalogSearch")
-      ?.value
-      .trim()
-      .toLowerCase() || "";
-
-  return products.filter(product => {
-
-    const categoryMatch =
-      activeCategory === "All" ||
-      product.category === activeCategory;
-
-    const searchMatch =
-      !query ||
-      product.name.toLowerCase().includes(query) ||
-      product.category.toLowerCase().includes(query) ||
-      product.description.toLowerCase().includes(query) ||
-      product.collection.toLowerCase().includes(query);
-
-    return categoryMatch && searchMatch;
-
-  });
-
-}
-
+/* ============================================================
+   RENDER PRODUCTS
+============================================================ */
 
 function renderProducts(){
 
-  const list =
-    getFilteredProducts();
+ const list =
+  products.filter(
+   product => {
 
-  const box =
-    $("#products");
+    const categoryMatch =
+      activeCategory === "All" ||
+      product.cat === activeCategory;
 
-  box.innerHTML = "";
 
-  $("#productCount").textContent =
-    `${list.length} PRODUCTS`;
+    const text =
+      (
+       product.name +
+       " " +
+       product.cat +
+       " " +
+       product.desc
+      ).toLowerCase();
 
-  list.forEach((product,index) => {
 
-    const article =
-      document.createElement("article");
+    const searchMatch =
+      text.includes(
+       searchTerm.toLowerCase()
+      );
 
-    article.className =
-      "product reveal";
 
-    article.innerHTML = `
-
-      <div class="pic">
-
-        <img
-          src="${product.image}"
-          alt="${escapeHTML(product.name)}"
-          loading="${index < 8 ? "eager" : "lazy"}"
-          onerror="this.style.display='none'"
-        >
-
-        ${
-          index % 13 === 0
-            ? `<div class="badge">SIGNATURE</div>`
-            : ""
-        }
-
-        <button
-          class="wish"
-          aria-label="Save product"
-          data-id="${product.id}"
-        >
-          ♡
-        </button>
-
-      </div>
-
-      <div class="pbody">
-
-        <div class="cat">
-          ${escapeHTML(product.category)}
-        </div>
-
-        <div class="pname">
-          ${escapeHTML(product.name)}
-        </div>
-
-        <div class="pdesc">
-          ${escapeHTML(product.description)}
-        </div>
-
-        <div class="prow">
-
-          <div class="price">
-            ${money(product.price)}
-          </div>
-
-          <button
-            class="add"
-            data-add="${product.id}"
-          >
-            Add To Collection
-          </button>
-
-        </div>
-
-      </div>
-    `;
-
-    box.appendChild(article);
-
-  });
-
-  $$("[data-add]").forEach(button => {
-
-    button.addEventListener(
-      "click",
-      () => {
-
-        addToCart(
-          Number(button.dataset.add)
-        );
-
-      }
+    return (
+     categoryMatch &&
+     searchMatch
     );
 
-  });
+   }
+  );
+
+
+ document.getElementById(
+  "products"
+ ).innerHTML =
+
+ list.map(
+  product => `
+
+   <article
+    class="product"
+   >
+
+    <div class="pic">
+
+     <img
+      src="${product.img}"
+      alt="${product.name}"
+      loading="lazy"
+      onerror="
+       this.onerror=null;
+       this.src='https://picsum.photos/seed/turin-${product.id}/1000/1250';
+      "
+     >
+
+
+     ${
+      product.badge
+      ?
+      `
+       <span class="badge">
+        ${product.badge}
+       </span>
+      `
+      :
+      ""
+     }
+
+
+     <button
+      class="wish"
+      onclick="
+       this.textContent =
+       this.textContent === '♡'
+       ? '♥'
+       : '♡'
+      "
+     >
+      ♡
+     </button>
+
+    </div>
+
+
+    <div class="pbody">
+
+     <div class="cat">
+      ${product.cat}
+     </div>
+
+
+     <div class="pname">
+      ${product.name}
+     </div>
+
+
+     <div class="pdesc">
+      ${product.desc}
+     </div>
+
+
+     <div class="prow">
+
+      <span class="price">
+       ${money(product.price)}
+      </span>
+
+
+      <button
+       class="add"
+       onclick="addToCart(${product.id})"
+      >
+       Add to bag
+      </button>
+
+     </div>
+
+    </div>
+
+   </article>
+
+  `
+ ).join("");
+
+
+ document.getElementById(
+  "count"
+ ).textContent =
+  `${list.length} / ${products.length} OBJECTS`;
+
+
+ document.getElementById(
+  "count2"
+ ).textContent =
+  `${list.length} results`;
 
 }
 
 
-/* =========================================
-   CART
-   ========================================= */
+/* ============================================================
+   SET CATEGORY
+============================================================ */
+
+function setCategory(category){
+
+ activeCategory =
+  category;
+
+ renderFilters();
+
+ renderProducts();
+
+ goShop();
+
+}
+
+
+/* ============================================================
+   ADD TO CART
+============================================================ */
 
 function addToCart(id){
 
-  const existing =
-    cart.find(item => item.id === id);
-
-  if(existing){
-
-    existing.qty += 1;
-
-  }else{
-
-    cart.push({
-      id:id,
-      qty:1
-    });
-
-  }
-
-  saveCart();
-
-  renderCart();
-
-  openCart();
-
-}
-
-
-function removeFromCart(id){
-
-  cart =
-    cart.filter(item => item.id !== id);
-
-  saveCart();
-
-  renderCart();
-
-}
-
-
-function changeQty(id,delta){
-
-  const item =
-    cart.find(item => item.id === id);
-
-  if(!item) return;
-
-  item.qty += delta;
-
-  if(item.qty <= 0){
-
-    removeFromCart(id);
-
-    return;
-
-  }
-
-  saveCart();
-
-  renderCart();
-
-}
-
-
-function cartProducts(){
-
-  return cart.map(item => {
-
-    const product =
-      products.find(
-        p => p.id === item.id
-      );
-
-    return {
-      ...product,
-      qty:item.qty
-    };
-
-  }).filter(Boolean);
-
-}
-
-
-function cartCount(){
-
-  return cart.reduce(
-    (sum,item) => sum + item.qty,
-    0
+ const existing =
+  cart.find(
+   item => item.id === id
   );
 
+
+ if(existing){
+
+  existing.qty++;
+
+ }
+
+ else{
+
+  cart.push({
+   id:id,
+   qty:1
+  });
+
+ }
+
+
+ saveCart();
+
+ openCart();
+
 }
 
 
-function total(){
+/* ============================================================
+   SAVE CART
+============================================================ */
 
-  return cartProducts().reduce(
-    (sum,item) =>
-      sum + item.price * item.qty,
-    0
-  );
+function saveCart(){
+
+ localStorage.setItem(
+  "turin_luxury_cart",
+  JSON.stringify(cart)
+ );
+
+ renderCart();
 
 }
 
+
+/* ============================================================
+   RENDER CART
+============================================================ */
 
 function renderCart(){
 
-  const box =
-    $("#cartItems");
+ const count =
+  cart.reduce(
+   (total,item) =>
+    total + item.qty,
+   0
+  );
 
-  const items =
-    cartProducts();
 
-  $("#cartCount").textContent =
-    cartCount();
+ document.getElementById(
+  "bagCount"
+ ).textContent =
+  count;
 
-  $("#cartTotal").textContent =
-    money(total());
 
-  $("#checkoutBtn").disabled =
-    items.length === 0;
+ const cartItems =
+  document.getElementById(
+   "cartItems"
+  );
 
-  if(!items.length){
 
-    box.innerHTML = `
-      <div class="empty">
+ if(!cart.length){
 
-        <div
-          class="mono"
-          style="color:var(--gold);margin-bottom:15px"
-        >
-          YOUR COLLECTION
-        </div>
+  cartItems.innerHTML = `
+   <p style="color:#777">
+    Your private bag is empty.
+   </p>
+  `;
 
-        Your collection is currently empty.
+ }
 
-        <br><br>
+ else{
 
-        Select an object from
-        The Collection to begin.
+  cartItems.innerHTML =
 
-      </div>
-    `;
+   cart.map(
+    item => {
 
-    return;
+     const product =
+      products.find(
+       p => p.id === item.id
+      );
 
-  }
 
-  box.innerHTML =
-    items.map(item => `
+     return `
 
       <div class="cartItem">
 
-        <img
-          src="${item.image}"
-          alt="${escapeHTML(item.name)}"
-        >
+       <img
+        src="${product.img}"
+        alt="${product.name}"
+        onerror="
+         this.onerror=null;
+         this.src='https://picsum.photos/seed/turin-cart-${product.id}/400/500';
+        "
+       >
 
-        <div>
 
-          <h4>
-            ${escapeHTML(item.name)}
-          </h4>
+       <div>
 
-          <small>
-            ${escapeHTML(item.category)}
-          </small>
+        <h4>
+         ${product.name}
+        </h4>
 
-          <div class="qty">
+        <small>
+         ${money(product.price)}
+         ·
+         ${product.cat}
+        </small>
 
-            <button
-              data-minus="${item.id}"
-            >
-              −
-            </button>
 
-            <span>
-              ${item.qty}
-            </span>
+        <div class="qty">
 
-            <button
-              data-plus="${item.id}"
-            >
-              +
-            </button>
+         <button
+          onclick="changeQty(${product.id},-1)"
+         >
+          −
+         </button>
 
-            <button
-              style="
-                margin-left:5px;
-                border-color:#35332e;
-              "
-              data-remove="${item.id}"
-            >
-              ×
-            </button>
+         <button>
+          ${item.qty}
+         </button>
 
-          </div>
+         <button
+          onclick="changeQty(${product.id},1)"
+         >
+          +
+         </button>
 
         </div>
 
-        <div class="cartPrice">
-          ${money(item.price * item.qty)}
-        </div>
+       </div>
+
+
+       <strong>
+        ${money(
+         product.price *
+         item.qty
+        )}
+       </strong>
 
       </div>
 
-    `).join("");
+     `;
 
-  $$("[data-minus]").forEach(button => {
+    }
+   ).join("");
 
-    button.onclick = () =>
-      changeQty(
-        Number(button.dataset.minus),
-        -1
-      );
+ }
 
-  });
 
-  $$("[data-plus]").forEach(button => {
+ const total =
+  cart.reduce(
+   (sum,item) => {
 
-    button.onclick = () =>
-      changeQty(
-        Number(button.dataset.plus),
-        1
-      );
+    const product =
+     products.find(
+      p => p.id === item.id
+     );
 
-  });
+    return (
+     sum +
+     product.price *
+     item.qty
+    );
 
-  $$("[data-remove]").forEach(button => {
+   },
+   0
+  );
 
-    button.onclick = () =>
-      removeFromCart(
-        Number(button.dataset.remove)
-      );
 
-  });
+ document.getElementById(
+  "cartTotal"
+ ).textContent =
+  money(total);
 
 }
 
 
-/* =========================================
-   CART OPEN / CLOSE
-   ========================================= */
+/* ============================================================
+   CHANGE QUANTITY
+============================================================ */
+
+function changeQty(id,direction){
+
+ const item =
+  cart.find(
+   x => x.id === id
+  );
+
+
+ if(!item){
+  return;
+ }
+
+
+ item.qty += direction;
+
+
+ if(item.qty <= 0){
+
+  cart =
+   cart.filter(
+    x => x.id !== id
+   );
+
+ }
+
+
+ saveCart();
+
+}
+
+
+/* ============================================================
+   OPEN CART
+============================================================ */
 
 function openCart(){
 
-  $("#cart").classList.add("open");
+ document
+  .getElementById("cart")
+  .classList.add("open");
 
-  $("#overlay").classList.add("show");
-
-}
-
-
-function closeCart(){
-
-  $("#cart").classList.remove("open");
-
-  $("#overlay").classList.remove("show");
+ document
+  .getElementById("overlay")
+  .classList.add("on");
 
 }
 
 
-$("#cartBtn").onclick =
-  openCart;
+/* ============================================================
+   CLOSE EVERYTHING
+============================================================ */
 
-$("#closeCart").onclick =
-  closeCart;
+function closeAll(){
 
-$("#overlay").onclick =
-  closeCart;
+ document
+  .getElementById("cart")
+  .classList.remove("open");
 
+ document
+  .getElementById("payment")
+  .classList.remove("on");
 
-/* =========================================
-   SEARCH
-   ========================================= */
-
-function openSearch(){
-
-  $("#searchPanel")
-    .classList.add("open");
-
-  setTimeout(
-    () => $("#globalSearch").focus(),
-    100
-  );
-
-  renderSearchResults();
+ document
+  .getElementById("overlay")
+  .classList.remove("on");
 
 }
 
 
-function closeSearch(){
-
-  $("#searchPanel")
-    .classList.remove("open");
-
-}
-
-
-$("#searchBtn").onclick =
-  openSearch;
-
-$("#closeSearch").onclick =
-  closeSearch;
-
-
-function renderSearchResults(){
-
-  const query =
-    $("#globalSearch")
-      .value
-      .trim()
-      .toLowerCase();
-
-  const box =
-    $("#searchResults");
-
-  if(!query){
-
-    box.innerHTML = `
-      <div
-        style="
-          color:#666;
-          font:11px 'DM Mono';
-          grid-column:1/-1;
-        "
-      >
-        BEGIN YOUR SEARCH.
-      </div>
-    `;
-
-    return;
-
-  }
-
-  const results =
-    products
-      .filter(product =>
-        (
-          product.name +
-          " " +
-          product.category +
-          " " +
-          product.description +
-          " " +
-          product.collection
-        )
-        .toLowerCase()
-        .includes(query)
-      )
-      .slice(0,15);
-
-  if(!results.length){
-
-    box.innerHTML = `
-      <div
-        style="
-          color:#777;
-          font:11px 'DM Mono';
-          grid-column:1/-1;
-        "
-      >
-        NO OBJECTS FOUND.
-      </div>
-    `;
-
-    return;
-
-  }
-
-  box.innerHTML =
-    results.map(product => `
-
-      <div
-        class="result"
-        data-result="${product.id}"
-      >
-
-        <img
-          src="${product.image}"
-          alt="${escapeHTML(product.name)}"
-        >
-
-        <div>
-
-          <strong>
-            ${escapeHTML(product.name)}
-          </strong>
-
-          <small>
-            ${escapeHTML(product.category)}
-          </small>
-
-          <small>
-            ${money(product.price)}
-          </small>
-
-        </div>
-
-      </div>
-
-    `).join("");
-
-  $$("[data-result]").forEach(item => {
-
-    item.onclick = () => {
-
-      addToCart(
-        Number(item.dataset.result)
-      );
-
-      closeSearch();
-
-    };
-
-  });
-
-}
-
-
-$("#globalSearch").addEventListener(
-  "input",
-  renderSearchResults
-);
-
-$("#catalogSearch").addEventListener(
-  "input",
-  renderProducts
-);
-
-
-/* =========================================
-   MOBILE MENU
-   ========================================= */
-
-$("#menuBtn").onclick = () => {
-
-  $("#mobileMenu")
-    .classList.toggle("open");
-
-};
-
-
-$$(".mobileLinks a").forEach(link => {
-
-  link.addEventListener(
-    "click",
-    () => {
-
-      $("#mobileMenu")
-        .classList.remove("open");
-
-    }
-  );
-
-});
-
-
-/* =========================================
-   WHATSAPP CONCIERGE
-   ========================================= */
-
-function conciergeURL(){
-
-  const items =
-    cartProducts();
-
-  let message =
-    "Hello TURIN Concierge,%0A%0A";
-
-  message +=
-    "I would like private assistance";
-
-  if(items.length){
-
-    message +=
-      " regarding:%0A%0A";
-
-    items.forEach(item => {
-
-      message +=
-        `• ${encodeURIComponent(item.name)} x${item.qty}%0A`;
-
-    });
-
-    message +=
-      `%0ACollection total: ${encodeURIComponent(money(total()))}`;
-
-  }
-
-  return `https://wa.me/${WHATSAPP}?text=${message}`;
-
-}
-
-
-$("#whatsappHero").href =
-  conciergeURL();
-
-$("#footerWhatsApp").href =
-  conciergeURL();
-
-$("#whatsappHero").addEventListener(
-  "click",
-  () => {
-
-    $("#whatsappHero").href =
-      conciergeURL();
-
-  }
-);
-
-$("#footerWhatsApp").addEventListener(
-  "click",
-  () => {
-
-    $("#footerWhatsApp").href =
-      conciergeURL();
-
-  }
-);
-
-$("#footerCart").onclick =
-  event => {
-
-    event.preventDefault();
-
-    openCart();
-
-  };
-
-
-/* =========================================
+/* ============================================================
    CHECKOUT
-   ========================================= */
+============================================================ */
 
-function openCheckout(){
+function checkout(){
 
-  if(!cart.length) return;
+ if(!cart.length){
 
-  $("#checkoutTotal").textContent =
-    money(total());
-
-  $("#summaryItems").innerHTML = `
-    <span>ITEMS</span>
-    <span>${cartCount()}</span>
-  `;
-
-  $("#checkoutModal")
-    .classList.add("open");
-
-}
-
-
-function closeCheckout(){
-
-  $("#checkoutModal")
-    .classList.remove("open");
-
-}
-
-
-$("#checkoutBtn").onclick =
-  openCheckout;
-
-$("#closeCheckout").onclick =
-  closeCheckout;
-
-
-/* =========================================
-   WEBMONEY PAYMENT
-   ========================================= */
-
-$("#payWebMoney").onclick = () => {
-
-  const name =
-    $("#customerName")
-      .value
-      .trim();
-
-  const email =
-    $("#customerEmail")
-      .value
-      .trim();
-
-  if(!name){
-
-    alert("Please enter your full name.");
-
-    $("#customerName").focus();
-
-    return;
-
-  }
-
-  if(!email){
-
-    alert("Please enter your email address.");
-
-    $("#customerEmail").focus();
-
-    return;
-
-  }
-
-  const order =
-    "TURIN-" +
-    Date.now();
-
-  const fields = {
-
-    LMI_PAYEE_PURSE:
-      PURSE,
-
-    LMI_PAYMENT_AMOUNT:
-      total().toFixed(2),
-
-    LMI_PAYMENT_NO:
-      order,
-
-    LMI_PAYMENT_DESC:
-      `TURIN PREMIUM STORE — ${name} — ${email}`,
-
-    LMI_SIM_MODE:
-      "0"
-
-  };
-
-  const form =
-    document.createElement("form");
-
-  form.method =
-    "POST";
-
-  form.action =
-    "https://merchant.wmtransfer.com/lmi/payment_utf.asp";
-
-  form.target =
-    "_blank";
-
-  Object.entries(fields).forEach(
-    ([key,value]) => {
-
-      const input =
-        document.createElement("input");
-
-      input.type =
-        "hidden";
-
-      input.name =
-        key;
-
-      input.value =
-        value;
-
-      form.appendChild(input);
-
-    }
+  alert(
+   "Your private bag is empty."
   );
 
-  document.body.appendChild(form);
+  return;
 
-  form.submit();
-
-  form.remove();
-
-};
+ }
 
 
-/* =========================================
-   NEWSLETTER
-   ========================================= */
+ const total =
+  cart.reduce(
+   (sum,item) => {
 
-$("#newsForm").addEventListener(
-  "submit",
-  event => {
+    const product =
+     products.find(
+      p => p.id === item.id
+     );
 
-    event.preventDefault();
-
-    const email =
-      $("#newsEmail")
-        .value
-        .trim();
-
-    if(!email) return;
-
-    alert(
-      "Thank you. You have been added to the TURIN Edit."
+    return (
+     sum +
+     product.price *
+     item.qty
     );
 
-    $("#newsEmail").value = "";
-
-  }
-);
-
-
-/* =========================================
-   REVEAL ANIMATION
-   ========================================= */
-
-const observer =
-  new IntersectionObserver(
-    entries => {
-
-      entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-
-          entry.target
-            .classList
-            .add("visible");
-
-          observer.unobserve(
-            entry.target
-          );
-
-        }
-
-      });
-
-    },
-    {
-      threshold:.08
-    }
+   },
+   0
   );
 
 
-function observeReveal(){
+ const orderNo =
+  "TRN-" +
+  Date.now()
+  .toString()
+  .slice(-9);
 
-  $$(".reveal").forEach(
-    element => observer.observe(element)
-  );
+
+ document.getElementById(
+  "orderNo"
+ ).value =
+  orderNo;
+
+
+ document.getElementById(
+  "orderAmount"
+ ).value =
+  money(total);
+
+
+ document
+  .getElementById("cart")
+  .classList.remove("open");
+
+
+ document
+  .getElementById("payment")
+  .classList.add("on");
+
+
+ document
+  .getElementById("overlay")
+  .classList.add("on");
 
 }
 
 
-/* =========================================
-   INITIALISE
-   ========================================= */
+/* ============================================================
+   WEBMONEY
+============================================================ */
+
+function launchWebMoney(){
+
+ const amount =
+  document
+   .getElementById(
+    "orderAmount"
+   )
+   .value
+   .replace(
+    /[$,]/g,
+    ""
+   );
+
+
+ const orderNo =
+  document.getElementById(
+   "orderNo"
+  ).value;
+
+
+ const form =
+  document.createElement(
+   "form"
+  );
+
+
+ form.method =
+  "POST";
+
+
+ form.action =
+  "https://merchant.wmtransfer.com/lmi/payment_utf.asp";
+
+
+ form.target =
+  "_blank";
+
+
+ const fields = {
+
+  LMI_PAYEE_PURSE:
+   "T270243849673",
+
+  LMI_PAYMENT_AMOUNT:
+   amount,
+
+  LMI_PAYMENT_NO:
+   orderNo,
+
+  LMI_PAYMENT_DESC:
+   "TURIN PREMIUM STORE " +
+   orderNo,
+
+  LMI_SIM_MODE:
+   "0"
+
+ };
+
+
+ Object.entries(
+  fields
+ ).forEach(
+  ([key,value]) => {
+
+   const input =
+    document.createElement(
+     "input"
+    );
+
+   input.type =
+    "hidden";
+
+   input.name =
+    key;
+
+   input.value =
+    value;
+
+   form.appendChild(
+    input
+   );
+
+  }
+ );
+
+
+ document.body.appendChild(
+  form
+ );
+
+
+ form.submit();
+
+
+ form.remove();
+
+}
+
+
+/* ============================================================
+   SEARCH
+============================================================ */
+
+document
+ .getElementById("search")
+ .addEventListener(
+  "input",
+  event => {
+
+   searchTerm =
+    event.target.value;
+
+   renderProducts();
+
+  }
+ );
+
+
+/* ============================================================
+   START
+============================================================ */
 
 renderFilters();
 
@@ -2756,113 +2787,23 @@ renderProducts();
 
 renderCart();
 
-observeReveal();
 
-
-/* =========================================
-   UPDATE CONCIERGE LINKS
-   ========================================= */
-
-function refreshConcierge(){
-
-  const url =
-    conciergeURL();
-
-  $("#whatsappHero").href =
-    url;
-
-  $("#footerWhatsApp").href =
-    url;
-
-}
-
-refreshConcierge();
-
-
-/* =========================================
-   CART CHANGE REFRESH
-   ========================================= */
-
-const originalAddToCart =
-  addToCart;
-
-
-/* =========================================
-   KEYBOARD SHORTCUTS
-   ========================================= */
-
-document.addEventListener(
-  "keydown",
-  event => {
-
-    if(
-      event.key === "/" &&
-      document.activeElement.tagName !== "INPUT"
-    ){
-
-      event.preventDefault();
-
-      openSearch();
-
-    }
-
-    if(event.key === "Escape"){
-
-      closeSearch();
-
-      closeCart();
-
-      closeCheckout();
-
-      $("#mobileMenu")
-        .classList
-        .remove("open");
-
-    }
-
-  }
-);
-
-
-/* =========================================
-   IMAGE LAZY ERROR HANDLING
-   ========================================= */
-
-document.addEventListener(
-  "error",
-  event => {
-
-    const target =
-      event.target;
-
-    if(
-      target &&
-      target.tagName === "IMG"
-    ){
-
-      target.classList.add(
-        "image-error"
-      );
-
-    }
-
-  },
-  true
-);
-
-
-/* =========================================
-   FINAL PRODUCT COUNT
-   ========================================= */
+/* ============================================================
+   DEBUG CHECK
+============================================================ */
 
 console.log(
-  "TURIN PREMIUM STORE — PRODUCTS:",
-  products.length
+ "TURIN TOTAL PRODUCTS:",
+ products.length
 );
 
 console.log(
-  "TURIN PREMIUM STORE — WEBMONEY PURSE:",
-  PURSE
+ "TURIN UNIQUE IMAGE URLS:",
+ new Set(
+  products.map(
+   product => product.img
+  )
+ ).size
 );
 
 </script>
