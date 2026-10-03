@@ -1,1391 +1,947 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
- <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMZP7XBG');</script>
-<!-- End Google Tag Manager -->
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
 
-<title>TURIN PREMIUM STORE | Luxury Technology & Lifestyle</title>
+<meta name="description"
+content="TURIN PREMIUM STORE — Global luxury technology, design and lifestyle objects.">
 
-<meta name="description" content="TURIN PREMIUM STORE — Premium technology, smart living, gaming, audio, cameras and lifestyle products.">
+<title>TURIN PREMIUM STORE — Global Luxury</title>
 
-<link rel="canonical" href="https://turin-premium-store-pro-api.onrender.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://loremflickr.com">
 
-<!-- GOOGLE ANALYTICS -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){
-  dataLayer.push(arguments);
-}
-
-gtag("js", new Date());
-
-gtag("config", "G-RF9N3ZKHT9", {
-  anonymize_ip: true
-});
-</script>
- <script type="text/javascript">
-    aclib.runAutoTag({
-        zoneId: '1ed7smribd',
-    });
-</script>
- 
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+:root{
+ --bg:#080807;
+ --panel:#10100e;
+ --panel2:#141411;
+ --ink:#f2eee6;
+ --muted:#96938c;
+ --line:#292823;
+ --gold:#c7a66a;
+ --cream:#e9e1d2;
 }
 
-:root{
-  --black:#050505;
-  --black2:#090909;
-  --dark:#101010;
-  --dark2:#151515;
-  --gold:#c9a45c;
-  --gold2:#ead39a;
-  --white:#ffffff;
-  --muted:#999;
-  --line:rgba(255,255,255,.10);
-  --green:#25d366;
+*{
+ box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+ scroll-behavior:smooth;
 }
 
 body{
-  background:var(--black);
-  color:#fff;
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
+ margin:0;
+ background:var(--bg);
+ color:var(--ink);
+ font-family:Inter,Arial,sans-serif;
+ font-weight:300;
 }
 
-body.modal-open{
-  overflow:hidden;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-button,
-input{
-  font-family:inherit;
+button,input,select{
+ font:inherit;
 }
 
 button{
-  cursor:pointer;
+ cursor:pointer;
 }
 
-img{
-  display:block;
-  max-width:100%;
+a{
+ color:inherit;
+ text-decoration:none;
 }
 
-/* =========================================================
-   TOP BAR
-========================================================= */
-
-.topbar{
-  background:#000;
-  border-bottom:1px solid #222;
-  color:#ddd;
-  text-align:center;
-  padding:9px 15px;
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+.mono{
+ font:10px "DM Mono",monospace;
+ letter-spacing:.15em;
+ text-transform:uppercase;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(5,5,5,.94);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--line);
+.serif{
+ font-family:"Playfair Display",serif;
 }
+
+/* TOP */
+
+.top{
+ height:30px;
+ border-bottom:1px solid var(--line);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#aaa;
+ font:9px "DM Mono",monospace;
+ letter-spacing:.18em;
+ text-transform:uppercase;
+}
+
+/* NAV */
 
 .nav{
-  max-width:1450px;
-  height:78px;
-  margin:auto;
-  padding:0 24px;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+ height:78px;
+ position:absolute;
+ top:30px;
+ left:0;
+ right:0;
+ z-index:30;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ padding:0 5vw;
+ background:linear-gradient(#080807e8,transparent);
+ border-bottom:1px solid #ffffff12;
 }
 
-.logo{
-  font-size:21px;
-  font-weight:900;
-  letter-spacing:4px;
-  white-space:nowrap;
+.brand{
+ font:28px "Playfair Display",serif;
+ letter-spacing:.18em;
 }
 
-.logo span{
-  color:var(--gold);
+.navlinks{
+ display:flex;
+ gap:34px;
 }
 
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:28px;
-  text-transform:uppercase;
-  font-size:11px;
-  letter-spacing:1.5px;
+.navlinks a{
+ font-size:10px;
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ color:#ddd;
 }
 
-.nav-links a{
-  color:#ddd;
-  transition:.25s;
+.navlinks a:hover{
+ color:var(--gold);
 }
 
-.nav-links a:hover{
-  color:var(--gold2);
+.navtools{
+ display:flex;
+ gap:9px;
 }
 
-.nav-actions{
-  display:flex;
-  align-items:center;
-  gap:9px;
+.circle{
+ width:42px;
+ height:42px;
+ border:1px solid #55524b;
+ border-radius:50%;
+ background:#111;
+ color:#eee;
 }
 
-.icon{
-  position:relative;
-  width:42px;
-  height:42px;
-  border:1px solid #292929;
-  border-radius:50%;
-  background:#111;
-  color:#fff;
-  transition:.25s;
+.mobileOnly{
+ display:none;
 }
 
-.icon:hover{
-  border-color:var(--gold);
-  color:var(--gold);
-}
-
-.cart-count{
-  position:absolute;
-  right:-3px;
-  top:-4px;
-
-  min-width:18px;
-  height:18px;
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:0 4px;
-
-  background:var(--gold);
-  color:#000;
-
-  font-size:9px;
-  font-weight:bold;
-}
-
-/* =========================================================
-   HERO
-========================================================= */
+/* HERO */
 
 .hero{
-  min-height:730px;
-
-  display:flex;
-  align-items:center;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.97) 0%,
-      rgba(0,0,0,.78) 45%,
-      rgba(0,0,0,.15) 100%
-    ),
-    url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=2200&q=90")
-    center/cover no-repeat;
+ min-height:850px;
+ position:relative;
+ display:flex;
+ align-items:flex-end;
+ overflow:hidden;
+ background:#111;
 }
 
-.hero-inner{
-  width:100%;
-  max-width:1450px;
-  margin:auto;
-  padding:100px 25px;
+.hero:before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:
+ linear-gradient(
+   90deg,
+   #030303e8 0%,
+   #03030382 45%,
+   #03030318 100%
+ ),
+ url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=2200&q=90")
+ center/cover;
 }
 
-.eyebrow,
+.hero:after{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:radial-gradient(circle at 70% 25%,transparent 0 20%,#0008 75%);
+}
+
+.heroCopy{
+ position:relative;
+ z-index:2;
+ padding:0 7vw 9vw;
+ max-width:900px;
+}
+
 .kicker{
-  color:var(--gold2);
-  font-size:10px;
-  letter-spacing:4px;
-  text-transform:uppercase;
+ color:var(--gold);
+ margin-bottom:18px;
 }
 
 .hero h1{
-  max-width:900px;
-  margin:20px 0;
-
-  font-size:clamp(52px,8vw,105px);
-  line-height:.92;
-
-  letter-spacing:-5px;
+ font-size:clamp(58px,9vw,142px);
+ line-height:.83;
+ font-weight:300;
+ margin:0 0 30px;
+ letter-spacing:-.055em;
 }
 
-.hero h1 span{
-  color:var(--gold);
+.hero h1 i{
+ color:#d9d0c0;
 }
 
 .hero p{
-  max-width:620px;
-  margin:25px 0 32px;
-
-  color:#c9c9c9;
-
-  font-size:17px;
+ max-width:500px;
+ color:#d0ccc3;
+ line-height:1.8;
+ font-size:15px;
 }
 
-.buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+.heroActions{
+ display:flex;
+ gap:12px;
+ margin-top:34px;
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+ border:1px solid #817967;
+ background:var(--cream);
+ color:#111;
+ padding:15px 23px;
+ text-transform:uppercase;
+ font-size:10px;
+ letter-spacing:.17em;
+}
 
-  min-height:50px;
-
-  padding:0 25px;
-
-  border:1px solid var(--gold);
-
-  background:var(--gold);
-  color:#000;
-
-  font-size:10px;
-  font-weight:900;
-
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-
-  transition:.25s;
+.btn.alt{
+ background:transparent;
+ color:#eee;
+ border-color:#5c5951;
 }
 
 .btn:hover{
-  background:var(--gold2);
-  transform:translateY(-2px);
+ opacity:.85;
 }
 
-.btn.outline{
-  background:transparent;
-  color:#fff;
+/* MARQUEE */
+
+.marquee{
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+ overflow:hidden;
+ white-space:nowrap;
+ padding:17px 0;
+ color:#aaa;
 }
 
-/* =========================================================
-   SECTION
-========================================================= */
-
-.section{
-  width:100%;
-  max-width:1450px;
-  margin:auto;
-  padding:90px 25px;
+.marquee span{
+ display:inline-block;
+ margin-right:55px;
+ font:10px "DM Mono",monospace;
+ letter-spacing:.15em;
+ animation:move 28s linear infinite;
 }
 
-.head{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  gap:25px;
-
-  margin-bottom:32px;
+@keyframes move{
+ to{
+  transform:translateX(-100%);
+ }
 }
 
-.title{
-  margin-top:8px;
-  font-size:clamp(34px,4vw,55px);
-  line-height:1;
-  letter-spacing:-1.5px;
+/* INTRO */
+
+.intro{
+ padding:110px 7vw;
+ display:grid;
+ grid-template-columns:1fr 2fr;
+ gap:8vw;
 }
 
-.desc{
-  max-width:520px;
-  color:var(--muted);
-  font-size:14px;
+.intro h2{
+ font:italic 48px "Playfair Display",serif;
+ margin:0;
 }
 
-/* =========================================================
-   CATEGORIES
-========================================================= */
-
-.categories{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:13px;
+.intro p{
+ max-width:720px;
+ color:#aaa;
+ line-height:1.9;
+ font-size:16px;
 }
 
-.category{
-  position:relative;
-  height:230px;
+/* MANIFEST */
 
-  overflow:hidden;
-
-  border:1px solid var(--line);
-
-  cursor:pointer;
+.manifest{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
 }
 
-.category img{
-  width:100%;
-  height:100%;
-
-  object-fit:cover;
-
-  opacity:.62;
-
-  transition:.5s;
+.manifest div{
+ padding:30px 25px;
+ border-right:1px solid var(--line);
 }
 
-.category:hover img{
-  transform:scale(1.09);
-  opacity:.9;
+.manifest div:last-child{
+ border:0;
 }
 
-.category-overlay{
-  position:absolute;
-  inset:0;
-
-  display:flex;
-  align-items:flex-end;
-
-  padding:22px;
-
-  background:
-    linear-gradient(
-      transparent 25%,
-      rgba(0,0,0,.95)
-    );
+.manifest b{
+ display:block;
+ font-size:13px;
+ margin-bottom:8px;
 }
 
-.category h3{
-  font-size:18px;
+.manifest small{
+ color:#85827b;
+ line-height:1.6;
 }
 
-/* =========================================================
-   FILTERS
-========================================================= */
+/* FEATURE */
+
+.feature{
+ padding:110px 7vw;
+}
+
+.featureHead{
+ display:flex;
+ justify-content:space-between;
+ align-items:end;
+ margin-bottom:40px;
+}
+
+.featureHead h2{
+ font:46px "Playfair Display",serif;
+ margin:0;
+}
+
+.featureGrid{
+ display:grid;
+ grid-template-columns:1.4fr .8fr .8fr;
+ gap:12px;
+}
+
+.featureCard{
+ position:relative;
+ min-height:540px;
+ overflow:hidden;
+ background:#151513;
+}
+
+.featureCard:nth-child(2),
+.featureCard:nth-child(3){
+ min-height:260px;
+}
+
+.featureCard img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ position:absolute;
+ inset:0;
+ filter:saturate(.72);
+ transition:transform .7s;
+}
+
+.featureCard:hover img{
+ transform:scale(1.04);
+}
+
+.featureCard:after{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(transparent 30%,#000c);
+}
+
+.featureText{
+ position:absolute;
+ z-index:2;
+ left:25px;
+ right:25px;
+ bottom:25px;
+}
+
+.featureText h3{
+ font:27px "Playfair Display",serif;
+ margin:5px 0;
+}
+
+.featureText p{
+ color:#bdb8ae;
+ font-size:12px;
+}
+
+/* SHOP */
+
+.shop{
+ padding:100px 5vw;
+ background:#0d0d0c;
+}
+
+.shopHead{
+ display:flex;
+ align-items:end;
+ justify-content:space-between;
+ margin-bottom:30px;
+}
+
+.shopHead h2{
+ font:50px "Playfair Display",serif;
+ margin:0;
+}
 
 .filters{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-
-  margin-bottom:28px;
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
 }
 
 .filter{
-  padding:10px 16px;
-
-  border:1px solid #2a2a2a;
-
-  background:transparent;
-
-  color:#bbb;
-
-  font-size:10px;
-
-  letter-spacing:1px;
-
-  text-transform:uppercase;
+ border:1px solid #373630;
+ background:transparent;
+ color:#bbb;
+ padding:10px 13px;
+ font-size:10px;
+ text-transform:uppercase;
+ letter-spacing:.1em;
 }
 
-.filter:hover,
 .filter.active{
-  border-color:var(--gold);
-  color:var(--gold2);
+ border-color:var(--gold);
+ color:var(--cream);
 }
 
-/* =========================================================
-   PRODUCTS
-========================================================= */
+.searchbar{
+ margin:25px 0;
+ display:flex;
+ border-bottom:1px solid #45433d;
+}
+
+.searchbar input{
+ width:100%;
+ background:none;
+ border:0;
+ color:white;
+ padding:15px 3px;
+ outline:none;
+}
+
+.searchbar input::placeholder{
+ color:#696761;
+}
+
+.count{
+ color:#777;
+ font:10px "DM Mono",monospace;
+ padding:15px 0;
+}
+
+/* PRODUCTS */
 
 .products{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:1px;
+ background:#272622;
 }
 
 .product{
-  overflow:hidden;
-
-  background:#0e0e0e;
-
-  border:1px solid var(--line);
-
-  transition:.3s;
+ background:#10100f;
+ min-width:0;
+ position:relative;
+ transition:.25s;
 }
 
 .product:hover{
-  transform:translateY(-5px);
-
-  border-color:
-    rgba(201,164,92,.55);
+ background:#171714;
 }
 
-.product-image{
-  position:relative;
-
-  height:300px;
-
-  overflow:hidden;
-
-  background:#151515;
+.pic{
+ aspect-ratio:4/5;
+ overflow:hidden;
+ background:#151513;
+ position:relative;
 }
 
-.product-image img{
-  width:100%;
-  height:100%;
-
-  object-fit:cover;
-
-  transition:.5s;
+.pic img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ transition:transform .7s;
+ filter:saturate(.72);
 }
 
-.product:hover .product-image img{
-  transform:scale(1.06);
+.product:hover .pic img{
+ transform:scale(1.045);
 }
 
 .badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-
-  padding:5px 9px;
-
-  background:var(--gold);
-  color:#000;
-
-  font-size:8px;
-  font-weight:bold;
-
-  letter-spacing:1px;
+ position:absolute;
+ top:12px;
+ left:12px;
+ background:#ece3d3;
+ color:#171613;
+ padding:7px 9px;
+ font:9px "DM Mono",monospace;
+ letter-spacing:.12em;
 }
 
-.info{
-  padding:18px;
+.wish{
+ position:absolute;
+ right:12px;
+ top:12px;
+ width:34px;
+ height:34px;
+ border:1px solid #7775;
+ background:#0008;
+ color:#fff;
+ border-radius:50%;
+}
+
+.pbody{
+ padding:17px;
 }
 
 .cat{
-  color:var(--gold);
-  font-size:9px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+ color:var(--gold);
+ font:9px "DM Mono",monospace;
+ text-transform:uppercase;
 }
 
-.info h3{
-  min-height:45px;
-
-  margin:7px 0;
-
-  font-size:15px;
-  line-height:1.35;
+.pname{
+ font:16px "Playfair Display",serif;
+ margin:7px 0;
 }
 
-.price-tzs{
-  color:#fff;
-  font-size:17px;
-  font-weight:900;
+.pdesc{
+ font-size:11px;
+ color:#777;
+ min-height:30px;
 }
 
-.price-usdt{
-  margin-top:4px;
-
-  color:var(--gold2);
-
-  font-size:13px;
-  font-weight:bold;
+.prow{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:10px;
+ margin-top:14px;
 }
 
-.price-label{
-  color:#666;
-  font-size:8px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-.actions{
-  display:flex;
-  gap:7px;
-
-  margin-top:14px;
+.price{
+ font:12px "DM Mono",monospace;
+ color:#e7dfd0;
 }
 
 .add{
-  flex:1;
-
-  min-height:42px;
-
-  border:1px solid var(--gold);
-
-  background:var(--gold);
-  color:#000;
-
-  font-size:9px;
-  font-weight:900;
-
-  letter-spacing:1px;
-  text-transform:uppercase;
+ background:transparent;
+ color:#ddd;
+ border:1px solid #45433e;
+ padding:9px 10px;
+ font-size:9px;
+ letter-spacing:.1em;
+ text-transform:uppercase;
 }
 
 .add:hover{
-  background:var(--gold2);
+ border-color:var(--gold);
+ color:var(--cream);
 }
 
-.contact{
-  width:44px;
-
-  border:1px solid #278c47;
-
-  background:transparent;
-
-  color:#39c866;
-
-  font-size:15px;
-}
-
-.contact:hover{
-  background:#102417;
-}
-
-/* =========================================================
-   EDITORIAL
-========================================================= */
+/* EDITORIAL */
 
 .editorial{
-  display:grid;
-  grid-template-columns:1.25fr .75fr;
-  gap:18px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ min-height:650px;
 }
 
-.editorial-card{
-  position:relative;
-  height:470px;
-  overflow:hidden;
+.editorial img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ filter:grayscale(.25);
 }
 
-.editorial-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.editorialText{
+ padding:9vw;
+ background:#e8e0d1;
+ color:#171614;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
 }
 
-.editorial-content{
-  position:absolute;
-  inset:0;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-
-  padding:40px;
-
-  background:
-    linear-gradient(
-      transparent 20%,
-      rgba(0,0,0,.95)
-    );
+.editorialText .kicker{
+ color:#746041;
 }
 
-.editorial-content h2{
-  font-size:32px;
-  margin-top:6px;
+.editorialText h2{
+ font:clamp(42px,5vw,76px) "Playfair Display",serif;
+ line-height:.95;
+ margin:12px 0 25px;
 }
 
-/* =========================================================
-   TRUST
-========================================================= */
-
-.trust{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+.editorialText p{
+ line-height:1.8;
+ max-width:520px;
+ color:#4e4a43;
 }
 
-.trust article{
-  padding:30px;
+/* CART */
 
-  background:#0e0e0e;
-
-  border:1px solid var(--line);
+.cartDrawer{
+ position:fixed;
+ z-index:50;
+ right:0;
+ top:0;
+ height:100vh;
+ width:min(460px,100%);
+ background:#0d0d0c;
+ border-left:1px solid #444;
+ transform:translateX(102%);
+ transition:.35s;
+ padding:28px;
+ display:flex;
+ flex-direction:column;
 }
 
-.trust b{
-  display:block;
-
-  color:var(--gold);
-
-  font-size:28px;
-
-  margin-bottom:12px;
+.cartDrawer.open{
+ transform:none;
 }
 
-.trust h3{
-  margin-bottom:8px;
+.cartHead{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:1px solid var(--line);
+ padding-bottom:20px;
 }
 
-.trust p{
-  color:#888;
-  font-size:13px;
+.close{
+ background:none;
+ border:0;
+ color:#bbb;
+ font-size:24px;
 }
 
-/* =========================================================
-   NEWSLETTER
-========================================================= */
-
-.newsletter{
-  padding:60px;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  gap:30px;
-
-  border:1px solid rgba(201,164,92,.3);
-
-  background:
-    linear-gradient(
-      100deg,
-      #17130b,
-      #090909
-    );
+.cartItems{
+ overflow:auto;
+ flex:1;
+ padding:15px 0;
 }
 
-.newsletter h2{
-  margin:7px 0;
-
-  font-size:40px;
+.cartItem{
+ display:grid;
+ grid-template-columns:75px 1fr auto;
+ gap:12px;
+ padding:14px 0;
+ border-bottom:1px solid var(--line);
 }
 
-.newsletter p{
-  color:#888;
+.cartItem img{
+ width:75px;
+ height:90px;
+ object-fit:cover;
 }
 
-.newsletter form{
-  display:flex;
-
-  min-width:440px;
+.cartItem h4{
+ font:15px "Playfair Display",serif;
+ margin:0 0 7px;
 }
 
-.newsletter input{
-  flex:1;
-
-  min-height:52px;
-
-  padding:0 16px;
-
-  background:#000;
-
-  border:1px solid #333;
-
-  color:#fff;
-
-  outline:none;
+.cartItem small{
+ color:#888;
 }
 
-.newsletter button{
-  padding:0 25px;
-
-  border:0;
-
-  background:var(--gold);
-
-  color:#000;
-
-  font-weight:bold;
+.qty{
+ display:flex;
+ gap:6px;
+ margin-top:10px;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-  background:#040404;
-
-  border-top:1px solid #222;
-
-  padding:65px 25px 25px;
+.qty button{
+ width:25px;
+ height:25px;
+ background:none;
+ border:1px solid #444;
+ color:#ddd;
 }
 
-.footer-grid{
-  max-width:1450px;
-  margin:auto;
-
-  display:grid;
-
-  grid-template-columns:2fr 1fr 1fr 1fr;
-
-  gap:40px;
+.cartFoot{
+ border-top:1px solid var(--line);
+ padding-top:18px;
 }
 
-.footer-grid h4{
-  margin-bottom:15px;
-
-  color:var(--gold);
-
-  font-size:10px;
-
-  letter-spacing:2px;
-
-  text-transform:uppercase;
+.total{
+ display:flex;
+ justify-content:space-between;
+ font:14px "DM Mono",monospace;
+ margin-bottom:15px;
 }
 
-.footer-grid p,
-.footer-grid a{
-  color:#777;
-
-  font-size:13px;
+.checkout{
+ width:100%;
+ padding:17px;
+ background:#e8e0d1;
+ border:0;
+ text-transform:uppercase;
+ letter-spacing:.15em;
 }
 
-.footer-grid a{
-  display:block;
-  margin:7px 0;
-}
-
-.bottom{
-  max-width:1450px;
-
-  margin:40px auto 0;
-
-  padding-top:18px;
-
-  border-top:1px solid #222;
-
-  color:#555;
-
-  font-size:10px;
-}
-
-/* =========================================================
-   CART DRAWER
-========================================================= */
+/* OVERLAY */
 
 .overlay{
-  display:none;
-
-  position:fixed;
-  inset:0;
-
-  z-index:1999;
-
-  background:rgba(0,0,0,.78);
+ position:fixed;
+ inset:0;
+ background:#000b;
+ z-index:45;
+ display:none;
 }
 
-.overlay.active{
-  display:block;
+.overlay.on{
+ display:block;
 }
 
-.drawer{
-  position:fixed;
-
-  top:0;
-  right:-500px;
-
-  width:min(500px,100%);
-
-  height:100vh;
-
-  z-index:2000;
-
-  display:flex;
-  flex-direction:column;
-
-  background:#0c0c0c;
-
-  border-left:1px solid #333;
-
-  transition:.35s;
-}
-
-.drawer.active{
-  right:0;
-}
-
-.drawer-head{
-  padding:22px;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  border-bottom:1px solid #222;
-}
-
-.cart-items{
-  flex:1;
-
-  overflow:auto;
-
-  padding:20px;
-}
-
-.empty-cart{
-  color:#777;
-
-  text-align:center;
-
-  padding:50px 10px;
-}
-
-.cart-item{
-  display:flex;
-
-  gap:12px;
-
-  padding:15px 0;
-
-  border-bottom:1px solid #222;
-}
-
-.cart-item img{
-  width:75px;
-  height:75px;
-
-  object-fit:cover;
-}
-
-.cart-item-main{
-  flex:1;
-}
-
-.cart-item h4{
-  font-size:13px;
-}
-
-.cart-item-price{
-  margin-top:5px;
-
-  color:#fff;
-
-  font-size:13px;
-  font-weight:bold;
-}
-
-.cart-item-usdt{
-  color:var(--gold2);
-
-  font-size:11px;
-}
-
-.remove{
-  align-self:flex-start;
-
-  border:0;
-
-  background:transparent;
-
-  color:#777;
-
-  font-size:16px;
-}
-
-.cart-foot{
-  padding:22px;
-
-  border-top:1px solid #222;
-}
-
-.cart-total-row{
-  display:flex;
-  justify-content:space-between;
-
-  margin-bottom:6px;
-
-  font-size:18px;
-  font-weight:bold;
-}
-
-.cart-usdt-row{
-  display:flex;
-  justify-content:space-between;
-
-  margin-bottom:16px;
-
-  color:var(--gold2);
-
-  font-size:15px;
-  font-weight:bold;
-}
-
-.webmoney{
-  width:100%;
-
-  min-height:53px;
-
-  border:1px solid var(--gold2);
-
-  background:
-    linear-gradient(
-      135deg,
-      #d6b56b,
-      #b68c3d
-    );
-
-  color:#000;
-
-  font-size:11px;
-  font-weight:900;
-
-  letter-spacing:1px;
-
-  text-transform:uppercase;
-}
-
-.webmoney:hover{
-  background:var(--gold2);
-}
-
-.gateway-note{
-  margin-top:9px;
-
-  color:#666;
-
-  font-size:9px;
-
-  text-align:center;
-}
-
-/* =========================================================
-   WEBMONEY MODAL
-========================================================= */
+/* MODAL */
 
 .modal{
+ position:fixed;
+ z-index:60;
+ inset:50% auto auto 50%;
+ transform:translate(-50%,-50%);
+ width:min(620px,92vw);
+ max-height:90vh;
+ overflow:auto;
+ background:#11110f;
+ border:1px solid #514d45;
+ padding:30px;
+ display:none;
+}
+
+.modal.on{
+ display:block;
+}
+
+.modal h2{
+ font:38px "Playfair Display",serif;
+ margin:5px 0 12px;
+}
+
+.modal p{
+ color:#96938c;
+ line-height:1.7;
+}
+
+.wm{
+ border:1px solid #4e4a41;
+ padding:20px;
+ margin-top:20px;
+}
+
+.wm strong{
+ font:20px "DM Mono",monospace;
+ color:#e8e0d1;
+}
+
+.field{
+ display:grid;
+ gap:7px;
+ margin:14px 0;
+}
+
+.field label{
+ font:9px "DM Mono",monospace;
+ text-transform:uppercase;
+ color:#888;
+}
+
+.field input{
+ background:#0a0a09;
+ border:1px solid #393731;
+ color:white;
+ padding:12px;
+ width:100%;
+}
+
+/* FOOTER */
+
+.footer{
+ padding:70px 7vw 35px;
+ border-top:1px solid var(--line);
+}
+
+.footerTop{
+ display:grid;
+ grid-template-columns:2fr 1fr 1fr 1fr;
+ gap:30px;
+}
+
+.footer h3{
+ font:26px "Playfair Display",serif;
+ margin-top:0;
+}
+
+.footer a,
+.footer p{
+ color:#888;
+ font-size:12px;
+ line-height:2;
+}
+
+.copyright{
+ border-top:1px solid var(--line);
+ margin-top:60px;
+ padding-top:18px;
+ color:#666;
+ font:9px "DM Mono",monospace;
+ display:flex;
+ justify-content:space-between;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+ .navlinks{
   display:none;
+ }
 
-  position:fixed;
-  inset:0;
-
-  z-index:5000;
-
-  align-items:center;
-  justify-content:center;
-
-  padding:18px;
-
-  background:rgba(0,0,0,.90);
-}
-
-.modal.active{
-  display:flex;
-}
-
-.modal-card{
-  position:relative;
-
-  width:min(560px,100%);
-
-  max-height:90vh;
-
-  overflow:auto;
-
-  padding:30px;
-
-  background:#0d0d0d;
-
-  border:1px solid rgba(201,164,92,.45);
-}
-
-.modal-close{
-  position:absolute;
-
-  right:15px;
-  top:15px;
-
-  width:38px;
-  height:38px;
-
-  border-radius:50%;
-
-  border:1px solid #333;
-
-  background:#111;
-
-  color:#fff;
-}
-
-.wm-label{
-  color:var(--gold2);
-
-  font-size:9px;
-
-  letter-spacing:3px;
-}
-
-.modal-card h2{
-  margin:8px 0;
-
-  font-size:30px;
-}
-
-.summary{
-  margin:20px 0;
-
-  padding:18px;
-
-  background:#151515;
-
-  border:1px solid #282828;
-}
-
-.summary-line{
-  display:flex;
-
-  justify-content:space-between;
-
-  gap:15px;
-
-  padding:5px 0;
-
-  color:#aaa;
-
-  font-size:13px;
-}
-
-.summary-line strong{
-  color:#fff;
-}
-
-.summary-total{
-  margin-top:10px;
-
-  padding-top:12px;
-
-  border-top:1px solid #292929;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  color:var(--gold2);
-
-  font-size:19px;
-
-  font-weight:bold;
-}
-
-#wm-widget{
-  min-height:65px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-}
-
-.secure{
-  margin-top:10px;
-
-  color:#666;
-
-  font-size:9px;
-
-  text-align:center;
-}
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-.search{
-  display:none;
-
-  position:fixed;
-  inset:0;
-
-  z-index:4000;
-
-  padding:100px 20px;
-
-  background:rgba(0,0,0,.98);
-}
-
-.search.active{
+ .mobileOnly{
   display:block;
+ }
+
+ .intro{
+  grid-template-columns:1fr;
+ }
+
+ .manifest{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .featureGrid{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .featureCard:first-child{
+  grid-column:1/-1;
+ }
+
+ .products{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .editorial{
+  grid-template-columns:1fr;
+ }
+
+ .editorial img{
+  min-height:420px;
+ }
+
+ .footerTop{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .hero{
+  min-height:730px;
+ }
+
+ .hero h1{
+  font-size:65px;
+ }
 }
 
-.search-close{
-  position:absolute;
+@media(max-width:560px){
 
-  top:25px;
-  right:25px;
-}
+ .nav{
+  padding:0 18px;
+ }
 
-.search-input{
-  display:block;
-
-  width:min(900px,100%);
-
-  margin:auto;
-
-  padding:20px;
-
-  background:#111;
-
-  border:1px solid #444;
-
-  color:#fff;
-
+ .brand{
   font-size:22px;
+ }
 
-  outline:none;
-}
+ .heroCopy{
+  padding:0 22px 75px;
+ }
 
-.search-results{
-  width:min(900px,100%);
+ .intro,
+ .feature,
+ .shop{
+  padding:70px 18px;
+ }
 
-  margin:20px auto;
-}
+ .manifest{
+  grid-template-columns:1fr;
+ }
 
-/* =========================================================
-   MOBILE MENU
-========================================================= */
+ .manifest div{
+  border-right:0;
+  border-bottom:1px solid var(--line);
+ }
 
-.mobile{
-  display:none;
+ .featureGrid{
+  grid-template-columns:1fr;
+ }
 
-  position:fixed;
-  inset:0;
+ .featureCard:first-child{
+  grid-column:auto;
+ }
 
-  z-index:3000;
+ .featureCard,
+ .featureCard:nth-child(2),
+ .featureCard:nth-child(3){
+  min-height:390px;
+ }
 
-  padding:100px 28px;
-
-  background:#060606;
-}
-
-.mobile.active{
+ .shopHead{
   display:block;
-}
+ }
 
-.mobile-close{
-  position:absolute;
+ .shopHead h2{
+  font-size:42px;
+  margin-bottom:20px;
+ }
 
-  right:25px;
-  top:25px;
-}
+ .products{
+  grid-template-columns:1fr 1fr;
+ }
 
-.mobile a{
+ .pbody{
+  padding:12px;
+ }
+
+ .pname{
+  font-size:14px;
+ }
+
+ .footer{
+  padding:55px 18px 25px;
+ }
+
+ .footerTop{
+  grid-template-columns:1fr;
+ }
+
+ .copyright{
   display:block;
+  line-height:2;
+ }
 
-  padding:18px 0;
+ .hero{
+  min-height:680px;
+ }
 
-  border-bottom:1px solid #222;
-
-  font-size:27px;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media(max-width:1150px){
-
-  .nav-links{
-    display:none;
-  }
-
-  .products{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .categories{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .trust{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .footer-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-}
-
-@media(max-width:760px){
-
-  .nav{
-    height:70px;
-    padding:0 14px;
-  }
-
-  .logo{
-    font-size:16px;
-    letter-spacing:2px;
-  }
-
-  .hero{
-    min-height:650px;
-  }
-
-  .hero-inner{
-    padding:80px 20px;
-  }
-
-  .section{
-    padding:65px 18px;
-  }
-
-  .head{
-    display:block;
-  }
-
-  .head .desc{
-    margin-top:15px;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .category{
-    height:180px;
-  }
-
-  .products{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
-
-  .product-image{
-    height:220px;
-  }
-
-  .info{
-    padding:13px;
-  }
-
-  .info h3{
-    font-size:13px;
-  }
-
-  .price-tzs{
-    font-size:14px;
-  }
-
-  .price-usdt{
-    font-size:11px;
-  }
-
-  .editorial{
-    grid-template-columns:1fr;
-  }
-
-  .newsletter{
-    display:block;
-    padding:35px 22px;
-  }
-
-  .newsletter h2{
-    font-size:30px;
-  }
-
-  .newsletter form{
-    min-width:0;
-
-    margin-top:20px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
-
-@media(max-width:500px){
-
-  .categories{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .products{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .product-image{
-    height:190px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .trust{
-    grid-template-columns:1fr;
-  }
-
-  .newsletter form{
-    display:block;
-  }
-
-  .newsletter input,
-  .newsletter button{
-    width:100%;
-    min-height:52px;
-  }
-
-  .modal-card{
-    padding:22px;
-  }
-
-}
-
-/* =========================================================
-   VERY SMALL DEVICES
-========================================================= */
-
-@media(max-width:360px){
-
-  .products{
-    grid-template-columns:1fr;
-  }
-
-  .product-image{
-    height:260px;
-  }
+ .hero:before{
+  background-position:58% center;
+ }
 
 }
 
@@ -1394,2520 +950,1863 @@ footer{
 
 <body>
 
-<!-- =======================================================
-     TOP BAR
-======================================================= -->
+<!-- TOP BAR -->
 
-<div class="topbar">
-
-✦ PREMIUM TECHNOLOGY • SMART LIVING • LIFESTYLE ✦
-
+<div class="top">
+ WORLDWIDE DELIVERY · USD / USDT DISPLAY · WEBMONEY PRIVATE CHECKOUT
 </div>
 
 
-<!-- =======================================================
-     HEADER
-======================================================= -->
+<!-- NAV -->
 
-<header>
+<header class="nav">
 
-<div class="nav">
+ <div class="brand">
+  TURIN
+ </div>
 
-<a href="#" class="logo">
-TURIN <span>PREMIUM</span>
-</a>
+ <nav class="navlinks">
 
+  <a href="#house">The House</a>
+  <a href="#collections">Collections</a>
+  <a href="#shop">Objects</a>
+  <a href="#journal">Journal</a>
 
-<nav class="nav-links">
+ </nav>
 
-<a href="#shop">
-Shop
-</a>
+ <div class="navtools">
 
-<a href="#categories">
-Collections
-</a>
+  <button
+   class="circle mobileOnly"
+   onclick="toggleMobileNav()"
+  >
+   ≡
+  </button>
 
-<a href="#experience">
-Experience
-</a>
+  <button
+   class="circle"
+   onclick="openCart()"
+  >
+   Bag <span id="bagCount">0</span>
+  </button>
 
-<a href="#concierge">
-Concierge
-</a>
-
-</nav>
-
-
-<div class="nav-actions">
-
-<button
-class="icon"
-onclick="openSearch()"
-aria-label="Search">
-
-⌕
-
-</button>
-
-
-<button
-class="icon"
-onclick="openCart()"
-aria-label="Cart">
-
-🛒
-
-<span
-class="cart-count"
-id="cartCount">
-
-0
-
-</span>
-
-</button>
-
-
-<button
-class="icon"
-onclick="openMobile()"
-aria-label="Menu">
-
-☰
-
-</button>
-
-</div>
-
-</div>
+ </div>
 
 </header>
 
 
-<!-- =======================================================
-     MOBILE MENU
-======================================================= -->
+<!-- HERO -->
 
-<div
-class="mobile"
-id="mobile">
+<section class="hero" id="house">
 
-<button
-class="icon mobile-close"
-onclick="closeMobile()">
+ <div class="heroCopy">
 
-✕
+  <div class="kicker mono">
+   TURIN / PRIVATE EDITION 2026
+  </div>
 
-</button>
+  <h1>
+   Premium<br>
+   <i>without boundaries.</i>
+  </h1>
 
-<a
-href="#shop"
-onclick="closeMobile()">
+  <p>
+   A private house of technology, sound, design and modern living.
+   Curated for people who expect the object in their hands to feel
+   as exceptional as the life around it.
+  </p>
 
-Shop
+  <div class="heroActions">
 
-</a>
+   <button
+    class="btn"
+    onclick="goShop()"
+   >
+    Enter the Collection
+   </button>
 
-<a
-href="#categories"
-onclick="closeMobile()">
+   <button
+    class="btn alt"
+    onclick="document.querySelector('#collections').scrollIntoView()"
+   >
+    View The House
+   </button>
 
-Collections
+  </div>
 
-</a>
-
-<a
-href="#experience"
-onclick="closeMobile()">
-
-Experience
-
-</a>
-
-<a
-href="#concierge"
-onclick="closeMobile()">
-
-Concierge
-
-</a>
-
-</div>
-
-
-<!-- =======================================================
-     HERO
-======================================================= -->
-
-<section class="hero">
-
-<div class="hero-inner">
-
-<div class="eyebrow">
-TURIN PREMIUM STORE
-</div>
-
-<h1>
-Technology.<br>
-<span>Elevated.</span>
-</h1>
-
-<p>
-
-Discover premium technology,
-smart living, gaming, audio,
-cameras and lifestyle essentials —
-curated for a modern luxury experience.
-
-</p>
-
-<div class="buttons">
-
-<a
-href="#shop"
-class="btn">
-
-Explore Collection
-
-</a>
-
-<a
-href="#concierge"
-class="btn outline">
-
-Personal Concierge
-
-</a>
-
-</div>
-
-</div>
+ </div>
 
 </section>
 
 
-<!-- =======================================================
-     CATEGORIES
-======================================================= -->
+<!-- MARQUEE -->
+
+<div class="marquee">
+
+ <span>
+  TURIN — PRIVATE EDITION — INTERNATIONAL HOUSE OF TECHNOLOGY —
+  OBJECTS / SOUND / GAMING / CAMERAS / LIFESTYLE —
+ </span>
+
+ <span>
+  TURIN — PRIVATE EDITION — INTERNATIONAL HOUSE OF TECHNOLOGY —
+  OBJECTS / SOUND / GAMING / CAMERAS / LIFESTYLE —
+ </span>
+
+</div>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+ <h2>
+  Not a catalogue.<br>
+  A point of view.
+ </h2>
+
+ <p>
+  TURIN brings together a deliberately edited universe of premium
+  objects. Technology is treated as design, sound as architecture,
+  cameras as instruments, gaming as performance and everyday tools
+  as personal signatures.
+ </p>
+
+</section>
+
+
+<!-- MANIFEST -->
+
+<div class="manifest">
+
+ <div>
+  <b>01 — Curated</b>
+  <small>
+   A deliberately edited collection with a distinct visual and functional language.
+  </small>
+ </div>
+
+ <div>
+  <b>02 — Worldwide</b>
+  <small>
+   International presentation with USD pricing and global-facing service.
+  </small>
+ </div>
+
+ <div>
+  <b>03 — Private</b>
+  <small>
+   Concierge-style ordering through a deliberately quiet shopping experience.
+  </small>
+ </div>
+
+ <div>
+  <b>04 — WebMoney</b>
+  <small>
+   WebMoney is the only payment rail presented at checkout.
+  </small>
+ </div>
+
+</div>
+
+
+<!-- COLLECTION CHAPTERS -->
+
+<section class="feature" id="collections">
+
+ <div class="featureHead">
+
+  <div>
+
+   <div class="kicker mono">
+    THE HOUSE / 04 CHAPTERS
+   </div>
+
+   <h2>
+    Four ways to live.
+   </h2>
+
+  </div>
+
+  <div class="mono">
+   01 — 04
+  </div>
+
+ </div>
+
+
+ <div class="featureGrid">
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85"
+    alt="Precision Objects"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 01
+    </span>
+
+    <h3>
+     Precision Objects
+    </h3>
+
+    <p>
+     Technology, accessories and tools with a sense of permanence.
+    </p>
+
+   </div>
+
+  </article>
+
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+    alt="Private Sound"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 02
+    </span>
+
+    <h3>
+     Private Sound
+    </h3>
+
+   </div>
+
+  </article>
+
+
+  <article class="featureCard">
+
+   <img
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
+    alt="Future Systems"
+   >
+
+   <div class="featureText">
+
+    <span class="mono">
+     Chapter 03
+    </span>
+
+    <h3>
+     Future Systems
+    </h3>
+
+   </div>
+
+  </article>
+
+ </div>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section class="shop" id="shop">
+
+ <div class="shopHead">
+
+  <div>
+
+   <div class="kicker mono">
+    THE COLLECTION / 256 OBJECTS
+   </div>
+
+   <h2>
+    Objects, selected.
+   </h2>
+
+  </div>
+
+  <div
+   class="count"
+   id="count"
+  >
+  </div>
+
+ </div>
+
+
+ <div
+  class="filters"
+  id="filters"
+ >
+ </div>
+
+
+ <div class="searchbar">
+
+  <input
+   id="search"
+   type="search"
+   placeholder="Search the collection — smartphone, camera, sound..."
+   autocomplete="off"
+  >
+
+  <div
+   class="count"
+   id="count2"
+  >
+  </div>
+
+ </div>
+
+
+ <div
+  class="products"
+  id="products"
+ >
+ </div>
+
+</section>
+
+
+<!-- EDITORIAL -->
 
 <section
-class="section"
-id="categories">
+ class="editorial"
+ id="journal"
+>
 
-<div class="head">
+ <img
+  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1500&q=90"
+  alt="TURIN editorial"
+ >
 
-<div>
+ <div class="editorialText">
 
-<div class="kicker">
-Collections
-</div>
+  <div class="kicker mono">
+   TURIN JOURNAL / 001
+  </div>
 
-<h2 class="title">
-Discover your world.
-</h2>
+  <h2>
+   The new luxury is attention.
+  </h2>
 
-</div>
+  <p>
+   Quiet interfaces. Beautiful materials. Objects chosen for
+   the details that become invisible only after they become indispensable.
+  </p>
 
-<p class="desc">
+  <button
+   class="btn"
+   style="width:max-content;margin-top:20px"
+   onclick="goShop()"
+  >
+   Explore Objects
+  </button>
 
-Premium products selected across
-technology, entertainment,
-smart living and lifestyle.
-
-</p>
-
-</div>
-
-
-<div class="categories">
-
-
-<div
-class="category"
-onclick="filterProducts('Mobile')">
-
-<img
-src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85"
-alt="Mobile">
-
-<div class="category-overlay">
-
-<h3>
-Smartphones
-</h3>
-
-</div>
-
-</div>
-
-
-<div
-class="category"
-onclick="filterProducts('Computing')">
-
-<img
-src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85"
-alt="Computing">
-
-<div class="category-overlay">
-
-<h3>
-Computing
-</h3>
-
-</div>
-
-</div>
-
-
-<div
-class="category"
-onclick="filterProducts('Audio')">
-
-<img
-src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85"
-alt="Audio">
-
-<div class="category-overlay">
-
-<h3>
-Audio
-</h3>
-
-</div>
-
-</div>
-
-
-<div
-class="category"
-onclick="filterProducts('Gaming')">
-
-<img
-src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1000&q=85"
-alt="Gaming">
-
-<div class="category-overlay">
-
-<h3>
-Gaming
-</h3>
-
-</div>
-
-</div>
-
-
-<div
-class="category"
-onclick="filterProducts('Lifestyle')">
-
-<img
-src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=85"
-alt="Lifestyle">
-
-<div class="category-overlay">
-
-<h3>
-Lifestyle
-</h3>
-
-</div>
-
-</div>
-
-</div>
+ </div>
 
 </section>
 
 
-<!-- =======================================================
-     SHOP
-======================================================= -->
+<!-- FOOTER -->
 
-<section
-class="section"
-id="shop">
+<footer class="footer">
 
-<div class="head">
+ <div class="footerTop">
 
-<div>
+  <div>
 
-<div class="kicker">
-The Collection
-</div>
+   <h3>
+    TURIN
+   </h3>
 
-<h2 class="title">
-Curated essentials.
-</h2>
+   <p>
+    A private digital house for premium technology and lifestyle objects.
+   </p>
 
-</div>
+   <p>
+    International service · USD / USDT display
+   </p>
 
-<p class="desc">
+  </div>
 
-Every product displays its
-TZS price and estimated USDT
-WebMoney value.
 
-</p>
+  <div>
 
-</div>
+   <div class="mono">
+    Explore
+   </div>
 
+   <p>
+    <a href="#house">The House</a><br>
+    <a href="#collections">Collections</a><br>
+    <a href="#shop">Objects</a><br>
+    <a href="#journal">Journal</a>
+   </p>
 
-<div class="filters">
+  </div>
 
-<button
-class="filter active"
-onclick="filterProducts('All',this)">
 
-All
+  <div>
 
-</button>
+   <div class="mono">
+    Concierge
+   </div>
 
-<button
-class="filter"
-onclick="filterProducts('Mobile',this)">
+   <p>
 
-Mobile
+    <a
+     href="https://wa.me/255797955045"
+     target="_blank"
+     rel="noopener"
+    >
+     WhatsApp Concierge
+    </a>
 
-</button>
+    <br>
 
-<button
-class="filter"
-onclick="filterProducts('Computing',this)">
+    <span>
+     Worldwide enquiries
+    </span>
 
-Computing
+   </p>
 
-</button>
+  </div>
 
-<button
-class="filter"
-onclick="filterProducts('Audio',this)">
 
-Audio
+  <div>
 
-</button>
+   <div class="mono">
+    Payment
+   </div>
 
-<button
-class="filter"
-onclick="filterProducts('Smart Tech',this)">
+   <p>
+    WebMoney only<br>
+    WMID: <b>367840821040</b><br>
+    WM purse: <b>T270243849673</b>
+   </p>
 
-Smart Tech
+  </div>
 
-</button>
+ </div>
 
-<button
-class="filter"
-onclick="filterProducts('Gaming',this)">
 
-Gaming
+ <div class="copyright">
 
-</button>
+  <span>
+   © 2026 TURIN PREMIUM STORE
+  </span>
 
-<button
-class="filter"
-onclick="filterProducts('Cameras',this)">
+  <span>
+   PRIVATE EDITION / DAR ES SALAAM / WORLDWIDE
+  </span>
 
-Cameras
-
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('Accessories',this)">
-
-Accessories
-
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('Lifestyle',this)">
-
-Lifestyle
-
-</button>
-
-</div>
-
-
-<div
-class="products"
-id="products">
-
-</div>
-
-</section>
-
-
-<!-- =======================================================
-     EXPERIENCE
-======================================================= -->
-
-<section
-class="section"
-id="experience">
-
-<div class="editorial">
-
-
-<div class="editorial-card">
-
-<img
-src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1500&q=90"
-alt="Gaming Technology">
-
-<div class="editorial-content">
-
-<div class="kicker">
-The Experience
-</div>
-
-<h2>
-Luxury, engineered.
-</h2>
-
-<p
-style="color:#ccc;margin-top:10px">
-
-A premium digital shopping
-experience built around quality,
-discovery and secure checkout.
-
-</p>
-
-</div>
-
-</div>
-
-
-<div class="editorial-card">
-
-<img
-src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1100&q=90"
-alt="Premium Service">
-
-<div class="editorial-content">
-
-<div class="kicker">
-Private Service
-</div>
-
-<h2>
-Personal concierge.
-</h2>
-
-<p
-style="color:#ccc;margin-top:10px">
-
-Need help selecting a product?
-Contact our concierge team.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =======================================================
-     TRUST
-======================================================= -->
-
-<section class="section">
-
-<div class="trust">
-
-
-<article>
-
-<b>
-01
-</b>
-
-<h3>
-Curated Quality
-</h3>
-
-<p>
-
-Products selected for premium
-technology and lifestyle positioning.
-
-</p>
-
-</article>
-
-
-<article>
-
-<b>
-02
-</b>
-
-<h3>
-WebMoney Checkout
-</h3>
-
-<p>
-
-WebMoney is the store's
-payment gateway.
-
-</p>
-
-</article>
-
-
-<article>
-
-<b>
-03
-</b>
-
-<h3>
-Private Concierge
-</h3>
-
-<p>
-
-Direct assistance for products,
-availability and customer questions.
-
-</p>
-
-</article>
-
-
-<article>
-
-<b>
-04
-</b>
-
-<h3>
-Premium Experience
-</h3>
-
-<p>
-
-Fast, responsive and
-mobile-ready storefront.
-
-</p>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-<!-- =======================================================
-     NEWSLETTER
-======================================================= -->
-
-<section
-class="section"
-id="concierge">
-
-<div class="newsletter">
-
-<div>
-
-<div class="kicker">
-TURIN PRIVATE LIST
-</div>
-
-<h2>
-Stay in the know.
-</h2>
-
-<p>
-Receive new collection and premium product updates.
-</p>
-
-</div>
-
-
-<form
-onsubmit="subscribe(event)">
-
-<input
-id="email"
-type="email"
-placeholder="Your email address"
-required>
-
-<button>
-JOIN
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-
-<!-- =======================================================
-     FOOTER
-======================================================= -->
-
-<footer>
-
-<div class="footer-grid">
-
-
-<div>
-
-<div class="logo">
-TURIN <span>PREMIUM</span>
-</div>
-
-<p style="margin-top:15px">
-
-Luxury technology, smart living,
-gaming and lifestyle — curated for
-a premium digital experience.
-
-</p>
-
-</div>
-
-
-<div>
-
-<h4>
-Shop
-</h4>
-
-<a href="#shop">
-All Products
-</a>
-
-<a href="#categories">
-Collections
-</a>
-
-</div>
-
-
-<div>
-
-<h4>
-Service
-</h4>
-
-<a href="#concierge">
-Concierge
-</a>
-
-<a href="#experience">
-Experience
-</a>
-
-<a
-href="https://wa.me/255797955045"
-target="_blank">
-
-WhatsApp
-
-</a>
-
-</div>
-
-
-<div>
-
-<h4>
-Payment
-</h4>
-
-<p>
-WebMoney
-</p>
-
-<p>
-USDT
-</p>
-
-<p>
-Purse:
-T270243849673
-</p>
-
-</div>
-
-
-</div>
-
-
-<div class="bottom">
-
-© 2026 TURIN PREMIUM STORE.
-All rights reserved.
-
-</div>
+ </div>
 
 </footer>
 
 
-<!-- =======================================================
-     CART OVERLAY
-======================================================= -->
+<!-- OVERLAY -->
 
 <div
-class="overlay"
-id="overlay"
-onclick="closeCart()">
+ class="overlay"
+ id="overlay"
+ onclick="closeAll()"
+>
 </div>
 
 
-<!-- =======================================================
-     CART DRAWER
-======================================================= -->
+<!-- CART -->
 
 <aside
-class="drawer"
-id="drawer">
+ class="cartDrawer"
+ id="cart"
+>
+
+ <div class="cartHead">
+
+  <span class="mono">
+   Private Bag
+  </span>
+
+  <button
+   class="close"
+   onclick="closeAll()"
+  >
+   ×
+  </button>
+
+ </div>
 
 
-<div class="drawer-head">
-
-<strong>
-Your Cart
-</strong>
-
-<button
-class="icon"
-onclick="closeCart()">
-
-✕
-
-</button>
-
-</div>
+ <div
+  class="cartItems"
+  id="cartItems"
+ >
+ </div>
 
 
-<div
-class="cart-items"
-id="cartItems">
+ <div class="cartFoot">
 
-</div>
+  <div class="total">
 
+   <span>
+    Total
+   </span>
 
-<div class="cart-foot">
+   <span id="cartTotal">
+    $0.00
+   </span>
 
+  </div>
 
-<div class="cart-total-row">
+  <button
+   class="checkout"
+   onclick="checkout()"
+  >
+   Proceed to WebMoney
+  </button>
 
-<span>
-Total TZS
-</span>
-
-<span id="cartTotalTZS">
-TZS 0
-</span>
-
-</div>
-
-
-<div class="cart-usdt-row">
-
-<span>
-WebMoney / USDT
-</span>
-
-<span id="cartTotalUSDT">
-USDT 0.00
-</span>
-
-</div>
-
-
-<button
-class="webmoney"
-onclick="openWebMoneyCheckout()">
-
-₮ PAY WITH WEBMONEY
-
-</button>
-
-
-<div class="gateway-note">
-
-WEBMONEY • USDT •
-T270243849673
-
-</div>
-
-</div>
+ </div>
 
 </aside>
 
 
-<!-- =======================================================
-     WEBMONEY CHECKOUT MODAL
-======================================================= -->
+<!-- PAYMENT -->
 
 <div
-class="modal"
-id="wmModal">
+ class="modal"
+ id="payment"
+>
 
-<div class="modal-card">
-
-
-<button
-class="modal-close"
-onclick="closeWebMoneyCheckout()">
-
-✕
-
-</button>
+ <button
+  class="close"
+  onclick="closeAll()"
+ >
+  ×
+ </button>
 
 
-<div class="wm-label">
-
-TURIN PREMIUM STORE • SECURE CHECKOUT
-
-</div>
+ <div class="kicker mono">
+  PRIVATE CHECKOUT
+ </div>
 
 
-<h2>
-Pay with WebMoney
-</h2>
+ <h2>
+  WebMoney
+ </h2>
 
 
-<p
-style="color:#999;font-size:13px">
-
-Your WebMoney amount is calculated
-from the products in your cart.
-
-</p>
+ <p>
+  Your order is prepared for the WebMoney merchant.
+  TURIN presents WebMoney as the only checkout method.
+ </p>
 
 
-<div
-class="summary"
-id="wmSummary">
+ <div class="wm">
 
-</div>
+  <div class="mono">
+   Merchant Purse
+  </div>
 
-
-<div
-id="wm-widget">
-
-</div>
+  <strong>
+   T270243849673
+  </strong>
 
 
-<div class="secure">
+  <div class="field">
 
-WebMoney • USDT • Merchant purse
-T270243849673
+   <label>
+    Order Number
+   </label>
 
-</div>
+   <input
+    id="orderNo"
+    readonly
+   >
 
-
-</div>
-
-</div>
-
-
-<!-- =======================================================
-     SEARCH
-======================================================= -->
-
-<div
-class="search"
-id="search">
+  </div>
 
 
-<button
-class="icon search-close"
-onclick="closeSearch()">
+  <div class="field">
 
-✕
+   <label>
+    Amount USD
+   </label>
 
-</button>
+   <input
+    id="orderAmount"
+    readonly
+   >
 
-
-<div
-class="kicker"
-style="width:min(900px,100%);margin:0 auto 15px">
-
-Search TURIN
-
-</div>
+  </div>
 
 
-<input
-class="search-input"
-id="searchInput"
-oninput="searchProducts()"
-placeholder="Search products...">
+  <button
+   class="btn"
+   style="width:100%"
+   onclick="launchWebMoney()"
+  >
+   Open WebMoney Merchant
+  </button>
+
+ </div>
 
 
-<div
-class="search-results"
-id="searchResults">
+ <p
+  class="mono"
+  style="font-size:9px"
+ >
+  Production note: server-side WebMoney Result verification should be
+  connected before treating a browser return as proof of payment.
+ </p>
 
 </div>
 
-</div>
-
-
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
 
 <script>
 
-/* =========================================================
-   STORE SETTINGS
-========================================================= */
-
-/*
- IMPORTANT:
-
- Change this exchange rate whenever you need
- to use a different USD/TZS conversion.
-
- Example:
-
- 1 USD = 2641.8564 TZS
-
- Therefore:
-
- TZS price / USD_TZS_RATE = USDT price
-*/
-
-const USD_TZS_RATE = 2641.8564;
-
-
-/*
- WebMoney Merchant Purse
-*/
-
-const WEBMONEY_PURSE =
-"T270243849673";
-
-
-/*
- WhatsApp
-*/
-
-const WHATSAPP =
-"255797955045";
-
-
-/*
- Fallback image
-*/
-
-const FALLBACK_IMAGE =
-"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=90";
-
-
-/* =========================================================
-   PRODUCTS
-========================================================= */
-
-const products = [
-
-/* MOBILE */
-
-{
-id:1,
-name:"TURIN iPhone Pro Max",
-category:"Mobile",
-price:3490000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1592286927505-2fd7c3d0a5c0?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:2,
-name:"TURIN Galaxy Ultra",
-category:"Mobile",
-price:3190000,
-badge:"FEATURED",
-image:"https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:3,
-name:"TURIN Premium Smartphone",
-category:"Mobile",
-price:2190000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:4,
-name:"TURIN Fold Smartphone",
-category:"Mobile",
-price:4290000,
-badge:"LUXURY",
-image:"https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:5,
-name:"TURIN Premium Tablet",
-category:"Mobile",
-price:1750000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* COMPUTING */
-
-{
-id:6,
-name:"TURIN MacBook Pro",
-category:"Computing",
-price:5200000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:7,
-name:"TURIN Premium Laptop",
-category:"Computing",
-price:2850000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:8,
-name:"TURIN Business Laptop",
-category:"Computing",
-price:3250000,
-badge:"BUSINESS",
-image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:9,
-name:"TURIN Desktop Setup",
-category:"Computing",
-price:3900000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:10,
-name:"TURIN Premium Monitor",
-category:"Computing",
-price:1450000,
-badge:"4K",
-image:"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:11,
-name:"TURIN Laptop Stand",
-category:"Computing",
-price:180000,
-badge:"OFFICE",
-image:"https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* AUDIO */
-
-{
-id:12,
-name:"TURIN AirPods Pro",
-category:"Audio",
-price:690000,
-badge:"BESTSELLER",
-image:"https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:13,
-name:"TURIN Studio Headphones",
-category:"Audio",
-price:850000,
-badge:"PREMIUM",
-image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:14,
-name:"TURIN Premium Speaker",
-category:"Audio",
-price:620000,
-badge:"AUDIO",
-image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:15,
-name:"TURIN Home Audio System",
-category:"Audio",
-price:1250000,
-badge:"HOME",
-image:"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:16,
-name:"TURIN Wireless Earbuds",
-category:"Audio",
-price:320000,
-badge:"WIRELESS",
-image:"https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* SMART TECH */
-
-{
-id:17,
-name:"TURIN Smart Watch",
-category:"Smart Tech",
-price:780000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:18,
-name:"TURIN Smart Home Hub",
-category:"Smart Tech",
-price:490000,
-badge:"SMART",
-image:"https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:19,
-name:"TURIN Smart TV",
-category:"Smart Tech",
-price:2450000,
-badge:"HOME",
-image:"https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:20,
-name:"TURIN Smart Security Camera",
-category:"Smart Tech",
-price:390000,
-badge:"SECURITY",
-image:"https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:21,
-name:"TURIN Smart Lighting",
-category:"Smart Tech",
-price:220000,
-badge:"SMART HOME",
-image:"https://images.unsplash.com/photo-1550985543-f47d7f1c6b0d?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* GAMING */
-
-{
-id:22,
-name:"TURIN PlayStation Edition",
-category:"Gaming",
-price:1750000,
-badge:"GAMING",
-image:"https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:23,
-name:"TURIN Gaming Controller",
-category:"Gaming",
-price:290000,
-badge:"NEW",
-image:"https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:24,
-name:"TURIN Gaming Setup",
-category:"Gaming",
-price:4200000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:25,
-name:"TURIN Gaming Keyboard",
-category:"Gaming",
-price:250000,
-badge:"RGB",
-image:"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:26,
-name:"TURIN Gaming Headset",
-category:"Gaming",
-price:380000,
-badge:"GAMING",
-image:"https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* CAMERAS */
-
-{
-id:27,
-name:"TURIN Mirrorless Camera",
-category:"Cameras",
-price:3100000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:28,
-name:"TURIN Creator Camera",
-category:"Cameras",
-price:2250000,
-badge:"CREATOR",
-image:"https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:29,
-name:"TURIN Professional Camera",
-category:"Cameras",
-price:4850000,
-badge:"PRO",
-image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:30,
-name:"TURIN Drone Pro",
-category:"Cameras",
-price:2850000,
-badge:"DRONE",
-image:"https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:31,
-name:"TURIN Action Camera",
-category:"Cameras",
-price:950000,
-badge:"ACTION",
-image:"https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* ACCESSORIES */
-
-{
-id:32,
-name:"TURIN Premium Power Bank",
-category:"Accessories",
-price:180000,
-badge:"ESSENTIAL",
-image:"https://images.unsplash.com/photo-1609592424225-9dca9f3f1c4c?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:33,
-name:"TURIN Fast Charger",
-category:"Accessories",
-price:125000,
-badge:"FAST",
-image:"https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:34,
-name:"TURIN Wireless Charger",
-category:"Accessories",
-price:145000,
-badge:"WIRELESS",
-image:"https://images.unsplash.com/photo-1591290619762-c588b7e2c4d5?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:35,
-name:"TURIN Premium Cable",
-category:"Accessories",
-price:65000,
-badge:"ESSENTIAL",
-image:"https://images.unsplash.com/photo-1587033411391-5d9e51cce126?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:36,
-name:"TURIN Travel Adapter",
-category:"Accessories",
-price:120000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1000&q=90"
-},
-
-/* LIFESTYLE */
-
-{
-id:37,
-name:"TURIN Premium Watch",
-category:"Lifestyle",
-price:590000,
-badge:"LIFESTYLE",
-image:"https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:38,
-name:"TURIN Travel Backpack",
-category:"Lifestyle",
-price:350000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:39,
-name:"TURIN Premium Sunglasses",
-category:"Lifestyle",
-price:280000,
-badge:"STYLE",
-image:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:40,
-name:"TURIN Luxury Desk Setup",
-category:"Lifestyle",
-price:450000,
-badge:"DESIGN",
-image:"https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:41,
-name:"TURIN Travel Essentials",
-category:"Lifestyle",
-price:260000,
-badge:"TRAVEL",
-image:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=90"
-},
-
-{
-id:42,
-name:"TURIN Premium Wallet",
-category:"Lifestyle",
-price:190000,
-badge:"LUXURY",
-image:"https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1000&q=90"
-}
-
+/* ============================================================
+   TURIN PREMIUM STORE
+   FINAL 256 PRODUCT ENGINE
+   ============================================================ */
+
+
+/* CATEGORIES */
+
+const CATS = [
+ "All",
+ "Mobile",
+ "Computing",
+ "Audio",
+ "Smart Tech",
+ "Gaming",
+ "Cameras",
+ "Accessories",
+ "Lifestyle"
 ];
 
 
-/* =========================================================
-   CURRENCY
-========================================================= */
+/* ============================================================
+   PRODUCT NAMES
+   8 CATEGORIES × 32 PRODUCTS = 256
+============================================================ */
 
-function toUSDT(tzs){
+const stems = {
 
-return Number(
-tzs / USD_TZS_RATE
+ Mobile:[
+  "Aurelia","Monarch","Sovereign","Élan",
+  "NOVA","Velour","Lucent","Regent",
+  "Aria","Vantage","Noir","Crown",
+  "Maison","Eclipse","Prestige","Opal",
+  "Sable","Verve","Atlas","Lumen",
+  "Milan","Royal","Onyx","Celeste",
+  "Aster","Vela","Icon","Grande",
+  "Halo","Noble","Silva","Prime"
+ ],
+
+ Computing:[
+  "Apex","Monarch","Atelier","Vector",
+  "Sovereign","Axis","Vertex","Lucid",
+  "Titan","Meridian","Studio","Crest",
+  "Nexus","Obsidian","Arc","Summit",
+  "Coda","Forma","Grid","Vault",
+  "Canvas","Pilot","Core","Crown",
+  "Nova","Prime","Elite","Origin",
+  "Forge","Vero","Mira","Zenith"
+ ],
+
+ Audio:[
+  "Sonata","Nocturne","Opus","Velvet",
+  "Auralis","Resonance","Aria","Cadenza",
+  "Sonic","Maison","Chorus","Harmonic",
+  "Lustre","Melody","Vox","Dolce",
+  "Acoustic","Elysian","Tempo","Rhapsody",
+  "Muse","Aura","Concerto","Serein",
+  "Opera","Cadence","Forte","Largo",
+  "Vesper","Echo","Lyric","Orfeo"
+ ],
+
+ "Smart Tech":[
+  "Lumen","Halo","Orbit","Solis",
+  "Astra","Nexus","Beacon","Vanta",
+  "Pulse","Prism","Ceres","Nova",
+  "Arc","Flux","Zenith","Sentry",
+  "Mira","Vertex","Aura","Crown",
+  "Atlas","Sage","Helix","Axiom",
+  "Ion","Eon","Vela","Kite",
+  "Lucent","Vero","Oriel","Noble"
+ ],
+
+ Gaming:[
+  "Apex","Phantom","Vanguard","Rogue",
+  "Titan","Spectre","Velocity","Onyx",
+  "Nexus","Eclipse","Pulse","Fury",
+  "Vertex","Crown","Shadow","Arcade",
+  "Valor","Strike","Nova","Prime",
+  "Zenith","Forge","Atlas","Zero",
+  "Raven","Sovereign","Blade","Vortex",
+  "Cobalt","Legend","Elite","Myth"
+ ],
+
+ Cameras:[
+  "Lumina","Vista","Aperture","Noir",
+  "Serein","Focus","Optic","Monarch",
+  "Cine","Frame","Velour","Clarity",
+  "Aurelia","Prism","Lumen","Crest",
+  "Atlas","Vantage","Studio","Silver",
+  "Crown","Origin","NOVA","Regent",
+  "Halo","Sable","Icon","Mira",
+  "Zenith","Prime","Maison","Vela"
+ ],
+
+ Accessories:[
+  "Atelier","Maison","Regent","Crown",
+  "Noir","Sable","Lustre","Velour",
+  "Élan","Prestige","Monarch","Aurelia",
+  "Vanta","Noble","Crest","Opal",
+  "Sovereign","Lucent","Prime","Milan",
+  "Aria","Vero","Silva","Grande",
+  "Halo","Onyx","Celeste","Aster",
+  "Vela","Icon","Royal","Maison"
+ ],
+
+ Lifestyle:[
+  "Maison","Atelier","Lustre","Serein",
+  "Aurelia","Velour","Noir","Élan",
+  "Regent","Opal","Crown","Sable",
+  "Monarch","Vela","Celeste","Noble",
+  "Lumen","Aster","Silva","Aria",
+  "Prestige","Grande","Milan","Vero",
+  "Lucent","Sovereign","Halo","Onyx",
+  "Royal","Prime","Elysian","Crest"
+ ]
+
+};
+
+
+/* ============================================================
+   IMAGE VOCABULARY
+
+   IMPORTANT:
+   No shared 4-image pool.
+   Each product receives a unique lock number.
+============================================================ */
+
+const visualWords = {
+
+ Mobile:[
+  "luxury smartphone",
+  "premium smartphone",
+  "titanium smartphone",
+  "flagship phone",
+  "modern smartphone",
+  "black smartphone",
+  "silver smartphone",
+  "foldable smartphone",
+  "premium mobile technology",
+  "smartphone studio",
+  "luxury phone",
+  "high end smartphone",
+  "minimal smartphone",
+  "smartphone product photography",
+  "premium phone desk",
+  "modern mobile device"
+ ],
+
+ Computing:[
+  "luxury laptop",
+  "premium laptop",
+  "professional laptop",
+  "black laptop",
+  "silver laptop",
+  "designer laptop",
+  "premium computer",
+  "desktop computer",
+  "luxury workstation",
+  "modern workstation",
+  "creative workstation",
+  "professional computer",
+  "premium notebook",
+  "computer studio",
+  "modern computer desk",
+  "high end computer"
+ ],
+
+ Audio:[
+  "luxury headphones",
+  "premium headphones",
+  "wireless headphones",
+  "audiophile headphones",
+  "studio headphones",
+  "premium speaker",
+  "luxury speaker",
+  "wireless speaker",
+  "hi fi speaker",
+  "premium earbuds",
+  "luxury earbuds",
+  "audio system",
+  "audiophile setup",
+  "music studio",
+  "premium sound system",
+  "high end audio"
+ ],
+
+ "Smart Tech":[
+  "luxury smart home",
+  "premium smart device",
+  "smart home technology",
+  "modern smart technology",
+  "smart watch",
+  "premium wearable",
+  "home automation",
+  "smart lighting",
+  "smart security",
+  "future technology",
+  "luxury gadget",
+  "premium gadget",
+  "connected home",
+  "modern electronics",
+  "smart lifestyle",
+  "future home"
+ ],
+
+ Gaming:[
+  "luxury gaming setup",
+  "premium gaming PC",
+  "gaming laptop",
+  "professional gaming setup",
+  "gaming desk",
+  "premium gaming monitor",
+  "gaming controller",
+  "premium controller",
+  "gaming keyboard",
+  "mechanical keyboard",
+  "gaming mouse",
+  "esports setup",
+  "high end gaming",
+  "luxury gamer room",
+  "gaming technology",
+  "premium gaming equipment"
+ ],
+
+ Cameras:[
+  "luxury camera",
+  "professional camera",
+  "mirrorless camera",
+  "premium camera",
+  "cinema camera",
+  "professional photography",
+  "premium camera lens",
+  "camera lens",
+  "cinema lens",
+  "photography equipment",
+  "professional camera studio",
+  "camera product photography",
+  "high end camera",
+  "premium photography gear",
+  "cinematic camera",
+  "professional imaging"
+ ],
+
+ Accessories:[
+  "luxury leather accessory",
+  "premium wallet",
+  "luxury card holder",
+  "designer sunglasses",
+  "premium sunglasses",
+  "luxury travel bag",
+  "premium backpack",
+  "luxury backpack",
+  "leather briefcase",
+  "premium briefcase",
+  "luxury luggage",
+  "premium luggage",
+  "luxury belt",
+  "premium leather goods",
+  "luxury everyday carry",
+  "designer accessory"
+ ],
+
+ Lifestyle:[
+  "luxury interior",
+  "premium interior",
+  "modern luxury home",
+  "designer furniture",
+  "luxury chair",
+  "premium chair",
+  "luxury desk",
+  "designer desk",
+  "luxury lamp",
+  "designer lamp",
+  "modern living room",
+  "luxury bedroom",
+  "premium home object",
+  "designer workspace",
+  "luxury hotel interior",
+  "premium lifestyle"
+ ]
+
+};
+
+
+/* ============================================================
+   UNIQUE IMAGE GENERATOR
+
+   Product 1  → lock 1
+   Product 2  → lock 2
+   ...
+   Product 256 → lock 256
+
+   No image pool.
+   No i % 4.
+============================================================ */
+
+function uniqueImage(category,productId){
+
+ const words = visualWords[category];
+
+ const keyword =
+   words[(productId - 1) % words.length];
+
+ const search =
+   encodeURIComponent(
+     keyword +
+     ", luxury, editorial, premium, studio"
+   );
+
+ return (
+   "https://loremflickr.com/1000/1250/" +
+   search +
+   "?lock=" +
+   productId
+ );
+
+}
+
+
+/* ============================================================
+   PRICES
+============================================================ */
+
+const priceTable = {
+
+ Mobile:[
+  899,1190,1490,1790,
+  2290,2790,3290,3890
+ ],
+
+ Computing:[
+  1290,1690,2190,2790,
+  3490,4290,4990,5990
+ ],
+
+ Audio:[
+  390,590,790,990,
+  1290,1590,1990,2490
+ ],
+
+ "Smart Tech":[
+  290,490,690,890,
+  1190,1490,1890,2290
+ ],
+
+ Gaming:[
+  690,990,1390,1790,
+  2290,2890,3490,4490
+ ],
+
+ Cameras:[
+  990,1390,1890,2490,
+  3290,4290,5490,6990
+ ],
+
+ Accessories:[
+  180,290,420,590,
+  790,990,1290,1590
+ ],
+
+ Lifestyle:[
+  220,360,520,760,
+  990,1290,1690,2190
+ ]
+
+};
+
+
+/* ============================================================
+   CREATE 256 PRODUCTS
+============================================================ */
+
+let products = [];
+
+let globalId = 1;
+
+
+Object.entries(stems).forEach(
+ ([category,names]) => {
+
+  names.forEach(
+   (name,index) => {
+
+    let model =
+      String(
+       (index % 32) + 1
+      ).padStart(2,"0");
+
+
+    let suffix;
+
+
+    if(category === "Mobile"){
+      suffix = "X" + model;
+    }
+
+    else if(category === "Computing"){
+      suffix = "Pro " + model;
+    }
+
+    else if(category === "Audio"){
+      suffix = "Edition " + model;
+    }
+
+    else if(category === "Cameras"){
+      suffix = "Cine " + model;
+    }
+
+    else if(category === "Gaming"){
+      suffix = "GT " + model;
+    }
+
+    else if(category === "Lifestyle"){
+      suffix = "Atelier " + model;
+    }
+
+    else{
+      suffix = "Series " + model;
+    }
+
+
+    products.push({
+
+      id:globalId,
+
+      cat:category,
+
+      name:
+        name +
+        " " +
+        suffix,
+
+      price:
+        priceTable[category]
+        [index % 8],
+
+      img:
+        uniqueImage(
+          category,
+          globalId
+        ),
+
+      desc:
+        [
+          "Signature edition",
+          "Private collection",
+          "Limited house selection",
+          "Engineered for modern living"
+        ][index % 4],
+
+      badge:
+        index % 8 === 0
+        ? "PRIVATE EDITION"
+        :
+        index % 6 === 0
+        ? "NEW"
+        :
+        ""
+
+    });
+
+
+    globalId++;
+
+   }
+  );
+
+ }
 );
 
-}
 
+/* ============================================================
+   VERIFY PRODUCT COUNT
+============================================================ */
 
-function formatUSDT(tzs){
-
-return "USDT " +
-toUSDT(tzs).toLocaleString(
-"en-US",
-{
-minimumFractionDigits:2,
-maximumFractionDigits:2
-}
+console.log(
+ "TURIN PRODUCTS:",
+ products.length
 );
 
-}
 
-
-function formatTZS(tzs){
-
-return "TZS " +
-Number(tzs).toLocaleString(
-"en-TZ"
-);
-
-}
-
-
-/* =========================================================
-   CART
-========================================================= */
+/* ============================================================
+   STATE
+============================================================ */
 
 let cart =
-JSON.parse(
-localStorage.getItem(
-"turin_luxury_cart"
-) || "[]"
-);
+ JSON.parse(
+  localStorage.getItem(
+   "turin_luxury_cart"
+  ) || "[]"
+ );
+
+let activeCategory = "All";
+
+let searchTerm = "";
 
 
-function saveCart(){
+/* ============================================================
+   MONEY
+============================================================ */
 
-localStorage.setItem(
-"turin_luxury_cart",
-JSON.stringify(cart)
-);
+function money(value){
 
-updateCartCount();
+ return "$" +
+ value.toLocaleString(
+  "en-US",
+  {
+   minimumFractionDigits:2,
+   maximumFractionDigits:2
+  }
+ );
 
 }
 
 
-function updateCartCount(){
+/* ============================================================
+   MOBILE NAV
+============================================================ */
 
-document.getElementById(
-"cartCount"
-).textContent =
-cart.length;
+function toggleMobileNav(){
+
+ const nav =
+  document.querySelector(
+   ".navlinks"
+  );
+
+ nav.style.display =
+  nav.style.display === "flex"
+  ? "none"
+  : "flex";
 
 }
 
+
+/* ============================================================
+   SHOP SCROLL
+============================================================ */
+
+function goShop(){
+
+ document
+  .querySelector("#shop")
+  .scrollIntoView({
+   behavior:"smooth"
+  });
+
+}
+
+
+/* ============================================================
+   FILTERS
+============================================================ */
+
+function renderFilters(){
+
+ document.getElementById(
+  "filters"
+ ).innerHTML =
+
+ CATS.map(
+  category => `
+
+   <button
+    class="filter ${
+     category === activeCategory
+     ? "active"
+     : ""
+    }"
+    onclick="setCategory('${category}')"
+   >
+    ${category}
+   </button>
+
+  `
+ ).join("");
+
+}
+
+
+/* ============================================================
+   RENDER PRODUCTS
+============================================================ */
+
+function renderProducts(){
+
+ const list =
+  products.filter(
+   product => {
+
+    const categoryMatch =
+      activeCategory === "All" ||
+      product.cat === activeCategory;
+
+
+    const text =
+      (
+       product.name +
+       " " +
+       product.cat +
+       " " +
+       product.desc
+      ).toLowerCase();
+
+
+    const searchMatch =
+      text.includes(
+       searchTerm.toLowerCase()
+      );
+
+
+    return (
+     categoryMatch &&
+     searchMatch
+    );
+
+   }
+  );
+
+
+ document.getElementById(
+  "products"
+ ).innerHTML =
+
+ list.map(
+  product => `
+
+   <article
+    class="product"
+   >
+
+    <div class="pic">
+
+     <img
+      src="${product.img}"
+      alt="${product.name}"
+      loading="lazy"
+      onerror="
+       this.onerror=null;
+       this.src='https://picsum.photos/seed/turin-${product.id}/1000/1250';
+      "
+     >
+
+
+     ${
+      product.badge
+      ?
+      `
+       <span class="badge">
+        ${product.badge}
+       </span>
+      `
+      :
+      ""
+     }
+
+
+     <button
+      class="wish"
+      onclick="
+       this.textContent =
+       this.textContent === '♡'
+       ? '♥'
+       : '♡'
+      "
+     >
+      ♡
+     </button>
+
+    </div>
+
+
+    <div class="pbody">
+
+     <div class="cat">
+      ${product.cat}
+     </div>
+
+
+     <div class="pname">
+      ${product.name}
+     </div>
+
+
+     <div class="pdesc">
+      ${product.desc}
+     </div>
+
+
+     <div class="prow">
+
+      <span class="price">
+       ${money(product.price)}
+      </span>
+
+
+      <button
+       class="add"
+       onclick="addToCart(${product.id})"
+      >
+       Add to bag
+      </button>
+
+     </div>
+
+    </div>
+
+   </article>
+
+  `
+ ).join("");
+
+
+ document.getElementById(
+  "count"
+ ).textContent =
+  `${list.length} / ${products.length} OBJECTS`;
+
+
+ document.getElementById(
+  "count2"
+ ).textContent =
+  `${list.length} results`;
+
+}
+
+
+/* ============================================================
+   SET CATEGORY
+============================================================ */
+
+function setCategory(category){
+
+ activeCategory =
+  category;
+
+ renderFilters();
+
+ renderProducts();
+
+ goShop();
+
+}
+
+
+/* ============================================================
+   ADD TO CART
+============================================================ */
 
 function addToCart(id){
 
-const product =
-products.find(
-item => item.id === id
-);
-
-if(!product)
-return;
-
-cart.push(product);
-
-saveCart();
-
-renderCart();
-
-openCart();
+ const existing =
+  cart.find(
+   item => item.id === id
+  );
 
 
-if(
-typeof gtag === "function"
-){
+ if(existing){
 
-gtag(
-"event",
-"add_to_cart",
-{
-currency:"TZS",
-value:product.price,
-item_name:product.name
-}
-);
+  existing.qty++;
 
-}
+ }
+
+ else{
+
+  cart.push({
+   id:id,
+   qty:1
+  });
+
+ }
+
+
+ saveCart();
+
+ openCart();
 
 }
 
 
-function removeFromCart(index){
+/* ============================================================
+   SAVE CART
+============================================================ */
 
-cart.splice(index,1);
+function saveCart(){
 
-saveCart();
+ localStorage.setItem(
+  "turin_luxury_cart",
+  JSON.stringify(cart)
+ );
 
-renderCart();
-
-}
-
-
-function getCartTZSTotal(){
-
-return cart.reduce(
-(total,item) =>
-total + Number(item.price),
-0
-);
+ renderCart();
 
 }
 
 
-function getCartUSDTTotal(){
-
-return toUSDT(
-getCartTZSTotal()
-);
-
-}
-
-
-/* =========================================================
+/* ============================================================
    RENDER CART
-========================================================= */
+============================================================ */
 
 function renderCart(){
 
-const container =
-document.getElementById(
-"cartItems"
-);
+ const count =
+  cart.reduce(
+   (total,item) =>
+    total + item.qty,
+   0
+  );
 
 
-if(!cart.length){
+ document.getElementById(
+  "bagCount"
+ ).textContent =
+  count;
 
-container.innerHTML = `
 
-<div class="empty-cart">
+ const cartItems =
+  document.getElementById(
+   "cartItems"
+  );
 
-<h3>
-Your cart is empty.
-</h3>
 
-<p style="margin-top:8px">
-Add premium products to continue.
-</p>
+ if(!cart.length){
 
-</div>
+  cartItems.innerHTML = `
+   <p style="color:#777">
+    Your private bag is empty.
+   </p>
+  `;
 
-`;
+ }
 
-document.getElementById(
-"cartTotalTZS"
-).textContent =
-"TZS 0";
+ else{
 
-document.getElementById(
-"cartTotalUSDT"
-).textContent =
-"USDT 0.00";
+  cartItems.innerHTML =
 
-return;
+   cart.map(
+    item => {
+
+     const product =
+      products.find(
+       p => p.id === item.id
+      );
+
+
+     return `
+
+      <div class="cartItem">
+
+       <img
+        src="${product.img}"
+        alt="${product.name}"
+        onerror="
+         this.onerror=null;
+         this.src='https://picsum.photos/seed/turin-cart-${product.id}/400/500';
+        "
+       >
+
+
+       <div>
+
+        <h4>
+         ${product.name}
+        </h4>
+
+        <small>
+         ${money(product.price)}
+         ·
+         ${product.cat}
+        </small>
+
+
+        <div class="qty">
+
+         <button
+          onclick="changeQty(${product.id},-1)"
+         >
+          −
+         </button>
+
+         <button>
+          ${item.qty}
+         </button>
+
+         <button
+          onclick="changeQty(${product.id},1)"
+         >
+          +
+         </button>
+
+        </div>
+
+       </div>
+
+
+       <strong>
+        ${money(
+         product.price *
+         item.qty
+        )}
+       </strong>
+
+      </div>
+
+     `;
+
+    }
+   ).join("");
+
+ }
+
+
+ const total =
+  cart.reduce(
+   (sum,item) => {
+
+    const product =
+     products.find(
+      p => p.id === item.id
+     );
+
+    return (
+     sum +
+     product.price *
+     item.qty
+    );
+
+   },
+   0
+  );
+
+
+ document.getElementById(
+  "cartTotal"
+ ).textContent =
+  money(total);
 
 }
 
 
-container.innerHTML =
+/* ============================================================
+   CHANGE QUANTITY
+============================================================ */
 
-cart.map(
-(item,index) => `
+function changeQty(id,direction){
 
-<div class="cart-item">
-
-<img
-src="${item.image}"
-alt="${item.name}">
-
-<div class="cart-item-main">
-
-<h4>
-${item.name}
-</h4>
-
-<div class="cart-item-price">
-${formatTZS(item.price)}
-</div>
-
-<div class="cart-item-usdt">
-${formatUSDT(item.price)}
-</div>
-
-</div>
-
-<button
-class="remove"
-onclick="removeFromCart(${index})">
-
-✕
-
-</button>
-
-</div>
-
-`
-).join("");
+ const item =
+  cart.find(
+   x => x.id === id
+  );
 
 
-document.getElementById(
-"cartTotalTZS"
-).textContent =
-formatTZS(
-getCartTZSTotal()
-);
+ if(!item){
+  return;
+ }
 
 
-document.getElementById(
-"cartTotalUSDT"
-).textContent =
-formatUSDT(
-getCartTZSTotal()
-);
+ item.qty += direction;
+
+
+ if(item.qty <= 0){
+
+  cart =
+   cart.filter(
+    x => x.id !== id
+   );
+
+ }
+
+
+ saveCart();
 
 }
 
 
-/* =========================================================
-   CART OPEN/CLOSE
-========================================================= */
+/* ============================================================
+   OPEN CART
+============================================================ */
 
 function openCart(){
 
-document
-.getElementById("drawer")
-.classList.add("active");
+ document
+  .getElementById("cart")
+  .classList.add("open");
 
-document
-.getElementById("overlay")
-.classList.add("active");
-
-renderCart();
+ document
+  .getElementById("overlay")
+  .classList.add("on");
 
 }
 
 
-function closeCart(){
+/* ============================================================
+   CLOSE EVERYTHING
+============================================================ */
 
-document
-.getElementById("drawer")
-.classList.remove("active");
+function closeAll(){
 
-document
-.getElementById("overlay")
-.classList.remove("active");
+ document
+  .getElementById("cart")
+  .classList.remove("open");
 
-}
+ document
+  .getElementById("payment")
+  .classList.remove("on");
 
-
-/* =========================================================
-   PRODUCT RENDER
-========================================================= */
-
-function renderProducts(list){
-
-const container =
-document.getElementById(
-"products"
-);
-
-
-if(!list.length){
-
-container.innerHTML = `
-
-<div
-style="
-grid-column:1/-1;
-padding:60px;
-text-align:center;
-color:#777;
-">
-
-No products found.
-
-</div>
-
-`;
-
-return;
+ document
+  .getElementById("overlay")
+  .classList.remove("on");
 
 }
 
 
-container.innerHTML =
+/* ============================================================
+   CHECKOUT
+============================================================ */
 
-list.map(
-product => `
+function checkout(){
 
-<article class="product">
+ if(!cart.length){
 
-<div class="product-image">
+  alert(
+   "Your private bag is empty."
+  );
 
-<img
-src="${product.image}"
-alt="${product.name}"
-loading="lazy">
+  return;
 
-<span class="badge">
-${product.badge}
-</span>
-
-</div>
+ }
 
 
-<div class="info">
+ const total =
+  cart.reduce(
+   (sum,item) => {
 
-<div class="cat">
-${product.category}
-</div>
+    const product =
+     products.find(
+      p => p.id === item.id
+     );
 
-<h3>
-${product.name}
-</h3>
+    return (
+     sum +
+     product.price *
+     item.qty
+    );
 
-
-<div class="price-label">
-TZS PRICE
-</div>
-
-<div class="price-tzs">
-${formatTZS(product.price)}
-</div>
-
-
-<div class="price-label" style="margin-top:7px">
-WEBMONEY PRICE
-</div>
-
-<div class="price-usdt">
-${formatUSDT(product.price)}
-</div>
+   },
+   0
+  );
 
 
-<div class="actions">
-
-<button
-class="add"
-onclick="addToCart(${product.id})">
-
-Add to Cart
-
-</button>
+ const orderNo =
+  "TRN-" +
+  Date.now()
+  .toString()
+  .slice(-9);
 
 
-<button
-class="contact"
-onclick="contactProduct(${product.id})"
-title="WhatsApp Concierge">
+ document.getElementById(
+  "orderNo"
+ ).value =
+  orderNo;
 
-☎
 
-</button>
+ document.getElementById(
+  "orderAmount"
+ ).value =
+  money(total);
 
-</div>
 
-</div>
+ document
+  .getElementById("cart")
+  .classList.remove("open");
 
-</article>
 
-`
-).join("");
+ document
+  .getElementById("payment")
+  .classList.add("on");
+
+
+ document
+  .getElementById("overlay")
+  .classList.add("on");
 
 }
 
 
-/* =========================================================
-   FILTER
-========================================================= */
-
-function filterProducts(
-category,
-button
-){
-
-document
-.querySelectorAll(".filter")
-.forEach(
-item =>
-item.classList.remove(
-"active"
-)
-);
-
-
-if(button){
-
-button.classList.add(
-"active"
-);
-
-}
-
-
-let list;
-
-
-if(category === "All"){
-
-list = products;
-
-}else{
-
-list =
-products.filter(
-item =>
-item.category === category
-);
-
-}
-
-
-renderProducts(list);
-
-
-document
-.getElementById("shop")
-.scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
-/* =========================================================
-   WHATSAPP
-========================================================= */
-
-function contactProduct(id){
-
-const product =
-products.find(
-item => item.id === id
-);
-
-if(!product)
-return;
-
-
-const message =
-
-"Hello TURIN PREMIUM STORE.\n\n" +
-
-"I am interested in:\n" +
-
-product.name +
-
-"\n\nTZS Price: " +
-
-formatTZS(product.price) +
-
-"\nWebMoney: " +
-
-formatUSDT(product.price) +
-
-"\n\nPlease confirm availability.";
-
-
-window.open(
-
-"https://wa.me/" +
-WHATSAPP +
-"?text=" +
-encodeURIComponent(message),
-
-"_blank"
-
-);
-
-}
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-function openSearch(){
-
-document
-.getElementById("search")
-.classList.add("active");
-
-document
-.getElementById("searchInput")
-.focus();
-
-}
-
-
-function closeSearch(){
-
-document
-.getElementById("search")
-.classList.remove("active");
-
-}
-
-
-function searchProducts(){
-
-const query =
-
-document
-.getElementById(
-"searchInput"
-)
-.value
-.toLowerCase()
-.trim();
-
-
-const results =
-
-products.filter(
-product =>
-
-product.name
-.toLowerCase()
-.includes(query)
-
-||
-
-product.category
-.toLowerCase()
-.includes(query)
-);
-
-
-if(!query){
-
-document.getElementById(
-"searchResults"
-).innerHTML = "";
-
-return;
-
-}
-
-
-document.getElementById(
-"searchResults"
-).innerHTML =
-
-results.map(
-product => `
-
-<div
-style="
-display:flex;
-align-items:center;
-gap:15px;
-padding:13px 0;
-border-bottom:1px solid #222;
-">
-
-<img
-src="${product.image}"
-alt="${product.name}"
-style="
-width:65px;
-height:65px;
-object-fit:cover;
-">
-
-<div style="flex:1">
-
-<strong>
-${product.name}
-</strong>
-
-<div
-style="
-color:#fff;
-font-size:12px;
-margin-top:3px;
-">
-
-${formatTZS(product.price)}
-
-</div>
-
-<div
-style="
-color:#c9a45c;
-font-size:11px;
-">
-
-${formatUSDT(product.price)}
-
-</div>
-
-</div>
-
-
-<button
-class="add"
-onclick="
-addToCart(${product.id});
-closeSearch();
-">
-
-Add
-
-</button>
-
-</div>
-
-`
-).join("");
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-function openMobile(){
-
-document
-.getElementById("mobile")
-.classList.add("active");
-
-}
-
-
-function closeMobile(){
-
-document
-.getElementById("mobile")
-.classList.remove("active");
-
-}
-
-
-/* =========================================================
-   NEWSLETTER
-========================================================= */
-
-function subscribe(event){
-
-event.preventDefault();
-
-
-if(
-typeof gtag === "function"
-){
-
-gtag(
-"event",
-"newsletter_signup",
-{
-method:"website"
-}
-);
-
-}
-
-
-alert(
-"Thank you. You have joined the TURIN Private List."
-);
-
-
-event.target.reset();
-
-}
-
-
-/* =========================================================
+/* ============================================================
    WEBMONEY
-========================================================= */
+============================================================ */
 
-let webMoneyMounted = false;
+function launchWebMoney(){
+
+ const amount =
+  document
+   .getElementById(
+    "orderAmount"
+   )
+   .value
+   .replace(
+    /[$,]/g,
+    ""
+   );
 
 
-function openWebMoneyCheckout(){
+ const orderNo =
+  document.getElementById(
+   "orderNo"
+  ).value;
 
-if(!cart.length){
 
-alert(
-"Your cart is empty."
-);
+ const form =
+  document.createElement(
+   "form"
+  );
 
-return;
+
+ form.method =
+  "POST";
+
+
+ form.action =
+  "https://merchant.wmtransfer.com/lmi/payment_utf.asp";
+
+
+ form.target =
+  "_blank";
+
+
+ const fields = {
+
+  LMI_PAYEE_PURSE:
+   "T270243849673",
+
+  LMI_PAYMENT_AMOUNT:
+   amount,
+
+  LMI_PAYMENT_NO:
+   orderNo,
+
+  LMI_PAYMENT_DESC:
+   "TURIN PREMIUM STORE " +
+   orderNo,
+
+  LMI_SIM_MODE:
+   "0"
+
+ };
+
+
+ Object.entries(
+  fields
+ ).forEach(
+  ([key,value]) => {
+
+   const input =
+    document.createElement(
+     "input"
+    );
+
+   input.type =
+    "hidden";
+
+   input.name =
+    key;
+
+   input.value =
+    value;
+
+   form.appendChild(
+    input
+   );
+
+  }
+ );
+
+
+ document.body.appendChild(
+  form
+ );
+
+
+ form.submit();
+
+
+ form.remove();
 
 }
 
 
-const totalTZS =
-getCartTZSTotal();
-
-const totalUSDT =
-getCartUSDTTotal();
-
-
-document.getElementById(
-"wmSummary"
-).innerHTML = `
-
-<div class="summary-line">
-
-<span>
-Items
-</span>
-
-<strong>
-${cart.length}
-</strong>
-
-</div>
-
-
-<div class="summary-line">
-
-<span>
-Total in TZS
-</span>
-
-<strong>
-${formatTZS(totalTZS)}
-</strong>
-
-</div>
-
-
-<div class="summary-total">
-
-<span>
-WebMoney / USDT
-</span>
-
-<strong>
-USDT ${totalUSDT.toFixed(2)}
-</strong>
-
-</div>
-
-`;
-
+/* ============================================================
+   SEARCH
+============================================================ */
 
 document
-.getElementById("wmModal")
-.classList.add("active");
+ .getElementById("search")
+ .addEventListener(
+  "input",
+  event => {
 
-document
-.body.classList.add("modal-open");
+   searchTerm =
+    event.target.value;
 
+   renderProducts();
 
-/*
- IMPORTANT:
-
- WebMoney widget must be loaded
- before mounting.
-*/
-
-if(
-!window.webmoney ||
-!window.webmoney.widgets
-){
-
-document.getElementById(
-"wm-widget"
-).innerHTML = `
-
-<div
-style="
-padding:15px;
-background:#151515;
-border:1px solid #333;
-color:#d99;
-font-size:12px;
-text-align:center;
-">
-
-WebMoney payment widget
-has not loaded yet.<br>
-Please refresh the page.
-
-</div>
-
-`;
-
-return;
-
-}
+  }
+ );
 
 
-/*
- Prevent duplicate mount
-*/
+/* ============================================================
+   START
+============================================================ */
 
-if(webMoneyMounted)
-return;
+renderFilters();
 
-
-/*
- Create dynamic WebMoney payment
-*/
-
-try{
-
-window.webmoney
-.widgets()
-.button
-.create({
-
-data:{
-
-/*
- REAL CART AMOUNT
-*/
-
-amount:
-Number(
-totalUSDT.toFixed(2)
-),
-
-purse:
-WEBMONEY_PURSE,
-
-desc:
-"TURIN PREMIUM STORE ORDER",
-
-paymentType:
-"wm",
-
-forcePay:
-true
-
-},
-
-style:{
-
-theme:"wm",
-
-showAmount:true,
-
-titleNum:1,
-
-title:
-"Pay " +
-totalUSDT.toFixed(2) +
-" USDT",
-
-design:"skeuomorph"
-
-},
-
-lang:"en"
-
-})
-
-
-.on(
-"paymentComplete",
-function(data){
-
-if(
-typeof gtag === "function"
-){
-
-gtag(
-"event",
-"purchase",
-{
-
-currency:"USDT",
-
-value:totalUSDT,
-
-transaction_id:
-data &&
-(
-data.paymentNo ||
-data.transactionId ||
-""
-)
-
-}
-);
-
-}
-
-
-/*
- Clear cart after payment
-*/
-
-cart = [];
-
-saveCart();
+renderProducts();
 
 renderCart();
 
-closeWebMoneyCheckout();
 
+/* ============================================================
+   DEBUG CHECK
+============================================================ */
 
-alert(
-"Payment completed successfully. Thank you for shopping with TURIN PREMIUM STORE."
+console.log(
+ "TURIN TOTAL PRODUCTS:",
+ products.length
 );
 
-})
-
-
-.mount(
-"wm-widget"
+console.log(
+ "TURIN UNIQUE IMAGE URLS:",
+ new Set(
+  products.map(
+   product => product.img
+  )
+ ).size
 );
-
-
-webMoneyMounted = true;
-
-
-}catch(error){
-
-console.error(
-"WebMoney error:",
-error
-);
-
-document.getElementById(
-"wm-widget"
-).innerHTML = `
-
-<div
-style="
-padding:15px;
-background:#151515;
-border:1px solid #333;
-color:#d99;
-font-size:12px;
-text-align:center;
-">
-
-WebMoney checkout could not be initialized.
-
-</div>
-
-`;
-
-}
-
-}
-
-
-/* =========================================================
-   CLOSE WEBMONEY
-========================================================= */
-
-function closeWebMoneyCheckout(){
-
-document
-.getElementById("wmModal")
-.classList.remove("active");
-
-document
-.body.classList.remove("modal-open");
-
-}
-
-
-/* =========================================================
-   MODAL BACKGROUND CLICK
-========================================================= */
-
-document
-.getElementById("wmModal")
-.addEventListener(
-"click",
-function(event){
-
-if(
-event.target === this
-){
-
-closeWebMoneyCheckout();
-
-}
-
-}
-);
-
-
-/* =========================================================
-   IMAGE FALLBACK
-========================================================= */
-
-window.addEventListener(
-"error",
-function(event){
-
-const target =
-event.target;
-
-
-if(
-target &&
-target.tagName === "IMG" &&
-!target.dataset.fallback
-){
-
-target.dataset.fallback =
-"1";
-
-target.src =
-FALLBACK_IMAGE;
-
-}
-
-},
-true
-);
-
-
-/* =========================================================
-   ESC KEY
-========================================================= */
-
-document.addEventListener(
-"keydown",
-function(event){
-
-if(event.key === "Escape"){
-
-closeSearch();
-
-closeMobile();
-
-closeCart();
-
-closeWebMoneyCheckout();
-
-}
-
-}
-);
-
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
-renderProducts(products);
-
-renderCart();
-
-updateCartCount();
 
 </script>
-
-
-<!-- =======================================================
-     WEBMONEY MERCHANT WIDGET
-======================================================= -->
-
-<script
-src="https://merchant.wmtransfer.com/conf/lib/widgets/wmApp.js?v=1.6">
-</script>
-
 
 </body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 </html>
