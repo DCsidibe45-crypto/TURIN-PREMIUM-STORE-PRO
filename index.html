@@ -2831,78 +2831,181 @@ console.log(
 );
 
 
+<script>
+
 /* RETURN POLICY */
 
 if (window.location.pathname === "/return-policy") {
   showReturnPolicy();
 }
 
-function showReturnPolicy(){
+function showReturnPolicy() {
   document.body.innerHTML = `
-    <div style="max-width:900px;margin:auto;padding:30px 20px;font-family:Arial,sans-serif;color:#f2eee6;background:#080807;min-height:100vh;line-height:1.7">
+    <div style="
+      min-height:100vh;
+      background:#080807;
+      color:#f2eee6;
+      font-family:Arial,sans-serif;
+      line-height:1.7;
+    ">
 
-      <a href="/" style="color:#c7a66a;text-decoration:none;font-size:14px;">
-        ← Back to TURIN
-      </a>
+      <div style="
+        max-width:900px;
+        margin:0 auto;
+        padding:50px 24px 70px;
+      ">
 
-      <h1 style="color:#c7a66a;">TURIN PREMIUM STORE</h1>
+        <a href="/" style="
+          color:#c7a66a;
+          text-decoration:none;
+          font-size:14px;
+          display:inline-block;
+          margin-bottom:35px;
+        ">
+          ← Back to TURIN PREMIUM STORE
+        </a>
 
-      <h2>Return Policy</h2>
+        <div style="
+          border-bottom:1px solid #292823;
+          padding-bottom:25px;
+          margin-bottom:35px;
+        ">
+          <div style="
+            color:#c7a66a;
+            font-size:13px;
+            letter-spacing:2px;
+            text-transform:uppercase;
+            margin-bottom:10px;
+          ">
+            TURIN PREMIUM STORE
+          </div>
 
-      <p><strong>Last updated: October 5, 2026</strong></p>
+          <h1 style="
+            font-size:38px;
+            margin:0 0 12px;
+            color:#f2eee6;
+          ">
+            Return Policy
+          </h1>
 
-      <h3>1. Eligible Returns</h3>
-      <p>
-        Customers may request a return if the product is damaged, defective,
-        incorrect, or significantly different from the product ordered.
-      </p>
+          <p style="
+            margin:0;
+            color:#96938c;
+            font-size:14px;
+          ">
+            Last updated: October 5, 2026
+          </p>
+        </div>
 
-      <h3>2. Return Period</h3>
-      <p>
-        Return requests should be made within 7 days of receiving the order.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            1. Eligible Returns
+          </h2>
+          <p>
+            Customers may request a return if the product received is
+            damaged, defective, incorrect, or significantly different
+            from the product ordered.
+          </p>
+        </section>
 
-      <h3>3. Return Conditions</h3>
-      <p>
-        Products should be returned in their original condition and, where
-        applicable, with the original packaging and accessories.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            2. Return Period
+          </h2>
+          <p>
+            Return requests should be submitted within
+            <strong>7 days</strong> of receiving the order.
+          </p>
+        </section>
 
-      <h3>4. Non-Returnable Items</h3>
-      <p>
-        Products may not be eligible for return where the item has been
-        damaged by the customer, used improperly, or where return restrictions apply.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            3. Return Conditions
+          </h2>
+          <p>
+            Products should be returned in their original condition.
+            Where applicable, original packaging, accessories, manuals,
+            and other included items should also be returned.
+          </p>
+        </section>
 
-      <h3>5. How to Request a Return</h3>
-      <p>
-        Contact TURIN PREMIUM STORE customer support with your order details,
-        reason for the return, and photos or other evidence when requested.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            4. Non-Returnable Items
+          </h2>
+          <p>
+            A return may not be accepted where an item has been damaged
+            by the customer, improperly used, altered, or otherwise
+            made unsuitable for resale.
+          </p>
+        </section>
 
-      <h3>6. Refunds</h3>
-      <p>
-        Once an approved return has been inspected, TURIN PREMIUM STORE will
-        communicate the applicable refund or replacement process.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            5. How to Request a Return
+          </h2>
+          <p>
+            Contact TURIN PREMIUM STORE customer support with your
+            order details and the reason for the return. Photos or
+            other supporting information may be requested.
+          </p>
+        </section>
 
-      <h3>7. Return Shipping</h3>
-      <p>
-        Where the return is due to a defective, damaged, incorrect, or
-        significantly misrepresented product, return-shipping responsibility
-        will be reviewed accordingly.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            6. Refunds & Replacements
+          </h2>
+          <p>
+            Once an approved return has been received and inspected,
+            TURIN PREMIUM STORE will communicate the applicable
+            refund or replacement process.
+          </p>
+        </section>
 
-      <h3>8. Contact</h3>
-      <p>
-        For return requests or questions, please contact TURIN PREMIUM STORE
-        customer support.
-      </p>
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#c7a66a;font-size:21px;">
+            7. Return Shipping
+          </h2>
+          <p>
+            Where a return is caused by a defective, damaged, incorrect,
+            or significantly misrepresented product, responsibility for
+            return shipping will be reviewed accordingly.
+          </p>
+        </section>
 
-      <p style="margin-top:40px;color:#96938c;">
-        © 2026 TURIN PREMIUM STORE. All rights reserved.
-      </p>
+        <section style="
+          margin-top:45px;
+          padding:25px;
+          border:1px solid #292823;
+          background:#10100e;
+        ">
+          <h2 style="color:#c7a66a;font-size:21px;margin-top:0;">
+            8. Contact TURIN
+          </h2>
 
+          <p style="margin-bottom:8px;">
+            For return requests or questions, please contact
+            TURIN PREMIUM STORE customer support.
+          </p>
+
+          <p style="margin:0;color:#96938c;">
+            We are committed to providing a premium and reliable
+            shopping experience.
+          </p>
+        </section>
+
+        <div style="
+          margin-top:55px;
+          padding-top:20px;
+          border-top:1px solid #292823;
+          color:#96938c;
+          font-size:13px;
+          text-align:center;
+        ">
+          © 2026 TURIN PREMIUM STORE. All rights reserved.
+        </div>
+
+      </div>
     </div>
   `;
 }
