@@ -1,23 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMZP7XBG');
-</script>
-<!-- End Google Tag Manager -->
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-RF9N3ZKHT9');
-</script> 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -27,6 +10,30 @@ gtag('config', 'G-RF9N3ZKHT9');
 content="TURIN PREMIUM STORE — Global luxury technology, design and lifestyle objects.">
 
 <title>TURIN PREMIUM STORE — Global Luxury</title>
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),
+dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NMZP7XBG');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-RF9N3ZKHT9');
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://images.unsplash.com">
@@ -788,6 +795,47 @@ a{
  width:100%;
 }
 
+/* RETURN POLICY */
+
+.returnPolicy{
+ min-height:100vh;
+ background:#080807;
+ color:#f2eee6;
+ padding:70px 24px;
+}
+
+.returnPolicyInner{
+ max-width:900px;
+ margin:auto;
+}
+
+.returnPolicy h1{
+ color:#c7a66a;
+ font:42px "Playfair Display",serif;
+ margin:0 0 30px;
+}
+
+.returnPolicy h2{
+ font:34px "Playfair Display",serif;
+ margin:0 0 20px;
+}
+
+.returnPolicy h3{
+ color:#e9e1d2;
+ margin-top:30px;
+}
+
+.returnPolicy p{
+ color:#96938c;
+ line-height:1.8;
+}
+
+.returnPolicyBack{
+ display:inline-block;
+ margin-top:30px;
+ color:#c7a66a;
+}
+
 /* FOOTER */
 
 .footer{
@@ -967,10 +1015,15 @@ a{
 </head>
 
 <body>
- <!-- Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
 <noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<iframe
+ src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
+ height="0"
+ width="0"
+ style="display:none;visibility:hidden">
+</iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
@@ -979,7 +1032,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="top">
  WORLDWIDE DELIVERY · USD / USDT DISPLAY · WEBMONEY PRIVATE CHECKOUT
 </div>
-
 
 <!-- NAV -->
 
@@ -1002,22 +1054,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   <button
    class="circle mobileOnly"
-   onclick="toggleMobileNav()"
-  >
+   onclick="toggleMobileNav()">
    ≡
   </button>
 
   <button
    class="circle"
-   onclick="openCart()"
-  >
+   onclick="openCart()">
    Bag <span id="bagCount">0</span>
   </button>
 
  </div>
 
 </header>
-
 
 <!-- HERO -->
 
@@ -1044,15 +1093,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
    <button
     class="btn"
-    onclick="goShop()"
-   >
+    onclick="goShop()">
     Enter the Collection
    </button>
 
    <button
     class="btn alt"
-    onclick="document.querySelector('#collections').scrollIntoView()"
-   >
+    onclick="document.querySelector('#collections').scrollIntoView({behavior:'smooth'})">
     View The House
    </button>
 
@@ -1061,7 +1108,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
  </div>
 
 </section>
-
 
 <!-- MARQUEE -->
 
@@ -1078,7 +1124,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
  </span>
 
 </div>
-
 
 <!-- INTRO -->
 
@@ -1097,7 +1142,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
  </p>
 
 </section>
-
 
 <!-- MANIFEST -->
 
@@ -1133,7 +1177,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 </div>
 
-
 <!-- COLLECTION CHAPTERS -->
 
 <section class="feature" id="collections">
@@ -1158,15 +1201,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
  </div>
 
-
  <div class="featureGrid">
 
   <article class="featureCard">
 
    <img
     src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85"
-    alt="Precision Objects"
-   >
+    alt="Precision Objects">
 
    <div class="featureText">
 
@@ -1186,13 +1227,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   </article>
 
-
   <article class="featureCard">
 
    <img
     src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
-    alt="Private Sound"
-   >
+    alt="Private Sound">
 
    <div class="featureText">
 
@@ -1208,13 +1247,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   </article>
 
-
   <article class="featureCard">
 
    <img
     src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
-    alt="Future Systems"
-   >
+    alt="Future Systems">
 
    <div class="featureText">
 
@@ -1234,7 +1271,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 </section>
 
-
 <!-- SHOP -->
 
 <section class="shop" id="shop">
@@ -1253,21 +1289,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   </div>
 
-  <div
-   class="count"
-   id="count"
-  >
-  </div>
+  <div class="count" id="count"></div>
 
  </div>
-
 
  <div
   class="filters"
-  id="filters"
- >
+  id="filters">
  </div>
-
 
  <div class="searchbar">
 
@@ -1275,38 +1304,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
    id="search"
    type="search"
    placeholder="Search the collection — smartphone, camera, sound..."
-   autocomplete="off"
-  >
+   autocomplete="off">
 
   <div
    class="count"
-   id="count2"
-  >
+   id="count2">
   </div>
 
  </div>
 
-
  <div
   class="products"
-  id="products"
- >
+  id="products">
  </div>
 
 </section>
-
 
 <!-- EDITORIAL -->
 
 <section
  class="editorial"
- id="journal"
->
+ id="journal">
 
  <img
   src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1500&q=90"
-  alt="TURIN editorial"
- >
+  alt="TURIN editorial">
 
  <div class="editorialText">
 
@@ -1326,15 +1348,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <button
    class="btn"
    style="width:max-content;margin-top:20px"
-   onclick="goShop()"
-  >
+   onclick="goShop()">
    Explore Objects
   </button>
 
  </div>
 
 </section>
-
 
 <!-- FOOTER -->
 
@@ -1358,7 +1378,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   </div>
 
-
   <div>
 
    <div class="mono">
@@ -1369,11 +1388,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <a href="#house">The House</a><br>
     <a href="#collections">Collections</a><br>
     <a href="#shop">Objects</a><br>
-    <a href="#journal">Journal</a>
+    <a href="#journal">Journal</a><br>
+    <a href="/return-policy">Return Policy</a>
    </p>
 
   </div>
-
 
   <div>
 
@@ -1386,8 +1405,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <a
      href="https://wa.me/255797955045"
      target="_blank"
-     rel="noopener"
-    >
+     rel="noopener">
      WhatsApp Concierge
     </a>
 
@@ -1400,7 +1418,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
    </p>
 
   </div>
-
 
   <div>
 
@@ -1418,7 +1435,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
  </div>
 
-
  <div class="copyright">
 
   <span>
@@ -1433,23 +1449,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 </footer>
 
-
 <!-- OVERLAY -->
 
 <div
  class="overlay"
  id="overlay"
- onclick="closeAll()"
->
+ onclick="closeAll()">
 </div>
-
 
 <!-- CART -->
 
 <aside
  class="cartDrawer"
- id="cart"
->
+ id="cart">
 
  <div class="cartHead">
 
@@ -1459,20 +1471,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   <button
    class="close"
-   onclick="closeAll()"
-  >
+   onclick="closeAll()">
    ×
   </button>
 
  </div>
 
-
  <div
   class="cartItems"
-  id="cartItems"
- >
+  id="cartItems">
  </div>
-
 
  <div class="cartFoot">
 
@@ -1490,8 +1498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
   <button
    class="checkout"
-   onclick="checkout()"
-  >
+   onclick="checkout()">
    Proceed to WebMoney
   </button>
 
@@ -1499,37 +1506,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 </aside>
 
-
 <!-- PAYMENT -->
 
 <div
  class="modal"
- id="payment"
->
+ id="payment">
 
  <button
   class="close"
-  onclick="closeAll()"
- >
+  onclick="closeAll()">
   ×
  </button>
-
 
  <div class="kicker mono">
   PRIVATE CHECKOUT
  </div>
 
-
  <h2>
   WebMoney
  </h2>
-
 
  <p>
   Your order is prepared for the WebMoney merchant.
   TURIN presents WebMoney as the only checkout method.
  </p>
-
 
  <div class="wm">
 
@@ -1541,7 +1541,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
    T270243849673
   </strong>
 
-
   <div class="field">
 
    <label>
@@ -1550,11 +1549,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
    <input
     id="orderNo"
-    readonly
-   >
+    readonly>
 
   </div>
-
 
   <div class="field">
 
@@ -1564,33 +1561,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
    <input
     id="orderAmount"
-    readonly
-   >
+    readonly>
 
   </div>
-
 
   <button
    class="btn"
    style="width:100%"
-   onclick="launchWebMoney()"
-  >
+   onclick="launchWebMoney()">
    Open WebMoney Merchant
   </button>
 
  </div>
 
-
  <p
   class="mono"
-  style="font-size:9px"
- >
+  style="font-size:9px">
   Production note: server-side WebMoney Result verification should be
   connected before treating a browser return as proof of payment.
  </p>
 
 </div>
-
 
 <script>
 
@@ -1598,7 +1589,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
    TURIN PREMIUM STORE
    FINAL 256 PRODUCT ENGINE
    ============================================================ */
-
 
 /* CATEGORIES */
 
@@ -1613,7 +1603,6 @@ const CATS = [
  "Accessories",
  "Lifestyle"
 ];
-
 
 /* ============================================================
    PRODUCT NAMES
@@ -1712,13 +1701,8 @@ const stems = {
 
 };
 
-
 /* ============================================================
    IMAGE VOCABULARY
-
-   IMPORTANT:
-   No shared 4-image pool.
-   Each product receives a unique lock number.
 ============================================================ */
 
 const visualWords = {
@@ -1877,17 +1861,8 @@ const visualWords = {
 
 };
 
-
 /* ============================================================
    UNIQUE IMAGE GENERATOR
-
-   Product 1  → lock 1
-   Product 2  → lock 2
-   ...
-   Product 256 → lock 256
-
-   No image pool.
-   No i % 4.
 ============================================================ */
 
 function uniqueImage(category,productId){
@@ -1895,23 +1870,22 @@ function uniqueImage(category,productId){
  const words = visualWords[category];
 
  const keyword =
-   words[(productId - 1) % words.length];
+  words[(productId-1)%words.length];
 
  const search =
-   encodeURIComponent(
-     keyword +
-     ", luxury, editorial, premium, studio"
-   );
+  encodeURIComponent(
+   keyword+
+   ", luxury, editorial, premium, studio"
+  );
 
  return (
-   "https://loremflickr.com/1000/1250/" +
-   search +
-   "?lock=" +
-   productId
+  "https://loremflickr.com/1000/1250/"+
+  search+
+  "?lock="+
+  productId
  );
 
 }
-
 
 /* ============================================================
    PRICES
@@ -1961,7 +1935,6 @@ const priceTable = {
 
 };
 
-
 /* ============================================================
    CREATE 256 PRODUCTS
 ============================================================ */
@@ -1970,7 +1943,6 @@ let products = [];
 
 let globalId = 1;
 
-
 Object.entries(stems).forEach(
  ([category,names]) => {
 
@@ -1978,83 +1950,70 @@ Object.entries(stems).forEach(
    (name,index) => {
 
     let model =
-      String(
-       (index % 32) + 1
-      ).padStart(2,"0");
-
+     String((index%32)+1).padStart(2,"0");
 
     let suffix;
 
-
-    if(category === "Mobile"){
-      suffix = "X" + model;
+    if(category==="Mobile"){
+     suffix="X"+model;
     }
-
-    else if(category === "Computing"){
-      suffix = "Pro " + model;
+    else if(category==="Computing"){
+     suffix="Pro "+model;
     }
-
-    else if(category === "Audio"){
-      suffix = "Edition " + model;
+    else if(category==="Audio"){
+     suffix="Edition "+model;
     }
-
-    else if(category === "Cameras"){
-      suffix = "Cine " + model;
+    else if(category==="Cameras"){
+     suffix="Cine "+model;
     }
-
-    else if(category === "Gaming"){
-      suffix = "GT " + model;
+    else if(category==="Gaming"){
+     suffix="GT "+model;
     }
-
-    else if(category === "Lifestyle"){
-      suffix = "Atelier " + model;
+    else if(category==="Lifestyle"){
+     suffix="Atelier "+model;
     }
-
     else{
-      suffix = "Series " + model;
+     suffix="Series "+model;
     }
-
 
     products.push({
 
-      id:globalId,
+     id:globalId,
 
-      cat:category,
+     cat:category,
 
-      name:
-        name +
-        " " +
-        suffix,
+     name:
+      name+
+      " "+
+      suffix,
 
-      price:
-        priceTable[category]
-        [index % 8],
+     price:
+      priceTable[category][index%8],
 
-      img:
-        uniqueImage(
-          category,
-          globalId
-        ),
+     img:
+      uniqueImage(
+       category,
+       globalId
+      ),
 
-      desc:
-        [
-          "Signature edition",
-          "Private collection",
-          "Limited house selection",
-          "Engineered for modern living"
-        ][index % 4],
+     desc:
+      [
+       "Signature edition",
+       "Private collection",
+       "Limited house selection",
+       "Engineered for modern living"
+      ][index%4],
 
-      badge:
-        index % 8 === 0
-        ? "PRIVATE EDITION"
-        :
-        index % 6 === 0
-        ? "NEW"
-        :
-        ""
+     badge:
+      index%8===0
+      ?"PRIVATE EDITION"
+      :
+      index%6===0
+      ?"NEW"
+      :
+      ""
 
     });
-
 
     globalId++;
 
@@ -2063,7 +2022,6 @@ Object.entries(stems).forEach(
 
  }
 );
-
 
 /* ============================================================
    VERIFY PRODUCT COUNT
@@ -2074,7 +2032,6 @@ console.log(
  products.length
 );
 
-
 /* ============================================================
    STATE
 ============================================================ */
@@ -2083,13 +2040,11 @@ let cart =
  JSON.parse(
   localStorage.getItem(
    "turin_luxury_cart"
-  ) || "[]"
+  )||"[]"
  );
 
-let activeCategory = "All";
-
-let searchTerm = "";
-
+let activeCategory="All";
+let searchTerm="";
 
 /* ============================================================
    MONEY
@@ -2097,17 +2052,16 @@ let searchTerm = "";
 
 function money(value){
 
- return "$" +
- value.toLocaleString(
-  "en-US",
-  {
-   minimumFractionDigits:2,
-   maximumFractionDigits:2
-  }
- );
+ return "$"+
+  Number(value).toLocaleString(
+   "en-US",
+   {
+    minimumFractionDigits:2,
+    maximumFractionDigits:2
+   }
+  );
 
 }
-
 
 /* ============================================================
    MOBILE NAV
@@ -2116,17 +2070,14 @@ function money(value){
 function toggleMobileNav(){
 
  const nav =
-  document.querySelector(
-   ".navlinks"
-  );
+  document.querySelector(".navlinks");
 
  nav.style.display =
-  nav.style.display === "flex"
-  ? "none"
-  : "flex";
+  nav.style.display==="flex"
+  ?"none"
+  :"flex";
 
 }
-
 
 /* ============================================================
    SHOP SCROLL
@@ -2134,14 +2085,16 @@ function toggleMobileNav(){
 
 function goShop(){
 
- document
-  .querySelector("#shop")
-  .scrollIntoView({
+ const shop =
+  document.querySelector("#shop");
+
+ if(shop){
+  shop.scrollIntoView({
    behavior:"smooth"
   });
+ }
 
 }
-
 
 /* ============================================================
    FILTERS
@@ -2149,29 +2102,45 @@ function goShop(){
 
 function renderFilters(){
 
- document.getElementById(
-  "filters"
- ).innerHTML =
+ const filters =
+  document.getElementById("filters");
 
- CATS.map(
-  category => `
+ if(!filters){
+  return;
+ }
 
-   <button
-    class="filter ${
-     category === activeCategory
-     ? "active"
-     : ""
-    }"
-    onclick="setCategory('${category}')"
-   >
-    ${category}
-   </button>
+ filters.innerHTML =
+  CATS.map(
+   category=>`
 
-  `
- ).join("");
+    <button
+     class="filter ${
+      category===activeCategory
+      ?"active"
+      :""
+     }"
+     onclick="setCategory(${JSON.stringify(category)})">
+     ${category}
+    </button>
+
+   `
+  ).join("");
 
 }
 
+/* ============================================================
+   PRODUCT IMAGE FALLBACK
+============================================================ */
+
+function productFallback(id){
+
+ return (
+  "https://picsum.photos/seed/turin-product-"+
+  id+
+  "/1000/1250"
+ );
+
+}
 
 /* ============================================================
    RENDER PRODUCTS
@@ -2179,146 +2148,129 @@ function renderFilters(){
 
 function renderProducts(){
 
+ const container =
+  document.getElementById("products");
+
+ if(!container){
+  return;
+ }
+
+ const normalizedSearch =
+  String(searchTerm||"")
+  .trim()
+  .toLowerCase();
+
  const list =
   products.filter(
-   product => {
+   product=>{
 
     const categoryMatch =
-      activeCategory === "All" ||
-      product.cat === activeCategory;
-
+     activeCategory==="All" ||
+     product.cat===activeCategory;
 
     const text =
-      (
-       product.name +
-       " " +
-       product.cat +
-       " " +
-       product.desc
-      ).toLowerCase();
-
+     (
+      product.name+
+      " "+
+      product.cat+
+      " "+
+      product.desc
+     ).toLowerCase();
 
     const searchMatch =
-      text.includes(
-       searchTerm.toLowerCase()
-      );
+     !normalizedSearch ||
+     text.includes(normalizedSearch);
 
-
-    return (
-     categoryMatch &&
-     searchMatch
-    );
+    return categoryMatch && searchMatch;
 
    }
   );
 
+ container.innerHTML =
+  list.map(
+   product=>`
 
- document.getElementById(
-  "products"
- ).innerHTML =
+    <article class="product">
 
- list.map(
-  product => `
+     <div class="pic">
 
-   <article
-    class="product"
-   >
+      <img
+       src="${product.img}"
+       alt="${product.name}"
+       loading="lazy"
+       onerror="
+        this.onerror=null;
+        this.src=productFallback(${product.id});
+       ">
 
-    <div class="pic">
-
-     <img
-      src="${product.img}"
-      alt="${product.name}"
-      loading="lazy"
-      onerror="
-       this.onerror=null;
-       this.src='https://picsum.photos/seed/turin-${product.id}/1000/1250';
-      "
-     >
-
-
-     ${
-      product.badge
-      ?
-      `
-       <span class="badge">
-        ${product.badge}
-       </span>
-      `
-      :
-      ""
-     }
-
-
-     <button
-      class="wish"
-      onclick="
-       this.textContent =
-       this.textContent === '♡'
-       ? '♥'
-       : '♡'
-      "
-     >
-      ♡
-     </button>
-
-    </div>
-
-
-    <div class="pbody">
-
-     <div class="cat">
-      ${product.cat}
-     </div>
-
-
-     <div class="pname">
-      ${product.name}
-     </div>
-
-
-     <div class="pdesc">
-      ${product.desc}
-     </div>
-
-
-     <div class="prow">
-
-      <span class="price">
-       ${money(product.price)}
-      </span>
-
+      ${
+       product.badge
+       ?`
+        <span class="badge">
+         ${product.badge}
+        </span>
+       `
+       :""
+      }
 
       <button
-       class="add"
-       onclick="addToCart(${product.id})"
-      >
-       Add to bag
+       class="wish"
+       type="button"
+       aria-label="Add to wishlist"
+       onclick="
+        this.textContent=
+        this.textContent==='♡'
+        ?'♥'
+        :'♡';
+       ">
+       ♡
       </button>
 
      </div>
 
-    </div>
+     <div class="pbody">
 
-   </article>
+      <div class="cat">
+       ${product.cat}
+      </div>
 
-  `
- ).join("");
+      <div class="pname">
+       ${product.name}
+      </div>
 
+      <div class="pdesc">
+       ${product.desc}
+      </div>
 
- document.getElementById(
-  "count"
- ).textContent =
+      <div class="prow">
+
+       <span class="price">
+        ${money(product.price)}
+       </span>
+
+       <button
+        class="add"
+        type="button"
+        onclick="addToCart(${product.id})">
+        Add to bag
+       </button>
+
+      </div>
+
+     </div>
+
+    </article>
+
+   `
+  ).join("");
+
+ document.getElementById("count").textContent =
   `${list.length} / ${products.length} OBJECTS`;
 
-
- document.getElementById(
-  "count2"
- ).textContent =
+ document.getElementById("count2").textContent =
   `${list.length} results`;
 
 }
-
 
 /* ============================================================
    SET CATEGORY
@@ -2326,17 +2278,13 @@ function renderProducts(){
 
 function setCategory(category){
 
- activeCategory =
-  category;
+ activeCategory=category;
 
  renderFilters();
-
  renderProducts();
-
  goShop();
 
 }
-
 
 /* ============================================================
    ADD TO CART
@@ -2344,34 +2292,34 @@ function setCategory(category){
 
 function addToCart(id){
 
- const existing =
-  cart.find(
-   item => item.id === id
+ const product =
+  products.find(
+   p=>p.id===id
   );
 
-
- if(existing){
-
-  existing.qty++;
-
+ if(!product){
+  return;
  }
 
- else{
+ const existing =
+  cart.find(
+   item=>item.id===id
+  );
 
+ if(existing){
+  existing.qty++;
+ }
+ else{
   cart.push({
    id:id,
    qty:1
   });
-
  }
 
-
  saveCart();
-
  openCart();
 
 }
-
 
 /* ============================================================
    SAVE CART
@@ -2388,150 +2336,145 @@ function saveCart(){
 
 }
 
-
 /* ============================================================
    RENDER CART
 ============================================================ */
 
 function renderCart(){
 
+ const bagCount =
+  document.getElementById("bagCount");
+
+ const cartItems =
+  document.getElementById("cartItems");
+
+ const cartTotal =
+  document.getElementById("cartTotal");
+
+ if(!bagCount||!cartItems||!cartTotal){
+  return;
+ }
+
  const count =
   cart.reduce(
-   (total,item) =>
-    total + item.qty,
+   (total,item)=>
+    total+Number(item.qty||0),
    0
   );
 
-
- document.getElementById(
-  "bagCount"
- ).textContent =
-  count;
-
-
- const cartItems =
-  document.getElementById(
-   "cartItems"
-  );
-
+ bagCount.textContent=count;
 
  if(!cart.length){
 
-  cartItems.innerHTML = `
+  cartItems.innerHTML=`
    <p style="color:#777">
     Your private bag is empty.
    </p>
   `;
 
+  cartTotal.textContent="$0.00";
+
+  return;
  }
 
- else{
-
-  cartItems.innerHTML =
-
-   cart.map(
-    item => {
-
-     const product =
-      products.find(
-       p => p.id === item.id
-      );
-
-
-     return `
-
-      <div class="cartItem">
-
-       <img
-        src="${product.img}"
-        alt="${product.name}"
-        onerror="
-         this.onerror=null;
-         this.src='https://picsum.photos/seed/turin-cart-${product.id}/400/500';
-        "
-       >
-
-
-       <div>
-
-        <h4>
-         ${product.name}
-        </h4>
-
-        <small>
-         ${money(product.price)}
-         ·
-         ${product.cat}
-        </small>
-
-
-        <div class="qty">
-
-         <button
-          onclick="changeQty(${product.id},-1)"
-         >
-          −
-         </button>
-
-         <button>
-          ${item.qty}
-         </button>
-
-         <button
-          onclick="changeQty(${product.id},1)"
-         >
-          +
-         </button>
-
-        </div>
-
-       </div>
-
-
-       <strong>
-        ${money(
-         product.price *
-         item.qty
-        )}
-       </strong>
-
-      </div>
-
-     `;
-
-    }
-   ).join("");
-
- }
-
-
- const total =
-  cart.reduce(
-   (sum,item) => {
+ cartItems.innerHTML =
+  cart.map(
+   item=>{
 
     const product =
      products.find(
-      p => p.id === item.id
+      p=>p.id===item.id
      );
 
+    if(!product){
+     return "";
+    }
+
+    return `
+
+     <div class="cartItem">
+
+      <img
+       src="${product.img}"
+       alt="${product.name}"
+       onerror="
+        this.onerror=null;
+        this.src=productFallback(${product.id});
+       ">
+
+      <div>
+
+       <h4>
+        ${product.name}
+       </h4>
+
+       <small>
+        ${money(product.price)}
+        ·
+        ${product.cat}
+       </small>
+
+       <div class="qty">
+
+        <button
+         type="button"
+         onclick="changeQty(${product.id},-1)">
+         −
+        </button>
+
+        <button
+         type="button">
+         ${item.qty}
+        </button>
+
+        <button
+         type="button"
+         onclick="changeQty(${product.id},1)">
+         +
+        </button>
+
+       </div>
+
+      </div>
+
+      <strong>
+       ${money(product.price*item.qty)}
+      </strong>
+
+     </div>
+
+    `;
+
+   }
+  ).join("");
+
+ const total =
+  cart.reduce(
+   (sum,item)=>{
+
+    const product =
+     products.find(
+      p=>p.id===item.id
+     );
+
+    if(!product){
+     return sum;
+    }
+
     return (
-     sum +
-     product.price *
-     item.qty
+     sum+
+     product.price*
+     Number(item.qty||0)
     );
 
    },
    0
   );
 
-
- document.getElementById(
-  "cartTotal"
- ).textContent =
+ cartTotal.textContent=
   money(total);
 
 }
-
 
 /* ============================================================
    CHANGE QUANTITY
@@ -2541,32 +2484,29 @@ function changeQty(id,direction){
 
  const item =
   cart.find(
-   x => x.id === id
+   x=>x.id===id
   );
-
 
  if(!item){
   return;
  }
 
+ item.qty=
+  Number(item.qty||0)+
+  direction;
 
- item.qty += direction;
+ if(item.qty<=0){
 
-
- if(item.qty <= 0){
-
-  cart =
+  cart=
    cart.filter(
-    x => x.id !== id
+    x=>x.id!==id
    );
 
  }
 
-
  saveCart();
 
 }
-
 
 /* ============================================================
    OPEN CART
@@ -2583,7 +2523,6 @@ function openCart(){
   .classList.add("on");
 
 }
-
 
 /* ============================================================
    CLOSE EVERYTHING
@@ -2605,7 +2544,6 @@ function closeAll(){
 
 }
 
-
 /* ============================================================
    CHECKOUT
 ============================================================ */
@@ -2622,62 +2560,56 @@ function checkout(){
 
  }
 
-
  const total =
   cart.reduce(
-   (sum,item) => {
+   (sum,item)=>{
 
     const product =
      products.find(
-      p => p.id === item.id
+      p=>p.id===item.id
      );
 
+    if(!product){
+     return sum;
+    }
+
     return (
-     sum +
-     product.price *
-     item.qty
+     sum+
+     product.price*
+     Number(item.qty||0)
     );
 
    },
    0
   );
 
-
  const orderNo =
-  "TRN-" +
+  "TRN-"+
   Date.now()
-  .toString()
-  .slice(-9);
-
+   .toString()
+   .slice(-9);
 
  document.getElementById(
   "orderNo"
- ).value =
-  orderNo;
-
+ ).value=orderNo;
 
  document.getElementById(
   "orderAmount"
- ).value =
-  money(total);
-
+ ).value=money(total);
 
  document
   .getElementById("cart")
   .classList.remove("open");
 
-
  document
   .getElementById("payment")
   .classList.add("on");
-
 
  document
   .getElementById("overlay")
   .classList.add("on");
 
 }
-
 
 /* ============================================================
    WEBMONEY
@@ -2687,41 +2619,24 @@ function launchWebMoney(){
 
  const amount =
   document
-   .getElementById(
-    "orderAmount"
-   )
+   .getElementById("orderAmount")
    .value
-   .replace(
-    /[$,]/g,
-    ""
-   );
-
+   .replace(/[$,]/g,"");
 
  const orderNo =
-  document.getElementById(
-   "orderNo"
-  ).value;
-
+  document.getElementById("orderNo").value;
 
  const form =
-  document.createElement(
-   "form"
-  );
+  document.createElement("form");
 
+ form.method="POST";
 
- form.method =
-  "POST";
-
-
- form.action =
+ form.action=
   "https://merchant.wmtransfer.com/lmi/payment_utf.asp";
 
+ form.target="_blank";
 
- form.target =
-  "_blank";
-
-
- const fields = {
+ const fields={
 
   LMI_PAYEE_PURSE:
    "T270243849673",
@@ -2733,66 +2648,50 @@ function launchWebMoney(){
    orderNo,
 
   LMI_PAYMENT_DESC:
-   "TURIN PREMIUM STORE " +
-   orderNo,
+   "TURIN PREMIUM STORE "+orderNo,
 
   LMI_SIM_MODE:
    "0"
 
  };
 
-
- Object.entries(
-  fields
- ).forEach(
-  ([key,value]) => {
+ Object.entries(fields).forEach(
+  ([key,value])=>{
 
    const input =
-    document.createElement(
-     "input"
-    );
+    document.createElement("input");
 
-   input.type =
-    "hidden";
+   input.type="hidden";
+   input.name=key;
+   input.value=value;
 
-   input.name =
-    key;
-
-   input.value =
-    value;
-
-   form.appendChild(
-    input
-   );
+   form.appendChild(input);
 
   }
  );
 
-
- document.body.appendChild(
-  form
- );
-
+ document.body.appendChild(form);
 
  form.submit();
-
 
  form.remove();
 
 }
 
-
 /* ============================================================
    SEARCH
 ============================================================ */
 
-document
- .getElementById("search")
- .addEventListener(
-  "input",
-  event => {
+const searchInput =
+ document.getElementById("search");
 
-   searchTerm =
+if(searchInput){
+
+ searchInput.addEventListener(
+  "input",
+  event=>{
+
+   searchTerm=
     event.target.value;
 
    renderProducts();
@@ -2800,128 +2699,135 @@ document
   }
  );
 
-
-/* ============================================================
-   START
-============================================================ */
-
-renderFilters();
-
-renderProducts();
-
-renderCart();
-
-
-/* ============================================================
-   DEBUG CHECK
-============================================================ */
-
-console.log(
- "TURIN TOTAL PRODUCTS:",
- products.length
-);
-console.log(
- "TURIN UNIQUE IMAGE URLS:",
- new Set(
-  products.map(
-   product => product.img
-  )
- ).size
-);
-
-
-<script>
+}
 
 /* ============================================================
    RETURN POLICY
 ============================================================ */
 
-function showReturnPolicy() {
-  document.body.innerHTML = `
-    <div style="
-      min-height:100vh;
-      background:#080807;
-      color:#f2eee6;
-      padding:60px 24px;
-      font-family:Arial,sans-serif;
-    ">
-      <div style="
-        max-width:900px;
-        margin:auto;
-      ">
-        <h1 style="
-          color:#c7a66a;
-          font-size:42px;
-          margin-bottom:30px;
-        ">
-          TURIN PREMIUM STORE
-        </h1>
+function showReturnPolicy(){
 
-        <h2>Return Policy</h2>
+ document.body.innerHTML=`
 
-        <p>
-          At TURIN PREMIUM STORE, customer satisfaction is important to us.
-          We accept eligible returns according to the conditions below.
-        </p>
+  <main class="returnPolicy">
 
-        <h3>Return Eligibility</h3>
-        <p>
-          Items must be returned in their original condition, unused,
-          undamaged, and with original packaging and accessories.
-        </p>
+   <div class="returnPolicyInner">
 
-        <h3>Return Period</h3>
-        <p>
-          Customers should contact TURIN PREMIUM STORE within 7 days
-          of receiving an eligible product.
-        </p>
+    <h1>
+     TURIN PREMIUM STORE
+    </h1>
 
-        <h3>Non-Returnable Items</h3>
-        <p>
-          Used products, damaged products caused by the customer,
-          opened hygiene products, and items without original packaging
-          may not be eligible for return.
-        </p>
+    <h2>
+     Return Policy
+    </h2>
 
-        <h3>Refunds</h3>
-        <p>
-          Approved refunds will be processed after the returned product
-          has been inspected and accepted.
-        </p>
+    <p>
+     At TURIN PREMIUM STORE, customer satisfaction is important to us.
+     We accept eligible returns according to the conditions below.
+    </p>
 
-        <h3>How to Request a Return</h3>
-        <p>
-          Contact TURIN PREMIUM STORE customer support with your order
-          details and reason for the return.
-        </p>
+    <h3>
+     Return Eligibility
+    </h3>
 
-        <p style="margin-top:40px;">
-          <a href="/" style="
-            color:#c7a66a;
-            text-decoration:none;
-          ">
-            ← Back to TURIN PREMIUM STORE
-          </a>
-        </p>
-      </div>
-    </div>
-  `;
+    <p>
+     Items must be returned in their original condition, unused,
+     undamaged, and with original packaging and accessories.
+    </p>
+
+    <h3>
+     Return Period
+    </h3>
+
+    <p>
+     Customers should contact TURIN PREMIUM STORE within 7 days
+     of receiving an eligible product.
+    </p>
+
+    <h3>
+     Non-Returnable Items
+    </h3>
+
+    <p>
+     Used products, damaged products caused by the customer,
+     opened hygiene products, and items without original packaging
+     may not be eligible for return.
+    </p>
+
+    <h3>
+     Refunds
+    </h3>
+
+    <p>
+     Approved refunds will be processed after the returned product
+     has been inspected and accepted.
+    </p>
+
+    <h3>
+     How to Request a Return
+    </h3>
+
+    <p>
+     Contact TURIN PREMIUM STORE customer support with your order
+     details and reason for the return.
+    </p>
+
+    <p>
+     <a
+      class="returnPolicyBack"
+      href="/">
+      ← Back to TURIN PREMIUM STORE
+     </a>
+    </p>
+
+   </div>
+
+  </main>
+
+ `;
+
 }
 
-if (window.location.pathname === "/return-policy") {
+/* ============================================================
+   START APPLICATION
+============================================================ */
+
+function startStore(){
+
+ if(window.location.pathname==="/return-policy"){
+
   showReturnPolicy();
-} else {
-  renderFilters();
-  renderProducts();
-  renderCart();
+  return;
+
+ }
+
+ renderFilters();
+ renderProducts();
+ renderCart();
+
+ console.log(
+  "TURIN TOTAL PRODUCTS:",
+  products.length
+ );
+
+ console.log(
+  "TURIN UNIQUE IMAGE URLS:",
+  new Set(
+   products.map(
+    product=>product.img
+   )
+  ).size
+ );
+
 }
 
-console.log("TURIN PRODUCTS:", products.length);
-console.log(
-  "TURIN UNIQUE IMAGE URLS:",
-  new Set(products.map(product => product.img)).size
-);
+/* ============================================================
+   START
+============================================================ */
+
+startStore();
+
 </script>
 
 </body>
-</html> 
+</html>
