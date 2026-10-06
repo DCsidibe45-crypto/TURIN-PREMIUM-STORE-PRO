@@ -1,0 +1,2826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>TURIN PREMIUM STORE</title>
+    <link>https://turin-premium-store-pro-api.onrender.com/</link>
+    <description>Official TURIN PREMIUM STORE product catalogue</description>
+    <g:target_country>TZ</g:target_country>
+    <g:content_language>en</g:content_language>
+    <item>
+      <g:id>turin-1</g:id>
+      <g:title>Aurelia X01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-1</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=1</g:image_link>
+      <g:price>899.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-2</g:id>
+      <g:title>Monarch X02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-2</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=2</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-3</g:id>
+      <g:title>Sovereign X03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-3</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/titanium%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=3</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-4</g:id>
+      <g:title>Élan X04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-4</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/flagship%20phone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=4</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-5</g:id>
+      <g:title>NOVA X05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-5</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=5</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-6</g:id>
+      <g:title>Velour X06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-6</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/black%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=6</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-7</g:id>
+      <g:title>Lucent X07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-7</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/silver%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=7</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-8</g:id>
+      <g:title>Regent X08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-8</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/foldable%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=8</g:image_link>
+      <g:price>3890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-9</g:id>
+      <g:title>Aria X09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-9</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20mobile%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=9</g:image_link>
+      <g:price>899.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-10</g:id>
+      <g:title>Vantage X10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-10</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smartphone%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=10</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-11</g:id>
+      <g:title>Noir X11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-11</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20phone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=11</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-12</g:id>
+      <g:title>Crown X12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-12</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=12</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-13</g:id>
+      <g:title>Maison X13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-13</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/minimal%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=13</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-14</g:id>
+      <g:title>Eclipse X14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-14</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smartphone%20product%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=14</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-15</g:id>
+      <g:title>Prestige X15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-15</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20phone%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=15</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-16</g:id>
+      <g:title>Opal X16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-16</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20mobile%20device%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=16</g:image_link>
+      <g:price>3890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-17</g:id>
+      <g:title>Sable X17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-17</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=17</g:image_link>
+      <g:price>899.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-18</g:id>
+      <g:title>Verve X18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-18</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=18</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-19</g:id>
+      <g:title>Atlas X19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-19</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/titanium%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=19</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-20</g:id>
+      <g:title>Lumen X20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-20</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/flagship%20phone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=20</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-21</g:id>
+      <g:title>Milan X21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-21</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=21</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-22</g:id>
+      <g:title>Royal X22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-22</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/black%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=22</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-23</g:id>
+      <g:title>Onyx X23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-23</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/silver%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=23</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-24</g:id>
+      <g:title>Celeste X24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-24</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/foldable%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=24</g:image_link>
+      <g:price>3890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-25</g:id>
+      <g:title>Aster X25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-25</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20mobile%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=25</g:image_link>
+      <g:price>899.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-26</g:id>
+      <g:title>Vela X26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-26</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smartphone%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=26</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-27</g:id>
+      <g:title>Icon X27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-27</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20phone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=27</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-28</g:id>
+      <g:title>Grande X28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-28</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=28</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-29</g:id>
+      <g:title>Halo X29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-29</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/minimal%20smartphone%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=29</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-30</g:id>
+      <g:title>Noble X30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-30</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smartphone%20product%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=30</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-31</g:id>
+      <g:title>Silva X31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-31</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20phone%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=31</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-32</g:id>
+      <g:title>Prime X32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Mobile.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-32</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20mobile%20device%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=32</g:image_link>
+      <g:price>3890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Mobile</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-33</g:id>
+      <g:title>Apex Pro 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-33</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=33</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-34</g:id>
+      <g:title>Monarch Pro 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-34</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=34</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-35</g:id>
+      <g:title>Atelier Pro 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-35</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=35</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-36</g:id>
+      <g:title>Vector Pro 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-36</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/black%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=36</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-37</g:id>
+      <g:title>Sovereign Pro 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-37</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/silver%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=37</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-38</g:id>
+      <g:title>Axis Pro 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-38</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=38</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-39</g:id>
+      <g:title>Vertex Pro 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-39</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=39</g:image_link>
+      <g:price>4990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-40</g:id>
+      <g:title>Lucid Pro 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-40</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/desktop%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=40</g:image_link>
+      <g:price>5990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-41</g:id>
+      <g:title>Titan Pro 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-41</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=41</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-42</g:id>
+      <g:title>Meridian Pro 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-42</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=42</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-43</g:id>
+      <g:title>Studio Pro 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-43</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/creative%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=43</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-44</g:id>
+      <g:title>Crest Pro 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-44</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=44</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-45</g:id>
+      <g:title>Nexus Pro 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-45</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20notebook%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=45</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-46</g:id>
+      <g:title>Obsidian Pro 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-46</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/computer%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=46</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-47</g:id>
+      <g:title>Arc Pro 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-47</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20computer%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=47</g:image_link>
+      <g:price>4990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-48</g:id>
+      <g:title>Summit Pro 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-48</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=48</g:image_link>
+      <g:price>5990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-49</g:id>
+      <g:title>Coda Pro 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-49</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=49</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-50</g:id>
+      <g:title>Forma Pro 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-50</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=50</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-51</g:id>
+      <g:title>Grid Pro 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-51</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=51</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-52</g:id>
+      <g:title>Vault Pro 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-52</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/black%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=52</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-53</g:id>
+      <g:title>Canvas Pro 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-53</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/silver%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=53</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-54</g:id>
+      <g:title>Pilot Pro 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-54</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=54</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-55</g:id>
+      <g:title>Core Pro 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-55</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=55</g:image_link>
+      <g:price>4990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-56</g:id>
+      <g:title>Crown Pro 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-56</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/desktop%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=56</g:image_link>
+      <g:price>5990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-57</g:id>
+      <g:title>Nova Pro 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-57</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=57</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-58</g:id>
+      <g:title>Prime Pro 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-58</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=58</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-59</g:id>
+      <g:title>Elite Pro 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-59</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/creative%20workstation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=59</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-60</g:id>
+      <g:title>Origin Pro 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-60</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=60</g:image_link>
+      <g:price>2790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-61</g:id>
+      <g:title>Forge Pro 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-61</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20notebook%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=61</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-62</g:id>
+      <g:title>Vero Pro 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-62</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/computer%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=62</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-63</g:id>
+      <g:title>Mira Pro 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-63</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20computer%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=63</g:image_link>
+      <g:price>4990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-64</g:id>
+      <g:title>Zenith Pro 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Computing.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-64</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20computer%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=64</g:image_link>
+      <g:price>5990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Computing</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-65</g:id>
+      <g:title>Sonata Edition 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-65</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=65</g:image_link>
+      <g:price>390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-66</g:id>
+      <g:title>Nocturne Edition 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-66</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=66</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-67</g:id>
+      <g:title>Opus Edition 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-67</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/wireless%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=67</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-68</g:id>
+      <g:title>Velvet Edition 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-68</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audiophile%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=68</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-69</g:id>
+      <g:title>Auralis Edition 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-69</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/studio%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=69</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-70</g:id>
+      <g:title>Resonance Edition 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-70</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=70</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-71</g:id>
+      <g:title>Aria Edition 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-71</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=71</g:image_link>
+      <g:price>1990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-72</g:id>
+      <g:title>Cadenza Edition 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-72</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/wireless%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=72</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-73</g:id>
+      <g:title>Sonic Edition 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-73</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/hi%20fi%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=73</g:image_link>
+      <g:price>390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-74</g:id>
+      <g:title>Maison Edition 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-74</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20earbuds%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=74</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-75</g:id>
+      <g:title>Chorus Edition 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-75</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20earbuds%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=75</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-76</g:id>
+      <g:title>Harmonic Edition 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-76</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audio%20system%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=76</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-77</g:id>
+      <g:title>Lustre Edition 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-77</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audiophile%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=77</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-78</g:id>
+      <g:title>Melody Edition 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-78</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/music%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=78</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-79</g:id>
+      <g:title>Vox Edition 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-79</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20sound%20system%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=79</g:image_link>
+      <g:price>1990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-80</g:id>
+      <g:title>Dolce Edition 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-80</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20audio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=80</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-81</g:id>
+      <g:title>Acoustic Edition 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-81</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=81</g:image_link>
+      <g:price>390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-82</g:id>
+      <g:title>Elysian Edition 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-82</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=82</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-83</g:id>
+      <g:title>Tempo Edition 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-83</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/wireless%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=83</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-84</g:id>
+      <g:title>Rhapsody Edition 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-84</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audiophile%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=84</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-85</g:id>
+      <g:title>Muse Edition 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-85</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/studio%20headphones%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=85</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-86</g:id>
+      <g:title>Aura Edition 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-86</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=86</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-87</g:id>
+      <g:title>Concerto Edition 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-87</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=87</g:image_link>
+      <g:price>1990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-88</g:id>
+      <g:title>Serein Edition 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-88</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/wireless%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=88</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-89</g:id>
+      <g:title>Opera Edition 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-89</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/hi%20fi%20speaker%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=89</g:image_link>
+      <g:price>390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-90</g:id>
+      <g:title>Cadence Edition 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-90</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20earbuds%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=90</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-91</g:id>
+      <g:title>Forte Edition 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-91</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20earbuds%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=91</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-92</g:id>
+      <g:title>Largo Edition 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-92</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audio%20system%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=92</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-93</g:id>
+      <g:title>Vesper Edition 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-93</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/audiophile%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=93</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-94</g:id>
+      <g:title>Echo Edition 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-94</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/music%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=94</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-95</g:id>
+      <g:title>Lyric Edition 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-95</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20sound%20system%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=95</g:image_link>
+      <g:price>1990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-96</g:id>
+      <g:title>Orfeo Edition 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Audio.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-96</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20audio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=96</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Audio</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-97</g:id>
+      <g:title>Lumen Series 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-97</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20smart%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=97</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-98</g:id>
+      <g:title>Halo Series 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-98</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20smart%20device%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=98</g:image_link>
+      <g:price>490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-99</g:id>
+      <g:title>Orbit Series 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-99</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20home%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=99</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-100</g:id>
+      <g:title>Solis Series 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-100</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20smart%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=100</g:image_link>
+      <g:price>890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-101</g:id>
+      <g:title>Astra Series 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-101</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20watch%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=101</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-102</g:id>
+      <g:title>Nexus Series 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-102</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20wearable%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=102</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-103</g:id>
+      <g:title>Beacon Series 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-103</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/home%20automation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=103</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-104</g:id>
+      <g:title>Vanta Series 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-104</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20lighting%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=104</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-105</g:id>
+      <g:title>Pulse Series 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-105</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20security%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=105</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-106</g:id>
+      <g:title>Prism Series 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-106</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/future%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=106</g:image_link>
+      <g:price>490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-107</g:id>
+      <g:title>Ceres Series 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-107</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gadget%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=107</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-108</g:id>
+      <g:title>Nova Series 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-108</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gadget%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=108</g:image_link>
+      <g:price>890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-109</g:id>
+      <g:title>Arc Series 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-109</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/connected%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=109</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-110</g:id>
+      <g:title>Flux Series 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-110</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20electronics%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=110</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-111</g:id>
+      <g:title>Zenith Series 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-111</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20lifestyle%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=111</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-112</g:id>
+      <g:title>Sentry Series 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-112</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/future%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=112</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-113</g:id>
+      <g:title>Mira Series 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-113</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20smart%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=113</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-114</g:id>
+      <g:title>Vertex Series 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-114</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20smart%20device%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=114</g:image_link>
+      <g:price>490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-115</g:id>
+      <g:title>Aura Series 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-115</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20home%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=115</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-116</g:id>
+      <g:title>Crown Series 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-116</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20smart%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=116</g:image_link>
+      <g:price>890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-117</g:id>
+      <g:title>Atlas Series 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-117</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20watch%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=117</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-118</g:id>
+      <g:title>Sage Series 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-118</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20wearable%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=118</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-119</g:id>
+      <g:title>Helix Series 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-119</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/home%20automation%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=119</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-120</g:id>
+      <g:title>Axiom Series 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-120</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20lighting%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=120</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-121</g:id>
+      <g:title>Ion Series 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-121</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20security%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=121</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-122</g:id>
+      <g:title>Eon Series 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-122</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/future%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=122</g:image_link>
+      <g:price>490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-123</g:id>
+      <g:title>Vela Series 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-123</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gadget%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=123</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-124</g:id>
+      <g:title>Kite Series 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-124</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gadget%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=124</g:image_link>
+      <g:price>890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-125</g:id>
+      <g:title>Lucent Series 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-125</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/connected%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=125</g:image_link>
+      <g:price>1190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-126</g:id>
+      <g:title>Vero Series 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-126</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20electronics%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=126</g:image_link>
+      <g:price>1490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-127</g:id>
+      <g:title>Oriel Series 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-127</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/smart%20lifestyle%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=127</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-128</g:id>
+      <g:title>Noble Series 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Smart Tech.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-128</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/future%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=128</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Smart Tech</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-129</g:id>
+      <g:title>Apex GT 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-129</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gaming%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=129</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-130</g:id>
+      <g:title>Phantom GT 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-130</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20PC%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=130</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-131</g:id>
+      <g:title>Vanguard GT 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-131</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=131</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-132</g:id>
+      <g:title>Rogue GT 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-132</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20gaming%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=132</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-133</g:id>
+      <g:title>Titan GT 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-133</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=133</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-134</g:id>
+      <g:title>Spectre GT 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-134</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20monitor%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=134</g:image_link>
+      <g:price>2890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-135</g:id>
+      <g:title>Velocity GT 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-135</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20controller%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=135</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-136</g:id>
+      <g:title>Onyx GT 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-136</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20controller%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=136</g:image_link>
+      <g:price>4490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-137</g:id>
+      <g:title>Nexus GT 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-137</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20keyboard%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=137</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-138</g:id>
+      <g:title>Eclipse GT 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-138</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/mechanical%20keyboard%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=138</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-139</g:id>
+      <g:title>Pulse GT 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-139</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20mouse%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=139</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-140</g:id>
+      <g:title>Fury GT 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-140</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/esports%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=140</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-141</g:id>
+      <g:title>Vertex GT 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-141</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20gaming%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=141</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-142</g:id>
+      <g:title>Crown GT 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-142</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gamer%20room%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=142</g:image_link>
+      <g:price>2890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-143</g:id>
+      <g:title>Shadow GT 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-143</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=143</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-144</g:id>
+      <g:title>Arcade GT 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-144</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20equipment%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=144</g:image_link>
+      <g:price>4490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-145</g:id>
+      <g:title>Valor GT 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-145</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gaming%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=145</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-146</g:id>
+      <g:title>Strike GT 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-146</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20PC%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=146</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-147</g:id>
+      <g:title>Nova GT 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-147</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20laptop%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=147</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-148</g:id>
+      <g:title>Prime GT 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-148</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20gaming%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=148</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-149</g:id>
+      <g:title>Zenith GT 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-149</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=149</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-150</g:id>
+      <g:title>Forge GT 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-150</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20monitor%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=150</g:image_link>
+      <g:price>2890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-151</g:id>
+      <g:title>Atlas GT 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-151</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20controller%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=151</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-152</g:id>
+      <g:title>Zero GT 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-152</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20controller%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=152</g:image_link>
+      <g:price>4490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-153</g:id>
+      <g:title>Raven GT 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-153</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20keyboard%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=153</g:image_link>
+      <g:price>690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-154</g:id>
+      <g:title>Sovereign GT 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-154</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/mechanical%20keyboard%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=154</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-155</g:id>
+      <g:title>Blade GT 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-155</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20mouse%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=155</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-156</g:id>
+      <g:title>Vortex GT 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-156</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/esports%20setup%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=156</g:image_link>
+      <g:price>1790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-157</g:id>
+      <g:title>Cobalt GT 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-157</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20gaming%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=157</g:image_link>
+      <g:price>2290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-158</g:id>
+      <g:title>Legend GT 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-158</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20gamer%20room%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=158</g:image_link>
+      <g:price>2890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-159</g:id>
+      <g:title>Elite GT 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-159</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/gaming%20technology%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=159</g:image_link>
+      <g:price>3490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-160</g:id>
+      <g:title>Myth GT 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Gaming.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-160</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20gaming%20equipment%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=160</g:image_link>
+      <g:price>4490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Gaming</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-161</g:id>
+      <g:title>Lumina Cine 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-161</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=161</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-162</g:id>
+      <g:title>Vista Cine 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-162</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=162</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-163</g:id>
+      <g:title>Aperture Cine 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-163</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/mirrorless%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=163</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-164</g:id>
+      <g:title>Noir Cine 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-164</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=164</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-165</g:id>
+      <g:title>Serein Cine 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-165</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinema%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=165</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-166</g:id>
+      <g:title>Focus Cine 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-166</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=166</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-167</g:id>
+      <g:title>Optic Cine 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-167</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20camera%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=167</g:image_link>
+      <g:price>5490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-168</g:id>
+      <g:title>Monarch Cine 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-168</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/camera%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=168</g:image_link>
+      <g:price>6990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-169</g:id>
+      <g:title>Cine Cine 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-169</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinema%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=169</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-170</g:id>
+      <g:title>Frame Cine 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-170</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/photography%20equipment%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=170</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-171</g:id>
+      <g:title>Velour Cine 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-171</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20camera%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=171</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-172</g:id>
+      <g:title>Clarity Cine 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-172</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/camera%20product%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=172</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-173</g:id>
+      <g:title>Aurelia Cine 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-173</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=173</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-174</g:id>
+      <g:title>Prism Cine 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-174</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20photography%20gear%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=174</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-175</g:id>
+      <g:title>Lumen Cine 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-175</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinematic%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=175</g:image_link>
+      <g:price>5490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-176</g:id>
+      <g:title>Crest Cine 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-176</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20imaging%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=176</g:image_link>
+      <g:price>6990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-177</g:id>
+      <g:title>Atlas Cine 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-177</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=177</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-178</g:id>
+      <g:title>Vantage Cine 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-178</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=178</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-179</g:id>
+      <g:title>Studio Cine 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-179</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/mirrorless%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=179</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-180</g:id>
+      <g:title>Silver Cine 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-180</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=180</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-181</g:id>
+      <g:title>Crown Cine 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-181</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinema%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=181</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-182</g:id>
+      <g:title>Origin Cine 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-182</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=182</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-183</g:id>
+      <g:title>NOVA Cine 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-183</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20camera%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=183</g:image_link>
+      <g:price>5490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-184</g:id>
+      <g:title>Regent Cine 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-184</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/camera%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=184</g:image_link>
+      <g:price>6990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-185</g:id>
+      <g:title>Halo Cine 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-185</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinema%20lens%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=185</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-186</g:id>
+      <g:title>Sable Cine 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-186</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/photography%20equipment%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=186</g:image_link>
+      <g:price>1390.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-187</g:id>
+      <g:title>Icon Cine 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-187</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20camera%20studio%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=187</g:image_link>
+      <g:price>1890.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-188</g:id>
+      <g:title>Mira Cine 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-188</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/camera%20product%20photography%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=188</g:image_link>
+      <g:price>2490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-189</g:id>
+      <g:title>Zenith Cine 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-189</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/high%20end%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=189</g:image_link>
+      <g:price>3290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-190</g:id>
+      <g:title>Prime Cine 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-190</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20photography%20gear%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=190</g:image_link>
+      <g:price>4290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-191</g:id>
+      <g:title>Maison Cine 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-191</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/cinematic%20camera%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=191</g:image_link>
+      <g:price>5490.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-192</g:id>
+      <g:title>Vela Cine 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Cameras.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-192</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/professional%20imaging%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=192</g:image_link>
+      <g:price>6990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Cameras</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-193</g:id>
+      <g:title>Atelier Series 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-193</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20leather%20accessory%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=193</g:image_link>
+      <g:price>180.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-194</g:id>
+      <g:title>Maison Series 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-194</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20wallet%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=194</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-195</g:id>
+      <g:title>Regent Series 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-195</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20card%20holder%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=195</g:image_link>
+      <g:price>420.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-196</g:id>
+      <g:title>Crown Series 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-196</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20sunglasses%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=196</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-197</g:id>
+      <g:title>Noir Series 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-197</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20sunglasses%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=197</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-198</g:id>
+      <g:title>Sable Series 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-198</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20travel%20bag%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=198</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-199</g:id>
+      <g:title>Lustre Series 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-199</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20backpack%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=199</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-200</g:id>
+      <g:title>Velour Series 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-200</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20backpack%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=200</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-201</g:id>
+      <g:title>Élan Series 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-201</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/leather%20briefcase%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=201</g:image_link>
+      <g:price>180.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-202</g:id>
+      <g:title>Prestige Series 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-202</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20briefcase%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=202</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-203</g:id>
+      <g:title>Monarch Series 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-203</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20luggage%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=203</g:image_link>
+      <g:price>420.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-204</g:id>
+      <g:title>Aurelia Series 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-204</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20luggage%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=204</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-205</g:id>
+      <g:title>Vanta Series 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-205</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20belt%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=205</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-206</g:id>
+      <g:title>Noble Series 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-206</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20leather%20goods%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=206</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-207</g:id>
+      <g:title>Crest Series 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-207</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20everyday%20carry%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=207</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-208</g:id>
+      <g:title>Opal Series 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-208</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20accessory%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=208</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-209</g:id>
+      <g:title>Sovereign Series 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-209</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20leather%20accessory%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=209</g:image_link>
+      <g:price>180.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-210</g:id>
+      <g:title>Lucent Series 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-210</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20wallet%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=210</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-211</g:id>
+      <g:title>Prime Series 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-211</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20card%20holder%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=211</g:image_link>
+      <g:price>420.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-212</g:id>
+      <g:title>Milan Series 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-212</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20sunglasses%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=212</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-213</g:id>
+      <g:title>Aria Series 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-213</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20sunglasses%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=213</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-214</g:id>
+      <g:title>Vero Series 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-214</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20travel%20bag%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=214</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-215</g:id>
+      <g:title>Silva Series 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-215</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20backpack%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=215</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-216</g:id>
+      <g:title>Grande Series 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-216</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20backpack%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=216</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-217</g:id>
+      <g:title>Halo Series 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-217</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/leather%20briefcase%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=217</g:image_link>
+      <g:price>180.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-218</g:id>
+      <g:title>Onyx Series 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-218</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20briefcase%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=218</g:image_link>
+      <g:price>290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-219</g:id>
+      <g:title>Celeste Series 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-219</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20luggage%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=219</g:image_link>
+      <g:price>420.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-220</g:id>
+      <g:title>Aster Series 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-220</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20luggage%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=220</g:image_link>
+      <g:price>590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-221</g:id>
+      <g:title>Vela Series 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-221</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20belt%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=221</g:image_link>
+      <g:price>790.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-222</g:id>
+      <g:title>Icon Series 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-222</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20leather%20goods%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=222</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-223</g:id>
+      <g:title>Royal Series 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-223</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20everyday%20carry%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=223</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-224</g:id>
+      <g:title>Maison Series 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Accessories.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-224</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20accessory%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=224</g:image_link>
+      <g:price>1590.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Accessories</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-225</g:id>
+      <g:title>Maison Atelier 01</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-225</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=225</g:image_link>
+      <g:price>220.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-226</g:id>
+      <g:title>Atelier Atelier 02</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-226</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=226</g:image_link>
+      <g:price>360.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-227</g:id>
+      <g:title>Lustre Atelier 03</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-227</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20luxury%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=227</g:image_link>
+      <g:price>520.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-228</g:id>
+      <g:title>Serein Atelier 04</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-228</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20furniture%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=228</g:image_link>
+      <g:price>760.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-229</g:id>
+      <g:title>Aurelia Atelier 05</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-229</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20chair%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=229</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-230</g:id>
+      <g:title>Velour Atelier 06</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-230</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20chair%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=230</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-231</g:id>
+      <g:title>Noir Atelier 07</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-231</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=231</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-232</g:id>
+      <g:title>Élan Atelier 08</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-232</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=232</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-233</g:id>
+      <g:title>Regent Atelier 09</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-233</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20lamp%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=233</g:image_link>
+      <g:price>220.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-234</g:id>
+      <g:title>Opal Atelier 10</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-234</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20lamp%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=234</g:image_link>
+      <g:price>360.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-235</g:id>
+      <g:title>Crown Atelier 11</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-235</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20living%20room%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=235</g:image_link>
+      <g:price>520.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-236</g:id>
+      <g:title>Sable Atelier 12</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-236</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20bedroom%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=236</g:image_link>
+      <g:price>760.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-237</g:id>
+      <g:title>Monarch Atelier 13</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-237</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20home%20object%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=237</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-238</g:id>
+      <g:title>Vela Atelier 14</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-238</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20workspace%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=238</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-239</g:id>
+      <g:title>Celeste Atelier 15</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-239</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20hotel%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=239</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-240</g:id>
+      <g:title>Noble Atelier 16</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-240</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20lifestyle%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=240</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-241</g:id>
+      <g:title>Lumen Atelier 17</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-241</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=241</g:image_link>
+      <g:price>220.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-242</g:id>
+      <g:title>Aster Atelier 18</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-242</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=242</g:image_link>
+      <g:price>360.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-243</g:id>
+      <g:title>Silva Atelier 19</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-243</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20luxury%20home%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=243</g:image_link>
+      <g:price>520.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-244</g:id>
+      <g:title>Aria Atelier 20</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-244</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20furniture%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=244</g:image_link>
+      <g:price>760.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-245</g:id>
+      <g:title>Prestige Atelier 21</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-245</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20chair%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=245</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-246</g:id>
+      <g:title>Grande Atelier 22</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-246</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20chair%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=246</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-247</g:id>
+      <g:title>Milan Atelier 23</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-247</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=247</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-248</g:id>
+      <g:title>Vero Atelier 24</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-248</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20desk%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=248</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-249</g:id>
+      <g:title>Lucent Atelier 25</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-249</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20lamp%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=249</g:image_link>
+      <g:price>220.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-250</g:id>
+      <g:title>Sovereign Atelier 26</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-250</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20lamp%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=250</g:image_link>
+      <g:price>360.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-251</g:id>
+      <g:title>Halo Atelier 27</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-251</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/modern%20living%20room%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=251</g:image_link>
+      <g:price>520.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-252</g:id>
+      <g:title>Onyx Atelier 28</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-252</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20bedroom%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=252</g:image_link>
+      <g:price>760.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-253</g:id>
+      <g:title>Royal Atelier 29</g:title>
+      <g:description>Signature edition from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-253</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20home%20object%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=253</g:image_link>
+      <g:price>990.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-254</g:id>
+      <g:title>Prime Atelier 30</g:title>
+      <g:description>Private collection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-254</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/designer%20workspace%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=254</g:image_link>
+      <g:price>1290.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-255</g:id>
+      <g:title>Elysian Atelier 31</g:title>
+      <g:description>Limited house selection from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-255</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/luxury%20hotel%20interior%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=255</g:image_link>
+      <g:price>1690.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+    <item>
+      <g:id>turin-256</g:id>
+      <g:title>Crest Atelier 32</g:title>
+      <g:description>Engineered for modern living from TURIN PREMIUM STORE. Category: Lifestyle.</g:description>
+      <g:link>https://turin-premium-store-pro-api.onrender.com/#product-256</g:link>
+      <g:image_link>https://loremflickr.com/1000/1250/premium%20lifestyle%2C%20luxury%2C%20editorial%2C%20premium%2C%20studio?lock=256</g:image_link>
+      <g:price>2190.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:product_type>Lifestyle</g:product_type>
+    </item>
+  </channel>
+</rss>
