@@ -1010,7 +1010,83 @@ a{
  }
 
 }
+/* TURIN PAYPESA COLLECTION */
 
+.paypesaCollection{
+  padding:90px 5vw;
+  background:#0d0d0c;
+  color:#f2eee6;
+  border-top:1px solid #292823;
+}
+
+.paypesaNo{
+  color:#c7a66a;
+  font:10px "DM Mono",monospace;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.paypesaCollection h2{
+  font:clamp(34px,5vw,58px) "Playfair Display",serif;
+  margin:18px 0;
+}
+
+.paypesaIntro{
+  color:#96938c;
+  line-height:1.8;
+  max-width:650px;
+  margin-bottom:35px;
+}
+
+.paypesaGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+.paypesaCard{
+  padding:25px;
+  border:1px solid #292823;
+  background:#10100e;
+  min-width:0;
+}
+
+.paypesaCard h3{
+  font:23px "Playfair Display",serif;
+  line-height:1.35;
+  margin:25px 0;
+}
+
+.paypesaLink,
+.paypesaStoreLink{
+  display:inline-block;
+  color:#c7a66a;
+  font:10px "DM Mono",monospace;
+  letter-spacing:.12em;
+  text-decoration:none;
+  padding:12px 0;
+}
+
+.paypesaLink:hover,
+.paypesaStoreLink:hover{
+  color:#fff;
+}
+
+.paypesaStoreLink{
+  margin-top:20px;
+  border-bottom:1px solid #c7a66a;
+}
+
+@media(max-width:560px){
+  .paypesaCollection{
+    padding:65px 18px;
+  }
+
+  .paypesaGrid{
+    grid-template-columns:1fr;
+  }
+}
+    
 </style>
 </head>
 
