@@ -1,13 +1,1 @@
-FROM node:20-alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["node", "server.js"]
+aWQ9R1RNLVdKNDRNOFY2JmVudj0yJmF1dGg9ZV9OWDc3VzFhV0tnQUV0WmF0eThIUQ==
