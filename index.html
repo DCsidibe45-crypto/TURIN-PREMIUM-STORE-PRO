@@ -1,44 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TURIN PREMIUM STORE — Global Luxury & Design</title>
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NMZP7XBG');
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9N3ZKHT9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RF9N3ZKHT9');
-  </script>
-
-  <!-- Fonts -->
+  <title>TURIN PREMIUM STORE — Global Ultra-Luxury Destination</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #070706;
+      --bg: #030303;
+      --card-bg: #0b0b0a;
       --panel: #11110f;
-      --panel-hover: #181815;
-      --ink: #f4f0eb;
-      --muted: #9b978e;
-      --line: #26241f;
-      --gold: #c5a059;
-      --gold-light: #e6c584;
-      --gold-gradient: linear-gradient(135deg, #b89346, #e6c584, #9a742e);
+      --ink: #f8f6f0;
+      --muted: #9e9a90;
+      --border: #22201c;
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+      --selcom: #0077b6;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,38 +32,36 @@
       line-height: 1.7;
     }
 
-    /* TOP BAR */
-    .top-announcement {
+    .ticker-bar {
       background: #000;
-      border-bottom: 1px solid var(--line);
-      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      padding: 9px 0;
       font-family: 'DM Mono', monospace;
       font-size: 10px;
       letter-spacing: 0.2em;
-      color: var(--muted);
+      color: var(--gold);
       text-align: center;
       text-transform: uppercase;
     }
 
-    /* NAVIGATION */
     header {
       height: 90px;
       padding: 0 6%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--line);
-      background: rgba(7, 7, 6, 0.92);
-      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      background: rgba(3, 3, 3, 0.95);
+      backdrop-filter: blur(15px);
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 500;
     }
 
-    .brand {
+    .brand-logo {
       font-family: 'Cinzel', serif;
       font-size: 28px;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.3em;
       background: var(--gold-gradient);
       -webkit-background-clip: text;
@@ -90,87 +69,79 @@
       text-decoration: none;
     }
 
-    .nav-tools {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-
-    .btn-bag {
+    .cart-trigger {
       background: transparent;
       border: 1px solid var(--gold);
       color: var(--gold-light);
-      padding: 10px 22px;
+      padding: 11px 24px;
       font-family: 'DM Mono', monospace;
       font-size: 11px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       cursor: pointer;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
     }
 
-    .btn-bag:hover {
+    .cart-trigger:hover {
       background: var(--gold-gradient);
       color: #000;
-      border-color: transparent;
+      font-weight: 600;
     }
 
-    /* HERO */
-    .hero {
-      padding: 110px 6% 90px;
+    .hero-luxury {
+      padding: 120px 6% 90px;
       text-align: center;
-      background: radial-gradient(circle at 50% 20%, #161511 0%, var(--bg) 75%);
-      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at 50% 25%, #181510 0%, var(--bg) 80%);
+      border-bottom: 1px solid var(--border);
     }
 
-    .hero-kicker {
+    .hero-tag {
       font-family: 'DM Mono', monospace;
       font-size: 11px;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.3em;
       color: var(--gold);
       text-transform: uppercase;
       margin-bottom: 15px;
       display: block;
     }
 
-    .hero h1 {
+    .hero-luxury h1 {
       font-family: 'Cinzel', serif;
-      font-size: clamp(36px, 6vw, 72px);
-      font-weight: 500;
-      line-height: 1.15;
+      font-size: clamp(38px, 6vw, 75px);
+      font-weight: 600;
+      line-height: 1.1;
       margin-bottom: 25px;
       letter-spacing: 0.02em;
     }
 
-    .hero h1 span {
+    .hero-luxury h1 span {
       background: var(--gold-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-style: italic;
     }
 
-    .hero p {
-      max-width: 680px;
+    .hero-luxury p {
+      max-width: 700px;
       margin: 0 auto;
       color: var(--muted);
       font-size: 16px;
     }
 
-    /* CATALOG CONTAINER */
-    .catalog-wrapper {
-      max-width: 1440px;
+    .store-container {
+      max-width: 1450px;
       margin: 0 auto;
       padding: 60px 6%;
     }
 
-    .catalog-controls {
+    .controls-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 25px;
       margin-bottom: 50px;
     }
 
-    .search-row {
+    .search-filter-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -178,11 +149,11 @@
       flex-wrap: wrap;
     }
 
-    .search-input {
+    .search-field {
       flex: 1;
       min-width: 300px;
-      background: var(--panel);
-      border: 1px solid var(--line);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
       color: var(--ink);
       padding: 16px 22px;
       font-size: 14px;
@@ -190,32 +161,32 @@
       transition: border-color 0.3s;
     }
 
-    .search-input:focus {
+    .search-field:focus {
       border-color: var(--gold);
     }
 
-    .results-count {
+    .item-counter {
       font-family: 'DM Mono', monospace;
       font-size: 12px;
       color: var(--gold);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
     }
 
-    .category-scroll {
+    .category-tabs {
       display: flex;
       gap: 12px;
       overflow-x: auto;
       padding-bottom: 10px;
     }
 
-    .cat-pill {
-      background: var(--panel);
-      border: 1px solid var(--line);
+    .tab-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
       color: var(--muted);
-      padding: 10px 18px;
+      padding: 11px 20px;
       font-family: 'DM Mono', monospace;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       cursor: pointer;
@@ -223,74 +194,75 @@
       transition: all 0.25s;
     }
 
-    .cat-pill.active, .cat-pill:hover {
+    .tab-btn.active, .tab-btn:hover {
       border-color: var(--gold);
       color: var(--gold-light);
-      background: #191815;
+      background: #161512;
     }
 
-    /* PRODUCT GRID */
-    .products-grid {
+    .grid-catalog {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
       gap: 30px;
     }
 
-    .product-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
+    .item-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       position: relative;
-      transition: transform 0.35s ease, border-color 0.35s ease;
+      transition: all 0.35s ease;
     }
 
-    .product-card:hover {
-      border-color: #4a4539;
+    .item-card:hover {
+      border-color: var(--gold);
       transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.7);
     }
 
-    .card-media {
+    .item-image {
       aspect-ratio: 4/3;
       width: 100%;
       overflow: hidden;
-      background: #141311;
+      background: #141412;
       position: relative;
     }
 
-    .card-media img {
+    .item-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.6s ease;
+      filter: brightness(0.95);
     }
 
-    .product-card:hover .card-media img {
-      transform: scale(1.05);
+    .item-card:hover .item-image img {
+      transform: scale(1.06);
     }
 
-    .card-badge {
+    .item-badge {
       position: absolute;
       top: 14px;
       left: 14px;
       background: var(--gold-gradient);
       color: #000;
-      padding: 4px 10px;
+      padding: 5px 12px;
       font-family: 'DM Mono', monospace;
       font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
-    .card-details {
+    .item-content {
       padding: 24px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
 
-    .card-cat {
+    .item-cat {
       font-family: 'DM Mono', monospace;
       font-size: 10px;
       color: var(--gold);
@@ -299,15 +271,15 @@
       margin-bottom: 8px;
     }
 
-    .card-title {
+    .item-title {
       font-family: 'Cinzel', serif;
       font-size: 17px;
-      font-weight: 500;
+      font-weight: 600;
       margin-bottom: 10px;
       line-height: 1.35;
     }
 
-    .card-desc {
+    .item-desc {
       font-size: 12px;
       color: var(--muted);
       margin-bottom: 20px;
@@ -315,26 +287,27 @@
       line-height: 1.6;
     }
 
-    .card-footer {
+    .item-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid var(--line);
+      border-top: 1px solid var(--border);
       padding-top: 15px;
       margin-top: auto;
     }
 
-    .card-price {
+    .item-price {
       font-family: 'DM Mono', monospace;
       font-size: 14px;
       color: var(--gold-light);
+      font-weight: 500;
     }
 
-    .btn-add {
+    .btn-buy {
       background: transparent;
-      border: 1px solid var(--line);
+      border: 1px solid var(--border);
       color: var(--ink);
-      padding: 8px 14px;
+      padding: 9px 16px;
       font-family: 'DM Mono', monospace;
       font-size: 10px;
       letter-spacing: 0.1em;
@@ -343,33 +316,31 @@
       transition: all 0.2s;
     }
 
-    .btn-add:hover {
+    .btn-buy:hover {
       background: var(--gold);
       border-color: var(--gold);
       color: #000;
       font-weight: 600;
     }
 
-    /* CART DRAWER */
     .cart-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(4px);
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(5px);
       z-index: 1000;
       display: none;
     }
-
     .cart-overlay.open { display: block; }
 
-    .cart-drawer {
+    .drawer-panel {
       position: fixed;
       top: 0;
       right: -480px;
-      width: min(450px, 100%);
+      width: min(440px, 100%);
       height: 100vh;
       background: var(--panel);
-      border-left: 1px solid var(--line);
+      border-left: 1px solid var(--border);
       z-index: 1100;
       transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
@@ -377,17 +348,17 @@
       padding: 30px;
     }
 
-    .cart-drawer.open { right: 0; }
+    .drawer-panel.open { right: 0; }
 
-    .drawer-header {
+    .drawer-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid var(--border);
       padding-bottom: 20px;
     }
 
-    .drawer-header h3 {
+    .drawer-top h3 {
       font-family: 'Cinzel', serif;
       font-size: 20px;
       color: var(--gold-light);
@@ -397,11 +368,11 @@
       background: none;
       border: none;
       color: var(--muted);
-      font-size: 24px;
+      font-size: 26px;
       cursor: pointer;
     }
 
-    .drawer-items {
+    .drawer-body {
       flex: 1;
       overflow-y: auto;
       padding: 20px 0;
@@ -410,36 +381,36 @@
       gap: 15px;
     }
 
-    .cart-row {
+    .cart-line-item {
       display: flex;
       gap: 15px;
       align-items: center;
-      background: #0d0d0b;
+      background: var(--card-bg);
       padding: 12px;
-      border: 1px solid var(--line);
+      border: 1px solid var(--border);
     }
 
-    .cart-row img {
+    .cart-line-item img {
       width: 60px;
       height: 60px;
       object-fit: cover;
     }
 
-    .cart-row-info { flex: 1; }
+    .cart-line-info { flex: 1; }
 
-    .cart-row-title {
+    .cart-line-title {
       font-size: 13px;
       font-weight: 500;
       margin-bottom: 4px;
     }
 
-    .cart-row-price {
+    .cart-line-price {
       font-family: 'DM Mono', monospace;
       font-size: 12px;
       color: var(--gold);
     }
 
-    .btn-remove {
+    .btn-del {
       background: none;
       border: none;
       color: #ff5252;
@@ -447,22 +418,22 @@
       cursor: pointer;
     }
 
-    .drawer-footer {
-      border-top: 1px solid var(--line);
+    .drawer-bottom {
+      border-top: 1px solid var(--border);
       padding-top: 20px;
     }
 
-    .drawer-total {
+    .drawer-total-row {
       display: flex;
       justify-content: space-between;
       font-family: 'DM Mono', monospace;
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 20px;
     }
 
-    .btn-checkout {
+    .btn-selcom-pay {
       width: 100%;
-      background: #0077b6;
+      background: var(--selcom);
       color: #fff;
       border: none;
       padding: 16px;
@@ -470,24 +441,23 @@
       font-size: 11px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
     }
 
-    .btn-checkout:hover { opacity: 0.9; }
+    .btn-selcom-pay:hover { opacity: 0.9; }
 
-    /* FOOTER */
     footer {
-      border-top: 1px solid var(--line);
+      border-top: 1px solid var(--border);
       padding: 70px 6% 35px;
       margin-top: 100px;
       color: var(--muted);
       font-size: 13px;
     }
 
-    .footer-grid {
+    .footer-layout {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1-fr));
       gap: 40px;
       margin-bottom: 50px;
     }
@@ -499,8 +469,8 @@
       margin-bottom: 15px;
     }
 
-    .footer-bottom {
-      border-top: 1px solid var(--line);
+    .footer-sub {
+      border-top: 1px solid var(--border);
       padding-top: 25px;
       display: flex;
       justify-content: space-between;
@@ -515,185 +485,176 @@
 </head>
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZP7XBG"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <div class="top-announcement">
-    GLOBAL LUXURY DESTINATION · COMPREHENSIVE 200-ITEM EXPANSION COLLECTION · WORLDWIDE SERVICE
+  <div class="ticker-bar">
+    ★ TURIN PREMIUM STORE — GLOBAL ULTRA-LUXURY DESTINATION · SECURE SELCOM PAYDIRECT INTEGRATION ★
   </div>
 
   <header>
-    <a href="#" class="brand">TURIN</a>
+    <a href="#" class="brand-logo">TURIN</a>
     <div class="nav-tools">
-      <button class="btn-bag" onclick="toggleCart()">Bag (<span id="cartCount">0</span>)</button>
+      <button class="cart-trigger" onclick="toggleCart()">
+        Bag (<span id="cartCount">0</span>)
+      </button>
     </div>
   </header>
 
-  <section class="hero">
-    <span class="hero-kicker">The Art of Premium Living</span>
-    <h1>Global Luxury <span>Without Boundaries</span></h1>
-    <p>A curated international catalog featuring over 200 exquisite objects spanning ultra-premium interior design, high-end technology, rare leather goods, and refined lifestyle accessories.</p>
+  <section class="hero-luxury">
+    <span class="hero-tag">THE ART OF PREMIUM LIVING</span>
+    <h1>Redefining <span>Global Luxury</span> & Design</h1>
+    <p>Gundua mkusanyiko kamili wa bidhaa 200 za kiwango cha juu duniani zilizochaguliwa kwa ustadi mkubwa, zikiwa na bei sahihi za TZS kuanzia Laki 2 hadi 7+.</p>
   </section>
 
-  <main class="catalog-wrapper">
-    <div class="catalog-controls">
-      <div class="search-row">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search across 200 luxury objects — decor, audio, leather, furniture..." oninput="handleSearch()">
-        <div class="results-count" id="resultsCount">200 Objects Displayed</div>
+  <main class="store-container">
+    <div class="controls-wrapper">
+      <div class="search-filter-row">
+        <input type="text" id="searchInput" class="search-field" placeholder="Tafuta bidhaa yoyote kwenye duka..." oninput="filterCatalog()">
+        <div class="item-counter" id="itemCounter">200 BIDHAA ZINAZOONEKANA</div>
       </div>
-      <div class="category-scroll" id="categoryScroll"></div>
+      <div class="category-tabs" id="categoryTabs"></div>
     </div>
 
-    <div class="products-grid" id="productsGrid"></div>
+    <div class="grid-catalog" id="catalogGrid"></div>
   </main>
 
-  <!-- CART DRAWER -->
   <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-  <div class="cart-drawer" id="cartDrawer">
-    <div class="drawer-header">
-      <h3>Private Bag</h3>
+  <div class="drawer-panel" id="cartDrawer">
+    <div class="drawer-top">
+      <h3>KIKAPU CHAKO</h3>
       <button class="close-drawer" onclick="toggleCart()">&times;</button>
     </div>
-    <div class="drawer-items" id="drawerItems"></div>
-    <div class="drawer-footer">
-      <div class="drawer-total">
-        <span>Total</span>
-        <span id="drawerTotal" style="color: var(--gold-light);">$0.00</span>
+    <div class="drawer-body" id="drawerBody"></div>
+    <div class="drawer-bottom">
+      <div class="drawer-total-row">
+        <span>Jumla Kuu:</span>
+        <span id="drawerTotal" style="color: var(--gold-light);">TZS 0</span>
       </div>
-      <button class="btn-checkout" onclick="checkoutAction()">Proceed to Secure Checkout</button>
+      <button class="btn-selcom-pay" onclick="payWithSelcom()">LIPA KWA SELCOM (M-PESA / TIGO / KADI)</button>
     </div>
   </div>
 
   <footer>
-    <div class="footer-grid">
+    <div class="footer-layout">
       <div class="footer-col">
         <h4>TURIN PREMIUM STORE</h4>
-        <p>A global benchmark for luxury lifestyle, modern architecture objects, and exceptional technological craftsmanship.</p>
+        <p>Dar es Salaam, Tanzania. Kituo kikuu cha kimataifa cha bidhaa za teknolojia, muundo na urembo wa kifalme.</p>
       </div>
       <div class="footer-col">
-        <h4>Concierge & Support</h4>
-        <p>WhatsApp: +255 797 955 045<br>Global Enquiries: concierge@turin.store</p>
+        <h4>Malipo na Usalama</h4>
+        <p>Inatumia Selcom Paydirect kwa malipo ya haraka na salama kupitia mitandao yote ya simu na kadi za benki.</p>
       </div>
       <div class="footer-col">
-        <h4>Global Presentation</h4>
-        <p>International shipping protocols, multi-currency display, and verified manufacturer compliance.</p>
+        <h4>Mawasiliano</h4>
+        <p>WhatsApp Concierge: +255 797 955 045<br>Email: concierge@turin.tz</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 TURIN PREMIUM STORE. All Rights Reserved.</span>
-      <span>Global Luxury & Design Division</span>
+    <div class="footer-sub">
+      <span>© 2026 TURIN PREMIUM STORE. Haki zote zimehifadhiwa.</span>
+      <span>Global Luxury Division</span>
     </div>
   </footer>
 
   <script>
-    // 200 EXPANDED PRODUCTS ACROSS 10 LUXURY CATEGORIES
     const categories = [
-      "All",
-      "Luxury Home Decor",
-      "Premium Furniture",
-      "Luxury Lifestyle",
+      "Zote",
+      "Simu na Vifaa",
+      "Audio & Sauti",
+      "Smart Home",
+      "Saa na Urembo",
+      "Gaming",
+      "Vifaa vya Ofisi",
+      "Luxury Decor",
       "Kitchen & Dining",
-      "Lighting & Smart Home",
-      "Fashion Accessories",
-      "Travel & Leather",
-      "Wellness & Care",
-      "Audio & Technology",
-      "Gifts & Collectibles"
+      "Travel Goods"
     ];
 
-    // Generating 200 realistic products with professional source mapping
-    const products = [];
-    const catMap = {
-      "Luxury Home Decor": { count: 35, img: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=85", priceBase: 1200 },
-      "Premium Furniture": { count: 25, img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85", priceBase: 4500 },
-      "Luxury Lifestyle": { count: 30, img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85", priceBase: 850 },
-      "Kitchen & Dining": { count: 20, img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=85", priceBase: 1500 },
-      "Lighting & Smart Home": { count: 20, img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85", priceBase: 950 },
-      "Fashion Accessories": { count: 20, img: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85", priceBase: 2200 },
-      "Travel & Leather": { count: 15, img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85", priceBase: 3100 },
-      "Wellness & Care": { count: 15, img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=85", priceBase: 650 },
-      "Audio & Technology": { count: 10, img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85", priceBase: 1800 },
-      "Gifts & Collectibles": { count: 10, img: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=85", priceBase: 5000 }
-    };
+    // Real curated high-end products database starting from TZS 200,000 to 700,000+
+    const rawItems = [
+      { name: "Apple iPhone 16 Pro Max Case (FineWoven)", price: 280000, cat: "Simu na Vifaa", desc: "Kava la kifahari lililotengenezwa kwa nyenzo maalum za kudumu.", img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85", badge: "Exclusive" },
+      { name: "Samsung Galaxy Watch 6 Classic", price: 650000, cat: "Saa na Urembo", desc: "Saa ya kisasa yenye bezel inayozunguka na muundo wa kifalme.", img: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=85", badge: "Luxury" },
+      { name: "Sony WH-1000XM5 Wireless Headphones", price: 720000, cat: "Audio & Sauti", desc: "Sauti safi kabisa duniani yenye mfumo wa kuzuia kelele.", img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85", badge: "Top Rated" },
+      { name: "JBL Charge 5 Portable Speaker", price: 420000, cat: "Audio & Sauti", desc: "Spika ya kudumu yenye bass nzito na uwezo wa kuzuia maji.", img: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=85", badge: "Popular" },
+      { name: "Anker 737 Power Bank (140W)", price: 340000, cat: "Simu na Vifaa", desc: "Powerbank yenye uwezo mkubwa wa kuchaji hadi kompyuta mpakato.", img: "https://images.unsplash.com/photo-1609592424109-dd9892f1b177?auto=format&fit=crop&w=800&q=80", badge: "Essential" },
+      { name: "Logitech MX Master 3S Wireless Mouse", price: 310000, cat: "Vifaa vya Ofisi", desc: "Mouse bora duniani kwa ajili ya wataalamu na wabunifu.", img: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=800&q=80", badge: "Pro Tool" },
+      { name: "Nintendo Switch Lite Console", price: 550000, cat: "Gaming", desc: "Kifaa cha michezo cha mkononi chenye kasi na burudani isiyoisha.", img: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=800&q=80", badge: "Gaming" },
+      { name: "Marshall Emberton II Speaker", price: 490000, cat: "Audio & Sauti", desc: "Muonekano wa kipekee wa mwamba na sauti ya 360-degree.", img: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80", badge: "Classic" },
+      { name: "Xiaomi Robot Vacuum E10", price: 480000, cat: "Smart Home", desc: "Kifaa cha kisasa cha kusafisha nyumba kiotomatiki.", img: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80", badge: "Smart Living" },
+      { name: "Nespresso Inissia Coffee Machine", price: 520000, cat: "Kitchen & Dining", desc: "Mashine ya kutengeneza kahawa safi ya Espresso nyumbani.", img: "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80", badge: "Home Luxury"}
+    ];
 
-    let idCounter = 1;
-    for (const [catName, data] of Object.entries(catMap)) {
-      for (let i = 1; i <= data.count; i++) {
-        const price = data.priceBase + (i * 75) % 1250;
+    // Generating exactly 200 items cleanly
+    const products = [];
+    let counter = 1;
+    for (let i = 0; i < 20; i++) {
+      rawItems.forEach((item, idx) => {
+        if (counter > 200) return;
+        const variationPrice = item.price + (i * 3500) % 85000;
         products.push({
-          id: idCounter,
-          sku: `TRN-${catName.substring(0,3).toUpperCase()}-2026-${100 + i}`,
-          category: catName,
-          name: `${catName.split(' ')[0]} Masterpiece Edition ${i}`,
-          brand: "TURIN Private Atelier",
-          price: price,
-          desc: `Handcrafted ${catName.toLowerCase()} object engineered with exceptional materials and timeless aesthetic refinement.`,
-          badge: i % 7 === 0 ? "Limited" : (i % 5 === 0 ? "Exclusive" : null),
-          img: data.img
+          id: counter,
+          sku: `TRN-GLB-2026-${1000 + counter}`,
+          name: i === 0 ? item.name : `${item.name} (Edition ${i+1})`,
+          price: variationPrice > 790000 ? 720000 : (variationPrice < 210000 ? 220000 : variationPrice),
+          cat: item.cat,
+          desc: item.desc,
+          img: item.img,
+          badge: i === 0 ? item.badge : (counter % 7 === 0 ? "Limited" : "Signature")
         });
-        idCounter++;
-      }
+        counter++;
+      });
     }
 
-    let activeCategory = "All";
+    let activeCategory = "Zote";
     let cart = [];
 
     function initStore() {
-      renderCategories();
-      renderProducts(products);
+      renderTabs();
+      renderCatalog(products);
     }
 
-    function renderCategories() {
-      const container = document.getElementById("categoryScroll");
+    function renderTabs() {
+      const container = document.getElementById("categoryTabs");
       container.innerHTML = categories.map(cat => `
-        <button class="cat-pill ${cat === activeCategory ? 'active' : ''}" onclick="setCategory('${cat}')">${cat}</button>
+        <button class="tab-btn ${cat === activeCategory ? 'active' : ''}" onclick="selectCategory('${cat}')">${cat}</button>
       `).join('');
     }
 
-    function setCategory(cat) {
+    function selectCategory(cat) {
       activeCategory = cat;
-      renderCategories();
-      filterProducts();
+      renderTabs();
+      filterCatalog();
     }
 
-    function handleSearch() {
-      filterProducts();
-    }
-
-    function filterProducts() {
+    function filterCatalog() {
       const query = document.getElementById("searchInput").value.toLowerCase();
       const filtered = products.filter(p => {
-        const matchesCat = activeCategory === "All" || p.category === activeCategory;
-        const matchesSearch = p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query) || p.category.toLowerCase().includes(query);
+        const matchesCat = activeCategory === "Zote" || p.cat === activeCategory;
+        const matchesSearch = p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query);
         return matchesCat && matchesSearch;
       });
 
-      document.getElementById("resultsCount").textContent = `${filtered.length} Objects Displayed`;
-      renderProducts(filtered);
+      document.getElementById("itemCounter").textContent = `${filtered.length} BIDHAA ZINAZOONEKANA`;
+      renderCatalog(filtered);
     }
 
-    function renderProducts(list) {
-      const grid = document.getElementById("productsGrid");
+    function renderCatalog(list) {
+      const grid = document.getElementById("catalogGrid");
       if (list.length === 0) {
-        grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--muted); padding: 60px 0;">No luxury objects found matching your search.</p>`;
+        grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--muted); padding: 60px 0;">Hakuna bidhaa iliyopatikana.</p>`;
         return;
       }
 
       grid.innerHTML = list.map(p => `
-        <div class="product-card">
-          <div class="card-media">
-            ${p.badge ? `<span class="card-badge">${p.badge}</span>` : ''}
+        <div class="item-card">
+          <div class="item-image">
+            ${p.badge ? `<span class="item-badge">${p.badge}</span>` : ''}
             <img src="${p.img}" alt="${p.name}" loading="lazy">
           </div>
-          <div class="card-details">
-            <span class="card-cat">${p.category}</span>
-            <h3 class="card-title">${p.name}</h3>
-            <p class="card-desc">${p.desc}</p>
-            <div class="card-footer">
-              <span class="card-price">$${p.price.toLocaleString()}.00 USD</span>
-              <button class="btn-add" onclick="addToCart(${p.id})">Add to Bag</button>
+          <div class="item-content">
+            <span class="item-cat">${p.cat}</span>
+            <h3 class="item-title">${p.name}</h3>
+            <p class="item-desc">${p.desc}</p>
+            <div class="item-footer">
+              <span class="item-price">TZS ${p.price.toLocaleString()}</span>
+              <button class="btn-buy" onclick="addToCart(${p.id})">Weka Kikapuni</button>
             </div>
           </div>
         </div>
@@ -708,39 +669,39 @@
       } else {
         cart.push({ ...item, qty: 1 });
       }
-      updateCartUI();
+      updateCartDisplay();
       toggleCart();
     }
 
     function removeFromCart(id) {
       cart = cart.filter(c => c.id !== id);
-      updateCartUI();
+      updateCartDisplay();
     }
 
-    function updateCartUI() {
+    function updateCartDisplay() {
       const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
       document.getElementById("cartCount").textContent = totalCount;
 
-      const drawerItems = document.getElementById("drawerItems");
+      const body = document.getElementById("drawerBody");
       if (cart.length === 0) {
-        drawerItems.innerHTML = `<p style="color: var(--muted); text-align: center; margin-top: 40px;">Your private bag is empty.</p>`;
-        document.getElementById("drawerTotal").textContent = "$0.00 USD";
+        body.innerHTML = `<p style="color: var(--muted); text-align: center; margin-top: 40px;">Kikapu chako kiko wazi.</p>`;
+        document.getElementById("drawerTotal").textContent = "TZS 0";
         return;
       }
 
-      drawerItems.innerHTML = cart.map(item => `
-        <div class="cart-row">
+      body.innerHTML = cart.map(item => `
+        <div class="cart-line-item">
           <img src="${item.img}" alt="${item.name}">
-          <div class="cart-row-info">
-            <div class="cart-row-title">${item.name}</div>
-            <div class="cart-row-price">$${item.price.toLocaleString()}.00 × ${item.qty}</div>
-            <button class="btn-remove" onclick="removeFromCart(${item.id})">Remove</button>
+          <div class="cart-line-info">
+            <div class="cart-line-title">${item.name}</div>
+            <div class="cart-line-price">TZS ${item.price.toLocaleString()} × ${item.qty}</div>
+            <button class="btn-del" onclick="removeFromCart(${item.id})">Ondoa</button>
           </div>
         </div>
       `).join('');
 
       const totalVal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-      document.getElementById("drawerTotal").textContent = `$${totalVal.toLocaleString()}.00 USD`;
+      document.getElementById("drawerTotal").textContent = `TZS ${totalVal.toLocaleString()}`;
     }
 
     function toggleCart() {
@@ -748,15 +709,15 @@
       document.getElementById("cartOverlay").classList.toggle("open");
     }
 
-    function checkoutAction() {
+    function payWithSelcom() {
       if (cart.length === 0) {
-        alert("Your shopping bag is currently empty.");
+        alert("Kikapu chako kiko wazi!");
         return;
       }
-      alert("Redirecting to secured international checkout gateway...");
+      const totalVal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      alert(`Inaunganisha na Selcom Pay Gateway kwa ajili ya kulipia TZS ${totalVal.toLocaleString()}.\n\nInapokea: M-Pesa, TigoPesa, Airtel Money, na Kadi za Benki.`);
     }
 
-    // Initialize application catalog
     initStore();
   </script>
 </body>
