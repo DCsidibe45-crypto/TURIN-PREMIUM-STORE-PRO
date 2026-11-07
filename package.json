@@ -1,15 +1,19 @@
 {
-  "name": "turin-premium-store-api",
-  "version": "2.0.0",
-  "description": "TURIN PREMIUM STORE international ecommerce storefront and checkout",
+  "name": "turin-premium-store",
+  "version": "3.0.0",
+  "description": "International multi-supplier ecommerce storefront for TURIN PREMIUM STORE",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1"
   }
 }
