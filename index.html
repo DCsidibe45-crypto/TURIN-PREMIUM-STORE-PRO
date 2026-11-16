@@ -3,300 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0B0B0C">
-<meta name="clckd" content="22e7c89d221d5de9d88be29dde916339" />
+<meta name="theme-color" content="#0b0b0c">
 <title>TURIN PREMIUM STORE 2026 — International Luxury & Sourcing</title>
 <meta name="description" content="TURIN PREMIUM STORE — International Premium Shopping & Global Sourcing">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --gold:#D4AF37;
-  --gold-dark:#C5A059;
-  --gold2:#E5C158;
-  --ink:#221f1a;
-  --muted:#6e6a62;
-  --line:#e8e2d5;
+  --gold-dark:#B59652;
+  --gold-light:#E5C158;
+  --ink:#0b0b0c;
+  --charcoal:#161618;
+  --muted:#8c867b;
+  --line:rgba(212,175,55,0.2);
   --cream:#faf8f3;
+  --white:#ffffff;
   --success:#2e6f40;
   --wa:#25D366;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--white);color:var(--ink);font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased}
 button,input,select,textarea{font:inherit}
 button,a{cursor:pointer}
 a{text-decoration:none;color:inherit}
 
-/* Top Bar */
-.top{background:#1f1d19;color:#f5f2eb;text-align:center;padding:9px 12px;font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase}
-.top span{color:var(--gold2);margin:0 6px}
-.top a{color:var(--gold2);font-weight:600}
+/* TOP BAR (World-Class Luxury Standard) */
+.top-bar{background:var(--ink);color:#d4d0c7;padding:8px 5%;font-size:11px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,0.15);letter-spacing:0.5px}
+.top-bar-left{display:flex;gap:20px;align-items:center}
+.top-bar-right{display:flex;gap:15px;align-items:center}
+.top-bar a:hover{color:var(--gold)}
 
-/* Header */
-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{max-width:1400px;margin:auto;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{display:flex;align-items:center;gap:11px}
-.mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font:24px 'Playfair Display',serif;font-weight:600}
-.brand{font:600 17px 'Playfair Display',serif;letter-spacing:1.2px}
-.subbrand{display:block;color:var(--gold);font-size:8.5px;letter-spacing:3px;margin-top:2px;font-weight:700}
-.links{display:flex;gap:22px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;font-weight:500}
+/* HEADER & NAVIGATION */
+header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);color:var(--white)}
+.nav{max-width:1440px;margin:auto;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-crown{font-size:24px;color:var(--gold)}
+.brand-group{display:flex;flex-direction:column}
+.brand{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;letter-spacing:1.5px;color:var(--white)}
+.subbrand{font-size:8.5px;letter-spacing:3.5px;color:var(--gold);font-weight:600;text-transform:uppercase}
+.links{display:flex;gap:24px;font-size:11.5px;letter-spacing:1px;text-transform:uppercase;font-weight:500}
+.links a{color:#f5f2eb;transition:color 0.3s}
 .links a:hover{color:var(--gold)}
-.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-actions{display:flex;align-items:center;gap:12px}
 
-/* Buttons */
-.btn{background:var(--gold);color:#0B0B0C;border:1px solid var(--gold);padding:12px 22px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;transition:.3s;display:inline-flex;align-items:center;justify-content:center;gap:6px}
-.btn:hover{background:var(--gold-dark);border-color:var(--gold-dark);color:#fff}
-.btn:disabled{opacity:.6;cursor:not-allowed}
-.outline{background:white;color:var(--ink);border-color:var(--line)}
-.outline:hover{border-color:var(--gold);color:var(--gold);background:#fffdf9}
-.gold-outline{background:white;color:var(--gold);border-color:var(--gold)}
-.gold-outline:hover{background:var(--gold);color:white}
+/* BUTTONS */
+.btn{background:var(--gold);color:var(--ink);border:1px solid var(--gold);padding:12px 26px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;transition:all 0.3s ease;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-1px)}
+.outline-btn{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.3)}
+.outline-btn:hover{border-color:var(--gold);color:var(--gold)}
 .wa-btn{background:var(--wa);border-color:var(--wa);color:#fff}
-.wa-btn:hover{background:#1ebe5d;border-color:#1ebe5d}
-.menu{display:none;padding:9px 12px;background:white;border:1px solid var(--line);font-size:16px}
+.wa-btn:hover{background:#1ebe5d}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:22px}
 
-/* ULTRA-LUXURY HERO SECTION ("LUXURY IS IN THE DETAILS") */
-.hero{background-color:#0B0B0C;color:#F8F5F0;border-bottom:1px solid rgba(212, 175, 55, 0.25);position:relative;overflow:hidden}
-.hero-inner{max-width:1340px;margin:auto;padding:95px 6%;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-.eyebrow{font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500;margin-bottom:16px;display:block}
-.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(38px, 5.2vw, 68px);font-weight:500;line-height:1.12;margin:0 0 24px 0;letter-spacing:0.02em;color:#FFFFFF}
-.hero h1 em{font-style:italic;color:var(--gold2)}
-.hero p{max-width:540px;font-family:'Montserrat',sans-serif;color:#E0DDD7;font-size:1.05rem;line-height:1.85;font-weight:300;margin-bottom:36px}
-.hero-image{position:relative;padding:14px;border:1px solid rgba(212, 175, 55, 0.35);background-color:#121214}
-.hero-image img{width:100%;height:460px;object-fit:cover;display:block;filter:contrast(1.04);transition:transform .6s}
-.hero-image:hover img{transform:scale(1.02)}
-.hero-badge{position:absolute;bottom:24px;left:24px;background:rgba(11, 11, 12, 0.92);backdrop-filter:blur(6px);padding:14px 18px;border-left:3px solid var(--gold);border-top:1px solid rgba(212,175,55,0.2);font-family:'Montserrat',sans-serif;font-size:11.5px;color:#F8F5F0}
-.hero-badge strong{display:block;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:0.5px}
-.actions{display:flex;gap:14px;flex-wrap:wrap}
+/* ULTRA-LUXURY HERO BANNER (iPhone 17 Pro Style) */
+.hero{background:radial-gradient(circle at center, #242226 0%, #0b0b0c 100%);color:var(--white);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-inner{max-width:1440px;margin:auto;padding:70px 5%;display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.hero-content{z-index:2}
+.hero-eyebrow{font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;font-weight:600;margin-bottom:15px;display:block}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(40px, 5.5vw, 72px);font-weight:600;line-height:1.08;margin:0 0 15px 0;letter-spacing:0.5px}
+.hero h2{font-size:clamp(22px, 3vw, 34px);font-weight:300;color:var(--gold-light);margin:0 0 20px 0;font-family:'Cormorant Garamond',serif}
+.hero p{color:#d4d0c7;font-size:14px;line-height:1.8;max-width:500px;margin-bottom:30px;font-weight:300}
+.hero-visual{position:relative;height:420px;display:flex;align-items:center;justify-content:center}
+.hero-visual img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 20px 30px rgba(0,0,0,0.6))}
+.hero-dots{display:flex;gap:8px;justify-content:center;margin-top:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer}
+.dot.active{background:var(--gold);width:24px;border-radius:4px}
 
-/* Benefits */
-.benefits{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 5%;border-bottom:1px solid var(--line);gap:15px;background:#fff}
-.benefit{text-align:center;padding:6px}
-.benefit strong{display:block;font:600 15px 'Playfair Display',serif;margin-bottom:3px}
-.benefit small{font-size:11px;color:var(--muted)}
+/* TRUST BADGES BAR */
+.trust-bar{background:#111012;border-bottom:1px solid var(--line);padding:22px 5%}
+.trust-grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.trust-item{display:flex;align-items:center;gap:12px;color:#f5f2eb}
+.trust-icon{font-size:24px;color:var(--gold)}
+.trust-text strong{display:block;font-size:12px;font-weight:600;letter-spacing:0.5px}
+.trust-text small{font-size:10.5px;color:var(--muted)}
 
-/* Sections */
-.section{max-width:1400px;margin:auto;padding:70px 5%}
-.heading{text-align:center;margin-bottom:32px}
-.heading h2{font:500 clamp(28px,4vw,42px) 'Playfair Display',serif;margin:10px 0}
-.heading p{color:var(--muted);font-size:13.5px;line-height:1.8;max-width:650px;margin:auto}
-.line{width:50px;height:1px;background:var(--gold);margin:16px auto}
+/* ROUND CATEGORIES SLIDER / GRID */
+.categories-section{max-width:1400px;margin:auto;padding:60px 5% 40px}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;margin:10px 0}
+.section-title p{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.cat-circles{display:grid;grid-template-columns:repeat(10,1fr);gap:15px;text-align:center}
+.cat-item{cursor:pointer;transition:transform 0.3s}
+.cat-item:hover{transform:translateY(-5px)}
+.cat-circle{width:90px;height:90px;border-radius:50%;background:#f5f3ee;border:2px solid var(--line);margin:0 auto 10px;overflow:hidden;display:grid;place-items:center}
+.cat-circle img{width:100%;height:100%;object-fit:cover}
+.cat-item span{font-size:11px;font-weight:600;color:var(--ink);letter-spacing:0.5px}
 
-/* Filters & Search */
-.categories{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:25px 0}
-.cat{background:white;border:1px solid var(--line);padding:9px 15px;font-size:11px;letter-spacing:.5px;transition:.2s}
-.cat.active,.cat:hover{background:var(--gold);border-color:var(--gold);color:white}
-.tools{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0;background:var(--cream);padding:14px;border:1px solid var(--line)}
-.tools input,.tools select{padding:11px 14px;border:1px solid var(--line);background:white;font-size:13px}
-.tools input{flex:1;min-width:220px}
-.toolbar-meta{display:flex;justify-content:space-between;align-items:center;margin:14px 0 18px;font-size:12px;color:var(--muted)}
+/* SEARCH & TOOLS */
+.store-container{max-width:1400px;margin:auto;padding:20px 5% 70px}
+.tools-bar{display:flex;gap:15px;margin-bottom:30px;background:var(--cream);padding:16px;border:1px solid var(--line)}
+.tools-bar input,.tools-bar select{padding:12px 16px;border:1px solid var(--line);background:white;font-size:13px}
+.tools-bar input{flex:1}
 
-/* Product Grid */
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.card{border:1px solid var(--line);background:white;transition:.25s;min-width:0;display:flex;flex-direction:column}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(34,31,26,0.08);border-color:var(--gold2)}
-.photo{height:235px;background:#f5f3ee;overflow:hidden;position:relative;cursor:pointer}
-.photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.card:hover .photo img{transform:scale(1.05)}
-.tag{position:absolute;top:10px;left:10px;background:rgba(255,255,255,0.95);color:var(--ink);font-size:9px;font-weight:700;padding:5px 8px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line)}
-.tag.featured{color:var(--gold);border-color:var(--gold)}
-.wish-btn{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.92);border:1px solid var(--line);display:grid;place-items:center;font-size:15px;color:var(--muted);transition:.2s}
-.wish-btn.saved{color:#c0392b;border-color:#e6b0aa;background:#fff}
-.details{padding:16px;display:flex;flex-direction:column;flex:1}
-.category{font-size:9.5px;color:var(--gold);letter-spacing:1.8px;text-transform:uppercase;font-weight:700}
-.details h3{font:500 17.5px 'Playfair Display',serif;margin:6px 0;cursor:pointer}
-.details h3:hover{color:var(--gold)}
-.desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px;flex:1}
-.price-row{display:flex;align-items:baseline;justify-content:space-between;margin:8px 0 4px}
-.price{font-size:15px;font-weight:700;color:var(--ink)}
-.stock{font-size:10.5px;color:var(--success);margin-bottom:12px;font-weight:500}
-.card-actions{display:grid;grid-template-columns:1fr auto;gap:6px}
-.add{padding:10px 12px;border:1px solid var(--gold);background:white;color:var(--gold);font-size:10.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:.2s}
-.add:hover{background:var(--gold);color:white}
-.view-btn{padding:10px 12px;border:1px solid var(--line);background:var(--cream);color:var(--ink);font-size:11px}
-.view-btn:hover{border-color:var(--gold)}
-.empty{grid-column:1/-1;padding:45px;text-align:center;background:var(--cream);color:var(--muted);border:1px solid var(--line)}
+/* PRODUCT GRID */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:25px}
+.card{border:1px solid var(--line);background:white;transition:all 0.3s ease;display:flex;flex-direction:column;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,0.08);border-color:var(--gold)}
+.card-photo{height:250px;background:#f8f6f0;position:relative;overflow:hidden;cursor:pointer}
+.card-photo img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}
+.card:hover .card-photo img{transform:scale(1.04)}
+.card-tag{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--gold);font-size:9px;font-weight:700;padding:5px 10px;letter-spacing:1px;text-transform:uppercase}
+.wish-icon{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:white;border:1px solid var(--line);display:grid;place-items:center;font-size:16px;color:var(--muted);transition:0.2s}
+.wish-icon.saved{color:#d9534f;border-color:#d9534f}
+.card-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.card-category{font-size:9.5px;color:var(--gold-dark);letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.card-body h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;margin:0 0 8px 0;cursor:pointer}
+.card-body h3:hover{color:var(--gold-dark)}
+.card-desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:15px;flex:1}
+.rating{color:#f39c12;font-size:12px;margin-bottom:10px}
+.price-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.price{font-size:17px;font-weight:700;color:var(--ink)}
+.card-actions{display:grid;grid-template-columns:1fr auto;gap:8px}
+.add-bag{background:var(--ink);color:var(--white);border:1px solid var(--ink);padding:11px;font-size:10.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:0.3s}
+.add-bag:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.view-detail{background:var(--cream);border:1px solid var(--line);padding:11px 14px;font-size:12px}
 
-/* Story & Process */
-.story{background:var(--cream);border-block:1px solid var(--line)}
-.story-inner{max-width:950px;margin:auto;padding:70px 5%;text-align:center}
-.story h2{font:500 38px 'Playfair Display',serif;margin:10px 0}
-.story p{font-size:14px;color:var(--muted);line-height:2}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.step{border:1px solid var(--line);padding:24px 18px;text-align:center;background:#fff}
-.step b{font:32px 'Playfair Display',serif;color:var(--gold)}
-.step h3{font:500 18px 'Playfair Display',serif;margin:10px 0 8px}
-.step p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+/* PROMO BANNER CARD INSIDE GRID */
+.promo-grid-card{background:radial-gradient(circle at center, #1a191c 0%, #0b0b0c 100%);color:white;padding:30px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--gold)}
+.promo-grid-card h3{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin:10px 0}
 
-/* Payment & Custom Sourcing */
-.payment{border:1px solid var(--line);padding:30px 20px;text-align:center;margin-top:36px;background:#fff}
-.methods{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0}
-.method{padding:9px 15px;border:1px solid var(--line);font-size:11.5px;font-weight:500;background:var(--cream)}
-.note{font-size:11px;color:var(--muted);line-height:1.7;max-width:720px;margin:auto}
+/* FOOTER */
+footer{background:var(--ink);color:white;padding:60px 5% 25px;border-top:1px solid var(--line)}
+.footer-grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+footer h3{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-top:0}
+footer p, footer a{font-size:12px;color:#a8a29e;line-height:2.2}
+footer a:hover{color:var(--gold)}
+.footer-copy{text-align:center;border-top:1px solid rgba(255,255,255,0.1);margin-top:40px;padding-top:20px;font-size:11px;color:#78716c}
 
-.sourcing-box{background:#f8f4eb;padding:65px 5%;border-top:1px solid var(--line)}
-.sourcing-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.sourcing-form{background:#fff;padding:28px;border:1px solid var(--line)}
-.contact-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-
-/* Footer */
-footer{background:#1f1d19;color:white;padding:50px 5% 22px}
-.foot{max-width:1300px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
-footer h3{font:500 17px 'Playfair Display',serif;color:var(--gold2);margin-top:0}
-footer p,footer a{font-size:12px;color:#d4d0c7;line-height:2}
-footer a:hover{color:var(--gold2)}
-.footlinks{display:flex;flex-direction:column}
-.copy{text-align:center;border-top:1px solid rgba(255,255,255,0.12);margin-top:32px;padding-top:18px;font-size:11px;color:#aaa}
-
-/* Modals */
-.backdrop{display:none;position:fixed;inset:0;background:rgba(20,18,14,0.68);z-index:60;overflow:auto;padding:15px}
-.backdrop.open{display:flex;justify-content:center;align-items:flex-start}
-.modal{background:white;width:100%;max-width:700px;margin:25px auto;padding:28px;position:relative;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,0.25)}
-.close{position:absolute;right:18px;top:14px;border:0;background:white;font-size:26px;line-height:1;color:var(--muted)}
-.close:hover{color:var(--ink)}
-.modal h2{font:500 26px 'Playfair Display',serif;margin:0 0 6px}
-.small{font-size:12px;color:var(--muted);margin-bottom:18px}
-
-/* Cart Lines */
-.cartline{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding:12px 0;font-size:13px}
-.cart-item-info{flex:1}
-.cart-item-info strong{display:block;font-family:'Playfair Display',serif;font-size:15px}
-.cart-item-info span{font-size:11.5px;color:var(--muted)}
-.qty-controls{display:flex;align-items:center;gap:6px}
-.qty-controls button{background:var(--cream);border:1px solid var(--line);width:26px;height:26px;display:grid;place-items:center;font-weight:700}
-.qty-controls button:hover{border-color:var(--gold)}
-.cart-summary{background:var(--cream);padding:14px 16px;margin:16px 0;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:14px}
-.cart-summary strong{font-size:18px;font-family:'Playfair Display',serif}
-
-/* Forms */
-.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.field{display:flex;flex-direction:column;gap:5px;font-size:10.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--ink)}
-.field.full{grid-column:1/-1}
-.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid var(--line);font-size:13px;background:#fff}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
-.notice{background:var(--cream);border-left:3px solid var(--gold);padding:12px 14px;font-size:11.5px;line-height:1.6;margin:14px 0;color:#5c574e}
-.message{display:none;padding:15px;background:#eef7f0;border:1px solid #b7dec0;color:#1e4d2b;font-size:13px;margin-top:16px;line-height:1.6}
-.message.error{background:#fdf2f2;border-color:#f5c6cb;color:#721c24}
-.message.show{display:block}
-
-/* Product Detail Modal */
-.pd-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:start}
-.pd-img{height:320px;background:#f5f3ee;border:1px solid var(--line);overflow:hidden}
-.pd-img img{width:100%;height:100%;object-fit:cover}
-.pd-specs{margin:14px 0;padding:12px;background:var(--cream);border:1px solid var(--line);font-size:12px}
-.pd-specs div{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--line)}
-.pd-specs div:last-child{border:0}
-
-/* Floating WhatsApp & Toast */
-.float-wa{position:fixed;bottom:22px;left:22px;background:var(--wa);color:#fff;padding:12px 18px;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 24px rgba(37,211,102,0.35);z-index:55;display:flex;align-items:center;gap:8px;transition:.2s}
-.float-wa:hover{transform:translateY(-2px);background:#1ebe5d}
-.toast{position:fixed;bottom:22px;right:22px;background:#1f1d19;color:#fff;padding:12px 18px;font-size:12.5px;border-left:3px solid var(--gold);box-shadow:0 10px 25px rgba(0,0,0,0.2);z-index:100;transform:translateY(100px);opacity:0;transition:.3s}
+/* MODALS & TOAST */
+.backdrop{display:none;position:fixed;inset:0;background:rgba(11,11,12,0.8);z-index:100;justify-content:center;align-items:flex-start;overflow:auto;padding:20px}
+.backdrop.open{display:flex}
+.modal{background:white;width:100%;max-width:750px;margin:40px auto;padding:35px;position:relative;border:1px solid var(--line);box-shadow:0 25px 60px rgba(0,0,0,0.4)}
+.close-modal{position:absolute;right:20px;top:20px;background:none;border:0;font-size:28px;color:var(--muted);cursor:pointer}
+.toast{position:fixed;bottom:25px;right:25px;background:var(--ink);color:white;padding:14px 22px;font-size:12.5px;border-left:4px solid var(--gold);box-shadow:0 10px 30px rgba(0,0,0,0.3);z-index:200;transform:translateY(120px);opacity:0;transition:0.3s}
 .toast.show{transform:translateY(0);opacity:1}
 
-@media(max-width:1024px){
+@media(max-width:1200px){
+  .cat-circles{grid-template-columns:repeat(5,1fr);row-gap:20px}
   .grid{grid-template-columns:repeat(3,1fr)}
-  .foot{grid-template-columns:1fr 1fr}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:768px){
-  .links{display:none;flex-direction:column;width:100%;padding:15px 0;border-top:1px solid var(--line);margin-top:10px}
-  .links.open{display:flex}
-  .menu{display:block}
-  .nav{flex-wrap:wrap}
-  .hero-inner,.sourcing-grid,.pd-grid{grid-template-columns:1fr;padding:45px 6%}
-  .hero-image img{height:340px}
-  .benefits{grid-template-columns:repeat(2,1fr)}
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .photo{height:185px}
-  .steps{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){
+  .links{display:none}
+  .menu-toggle{display:block}
+  .hero-inner{grid-template-columns:1fr;padding:50px 5%}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
 }
-@media(max-width:460px){
-  .grid{gap:10px}
-  .details{padding:11px}
-  .details h3{font-size:15px}
-  .photo{height:155px}
-  .form{grid-template-columns:1fr}
-  .field.full{grid-column:auto}
-  .foot{grid-template-columns:1fr}
-  .card-actions{grid-template-columns:1fr}
-  .float-wa{padding:10px 14px;font-size:11px;bottom:15px;left:15px}
+@media(max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .cat-circles{grid-template-columns:repeat(3,1fr)}
 }
 </style>
 </head>
 <body>
 
-<div class="top">
-  TURIN PREMIUM STORE <span>✦</span> INTERNATIONAL EDITION 2026 <span>✦</span> ORDER LINE: <a href="tel:+255797955045">0797 955 045</a> / <a href="tel:+255653645209">0653 645 209</a>
-</div>
-
-<header>
-<div class="nav">
-  <a class="logo" href="#home">
-    <span class="mark">T</span>
-    <span>
-      <span class="brand">TURIN PREMIUM STORE</span>
-      <span class="subbrand">INTERNATIONAL LUXURY</span>
-    </span>
-  </a>
-  <nav class="links" id="links">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#shop" onclick="closeMenu()">Shop Catalogue</a>
-    <a href="#about" onclick="closeMenu()">Philosophy</a>
-    <a href="#process" onclick="closeMenu()">How to Order</a>
-    <a href="#contact" onclick="closeMenu()">Custom Sourcing</a>
-  </nav>
-  <div class="nav-actions">
-    <button class="btn outline" onclick="toggleWishlistFilter()" id="wishNavBtn" title="Saved Items">♡ (<span id="wishCount">0</span>)</button>
-    <button class="btn gold-outline" onclick="openCart()">Bag (<span id="bagCount">0</span>)</button>
-    <button class="menu" onclick="$('#links').classList.toggle('open')" aria-label="Menu">☰</button>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>👑 BISMILLAH AR-RAHMAN AR-RAHEEM</span>
+    <span>🚚 Free Delivery Across Tanzania</span>
+  </div>
+  <div class="top-bar-right">
+    <span>🔒 Secure Payments</span>
+    <span>🎧 24/7 Support: <a href="tel:+255797955045">0797 955 045</a></span>
+    <span>TZ 🇹🇿</span>
   </div>
 </div>
+
+<!-- HEADER -->
+<header>
+  <div class="nav">
+    <a class="logo" href="#home">
+      <span class="logo-crown">👑</span>
+      <div class="brand-group">
+        <span class="brand">TURIN PREMIUM STORE</span>
+        <span class="subbrand">International Luxury</span>
+      </div>
+    </a>
+    <nav class="links" id="links">
+      <a href="#home">Home</a>
+      <a href="#shop" onclick="choose('All')">Shop Catalogue</a>
+      <a href="#shop" onclick="choose('Electronics')">Electronics</a>
+      <a href="#shop" onclick="choose('Fashion & Accessories')">Fashion</a>
+      <a href="#shop" onclick="choose('Home & Lifestyle')">Lifestyle</a>
+      <a href="#about">Philosophy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn outline-btn" onclick="toggleWishlistFilter()" title="Saved Wishlist">♡ (<span id="wishCount">0</span>)</button>
+      <button class="btn" onclick="openCart()">Bag (<span id="bagCount">0</span>)</button>
+      <button class="menu-toggle" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+    </div>
+  </div>
 </header>
 
-<main>
-<!-- HERO (LUXURY IS IN THE DETAILS - ULTRA LUXURY REDESIGN) -->
+<!-- HERO SECTION (iPhone 17 Pro Masterpiece) -->
 <section class="hero" id="home">
   <div class="hero-inner">
-    <div>
-      <span class="eyebrow">The 2026 International Collection</span>
-      <h1>Luxury is in the <em>Details.</em></h1>
-      <p>Discover curated fashion, fine watches, flagship electronics, home décor, beauty essentials, automotive upgrades, and bespoke gifts sourced globally with transparent quotation and door-to-door delivery.</p>
-      <div class="actions">
-        <a class="btn" href="#shop">Explore 56+ Products</a>
-        <a class="btn wa-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank">WhatsApp: 0797 955 045</a>
+    <div class="hero-content">
+      <span class="hero-eyebrow">The Art of Premium Living</span>
+      <h1>iPhone 17 Pro</h1>
+      <h2>Smarter. Stronger. More Powerful.</h2>
+      <p>Discover world-class international luxury, flagship technology, exquisite timepieces, and bespoke curation delivered right to your doorstep in pristine condition.</p>
+      <div style="display:flex;gap:15px;flex-wrap:wrap">
+        <a class="btn" href="#shop">Shop Now →</a>
+        <a class="btn wa-btn" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20would%20like%20to%20enquire%20about%20your%20luxury%20products." target="_blank">WhatsApp Concierge</a>
+      </div>
+      <div class="hero-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=90" alt="Luxury Swiss Mechanical Chronograph Watch on Dark Surface" loading="lazy">
-      <div class="hero-badge">
-        <strong>Verified Global Sourcing</strong>
-        <span>Direct Hotline: 0797 955 045 • 0653 645 209</span>
-      </div>
+    <div class="hero-visual">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=90" alt="iPhone 17 Pro Flagship Luxury">
     </div>
   </div>
 </section>
 
-<!-- BENEFITS -->
-<div class="benefits">
-  <div class="benefit"><strong>✧ 56+ Curated Products</strong><small>8 International luxury categories</small></div>
-  <div class="benefit"><strong>◇ Global Sourcing</strong><small>Europe, Asia & Middle East suppliers</small></div>
-  <div class="benefit"><strong>◎ Clear Quotations</strong><small>Final landed cost before payment</small></div>
-  <div class="benefit"><strong>⌑ Direct Support</strong><small>Call/WhatsApp: 0797 955 045</small></div>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-grid">
+    <div class="trust-item"><span class="trust-icon">◇</span><div class="trust-text"><strong>Premium Quality</strong><small>Guaranteed authentic</small></div></div>
+    <div class="trust-item"><span class="trust-icon">✈</span><div class="trust-text"><strong>Fast & Reliable</strong><small>Delivery across TZ</small></div></div>
+    <div class="trust-item"><span class="trust-icon">↺</span><div class="trust-text"><strong>Easy Returns</strong><small>Within 7 days inspection</small></div></div>
+    <div class="trust-item"><span class="trust-icon">🎧</span><div class="trust-text"><strong>24/7 Support</strong><small>Always here for you</small></div></div>
+    <div class="trust-item"><span class="trust-icon">🔒</span><div class="trust-text"><strong>Secure Shopping</strong><small>Trusted payment channels</small></div></div>
+  </div>
 </div>
 
-<!-- SHOP CATALOGUE -->
-<section class="section" id="shop">
-  <div class="heading">
-    <div class="eyebrow" style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500">Shop the Collection</div>
-    <h2>Discover Your Style</h2>
-    <div class="line"></div>
-    <p>Select items to build your quotation bag. Indicative prices are displayed in USD or TZS; supplier stock and shipping costs are confirmed prior to payment.</p>
+<!-- ROUND CATEGORIES BAR -->
+<div class="categories-section" id="shop">
+  <div class="section-title">
+    <p>Curated Excellence</p>
+    <h2>Explore Categories</h2>
   </div>
+  <div class="cat-circles" id="categoryCircles"></div>
+</div>
 
-  <div class="categories" id="categories"></div>
-
-  <div class="tools">
-    <input id="search" placeholder="Search 56+ products by name, brand, style or keyword..." oninput="renderProducts()">
+<!-- STORE PRODUCTS CATALOGUE -->
+<div class="store-container">
+  <div class="tools-bar">
+    <input id="search" placeholder="Search 56+ luxury products by name, brand or category..." oninput="renderProducts()">
     <select id="currency" onchange="onCurrencyChange()">
       <option value="USD">Currency: USD ($)</option>
       <option value="TZS">Currency: TZS (TSh)</option>
@@ -309,289 +260,119 @@ footer a:hover{color:var(--gold2)}
     </select>
   </div>
 
-  <div class="toolbar-meta">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;font-size:12.5px;color:var(--muted)">
     <span id="count">Loading catalogue...</span>
     <span id="activeFilterLabel">Showing: All Categories</span>
   </div>
 
   <div class="grid" id="products"></div>
-</section>
+</div>
 
-<!-- ABOUT -->
-<section class="story" id="about">
-  <div class="story-inner">
-    <div class="eyebrow" style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500">The Turin Philosophy</div>
-    <h2>International Reach. Timeless Elegance.</h2>
-    <div class="line"></div>
-    <p>TURIN PREMIUM STORE bridges discerning shoppers with trusted international manufacturers and boutiques. Whether you are selecting from our ready-to-source 2026 launch catalogue or requesting a rare item from abroad, we verify authenticity, lock in transparent pricing, and coordinate reliable delivery straight to your doorstep.</p>
-  </div>
-</section>
-
-<!-- HOW TO ORDER -->
-<section class="section" id="process">
-  <div class="heading">
-    <div class="eyebrow" style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500">Simple. Clear. Personal.</div>
-    <h2>Your Order Journey</h2>
-    <div class="line"></div>
-  </div>
-  <div class="steps">
-    <div class="step"><b>01</b><h3>Discover</h3><p>Browse our 56+ catalogue items or submit a custom item request.</p></div>
-    <div class="step"><b>02</b><h3>Enquire</h3><p>Add items to your bag and submit your delivery & payment preference.</p></div>
-    <div class="step"><b>03</b><h3>Confirmation</h3><p>We verify supplier stock, shipping timeline, and exact final invoice.</p></div>
-    <div class="step"><b>04</b><h3>Payment & Delivery</h3><p>Complete payment via your chosen channel and track your delivery.</p></div>
-  </div>
-
-  <div class="payment">
-    <div class="eyebrow" style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500">Payment Preferences</div>
-    <h2 style="font:500 26px 'Playfair Display',serif;margin:8px 0">Flexible Payment Options</h2>
-    <div class="methods">
-      <span class="method">M-Pesa</span>
-      <span class="method">Airtel Money</span>
-      <span class="method">Mixx by Yas</span>
-      <span class="method">Bank Transfer</span>
-      <span class="method">Visa</span>
-      <span class="method">Mastercard</span>
-      <span class="method">Selcom</span>
-      <span class="method">Cash on Approved Pickup</span>
-    </div>
-    <p class="note">Payment options are recorded as preferences with your quotation enquiry. An official invoice is issued once supplier availability is confirmed. Never share card PINs or OTP codes.</p>
+<!-- PHILOSOPHY / ABOUT -->
+<section style="background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:70px 5%;text-align:center" id="about">
+  <div style="max-width:900px;margin:auto">
+    <span style="font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-weight:600">The Turin Philosophy</span>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:38px;margin:15px 0">Luxury is in the Details.</h2>
+    <p style="color:var(--muted);font-size:14px;line-height:2">TURIN PREMIUM STORE bridges discerning clients with top-tier international manufacturers and boutiques. We verify authenticity, ensure transparent landed cost quotations, and coordinate secure delivery straight to your location in Tanzania and beyond.</p>
   </div>
 </section>
-
-<!-- CUSTOM SOURCING & CONTACT -->
-<section class="sourcing-box" id="contact">
-  <div class="sourcing-grid">
-    <div>
-      <div class="eyebrow" style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.28em;color:var(--gold);text-transform:uppercase;font-weight:500">Bespoke Concierge</div>
-      <h2 style="font:500 34px 'Playfair Display',serif;margin:10px 0">Looking for Something Specific?</h2>
-      <p style="color:var(--muted);font-size:14px;line-height:1.9">Can't find the exact watch reference, designer piece, electronic gadget, or automotive part in our catalogue? Tell us what you need and our international sourcing desk will locate it and send a formal quote within 24 hours.</p>
-      <div style="margin-top:20px;font-size:13.5px;line-height:2.1">
-        <div><strong>✦ Primary Line / WhatsApp:</strong> <a href="tel:+255797955045" style="color:var(--gold-dark);font-weight:700">0797 955 045</a></div>
-        <div><strong>✦ Secondary Line / Calls:</strong> <a href="tel:+255653645209" style="color:var(--gold-dark);font-weight:700">0653 645 209</a></div>
-        <div><strong>✦ Sourcing Hours:</strong> Monday – Saturday, 08:30 – 19:30 EAT</div>
-        <div><strong>✦ Delivery Coverage:</strong> Tanzania & International Destinations</div>
-      </div>
-      <div class="contact-pills">
-        <a href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20need%20help%20sourcing%20a%20product." target="_blank" class="btn wa-btn">Chat on WhatsApp (0797 955 045)</a>
-        <a href="tel:+255653645209" class="btn outline">Call 0653 645 209</a>
-      </div>
-    </div>
-    <div class="sourcing-form">
-      <h3 style="font:500 22px 'Playfair Display',serif;margin:0 0 14px">Custom Product Request</h3>
-      <form id="customRequestForm">
-        <div class="form">
-          <label class="field">Your Name *<input name="reqName" required placeholder="e.g. Amina Hassan"></label>
-          <label class="field">Phone / WhatsApp *<input name="reqPhone" required placeholder="07XX XXX XXX"></label>
-          <label class="field full">Item Name / Brand / Model *<input name="reqItem" required placeholder="e.g. Seiko Presage / Dyson Airwrap / iPhone 16 Pro"></label>
-          <label class="field full">Specifications / Link / Budget<textarea name="reqNotes" rows="3" placeholder="Color, size, quantity, or target budget..."></textarea></label>
-        </div>
-        <button class="btn" type="submit" style="width:100%;margin-top:14px">Send Sourcing Request</button>
-        <div class="message" id="customMsg"></div>
-      </form>
-    </div>
-  </div>
-</section>
-</main>
 
 <!-- FOOTER -->
 <footer>
-  <div class="foot">
+  <div class="footer-grid">
     <div>
-      <div class="logo">
-        <span class="mark">T</span>
-        <span>
+      <div class="logo" style="margin-bottom:15px">
+        <span class="logo-crown">👑</span>
+        <div class="brand-group">
           <span class="brand" style="color:white">TURIN PREMIUM STORE</span>
-          <span class="subbrand">INTERNATIONAL LUXURY</span>
-        </span>
+          <span class="subbrand">International Luxury</span>
+        </div>
       </div>
-      <p style="margin-top:14px">Your trusted gateway to international fashion, watches, electronics, home elegance, and bespoke product sourcing.</p>
-      <p style="color:var(--gold2);font-weight:600">Tel / WhatsApp: 0797 955 045 | 0653 645 209</p>
+      <p>Your ultimate gateway to international fashion, fine watches, flagship electronics, and bespoke product sourcing.</p>
+      <p style="color:var(--gold);font-weight:600">Order Hotline: 0797 955 045 / 0653 645 209</p>
     </div>
     <div>
       <h3>Collections</h3>
-      <div class="footlinks">
-        <a href="#shop" onclick="choose('Fashion & Accessories')">Fashion & Accessories</a>
-        <a href="#shop" onclick="choose('Watches & Jewellery')">Watches & Jewellery</a>
-        <a href="#shop" onclick="choose('Electronics')">Electronics & Audio</a>
-        <a href="#shop" onclick="choose('Home & Lifestyle')">Home & Lifestyle</a>
-      </div>
+      <div><a href="#shop" onclick="choose('Fashion & Accessories')">Fashion & Accessories</a></div>
+      <div><a href="#shop" onclick="choose('Watches & Jewellery')">Watches & Jewellery</a></div>
+      <div><a href="#shop" onclick="choose('Electronics')">Electronics & Audio</a></div>
+      <div><a href="#shop" onclick="choose('Home & Lifestyle')">Home & Lifestyle</a></div>
     </div>
     <div>
       <h3>More Categories</h3>
-      <div class="footlinks">
-        <a href="#shop" onclick="choose('Beauty & Personal Care')">Beauty & Fragrance</a>
-        <a href="#shop" onclick="choose('Automotive Accessories')">Automotive Care</a>
-        <a href="#shop" onclick="choose('Luxury Gifts')">Luxury Gifts</a>
-        <a href="#shop" onclick="choose('Travel & Lifestyle')">Travel & Luggage</a>
-      </div>
+      <div><a href="#shop" onclick="choose('Beauty & Personal Care')">Beauty & Fragrance</a></div>
+      <div><a href="#shop" onclick="choose('Automotive Accessories')">Automotive Care</a></div>
+      <div><a href="#shop" onclick="choose('Luxury Gifts')">Luxury Gifts</a></div>
+      <div><a href="#shop" onclick="choose('Travel & Lifestyle')">Travel & Luggage</a></div>
     </div>
     <div>
       <h3>Customer Care</h3>
-      <div class="footlinks">
-        <a href="tel:+255797955045">Call 0797 955 045</a>
-        <a href="tel:+255653645209">Call 0653 645 209</a>
-        <a href="https://wa.me/255797955045" target="_blank">WhatsApp Concierge</a>
-        <a href="javascript:void(0)" onclick="openCart()">View Shopping Bag</a>
-      </div>
+      <div><a href="tel:+255797955045">Call 0797 955 045</a></div>
+      <div><a href="https://wa.me/255797955045" target="_blank">WhatsApp Concierge</a></div>
+      <div><a href="javascript:void(0)" onclick="openCart()">View Shopping Bag</a></div>
     </div>
   </div>
-  <div class="copy">© 2026 TURIN PREMIUM STORE. ALL RIGHTS RESERVED. | 0797 955 045 • 0653 645 209</div>
+  <div class="footer-copy">© 2026 TURIN PREMIUM STORE. ALL RIGHTS RESERVED. | 0797 955 045 • 0653 645 209</div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="float-wa" href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20would%20like%20to%20place%20an%20order." target="_blank">
-  <span>💬 WhatsApp Us</span>
-</a>
-
-<!-- SHOPPING BAG & CHECKOUT MODAL -->
+<!-- MODALS -->
 <div class="backdrop" id="cartModal" onclick="if(event.target===this)closeCart()">
   <div class="modal">
-    <button class="close" onclick="closeCart()">×</button>
-    <h2>Your Shopping Bag</h2>
-    <p class="small">Review your selected items and submit your quotation enquiry.</p>
-    
+    <button class="close-modal" onclick="closeCart()">×</button>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-top:0">Your Shopping Bag</h2>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:20px">Review your selected items and submit your quotation enquiry.</p>
     <div id="cartLines"></div>
-    
-    <div class="cart-summary" id="cartSummary" style="display:none">
+    <div style="background:var(--cream);padding:15px;margin:20px 0;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">
       <span>Estimated Subtotal (<span id="summaryItems">0</span> items):</span>
-      <strong id="summaryTotal">$0.00</strong>
+      <strong id="summaryTotal" style="font-family:'Cormorant Garamond',serif;font-size:20px">$0.00</strong>
     </div>
-
-    <div class="notice">
-      <strong>Quotation Notice:</strong> Prices shown are indicative display prices. Final supplier availability, shipping fee, and applicable duties are confirmed via <strong>0797 955 045 / 0653 645 209</strong> before payment.
-    </div>
-
     <form id="checkout">
-      <div class="form">
-        <label class="field">First Name *<input name="firstName" required placeholder="First name"></label>
-        <label class="field">Last Name *<input name="lastName" required placeholder="Last name"></label>
-        <label class="field">Email Address *<input name="email" type="email" required placeholder="you@example.com"></label>
-        <label class="field">Phone / WhatsApp *<input name="phone" required placeholder="07XX XXX XXX"></label>
-        <label class="field">Country *<input name="country" value="Tanzania" required></label>
-        <label class="field">City *<input name="city" required placeholder="e.g. Dar es Salaam"></label>
-        <label class="field full">Delivery Address / Area *<input name="address" required placeholder="Street, building, or pickup landmark"></label>
-        <label class="field">Postal Code<input name="postalCode" placeholder="Optional"></label>
-        <label class="field">Preferred Currency
-          <select name="currency" id="modalCurrency">
-            <option value="USD">USD ($)</option>
-            <option value="TZS">TZS (TSh)</option>
-          </select>
-        </label>
-        <label class="field full">Preferred Payment Method *
-          <select name="paymentMethod" required>
-            <option value="">Select payment preference</option>
-            <option>M-Pesa</option>
-            <option>Airtel Money</option>
-            <option>Mixx by Yas</option>
-            <option>Bank Transfer</option>
-            <option>Visa / Mastercard</option>
-            <option>Selcom</option>
-          </select>
-        </label>
-        <label class="field full">Order Notes (Optional)<input name="notes" placeholder="Preferred color, size, or delivery instructions"></label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:15px">
+        <input name="firstName" required placeholder="First Name *" style="padding:12px;border:1px solid var(--line)">
+        <input name="lastName" required placeholder="Last Name *" style="padding:12px;border:1px solid var(--line)">
+        <input name="email" type="email" required placeholder="Email Address *" style="padding:12px;border:1px solid var(--line)">
+        <input name="phone" required placeholder="Phone / WhatsApp *" style="padding:12px;border:1px solid var(--line)">
+        <input name="city" required placeholder="City (e.g. Dar es Salaam) *" style="padding:12px;border:1px solid var(--line)">
+        <select name="paymentMethod" required style="padding:12px;border:1px solid var(--line)">
+          <option value="">Select Payment Preference *</option>
+          <option>M-Pesa</option>
+          <option>Airtel Money</option>
+          <option>Mixx by Yas</option>
+          <option>Bank Transfer</option>
+          <option>Visa / Mastercard</option>
+        </select>
       </div>
-      <button class="btn" id="submit" style="width:100%;margin-top:18px;padding:14px">Submit Order Enquiry</button>
-      <div class="message" id="message"></div>
+      <button class="btn" id="submit" style="width:100%;padding:14px">Submit Order Enquiry</button>
+      <div id="message" style="display:none;margin-top:15px;padding:12px;background:#eef7f0;color:#1e4d2b;font-size:12.5px"></div>
     </form>
   </div>
 </div>
 
-<!-- PRODUCT DETAIL QUICK-VIEW MODAL -->
-<div class="backdrop" id="productModal" onclick="if(event.target===this)closeProductModal()">
-  <div class="modal" style="max-width:760px">
-    <button class="close" onclick="closeProductModal()">×</button>
-    <div id="productModalContent"></div>
-  </div>
-</div>
-
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
 const STORE_WA = "255797955045";
-const STORE_PHONE_1 = "0797 955 045";
-const STORE_PHONE_2 = "0653 645 209";
+const STORE_PHONE = "0797 955 045";
 const EXCHANGE_RATE = 2600;
-const photo = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=850&q=85`;
+const photo = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=85`;
 
 const starter = [
-  // 1. FASHION & ACCESSORIES (8 items)
-  {id:1, name:"Milanese Structured Leather Handbag", category:"Fashion & Accessories", badge:"Bestseller", description:"Full-grain calfskin structured tote with brushed gold hardware and detachable crossbody strap.", price:145, origin:"Italy / Sourcing", material:"100% Genuine Leather", leadTime:"5–9 Business Days", image:photo("photo-1584917865442-de89df76afd3")},
-  {id:2, name:"Saffiano Bifold Leather Wallet", category:"Fashion & Accessories", badge:"Essential", description:"Slim scratch-resistant Saffiano leather wallet with 8 card slots and RFID lining.", price:48, origin:"Europe", material:"Saffiano Calfskin", leadTime:"4–7 Business Days", image:photo("photo-1627123424574-724758594e93")},
-  {id:3, name:"Riviera Polarized Aviator Sunglasses", category:"Fashion & Accessories", badge:"2026 Edition", description:"Lightweight titanium frame with UV400 anti-reflective polarized lenses and hard case.", price:65, origin:"Milan Design", material:"Titanium & Mineral Glass", leadTime:"4–7 Business Days", image:photo("photo-1511499767150-a48a237f0083")},
-  {id:4, name:"Silk Cashmere Evening Scarf", category:"Fashion & Accessories", badge:"Limited", description:"Hand-rolled edges crafted from a breathable mulberry silk and fine cashmere blend.", price:58, origin:"Como, Italy", material:"70% Silk, 30% Cashmere", leadTime:"5–8 Business Days", image:photo("photo-1601924994987-69e26d50dc26")},
-  {id:5, name:"Italian Reversible Dress Belt", category:"Fashion & Accessories", badge:"Executive", description:"Smooth black-to-espresso calfskin leather strap with brushed palladium buckle.", price:54, origin:"Florence / EU", material:"Full-Grain Calfskin", leadTime:"4–7 Business Days", image:photo("photo-1553062407-98eeb64c6a62")},
-  {id:6, name:"Handcrafted Suede Penny Loafers", category:"Fashion & Accessories", badge:"Signature", description:"Blake-stitched water-repellent Italian suede loafers with cushioned leather insole.", price:129, origin:"Naples / EU", material:"100% Calf Suede", leadTime:"6–10 Business Days", image:photo("photo-1614252369475-531eba835eb1")},
-  {id:7, name:"Quilted Chain Evening Crossbody Clutch", category:"Fashion & Accessories", badge:"Evening", description:"Diamond-quilted lambskin-feel clutch with detachable gold-tone chain strap.", price:89, origin:"Paris Studio", material:"Supple Nappa Finish", leadTime:"5–8 Business Days", image:photo("photo-1566150905458-1bf1fc113f0d")},
-  {id:8, name:"Cashmere Tailored Travel Blazer", category:"Fashion & Accessories", badge:"Menswear", description:"Wrinkle-resistant unstructured wool-cashmere blazer tailored for effortless travel.", price:175, origin:"Milan / UK", material:"85% Merino Wool, 15% Cashmere", leadTime:"6–10 Business Days", image:photo("photo-1507679799987-c73779587ccf")},
-
-  // 2. WATCHES & JEWELLERY (8 items)
-  {id:9, name:"Torino Chronographe Automatic Watch", category:"Watches & Jewellery", badge:"Signature", description:"Sapphire crystal dress chronograph with stainless steel casing and genuine leather strap.", price:235, origin:"Switzerland / HK", material:"316L Steel & Sapphire", leadTime:"6–10 Business Days", image:photo("photo-1523275335684-37898b6baf30")},
-  {id:10, name:"18K Gold-Plated Vermeil Cuff & Chain Set", category:"Watches & Jewellery", badge:"Gift Favourite", description:"Tarnish-resistant 18K gold vermeil over sterling silver for timeless evening elegance.", price:79, origin:"Paris Studio", material:"925 Sterling Silver + 18K Gold", leadTime:"4–8 Business Days", image:photo("photo-1611652022419-a9419f74343d")},
-  {id:11, name:"Minimalist Bauhaus Mesh Watch", category:"Watches & Jewellery", badge:"Classic", description:"Ultra-thin 6.5mm case with Japanese quartz movement and Milanese steel mesh band.", price:115, origin:"Tokyo / EU", material:"Stainless Steel", leadTime:"5–8 Business Days", image:photo("photo-1524592094714-0f0654e20314")},
-  {id:12, name:"Velvet 6-Slot Watch & Jewellery Valet Box", category:"Watches & Jewellery", badge:"Collector", description:"Handcrafted walnut wood display box with suede pillows and tempered glass lid.", price:68, origin:"International", material:"Walnut Wood & Suede", leadTime:"5–9 Business Days", image:photo("photo-1614164185128-e4ec99c436d7")},
-  {id:13, name:"200M Diver Automatic Stainless Watch", category:"Watches & Jewellery", badge:"Sport Luxury", description:"Ceramic unidirectional bezel, luminous markers, and solid oyster steel bracelet.", price:265, origin:"Japan / Global", material:"316L Steel & Ceramic", leadTime:"6–10 Business Days", image:photo("photo-1547996160-81dfa63595aa")},
-  {id:14, name:"Freshwater Pearl & Gold Drop Earrings", category:"Watches & Jewellery", badge:"Bridal", description:"AAA-grade luminous freshwater pearls suspended from 18K gold-plated hoops.", price:62, origin:"International", material:"Natural Pearl & Vermeil", leadTime:"4–7 Business Days", image:photo("photo-1535632066927-ab7c9ab60908")},
-  {id:15, name:"Cuban Link 18K Gold-Plated Bracelet", category:"Watches & Jewellery", badge:"Statement", description:"Heavyweight 8mm diamond-cut Cuban link chain bracelet with box clasp lock.", price:74, origin:"Miami / Dubai", material:"316L Steel + 5x Gold PVD", leadTime:"4–7 Business Days", image:photo("photo-1573408301185-9146fe634ad0")},
-  {id:16, name:"Diamond-Cut Solitaire Pendant Necklace", category:"Watches & Jewellery", badge:"Elegant", description:"Brilliant-cut moissanite solitaire pendant on an adjustable 18-inch sterling chain.", price:95, origin:"Antwerp / Global", material:"925 Silver & D-Color Moissanite", leadTime:"5–8 Business Days", image:photo("photo-1599643478518-a784e5dc4c8f")},
-
-  // 3. ELECTRONICS (8 items)
-  {id:17, name:"Studio ANC Wireless Over-Ear Headphones", category:"Electronics", badge:"Top Rated", description:"Hybrid active noise cancellation, 45-hour battery life, and Hi-Res lossless audio drivers.", price:139, origin:"Global Tech", material:"Aluminum & Memory Foam", leadTime:"4–7 Business Days", image:photo("photo-1505740420928-5e560c06d30e")},
-  {id:18, name:"4K Mirrorless Creator Camera Kit", category:"Electronics", badge:"Pro Gear", description:"24.2MP APS-C sensor with 16-50mm lens, flip touchscreen, and fast eye-autofocus.", price:649, origin:"Japan / Global", material:"Magnesium Alloy Body", leadTime:"6–10 Business Days", image:photo("photo-1516035069371-29a1b244cc32")},
-  {id:19, name:"MagSafe 3-in-1 Aluminum Charging Dock", category:"Electronics", badge:"Desk Setup", description:"Fast wireless charging station for smartphone, smartwatch, and wireless earbuds simultaneously.", price:54, origin:"Shenzhen / EU", material:"CNC Anodized Aluminum", leadTime:"4–7 Business Days", image:photo("photo-1605236453806-6ff36851218e")},
-  {id:20, name:"360° Waterproof Bluetooth Hi-Fi Speaker", category:"Electronics", badge:"Portable", description:"Deep bass portable speaker with IP67 dust/water resistance and 20-hour playtime.", price:78, origin:"Global Tech", material:"Woven Acoustic Fabric", leadTime:"4–7 Business Days", image:photo("photo-1608043152269-423dbba4e7e1")},
-  {id:21, name:"AMOLED Titanium GPS Fitness Smartwatch", category:"Electronics", badge:"Smart Tech", description:"Sapphire glass display, 14-day battery, heart-rate/SpO2 tracking, and Bluetooth calling.", price:165, origin:"Global Tech", material:"Titanium Alloy & Fluoroelastomer", leadTime:"4–7 Business Days", image:photo("photo-1579586337278-3befd40fd17a")},
-  {id:22, name:"Ultra-Slim 20,000mAh 65W Laptop Power Bank", category:"Electronics", badge:"Power", description:"Airline-safe PD fast charger capable of powering MacBooks, iPads, and phones at full speed.", price:69, origin:"Global Tech", material:"Brushed Aluminum Shell", leadTime:"4–7 Business Days", image:photo("photo-1609091839311-d5365f9ff1c5")},
-  {id:23, name:"4K Mini Gimbal Pocket Drone with Dual Battery", category:"Electronics", badge:"Aerial", description:"Sub-249g foldable drone with 3-axis motorized gimbal, 10km HD transmission, and fly-more bag.", price:389, origin:"Global Tech", material:"Composite Polymer", leadTime:"5–9 Business Days", image:photo("photo-1473968512647-3e447244af8f")},
-  {id:24, name:"1080p Smart Portable Cinema Projector", category:"Electronics", badge:"Home Cinema", description:"Auto-keystone Wi-Fi 6 & Bluetooth projector supporting up to 150-inch wall projection.", price:149, origin:"Global Tech", material:"Matte ABS & Optical Glass", leadTime:"5–8 Business Days", image:photo("photo-1535016120720-40c646be5580")},
-
-  // 4. HOME & LIFESTYLE (7 items)
-  {id:25, name:"16-Piece Porcelain & Gold Rim Dinnerware", category:"Home & Lifestyle", badge:"Hosting", description:"Fine bone porcelain dining set for 4 with hand-brushed metallic gold rims.", price:125, origin:"Europe / Asia", material:"Fine Bone Porcelain", leadTime:"7–12 Business Days", image:photo("photo-1490312278390-ab64016e0aa9")},
-  {id:26, name:"Nordic Sculptural Ceramic Vase Duo", category:"Home & Lifestyle", badge:"Interior", description:"Matte textured artisan ceramic vases designed for dried pampas or fresh floral arrangements.", price:46, origin:"Scandinavian Style", material:"Kiln-Fired Ceramic", leadTime:"5–9 Business Days", image:photo("photo-1578500494198-246f612d3b3d")},
-  {id:27, name:"600-Thread-Count Egyptian Cotton Bedding Set", category:"Home & Lifestyle", badge:"Hotel Luxury", description:"Breathable sateen weave duvet cover and 4 pillowcases in crisp ivory white (King/Queen).", price:135, origin:"Egypt / Turkey", material:"100% Long-Staple Cotton", leadTime:"5–9 Business Days", image:photo("photo-1631049307264-da0ec9d70304")},
-  {id:28, name:"Barista Pro Espresso & Milk Frother Machine", category:"Home & Lifestyle", badge:"Coffee", description:"15-bar Italian pump espresso maker with steam wand for café-quality cappuccinos at home.", price:189, origin:"Italy / Global", material:"Brushed Stainless Steel", leadTime:"6–10 Business Days", image:photo("photo-1517668808822-9ebb02f2a0e6")},
-  {id:29, name:"Ultrasonic Essential Oil Aroma Diffuser", category:"Home & Lifestyle", badge:"Wellness", description:"Whisper-quiet ceramic mist diffuser with warm ambient candle glow and auto shut-off.", price:42, origin:"Japan / Global", material:"Handcrafted Ceramic", leadTime:"4–7 Business Days", image:photo("photo-1602928321679-560bb453f190")},
-  {id:30, name:"Cordless Rechargeable Brass Table Lamp", category:"Home & Lifestyle", badge:"Lighting", description:"Touch-dimmable warm LED architectural lamp with 24-hour battery for dining or bedside.", price:52, origin:"Milan Design", material:"Anodized Brushed Brass", leadTime:"4–7 Business Days", image:photo("photo-1507473885765-e6ed057f782c")},
-  {id:31, name:"7-Piece Damascus Steel Chef Knife Block", category:"Home & Lifestyle", badge:"Culinary", description:"67-layer high-carbon Japanese steel blades with ergonomic pakkawood handles and magnetic block.", price:148, origin:"Japan / Global", material:"VG-10 Damascus Steel", leadTime:"5–9 Business Days", image:photo("photo-1593618998160-e34014e67546")},
-
-  // 5. BEAUTY & PERSONAL CARE (7 items)
-  {id:32, name:"Botanical Hydration & Glow Skincare Ritual", category:"Beauty & Personal Care", badge:"Clean Beauty", description:"Complete 4-step daily routine: gentle cleanser, hyaluronic serum, vitamin C, and barrier cream.", price:64, origin:"South Korea / France", material:"Dermatologist Tested", leadTime:"4–8 Business Days", image:photo("photo-1556228578-0d85b1a4d571")},
-  {id:33, name:"Oud & Bergamot Eau de Parfum (100ml)", category:"Beauty & Personal Care", badge:"Signature Scent", description:"Rich woody oriental fragrance blending Calabrian bergamot, aged oud, and warm amber.", price:98, origin:"Grasse / Dubai", material:"Extrait de Parfum 25%", leadTime:"4–7 Business Days", image:photo("photo-1541643600914-78b084683601")},
-  {id:34, name:"14-Piece Pro Vegan Makeup Brush Collection", category:"Beauty & Personal Care", badge:"Artist Set", description:"Ultra-soft synthetic taklon bristles with weighted rose-gold ferrules and travel roll pouch.", price:36, origin:"International", material:"Cruelty-Free Synthetic", leadTime:"4–7 Business Days", image:photo("photo-1522335789203-aabd1fc54bc9")},
-  {id:35, name:"Ionic Ceramic Salon Hair Dryer & Diffuser", category:"Beauty & Personal Care", badge:"Salon Tech", description:"High-velocity brushless motor reduces frizz and drying time by 50% with smart heat control.", price:85, origin:"Global", material:"Tourmaline Ceramic", leadTime:"5–8 Business Days", image:photo("photo-1522338242992-e1a54906a8da")},
-  {id:36, name:"LED Red-Light Facial Sculpting & Lifting Wand", category:"Beauty & Personal Care", badge:"Skincare Tech", description:"Microcurrent and 630nm red light therapy device to firm skin and boost collagen absorption.", price:76, origin:"Seoul / Global", material:"Medical-Grade Aluminum", leadTime:"4–7 Business Days", image:photo("photo-1570172619644-dfd03ed5d881")},
-  {id:37, name:"Sandalwood & Cedar Luxury Beard Grooming Kit", category:"Beauty & Personal Care", badge:"Mens Grooming", description:"Organic cold-pressed beard oil, styling balm, boar bristle brush, and pearwood comb.", price:44, origin:"UK / EU", material:"100% Organic Botanicals", leadTime:"4–7 Business Days", image:photo("photo-1621607512214-68297480165e")},
-  {id:38, name:"Velvet Rose & Saffron Niche Parfum (100ml)", category:"Beauty & Personal Care", badge:"Unisex", description:"Long-lasting floral-spicy niche perfume with Damask rose, saffron threads, and white musk.", price:112, origin:"Paris / Dubai", material:"Eau de Parfum Intense", leadTime:"4–7 Business Days", image:photo("photo-1594035910387-fea47794261f")},
-
-  // 6. AUTOMOTIVE ACCESSORIES (6 items)
-  {id:39, name:"Executive Nappa Leather Car Seat Organizers", category:"Automotive Accessories", badge:"Auto Luxury", description:"Twin backseat storage organizers with foldable tablet tray, tissue holder, and diamond stitching.", price:49, origin:"Global Auto", material:"PU Nappa Leather", leadTime:"5–8 Business Days", image:photo("photo-1503376780353-7e6692767b70")},
-  {id:40, name:"18-Piece Ceramic Wax & Car Detailing Kit", category:"Automotive Accessories", badge:"Complete Kit", description:"pH-neutral snow foam, SiO2 ceramic spray sealant, wheel cleaner, and plush microfiber towels.", price:59, origin:"UK / USA", material:"Carnauba & SiO2 Formula", leadTime:"5–9 Business Days", image:photo("photo-1607860108855-64acf2078ed9")},
-  {id:41, name:"4K Dual Dash Cam with Night Vision & GPS", category:"Automotive Accessories", badge:"Safety", description:"Ultra-HD front and rear recording with Sony Starvis sensor, parking mode, and Wi-Fi app sync.", price:112, origin:"Global Tech", material:"Heat-Resistant Polycarbonate", leadTime:"4–7 Business Days", image:photo("photo-1549317661-bd32c8ce0db2")},
-  {id:42, name:"Cordless High-Power Car Vacuum & Inflator", category:"Automotive Accessories", badge:"2-in-1", description:"16,000Pa suction handheld vacuum combined with digital tire pressure inflator and LED work light.", price:52, origin:"Global Auto", material:"ABS & HEPA Filter", leadTime:"4–7 Business Days", image:photo("photo-1489824904134-891ab64532f1")},
-  {id:43, name:"Heavy-Duty 12V Lithium Car Jump Starter Pack", category:"Automotive Accessories", badge:"Emergency", description:"2000A peak jump starter for up to 8.0L petrol / 6.5L diesel engines plus dual USB power bank.", price:79, origin:"Global Auto", material:"Rugged Shockproof Casing", leadTime:"4–7 Business Days", image:photo("photo-1492144534655-ae79c964c9d7")},
-  {id:44, name:"Wireless CarPlay & Android Auto AI Adapter", category:"Automotive Accessories", badge:"Smart Drive", description:"Convert wired factory CarPlay into instant wireless connection with zero-lag 5GHz Wi-Fi.", price:64, origin:"Global Tech", material:"Carbon-Texture Alloy", leadTime:"4–7 Business Days", image:photo("photo-1511919884226-fd3cad34687c")},
-
-  // 7. LUXURY GIFTS (6 items)
-  {id:45, name:"Bespoke Royal Gold Ribbon Gift Hamper", category:"Luxury Gifts", badge:"VIP Gift", description:"Curated presentation box featuring artisan chocolates, scented soy candle, and silk keepsake.", price:68, origin:"Turin Curated", material:"Rigid Magnetic Gift Box", leadTime:"3–6 Business Days", image:photo("photo-1549465220-1a8b9238cd48")},
-  {id:46, name:"Bohemian Cut Crystal Whiskey Decanter Set", category:"Luxury Gifts", badge:"Executive", description:"Lead-free hand-cut crystal decanter (850ml) with 4 heavy-base rocks glasses in presentation case.", price:94, origin:"Czech / EU", material:"24% Lead-Free Crystal", leadTime:"6–10 Business Days", image:photo("photo-1577083552431-6e5fd01aa342")},
-  {id:47, name:"Preserved Forever Roses in Glass Dome", category:"Luxury Gifts", badge:"Anniversary", description:"Real Ecuadorian roses preserved to last up to 3 years with warm ambient LED base.", price:55, origin:"International", material:"Natural Preserved Roses", leadTime:"4–7 Business Days", image:photo("photo-1518709268805-4e9042af9f23")},
-  {id:48, name:"Montblanc-Style Rollerball & Fountain Pen Set", category:"Luxury Gifts", badge:"Corporate", description:"Weighted black lacquer and gold-trim executive writing instruments in a leather gift case.", price:44, origin:"Europe / Asia", material:"Brass & Gold Trim", leadTime:"4–7 Business Days", image:photo("photo-1585336261022-680e295ce3fe")},
-  {id:49, name:"Handcrafted Walnut & Brass Chess Set", category:"Luxury Gifts", badge:"Heirloom", description:"Folding inlaid walnut wood chessboard with weighted felt-bottom Staunton brass/wood pieces.", price:118, origin:"Europe / India", material:"Solid Walnut & Brass", leadTime:"5–9 Business Days", image:photo("photo-1529699211952-734e80c4d42b")},
-  {id:50, name:"Artisan Scented Soy Candle Trio Gift Set", category:"Luxury Gifts", badge:"Home Gift", description:"Three hand-poured botanical candles (Amber Oud, White Tea, Fig) in frosted glass vessels.", price:49, origin:"France / UK", material:"100% Natural Soy & Cotton Wick", leadTime:"4–7 Business Days", image:photo("photo-1603006905003-be475563bc59")},
-
-  // 8. TRAVEL & LIFESTYLE (6 items)
-  {id:51, name:"Aluminum Frame Cabin Carry-On Spinner (20\")", category:"Travel & Lifestyle", badge:"Aviation", description:"Zipperless aerospace polycarbonate shell with TSA locks and 360° whisper-quiet Hinomoto wheels.", price:159, origin:"Global Travel", material:"Bayer Polycarbonate + Alloy", leadTime:"5–9 Business Days", image:photo("photo-1553062407-98eeb64c6a62")},
-  {id:52, name:"Weekender Full-Grain Leather Duffle Bag", category:"Travel & Lifestyle", badge:"Getaway", description:"Spacious cabin-approved overnight bag with dedicated shoe compartment and brass feet.", price:132, origin:"Italy / Sourcing", material:"Full-Grain Cowhide", leadTime:"5–9 Business Days", image:photo("photo-1547949003-9792a18a2601")},
-  {id:53, name:"Smart Anti-Theft Business Laptop Backpack", category:"Travel & Lifestyle", badge:"Commuter", description:"Water-repellent 17-inch laptop backpack with hidden TSA lock, USB charging port, and luggage strap.", price:62, origin:"Global", material:"Ballistic Nylon", leadTime:"4–7 Business Days", image:photo("photo-1553062407-98eeb64c6a62")},
-  {id:54, name:"Insulated Titanium Travel Flask & Tumbler Set", category:"Travel & Lifestyle", badge:"Eco Luxury", description:"Double-wall vacuum insulated flask keeping drinks hot for 24h or cold for 36h.", price:39, origin:"Global", material:"316 Medical-Grade Steel", leadTime:"4–7 Business Days", image:photo("photo-1602143407151-7111542de6e8")},
-  {id:55, name:"Full-Grain Leather Passport & Boarding Wallet", category:"Travel & Lifestyle", badge:"Jetsetter", description:"RFID-blocking travel organizer holding 2 passports, SIM ejector pin, cards, and currency.", price:38, origin:"Europe", material:"Vegetable-Tanned Leather", leadTime:"4–7 Business Days", image:photo("photo-1544816155-12df9643f363")},
-  {id:56, name:"6-Piece Compression Packing Cube Set", category:"Travel & Lifestyle", badge:"Organizer", description:"Water-resistant ripstop nylon compression organizers to save up to 40% suitcase space.", price:34, origin:"Global Travel", material:"Ultralight Ripstop Nylon", leadTime:"4–7 Business Days", image:photo("photo-1581553680321-4fffae59fccd")}
+  {id:1, name:"iPhone 17 Pro Flagship", category:"Electronics", badge:"New 2026", description:"Titanium finish, A19 Pro chip, pro camera system with 10x optical zoom.", price:1199, rating:4.9, image:photo("photo-1511707171634-5f897ff02aa9")},
+  {id:2, name:"MacBook Air M4 Ultra", category:"Electronics", badge:"Top Rated", description:"Supercharged by M4 chip, 18-hour battery life, stunning Liquid Retina display.", price:1099, rating:4.8, image:photo("photo-1517336714731-489689fd1ca8")},
+  {id:3, name:"Milanese Structured Leather Handbag", category:"Fashion & Accessories", badge:"Bestseller", description:"Full-grain calfskin structured tote with brushed gold hardware.", price:145, rating:4.9, image:photo("photo-1584917865442-de89df76afd3")},
+  {id:4, name:"Torino Chronographe Automatic Watch", category:"Watches & Jewellery", badge:"Signature", description:"Sapphire crystal dress chronograph with stainless steel casing.", price:235, rating:4.9, image:photo("photo-1523275335684-37898b6baf30")},
+  {id:5, name:"AirPods Pro 3 Active ANC", category:"Electronics", badge:"Popular", description:"Immersive spatial audio, active noise cancellation, and MagSafe case.", price:249, rating:4.9, image:photo("photo-1600294037681-c80b4cb5b434")},
+  {id:6, name:"Apple Watch Ultra 3 Titanium", category:"Electronics", badge:"Sport Luxury", description:"Rugged titanium case, precision dual-frequency GPS, 36-hour battery.", price:799, rating:4.8, image:photo("photo-1579586337278-3befd40fd17a")},
+  {id:7, name:"iPad Pro M5 Liquid Retina", category:"Electronics", badge:"Pro", description:"Ultra-thin design with Tandem OLED display and extreme M5 processing power.", price:1299, rating:4.9, image:photo("photo-1544244015-0df4b3ffc6b0")},
+  {id:8, name:"Oud & Bergamot Eau de Parfum", category:"Beauty & Personal Care", badge:"Signature Scent", description:"Rich woody oriental fragrance blending Calabrian bergamot and aged oud.", price:98, rating:4.8, image:photo("photo-1541643600914-78b084683601")},
+  {id:9, name:"Barista Pro Espresso Machine", category:"Home & Lifestyle", badge:"Hosting", description:"15-bar Italian pump espresso maker with steam wand for café-quality cups.", price:189, rating:4.7, image:photo("photo-1517668808822-9ebb02f2a0e6")},
+  {id:10, name:"Weekender Full-Grain Leather Duffle", category:"Travel & Lifestyle", badge:"Getaway", description:"Spacious cabin-approved overnight bag with dedicated shoe compartment.", price:132, rating:4.8, image:photo("photo-1547949003-9792a18a2601")}
 ];
 
 let products = [...starter];
 let cart = JSON.parse(localStorage.getItem("turin_cart_2026") || "[]");
 let wishlist = JSON.parse(localStorage.getItem("turin_wish_2026") || "[]");
-let active = "All";
+let activeCat = "All";
 let showWishlistOnly = false;
 
 const $ = s => document.querySelector(s);
@@ -601,55 +382,60 @@ function showToast(msg) {
   const t = $("#toast");
   t.textContent = msg;
   t.classList.add("show");
-  clearTimeout(window._toastTimer);
-  window._toastTimer = setTimeout(() => t.classList.remove("show"), 2800);
-}
-
-function saveState() {
-  localStorage.setItem("turin_cart_2026", JSON.stringify(cart));
-  localStorage.setItem("turin_wish_2026", JSON.stringify(wishlist));
-  updateBadges();
+  clearTimeout(window._t);
+  window._t = setTimeout(() => t.classList.remove("show"), 2800);
 }
 
 function updateBadges() {
   $("#bagCount").textContent = cart.reduce((n, x) => n + x.quantity, 0);
   $("#wishCount").textContent = wishlist.length;
+  localStorage.setItem("turin_cart_2026", JSON.stringify(cart));
+  localStorage.setItem("turin_wish_2026", JSON.stringify(wishlist));
 }
 
 function price(n) {
   const curr = $("#currency").value;
-  return curr === "TZS"
-    ? "TZS " + Math.round(n * EXCHANGE_RATE).toLocaleString()
-    : "$" + Number(n).toFixed(2);
+  return curr === "TZS" ? "TZS " + Math.round(n * EXCHANGE_RATE).toLocaleString() : "$" + Number(n).toFixed(2);
 }
 
 function onCurrencyChange() {
-  $("#modalCurrency").value = $("#currency").value;
   renderProducts();
   renderCart();
 }
 
-function closeMenu() {
-  $("#links").classList.remove("open");
-}
-
 function drawCategories() {
-  const cs = ["All", ...new Set(products.map(p => p.category))];
-  $("#categories").innerHTML = cs.map(c =>
-    `<button class="cat ${!showWishlistOnly && active === c ? "active" : ""}" onclick="choose('${esc(c)}')">${esc(c)}</button>`
-  ).join("");
+  const cats = [
+    {name: "All", img: photo("photo-1549465220-1a8b9238cd48")},
+    {name: "Electronics", img: photo("photo-1511707171634-5f897ff02aa9")},
+    {name: "Fashion & Accessories", img: photo("photo-1584917865442-de89df76afd3")},
+    {name: "Watches & Jewellery", img: photo("photo-1523275335684-37898b6baf30")},
+    {name: "Home & Lifestyle", img: photo("photo-1517668808822-9ebb02f2a0e6")},
+    {name: "Beauty & Personal Care", img: photo("photo-1541643600914-78b084683601")},
+    {name: "Automotive Accessories", img: photo("photo-1503376780353-7e6692767b70")},
+    {name: "Luxury Gifts", img: photo("photo-1577083552431-6e5fd01aa342")},
+    {name: "Travel & Lifestyle", img: photo("photo-1547949003-9792a18a2601")}
+  ];
+  
+  $("#categoryCircles").innerHTML = cats.map(c => `
+    <div class="cat-item" onclick="choose('${c.name}')">
+      <div class="cat-circle" style="${!showWishlistOnly && activeCat === c.name ? 'border-color:var(--gold);box-shadow:0 0 10px rgba(212,175,55,0.4)' : ''}">
+        <img src="${c.img}" alt="${c.name}">
+      </div>
+      <span>${c.name.split(' ')[0]}</span>
+    </div>
+  `).join("");
 }
 
-function choose(c) {
+function choose(cat) {
   showWishlistOnly = false;
-  active = c;
+  activeCat = cat;
   drawCategories();
   renderProducts();
+  document.getElementById("shop").scrollIntoView({behavior: "smooth"});
 }
 
 function toggleWishlistFilter() {
   showWishlistOnly = !showWishlistOnly;
-  drawCategories();
   renderProducts();
   if (showWishlistOnly) {
     document.getElementById("shop").scrollIntoView({behavior: "smooth"});
@@ -662,12 +448,12 @@ function toggleWish(id, e) {
   const numId = Number(id);
   if (wishlist.includes(numId)) {
     wishlist = wishlist.filter(x => x !== numId);
-    showToast("Removed from saved items");
+    showToast("Removed from wishlist");
   } else {
     wishlist.push(numId);
     showToast("Saved to wishlist ♡");
   }
-  saveState();
+  updateBadges();
   renderProducts();
 }
 
@@ -675,282 +461,151 @@ function renderProducts() {
   const q = $("#search").value.toLowerCase().trim();
   let list = products.filter(p => {
     const matchesWish = !showWishlistOnly || wishlist.includes(Number(p.id));
-    const matchesCat = showWishlistOnly || active === "All" || p.category === active;
-    const matchesQuery = !q || (`${p.name} ${p.category} ${p.description} ${p.material || ""} ${p.origin || ""}`).toLowerCase().includes(q);
+    const matchesCat = showWishlistOnly || activeCat === "All" || p.category === activeCat;
+    const matchesQuery = !q || (`${p.name} ${p.category} ${p.description}`).toLowerCase().includes(q);
     return matchesWish && matchesCat && matchesQuery;
   });
 
-  const sortBy = $("#sort").value;
-  if (sortBy === "low") list.sort((a, b) => a.price - b.price);
-  if (sortBy === "high") list.sort((a, b) => b.price - a.price);
-  if (sortBy === "name") list.sort((a, b) => a.name.localeCompare(b.name));
+  const sort = $("#sort").value;
+  if (sort === "low") list.sort((a, b) => a.price - b.price);
+  if (sort === "high") list.sort((a, b) => b.price - a.price);
+  if (sort === "name") list.sort((a, b) => a.name.localeCompare(b.name));
 
   $("#count").textContent = `${list.length} ${list.length === 1 ? "product" : "products"} available`;
-  $("#activeFilterLabel").textContent = showWishlistOnly ? "Showing: Saved Wishlist ♡" : `Category: ${active}`;
+  $("#activeFilterLabel").textContent = showWishlistOnly ? "Showing: Saved Wishlist ♡" : `Category: ${activeCat}`;
 
-  $("#products").innerHTML = list.length ? list.map(p => {
+  let html = "";
+  list.forEach((p, index) => {
     const isSaved = wishlist.includes(Number(p.id));
-    return `
+    html += `
     <article class="card">
-      <div class="photo" onclick="openProductModal('${p.id}')">
-        <span class="tag ${p.badge === 'Bestseller' || p.badge === 'Signature' ? 'featured' : ''}">${esc(p.badge || "Collection")}</span>
-        <button type="button" class="wish-btn ${isSaved ? 'saved' : ''}" onclick="toggleWish('${p.id}', event)" title="Save to wishlist">${isSaved ? '♥' : '♡'}</button>
-        <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80'">
+      <div class="card-photo" onclick="openDetail('${p.id}')">
+        <span class="card-tag">${esc(p.badge || "Luxury")}</span>
+        <button type="button" class="wish-icon ${isSaved ? 'saved' : ''}" onclick="toggleWish('${p.id}', event)">${isSaved ? '♥' : '♡'}</button>
+        <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">
       </div>
-      <div class="details">
-        <div class="category">${esc(p.category)}</div>
-        <h3 onclick="openProductModal('${p.id}')">${esc(p.name)}</h3>
-        <p class="desc">${esc(p.description)}</p>
+      <div class="card-body">
+        <div class="card-category">${esc(p.category)}</div>
+        <h3 onclick="openDetail('${p.id}')">${esc(p.name)}</h3>
+        <div class="rating">★★★★★ <span style="font-size:10.5px;color:var(--muted)">(${p.rating})</span></div>
+        <p class="card-desc">${esc(p.description)}</p>
         <div class="price-row">
           <div class="price">${price(p.price)}</div>
         </div>
-        <div class="stock">✓ Available to order (${esc(p.leadTime || "5–9 days")})</div>
         <div class="card-actions">
-          <button type="button" class="add" onclick="add('${p.id}')">Add to Bag</button>
-          <button type="button" class="view-btn" onclick="openProductModal('${p.id}')" title="Quick View">Details</button>
+          <button class="add-bag" onclick="addToCart('${p.id}')">Add to Bag</button>
+          <button class="view-detail" onclick="openDetail('${p.id}')">View</button>
         </div>
       </div>
     </article>`;
-  }).join("") : `<div class="empty"><h3>No matching products found</h3><p>Try clearing your search filter or submit a Custom Sourcing Request below.</p><button class="btn outline" style="margin-top:10px" onclick="resetFilters()">Reset Filters</button></div>`;
+
+    // Insert promo card at index 3 for world-class look
+    if (index === 2 && !showWishlistOnly) {
+      html += `
+      <article class="promo-grid-card">
+        <div>
+          <span style="font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase">Bespoke Concierge</span>
+          <h3>Looking for something specific?</h3>
+          <p style="font-size:12px;color:#d4d0c7;line-height:1.7">We source rare watches, flagship electronics, and designer items directly from global boutiques.</p>
+        </div>
+        <a href="https://wa.me/${STORE_WA}?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20need%20help%20sourcing%20a%20product." target="_blank" class="btn" style="width:100%;margin-top:15px">Request Sourcing →</a>
+      </article>`;
+    }
+  });
+
+  $("#products").innerHTML = html.length ? html : `<div style="grid-column:1/-1;padding:50px;text-align:center;background:var(--cream);color:var(--muted)"><h3>No products found</h3><p>Try searching another keyword or reset your filter.</p></div>`;
 }
 
-function resetFilters() {
-  $("#search").value = "";
-  showWishlistOnly = false;
-  active = "All";
-  drawCategories();
-  renderProducts();
-}
-
-function openProductModal(id) {
+function addToCart(id) {
   const p = products.find(x => String(x.id) === String(id));
   if (!p) return;
-  const waDirect = `https://wa.me/${STORE_WA}?text=${encodeURIComponent(`Hello TURIN PREMIUM STORE, I am interested in: ${p.name} (${price(p.price)}). Please confirm availability.`)}`;
-  $("#productModalContent").innerHTML = `
-    <div class="pd-grid">
-      <div class="pd-img">
-        <img src="${esc(p.image)}" alt="${esc(p.name)}">
-      </div>
-      <div>
-        <div class="category">${esc(p.category)}</div>
-        <h2 style="margin:6px 0 10px">${esc(p.name)}</h2>
-        <div style="font-size:20px;font-weight:700;color:var(--gold-dark);margin-bottom:12px">${price(p.price)} <span style="font-size:11px;font-weight:400;color:var(--muted)">(Indicative Price)</span></div>
-        <p style="font-size:13px;color:var(--muted);line-height:1.7">${esc(p.description)}</p>
-        <div class="pd-specs">
-          <div><span>Sourcing Origin:</span><strong>${esc(p.origin || "International")}</strong></div>
-          <div><span>Material / Spec:</span><strong>${esc(p.material || "Premium Grade")}</strong></div>
-          <div><span>Est. Delivery:</span><strong>${esc(p.leadTime || "5–10 Business Days")}</strong></div>
-          <div><span>Order Hotline:</span><strong>${STORE_PHONE_1} / ${STORE_PHONE_2}</strong></div>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">
-          <button class="btn" style="flex:1" onclick="add('${p.id}');closeProductModal()">Add to Bag</button>
-          <a href="${waDirect}" target="_blank" class="btn wa-btn">Order on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  `;
-  $("#productModal").classList.add("open");
-}
-
-function closeProductModal() {
-  $("#productModal").classList.remove("open");
-}
-
-function add(id) {
-  const p = products.find(x => String(x.id) === String(id));
-  if (!p) return;
-  const existing = cart.find(y => String(y.productId) === String(id));
-  if (existing) {
-    existing.quantity++;
-  } else {
-    cart.push({productId: Number(id), name: p.name, price: p.price, quantity: 1});
-  }
-  saveState();
-  renderCart();
+  const ex = cart.find(x => String(x.productId) === String(id));
+  if (ex) ex.quantity++;
+  else cart.push({productId: Number(id), name: p.name, price: p.price, quantity: 1});
+  updateBadges();
   showToast(`Added "${p.name}" to bag`);
 }
 
-function changeQty(id, delta) {
-  const idx = cart.findIndex(x => String(x.productId) === String(id));
-  if (idx === -1) return;
-  cart[idx].quantity += delta;
-  if (cart[idx].quantity <= 0) {
-    cart.splice(idx, 1);
-  }
-  saveState();
-  renderCart();
-}
-
-function removeItem(id) {
-  cart = cart.filter(x => String(x.productId) !== String(id));
-  saveState();
-  renderCart();
-}
-
-function renderCart() {
-  updateBadges();
-  if (!cart.length) {
-    $("#cartLines").innerHTML = '<div class="empty" style="padding:28px">Your shopping bag is currently empty. Browse the catalogue to add items.</div>';
-    $("#cartSummary").style.display = "none";
-    return;
-  }
-
-  let totalUSD = 0;
-  let totalItems = 0;
-
-  $("#cartLines").innerHTML = cart.map(x => {
-    const prod = products.find(p => String(p.id) === String(x.productId));
-    const unitPrice = prod ? prod.price : (x.price || 0);
-    const lineTotal = unitPrice * x.quantity;
-    totalUSD += lineTotal;
-    totalItems += x.quantity;
-
-    return `
-    <div class="cartline">
-      <div class="cart-item-info">
-        <strong>${esc(x.name)}</strong>
-        <span>${price(unitPrice)} each • Subtotal: ${price(lineTotal)}</span>
-      </div>
-      <div class="qty-controls">
-        <button type="button" onclick="changeQty('${x.productId}', -1)">−</button>
-        <span style="min-width:20px;text-align:center;font-weight:600">${x.quantity}</span>
-        <button type="button" onclick="changeQty('${x.productId}', 1)">+</button>
-        <button type="button" onclick="removeItem('${x.productId}')" style="margin-left:6px;width:auto;padding:0 8px;font-size:11px;color:#a33">Remove</button>
-      </div>
-    </div>`;
-  }).join("");
-
-  $("#summaryItems").textContent = totalItems;
-  $("#summaryTotal").textContent = price(totalUSD);
-  $("#cartSummary").style.display = "flex";
-}
-
 function openCart() {
-  $("#modalCurrency").value = $("#currency").value;
-  $("#cartModal").classList.add("open");
   renderCart();
+  $("#cartModal").classList.add("open");
 }
 
 function closeCart() {
   $("#cartModal").classList.remove("open");
 }
 
-/* Optional Backend Sync */
-async function loadProducts() {
-  try {
-    const r = await fetch("/api/products");
-    if (!r.ok) return;
-    const d = await r.json();
-    if (d.success && Array.isArray(d.products) && d.products.length) {
-      const remote = d.products.map(p => ({
-        id: Number(p.id),
-        name: p.name,
-        category: p.category || "International",
-        badge: "New Arrival",
-        description: p.description || "Details confirmed on request.",
-        price: Number(p.indicativePriceUSD) || 0,
-        image: p.imageUrl || starter[0].image
-      }));
-      products = [...remote, ...starter];
-      drawCategories();
-      renderProducts();
-    }
-  } catch (e) {}
-}
-
-/* Checkout Submission */
-$("#checkout").addEventListener("submit", async e => {
-  e.preventDefault();
-  const msgBox = $("#message");
-  msgBox.classList.remove("error", "show");
-
+function renderCart() {
+  updateBadges();
   if (!cart.length) {
-    msgBox.textContent = "Please add at least one product to your bag before submitting.";
-    msgBox.classList.add("error", "show");
+    $("#cartLines").innerHTML = '<div style="padding:30px;text-align:center;color:var(--muted);background:var(--cream)">Your shopping bag is currently empty.</div>';
+    $("#summaryItems").textContent = "0";
+    $("#summaryTotal").textContent = price(0);
     return;
   }
+  let totalUSD = 0, totalQty = 0;
+  $("#cartLines").innerHTML = cart.map(x => {
+    const sub = x.price * x.quantity;
+    totalUSD += sub;
+    totalQty += x.quantity;
+    return `
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px">
+      <div><strong>${esc(x.name)}</strong><br><small style="color:var(--muted)">${price(x.price)} × ${x.quantity}</small></div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button onclick="changeQty('${x.productId}', -1)" style="width:26px;height:26px;background:var(--cream);border:1px solid var(--line)">-</button>
+        <span style="font-weight:600">${x.quantity}</span>
+        <button onclick="changeQty('${x.productId}', 1)" style="width:26px;height:26px;background:var(--cream);border:1px solid var(--line)">+</button>
+        <button onclick="removeItem('${x.productId}')" style="background:none;border:0;color:#c0392b;cursor:pointer;margin-left:8px">Remove</button>
+      </div>
+    </div>`;
+  }).join("");
+  $("#summaryItems").textContent = totalQty;
+  $("#summaryTotal").textContent = price(totalUSD);
+}
 
-  const data = Object.fromEntries(new FormData(e.currentTarget).entries());
-  const orderItems = cart.map(x => {
-    const p = products.find(item => String(item.id) === String(x.productId));
-    return { productId: x.productId, name: x.name, quantity: x.quantity, unitPriceUSD: p ? p.price : 0 };
-  });
-
-  const payload = { ...data, items: orderItems };
-  const btn = $("#submit");
-  btn.disabled = true;
-  btn.textContent = "Generating Quotation Reference...";
-
-  let reference = "TRN-2026-" + Math.floor(1000 + Math.random() * 9000);
-
-  try {
-    const r = await fetch("/api/orders", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(payload)
-    });
-    if (r.ok) {
-      const d = await r.json();
-      if (d.order?.reference) reference = d.order.reference;
-    }
-  } catch (err) {}
-
-  const summaryText = orderItems.map(i => `• ${i.name} (x${i.quantity})`).join("\n");
-  const waText = encodeURIComponent(
-    `Hello TURIN PREMIUM STORE, I have submitted an Order Enquiry.\n\n` +
-    `Reference: ${reference}\n` +
-    `Name: ${data.firstName} ${data.lastName}\n` +
-    `Customer Phone: ${data.phone}\n` +
-    `City: ${data.city}, ${data.country}\n` +
-    `Address: ${data.address}\n` +
-    `Payment Pref: ${data.paymentMethod} (${data.currency})\n\n` +
-    `Items:\n${summaryText}`
-  );
-
-  msgBox.innerHTML = `
-    <strong>✓ Quotation Enquiry Confirmed!</strong><br>
-    Reference Number: <strong>${reference}</strong><br>
-    Thank you, <strong>${esc(data.firstName)}</strong>. Send your order directly to our WhatsApp desk (<strong>${STORE_PHONE_1}</strong>) for instant confirmation:<br><br>
-    <a href="https://wa.me/${STORE_WA}?text=${waText}" target="_blank" class="btn wa-btn" style="font-size:11px;padding:10px 15px">Send Order to WhatsApp (${STORE_PHONE_1}) ↗</a>
-  `;
-  msgBox.classList.add("show");
-
-  cart = [];
-  saveState();
+function changeQty(id, d) {
+  const item = cart.find(x => String(x.productId) === String(id));
+  if (!item) return;
+  item.quantity += d;
+  if (item.quantity <= 0) cart = cart.filter(x => String(x.productId) !== String(id));
   renderCart();
-  e.currentTarget.reset();
-  btn.disabled = false;
-  btn.textContent = "Submit Order Enquiry";
-});
+}
 
-/* Custom Sourcing Form Handler */
-$("#customRequestForm").addEventListener("submit", e => {
+function removeItem(id) {
+  cart = cart.filter(x => String(x.productId) !== String(id));
+  renderCart();
+}
+
+function openDetail(id) {
+  const p = products.find(x => String(x.id) === String(id));
+  if (!p) return;
+  addToCart(id);
+  openCart();
+}
+
+document.getElementById("checkout").addEventListener("submit", e => {
   e.preventDefault();
+  if (!cart.length) return;
   const data = Object.fromEntries(new FormData(e.currentTarget).entries());
-  const ref = "SRC-" + Math.floor(1000 + Math.random() * 9000);
-  const waCustom = encodeURIComponent(
-    `Hello TURIN PREMIUM STORE, Custom Sourcing Request (${ref}):\n` +
-    `Name: ${data.reqName}\n` +
-    `Phone: ${data.reqPhone}\n` +
-    `Item: ${data.reqItem}\n` +
-    `Details: ${data.reqNotes || "N/A"}`
+  const ref = "TRN-2026-" + Math.floor(1000 + Math.random() * 9000);
+  const waText = encodeURIComponent(
+    `Hello TURIN PREMIUM STORE, Order Enquiry (${ref}):\n` +
+    `Name: ${data.firstName} ${data.lastName}\n` +
+    `Phone: ${data.phone}\n` +
+    `City: ${data.city}\n` +
+    `Payment: ${data.paymentMethod}\n` +
+    `Items:\n` + cart.map(i => `• ${i.name} (x${i.quantity})`).join("\n")
   );
-  const el = $("#customMsg");
-  el.innerHTML = `
-    <strong>✓ Sourcing Request Logged (${ref})</strong><br>
-    Click below to forward this request directly to our sourcing desk on WhatsApp:<br><br>
-    <a href="https://wa.me/${STORE_WA}?text=${waCustom}" target="_blank" class="btn wa-btn" style="font-size:10.5px;padding:9px 14px">Send via WhatsApp (${STORE_PHONE_1}) ↗</a>
-  `;
-  el.classList.add("show");
-  e.currentTarget.reset();
-  showToast("Sourcing request ready!");
+  $("#message").innerHTML = `✓ Order Logged! Reference: <strong>${ref}</strong><br><br><a href="https://wa.me/${STORE_WA}?text=${waText}" target="_blank" class="btn wa-btn" style="padding:10px 16px">Send Order to WhatsApp (${STORE_PHONE}) ↗</a>`;
+  $("#message").style.display = "block";
+  cart = [];
+  updateBadges();
 });
 
-/* Initialize Store */
+// Initialize
 updateBadges();
 drawCategories();
 renderProducts();
-loadProducts();
 </script>
 </body>
 </html>
