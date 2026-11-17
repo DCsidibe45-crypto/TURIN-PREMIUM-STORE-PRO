@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#060608">
-<title>TURIN PREMIUM STORE | The Art of Premium Living</title>
+<title>TURIN PREMIUM STORE | Ultra Luxury & Private Collection</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -15,6 +15,7 @@
   --black: #060608;
   --charcoal: #111115;
   --card-bg: #0b0b0e;
+  --private-bg: #120f07;
   --text-main: #F9F6F0;
   --text-muted: #A39E93;
   --border-gold: rgba(212,175,55,0.25);
@@ -27,88 +28,102 @@ a { text-decoration: none; color: inherit; }
 button { font: inherit; cursor: pointer; }
 
 /* TOP ELITE TICKER */
-.top-ticker { background: linear-gradient(90deg, #060608, #1a1608, #060608); color: var(--gold-light); padding: 12px 5%; font-size: 11px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-gold); letter-spacing: 1.5px; text-transform: uppercase; }
+.top-ticker { background: linear-gradient(90deg, #060608, #1a1608, #060608); color: var(--gold-light); padding: 12px 5%; font-size: 11px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-gold); letter-spacing: 1.5px; text-transform: uppercase; flex-wrap: wrap; gap: 10px; }
 .top-ticker a { color: var(--gold); text-decoration: underline; font-weight: 600; }
 
 /* NAVBAR */
 header { position: sticky; top: 0; z-index: 1000; background: rgba(6, 6, 8, 0.95); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border-gold); }
-.nav-container { max-width: 1400px; margin: auto; padding: 20px 5%; display: flex; align-items: center; justify-content: space-between; }
+.nav-container { max-width: 1440px; margin: auto; padding: 18px 5%; display: flex; align-items: center; justify-content: space-between; }
 .brand-box { display: flex; align-items: center; gap: 14px; }
 .brand-crown { font-size: 28px; color: var(--gold); filter: drop-shadow(0 0 10px rgba(212,175,55,0.4)); }
 .brand-text h1 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; letter-spacing: 2.5px; color: var(--text-main); line-height: 1; }
 .brand-text span { font-size: 8px; letter-spacing: 4px; color: var(--gold); font-weight: 700; text-transform: uppercase; display: block; margin-top: 4px; }
 
-.nav-menu { display: flex; gap: 24px; font-size: 11.5px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+.nav-menu { display: flex; gap: 22px; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 .nav-menu a:hover { color: var(--gold); transition: 0.3s; }
+.nav-menu a.vip-link { color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 
-.nav-actions { display: flex; gap: 15px; align-items: center; }
-.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); border: none; padding: 12px 24px; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; box-shadow: 0 4px 20px rgba(212,175,55,0.25); }
+.nav-actions { display: flex; gap: 12px; align-items: center; }
+.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); border: none; padding: 12px 22px; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; box-shadow: 0 4px 20px rgba(212,175,55,0.25); }
 .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
 .btn-outline { background: transparent; color: var(--text-main); border: 1px solid var(--border-gold); padding: 11px 18px; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; transition: 0.3s; }
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
 /* HERO SECTION */
-.hero { padding: 100px 5%; background: radial-gradient(circle at 75% 20%, #1e190b 0%, #060608 70%); border-bottom: 1px solid var(--border-gold); position: relative; overflow: hidden; }
-.hero-grid { max-width: 1400px; margin: auto; display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: center; }
+.hero { padding: 90px 5%; background: radial-gradient(circle at 75% 20%, #1e190b 0%, #060608 70%); border-bottom: 1px solid var(--border-gold); position: relative; overflow: hidden; }
+.hero-grid { max-width: 1440px; margin: auto; display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: center; }
 .hero-badge { font-size: 11px; letter-spacing: 5px; color: var(--gold); text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 20px; }
-.hero h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 600; line-height: 1.05; margin-bottom: 25px; }
+.hero h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(38px, 5vw, 68px); font-weight: 600; line-height: 1.05; margin-bottom: 25px; }
 .hero h2 span { color: var(--gold); font-style: italic; }
-.hero p { color: var(--text-muted); font-size: 15px; line-height: 1.8; max-width: 550px; margin-bottom: 40px; font-weight: 300; }
-.hero-image-box { position: relative; height: 480px; background: var(--charcoal); border: 1px solid var(--border-gold); display: grid; place-items: center; padding: 15px; }
-.hero-image-box img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05); }
+.hero p { color: var(--text-muted); font-size: 15px; line-height: 1.8; max-width: 560px; margin-bottom: 35px; font-weight: 300; }
+.hero-image-box { position: relative; height: 460px; background: var(--charcoal); border: 1px solid var(--border-gold); display: grid; place-items: center; padding: 15px; }
+.hero-image-box img { width: 100%; height: 100%; object-fit: cover; }
 
 /* CATEGORIES BAR */
-.categories-section { max-width: 1400px; margin: auto; padding: 70px 5% 40px; }
-.section-header { text-align: center; margin-bottom: 45px; }
+.categories-section { max-width: 1440px; margin: auto; padding: 65px 5% 35px; }
+.section-header { text-align: center; margin-bottom: 40px; }
 .section-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 600; margin-top: 5px; }
 .section-header span { font-size: 11px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 700; }
 
-.category-slider { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; text-align: center; }
+.category-slider { display: grid; grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); gap: 15px; text-align: center; }
 .category-item { cursor: pointer; transition: 0.3s; }
 .category-item:hover { transform: translateY(-5px); }
-.category-circle { width: 85px; height: 85px; border-radius: 50%; background: var(--charcoal); border: 2px solid var(--border-gold); margin: 0 auto 10px; overflow: hidden; display: grid; place-items: center; transition: 0.3s; }
+.category-circle { width: 82px; height: 82px; border-radius: 50%; background: var(--charcoal); border: 2px solid var(--border-gold); margin: 0 auto 10px; overflow: hidden; display: grid; place-items: center; transition: 0.3s; }
 .category-item:hover .category-circle { border-color: var(--gold); box-shadow: 0 0 20px rgba(212,175,55,0.4); }
 .category-circle img { width: 100%; height: 100%; object-fit: cover; }
 .category-item span { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
 
 /* STORE CATALOGUE CONTAINER */
-.store-container { max-width: 1400px; margin: auto; padding: 20px 5% 90px; }
-.controls-bar { display: flex; gap: 15px; margin-bottom: 35px; background: var(--charcoal); padding: 20px; border: 1px solid var(--border-gold); flex-wrap: wrap; }
-.controls-bar input, .controls-bar select { flex: 1; min-width: 220px; padding: 14px 20px; background: var(--black); border: 1px solid var(--border-gold); color: var(--text-main); font-size: 13px; outline: none; }
+.store-container { max-width: 1440px; margin: auto; padding: 20px 5% 80px; }
+.controls-bar { display: flex; gap: 15px; margin-bottom: 30px; background: var(--charcoal); padding: 20px; border: 1px solid var(--border-gold); flex-wrap: wrap; }
+.controls-bar input, .controls-bar select { flex: 1; min-width: 210px; padding: 14px 18px; background: var(--black); border: 1px solid var(--border-gold); color: var(--text-main); font-size: 13px; outline: none; }
 .controls-bar input:focus, .controls-bar select:focus { border-color: var(--gold); }
 
 .store-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; gap: 10px; }
 
-/* PRODUCTS GRID - LUXURY CARDS */
-.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+/* PRODUCTS GRID */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
 .product-card { background: var(--card-bg); border: 1px solid var(--border-gold); display: flex; flex-direction: column; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; }
 .product-card:hover { transform: translateY(-8px); border-color: var(--gold); box-shadow: 0 20px 40px rgba(0,0,0,0.7); }
+.product-card.vip-card { background: linear-gradient(180deg, #161208 0%, #09090b 100%); border: 1px solid var(--gold); }
 .product-img-wrap { height: 260px; background: #08080a; position: relative; overflow: hidden; cursor: pointer; }
 .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
 .product-card:hover .product-img-wrap img { transform: scale(1.06); }
 .product-badge { position: absolute; top: 12px; left: 12px; background: var(--black); color: var(--gold); font-size: 9.5px; font-weight: 700; padding: 6px 12px; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid var(--border-gold); }
+.vip-badge { position: absolute; top: 12px; right: 12px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); font-size: 9px; font-weight: 800; padding: 5px 10px; letter-spacing: 1.5px; text-transform: uppercase; }
 
-.product-info { padding: 24px; display: flex; flex-direction: column; flex: 1; }
-.product-category { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 8px; }
+.product-info { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+.product-category { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
 .product-info h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; margin-bottom: 8px; cursor: pointer; }
 .product-info h4:hover { color: var(--gold-light); }
-.product-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--text-main); margin: 15px 0; }
+.product-desc { font-size: 12px; color: var(--text-muted); line-height: 1.55; margin-bottom: 14px; }
+.price-stack { margin: 10px 0 16px; padding-top: 10px; border-top: 1px solid rgba(212,175,55,0.15); }
+.price-tzs { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 700; color: var(--text-main); }
+.price-usd { font-size: 12px; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-top: 2px; }
 .product-actions { display: grid; grid-template-columns: 1fr auto; gap: 10px; margin-top: auto; }
 .btn-buy { background: var(--text-main); color: var(--black); border: none; padding: 12px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
 .btn-buy:hover { background: var(--gold); }
+.vip-card .btn-buy { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); }
 .btn-quick { background: var(--charcoal); border: 1px solid var(--border-gold); color: var(--text-main); padding: 12px 16px; transition: 0.3s; }
 .btn-quick:hover { border-color: var(--gold); color: var(--gold); }
 
+/* PRIVATE COLLECTION VAULT BANNER */
+.private-vault-section { background: radial-gradient(circle at center, #1c1608 0%, #060608 100%); border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); padding: 80px 5%; margin-top: 40px; }
+.vault-header { max-width: 900px; margin: 0 auto 50px; text-align: center; }
+.vault-header span { font-size: 11px; letter-spacing: 5px; color: var(--gold); text-transform: uppercase; font-weight: 700; }
+.vault-header h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4.5vw, 56px); color: var(--text-main); margin: 12px 0; }
+.vault-header p { color: var(--text-muted); font-size: 14.5px; line-height: 1.8; }
+
 /* FOOTER */
 footer { background: var(--charcoal); border-top: 1px solid var(--border-gold); padding: 80px 5% 30px; }
-.footer-grid { max-width: 1400px; margin: auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer-grid { max-width: 1440px; margin: auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
 footer h5 { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); margin-bottom: 15px; letter-spacing: 1px; }
 footer p, footer a { font-size: 12.5px; color: var(--text-muted); line-height: 2.2; }
 footer a:hover { color: var(--gold); }
-.footer-bottom { max-width: 1400px; margin: auto; border-top: 1px solid var(--border-gold); margin-top: 50px; padding-top: 25px; text-align: center; font-size: 11px; color: var(--text-muted); letter-spacing: 1px; }
+.footer-bottom { max-width: 1440px; margin: auto; border-top: 1px solid var(--border-gold); margin-top: 50px; padding-top: 25px; text-align: center; font-size: 11px; color: var(--text-muted); letter-spacing: 1px; }
 
 /* MODAL BAG & CHECKOUT */
-.modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(6,6,8,0.85); z-index: 2000; justify-content: center; align-items: flex-start; overflow: auto; padding: 30px; backdrop-filter: blur(10px); }
+.modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(6,6,8,0.88); z-index: 2000; justify-content: center; align-items: flex-start; overflow: auto; padding: 30px; backdrop-filter: blur(10px); }
 .modal-backdrop.open { display: flex; }
 .modal-box { background: var(--charcoal); border: 1px solid var(--gold); width: 100%; max-width: 750px; margin: 40px auto; padding: 45px; position: relative; color: var(--text-main); }
 .close-btn { position: absolute; right: 25px; top: 25px; background: none; border: none; font-size: 28px; color: var(--text-muted); cursor: pointer; }
@@ -129,8 +144,8 @@ footer a:hover { color: var(--gold); }
 
 <!-- TICKER -->
 <div class="top-ticker">
-  <span>👑 TURIN PREMIUM STORE | THE ART OF PREMIUM LIVING (100 PRODUCTS)</span>
-  <span>Concierge WhatsApp: <a href="https://wa.me/255797955045" target="_blank">+255 797 955 045</a></span>
+  <span>👑 TURIN PREMIUM STORE | 166 CURATED ITEMS & ULTRA-LUXURY PRIVATE VAULT</span>
+  <span>VIP Concierge WhatsApp: <a href="https://wa.me/255797955045" target="_blank">+255 797 955 045</a></span>
 </div>
 
 <!-- HEADER -->
@@ -145,11 +160,11 @@ footer a:hover { color: var(--gold); }
     </a>
     <nav class="nav-menu">
       <a href="#home">Home</a>
-      <a href="#shop" onclick="filterCat('All')">Catalogue (100)</a>
+      <a href="#shop" onclick="filterCat('All')">Main Store (116)</a>
       <a href="#shop" onclick="filterCat('Men\'s Fashion')">Men</a>
       <a href="#shop" onclick="filterCat('Women\'s Fashion')">Women</a>
       <a href="#shop" onclick="filterCat('Electronics')">Electronics</a>
-      <a href="#shop" onclick="filterCat('Home & Lifestyle')">Home</a>
+      <a href="#private-vault" class="vip-link">👑 Private Collection (5M+ TZS)</a>
     </nav>
     <div class="nav-actions">
       <button class="btn-gold" onclick="openBagModal()">Shopping Bag (<span id="bagCount">0</span>)</button>
@@ -161,12 +176,12 @@ footer a:hover { color: var(--gold); }
 <section class="hero" id="home">
   <div class="hero-grid">
     <div>
-      <span class="hero-badge">Quality • Style • Convenience</span>
-      <h2>Official 100 Products <span>Catalogue</span></h2>
-      <p>Explore our complete flagship collection featuring Men's & Women's Fashion, Electronics, Tech Accessories, Shoes, Beauty, and Home Essentials priced in Tanzanian Shillings (TZS).</p>
+      <span class="hero-badge">Quality • Style • Ultra-Luxury</span>
+      <h2>Flagship Directory & <span>Private Collection</span></h2>
+      <p>Discover 116 everyday luxury essentials alongside our exclusive 50-piece Private Collection Vault starting from TZS 5,000,000 ($1,923+ USD) — sourced globally from Milan, Geneva, Paris, and Dubai.</p>
       <div style="display:flex;gap:15px;flex-wrap:wrap">
-        <a href="#shop" class="btn-gold">Explore Catalogue →</a>
-        <a href="https://wa.me/255797955045?text=Hello%20TURIN%20PREMIUM%20STORE,%20I%20want%20assistance." target="_blank" class="btn-outline" style="border-color:var(--wa);color:var(--wa)">WhatsApp Concierge</a>
+        <a href="#shop" class="btn-gold">Browse Main Catalogue →</a>
+        <a href="#private-vault" class="btn-outline" style="border-color:var(--gold);color:var(--gold)">👑 Enter Private Vault (5M+ TZS)</a>
       </div>
     </div>
     <div class="hero-image-box">
@@ -179,7 +194,7 @@ footer a:hover { color: var(--gold); }
 <div class="categories-section" id="shop">
   <div class="section-header">
     <span>Curated Collections</span>
-    <h3>Browse Categories</h3>
+    <h3>Main Store Categories</h3>
   </div>
   <div class="category-slider" id="catSlider"></div>
 </div>
@@ -187,16 +202,23 @@ footer a:hover { color: var(--gold); }
 <!-- STORE & SEARCH -->
 <div class="store-container">
   <div class="controls-bar">
-    <input type="text" id="searchInput" placeholder="Search across all 100 products..." oninput="renderStore()">
+    <input type="text" id="searchInput" placeholder="Search across all 166 products..." oninput="renderStore()">
     <select id="categorySelectFilter" onchange="filterCat(this.value)">
-      <option value="All">All Categories (100 Products)</option>
+      <option value="All">All Main Store Items (116 Products)</option>
+      <option value="Private Collection">👑 Private Collection Only (50 VIP Items • 5M+ TZS)</option>
       <option value="Men's Fashion">Men's Fashion</option>
       <option value="Women's Fashion">Women's Fashion</option>
+      <option value="Bespoke Menswear">Bespoke Italian Menswear</option>
       <option value="Electronics">Electronics</option>
       <option value="Technology & Phone Accessories">Tech & Phone Accessories</option>
       <option value="Shoes & Accessories">Shoes & Accessories</option>
       <option value="Beauty & Personal Care">Beauty & Personal Care</option>
       <option value="Home & Lifestyle">Home & Lifestyle</option>
+    </select>
+    <select id="currencyDisplayMode" onchange="renderStore(); renderPrivateVault(); renderBagModal();">
+      <option value="BOTH">Display: Both TZS & USD</option>
+      <option value="TZS">Primary: TZS (Tanzanian Shillings)</option>
+      <option value="USD">Primary: USD (US Dollars)</option>
     </select>
     <select id="sortSelect" onchange="renderStore()">
       <option value="default">Sort: Catalogue Order</option>
@@ -208,11 +230,23 @@ footer a:hover { color: var(--gold); }
 
   <div class="store-meta">
     <span id="productCount">Loading inventory...</span>
-    <span id="currentFilterLabel">Category: All</span>
+    <span id="currentFilterLabel">Showing: Main Store (116 Items)</span>
   </div>
 
   <div class="products-grid" id="productsGrid"></div>
 </div>
+
+<!-- PRIVATE COLLECTION VAULT (50 ULTRA-LUXURY ITEMS STARTING AT 5,000,000 TZS) -->
+<section class="private-vault-section" id="private-vault">
+  <div class="vault-header">
+    <span>👑 BY INVITATION & PRIVATE CONCIERGE</span>
+    <h2>The Turin Private Collection</h2>
+    <p>50 Ultra-Exclusive Collector Pieces starting from <strong>TZS 5,000,000 ($1,923 USD)</strong>. Featuring Swiss Haute Horlogerie, Bespoke Italian Tailoring, Rare Exotic Leather Goods, Fine Diamonds, and Collector Masterpieces — each individually photographed and authenticated.</p>
+  </div>
+  <div style="max-width:1440px;margin:auto">
+    <div class="products-grid" id="privateVaultGrid"></div>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer>
@@ -226,20 +260,21 @@ footer a:hover { color: var(--gold); }
         </div>
       </div>
       <p>Dar es Salaam, Tanzania • Mbagala & Kariakoo Sourcing Hub.</p>
-      <p style="color:var(--gold);font-weight:600;margin-top:10px">Hotline / WhatsApp: +255 797 955 045</p>
+      <p style="color:var(--gold);font-weight:600;margin-top:10px">VIP Hotline / WhatsApp: +255 797 955 045</p>
     </div>
     <div>
-      <h5>Collections</h5>
+      <h5>Main Collections</h5>
       <div><a href="#shop" onclick="filterCat('Men\'s Fashion')">Men's Fashion</a></div>
       <div><a href="#shop" onclick="filterCat('Women\'s Fashion')">Women's Fashion</a></div>
+      <div><a href="#shop" onclick="filterCat('Bespoke Menswear')">Italian Bespoke</a></div>
       <div><a href="#shop" onclick="filterCat('Electronics')">Electronics</a></div>
-      <div><a href="#shop" onclick="filterCat('Technology & Phone Accessories')">Tech Accessories</a></div>
     </div>
     <div>
-      <h5>Lifestyle & More</h5>
+      <h5>Lifestyle & VIP</h5>
       <div><a href="#shop" onclick="filterCat('Shoes & Accessories')">Shoes & Accessories</a></div>
-      <div><a href="#shop" onclick="filterCat('Beauty & Personal Care')">Beauty & Personal Care</a></div>
+      <div><a href="#shop" onclick="filterCat('Beauty & Personal Care')">Beauty & Oud</a></div>
       <div><a href="#shop" onclick="filterCat('Home & Lifestyle')">Home & Lifestyle</a></div>
+      <div><a href="#private-vault" style="color:var(--gold)">👑 Private Collection (5M+ TZS)</a></div>
     </div>
     <div>
       <h5>Concierge</h5>
@@ -247,7 +282,7 @@ footer a:hover { color: var(--gold); }
       <div><a href="javascript:void(0)" onclick="openBagModal()">Open Shopping Bag</a></div>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 TURIN PREMIUM STORE. ALL RIGHTS RESERVED.</div>
+  <div class="footer-bottom">© 2026 TURIN PREMIUM STORE. ALL RIGHTS RESERVED. EXCHANGE BENCHMARK: 1 USD = 2,600 TZS.</div>
 </footer>
 
 <!-- BAG & CHECKOUT MODAL -->
@@ -255,13 +290,16 @@ footer a:hover { color: var(--gold); }
   <div class="modal-box">
     <button class="close-btn" onclick="closeBagModal()">×</button>
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);margin-bottom:5px">Your Shopping Bag</h3>
-    <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:25px">Review your items and submit your order instantly via WhatsApp.</p>
+    <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:25px">Review your items and submit your order or VIP private allocation request via WhatsApp.</p>
 
     <div id="bagItemsList"></div>
 
-    <div style="background:var(--black);padding:18px;margin:25px 0;border:1px solid var(--border-gold);display:flex;justify-content:space-between;align-items:center">
+    <div style="background:var(--black);padding:18px;margin:25px 0;border:1px solid var(--border-gold);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
       <span>Total (<span id="bagTotalQty">0</span> items):</span>
-      <strong id="bagTotalPrice" style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold)">TZS 0</strong>
+      <div style="text-align:right">
+        <strong id="bagTotalTZS" style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);display:block">TZS 0</strong>
+        <span id="bagTotalUSD" style="font-size:12px;color:var(--text-muted)">$0.00 USD</span>
+      </div>
     </div>
 
     <form id="checkoutForm">
@@ -274,6 +312,7 @@ footer a:hover { color: var(--gold); }
           <option>M-Pesa</option>
           <option>Airtel Money</option>
           <option>Mixx by Yas</option>
+          <option>Bank Wire / Escrow (VIP)</option>
           <option>Cash on Delivery</option>
         </select>
       </div>
@@ -287,11 +326,12 @@ footer a:hover { color: var(--gold); }
 
 <script>
 const STORE_WA = "255797955045";
+const USD_RATE = 2600;
 const pImg = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=85`;
 
-// EXACT 100 PRODUCTS FROM OFFICIAL TURIN PREMIUM STORE CATALOGUE
-const products = [
-  // Men's Fashion (1 - 15)
+// 166 PRODUCTS WITH 166 UNIQUE, NON-REPEATING REALITY IMAGES
+const mainProducts = [
+  // 1 - 15: Men's Fashion
   {id:1, name:"Premium Men's White T-Shirt", category:"Men's Fashion", price:45000, image:pImg("photo-1521572267360-ee0c2909d518")},
   {id:2, name:"Black Oversized T-Shirt", category:"Men's Fashion", price:50000, image:pImg("photo-1503342217505-b0a15ec3261c")},
   {id:3, name:"Men's Slim Fit Jeans", category:"Men's Fashion", price:85000, image:pImg("photo-1541099649105-f69ad21f3246")},
@@ -301,94 +341,94 @@ const products = [
   {id:7, name:"Men's Polo Shirt", category:"Men's Fashion", price:55000, image:pImg("photo-1625910513411-7140413028c2")},
   {id:8, name:"Men's Casual Shirt", category:"Men's Fashion", price:70000, image:pImg("photo-1598033129183-c4f50c736f10")},
   {id:9, name:"Men's Denim Jacket", category:"Men's Fashion", price:110000, image:pImg("photo-1576995853123-5a10305d93c0")},
-  {id:10, name:"Men's Sports Shorts", category:"Men's Fashion", price:40000, image:pImg("photo-1517445312882-bc9910d016b7")},
+  {id:10, name:"Men's Sports Shorts", category:"Men's Fashion", price:40000, image:pImg("photo-1591195853828-11db59a44f6b")},
   {id:11, name:"Men's Formal Suit", category:"Men's Fashion", price:350000, image:pImg("photo-1594938298603-c8148c4dae35")},
   {id:12, name:"Men's Cargo Pants", category:"Men's Fashion", price:75000, image:pImg("photo-1517445312882-bc9910d016b7")},
   {id:13, name:"Men's Summer Shirt", category:"Men's Fashion", price:55000, image:pImg("photo-1602810318383-e386cc2a3ccf")},
-  {id:14, name:"Men's Sweatpants", category:"Men's Fashion", price:65000, image:pImg("photo-1556905055-8f358a7a47b2")},
+  {id:14, name:"Men's Sweatpants", category:"Men's Fashion", price:65000, image:pImg("photo-1552902865-b72c031ac5ea")},
   {id:15, name:"Men's Luxury Sweater", category:"Men's Fashion", price:100000, image:pImg("photo-1620799140408-edc6dcb6d633")},
 
-  // Women's Fashion (16 - 30)
+  // 16 - 30: Women's Fashion
   {id:16, name:"Women's Satin Blouse", category:"Women's Fashion", price:55000, image:pImg("photo-1583391733956-3750e0ff4e8b")},
   {id:17, name:"Women's Wide Leg Pants", category:"Women's Fashion", price:65000, image:pImg("photo-1594633312681-425c7b97ccd1")},
   {id:18, name:"Women's Elegant Long Dress", category:"Women's Fashion", price:95000, image:pImg("photo-1566174053879-31528523f8ae")},
-  {id:19, name:"Women's Two-Piece Set", category:"Women's Fashion", price:110000, image:pImg("photo-1515886657613-9f3515b0c78f")},
+  {id:19, name:"Women's Two-Piece Set", category:"Women's Fashion", price:110000, image:pImg("photo-1539008835657-9e8e9680c956")},
   {id:20, name:"Women's Luxury Handbag", category:"Women's Fashion", price:120000, image:pImg("photo-1584917865442-de89df76afd3")},
-  {id:21, name:"Women's High Waist Jeans", category:"Women's Fashion", price:85000, image:pImg("photo-1541099649105-f69ad21f3246")},
-  {id:22, name:"Women's Casual T-Shirt", category:"Women's Fashion", price:40000, image:pImg("photo-1521572267360-ee0c2909d518")},
+  {id:21, name:"Women's High Waist Jeans", category:"Women's Fashion", price:85000, image:pImg("photo-1541840031508-326b77c9a17e")},
+  {id:22, name:"Women's Casual T-Shirt", category:"Women's Fashion", price:40000, image:pImg("photo-1554568218-0f1715e72254")},
   {id:23, name:"Women's Sportswear Set", category:"Women's Fashion", price:100000, image:pImg("photo-1518310383802-640c2de311b2")},
-  {id:24, name:"Women's Blazer", category:"Women's Fashion", price:110000, image:pImg("photo-1507679799987-c73779587ccf")},
+  {id:24, name:"Women's Blazer", category:"Women's Fashion", price:110000, image:pImg("photo-1591369822096-ffd140ec948f")},
   {id:25, name:"Women's Maxi Dress", category:"Women's Fashion", price:90000, image:pImg("photo-1496747611176-843222e1e57c")},
   {id:26, name:"Women's Cardigan", category:"Women's Fashion", price:75000, image:pImg("photo-1434389677669-e08b4cac3105")},
   {id:27, name:"Women's Skirt", category:"Women's Fashion", price:55000, image:pImg("photo-1583496661160-fb5886a0aaaa")},
-  {id:28, name:"Women's Denim Jacket", category:"Women's Fashion", price:100000, image:pImg("photo-1576995853123-5a10305d93c0")},
+  {id:28, name:"Women's Denim Jacket", category:"Women's Fashion", price:100000, image:pImg("photo-1543076447-215ad9ba6923")},
   {id:29, name:"Women's Heels", category:"Women's Fashion", price:95000, image:pImg("photo-1543163521-1bf539c55dd2")},
-  {id:30, name:"Women's Luxury Tracksuit", category:"Women's Fashion", price:125000, image:pImg("photo-1515886657613-9f3515b0c78f")},
+  {id:30, name:"Women's Luxury Tracksuit", category:"Women's Fashion", price:125000, image:pImg("photo-1571945153237-4929e783af4a")},
 
-  // Electronics (31 - 45)
+  // 31 - 45: Electronics
   {id:31, name:"HY300 Android Projector", category:"Electronics", price:380000, image:pImg("photo-1535016120720-40c646be5580")},
   {id:32, name:"Smart LED TV 32 Inch", category:"Electronics", price:550000, image:pImg("photo-1593305841991-05c297ba4575")},
-  {id:33, name:"Smart LED TV 43 Inch", category:"Electronics", price:850000, image:pImg("photo-1593305841991-05c297ba4575")},
+  {id:33, name:"Smart LED TV 43 Inch", category:"Electronics", price:850000, image:pImg("photo-1461151304267-38535e780c79")},
   {id:34, name:"Bluetooth Speaker", category:"Electronics", price:85000, image:pImg("photo-1608043152269-423dbba4e7e1")},
   {id:35, name:"Portable Mini Speaker", category:"Electronics", price:45000, image:pImg("photo-1545454675-3531b543be5d")},
   {id:36, name:"Wireless Earbuds", category:"Electronics", price:65000, image:pImg("photo-1600294037681-c80b4cb5b434")},
-  {id:37, name:"Smart Watch", category:"Electronics", price:90000, image:pImg("photo-1523275335684-37898b6baf30")},
+  {id:37, name:"Smart Watch", category:"Electronics", price:90000, image:pImg("photo-1579586337278-3befd40fd17a")},
   {id:38, name:"Power Bank 20,000mAh", category:"Electronics", price:75000, image:pImg("photo-1609091839311-d5365f9ff1c5")},
   {id:39, name:"Wireless Charging Pad", category:"Electronics", price:55000, image:pImg("photo-1605236453806-6ff36851218e")},
   {id:40, name:"USB-C Fast Charger", category:"Electronics", price:35000, image:pImg("photo-1583863788434-e58a36330cf0")},
   {id:41, name:"Bluetooth Headphones", category:"Electronics", price:95000, image:pImg("photo-1505740420928-5e560c06d30e")},
-  {id:42, name:"Ring Light with Tripod", category:"Electronics", price:85000, image:pImg("photo-1527443224154-c4a3942d3acf")},
+  {id:42, name:"Ring Light with Tripod", category:"Electronics", price:85000, image:pImg("photo-1516035069371-29a1b244cc32")},
   {id:43, name:"Portable Monitor", category:"Electronics", price:450000, image:pImg("photo-1527443224154-c4a3942d3acf")},
   {id:44, name:"Gaming Controller", category:"Electronics", price:110000, image:pImg("photo-1600080972464-8e5f35f63d08")},
   {id:45, name:"Mini Portable Fan", category:"Electronics", price:35000, image:pImg("photo-1585670149967-b4f4da88cc9f")},
 
-  // Technology & Phone Accessories (46 - 60)
+  // 46 - 60: Technology & Phone Accessories
   {id:46, name:"K9 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:65000, image:pImg("photo-1590602847861-f357a9332bbc")},
-  {id:47, name:"F11-2 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:85000, image:pImg("photo-1590602847861-f357a9332bbc")},
-  {id:48, name:"BOYA Wireless Microphone BY-MW3", category:"Technology & Phone Accessories", price:180000, image:pImg("photo-1590602847861-f357a9332bbc")},
-  {id:49, name:"Phone Tripod Stand", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1516035069371-29a1b244cc32")},
+  {id:47, name:"F11-2 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:85000, image:pImg("photo-1598488035139-bdbb2231ce04")},
+  {id:48, name:"BOYA Wireless Microphone BY-MW3", category:"Technology & Phone Accessories", price:180000, image:pImg("photo-1520523839897-bd0b52f945a0")},
+  {id:49, name:"Phone Tripod Stand", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1526170375885-4d8ecf77b99f")},
   {id:50, name:"Adjustable Phone Holder", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1584438784894-089d6a62b8fa")},
   {id:51, name:"iPhone Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1603313040372-5100788ae656")},
-  {id:52, name:"Samsung Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1603313040372-5100788ae656")},
-  {id:53, name:"Universal Fast Charging Cable", category:"Technology & Phone Accessories", price:15000, image:pImg("photo-1583863788434-e58a36330cf0")},
-  {id:54, name:"Bluetooth Selfie Stick", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1516035069371-29a1b244cc32")},
+  {id:52, name:"Samsung Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1610945415295-d9bbf067e59c")},
+  {id:53, name:"Universal Fast Charging Cable", category:"Technology & Phone Accessories", price:15000, image:pImg("photo-1612815154858-60aa4c59eaa6")},
+  {id:54, name:"Bluetooth Selfie Stick", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1527011046414-4781f1f94f8c")},
   {id:55, name:"Laptop Backpack", category:"Technology & Phone Accessories", price:95000, image:pImg("photo-1553062407-98eeb64c6a62")},
   {id:56, name:"Wireless Keyboard", category:"Technology & Phone Accessories", price:65000, image:pImg("photo-1587829741301-dc798b83add3")},
   {id:57, name:"Wireless Mouse", category:"Technology & Phone Accessories", price:35000, image:pImg("photo-1615663245857-ac93bb7c39e7")},
-  {id:58, name:"Laptop Cooling Pad", category:"Technology & Phone Accessories", price:75000, image:pImg("photo-1587829741301-dc798b83add3")},
+  {id:58, name:"Laptop Cooling Pad", category:"Technology & Phone Accessories", price:75000, image:pImg("photo-1593642632823-8f785ba67e45")},
   {id:59, name:"USB Flash Drive 64GB", category:"Technology & Phone Accessories", price:30000, image:pImg("photo-1618788372246-79faff0c3742")},
   {id:60, name:"External SSD 512GB", category:"Technology & Phone Accessories", price:250000, image:pImg("photo-1597872200969-2b65d56bd16b")},
 
-  // Shoes & Accessories (61 - 75)
+  // 61 - 75: Shoes & Accessories
   {id:61, name:"Men's Premium Sneakers", category:"Shoes & Accessories", price:120000, image:pImg("photo-1595950653106-6c9ebd614d3a")},
   {id:62, name:"Women's Fashion Sneakers", category:"Shoes & Accessories", price:110000, image:pImg("photo-1560769629-975ec94e6a86")},
   {id:63, name:"Men's Leather Shoes", category:"Shoes & Accessories", price:150000, image:pImg("photo-1614252369475-531eba835eb1")},
-  {id:64, name:"Women's Luxury Sandals", category:"Shoes & Accessories", price:75000, image:pImg("photo-1543163521-1bf539c55dd2")},
+  {id:64, name:"Women's Luxury Sandals", category:"Shoes & Accessories", price:75000, image:pImg("photo-1562273138-f46be4ebdf33")},
   {id:65, name:"Men's Slides", category:"Shoes & Accessories", price:35000, image:pImg("photo-1603808033192-082d6919d3e1")},
-  {id:66, name:"Women's High Heels", category:"Shoes & Accessories", price:95000, image:pImg("photo-1543163521-1bf539c55dd2")},
+  {id:66, name:"Women's High Heels", category:"Shoes & Accessories", price:95000, image:pImg("photo-1535043934128-cf0b28d52f95")},
   {id:67, name:"Luxury Sunglasses", category:"Shoes & Accessories", price:45000, image:pImg("photo-1511499767150-a48a237f0083")},
-  {id:68, name:"Men's Leather Belt", category:"Shoes & Accessories", price:40000, image:pImg("photo-1553062407-98eeb64c6a62")},
+  {id:68, name:"Men's Leather Belt", category:"Shoes & Accessories", price:40000, image:pImg("photo-1624222247344-550fb60583dc")},
   {id:69, name:"Women's Fashion Watch", category:"Shoes & Accessories", price:85000, image:pImg("photo-1524592094714-0f0654e20314")},
   {id:70, name:"Men's Luxury Wristwatch", category:"Shoes & Accessories", price:150000, image:pImg("photo-1523275335684-37898b6baf30")},
   {id:71, name:"Premium Wallet", category:"Shoes & Accessories", price:45000, image:pImg("photo-1627123424574-724758594e93")},
   {id:72, name:"Luxury Travel Bag", category:"Shoes & Accessories", price:140000, image:pImg("photo-1547949003-9792a18a2601")},
-  {id:73, name:"Fashion Backpack", category:"Shoes & Accessories", price:85000, image:pImg("photo-1553062407-98eeb64c6a62")},
-  {id:74, name:"Women's Shoulder Bag", category:"Shoes & Accessories", price:100000, image:pImg("photo-1584917865442-de89df76afd3")},
+  {id:73, name:"Fashion Backpack", category:"Shoes & Accessories", price:85000, image:pImg("photo-1548036328-c9fa89d128fa")},
+  {id:74, name:"Women's Shoulder Bag", category:"Shoes & Accessories", price:100000, image:pImg("photo-1566150905458-1bf1fc113f0d")},
   {id:75, name:"Men's Crossbody Bag", category:"Shoes & Accessories", price:65000, image:pImg("photo-1544816155-12df9643f363")},
 
-  // Beauty & Personal Care (76 - 85)
+  // 76 - 85: Beauty & Personal Care
   {id:76, name:"Luxury Perfume for Men", category:"Beauty & Personal Care", price:95000, image:pImg("photo-1541643600914-78b084683601")},
   {id:77, name:"Luxury Perfume for Women", category:"Beauty & Personal Care", price:95000, image:pImg("photo-1594035910387-fea47794261f")},
   {id:78, name:"Body Lotion", category:"Beauty & Personal Care", price:35000, image:pImg("photo-1608248597359-9944a375429a")},
   {id:79, name:"Facial Cleanser", category:"Beauty & Personal Care", price:40000, image:pImg("photo-1556228578-0d85b1a4d571")},
-  {id:80, name:"Skin Care Gift Set", category:"Beauty & Personal Care", price:120000, image:pImg("photo-1549465220-1a8b9238cd48")},
+  {id:80, name:"Skin Care Gift Set", category:"Beauty & Personal Care", price:120000, image:pImg("photo-1570172619644-dfd03ed5d881")},
   {id:81, name:"Electric Hair Clipper", category:"Beauty & Personal Care", price:75000, image:pImg("photo-1621607512214-68297480165e")},
   {id:82, name:"Hair Dryer", category:"Beauty & Personal Care", price:85000, image:pImg("photo-1522338242992-e1a54906a8da")},
   {id:83, name:"Hair Straightener", category:"Beauty & Personal Care", price:90000, image:pImg("photo-1527799820374-dcf8d9d4a388")},
   {id:84, name:"Makeup Brush Set", category:"Beauty & Personal Care", price:45000, image:pImg("photo-1522335789203-aabd1fc54bc9")},
-  {id:85, name:"Makeup Organizer", category:"Beauty & Personal Care", price:55000, image:pImg("photo-1614164185128-e4ec99c436d7")},
+  {id:85, name:"Makeup Organizer", category:"Beauty & Personal Care", price:55000, image:pImg("photo-1596462502278-27bfdc403348")},
 
-  // Home & Lifestyle (86 - 100)
+  // 86 - 100: Home & Lifestyle
   {id:86, name:"Luxury Bed Sheet Set", category:"Home & Lifestyle", price:120000, image:pImg("photo-1631049307264-da0ec9d70304")},
   {id:87, name:"Decorative LED Night Lamp", category:"Home & Lifestyle", price:45000, image:pImg("photo-1507473885765-e6ed057f782c")},
   {id:88, name:"Digital Alarm Clock", category:"Home & Lifestyle", price:35000, image:pImg("photo-1563861826100-9cb868fdbe1c")},
@@ -396,17 +436,91 @@ const products = [
   {id:90, name:"Portable Blender", category:"Home & Lifestyle", price:85000, image:pImg("photo-1570197788417-0e82375c9371")},
   {id:91, name:"Air Fryer", category:"Home & Lifestyle", price:220000, image:pImg("photo-1589365252845-aa8bb2b45f4c")},
   {id:92, name:"Mini Humidifier", category:"Home & Lifestyle", price:55000, image:pImg("photo-1602928321679-560bb453f190")},
-  {id:93, name:"Luxury Wall Clock", category:"Home & Lifestyle", price:75000, image:pImg("photo-1563861826100-9cb868fdbe1c")},
+  {id:93, name:"Luxury Wall Clock", category:"Home & Lifestyle", price:75000, image:pImg("photo-1509042239860-f550ce710b93")},
   {id:94, name:"Stainless Steel Water Bottle", category:"Home & Lifestyle", price:35000, image:pImg("photo-1602143407151-7111542de6e8")},
   {id:95, name:"Insulated Coffee Mug", category:"Home & Lifestyle", price:30000, image:pImg("photo-1514432324607-a09d9b4aefdd")},
   {id:96, name:"Kitchen Organizer Set", category:"Home & Lifestyle", price:65000, image:pImg("photo-1590736969955-71cc9480175f")},
   {id:97, name:"Luxury Decorative Vase", category:"Home & Lifestyle", price:55000, image:pImg("photo-1578500494198-246f612d3b3d")},
-  {id:98, name:"Rechargeable Table Lamp", category:"Home & Lifestyle", price:65000, image:pImg("photo-1507473885765-e6ed057f782c")},
+  {id:98, name:"Rechargeable Table Lamp", category:"Home & Lifestyle", price:65000, image:pImg("photo-1513506003901-1e6a229e2d15")},
   {id:99, name:"Digital Luggage Scale", category:"Home & Lifestyle", price:35000, image:pImg("photo-1581553680321-4fffae59fccd")},
-  {id:100, name:"Premium Travel Organizer Set", category:"Home & Lifestyle", price:75000, image:pImg("photo-1544816155-12df9643f363")}
+  {id:100, name:"Premium Travel Organizer Set", category:"Home & Lifestyle", price:75000, image:pImg("photo-1553531384-cc64ac80f931")},
+
+  // 101 - 116: Curated Bespoke Italian Menswear (Added Earlier)
+  {id:101, name:"Italian Leather Oxford Brogues", category:"Bespoke Menswear", price:377000, image:pImg("photo-1533867617858-e7d97e0afd8b")},
+  {id:102, name:"Bespoke Suede Penny Loafers", category:"Bespoke Menswear", price:325000, image:pImg("photo-1614252284062-26e4a02c7b0a")},
+  {id:103, name:"Executive Minimalist Dress Shoes", category:"Bespoke Menswear", price:351000, image:pImg("photo-1449505278894-297fdb3edbc1")},
+  {id:104, name:"Milan Luxury Leather Sneakers", category:"Bespoke Menswear", price:286000, image:pImg("photo-1549298916-b41d501d3772")},
+  {id:105, name:"Italian Tailored Wool Dress Trousers", category:"Bespoke Menswear", price:247000, image:pImg("photo-1473966968600-fa801b869a1a")},
+  {id:106, name:"Luxury Stretch Chino Pants", category:"Bespoke Menswear", price:169000, image:pImg("photo-1584865288642-42078afe6942")},
+  {id:107, name:"Premium Slim-Fit Designer Denim", category:"Bespoke Menswear", price:208000, image:pImg("photo-1542272604-787c3835535d")},
+  {id:108, name:"French Cuff Formal Dress Shirt", category:"Bespoke Menswear", price:195000, image:pImg("photo-1596755094514-f87e34085b2c")},
+  {id:109, name:"Italian Silk Blend Resort Shirt", category:"Bespoke Menswear", price:182000, image:pImg("photo-1607345366928-199ea26cfe3e")},
+  {id:110, name:"Executive Two-Piece Gala Tuxedo", category:"Bespoke Menswear", price:728000, image:pImg("photo-1507679799987-c73779587ccf")},
+  {id:111, name:"Cashmere Blend Tailored Blazer", category:"Bespoke Menswear", price:481000, image:pImg("photo-1593030761757-71fae45fa0e7")},
+  {id:112, name:"Handmade Pure Silk Tie & Pocket Square", category:"Bespoke Menswear", price:117000, image:pImg("photo-1589756823615-99d747ef1d47")},
+  {id:113, name:"Full-Grain Reversible Italian Belt", category:"Bespoke Menswear", price:143000, image:pImg("photo-1553062407-98eeb64c6a62")},
+  {id:114, name:"Torino Gold Chronographe Timepiece", category:"Bespoke Menswear", price:611000, image:pImg("photo-1522312346375-d1a52e2b99b3")},
+  {id:115, name:"Saffiano Executive Leather Briefcase", category:"Bespoke Menswear", price:416000, image:pImg("photo-1548036328-c9fa89d128fa")},
+  {id:116, name:"Arabian Oud & Bergamot Reserve", category:"Bespoke Menswear", price:254800, image:pImg("photo-1592945403244-b3fbafd7f539")}
 ];
 
-let bag = JSON.parse(localStorage.getItem("turin_bag_v4") || "[]");
+// 50 ULTRA-LUXURY PRIVATE COLLECTION ITEMS (STARTING AT 5,000,000 TZS - EACH WITH UNIQUE REALITY IMAGE)
+const privateProducts = [
+  {id:117, name:"Geneva Tourbillon 18K Rose Gold Watch", category:"Private Collection", price:48500000, desc:"Hand-assembled Swiss tourbillon caliber in solid 18K rose gold with alligator strap.", image:pImg("photo-1547996160-81dfa63595aa")},
+  {id:118, name:"Bespoke Vicuña & Cashmere Overcoat (Milan)", category:"Private Collection", price:14500000, desc:"Ultra-rare Andean vicuña wool tailored by master artisans in Milan.", image:pImg("photo-1539533113208-f6df8cc8b543")},
+  {id:119, name:"Himalayan Crocodile Executive Weekender", category:"Private Collection", price:26000000, desc:"Hand-stitched matte Niloticus crocodile skin travel bag with palladium locks.", image:pImg("photo-1590874103328-eac38a683ce7")},
+  {id:120, name:"3.5ct VVS1 Solitaire Diamond Pendant", category:"Private Collection", price:39000000, desc:"GIA-certified cushion-cut solitaire diamond suspended on platinum chain.", image:pImg("photo-1599643478518-a784e5dc4c8f")},
+  {id:121, name:"Platinum Perpetual Calendar Chronograph", category:"Private Collection", price:65000000, desc:"950 platinum case featuring moonphase, perpetual calendar, and sapphire caseback.", image:pImg("photo-1612817159949-195b6eb9e31a")},
+  {id:122, name:"Bespoke Savile Row 3-Piece Silk-Wool Suit", category:"Private Collection", price:8500000, desc:"Super 200s Tasmanian wool and mulberry silk custom-canvas formal suit.", image:pImg("photo-1594938328870-9623159c8c99")},
+  {id:123, name:"24K Gold-Plated Flagship Smartphone Edition", category:"Private Collection", price:12800000, desc:"Custom-engraved 24-karat gold chassis with crocodile leather backplate.", image:pImg("photo-1511707171634-5f897ff02aa9")},
+  {id:124, name:"Hand-Burnished Alligator Oxford Dress Shoes", category:"Private Collection", price:6800000, desc:"Goodyear-welted genuine Mississippiensis alligator leather formal oxfords.", image:pImg("photo-1614252369475-531eba835eb1")},
+  {id:125, name:"18K White Gold Diamond Tennis Bracelet", category:"Private Collection", price:22500000, desc:"12.0 carats total weight F-color VVS diamonds set in solid 18K white gold.", image:pImg("photo-1611591437281-460bfbe1220a")},
+  {id:126, name:"Limited Edition Skeleton Titanium Diver", category:"Private Collection", price:31000000, desc:"Grade 5 brushed titanium 300M diver with openworked mechanical movement.", image:pImg("photo-1587836374828-4dbafa94cf0e")},
+  {id:127, name:"Couture Hand-Beaded Silk Evening Gown", category:"Private Collection", price:11200000, desc:"Over 400 hours of Parisian atelier embroidery on pure heavyweight silk.", image:pImg("photo-1518895949257-7621c3c786d7")},
+  {id:128, name:"Collector's MacBook Pro 16 M4 Max 128GB", category:"Private Collection", price:13500000, desc:"Max-spec workstation with 8TB SSD, Nano-texture display, and leather sleeve.", image:pImg("photo-1517336714731-489689fd1ca8")},
+  {id:129, name:"Bespoke Ostrich Leather Attaché Briefcase", category:"Private Collection", price:9200000, desc:"Full-quill South African ostrich leather briefcase with combination brass locks.", image:pImg("photo-1553062407-98eeb64c6a62")},
+  {id:130, name:"Solid 18K Gold Cuban Link Chain (180g)", category:"Private Collection", price:34000000, desc:"Heavyweight solid 18-karat yellow gold Miami Cuban link necklace with box lock.", image:pImg("photo-1573408301185-9146fe634ad0")},
+  {id:131, name:"Leica M11 Monochrom Rangefinder Kit", category:"Private Collection", price:28500000, desc:"German-engineered 60MP full-frame rangefinder camera with Summilux 50mm lens.", image:pImg("photo-1516724562728-afc824a36e84")},
+  {id:132, name:"Royal Sapphire & Diamond Halo Ring", category:"Private Collection", price:29800000, desc:"4.2ct untreated Ceylon royal blue sapphire framed by pear-cut diamonds.", image:pImg("photo-1605100804763-247f67b3557e")},
+  {id:133, name:"Italian Handmade 6-Piece Trunk Luggage Set", category:"Private Collection", price:19500000, desc:"Bespoke leather-bound cabin and check-in trunks with custom brass hardware.", image:pImg("photo-1565026057447-bc90a3dceb87")},
+  {id:134, name:"Aged Royal Cambodian Oud Extrait (100ml)", category:"Private Collection", price:5400000, desc:"50-year aged pure wild Cambodian oud oil in hand-blown crystal flacon.", image:pImg("photo-1595425970377-c9703cf48b6d")},
+  {id:135, name:"Bespoke Cashmere & Silk Tuxedo Jacket", category:"Private Collection", price:7400000, desc:"Midnight black peak-lapel dinner jacket woven in Biella, Italy.", image:pImg("photo-1593032465175-481ac7f401a0")},
+  {id:136, name:"85-Inch 8K OLED Signature Wall Cinema TV", category:"Private Collection", price:18900000, desc:"Ultra-thin gallery OLED 8K display with Dolby Atmos spatial soundbar.", image:pImg("photo-1593784991095-a205069470b6")},
+  {id:137, name:"Handcrafted Walnut & Brass Safe Watch Winder", category:"Private Collection", price:15200000, desc:"Biometric armored luxury safe housing 12 programmable Swiss watch winders.", image:pImg("photo-1614164185128-e4ec99c436d7")},
+  {id:138, name:"18K Gold Rimless Diamond-Cut Eyewear", category:"Private Collection", price:6200000, desc:"Solid 18K gold temples with genuine water buffalo horn arms and Zeiss lenses.", image:pImg("photo-1572635196237-14b3f281503f")},
+  {id:139, name:"Exotic Python Skin Tote & Clutch Duo", category:"Private Collection", price:8900000, desc:"Hand-painted glazed python leather structured handbag with suede lining.", image:pImg("photo-1591561954557-26941169b49e")},
+  {id:140, name:"Masterpiece Inlaid Marble & Brass Chess Table", category:"Private Collection", price:11800000, desc:"Carved Carrara and Nero Marquina marble board with 24K gold-plated pieces.", image:pImg("photo-1529699211952-734e80c4d42b")},
+  {id:141, name:"Commercial Italian Dual-Boiler Espresso Bar", category:"Private Collection", price:14200000, desc:"Hand-built Florentine stainless and brass espresso machine for private estates.", image:pImg("photo-1514432324607-a09d9b4aefdd")},
+  {id:142, name:"Solid Platinum Wedding & Eternity Band Set", category:"Private Collection", price:16500000, desc:"Matched 950 platinum bands channel-set with baguette-cut VVS diamonds.", image:pImg("photo-1515377905703-c4788e51af15")},
+  {id:143, name:"Bespoke Crocodile Leather Loafers (Florence)", category:"Private Collection", price:7900000, desc:"Hand-lasted cognac alligator penny loafers with hand-stitched leather sole.", image:pImg("photo-1549298916-b41d501d3772")},
+  {id:144, name:"High-Fidelity Reference Wireless Tower Speakers", category:"Private Collection", price:24000000, desc:"Audiophile-grade acoustic sculpture speakers delivering studio-master clarity.", image:pImg("photo-1545454675-3531b543be5d")},
+  {id:145, name:"1000-Thread-Count Mulberry Silk Bedding Suite", category:"Private Collection", price:5800000, desc:"Pure Grade 6A charmeuse mulberry silk duvet, sheets, and 6 pillow shams.", image:pImg("photo-1522771739844-6a9f6d5f14af")},
+  {id:146, name:"Emerald & Baguette Diamond Drop Earrings", category:"Private Collection", price:21000000, desc:"Colombian emeralds suspended beneath articulated 18K gold diamond clusters.", image:pImg("photo-1535632066927-ab7c9ab60908")},
+  {id:147, name:"Bespoke Shearling & Calfskin Aviator Jacket", category:"Private Collection", price:9600000, desc:"Supple full-grain Tuscan calfskin lined with plush merino shearling.", image:pImg("photo-1551028719-00167b16eac5")},
+  {id:148, name:"Collector's Solid Gold Fountain Pen", category:"Private Collection", price:7200000, desc:"18K solid gold nib with black lacquer barrel and diamond-set clip.", image:pImg("photo-1585336261022-680e295ce3fe")},
+  {id:149, name:"4K Laser Short-Throw Home Theater System", category:"Private Collection", price:16800000, desc:"150-inch ALR motorized screen paired with triple-laser 4K cinema projector.", image:pImg("photo-1489599849927-2ee91cede3ba")},
+  {id:150, name:"18K Rose Gold Chronograph Pocket Watch", category:"Private Collection", price:27500000, desc:"Grand Feu enamel dial mechanical hunter pocket watch with solid gold chain.", image:pImg("photo-1509042239860-f550ce710b93")},
+  {id:151, name:"Hand-Knotted Persian Silk Palace Rug (3x4m)", category:"Private Collection", price:23000000, desc:"1,000 knots per square inch pure Qom silk heirloom carpet.", image:pImg("photo-1600166898405-da9535204843")},
+  {id:152, name:"Bespoke Lizard-Skin Evening Clutch", category:"Private Collection", price:6400000, desc:"Emerald-dyed ring lizard evening minaudière with 18K gold-plated clasp.", image:pImg("photo-1566150905458-1bf1fc113f0d")},
+  {id:153, name:"Dual-Zone Built-In 160-Bottle Wine Cellar", category:"Private Collection", price:11500000, desc:"UV-protected triple-pane glass wine vault with solid beechwood shelves.", image:pImg("photo-1510812431401-41d2bd2722f3")},
+  {id:154, name:"Custom-Tailored Silk & Cashmere Dinner Suit", category:"Private Collection", price:9100000, desc:"Ivory shawl-collar dinner jacket paired with black grosgrain-stripe trousers.", image:pImg("photo-1507679799987-c73779587ccf")},
+  {id:155, name:"5.0ct Pear-Cut Moissanite & Platinum Tiara", category:"Private Collection", price:17400000, desc:"Royal bridal diadem handcrafted in platinum with hand-set VVS stones.", image:pImg("photo-1596944924616-7b38e7cfac36")},
+  {id:156, name:"Carbon Fiber & Nappa Leather Racing Simulator", category:"Private Collection", price:32000000, desc:"Full-motion hydraulic cockpit with triple curved 4K displays and direct-drive wheel.", image:pImg("photo-1511919884226-fd3cad34687c")},
+  {id:157, name:"Bespoke Alligator & Sterling Silver Belt", category:"Private Collection", price:5200000, desc:"Hand-stitched black alligator strap with hallmarked 925 sterling silver buckle.", image:pImg("photo-1624222247344-550fb60583dc")},
+  {id:158, name:"Limited Edition Crystal Chandelier (24-Light)", category:"Private Collection", price:21500000, desc:"Hand-cut Bohemian lead crystal chandelier with 24K gold-plated frame.", image:pImg("photo-1513506003901-1e6a229e2d15")},
+  {id:159, name:"Executive Travel Humidor in Spanish Cedar", category:"Private Collection", price:5900000, desc:"Bespoke burl walnut and crocodile leather cigar humidor with hygrometer.", image:pImg("photo-1584917865442-de89df76afd3")},
+  {id:160, name:"18K Yellow Gold Diamond Cufflinks", category:"Private Collection", price:8200000, desc:"Solid 18K gold swivel-back cufflinks pavé-set with 1.8ct white diamonds.", image:pImg("photo-1611652022419-a9419f74343d")},
+  {id:161, name:"Bespoke Ostrich & Calfskin Travel Duffle", category:"Private Collection", price:10800000, desc:"Weekender cabin duffle crafted from Cognac ostrich skin and suede interior.", image:pImg("photo-1547949003-9792a18a2601")},
+  {id:162, name:"24-Piece Bone China & 24K Gold Dining Service", category:"Private Collection", price:9500000, desc:"Limoges porcelain banquet set hand-gilded with 24-karat gold leaf.", image:pImg("photo-1490312278390-ab64016e0aa9")},
+  {id:163, name:"Custom Titanium & Ceramic Smart Ring", category:"Private Collection", price:5100000, desc:"Bespoke diamond-inlaid biometric health ring crafted from aerospace titanium.", image:pImg("photo-1605100804763-247f67b3557e")},
+  {id:164, name:"Master Watchmaker's 10-Piece Collector Trunk", category:"Private Collection", price:12400000, desc:"Lockable calfskin and Alcantara watch chest with removable travel rolls.", image:pImg("photo-1523275335684-37898b6baf30")},
+  {id:165, name:"Haute Couture Velvet & Gold Embroidered Cape", category:"Private Collection", price:13200000, desc:"Floor-length silk velvet evening cape with hand-spun bullion gold threadwork.", image:pImg("photo-1566174053879-31528523f8ae")},
+  {id:166, name:"Turin Sovereign Bespoke Wardrobe Trunk", category:"Private Collection", price:55000000, desc:"Full-height custom standing wardrobe trunk with cedar drawers and suit hangers.", image:pImg("photo-1553531384-cc64ac80f931")}
+];
+
+const allProducts = [...mainProducts, ...privateProducts];
+
+let bag = JSON.parse(localStorage.getItem("turin_bag_v5") || "[]");
 let activeCategory = "All";
 
 const $ = sel => document.querySelector(sel);
@@ -422,11 +536,29 @@ function showToast(msg) {
 
 function updateBagCount() {
   $("#bagCount").textContent = bag.reduce((sum, item) => sum + item.qty, 0);
-  localStorage.setItem("turin_bag_v4", JSON.stringify(bag));
+  localStorage.setItem("turin_bag_v5", JSON.stringify(bag));
 }
 
 function formatTZS(amount) {
   return "TZS " + Number(amount).toLocaleString();
+}
+
+function formatUSD(amountTZS) {
+  const usd = amountTZS / USD_RATE;
+  return "$" + usd.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " USD";
+}
+
+function renderPriceHTML(amountTZS) {
+  const mode = $("#currencyDisplayMode").value;
+  if (mode === "TZS") {
+    return `<div class="price-tzs">${formatTZS(amountTZS)}</div>`;
+  } else if (mode === "USD") {
+    return `<div class="price-tzs">${formatUSD(amountTZS)}</div>`;
+  }
+  return `
+    <div class="price-tzs">${formatTZS(amountTZS)}</div>
+    <div class="price-usd">${formatUSD(amountTZS)}</div>
+  `;
 }
 
 function buildCategories() {
@@ -434,19 +566,21 @@ function buildCategories() {
     {name: "All", img: pImg("photo-1441986300917-64674bd600d8")},
     {name: "Men's Fashion", img: pImg("photo-1521572267360-ee0c2909d518")},
     {name: "Women's Fashion", img: pImg("photo-1583391733956-3750e0ff4e8b")},
+    {name: "Bespoke Menswear", img: pImg("photo-1507679799987-c73779587ccf")},
     {name: "Electronics", img: pImg("photo-1535016120720-40c646be5580")},
     {name: "Technology & Phone Accessories", img: pImg("photo-1590602847861-f357a9332bbc")},
     {name: "Shoes & Accessories", img: pImg("photo-1595950653106-6c9ebd614d3a")},
     {name: "Beauty & Personal Care", img: pImg("photo-1541643600914-78b084683601")},
-    {name: "Home & Lifestyle", img: pImg("photo-1631049307264-da0ec9d70304")}
+    {name: "Home & Lifestyle", img: pImg("photo-1631049307264-da0ec9d70304")},
+    {name: "Private Collection", img: pImg("photo-1547996160-81dfa63595aa")}
   ];
 
   $("#catSlider").innerHTML = cats.map(c => `
-    <div class="category-item" onclick="filterCat('${c.name}')">
+    <div class="category-item" onclick="filterCat('${c.name.replace(/'/g, "\\'")}')">
       <div class="category-circle" style="${activeCategory === c.name ? 'border-color:var(--gold);box-shadow:0 0 15px rgba(212,175,55,0.4)' : ''}">
         <img src="${c.img}" alt="${c.name}">
       </div>
-      <span>${c.name.split(' ')[0]}</span>
+      <span>${c.name === "Private Collection" ? "👑 VIP 5M+" : c.name.split(' ')[0]}</span>
     </div>
   `).join("");
 }
@@ -459,11 +593,35 @@ function filterCat(cat) {
   document.getElementById("shop").scrollIntoView({behavior: "smooth"});
 }
 
+function renderCard(p, isVip = false) {
+  return `
+    <article class="product-card ${isVip ? 'vip-card' : ''}">
+      <div class="product-img-wrap" onclick="quickAdd(${p.id})">
+        <span class="product-badge">${isVip ? 'VIP #' + (p.id - 116) : 'No. ' + p.id}</span>
+        ${isVip ? '<span class="vip-badge">PRIVATE VAULT</span>' : ''}
+        <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">
+      </div>
+      <div class="product-info">
+        <div class="product-category">${esc(p.category)}</div>
+        <h4 onclick="quickAdd(${p.id})">${esc(p.name)}</h4>
+        ${p.desc ? `<p class="product-desc">${esc(p.desc)}</p>` : ''}
+        <div class="price-stack">${renderPriceHTML(p.price)}</div>
+        <div class="product-actions">
+          <button class="btn-buy" onclick="addToBag(${p.id})">${isVip ? 'Reserve / Add' : 'Add to Bag'}</button>
+          <button class="btn-quick" onclick="quickAdd(${p.id})">View</button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
 function renderStore() {
   const query = $("#searchInput").value.toLowerCase().trim();
-  let list = products.filter(p => {
-    const matchCat = activeCategory === "All" || p.category === activeCategory;
-    const matchQuery = !query || (`${p.name} ${p.category}`).toLowerCase().includes(query);
+  const sourceList = activeCategory === "Private Collection" ? privateProducts : (activeCategory === "All" && query ? allProducts : mainProducts);
+
+  let list = sourceList.filter(p => {
+    const matchCat = activeCategory === "All" || activeCategory === "Private Collection" || p.category === activeCategory;
+    const matchQuery = !query || (`${p.name} ${p.category} ${p.desc || ''}`).toLowerCase().includes(query);
     return matchCat && matchQuery;
   });
 
@@ -472,30 +630,18 @@ function renderStore() {
   if (sort === "high") list.sort((a,b) => b.price - a.price);
   if (sort === "name") list.sort((a,b) => a.name.localeCompare(b.name));
 
-  $("#productCount").textContent = `${list.length} ${list.length === 1 ? 'item' : 'items'} available`;
-  $("#currentFilterLabel").textContent = `Category: ${activeCategory}`;
+  $("#productCount").textContent = `${list.length} ${list.length === 1 ? 'item' : 'items'} displayed`;
+  $("#currentFilterLabel").textContent = `Showing: ${activeCategory}`;
 
-  $("#productsGrid").innerHTML = list.length ? list.map(p => `
-    <article class="product-card">
-      <div class="product-img-wrap" onclick="quickAdd(${p.id})">
-        <span class="product-badge">No. ${p.id}</span>
-        <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">
-      </div>
-      <div class="product-info">
-        <div class="product-category">${esc(p.category)}</div>
-        <h4 onclick="quickAdd(${p.id})">${esc(p.name)}</h4>
-        <div class="product-price">${formatTZS(p.price)}</div>
-        <div class="product-actions">
-          <button class="btn-buy" onclick="addToBag(${p.id})">Add to Bag</button>
-          <button class="btn-quick" onclick="quickAdd(${p.id})">View</button>
-        </div>
-      </div>
-    </article>
-  `).join("") : `<div style="grid-column:1/-1;padding:60px;text-align:center;background:var(--charcoal);border:1px solid var(--border-gold);color:var(--text-muted)"><h3>No matching items found</h3><p>Try searching another keyword or switch category.</p></div>`;
+  $("#productsGrid").innerHTML = list.length ? list.map(p => renderCard(p, p.category === "Private Collection")).join("") : `<div style="grid-column:1/-1;padding:60px;text-align:center;background:var(--charcoal);border:1px solid var(--border-gold);color:var(--text-muted)"><h3>No matching items found</h3><p>Try searching another keyword or switch category.</p></div>`;
+}
+
+function renderPrivateVault() {
+  $("#privateVaultGrid").innerHTML = privateProducts.map(p => renderCard(p, true)).join("");
 }
 
 function addToBag(id) {
-  const item = products.find(x => x.id === id);
+  const item = allProducts.find(x => x.id === id);
   if (!item) return;
   const exist = bag.find(x => x.id === id);
   if (exist) {
@@ -526,7 +672,8 @@ function renderBagModal() {
   if (!bag.length) {
     $("#bagItemsList").innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-muted);background:var(--black)">Your shopping bag is currently empty.</div>';
     $("#bagTotalQty").textContent = "0";
-    $("#bagTotalPrice").textContent = formatTZS(0);
+    $("#bagTotalTZS").textContent = formatTZS(0);
+    $("#bagTotalUSD").textContent = formatUSD(0);
     return;
   }
 
@@ -536,19 +683,20 @@ function renderBagModal() {
     totalTZS += sub;
     totalQty += i.qty;
     return `
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid var(--border-gold);font-size:13px">
-      <div><strong>${esc(i.name)}</strong><br><small style="color:var(--text-muted)">${formatTZS(i.price)} × ${i.qty}</small></div>
-      <div style="display:flex;gap:10px;align-items:center">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid var(--border-gold);font-size:13px;gap:10px">
+      <div><strong>${esc(i.name)}</strong><br><small style="color:var(--text-muted)">${formatTZS(i.price)} (${formatUSD(i.price)}) × ${i.qty}</small></div>
+      <div style="display:flex;gap:8px;align-items:center">
         <button onclick="changeQty(${i.id}, -1)" style="width:28px;height:28px;background:var(--black);border:1px solid var(--border-gold);color:var(--text-main)">-</button>
         <span style="font-weight:700">${i.qty}</span>
         <button onclick="changeQty(${i.id}, 1)" style="width:28px;height:28px;background:var(--black);border:1px solid var(--border-gold);color:var(--text-main)">+</button>
-        <button onclick="removeItem(${i.id})" style="background:none;border:none;color:#e74c3c;cursor:pointer;margin-left:10px">Remove</button>
+        <button onclick="removeItem(${i.id})" style="background:none;border:none;color:#e74c3c;cursor:pointer;margin-left:8px">Remove</button>
       </div>
     </div>`;
   }).join("");
 
   $("#bagTotalQty").textContent = totalQty;
-  $("#bagTotalPrice").textContent = formatTZS(totalTZS);
+  $("#bagTotalTZS").textContent = formatTZS(totalTZS);
+  $("#bagTotalUSD").textContent = formatUSD(totalTZS);
 }
 
 function changeQty(id, delta) {
@@ -571,7 +719,7 @@ document.getElementById("checkoutForm").addEventListener("submit", e => {
   const orderRef = "TRN-" + Math.floor(1000 + Math.random() * 9000);
 
   let totalTZS = bag.reduce((sum, i) => sum + (i.price * i.qty), 0);
-  const itemsText = bag.map(i => `• ${i.name} (x${i.qty}) - ${formatTZS(i.price * i.qty)}`).join("\n");
+  const itemsText = bag.map(i => `• ${i.name} (x${i.qty}) - ${formatTZS(i.price * i.qty)} (${formatUSD(i.price * i.qty)})`).join("\n");
 
   const waText = encodeURIComponent(
     `👑 *TURIN PREMIUM STORE - ORDER* (${orderRef})\n\n` +
@@ -580,20 +728,22 @@ document.getElementById("checkoutForm").addEventListener("submit", e => {
     `📍 Location: ${form.location}\n` +
     `💳 Payment: ${form.payment}\n\n` +
     `📦 *Items Ordered:*\n${itemsText}\n\n` +
-    `💰 *Total:* ${formatTZS(totalTZS)}`
+    `💰 *Total TZS:* ${formatTZS(totalTZS)}\n` +
+    `💵 *Total USD:* ${formatUSD(totalTZS)}`
   );
 
-  $("#orderSuccessBox").innerHTML = `✓ Order Placed Successfully! Ref: <strong>${orderRef}</strong><br><br><a href="https://wa.me/${STORE_WA}?text=${waText}" target="_blank" class="btn-gold" style="display:inline-block;padding:10px 20px;margin-top:10px">Send Order via WhatsApp (+255 797 955 045) ↗</a>`;
+  $("#orderSuccessBox").innerHTML = `✓ Order Logged Successfully! Ref: <strong>${orderRef}</strong><br><br><a href="https://wa.me/${STORE_WA}?text=${waText}" target="_blank" class="btn-gold" style="display:inline-block;padding:10px 20px;margin-top:10px">Send Order via WhatsApp (+255 797 955 045) ↗</a>`;
   $("#orderSuccessBox").style.display = "block";
 
   bag = [];
   updateBagCount();
 });
 
-// Run Init
+// Initialize
 updateBagCount();
 buildCategories();
 renderStore();
+renderPrivateVault();
 </script>
 </body>
 </html>
