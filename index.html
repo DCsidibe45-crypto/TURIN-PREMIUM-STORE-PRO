@@ -73,7 +73,7 @@ header { position: sticky; top: 0; z-index: 1000; background: rgba(6, 6, 8, 0.95
 .category-circle img { width: 100%; height: 100%; object-fit: cover; }
 .category-item span { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
 
-/* STORE CATALOGUE CONTAINER */
+/* STORE CONTAINER */
 .store-container { max-width: 1440px; margin: auto; padding: 20px 5% 80px; }
 .controls-bar { display: flex; gap: 15px; margin-bottom: 30px; background: var(--charcoal); padding: 20px; border: 1px solid var(--border-gold); flex-wrap: wrap; }
 .controls-bar input, .controls-bar select { flex: 1; min-width: 210px; padding: 14px 18px; background: var(--black); border: 1px solid var(--border-gold); color: var(--text-main); font-size: 13px; outline: none; }
@@ -144,7 +144,7 @@ footer a:hover { color: var(--gold); }
 
 <!-- TICKER -->
 <div class="top-ticker">
-  <span>👑 TURIN PREMIUM STORE | 166 CURATED ITEMS & ULTRA-LUXURY PRIVATE VAULT</span>
+  <span>👑 TURIN PREMIUM STORE | 166 UNIQUE CURATED ITEMS & ULTRA-LUXURY PRIVATE VAULT</span>
   <span>VIP Concierge WhatsApp: <a href="https://wa.me/255797955045" target="_blank">+255 797 955 045</a></span>
 </div>
 
@@ -236,12 +236,12 @@ footer a:hover { color: var(--gold); }
   <div class="products-grid" id="productsGrid"></div>
 </div>
 
-<!-- PRIVATE COLLECTION VAULT (50 ULTRA-LUXURY ITEMS STARTING AT 5,000,000 TZS) -->
+<!-- PRIVATE COLLECTION VAULT -->
 <section class="private-vault-section" id="private-vault">
   <div class="vault-header">
     <span>👑 BY INVITATION & PRIVATE CONCIERGE</span>
     <h2>The Turin Private Collection</h2>
-    <p>50 Ultra-Exclusive Collector Pieces starting from <strong>TZS 5,000,000 ($1,923 USD)</strong>. Featuring Swiss Haute Horlogerie, Bespoke Italian Tailoring, Rare Exotic Leather Goods, Fine Diamonds, and Collector Masterpieces — each individually photographed and authenticated.</p>
+    <p>50 Ultra-Exclusive Collector Pieces starting from <strong>TZS 5,000,000 ($1,923 USD)</strong>. Featuring Swiss Haute Horlogerie, Bespoke Italian Tailoring, Rare Exotic Leather Goods, Fine Diamonds, and Collector Masterpieces.</p>
   </div>
   <div style="max-width:1440px;margin:auto">
     <div class="products-grid" id="privateVaultGrid"></div>
@@ -327,200 +327,225 @@ footer a:hover { color: var(--gold); }
 <script>
 const STORE_WA = "255797955045";
 const USD_RATE = 2600;
-const pImg = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=85`;
 
-// 166 PRODUCTS WITH 166 UNIQUE, NON-REPEATING REALITY IMAGES
-const mainProducts = [
-  // 1 - 15: Men's Fashion
-  {id:1, name:"Premium Men's White T-Shirt", category:"Men's Fashion", price:45000, image:pImg("photo-1521572267360-ee0c2909d518")},
-  {id:2, name:"Black Oversized T-Shirt", category:"Men's Fashion", price:50000, image:pImg("photo-1503342217505-b0a15ec3261c")},
-  {id:3, name:"Men's Slim Fit Jeans", category:"Men's Fashion", price:85000, image:pImg("photo-1541099649105-f69ad21f3246")},
-  {id:4, name:"Men's Casual Trousers", category:"Men's Fashion", price:65000, image:pImg("photo-1624378439575-d8705ad7ae80")},
-  {id:5, name:"Men's Tracksuit Set", category:"Men's Fashion", price:120000, image:pImg("photo-1515886657613-9f3515b0c78f")},
-  {id:6, name:"Men's Premium Hoodie", category:"Men's Fashion", price:95000, image:pImg("photo-1556905055-8f358a7a47b2")},
-  {id:7, name:"Men's Polo Shirt", category:"Men's Fashion", price:55000, image:pImg("photo-1625910513411-7140413028c2")},
-  {id:8, name:"Men's Casual Shirt", category:"Men's Fashion", price:70000, image:pImg("photo-1598033129183-c4f50c736f10")},
-  {id:9, name:"Men's Denim Jacket", category:"Men's Fashion", price:110000, image:pImg("photo-1576995853123-5a10305d93c0")},
-  {id:10, name:"Men's Sports Shorts", category:"Men's Fashion", price:40000, image:pImg("photo-1591195853828-11db59a44f6b")},
-  {id:11, name:"Men's Formal Suit", category:"Men's Fashion", price:350000, image:pImg("photo-1594938298603-c8148c4dae35")},
-  {id:12, name:"Men's Cargo Pants", category:"Men's Fashion", price:75000, image:pImg("photo-1517445312882-bc9910d016b7")},
-  {id:13, name:"Men's Summer Shirt", category:"Men's Fashion", price:55000, image:pImg("photo-1602810318383-e386cc2a3ccf")},
-  {id:14, name:"Men's Sweatpants", category:"Men's Fashion", price:65000, image:pImg("photo-1552902865-b72c031ac5ea")},
-  {id:15, name:"Men's Luxury Sweater", category:"Men's Fashion", price:100000, image:pImg("photo-1620799140408-edc6dcb6d633")},
-
-  // 16 - 30: Women's Fashion
-  {id:16, name:"Women's Satin Blouse", category:"Women's Fashion", price:55000, image:pImg("photo-1583391733956-3750e0ff4e8b")},
-  {id:17, name:"Women's Wide Leg Pants", category:"Women's Fashion", price:65000, image:pImg("photo-1594633312681-425c7b97ccd1")},
-  {id:18, name:"Women's Elegant Long Dress", category:"Women's Fashion", price:95000, image:pImg("photo-1566174053879-31528523f8ae")},
-  {id:19, name:"Women's Two-Piece Set", category:"Women's Fashion", price:110000, image:pImg("photo-1539008835657-9e8e9680c956")},
-  {id:20, name:"Women's Luxury Handbag", category:"Women's Fashion", price:120000, image:pImg("photo-1584917865442-de89df76afd3")},
-  {id:21, name:"Women's High Waist Jeans", category:"Women's Fashion", price:85000, image:pImg("photo-1541840031508-326b77c9a17e")},
-  {id:22, name:"Women's Casual T-Shirt", category:"Women's Fashion", price:40000, image:pImg("photo-1554568218-0f1715e72254")},
-  {id:23, name:"Women's Sportswear Set", category:"Women's Fashion", price:100000, image:pImg("photo-1518310383802-640c2de311b2")},
-  {id:24, name:"Women's Blazer", category:"Women's Fashion", price:110000, image:pImg("photo-1591369822096-ffd140ec948f")},
-  {id:25, name:"Women's Maxi Dress", category:"Women's Fashion", price:90000, image:pImg("photo-1496747611176-843222e1e57c")},
-  {id:26, name:"Women's Cardigan", category:"Women's Fashion", price:75000, image:pImg("photo-1434389677669-e08b4cac3105")},
-  {id:27, name:"Women's Skirt", category:"Women's Fashion", price:55000, image:pImg("photo-1583496661160-fb5886a0aaaa")},
-  {id:28, name:"Women's Denim Jacket", category:"Women's Fashion", price:100000, image:pImg("photo-1543076447-215ad9ba6923")},
-  {id:29, name:"Women's Heels", category:"Women's Fashion", price:95000, image:pImg("photo-1543163521-1bf539c55dd2")},
-  {id:30, name:"Women's Luxury Tracksuit", category:"Women's Fashion", price:125000, image:pImg("photo-1571945153237-4929e783af4a")},
-
-  // 31 - 45: Electronics
-  {id:31, name:"HY300 Android Projector", category:"Electronics", price:380000, image:pImg("photo-1535016120720-40c646be5580")},
-  {id:32, name:"Smart LED TV 32 Inch", category:"Electronics", price:550000, image:pImg("photo-1593305841991-05c297ba4575")},
-  {id:33, name:"Smart LED TV 43 Inch", category:"Electronics", price:850000, image:pImg("photo-1461151304267-38535e780c79")},
-  {id:34, name:"Bluetooth Speaker", category:"Electronics", price:85000, image:pImg("photo-1608043152269-423dbba4e7e1")},
-  {id:35, name:"Portable Mini Speaker", category:"Electronics", price:45000, image:pImg("photo-1545454675-3531b543be5d")},
-  {id:36, name:"Wireless Earbuds", category:"Electronics", price:65000, image:pImg("photo-1600294037681-c80b4cb5b434")},
-  {id:37, name:"Smart Watch", category:"Electronics", price:90000, image:pImg("photo-1579586337278-3befd40fd17a")},
-  {id:38, name:"Power Bank 20,000mAh", category:"Electronics", price:75000, image:pImg("photo-1609091839311-d5365f9ff1c5")},
-  {id:39, name:"Wireless Charging Pad", category:"Electronics", price:55000, image:pImg("photo-1605236453806-6ff36851218e")},
-  {id:40, name:"USB-C Fast Charger", category:"Electronics", price:35000, image:pImg("photo-1583863788434-e58a36330cf0")},
-  {id:41, name:"Bluetooth Headphones", category:"Electronics", price:95000, image:pImg("photo-1505740420928-5e560c06d30e")},
-  {id:42, name:"Ring Light with Tripod", category:"Electronics", price:85000, image:pImg("photo-1516035069371-29a1b244cc32")},
-  {id:43, name:"Portable Monitor", category:"Electronics", price:450000, image:pImg("photo-1527443224154-c4a3942d3acf")},
-  {id:44, name:"Gaming Controller", category:"Electronics", price:110000, image:pImg("photo-1600080972464-8e5f35f63d08")},
-  {id:45, name:"Mini Portable Fan", category:"Electronics", price:35000, image:pImg("photo-1585670149967-b4f4da88cc9f")},
-
-  // 46 - 60: Technology & Phone Accessories
-  {id:46, name:"K9 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:65000, image:pImg("photo-1590602847861-f357a9332bbc")},
-  {id:47, name:"F11-2 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:85000, image:pImg("photo-1598488035139-bdbb2231ce04")},
-  {id:48, name:"BOYA Wireless Microphone BY-MW3", category:"Technology & Phone Accessories", price:180000, image:pImg("photo-1520523839897-bd0b52f945a0")},
-  {id:49, name:"Phone Tripod Stand", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1526170375885-4d8ecf77b99f")},
-  {id:50, name:"Adjustable Phone Holder", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1584438784894-089d6a62b8fa")},
-  {id:51, name:"iPhone Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1603313040372-5100788ae656")},
-  {id:52, name:"Samsung Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg("photo-1610945415295-d9bbf067e59c")},
-  {id:53, name:"Universal Fast Charging Cable", category:"Technology & Phone Accessories", price:15000, image:pImg("photo-1612815154858-60aa4c59eaa6")},
-  {id:54, name:"Bluetooth Selfie Stick", category:"Technology & Phone Accessories", price:45000, image:pImg("photo-1527011046414-4781f1f94f8c")},
-  {id:55, name:"Laptop Backpack", category:"Technology & Phone Accessories", price:95000, image:pImg("photo-1553062407-98eeb64c6a62")},
-  {id:56, name:"Wireless Keyboard", category:"Technology & Phone Accessories", price:65000, image:pImg("photo-1587829741301-dc798b83add3")},
-  {id:57, name:"Wireless Mouse", category:"Technology & Phone Accessories", price:35000, image:pImg("photo-1615663245857-ac93bb7c39e7")},
-  {id:58, name:"Laptop Cooling Pad", category:"Technology & Phone Accessories", price:75000, image:pImg("photo-1593642632823-8f785ba67e45")},
-  {id:59, name:"USB Flash Drive 64GB", category:"Technology & Phone Accessories", price:30000, image:pImg("photo-1618788372246-79faff0c3742")},
-  {id:60, name:"External SSD 512GB", category:"Technology & Phone Accessories", price:250000, image:pImg("photo-1597872200969-2b65d56bd16b")},
-
-  // 61 - 75: Shoes & Accessories
-  {id:61, name:"Men's Premium Sneakers", category:"Shoes & Accessories", price:120000, image:pImg("photo-1595950653106-6c9ebd614d3a")},
-  {id:62, name:"Women's Fashion Sneakers", category:"Shoes & Accessories", price:110000, image:pImg("photo-1560769629-975ec94e6a86")},
-  {id:63, name:"Men's Leather Shoes", category:"Shoes & Accessories", price:150000, image:pImg("photo-1614252369475-531eba835eb1")},
-  {id:64, name:"Women's Luxury Sandals", category:"Shoes & Accessories", price:75000, image:pImg("photo-1562273138-f46be4ebdf33")},
-  {id:65, name:"Men's Slides", category:"Shoes & Accessories", price:35000, image:pImg("photo-1603808033192-082d6919d3e1")},
-  {id:66, name:"Women's High Heels", category:"Shoes & Accessories", price:95000, image:pImg("photo-1535043934128-cf0b28d52f95")},
-  {id:67, name:"Luxury Sunglasses", category:"Shoes & Accessories", price:45000, image:pImg("photo-1511499767150-a48a237f0083")},
-  {id:68, name:"Men's Leather Belt", category:"Shoes & Accessories", price:40000, image:pImg("photo-1624222247344-550fb60583dc")},
-  {id:69, name:"Women's Fashion Watch", category:"Shoes & Accessories", price:85000, image:pImg("photo-1524592094714-0f0654e20314")},
-  {id:70, name:"Men's Luxury Wristwatch", category:"Shoes & Accessories", price:150000, image:pImg("photo-1523275335684-37898b6baf30")},
-  {id:71, name:"Premium Wallet", category:"Shoes & Accessories", price:45000, image:pImg("photo-1627123424574-724758594e93")},
-  {id:72, name:"Luxury Travel Bag", category:"Shoes & Accessories", price:140000, image:pImg("photo-1547949003-9792a18a2601")},
-  {id:73, name:"Fashion Backpack", category:"Shoes & Accessories", price:85000, image:pImg("photo-1548036328-c9fa89d128fa")},
-  {id:74, name:"Women's Shoulder Bag", category:"Shoes & Accessories", price:100000, image:pImg("photo-1566150905458-1bf1fc113f0d")},
-  {id:75, name:"Men's Crossbody Bag", category:"Shoes & Accessories", price:65000, image:pImg("photo-1544816155-12df9643f363")},
-
-  // 76 - 85: Beauty & Personal Care
-  {id:76, name:"Luxury Perfume for Men", category:"Beauty & Personal Care", price:95000, image:pImg("photo-1541643600914-78b084683601")},
-  {id:77, name:"Luxury Perfume for Women", category:"Beauty & Personal Care", price:95000, image:pImg("photo-1594035910387-fea47794261f")},
-  {id:78, name:"Body Lotion", category:"Beauty & Personal Care", price:35000, image:pImg("photo-1608248597359-9944a375429a")},
-  {id:79, name:"Facial Cleanser", category:"Beauty & Personal Care", price:40000, image:pImg("photo-1556228578-0d85b1a4d571")},
-  {id:80, name:"Skin Care Gift Set", category:"Beauty & Personal Care", price:120000, image:pImg("photo-1570172619644-dfd03ed5d881")},
-  {id:81, name:"Electric Hair Clipper", category:"Beauty & Personal Care", price:75000, image:pImg("photo-1621607512214-68297480165e")},
-  {id:82, name:"Hair Dryer", category:"Beauty & Personal Care", price:85000, image:pImg("photo-1522338242992-e1a54906a8da")},
-  {id:83, name:"Hair Straightener", category:"Beauty & Personal Care", price:90000, image:pImg("photo-1527799820374-dcf8d9d4a388")},
-  {id:84, name:"Makeup Brush Set", category:"Beauty & Personal Care", price:45000, image:pImg("photo-1522335789203-aabd1fc54bc9")},
-  {id:85, name:"Makeup Organizer", category:"Beauty & Personal Care", price:55000, image:pImg("photo-1596462502278-27bfdc403348")},
-
-  // 86 - 100: Home & Lifestyle
-  {id:86, name:"Luxury Bed Sheet Set", category:"Home & Lifestyle", price:120000, image:pImg("photo-1631049307264-da0ec9d70304")},
-  {id:87, name:"Decorative LED Night Lamp", category:"Home & Lifestyle", price:45000, image:pImg("photo-1507473885765-e6ed057f782c")},
-  {id:88, name:"Digital Alarm Clock", category:"Home & Lifestyle", price:35000, image:pImg("photo-1563861826100-9cb868fdbe1c")},
-  {id:89, name:"Electric Kettle", category:"Home & Lifestyle", price:65000, image:pImg("photo-1517668808822-9ebb02f2a0e6")},
-  {id:90, name:"Portable Blender", category:"Home & Lifestyle", price:85000, image:pImg("photo-1570197788417-0e82375c9371")},
-  {id:91, name:"Air Fryer", category:"Home & Lifestyle", price:220000, image:pImg("photo-1589365252845-aa8bb2b45f4c")},
-  {id:92, name:"Mini Humidifier", category:"Home & Lifestyle", price:55000, image:pImg("photo-1602928321679-560bb453f190")},
-  {id:93, name:"Luxury Wall Clock", category:"Home & Lifestyle", price:75000, image:pImg("photo-1509042239860-f550ce710b93")},
-  {id:94, name:"Stainless Steel Water Bottle", category:"Home & Lifestyle", price:35000, image:pImg("photo-1602143407151-7111542de6e8")},
-  {id:95, name:"Insulated Coffee Mug", category:"Home & Lifestyle", price:30000, image:pImg("photo-1514432324607-a09d9b4aefdd")},
-  {id:96, name:"Kitchen Organizer Set", category:"Home & Lifestyle", price:65000, image:pImg("photo-1590736969955-71cc9480175f")},
-  {id:97, name:"Luxury Decorative Vase", category:"Home & Lifestyle", price:55000, image:pImg("photo-1578500494198-246f612d3b3d")},
-  {id:98, name:"Rechargeable Table Lamp", category:"Home & Lifestyle", price:65000, image:pImg("photo-1513506003901-1e6a229e2d15")},
-  {id:99, name:"Digital Luggage Scale", category:"Home & Lifestyle", price:35000, image:pImg("photo-1581553680321-4fffae59fccd")},
-  {id:100, name:"Premium Travel Organizer Set", category:"Home & Lifestyle", price:75000, image:pImg("photo-1553531384-cc64ac80f931")},
-
-  // 101 - 116: Curated Bespoke Italian Menswear (Added Earlier)
-  {id:101, name:"Italian Leather Oxford Brogues", category:"Bespoke Menswear", price:377000, image:pImg("photo-1533867617858-e7d97e0afd8b")},
-  {id:102, name:"Bespoke Suede Penny Loafers", category:"Bespoke Menswear", price:325000, image:pImg("photo-1614252284062-26e4a02c7b0a")},
-  {id:103, name:"Executive Minimalist Dress Shoes", category:"Bespoke Menswear", price:351000, image:pImg("photo-1449505278894-297fdb3edbc1")},
-  {id:104, name:"Milan Luxury Leather Sneakers", category:"Bespoke Menswear", price:286000, image:pImg("photo-1549298916-b41d501d3772")},
-  {id:105, name:"Italian Tailored Wool Dress Trousers", category:"Bespoke Menswear", price:247000, image:pImg("photo-1473966968600-fa801b869a1a")},
-  {id:106, name:"Luxury Stretch Chino Pants", category:"Bespoke Menswear", price:169000, image:pImg("photo-1584865288642-42078afe6942")},
-  {id:107, name:"Premium Slim-Fit Designer Denim", category:"Bespoke Menswear", price:208000, image:pImg("photo-1542272604-787c3835535d")},
-  {id:108, name:"French Cuff Formal Dress Shirt", category:"Bespoke Menswear", price:195000, image:pImg("photo-1596755094514-f87e34085b2c")},
-  {id:109, name:"Italian Silk Blend Resort Shirt", category:"Bespoke Menswear", price:182000, image:pImg("photo-1607345366928-199ea26cfe3e")},
-  {id:110, name:"Executive Two-Piece Gala Tuxedo", category:"Bespoke Menswear", price:728000, image:pImg("photo-1507679799987-c73779587ccf")},
-  {id:111, name:"Cashmere Blend Tailored Blazer", category:"Bespoke Menswear", price:481000, image:pImg("photo-1593030761757-71fae45fa0e7")},
-  {id:112, name:"Handmade Pure Silk Tie & Pocket Square", category:"Bespoke Menswear", price:117000, image:pImg("photo-1589756823615-99d747ef1d47")},
-  {id:113, name:"Full-Grain Reversible Italian Belt", category:"Bespoke Menswear", price:143000, image:pImg("photo-1553062407-98eeb64c6a62")},
-  {id:114, name:"Torino Gold Chronographe Timepiece", category:"Bespoke Menswear", price:611000, image:pImg("photo-1522312346375-d1a52e2b99b3")},
-  {id:115, name:"Saffiano Executive Leather Briefcase", category:"Bespoke Menswear", price:416000, image:pImg("photo-1548036328-c9fa89d128fa")},
-  {id:116, name:"Arabian Oud & Bergamot Reserve", category:"Bespoke Menswear", price:254800, image:pImg("photo-1592945403244-b3fbafd7f539")}
+const imgPool = [
+  "photo-1521572267360-ee0c2909d518", "photo-1503342217505-b0a15ec3261c", "photo-1541099649105-f69ad21f3246", "photo-1624378439575-d8705ad7ae80", "photo-1515886657613-9f3515b0c78f",
+  "photo-1556905055-8f358a7a47b2", "photo-1625910513411-7140413028c2", "photo-1598033129183-c4f50c736f10", "photo-1576995853123-5a10305d93c0", "photo-1591195853828-11db59a44f6b",
+  "photo-1594938298603-c8148c4dae35", "photo-1517445312882-bc9910d016b7", "photo-1602810318383-e386cc2a3ccf", "photo-1552902865-b72c031ac5ea", "photo-1620799140408-edc6dcb6d633",
+  "photo-1583391733956-3750e0ff4e8b", "photo-1594633312681-425c7b97ccd1", "photo-1566174053879-31528523f8ae", "photo-1539008835657-9e8e9680c956", "photo-1584917865442-de89df76afd3",
+  "photo-1541840031508-326b77c9a17e", "photo-1554568218-0f1715e72254", "photo-1518310383802-640c2de311b2", "photo-1591369822096-ffd140ec948f", "photo-1496747611176-843222e1e57c",
+  "photo-1434389677669-e08b4cac3105", "photo-1583496661160-fb5886a0aaaa", "photo-1543076447-215ad9ba6923", "photo-1543163521-1bf539c55dd2", "photo-1571945153237-4929e783af4a",
+  "photo-1535016120720-40c646be5580", "photo-1593305841991-05c297ba4575", "photo-1461151304267-38535e780c79", "photo-1608043152269-423dbba4e7e1", "photo-1545454675-3531b543be5d",
+  "photo-1600294037681-c80b4cb5b434", "photo-1579586337278-3befd40fd17a", "photo-1609091839311-d5365f9ff1c5", "photo-1605236453806-6ff36851218e", "photo-1583863788434-e58a36330cf0",
+  "photo-1505740420928-5e560c06d30e", "photo-1516035069371-29a1b244cc32", "photo-1527443224154-c4a3942d3acf", "photo-1600080972464-8e5f35f63d08", "photo-1585670149967-b4f4da88cc9f",
+  "photo-1590602847861-f357a9332bbc", "photo-1598488035139-bdbb2231ce04", "photo-1520523839897-bd0b52f945a0", "photo-1526170375885-4d8ecf77b99f", "photo-1584438784894-089d6a62b8fa",
+  "photo-1603313040372-5100788ae656", "photo-1610945415295-d9bbf067e59c", "photo-1612815154858-60aa4c59eaa6", "photo-1527011046414-4781f1f94f8c", "photo-1553062407-98eeb64c6a62",
+  "photo-1587829741301-dc798b83add3", "photo-1615663245857-ac93bb7c39e7", "photo-1593642632823-8f785ba67e45", "photo-1618788372246-79faff0c3742", "photo-1597872200969-2b65d56bd16b",
+  "photo-1595950653106-6c9ebd614d3a", "photo-1560769629-975ec94e6a86", "photo-1614252369475-531eba835eb1", "photo-1562273138-f46be4ebdf33", "photo-1603808033192-082d6919d3e1",
+  "photo-1535043934128-cf0b28d52f95", "photo-1511499767150-a48a237f0083", "photo-1624222247344-550fb60583dc", "photo-1524592094714-0f0654e20314", "photo-1523275335684-37898b6baf30",
+  "photo-1627123424574-724758594e93", "photo-1547949003-9792a18a2601", "photo-1548036328-c9fa89d128fa", "photo-1566150905458-1bf1fc113f0d", "photo-1544816155-12df9643f363",
+  "photo-1541643600914-78b084683601", "photo-1594035910387-fea47794261f", "photo-1608248597359-9944a375429a", "photo-1556228578-0d85b1a4d571", "photo-1570172619644-dfd03ed5d881",
+  "photo-1621607512214-68297480165e", "photo-1522338242992-e1a54906a8da", "photo-1527799820374-dcf8d9d4a388", "photo-1522335789203-aabd1fc54bc9", "photo-1596462502278-27bfdc403348",
+  "photo-1631049307264-da0ec9d70304", "photo-1507473885765-e6ed057f782c", "photo-1563861826100-9cb868fdbe1c", "photo-1517668808822-9ebb02f2a0e6", "photo-1570197788417-0e82375c9371",
+  "photo-1589365252845-aa8bb2b45f4c", "photo-1602928321679-560bb453f190", "photo-1509042239860-f550ce710b93", "photo-1602143407151-7111542de6e8", "photo-1514432324607-a09d9b4aefdd",
+  "photo-1590736969955-71cc9480175f", "photo-1578500494198-246f612d3b3d", "photo-1513506003901-1e6a229e2d15", "photo-1581553680321-4fffae59fccd", "photo-1553531384-cc64ac80f931",
+  "photo-1533867617858-e7d97e0afd8b", "photo-1614252284062-26e4a02c7b0a", "photo-1449505278894-297fdb3edbc1", "photo-1549298916-b41d501d3772", "photo-1473966968600-fa801b869a1a",
+  "photo-1584865288642-42078afe6942", "photo-1542272604-787c3835535d", "photo-1596755094514-f87e34085b2c", "photo-1607345366928-199ea26cfe3e", "photo-1507679799987-c73779587ccf",
+  "photo-1593030761757-71fae45fa0e7", "photo-1589756823615-99d747ef1d47", "photo-1522312346375-d1a52e2b99b3", "photo-1592945403244-b3fbafd7f539", "photo-1547996160-81dfa63595aa",
+  "photo-1539533113208-f6df8cc8b543", "photo-1590874103328-eac38a683ce7", "photo-1599643478518-a784e5dc4c8f", "photo-1612817159949-195b6eb9e31a", "photo-1594938328870-9623159c8c99",
+  "photo-1511707171634-5f897ff02aa9", "photo-1611591437281-460bfbe1220a", "photo-1587836374828-4dbafa94cf0e", "photo-1518895949257-7621c3c786d7", "photo-1517336714731-489689fd1ca8",
+  "photo-1573408301185-9146fe634ad0", "photo-1516724562728-afc824a36e84", "photo-1605100804763-247f67b3557e", "photo-1565026057447-bc90a3dceb87", "photo-1595425970377-c9703cf48b6d",
+  "photo-1593032465175-481ac7f401a0", "photo-1593784991095-a205069470b6", "photo-1614164185128-e4ec99c436d7", "photo-1572635196237-14b3f281503f", "photo-1591561954557-26941169b49e",
+  "photo-1529699211952-734e80c4d42b", "photo-1515377905703-c4788e51af15", "photo-1545454675-3531b543be5d", "photo-1522771739844-6a9f6d5f14af", "photo-1535632066927-ab7c9ab60908",
+  "photo-1551028719-00167b16eac5", "photo-1585336261022-680e295ce3fe", "photo-1489599849927-2ee91cede3ba", "photo-1600166898405-da9535204843", "photo-1510812431401-41d2bd2722f3",
+  "photo-1596944924616-7b38e7cfac36", "photo-1511919884226-fd3cad34687c", "photo-1584917865442-de89df76afd3", "photo-1611652022419-a9419f74343d", "photo-1490312278390-ab64016e0aa9",
+  "photo-1605100804763-247f67b3557e", "photo-1523275335684-37898b6baf30", "photo-1566174053879-31528523f8ae", "photo-1553531384-cc64ac80f931", "photo-1441986300917-64674bd600d8"
 ];
 
-// 50 ULTRA-LUXURY PRIVATE COLLECTION ITEMS (STARTING AT 5,000,000 TZS - EACH WITH UNIQUE REALITY IMAGE)
+const pImg = index => `https://images.unsplash.com/${imgPool[(index - 1) % imgPool.length]}?auto=format&fit=crop&w=800&q=85`;
+
+const mainProducts = [
+  {id:1, name:"Premium Men's White T-Shirt", category:"Men's Fashion", price:45000, image:pImg(1)},
+  {id:2, name:"Black Oversized T-Shirt", category:"Men's Fashion", price:50000, image:pImg(2)},
+  {id:3, name:"Men's Slim Fit Jeans", category:"Men's Fashion", price:85000, image:pImg(3)},
+  {id:4, name:"Men's Casual Trousers", category:"Men's Fashion", price:65000, image:pImg(4)},
+  {id:5, name:"Men's Tracksuit Set", category:"Men's Fashion", price:120000, image:pImg(5)},
+  {id:6, name:"Men's Premium Hoodie", category:"Men's Fashion", price:95000, image:pImg(6)},
+  {id:7, name:"Men's Polo Shirt", category:"Men's Fashion", price:55000, image:pImg(7)},
+  {id:8, name:"Men's Casual Shirt", category:"Men's Fashion", price:70000, image:pImg(8)},
+  {id:9, name:"Men's Denim Jacket", category:"Men's Fashion", price:110000, image:pImg(9)},
+  {id:10, name:"Men's Sports Shorts", category:"Men's Fashion", price:40000, image:pImg(10)},
+  {id:11, name:"Men's Formal Suit", category:"Men's Fashion", price:350000, image:pImg(11)},
+  {id:12, name:"Men's Cargo Pants", category:"Men's Fashion", price:75000, image:pImg(12)},
+  {id:13, name:"Men's Summer Shirt", category:"Men's Fashion", price:55000, image:pImg(13)},
+  {id:14, name:"Men's Sweatpants", category:"Men's Fashion", price:65000, image:pImg(14)},
+  {id:15, name:"Men's Luxury Sweater", category:"Men's Fashion", price:100000, image:pImg(15)},
+
+  {id:16, name:"Women's Satin Blouse", category:"Women's Fashion", price:55000, image:pImg(16)},
+  {id:17, name:"Women's Wide Leg Pants", category:"Women's Fashion", price:65000, image:pImg(17)},
+  {id:18, name:"Women's Elegant Long Dress", category:"Women's Fashion", price:95000, image:pImg(18)},
+  {id:19, name:"Women's Two-Piece Set", category:"Women's Fashion", price:110000, image:pImg(19)},
+  {id:20, name:"Women's Luxury Handbag", category:"Women's Fashion", price:120000, image:pImg(20)},
+  {id:21, name:"Women's High Waist Jeans", category:"Women's Fashion", price:85000, image:pImg(21)},
+  {id:22, name:"Women's Casual T-Shirt", category:"Women's Fashion", price:40000, image:pImg(22)},
+  {id:23, name:"Women's Sportswear Set", category:"Women's Fashion", price:100000, image:pImg(23)},
+  {id:24, name:"Women's Blazer", category:"Women's Fashion", price:110000, image:pImg(24)},
+  {id:25, name:"Women's Maxi Dress", category:"Women's Fashion", price:90000, image:pImg(25)},
+  {id:26, name:"Women's Cardigan", category:"Women's Fashion", price:75000, image:pImg(26)},
+  {id:27, name:"Women's Skirt", category:"Women's Fashion", price:55000, image:pImg(27)},
+  {id:28, name:"Women's Denim Jacket", category:"Women's Fashion", price:100000, image:pImg(28)},
+  {id:29, name:"Women's Heels", category:"Women's Fashion", price:95000, image:pImg(29)},
+  {id:30, name:"Women's Luxury Tracksuit", category:"Women's Fashion", price:125000, image:pImg(30)},
+
+  {id:31, name:"HY300 Android Projector", category:"Electronics", price:380000, image:pImg(31)},
+  {id:32, name:"Smart LED TV 32 Inch", category:"Electronics", price:550000, image:pImg(32)},
+  {id:33, name:"Smart LED TV 43 Inch", category:"Electronics", price:850000, image:pImg(33)},
+  {id:34, name:"Bluetooth Speaker", category:"Electronics", price:85000, image:pImg(34)},
+  {id:35, name:"Portable Mini Speaker", category:"Electronics", price:45000, image:pImg(35)},
+  {id:36, name:"Wireless Earbuds", category:"Electronics", price:65000, image:pImg(36)},
+  {id:37, name:"Smart Watch", category:"Electronics", price:90000, image:pImg(37)},
+  {id:38, name:"Power Bank 20,000mAh", category:"Electronics", price:75000, image:pImg(38)},
+  {id:39, name:"Wireless Charging Pad", category:"Electronics", price:55000, image:pImg(39)},
+  {id:40, name:"USB-C Fast Charger", category:"Electronics", price:35000, image:pImg(40)},
+  {id:41, name:"Bluetooth Headphones", category:"Electronics", price:95000, image:pImg(41)},
+  {id:42, name:"Ring Light with Tripod", category:"Electronics", price:85000, image:pImg(42)},
+  {id:43, name:"Portable Monitor", category:"Electronics", price:450000, image:pImg(43)},
+  {id:44, name:"Gaming Controller", category:"Electronics", price:110000, image:pImg(44)},
+  {id:45, name:"Mini Portable Fan", category:"Electronics", price:35000, image:pImg(45)},
+
+  {id:46, name:"K9 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:65000, image:pImg(46)},
+  {id:47, name:"F11-2 Dual Wireless Microphone", category:"Technology & Phone Accessories", price:85000, image:pImg(47)},
+  {id:48, name:"BOYA Wireless Microphone BY-MW3", category:"Technology & Phone Accessories", price:180000, image:pImg(48)},
+  {id:49, name:"Phone Tripod Stand", category:"Technology & Phone Accessories", price:45000, image:pImg(49)},
+  {id:50, name:"Adjustable Phone Holder", category:"Technology & Phone Accessories", price:25000, image:pImg(50)},
+  {id:51, name:"iPhone Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg(51)},
+  {id:52, name:"Samsung Protective Case", category:"Technology & Phone Accessories", price:25000, image:pImg(52)},
+  {id:53, name:"Universal Fast Charging Cable", category:"Technology & Phone Accessories", price:15000, image:pImg(53)},
+  {id:54, name:"Bluetooth Selfie Stick", category:"Technology & Phone Accessories", price:45000, image:pImg(54)},
+  {id:55, name:"Laptop Backpack", category:"Technology & Phone Accessories", price:95000, image:pImg(55)},
+  {id:56, name:"Wireless Keyboard", category:"Technology & Phone Accessories", price:65000, image:pImg(56)},
+  {id:57, name:"Wireless Mouse", category:"Technology & Phone Accessories", price:35000, image:pImg(57)},
+  {id:58, name:"Laptop Cooling Pad", category:"Technology & Phone Accessories", price:75000, image:pImg(58)},
+  {id:59, name:"USB Flash Drive 64GB", category:"Technology & Phone Accessories", price:30000, image:pImg(59)},
+  {id:60, name:"External SSD 512GB", category:"Technology & Phone Accessories", price:250000, image:pImg(60)},
+
+  {id:61, name:"Men's Premium Sneakers", category:"Shoes & Accessories", price:120000, image:pImg(61)},
+  {id:62, name:"Women's Fashion Sneakers", category:"Shoes & Accessories", price:110000, image:pImg(62)},
+  {id:63, name:"Men's Leather Shoes", category:"Shoes & Accessories", price:150000, image:pImg(63)},
+  {id:64, name:"Women's Luxury Sandals", category:"Shoes & Accessories", price:75000, image:pImg(64)},
+  {id:65, name:"Men's Slides", category:"Shoes & Accessories", price:35000, image:pImg(65)},
+  {id:66, name:"Women's High Heels", category:"Shoes & Accessories", price:95000, image:pImg(66)},
+  {id:67, name:"Luxury Sunglasses", category:"Shoes & Accessories", price:45000, image:pImg(67)},
+  {id:68, name:"Men's Leather Belt", category:"Shoes & Accessories", price:40000, image:pImg(68)},
+  {id:69, name:"Women's Fashion Watch", category:"Shoes & Accessories", price:85000, image:pImg(69)},
+  {id:70, name:"Men's Luxury Wristwatch", category:"Shoes & Accessories", price:150000, image:pImg(70)},
+  {id:71, name:"Premium Wallet", category:"Shoes & Accessories", price:45000, image:pImg(71)},
+  {id:72, name:"Luxury Travel Bag", category:"Shoes & Accessories", price:140000, image:pImg(72)},
+  {id:73, name:"Fashion Backpack", category:"Shoes & Accessories", price:85000, image:pImg(73)},
+  {id:74, name:"Women's Shoulder Bag", category:"Shoes & Accessories", price:100000, image:pImg(74)},
+  {id:75, name:"Men's Crossbody Bag", category:"Shoes & Accessories", price:65000, image:pImg(75)},
+
+  {id:76, name:"Luxury Perfume for Men", category:"Beauty & Personal Care", price:95000, image:pImg(76)},
+  {id:77, name:"Luxury Perfume for Women", category:"Beauty & Personal Care", price:95000, image:pImg(77)},
+  {id:78, name:"Body Lotion", category:"Beauty & Personal Care", price:35000, image:pImg(78)},
+  {id:79, name:"Facial Cleanser", category:"Beauty & Personal Care", price:40000, image:pImg(79)},
+  {id:80, name:"Skin Care Gift Set", category:"Beauty & Personal Care", price:120000, image:pImg(80)},
+  {id:81, name:"Electric Hair Clipper", category:"Beauty & Personal Care", price:75000, image:pImg(81)},
+  {id:82, name:"Hair Dryer", category:"Beauty & Personal Care", price:85000, image:pImg(82)},
+  {id:83, name:"Hair Straightener", category:"Beauty & Personal Care", price:90000, image:pImg(83)},
+  {id:84, name:"Makeup Brush Set", category:"Beauty & Personal Care", price:45000, image:pImg(84)},
+  {id:85, name:"Makeup Organizer", category:"Beauty & Personal Care", price:55000, image:pImg(85)},
+
+  {id:86, name:"Luxury Bed Sheet Set", category:"Home & Lifestyle", price:120000, image:pImg(86)},
+  {id:87, name:"Decorative LED Night Lamp", category:"Home & Lifestyle", price:45000, image:pImg(87)},
+  {id:88, name:"Digital Alarm Clock", category:"Home & Lifestyle", price:35000, image:pImg(88)},
+  {id:89, name:"Electric Kettle", category:"Home & Lifestyle", price:65000, image:pImg(89)},
+  {id:90, name:"Portable Blender", category:"Home & Lifestyle", price:85000, image:pImg(90)},
+  {id:91, name:"Air Fryer", category:"Home & Lifestyle", price:220000, image:pImg(91)},
+  {id:92, name:"Mini Humidifier", category:"Home & Lifestyle", price:55000, image:pImg(92)},
+  {id:93, name:"Luxury Wall Clock", category:"Home & Lifestyle", price:75000, image:pImg(93)},
+  {id:94, name:"Stainless Steel Water Bottle", category:"Home & Lifestyle", price:35000, image:pImg(94)},
+  {id:95, name:"Insulated Coffee Mug", category:"Home & Lifestyle", price:30000, image:pImg(95)},
+  {id:96, name:"Kitchen Organizer Set", category:"Home & Lifestyle", price:65000, image:pImg(96)},
+  {id:97, name:"Luxury Decorative Vase", category:"Home & Lifestyle", price:55000, image:pImg(97)},
+  {id:98, name:"Rechargeable Table Lamp", category:"Home & Lifestyle", price:65000, image:pImg(98)},
+  {id:99, name:"Digital Luggage Scale", category:"Home & Lifestyle", price:35000, image:pImg(99)},
+  {id:100, name:"Premium Travel Organizer Set", category:"Home & Lifestyle", price:75000, image:pImg(100)},
+
+  {id:101, name:"Italian Leather Oxford Brogues", category:"Bespoke Menswear", price:377000, image:pImg(101)},
+  {id:102, name:"Bespoke Suede Penny Loafers", category:"Bespoke Menswear", price:325000, image:pImg(102)},
+  {id:103, name:"Executive Minimalist Dress Shoes", category:"Bespoke Menswear", price:351000, image:pImg(103)},
+  {id:104, name:"Milan Luxury Leather Sneakers", category:"Bespoke Menswear", price:286000, image:pImg(104)},
+  {id:105, name:"Italian Tailored Wool Dress Trousers", category:"Bespoke Menswear", price:247000, image:pImg(105)},
+  {id:106, name:"Luxury Stretch Chino Pants", category:"Bespoke Menswear", price:169000, image:pImg(106)},
+  {id:107, name:"Premium Slim-Fit Designer Denim", category:"Bespoke Menswear", price:208000, image:pImg(107)},
+  {id:108, name:"French Cuff Formal Dress Shirt", category:"Bespoke Menswear", price:195000, image:pImg(108)},
+  {id:109, name:"Italian Silk Blend Resort Shirt", category:"Bespoke Menswear", price:182000, image:pImg(109)},
+  {id:110, name:"Executive Two-Piece Gala Tuxedo", category:"Bespoke Menswear", price:728000, image:pImg(110)},
+  {id:111, name:"Cashmere Blend Tailored Blazer", category:"Bespoke Menswear", price:481000, image:pImg(111)},
+  {id:112, name:"Handmade Pure Silk Tie & Pocket Square", category:"Bespoke Menswear", price:117000, image:pImg(112)},
+  {id:113, name:"Full-Grain Reversible Italian Belt", category:"Bespoke Menswear", price:143000, image:pImg(113)},
+  {id:114, name:"Torino Gold Chronographe Timepiece", category:"Bespoke Menswear", price:611000, image:pImg(114)},
+  {id:115, name:"Saffiano Executive Leather Briefcase", category:"Bespoke Menswear", price:416000, image:pImg(115)},
+  {id:116, name:"Arabian Oud & Bergamot Reserve", category:"Bespoke Menswear", price:254800, image:pImg(116)}
+];
+
 const privateProducts = [
-  {id:117, name:"Geneva Tourbillon 18K Rose Gold Watch", category:"Private Collection", price:48500000, desc:"Hand-assembled Swiss tourbillon caliber in solid 18K rose gold with alligator strap.", image:pImg("photo-1547996160-81dfa63595aa")},
-  {id:118, name:"Bespoke Vicuña & Cashmere Overcoat (Milan)", category:"Private Collection", price:14500000, desc:"Ultra-rare Andean vicuña wool tailored by master artisans in Milan.", image:pImg("photo-1539533113208-f6df8cc8b543")},
-  {id:119, name:"Himalayan Crocodile Executive Weekender", category:"Private Collection", price:26000000, desc:"Hand-stitched matte Niloticus crocodile skin travel bag with palladium locks.", image:pImg("photo-1590874103328-eac38a683ce7")},
-  {id:120, name:"3.5ct VVS1 Solitaire Diamond Pendant", category:"Private Collection", price:39000000, desc:"GIA-certified cushion-cut solitaire diamond suspended on platinum chain.", image:pImg("photo-1599643478518-a784e5dc4c8f")},
-  {id:121, name:"Platinum Perpetual Calendar Chronograph", category:"Private Collection", price:65000000, desc:"950 platinum case featuring moonphase, perpetual calendar, and sapphire caseback.", image:pImg("photo-1612817159949-195b6eb9e31a")},
-  {id:122, name:"Bespoke Savile Row 3-Piece Silk-Wool Suit", category:"Private Collection", price:8500000, desc:"Super 200s Tasmanian wool and mulberry silk custom-canvas formal suit.", image:pImg("photo-1594938328870-9623159c8c99")},
-  {id:123, name:"24K Gold-Plated Flagship Smartphone Edition", category:"Private Collection", price:12800000, desc:"Custom-engraved 24-karat gold chassis with crocodile leather backplate.", image:pImg("photo-1511707171634-5f897ff02aa9")},
-  {id:124, name:"Hand-Burnished Alligator Oxford Dress Shoes", category:"Private Collection", price:6800000, desc:"Goodyear-welted genuine Mississippiensis alligator leather formal oxfords.", image:pImg("photo-1614252369475-531eba835eb1")},
-  {id:125, name:"18K White Gold Diamond Tennis Bracelet", category:"Private Collection", price:22500000, desc:"12.0 carats total weight F-color VVS diamonds set in solid 18K white gold.", image:pImg("photo-1611591437281-460bfbe1220a")},
-  {id:126, name:"Limited Edition Skeleton Titanium Diver", category:"Private Collection", price:31000000, desc:"Grade 5 brushed titanium 300M diver with openworked mechanical movement.", image:pImg("photo-1587836374828-4dbafa94cf0e")},
-  {id:127, name:"Couture Hand-Beaded Silk Evening Gown", category:"Private Collection", price:11200000, desc:"Over 400 hours of Parisian atelier embroidery on pure heavyweight silk.", image:pImg("photo-1518895949257-7621c3c786d7")},
-  {id:128, name:"Collector's MacBook Pro 16 M4 Max 128GB", category:"Private Collection", price:13500000, desc:"Max-spec workstation with 8TB SSD, Nano-texture display, and leather sleeve.", image:pImg("photo-1517336714731-489689fd1ca8")},
-  {id:129, name:"Bespoke Ostrich Leather Attaché Briefcase", category:"Private Collection", price:9200000, desc:"Full-quill South African ostrich leather briefcase with combination brass locks.", image:pImg("photo-1553062407-98eeb64c6a62")},
-  {id:130, name:"Solid 18K Gold Cuban Link Chain (180g)", category:"Private Collection", price:34000000, desc:"Heavyweight solid 18-karat yellow gold Miami Cuban link necklace with box lock.", image:pImg("photo-1573408301185-9146fe634ad0")},
-  {id:131, name:"Leica M11 Monochrom Rangefinder Kit", category:"Private Collection", price:28500000, desc:"German-engineered 60MP full-frame rangefinder camera with Summilux 50mm lens.", image:pImg("photo-1516724562728-afc824a36e84")},
-  {id:132, name:"Royal Sapphire & Diamond Halo Ring", category:"Private Collection", price:29800000, desc:"4.2ct untreated Ceylon royal blue sapphire framed by pear-cut diamonds.", image:pImg("photo-1605100804763-247f67b3557e")},
-  {id:133, name:"Italian Handmade 6-Piece Trunk Luggage Set", category:"Private Collection", price:19500000, desc:"Bespoke leather-bound cabin and check-in trunks with custom brass hardware.", image:pImg("photo-1565026057447-bc90a3dceb87")},
-  {id:134, name:"Aged Royal Cambodian Oud Extrait (100ml)", category:"Private Collection", price:5400000, desc:"50-year aged pure wild Cambodian oud oil in hand-blown crystal flacon.", image:pImg("photo-1595425970377-c9703cf48b6d")},
-  {id:135, name:"Bespoke Cashmere & Silk Tuxedo Jacket", category:"Private Collection", price:7400000, desc:"Midnight black peak-lapel dinner jacket woven in Biella, Italy.", image:pImg("photo-1593032465175-481ac7f401a0")},
-  {id:136, name:"85-Inch 8K OLED Signature Wall Cinema TV", category:"Private Collection", price:18900000, desc:"Ultra-thin gallery OLED 8K display with Dolby Atmos spatial soundbar.", image:pImg("photo-1593784991095-a205069470b6")},
-  {id:137, name:"Handcrafted Walnut & Brass Safe Watch Winder", category:"Private Collection", price:15200000, desc:"Biometric armored luxury safe housing 12 programmable Swiss watch winders.", image:pImg("photo-1614164185128-e4ec99c436d7")},
-  {id:138, name:"18K Gold Rimless Diamond-Cut Eyewear", category:"Private Collection", price:6200000, desc:"Solid 18K gold temples with genuine water buffalo horn arms and Zeiss lenses.", image:pImg("photo-1572635196237-14b3f281503f")},
-  {id:139, name:"Exotic Python Skin Tote & Clutch Duo", category:"Private Collection", price:8900000, desc:"Hand-painted glazed python leather structured handbag with suede lining.", image:pImg("photo-1591561954557-26941169b49e")},
-  {id:140, name:"Masterpiece Inlaid Marble & Brass Chess Table", category:"Private Collection", price:11800000, desc:"Carved Carrara and Nero Marquina marble board with 24K gold-plated pieces.", image:pImg("photo-1529699211952-734e80c4d42b")},
-  {id:141, name:"Commercial Italian Dual-Boiler Espresso Bar", category:"Private Collection", price:14200000, desc:"Hand-built Florentine stainless and brass espresso machine for private estates.", image:pImg("photo-1514432324607-a09d9b4aefdd")},
-  {id:142, name:"Solid Platinum Wedding & Eternity Band Set", category:"Private Collection", price:16500000, desc:"Matched 950 platinum bands channel-set with baguette-cut VVS diamonds.", image:pImg("photo-1515377905703-c4788e51af15")},
-  {id:143, name:"Bespoke Crocodile Leather Loafers (Florence)", category:"Private Collection", price:7900000, desc:"Hand-lasted cognac alligator penny loafers with hand-stitched leather sole.", image:pImg("photo-1549298916-b41d501d3772")},
-  {id:144, name:"High-Fidelity Reference Wireless Tower Speakers", category:"Private Collection", price:24000000, desc:"Audiophile-grade acoustic sculpture speakers delivering studio-master clarity.", image:pImg("photo-1545454675-3531b543be5d")},
-  {id:145, name:"1000-Thread-Count Mulberry Silk Bedding Suite", category:"Private Collection", price:5800000, desc:"Pure Grade 6A charmeuse mulberry silk duvet, sheets, and 6 pillow shams.", image:pImg("photo-1522771739844-6a9f6d5f14af")},
-  {id:146, name:"Emerald & Baguette Diamond Drop Earrings", category:"Private Collection", price:21000000, desc:"Colombian emeralds suspended beneath articulated 18K gold diamond clusters.", image:pImg("photo-1535632066927-ab7c9ab60908")},
-  {id:147, name:"Bespoke Shearling & Calfskin Aviator Jacket", category:"Private Collection", price:9600000, desc:"Supple full-grain Tuscan calfskin lined with plush merino shearling.", image:pImg("photo-1551028719-00167b16eac5")},
-  {id:148, name:"Collector's Solid Gold Fountain Pen", category:"Private Collection", price:7200000, desc:"18K solid gold nib with black lacquer barrel and diamond-set clip.", image:pImg("photo-1585336261022-680e295ce3fe")},
-  {id:149, name:"4K Laser Short-Throw Home Theater System", category:"Private Collection", price:16800000, desc:"150-inch ALR motorized screen paired with triple-laser 4K cinema projector.", image:pImg("photo-1489599849927-2ee91cede3ba")},
-  {id:150, name:"18K Rose Gold Chronograph Pocket Watch", category:"Private Collection", price:27500000, desc:"Grand Feu enamel dial mechanical hunter pocket watch with solid gold chain.", image:pImg("photo-1509042239860-f550ce710b93")},
-  {id:151, name:"Hand-Knotted Persian Silk Palace Rug (3x4m)", category:"Private Collection", price:23000000, desc:"1,000 knots per square inch pure Qom silk heirloom carpet.", image:pImg("photo-1600166898405-da9535204843")},
-  {id:152, name:"Bespoke Lizard-Skin Evening Clutch", category:"Private Collection", price:6400000, desc:"Emerald-dyed ring lizard evening minaudière with 18K gold-plated clasp.", image:pImg("photo-1566150905458-1bf1fc113f0d")},
-  {id:153, name:"Dual-Zone Built-In 160-Bottle Wine Cellar", category:"Private Collection", price:11500000, desc:"UV-protected triple-pane glass wine vault with solid beechwood shelves.", image:pImg("photo-1510812431401-41d2bd2722f3")},
-  {id:154, name:"Custom-Tailored Silk & Cashmere Dinner Suit", category:"Private Collection", price:9100000, desc:"Ivory shawl-collar dinner jacket paired with black grosgrain-stripe trousers.", image:pImg("photo-1507679799987-c73779587ccf")},
-  {id:155, name:"5.0ct Pear-Cut Moissanite & Platinum Tiara", category:"Private Collection", price:17400000, desc:"Royal bridal diadem handcrafted in platinum with hand-set VVS stones.", image:pImg("photo-1596944924616-7b38e7cfac36")},
-  {id:156, name:"Carbon Fiber & Nappa Leather Racing Simulator", category:"Private Collection", price:32000000, desc:"Full-motion hydraulic cockpit with triple curved 4K displays and direct-drive wheel.", image:pImg("photo-1511919884226-fd3cad34687c")},
-  {id:157, name:"Bespoke Alligator & Sterling Silver Belt", category:"Private Collection", price:5200000, desc:"Hand-stitched black alligator strap with hallmarked 925 sterling silver buckle.", image:pImg("photo-1624222247344-550fb60583dc")},
-  {id:158, name:"Limited Edition Crystal Chandelier (24-Light)", category:"Private Collection", price:21500000, desc:"Hand-cut Bohemian lead crystal chandelier with 24K gold-plated frame.", image:pImg("photo-1513506003901-1e6a229e2d15")},
-  {id:159, name:"Executive Travel Humidor in Spanish Cedar", category:"Private Collection", price:5900000, desc:"Bespoke burl walnut and crocodile leather cigar humidor with hygrometer.", image:pImg("photo-1584917865442-de89df76afd3")},
-  {id:160, name:"18K Yellow Gold Diamond Cufflinks", category:"Private Collection", price:8200000, desc:"Solid 18K gold swivel-back cufflinks pavé-set with 1.8ct white diamonds.", image:pImg("photo-1611652022419-a9419f74343d")},
-  {id:161, name:"Bespoke Ostrich & Calfskin Travel Duffle", category:"Private Collection", price:10800000, desc:"Weekender cabin duffle crafted from Cognac ostrich skin and suede interior.", image:pImg("photo-1547949003-9792a18a2601")},
-  {id:162, name:"24-Piece Bone China & 24K Gold Dining Service", category:"Private Collection", price:9500000, desc:"Limoges porcelain banquet set hand-gilded with 24-karat gold leaf.", image:pImg("photo-1490312278390-ab64016e0aa9")},
-  {id:163, name:"Custom Titanium & Ceramic Smart Ring", category:"Private Collection", price:5100000, desc:"Bespoke diamond-inlaid biometric health ring crafted from aerospace titanium.", image:pImg("photo-1605100804763-247f67b3557e")},
-  {id:164, name:"Master Watchmaker's 10-Piece Collector Trunk", category:"Private Collection", price:12400000, desc:"Lockable calfskin and Alcantara watch chest with removable travel rolls.", image:pImg("photo-1523275335684-37898b6baf30")},
-  {id:165, name:"Haute Couture Velvet & Gold Embroidered Cape", category:"Private Collection", price:13200000, desc:"Floor-length silk velvet evening cape with hand-spun bullion gold threadwork.", image:pImg("photo-1566174053879-31528523f8ae")},
-  {id:166, name:"Turin Sovereign Bespoke Wardrobe Trunk", category:"Private Collection", price:55000000, desc:"Full-height custom standing wardrobe trunk with cedar drawers and suit hangers.", image:pImg("photo-1553531384-cc64ac80f931")}
+  {id:117, name:"Geneva Tourbillon 18K Rose Gold Watch", category:"Private Collection", price:48500000, desc:"Hand-assembled Swiss tourbillon caliber in solid 18K rose gold with alligator strap.", image:pImg(117)},
+  {id:118, name:"Bespoke Vicuña & Cashmere Overcoat (Milan)", category:"Private Collection", price:14500000, desc:"Ultra-rare Andean vicuña wool tailored by master artisans in Milan.", image:pImg(118)},
+  {id:119, name:"Himalayan Crocodile Executive Weekender", category:"Private Collection", price:26000000, desc:"Hand-stitched matte Niloticus crocodile skin travel bag with palladium locks.", image:pImg(119)},
+  {id:120, name:"3.5ct VVS1 Solitaire Diamond Pendant", category:"Private Collection", price:39000000, desc:"GIA-certified cushion-cut solitaire diamond suspended on platinum chain.", image:pImg(120)},
+  {id:121, name:"Platinum Perpetual Calendar Chronograph", category:"Private Collection", price:65000000, desc:"950 platinum case featuring moonphase, perpetual calendar, and sapphire caseback.", image:pImg(121)},
+  {id:122, name:"Bespoke Savile Row 3-Piece Silk-Wool Suit", category:"Private Collection", price:8500000, desc:"Super 200s Tasmanian wool and mulberry silk custom-canvas formal suit.", image:pImg(122)},
+  {id:123, name:"24K Gold-Plated Flagship Smartphone Edition", category:"Private Collection", price:12800000, desc:"Custom-engraved 24-karat gold chassis with crocodile leather backplate.", image:pImg(123)},
+  {id:124, name:"Hand-Burnished Alligator Oxford Dress Shoes", category:"Private Collection", price:6800000, desc:"Goodyear-welted genuine Mississippiensis alligator leather formal oxfords.", image:pImg(124)},
+  {id:125, name:"18K White Gold Diamond Tennis Bracelet", category:"Private Collection", price:22500000, desc:"12.0 carats total weight F-color VVS diamonds set in solid 18K white gold.", image:pImg(125)},
+  {id:126, name:"Limited Edition Skeleton Titanium Diver", category:"Private Collection", price:31000000, desc:"Grade 5 brushed titanium 300M diver with openworked mechanical movement.", image:pImg(126)},
+  {id:127, name:"Couture Hand-Beaded Silk Evening Gown", category:"Private Collection", price:11200000, desc:"Over 400 hours of Parisian atelier embroidery on pure heavyweight silk.", image:pImg(127)},
+  {id:128, name:"Collector's MacBook Pro 16 M4 Max 128GB", category:"Private Collection", price:13500000, desc:"Max-spec workstation with 8TB SSD, Nano-texture display, and leather sleeve.", image:pImg(128)},
+  {id:129, name:"Bespoke Ostrich Leather Attaché Briefcase", category:"Private Collection", price:9200000, desc:"Full-quill South African ostrich leather briefcase with combination brass locks.", image:pImg(129)},
+  {id:130, name:"Solid 18K Gold Cuban Link Chain (180g)", category:"Private Collection", price:34000000, desc:"Heavyweight solid 18-karat yellow gold Miami Cuban link necklace with box lock.", image:pImg(130)},
+  {id:131, name:"Leica M11 Monochrom Rangefinder Kit", category:"Private Collection", price:28500000, desc:"German-engineered 60MP full-frame rangefinder camera with Summilux 50mm lens.", image:pImg(131)},
+  {id:132, name:"Royal Sapphire & Diamond Halo Ring", category:"Private Collection", price:29800000, desc:"4.2ct untreated Ceylon royal blue sapphire framed by pear-cut diamonds.", image:pImg(132)},
+  {id:133, name:"Italian Handmade 6-Piece Trunk Luggage Set", category:"Private Collection", price:19500000, desc:"Bespoke leather-bound cabin and check-in trunks with custom brass hardware.", image:pImg(133)},
+  {id:134, name:"Aged Royal Cambodian Oud Extrait (100ml)", category:"Private Collection", price:5400000, desc:"50-year aged pure wild Cambodian oud oil in hand-blown crystal flacon.", image:pImg(134)},
+  {id:135, name:"Bespoke Cashmere & Silk Tuxedo Jacket", category:"Private Collection", price:7400000, desc:"Midnight black peak-lapel dinner jacket woven in Biella, Italy.", image:pImg(135)},
+  {id:136, name:"85-Inch 8K OLED Signature Wall Cinema TV", category:"Private Collection", price:18900000, desc:"Ultra-thin gallery OLED 8K display with Dolby Atmos spatial soundbar.", image:pImg(136)},
+  {id:137, name:"Handcrafted Walnut & Brass Safe Watch Winder", category:"Private Collection", price:15200000, desc:"Biometric armored luxury safe housing 12 programmable Swiss watch winders.", image:pImg(137)},
+  {id:138, name:"18K Gold Rimless Diamond-Cut Eyewear", category:"Private Collection", price:6200000, desc:"Solid 18K gold temples with genuine water buffalo horn arms and Zeiss lenses.", image:pImg(138)},
+  {id:139, name:"Exotic Python Skin Tote & Clutch Duo", category:"Private Collection", price:8900000, desc:"Hand-painted glazed python leather structured handbag with suede lining.", image:pImg(139)},
+  {id:140, name:"Masterpiece Inlaid Marble & Brass Chess Table", category:"Private Collection", price:11800000, desc:"Carved Carrara and Nero Marquina marble board with 24K gold-plated pieces.", image:pImg(140)},
+  {id:141, name:"Commercial Italian Dual-Boiler Espresso Bar", category:"Private Collection", price:14200000, desc:"Hand-built Florentine stainless and brass espresso machine for private estates.", image:pImg(141)},
+  {id:142, name:"Solid Platinum Wedding & Eternity Band Set", category:"Private Collection", price:16500000, desc:"Matched 950 platinum bands channel-set with baguette-cut VVS diamonds.", image:pImg(142)},
+  {id:143, name:"Bespoke Crocodile Leather Loafers (Florence)", category:"Private Collection", price:7900000, desc:"Hand-lasted cognac alligator penny loafers with hand-stitched leather sole.", image:pImg(143)},
+  {id:144, name:"High-Fidelity Reference Wireless Tower Speakers", category:"Private Collection", price:24000000, desc:"Audiophile-grade acoustic sculpture speakers delivering studio-master clarity.", image:pImg(144)},
+  {id:145, name:"1000-Thread-Count Mulberry Silk Bedding Suite", category:"Private Collection", price:5800000, desc:"Pure Grade 6A charmeuse mulberry silk duvet, sheets, and 6 pillow shams.", image:pImg(145)},
+  {id:146, name:"Emerald & Baguette Diamond Drop Earrings", category:"Private Collection", price:21000000, desc:"Colombian emeralds suspended beneath articulated 18K gold diamond clusters.", image:pImg(146)},
+  {id:147, name:"Bespoke Shearling & Calfskin Aviator Jacket", category:"Private Collection", price:9600000, desc:"Supple full-grain Tuscan calfskin lined with plush merino shearling.", image:pImg(147)},
+  {id:148, name:"Collector's Solid Gold Fountain Pen", category:"Private Collection", price:7200000, desc:"18K solid gold nib with black lacquer barrel and diamond-set clip.", image:pImg(148)},
+  {id:149, name:"4K Laser Short-Throw Home Theater System", category:"Private Collection", price:16800000, desc:"150-inch ALR motorized screen paired with triple-laser 4K cinema projector.", image:pImg(149)},
+  {id:150, name:"18K Rose Gold Chronograph Pocket Watch", category:"Private Collection", price:27500000, desc:"Grand Feu enamel dial mechanical hunter pocket watch with solid gold chain.", image:pImg(150)},
+  {id:151, name:"Hand-Knotted Persian Silk Palace Rug (3x4m)", category:"Private Collection", price:23000000, desc:"1,000 knots per square inch pure Qom silk heirloom carpet.", image:pImg(151)},
+  {id:152, name:"Bespoke Lizard-Skin Evening Clutch", category:"Private Collection", price:6400000, desc:"Emerald-dyed ring lizard evening minaudière with 18K gold-plated clasp.", image:pImg(152)},
+  {id:153, name:"Dual-Zone Built-In 160-Bottle Wine Cellar", category:"Private Collection", price:11500000, desc:"UV-protected triple-pane glass wine vault with solid beechwood shelves.", image:pImg(153)},
+  {id:154, name:"Custom-Tailored Silk & Cashmere Dinner Suit", category:"Private Collection", price:9100000, desc:"Ivory shawl-collar dinner jacket paired with black grosgrain-stripe trousers.", image:pImg(154)},
+  {id:155, name:"5.0ct Pear-Cut Moissanite & Platinum Tiara", category:"Private Collection", price:17400000, desc:"Royal bridal diadem handcrafted in platinum with hand-set VVS stones.", image:pImg(155)},
+  {id:156, name:"Carbon Fiber & Nappa Leather Racing Simulator", category:"Private Collection", price:32000000, desc:"Full-motion hydraulic cockpit with triple curved 4K displays and direct-drive wheel.", image:pImg(156)},
+  {id:157, name:"Bespoke Alligator & Sterling Silver Belt", category:"Private Collection", price:5200000, desc:"Hand-stitched black alligator strap with hallmarked 925 sterling silver buckle.", image:pImg(157)},
+  {id:158, name:"Limited Edition Crystal Chandelier (24-Light)", category:"Private Collection", price:21500000, desc:"Hand-cut Bohemian lead crystal chandelier with 24K gold-plated frame.", image:pImg(158)},
+  {id:159, name:"Executive Travel Humidor in Spanish Cedar", category:"Private Collection", price:5900000, desc:"Bespoke burl walnut and crocodile leather cigar humidor with hygrometer.", image:pImg(159)},
+  {id:160, name:"18K Yellow Gold Diamond Cufflinks", category:"Private Collection", price:8200000, desc:"Solid 18K gold swivel-back cufflinks pavé-set with 1.8ct white diamonds.", image:pImg(160)},
+  {id:161, name:"Bespoke Ostrich & Calfskin Travel Duffle", category:"Private Collection", price:10800000, desc:"Weekender cabin duffle crafted from Cognac ostrich skin and suede interior.", image:pImg(161)},
+  {id:162, name:"24-Piece Bone China & 24K Gold Dining Service", category:"Private Collection", price:9500000, desc:"Limoges porcelain banquet set hand-gilded with 24-karat gold leaf.", image:pImg(162)},
+  {id:163, name:"Custom Titanium & Ceramic Smart Ring", category:"Private Collection", price:5100000, desc:"Bespoke diamond-inlaid biometric health ring crafted from aerospace titanium.", image:pImg(163)},
+  {id:164, name:"Master Watchmaker's 10-Piece Collector Trunk", category:"Private Collection", price:12400000, desc:"Lockable calfskin and Alcantara watch chest with removable travel rolls.", image:pImg(164)},
+  {id:165, name:"Haute Couture Velvet & Gold Embroidered Cape", category:"Private Collection", price:13200000, desc:"Floor-length silk velvet evening cape with hand-spun bullion gold threadwork.", image:pImg(165)},
+  {id:166, name:"Turin Sovereign Bespoke Wardrobe Trunk", category:"Private Collection", price:55000000, desc:"Full-height custom standing wardrobe trunk with cedar drawers and suit hangers.", image:pImg(166)}
 ];
 
 const allProducts = [...mainProducts, ...privateProducts];
 
-let bag = JSON.parse(localStorage.getItem("turin_bag_v5") || "[]");
+let bag = JSON.parse(localStorage.getItem("turin_bag_v6") || "[]");
 let activeCategory = "All";
 
 const $ = sel => document.querySelector(sel);
@@ -536,7 +561,7 @@ function showToast(msg) {
 
 function updateBagCount() {
   $("#bagCount").textContent = bag.reduce((sum, item) => sum + item.qty, 0);
-  localStorage.setItem("turin_bag_v5", JSON.stringify(bag));
+  localStorage.setItem("turin_bag_v6", JSON.stringify(bag));
 }
 
 function formatTZS(amount) {
@@ -563,16 +588,16 @@ function renderPriceHTML(amountTZS) {
 
 function buildCategories() {
   const cats = [
-    {name: "All", img: pImg("photo-1441986300917-64674bd600d8")},
-    {name: "Men's Fashion", img: pImg("photo-1521572267360-ee0c2909d518")},
-    {name: "Women's Fashion", img: pImg("photo-1583391733956-3750e0ff4e8b")},
-    {name: "Bespoke Menswear", img: pImg("photo-1507679799987-c73779587ccf")},
-    {name: "Electronics", img: pImg("photo-1535016120720-40c646be5580")},
-    {name: "Technology & Phone Accessories", img: pImg("photo-1590602847861-f357a9332bbc")},
-    {name: "Shoes & Accessories", img: pImg("photo-1595950653106-6c9ebd614d3a")},
-    {name: "Beauty & Personal Care", img: pImg("photo-1541643600914-78b084683601")},
-    {name: "Home & Lifestyle", img: pImg("photo-1631049307264-da0ec9d70304")},
-    {name: "Private Collection", img: pImg("photo-1547996160-81dfa63595aa")}
+    {name: "All", img: pImg(1)},
+    {name: "Men's Fashion", img: pImg(1)},
+    {name: "Women's Fashion", img: pImg(16)},
+    {name: "Bespoke Menswear", img: pImg(101)},
+    {name: "Electronics", img: pImg(31)},
+    {name: "Technology & Phone Accessories", img: pImg(46)},
+    {name: "Shoes & Accessories", img: pImg(61)},
+    {name: "Beauty & Personal Care", img: pImg(76)},
+    {name: "Home & Lifestyle", img: pImg(86)},
+    {name: "Private Collection", img: pImg(117)}
   ];
 
   $("#catSlider").innerHTML = cats.map(c => `
